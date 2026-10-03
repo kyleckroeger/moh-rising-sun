@@ -1,0 +1,58 @@
+{
+  "id": "sys_memory_operators",
+  "source": "src/sys_memory.cpp",
+  "category": "reconstructed_game",
+  "original_file": "sys_memory.cpp",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0"
+  ],
+  "include_dirs": [],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801a8910",
+      "size": 192
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802b77e8",
+      "size": 32
+    }
+  ],
+  "functions": [
+    {
+      "name": "__builtin_new",
+      "address": "0x801a8910",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "__builtin_vec_new",
+      "address": "0x801a8950",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "__builtin_delete",
+      "address": "0x801a8990",
+      "size": 32,
+      "binding": 1
+    },
+    {
+      "name": "__builtin_vec_delete",
+      "address": "0x801a89b0",
+      "size": 32,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_memLabel": "0x802c7dc0",
+    "DWI_alloc": "0x801a8670",
+    "DWI_free": "0x801a8894"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

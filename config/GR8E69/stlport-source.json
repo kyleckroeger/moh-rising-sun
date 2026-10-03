@@ -1,0 +1,15 @@
+{
+  "source_archive_url": "https://downloads.sourceforge.net/project/stlport/STLport%20archive/STLport%204/STLport-4.5.3.tar.gz",
+  "source_archive_sha256": "74917eee7d57577518063b4caf7fb13577f21472fb92ecc239fc1ecf2fc9b1ec",
+  "upstream_files": {
+    "stlport/stl/_tree.h": "e089aeafbb05c48df495ccbaf89a3b68cf8d5a7226241d0f59605a8c18f30559",
+    "stlport/stl/_tree.c": "15aa05c9bfc92f0e33814960403c11de7b8abcd2711097aa18b5e4f31ab428d0",
+    "stlport/stl/_algobase.h": "d7c27c097c4848e7b766121f396b5fbddf92e5212a79ca1b77e65c0879137839"
+  },
+  "notes": [
+    "Compatible subset; the original STLport release is not uniquely identified.",
+    "Vendored excerpts preserve node/member declarations, swap and six Rb_global algorithm bodies.",
+    "Configuration macros are expanded for the supported namespace/calling convention; unrelated declarations are omitted.",
+    "Explicit-instantiation translation units are project integration files, not recovered original file boundaries."
+  ]
+}

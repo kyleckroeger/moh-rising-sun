@@ -1,0 +1,33 @@
+{
+  "id": "stl_rotate_right",
+  "source": "src/stlport/stl_rotate_right.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "src/stlport"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80279afc",
+      "size": 96
+    }
+  ],
+  "functions": [
+    {
+      "name": "_Rotate_right__Q24_STLt10_Rb_global1ZbPQ24_STL18_Rb_tree_node_baseRPQ24_STL18_Rb_tree_node_base",
+      "address": "0x80279afc",
+      "size": 96,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

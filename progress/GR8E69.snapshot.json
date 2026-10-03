@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 274524,
+    "matching_code_bytes": 276480,
     "total_executable_code_bytes": 2492032,
-    "percent": 11.016070419641482,
+    "percent": 11.094560583491704,
     "categories": {
-      "reconstructed_game": 336,
-      "restored_library": 274188
+      "reconstructed_game": 528,
+      "restored_library": 275952
     },
-    "matching_functions": 1112
+    "matching_functions": 1122
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -234,8 +234,16 @@
     "config/GR8E69/newlib_wctomb_r.json": "fc59b588e63f3a1f302300e1257e93abec1acb4041e2ef289f02d12774f5ae70",
     "config/GR8E69/newlib_writer.json": "cf7eab1eebe3bf4b04912e61b9ce9a2c7c4191ebecc610aa267f69bdabe6512f",
     "config/GR8E69/newlib_wsetup.json": "61dd8c7f513073a2f4c355ee89bdcf2d300345cd74c632de1997cba9f3e84020",
-    "config/GR8E69/project.json": "26ebce8a39363fd86df3eaeb70ea7b5f70a2353a0fe3986cd0e4b6abf5a58e72",
+    "config/GR8E69/project.json": "08ef60a1c8abcca19164a49393b490c44e88048bac83ad1cfa80f8bdb12277b3",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
+    "config/GR8E69/stl_m_decrement.json": "e3855c5b823ba74eb15d6f6eb1835bfbb233625de7a5d5c200f0b164d0af365b",
+    "config/GR8E69/stl_m_increment.json": "22bffec841fa9246035f9c7eb878af24bf2d2ca9cff5d75bee14b74995b8c0e7",
+    "config/GR8E69/stl_rebalance.json": "22960175e97ba5a25b15d2c5e37f31b492c5afd1f48f3ff695586ef260e9a6f4",
+    "config/GR8E69/stl_rebalance_for_erase.json": "16baeb4a296871c88d1582144f8445657bffd5ae1a2d5bf7ac9c35c295d79c08",
+    "config/GR8E69/stl_rotate_left.json": "14daf40841170d521edd37a78531ce10667200dfcbc76eaf286ed49124bc1255",
+    "config/GR8E69/stl_rotate_right.json": "895b2ae6eee255755cd10e083eae7fb1b490dcb36d758be10918b357bb82f212",
+    "config/GR8E69/stlport-source.json": "437f702a6af502a9a9757b7bb5e9d144e83fe9c0fd4a95855cfbd37b67aedd2d",
+    "config/GR8E69/sys_memory_operators.json": "593181060ad84668f2fdb91654d17a410ae9aaaceec9493f698e682fe683b96b",
     "config/GR8E69/target.json": "48fb9548419f5549d49ebba1794d3193398e58c37c0d15569e6ed1810d8adb8f",
     "config/GR8E69/vi.json": "dd95046e01890cb33bdb0006c936ff713366f21401f267c9cf268a70ac8b8833",
     "include/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -704,10 +712,21 @@
     "src/newlib/string/strpbrk.c": "ff1c75e57e95c5cbb7b97b7e6f7a4ab1c9c8259b351fafdf06355a0f2bdf457f",
     "src/newlib/string/strrchr.c": "402a6ca9631680b81811553ad4a60b85271b90f7cce71b898872c845b1931ff9",
     "src/newlib/string/strstr.c": "09437b966be6a045479e511b84d9ef0156823a5c9ccd29dc4c93d0f7c53998e7",
+    "src/stlport/stl_m_decrement.cpp": "4f9622235df9218182596addd051051c6a2fc35163c6ec13e7a61c87a6fb422c",
+    "src/stlport/stl_m_increment.cpp": "572d3c821eff6a9e437b41d87d2b33b60e6ff10292eb13f57bd2287531041732",
+    "src/stlport/stl_rebalance.cpp": "08d73b0407a7ecef960ba8fc47629a608623c893804a3e32473e32c5c215b36f",
+    "src/stlport/stl_rebalance_for_erase.cpp": "8c914ea96e8da93a4eababf58f6e252d4f76e01562bd8a69e7b7f68cf7b24629",
+    "src/stlport/stl_rotate_left.cpp": "f2103158d6d8193569e4821f9485711098f927ee14e897679528b9095a2de0ad",
+    "src/stlport/stl_rotate_right.cpp": "72b36f450aefa95635ef529a813296e1d75bfafbed2303fb83326bf9eedbbd8f",
+    "src/stlport/swap.h": "c8c1d644b51826ecf1b5f7da1d157b1da464119ee9192d0d0245ada36a445fe6",
+    "src/stlport/tree.h": "c1781dd7c77e2644425774c2c092dd52aeb9894d4ac809fec595678f80cccdd9",
+    "src/stlport/tree_impl.h": "a20d4ffe6b46823cc4dceeba30bdd7aa285453aedd811b72e698ced00a4e502b",
+    "src/sys_memory.cpp": "410ee07c9718afe0881a5f14e4c15815cd33bb035d05b19ad6cf4135dae323d8",
     "tools/audit.py": "42f9dd301ef76d300f0cad2f791ddbcac862418b6532e252fc38c02d1a222245",
     "tools/baseline.py": "9705053a0b99d969062f336b609a5ea4e0e5bc354d5619ecb9be6698530b314c",
     "tools/code_map.py": "1bb7545aef44792f54bfe21539f3e1ca2a61f14c57b8ddb81c342cf44a525901",
     "tools/compilers.json": "56f64efa79ad41c9417dc84360c7a65dffaf8d1af82b3ccbd64114e0bcb9b5a6",
+    "tools/dependencies.py": "88aacbfc314a897debda7ce707bb3e447d4deb83f26b00d11558f0e04fd2528e",
     "tools/formats.py": "3124d742d0518c913dfc575602bba63befbd9e0e78220e5a85059cda277f8f81",
     "tools/import_disc.py": "c4adacc1b86bf05f5fed84a3101c04a6815c5cba449883a9b555114b140b541c",
     "tools/progress_report.py": "ad145493ae9def5a34cc29839db219d885e2c3922e3434a71909ea208ac554c4",
@@ -7601,6 +7620,124 @@
       "discarded_functions": [],
       "object_sha256": "82585f26a40720beda22d0b06af9ecf6d565387889741686b261b48b30475eea",
       "linked_sha256": "1e98f788bf9af4bf24d62fa123199d11775960a36bc61b3a718fe6aa7d23df90"
+    },
+    {
+      "id": "stl_rotate_left",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 96,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "d52b5191d5f04280b2740957b5c233e5b69f3a70d3c304d6ccd1e582cee46291",
+      "linked_sha256": "3c6ddb6c02b893eaeb734e22d98b737b3f6211d172665c3a4391c774f5fd60bc"
+    },
+    {
+      "id": "stl_rotate_right",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 96,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "4ad86b687153a6c97cd5610071e157b8baca53a354ec4b89fb752f8e9040b57c",
+      "linked_sha256": "11034b010ab9d6d32745cf608cbf89f92e824fd1df695ebd4a807e98fb991bd0"
+    },
+    {
+      "id": "stl_rebalance",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 360,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "083b8eacd1e3023eef7342c4208d164c5ea8465f6172922e7fc736e1c80beef8",
+      "linked_sha256": "563dcfae4015130f3673c5aecf9d9f52fba719b905c23a2d4171d32d003c4f69"
+    },
+    {
+      "id": "stl_rebalance_for_erase",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 1012,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "4dc2e79d281dac1e4ae6f1dfbde74184c0d9cf8e23312903e90c699adea5486a",
+      "linked_sha256": "4eeaecccd2afdf86e693728e8a853d9c7d3a9501875e6d48c9c32f165c3ca3f6"
+    },
+    {
+      "id": "stl_m_increment",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 88,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "66e2271d5507d22376c78d7899886c2d9ad7944b7bc356fbfc9a41f8b4acc750",
+      "linked_sha256": "fe763328936b79f552d8b29b1488758df77f2bd447cebcaa0bae0c5a20e5a147"
+    },
+    {
+      "id": "stl_m_decrement",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 112,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c1c69e7e85d57729cc9fca339057e5312b0f67464411791087220af0694793c1",
+      "linked_sha256": "8f2d455696ad5d9974abad0b3079b25eabbeee8b3a1f3ca2e99e6c630021b2a4"
+    },
+    {
+      "id": "sys_memory_operators",
+      "category": "reconstructed_game",
+      "functions": 4,
+      "code_bytes": 192,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c9f39fcb2a099192b8e1be2854688be777a7b0f2ee4024075e33f68416ec433d",
+      "linked_sha256": "51518a1f32dada29adb45917c57d5000ddf3d355a0568a5154b81295239d92fa"
     }
   ],
   "code_map": {
@@ -51968,34 +52105,6 @@
             "kind": "function",
             "name": "DWI_intfill",
             "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801a8910",
-            "size": 64,
-            "kind": "function",
-            "name": "__builtin_new",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801a8950",
-            "size": 64,
-            "kind": "function",
-            "name": "__builtin_vec_new",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801a8990",
-            "size": 32,
-            "kind": "function",
-            "name": "__builtin_delete",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801a89b0",
-            "size": 32,
-            "kind": "function",
-            "name": "__builtin_vec_delete",
-            "evidence": "adjacent-compiler-markers"
           }
         ],
         "marker_interval": [
@@ -71799,42 +71908,24 @@
             "kind": "function",
             "name": "__12MeshParticleRC12MeshParticle",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279a9c",
-            "size": 96,
-            "kind": "function",
-            "name": "_Rotate_left__Q24_STLt10_Rb_global1ZbPQ24_STL18_Rb_tree_node_baseRPQ24_STL18_Rb_tree_node_base",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279afc",
-            "size": 96,
-            "kind": "function",
-            "name": "_Rotate_right__Q24_STLt10_Rb_global1ZbPQ24_STL18_Rb_tree_node_baseRPQ24_STL18_Rb_tree_node_base",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279b5c",
-            "size": 360,
-            "kind": "function",
-            "name": "_Rebalance__Q24_STLt10_Rb_global1ZbPQ24_STL18_Rb_tree_node_baseRPQ24_STL18_Rb_tree_node_base",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 80279cc4",
+        "ranges": [
           {
             "address": "0x80279cc4",
             "size": 292,
             "kind": "function",
             "name": "_M_insert__Q24_STLt8_Rb_tree5ZUiZQ24_STLt4pair2ZCUiZP12CParticleDefZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUiZP12CParticleDefZQ24_STLt4less1ZUiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUiZP12CParticleDefPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCUiZP12CParticleDefT1",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279de8",
-            "size": 112,
-            "kind": "function",
-            "name": "_M_decrement__Q24_STLt10_Rb_global1ZbPQ24_STL18_Rb_tree_node_base",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 80279e58",
+        "ranges": [
           {
             "address": "0x80279e58",
             "size": 280,
@@ -71848,14 +71939,12 @@
             "kind": "function",
             "name": "insert_unique__Q24_STLt8_Rb_tree5ZUiZQ24_STLt4pair2ZCUiZP12CParticleDefZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUiZP12CParticleDefZQ24_STLt4less1ZUiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUiZP12CParticleDefGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCUiZP12CParticleDefZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCUiZP12CParticleDefRCQ24_STLt4pair2ZCUiZP12CParticleDef",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027a1dc",
-            "size": 88,
-            "kind": "function",
-            "name": "_M_increment__Q24_STLt10_Rb_global1ZbPQ24_STL18_Rb_tree_node_base",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 8027a234",
+        "ranges": [
           {
             "address": "0x8027a234",
             "size": 88,
@@ -72366,14 +72455,12 @@
             "kind": "function",
             "name": "_M_erase__Q24_STLt8_Rb_tree5ZQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiZQ44EALA9Character12SkeletonData7CompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiPQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZi",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027de58",
-            "size": 1012,
-            "kind": "function",
-            "name": "_Rebalance_for_erase__Q24_STLt10_Rb_global1ZbPQ24_STL18_Rb_tree_node_baseRPQ24_STL18_Rb_tree_node_baseN22",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 8027e24c",
+        "ranges": [
           {
             "address": "0x8027e24c",
             "size": 28,

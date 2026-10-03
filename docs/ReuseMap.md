@@ -13,11 +13,15 @@ code/data and full-image verification establish accepted source coverage.
 | Newlib | [Newlib 1.8.2](https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz) | 37,496 | Correct FILE and varargs declarations unlock many libc routines. |
 | SN library adaptations | [RE4 formatter and math support](https://github.com/adonis-singh/re4/tree/9b76ff003081d6ece8b838453fb8310743a972c7/src/game) plus Newlib | 16,396 | Rising Sun's bounded string writes and grouping flag distinguish its formatter. |
 | GCC runtime | [GCC 2.95.2](https://github.com/gcc-mirror/gcc/tree/releases/gcc-2.95.2/gcc) | 5,532 | Target ABI, configuration and private tables matter as much as function names. |
+| STLport | [STLport 4.5.3](https://sourceforge.net/projects/stlport/files/STLport%20archive/STLport%204/) | 1,764 | Six shared tree helpers match; exact historical release and broader container compatibility remain unconfirmed. |
 
 These are separate, already accepted byte totals, not estimates of future gains.
 See the individual library evidence documents for exact scopes, provenance and licenses.
 The 25,296-byte increase from 10.000995% to 11.016070% combines three Lua units and the
 SN library adaptations. It does not represent an equivalent amount of gameplay logic.
+The next pass adds 1,764 STL helper bytes and 192 game allocation-operator bytes,
+bringing coverage to 11.094561%. See [STLport](STLport.md), [allocation contracts](Memory.md)
+and the new [direct dependency map](Dependencies.md).
 
 ## Ranked research queue
 
@@ -29,15 +33,21 @@ This is a qualitative work order, not a prediction of hours or a promise of matc
 | 2 | `powf` | 1,780 bytes; the research candidate differs in three indexed-load operand encodings | Investigate front-end/source address-expression ordering; do not patch instructions. |
 | 3 | SN `add_separators` | 392 bytes; its ABI and formatter callers now match | Finish the helper's C reconstruction and register allocation; it remains context. |
 | 4 | MD5 | The map's local-symbol group spans 3,224 bytes | Identify the implementation and its endian helpers before assuming an RFC implementation will match. File evidence is local-only. |
-| 5 | STL-family templates | 214 remaining symbols mention `_STL`, spanning 77,244 declared function bytes | Identify the exact header family/version and ABI; begin with pointer/integer containers and common tree routines. This footprint includes game functions whose signatures mention STL types. It is **not** 77,244 verified reusable library bytes. |
+| 5 | STL-family templates | 208 remaining symbols mention `_STL`, spanning 75,480 declared function bytes after accepting six tree helpers | STLport 4.5.3 is compatible with the accepted tree subset. A pointer-vector candidate matches 232 code bytes but its generated `bad_alloc` data is unresolved. This footprint includes game functions whose signatures mention STL types; it is **not** 75,480 verified reusable library bytes. |
 | 6 | Shared game math, strings and allocation | `MathFun.cpp` has 1,268 unmatched bytes; string/allocation groups are also mapped | Recover common types, allocator contracts and constant ownership, then work through callers. |
 
-The STL lead is potentially larger than individual leaf-function work, but no compatible
-header release has been verified. Do not invent class layouts to instantiate templates.
+The STL lead is potentially larger than individual leaf-function work. A compatible
+tree subset is now verified, but no complete header configuration or exact original
+release is established. Do not invent class layouts to instantiate templates.
 [NFL Street 2](https://github.com/mitsevox/nflstreet2) is a useful existing compiler-tooling
 reference; shared EA game/engine source compatibility has not been established here.
 
 ## Mapping work with the highest payoff
+
+The direct-call portion of item 2 is now implemented by `tools/dependencies.py`.
+Its [ranked work packets](Dependencies.md) put the CMatrix family first for shared
+game-type work: initialization has 173 distinct unfinished callers. Vtable/data
+references and type recovery remain future work.
 
 1. **Reference/version inventory.** For each family, record source URL and pinned commit,
    license, symbol/constant evidence, compiler profile, compared ranges, and unresolved

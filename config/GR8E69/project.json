@@ -215,7 +215,14 @@
     "ltable.json",
     "newlib_vfprintf.json",
     "newlib_vfiprintf.json",
-    "newlib_sn_math.json"
+    "newlib_sn_math.json",
+    "stl_rotate_left.json",
+    "stl_rotate_right.json",
+    "stl_rebalance.json",
+    "stl_rebalance_for_erase.json",
+    "stl_m_increment.json",
+    "stl_m_decrement.json",
+    "sys_memory_operators.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
