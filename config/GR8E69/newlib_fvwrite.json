@@ -1,0 +1,51 @@
+{
+  "id": "newlib_fvwrite",
+  "source": "src/newlib/stdio/fvwrite.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char",
+    "-DMB_CAPABLE"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/stdio"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8026b600",
+      "size": 892,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "__sfvwrite",
+      "address": "0x8026b600",
+      "size": 892,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__swsetup": "0x8026b97c",
+    "memmove": "0x8026668c",
+    "fflush": "0x8026322c",
+    "memchr": "0x8026ba64"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "fvwrite.c",
+  "upstream": {
+    "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+    "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+    "path": "newlib/libc/stdio/fvwrite.c"
+  },
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

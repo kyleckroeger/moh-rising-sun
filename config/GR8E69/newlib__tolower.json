@@ -1,0 +1,48 @@
+{
+  "id": "newlib__tolower",
+  "source": "src/newlib/ctype/_tolower.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char",
+    "-DMB_CAPABLE"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/ctype"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8026aae8",
+      "size": 28,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "_tolower",
+      "address": "0x8026aae8",
+      "size": 28,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_ctype_": "0x802bfdac"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "_tolower.c",
+  "upstream": {
+    "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+    "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+    "path": "newlib/libc/ctype/_tolower.c"
+  },
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

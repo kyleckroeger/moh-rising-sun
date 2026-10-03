@@ -1,0 +1,194 @@
+{
+  "id": "AXVPB",
+  "source": "src/dolphin/ax/AXVPB.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802305dc",
+      "size": 4084,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802d6fb8",
+      "size": 212,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x80426d00",
+      "size": 71680,
+      "type": 8
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80452090",
+      "size": 12,
+      "type": 8
+    },
+    {
+      "name": ".sdata2",
+      "address": "0x804527a0",
+      "size": 4,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "__AXGetNumVoices",
+      "address": "0x802305dc",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "__AXServiceVPB",
+      "address": "0x802305e4",
+      "size": 1868,
+      "binding": 1
+    },
+    {
+      "name": "__AXSyncPBs",
+      "address": "0x80230d30",
+      "size": 632,
+      "binding": 1
+    },
+    {
+      "name": "__AXGetPBs",
+      "address": "0x80230fa8",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "__AXSetPBDefault",
+      "address": "0x80230fb4",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "__AXVPBInit",
+      "address": "0x80230ff4",
+      "size": 512,
+      "binding": 1
+    },
+    {
+      "name": "__AXVPBQuit",
+      "address": "0x802311f4",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "AXSetVoiceSrcType",
+      "address": "0x802311f8",
+      "size": 196,
+      "binding": 1
+    },
+    {
+      "name": "AXSetVoiceState",
+      "address": "0x802312bc",
+      "size": 92,
+      "binding": 1
+    },
+    {
+      "name": "AXSetVoiceAddr",
+      "address": "0x80231318",
+      "size": 272,
+      "binding": 1
+    },
+    {
+      "name": "AXSetVoiceAdpcm",
+      "address": "0x80231428",
+      "size": 164,
+      "binding": 1
+    },
+    {
+      "name": "AXSetVoiceSrcRatio",
+      "address": "0x802314cc",
+      "size": 152,
+      "binding": 1
+    },
+    {
+      "name": "AXSetVoiceAdpcmLoop",
+      "address": "0x80231564",
+      "size": 108,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__AXDepopVoice": "0x80230548",
+    "__AXPushCallbackStack": "0x8022eacc",
+    "DCInvalidateRange": "0x802545a8",
+    "__AXGetCommandListCycles": "0x8022f214",
+    "__AXGetStackHead": "0x8022e8b8",
+    "DCFlushRange": "0x802545d4",
+    "__AXPushFreeStack": "0x8022eaac",
+    "OSDisableInterrupts": "0x80257798",
+    "OSRestoreInterrupts": "0x802577c0",
+    "__cvt_fp2unsigned": "0x801afe54"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "__AXDumpVPB",
+    "AXSetVoiceType",
+    "AXSetVoiceMix",
+    "AXSetVoiceItdOn",
+    "AXSetVoiceItdTarget",
+    "AXSetVoiceUpdateIncrement",
+    "AXSetVoiceUpdateWrite",
+    "AXSetVoiceDpop",
+    "AXSetVoiceVe",
+    "AXSetVoiceVeDelta",
+    "AXSetVoiceFir",
+    "AXSetVoiceLoop",
+    "AXSetVoiceLoopAddr",
+    "AXSetVoiceEndAddr",
+    "AXSetVoiceCurrentAddr",
+    "AXSetVoiceSrc",
+    "AXSetVoiceLpf",
+    "AXSetVoiceLpfCoefs",
+    "AXSetMaxDspCycles",
+    "AXGetMaxDspCycles",
+    "AXGetDspCycles"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/ax/AXVPB.c"
+  },
+  "original_file": "AXVPB.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

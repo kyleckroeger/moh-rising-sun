@@ -1,0 +1,133 @@
+{
+  "id": "llex",
+  "source": "src/lua/llex.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8003cac0",
+      "size": 5980,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802960b4",
+      "size": 600,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "luaX_init",
+      "address": "0x8003cac0",
+      "size": 92,
+      "binding": 1
+    },
+    {
+      "name": "luaX_checklimit",
+      "address": "0x8003cb1c",
+      "size": 96,
+      "binding": 1
+    },
+    {
+      "name": "luaX_error",
+      "address": "0x8003cbe4",
+      "size": 108,
+      "binding": 1
+    },
+    {
+      "name": "luaX_syntaxerror",
+      "address": "0x8003cb7c",
+      "size": 104,
+      "binding": 1
+    },
+    {
+      "name": "luaX_token2str",
+      "address": "0x8003cc50",
+      "size": 84,
+      "binding": 1
+    },
+    {
+      "name": "luaX_invalidchar",
+      "address": "0x8003cca4",
+      "size": 88,
+      "binding": 0
+    },
+    {
+      "name": "inclinenumber",
+      "address": "0x8003ccfc",
+      "size": 156,
+      "binding": 0
+    },
+    {
+      "name": "luaX_setinput",
+      "address": "0x8003cd98",
+      "size": 252,
+      "binding": 1
+    },
+    {
+      "name": "readname",
+      "address": "0x8003ce94",
+      "size": 232,
+      "binding": 0
+    },
+    {
+      "name": "read_number",
+      "address": "0x8003cf7c",
+      "size": 1096,
+      "binding": 0
+    },
+    {
+      "name": "read_long_string",
+      "address": "0x8003d3c4",
+      "size": 728,
+      "binding": 0
+    },
+    {
+      "name": "read_string",
+      "address": "0x8003d69c",
+      "size": 1048,
+      "binding": 0
+    },
+    {
+      "name": "luaX_lex",
+      "address": "0x8003dab4",
+      "size": 1896,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "luaS_new": "0x80041d08",
+    "sprintf": "0x80263a3c",
+    "luaO_chunkid": "0x8003ef80",
+    "luaO_verror": "0x8003eecc",
+    "strcpy": "0x80266a7c",
+    "luaO_openspace": "0x8003edd0",
+    "_ctype_": "0x802bfdac",
+    "luaO_str2d": "0x8003ee34",
+    "luaS_newlstr": "0x80041c04"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "llex.c",
+  "upstream": {
+    "archive": "https://www.lua.org/ftp/lua-4.0.1.tar.gz",
+    "sha256": "df746e149cf6939e90009d2e540eee918d585b4d1bc6d68b19316a050d484d2a",
+    "path": "src/llex.c"
+  },
+  "discarded_local_functions": []
+}

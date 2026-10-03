@@ -1,0 +1,224 @@
+{
+  "id": "lmathlib",
+  "source": "src/lua/lmathlib.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8003e21c",
+      "size": 2540,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x80296310",
+      "size": 488,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "math_abs",
+      "address": "0x8003e21c",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "math_sin",
+      "address": "0x8003e25c",
+      "size": 76,
+      "binding": 0
+    },
+    {
+      "name": "math_cos",
+      "address": "0x8003e2a8",
+      "size": 76,
+      "binding": 0
+    },
+    {
+      "name": "math_tan",
+      "address": "0x8003e2f4",
+      "size": 76,
+      "binding": 0
+    },
+    {
+      "name": "math_asin",
+      "address": "0x8003e340",
+      "size": 76,
+      "binding": 0
+    },
+    {
+      "name": "math_acos",
+      "address": "0x8003e38c",
+      "size": 76,
+      "binding": 0
+    },
+    {
+      "name": "math_atan",
+      "address": "0x8003e3d8",
+      "size": 76,
+      "binding": 0
+    },
+    {
+      "name": "math_atan2",
+      "address": "0x8003e424",
+      "size": 108,
+      "binding": 0
+    },
+    {
+      "name": "math_ceil",
+      "address": "0x8003e490",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "math_floor",
+      "address": "0x8003e4d0",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "math_mod",
+      "address": "0x8003e510",
+      "size": 96,
+      "binding": 0
+    },
+    {
+      "name": "math_sqrt",
+      "address": "0x8003e570",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "math_pow",
+      "address": "0x8003e5b0",
+      "size": 96,
+      "binding": 0
+    },
+    {
+      "name": "math_log",
+      "address": "0x8003e610",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "math_log10",
+      "address": "0x8003e650",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "math_exp",
+      "address": "0x8003e690",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "math_deg",
+      "address": "0x8003e6d0",
+      "size": 72,
+      "binding": 0
+    },
+    {
+      "name": "math_rad",
+      "address": "0x8003e718",
+      "size": 72,
+      "binding": 0
+    },
+    {
+      "name": "math_frexp",
+      "address": "0x8003e760",
+      "size": 112,
+      "binding": 0
+    },
+    {
+      "name": "math_ldexp",
+      "address": "0x8003e7d0",
+      "size": 104,
+      "binding": 0
+    },
+    {
+      "name": "math_min",
+      "address": "0x8003e838",
+      "size": 140,
+      "binding": 0
+    },
+    {
+      "name": "math_max",
+      "address": "0x8003e8c4",
+      "size": 140,
+      "binding": 0
+    },
+    {
+      "name": "math_random",
+      "address": "0x8003e950",
+      "size": 512,
+      "binding": 0
+    },
+    {
+      "name": "math_randomseed",
+      "address": "0x8003eb50",
+      "size": 56,
+      "binding": 0
+    },
+    {
+      "name": "lua_mathlibopen",
+      "address": "0x8003eb88",
+      "size": 128,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "luaL_check_number": "0x80039184",
+    "lua_pushnumber": "0x80038d4c",
+    "sin": "0x8026f480",
+    "cos": "0x8026f0c8",
+    "tan": "0x8026f560",
+    "asin": "0x8026d4f8",
+    "acos": "0x8026d27c",
+    "atan": "0x8026ed3c",
+    "atan2": "0x8026d754",
+    "ceil": "0x8026ef70",
+    "floor": "0x8026f1e4",
+    "fmod": "0x8026dc44",
+    "sqrt": "0x8026eb28",
+    "pow": "0x8026e358",
+    "log": "0x8026df9c",
+    "log10": "0x8026e22c",
+    "exp": "0x8026d9c8",
+    "frexp": "0x8026f340",
+    "ldexp": "0x8026f3f8",
+    "lua_gettop": "0x80038b34",
+    "rand": "0x80265c98",
+    "luaL_argerror": "0x80039080",
+    "lua_error": "0x8003bb9c",
+    "srand": "0x80265c8c",
+    "luaL_openlib": "0x800391f8",
+    "lua_pushcclosure": "0x80038e64",
+    "lua_settagmethod": "0x8004296c",
+    "lua_setglobal": "0x80038ef0"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "lmathlib.c",
+  "upstream": {
+    "archive": "https://www.lua.org/ftp/lua-4.0.1.tar.gz",
+    "sha256": "df746e149cf6939e90009d2e540eee918d585b4d1bc6d68b19316a050d484d2a",
+    "path": "src/lib/lmathlib.c"
+  },
+  "discarded_local_functions": []
+}

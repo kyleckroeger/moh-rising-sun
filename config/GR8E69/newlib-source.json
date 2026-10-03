@@ -1,0 +1,995 @@
+{
+  "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+  "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+  "files": [
+    {
+      "path": "include/newlib/_ansi.h",
+      "upstream_path": "newlib/libc/include/_ansi.h",
+      "upstream_sha256": "98221b391010195de4e2824879860b7fe98a8f6bc8ab2c5eaa2a3b029b4f1ad4",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/_syslist.h",
+      "upstream_path": "newlib/libc/include/_syslist.h",
+      "upstream_sha256": "546b13e022a2e53bfad0138e9294d92210773c9a7a61ee2d4ffb152ed4a6396a",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/ar.h",
+      "upstream_path": "newlib/libc/include/ar.h",
+      "upstream_sha256": "d7aad21a7db658f45925014ea2ffd6cb7ba3d40fad05c9a00e77bfe912577ae3",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/assert.h",
+      "upstream_path": "newlib/libc/include/assert.h",
+      "upstream_sha256": "ee9626082870fce9ddbfb31810843f9bf229087a574c5b2177b958192720bb06",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/ctype.h",
+      "upstream_path": "newlib/libc/include/ctype.h",
+      "upstream_sha256": "25f27f2cb35014bfeef07a3ba84187caa2aec9eab0779868c9c694b3570f2a5a",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/dirent.h",
+      "upstream_path": "newlib/libc/include/dirent.h",
+      "upstream_sha256": "d980a17d1911c7879c0c1f0c451b926c921d99bde980bf0f792a347f8bb92476",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/errno.h",
+      "upstream_path": "newlib/libc/include/errno.h",
+      "upstream_sha256": "9e59a1690bc10eb1ecef743bc1ee5aa99e428a53a19700f9737655c00e9b73c9",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/fastmath.h",
+      "upstream_path": "newlib/libc/include/fastmath.h",
+      "upstream_sha256": "7fb7ff119150be066f9e06ea4afa62c4fd13def8a15d3dde3968d57d7f82ba66",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/fcntl.h",
+      "upstream_path": "newlib/libc/include/fcntl.h",
+      "upstream_sha256": "637889253928e98bc028dbdcd58560492aed8e981eff349c43a8e7e6a45f75f5",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/grp.h",
+      "upstream_path": "newlib/libc/include/grp.h",
+      "upstream_sha256": "d5d022317579c4c734c18bc18f248e0029ece139a9616395e32b26a0b14c0ba3",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/ieeefp.h",
+      "upstream_path": "newlib/libc/include/ieeefp.h",
+      "upstream_sha256": "01b35fc8fa1c8305a4960f41ed33f2210a7e635c42e0ad6bbb47d271aa4aafd8",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/locale.h",
+      "upstream_path": "newlib/libc/include/locale.h",
+      "upstream_sha256": "5b05aca51e4c85b02f0d5143dd525c6c0518c77d86c6e2f10538bab5a87f3ce9",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/machine/fastmath.h",
+      "upstream_path": "newlib/libc/include/machine/fastmath.h",
+      "upstream_sha256": "d39269df83b76b04be79c158b737929357bbfdab2cadd9ee0aeada26bf2c6abf",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/machine/ieeefp.h",
+      "upstream_path": "newlib/libc/include/machine/ieeefp.h",
+      "upstream_sha256": "1413b25975efd8aa6461b1f3e1406cf718e83225e4b321e61d66a73c6ed09c7c",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/machine/setjmp-dj.h",
+      "upstream_path": "newlib/libc/include/machine/setjmp-dj.h",
+      "upstream_sha256": "a5a977acaa8dbfb4e8912bb5d25618fd8b73b316f87f02e62cad839dc8686428",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/machine/setjmp.h",
+      "upstream_path": "newlib/libc/include/machine/setjmp.h",
+      "upstream_sha256": "b43b5a58ba50b3e1950b86f1967f7ca2db16a90f36863c80a6264842a3f17d6f",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/machine/time.h",
+      "upstream_path": "newlib/libc/include/machine/time.h",
+      "upstream_sha256": "9da292a66d5b30e812464b0c184782d4de7971f1b29d201926bee6d75ea3f596",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/machine/types.h",
+      "upstream_path": "newlib/libc/include/machine/types.h",
+      "upstream_sha256": "e715a9de8ae996150b49523ae83666ef736a9eceef53726435da58fc9227c741",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/malloc.h",
+      "upstream_path": "newlib/libc/include/malloc.h",
+      "upstream_sha256": "0441a47a8969a985aa1411b929732bb7cc9b3cc0bde9182082b7b64fae2f17ea",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/math.h",
+      "upstream_path": "newlib/libc/include/math.h",
+      "upstream_sha256": "965125756a364944395114dcae51b7aecb3fdf08fbeb8106cc5170bd3df86e05",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/paths.h",
+      "upstream_path": "newlib/libc/include/paths.h",
+      "upstream_sha256": "48edeaa8848b5fddfb7d708d4253e7cc19acdede16b1284e7080a969606dd004",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/process.h",
+      "upstream_path": "newlib/libc/include/process.h",
+      "upstream_sha256": "0e7225ae487452da138e2d375375f3041f7c47de93f5f8d56ebfb22a979dbe03",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/pwd.h",
+      "upstream_path": "newlib/libc/include/pwd.h",
+      "upstream_sha256": "214165c25b7b86c57237b3e3ca4ad5547a5ab002a1f520dd8e266421adecc66e",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/reent.h",
+      "upstream_path": "newlib/libc/include/reent.h",
+      "upstream_sha256": "dfde5846b345c7979e66eaf1070cca469a9ecb5600dfa6aa752d7a03d9c18ac0",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/regdef.h",
+      "upstream_path": "newlib/libc/include/regdef.h",
+      "upstream_sha256": "e889cdb89b2b0c335eeaff98d11bd5cb455118c798d66d6239130860558197d9",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/setjmp.h",
+      "upstream_path": "newlib/libc/include/setjmp.h",
+      "upstream_sha256": "805481ad4f38fc4d044a3162706d30644a99c1380f444eb15eb26515011f0980",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/signal.h",
+      "upstream_path": "newlib/libc/include/signal.h",
+      "upstream_sha256": "03a9537dcc96837d0599b1913b4b8f5b2f8cda4b9ffdb82423f39c25008f419f",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/stdio.h",
+      "upstream_path": "newlib/libc/include/stdio.h",
+      "upstream_sha256": "f265dcb2b02e157ca39c3c04b935025b111a81c9f695b5c0d474e1d994dcb830",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/stdlib.h",
+      "upstream_path": "newlib/libc/include/stdlib.h",
+      "upstream_sha256": "2883ac45322ba9c10605315bf5a163d79d5bda34c21887c0a0e2ba238e8dfc35",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/string.h",
+      "upstream_path": "newlib/libc/include/string.h",
+      "upstream_sha256": "5eac2598e42e865b53c463b37a99df7734ce3e064e5f264b275264ecf49252f9",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/_types.h",
+      "upstream_path": "newlib/libc/include/sys/_types.h",
+      "upstream_sha256": "71a2a78b9af882aee475b25bc5761f1680d40342097922dd55414513ad8074ca",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/config.h",
+      "upstream_path": "newlib/libc/include/sys/config.h",
+      "upstream_sha256": "9d74e9e167d76094c834823e0dfef7f547e6d74560cd326b586824843bd15f91",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/dirent.h",
+      "upstream_path": "newlib/libc/include/sys/dirent.h",
+      "upstream_sha256": "c09892eee56fab9b2f22f3fb6f0417452fa775417a7051abc5805a43a0cfd858",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/errno.h",
+      "upstream_path": "newlib/libc/include/sys/errno.h",
+      "upstream_sha256": "b865d58ecd04b1b877b94865621e5cc948eb986b6951ba64fde1447d563f00de",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/fcntl.h",
+      "upstream_path": "newlib/libc/include/sys/fcntl.h",
+      "upstream_sha256": "f431eecf0eaae1663002380f67a972762ea293b42b07cd2def751a1a9903d30b",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/file.h",
+      "upstream_path": "newlib/libc/include/sys/file.h",
+      "upstream_sha256": "c4e08fdb66f877ddc18fc704b7127aea39766f08593fa833d7f385beea0b5a35",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/param.h",
+      "upstream_path": "newlib/libc/include/sys/param.h",
+      "upstream_sha256": "cf5bb54e6685a9ce75aead52acb03804e7629bf2d62ecfe68e92b4521231f985",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/reent.h",
+      "upstream_path": "newlib/libc/include/sys/reent.h",
+      "upstream_sha256": "382db32b9d0410129ff54f8341404df171b42389e5a4c1dc2d0f6f93f38c662d",
+      "modified": true
+    },
+    {
+      "path": "include/newlib/sys/resource.h",
+      "upstream_path": "newlib/libc/include/sys/resource.h",
+      "upstream_sha256": "da3d65d5d2fc0d03827d6c6563d10b4353f46584c279bac2c9a9fec81ece9d14",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/signal.h",
+      "upstream_path": "newlib/libc/include/sys/signal.h",
+      "upstream_sha256": "1ba1107166060597278e343b65882cad3d9cb0e25e339335d5ee167affc97316",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/stat-dj.h",
+      "upstream_path": "newlib/libc/include/sys/stat-dj.h",
+      "upstream_sha256": "6dbd0b12990b0b84c2dd09e501fad88d77e65f623c1f6a7252187e790bb699d3",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/stat.h",
+      "upstream_path": "newlib/libc/include/sys/stat.h",
+      "upstream_sha256": "472d4f2996bfa51f3a05da5112872e1b3f419003cea27803894435bc7625efc3",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/time.h",
+      "upstream_path": "newlib/libc/include/sys/time.h",
+      "upstream_sha256": "5565cc77bf852232f7f8301e3925612f781f4c3d3476b4c7f242d0d029118e6e",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/timeb.h",
+      "upstream_path": "newlib/libc/include/sys/timeb.h",
+      "upstream_sha256": "6677d664e8b729a484fed4c07e7a07d89e965cc3eda1cf1803ba4b7c4148d30e",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/times.h",
+      "upstream_path": "newlib/libc/include/sys/times.h",
+      "upstream_sha256": "10b23ccf57206fb6ba71f0727b017ae00ee7615d555c7dfb9291628fcaafd14e",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/types.h",
+      "upstream_path": "newlib/libc/include/sys/types.h",
+      "upstream_sha256": "fa900f5597c792ce2d4bd3ad84690fbb11fb8771c9ed2a1146f4f3637f58dff3",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/unistd.h",
+      "upstream_path": "newlib/libc/include/sys/unistd.h",
+      "upstream_sha256": "82bde59f21171b5cdfdc7d779d13398ece293b6e5ddd32387e3df40a1d058577",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/utime.h",
+      "upstream_path": "newlib/libc/include/sys/utime.h",
+      "upstream_sha256": "2bcd7d80d018eb7ef8912394fa6c84da8a2212fba9561db9e0b03d9ee8e40d34",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/sys/wait.h",
+      "upstream_path": "newlib/libc/include/sys/wait.h",
+      "upstream_sha256": "bb67126e824edcd4900052735e20eb63eb4eb9b6155330fd9e57d07ab518ea17",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/termios.h",
+      "upstream_path": "newlib/libc/include/termios.h",
+      "upstream_sha256": "fc13c1c649a2530491bed09e072743a931822b0faa826efb34e98bafd7373fa8",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/time.h",
+      "upstream_path": "newlib/libc/include/time.h",
+      "upstream_sha256": "edb5e8f1bcb8fe6ba5ffcbe0638d3de3cf5f05ab1152f9733ecb30a1bf041e4f",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/unctrl.h",
+      "upstream_path": "newlib/libc/include/unctrl.h",
+      "upstream_sha256": "4b08e53b0e2e4b5d9dacbbd9135362bbd983b28863b416fabedb6c0837f6224c",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/unistd.h",
+      "upstream_path": "newlib/libc/include/unistd.h",
+      "upstream_sha256": "19f31553182c4d649dd0d6301ffdbb5b4d7903b28373dd070a553798b41f524f",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/utime.h",
+      "upstream_path": "newlib/libc/include/utime.h",
+      "upstream_sha256": "74d05be2590a8621cc64aefbb15510d8e628c40e77715dba084e3ffb78505ba5",
+      "modified": false
+    },
+    {
+      "path": "include/newlib/utmp.h",
+      "upstream_path": "newlib/libc/include/utmp.h",
+      "upstream_sha256": "0cf902b1dcfa51852a3127a012ef4e77182510b0c5c89dab89d522656366e237",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/ctype/_tolower.c",
+      "upstream_path": "newlib/libc/ctype/_tolower.c",
+      "upstream_sha256": "9277866316489dc8db5959951d58557fa0685e32033b6587c417a9601720bd70",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/ctype/isdigit.c",
+      "upstream_path": "newlib/libc/ctype/isdigit.c",
+      "upstream_sha256": "ad9a5e9c29e8ef25041b01cd430a27335a2a7570a8ba0ee2106768e1b2fc2c43",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/ctype/isspace.c",
+      "upstream_path": "newlib/libc/ctype/isspace.c",
+      "upstream_sha256": "1a40ce65f9f373d3ed42fd9f16346028f4cdd95528bfba1718e6c95f43b3abd4",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/ctype/tolower.c",
+      "upstream_path": "newlib/libc/ctype/tolower.c",
+      "upstream_sha256": "484620aba144ee12e799f9f912856e47fa5b66ebe484724a5dca430df12a1036",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/common/fdlibm.h",
+      "upstream_path": "newlib/libm/common/fdlibm.h",
+      "upstream_sha256": "23a16a735cea8da3249cacc47a08ec2f3a7296a284e139a5d4bc83856daca9eb",
+      "modified": true
+    },
+    {
+      "path": "src/newlib/libm/common/s_copysign.c",
+      "upstream_path": "newlib/libm/common/s_copysign.c",
+      "upstream_sha256": "dd7e69e31c64d9dc0a7c69d7e9f20019b133291b38f15724c72284d6285bf8d2",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/common/s_finite.c",
+      "upstream_path": "newlib/libm/common/s_finite.c",
+      "upstream_sha256": "c7a1f1632ae473fd78eeaf9811307825cf264af1197135edc361814be155cfa7",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/common/s_scalbn.c",
+      "upstream_path": "newlib/libm/common/s_scalbn.c",
+      "upstream_sha256": "a0a3c066262ef4b2bbae98b822db09e482d0dc669f933030ce75930930eba3bc",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/common/sf_copysign.c",
+      "upstream_path": "newlib/libm/common/sf_copysign.c",
+      "upstream_sha256": "29f9fac19328beb4eebe6f2cd41bd8b6a30b8fca589210cdd49e1a853cdbcc35",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/common/sf_scalbn.c",
+      "upstream_path": "newlib/libm/common/sf_scalbn.c",
+      "upstream_sha256": "ad11ee48edac3c813fb306f1411629530421b056acb89b30a5b0507b760b0db4",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/e_acos.c",
+      "upstream_path": "newlib/libm/math/e_acos.c",
+      "upstream_sha256": "da8ecdf4225af6c5a58a8a6b5e87694fc4a0978d15af4c2c8d158744002b3754",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/e_asin.c",
+      "upstream_path": "newlib/libm/math/e_asin.c",
+      "upstream_sha256": "b89f374551c07dc2af5c2504eadc5451a262b1ea605c846c1ad964d156bf13c5",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/e_atan2.c",
+      "upstream_path": "newlib/libm/math/e_atan2.c",
+      "upstream_sha256": "bf5676a81b587e754e2d088ee01977995e714c5105adf9b78a935932ad293bda",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/e_exp.c",
+      "upstream_path": "newlib/libm/math/e_exp.c",
+      "upstream_sha256": "62257f77f5ea647491b5f1c06c398a41efdaf7edb98d853ac5db24f6758f01f8",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/e_fmod.c",
+      "upstream_path": "newlib/libm/math/e_fmod.c",
+      "upstream_sha256": "a2a86b8b4988672fae5a38306be2846b3724820b82eee6728a89bbdc65a296e4",
+      "modified": true
+    },
+    {
+      "path": "src/newlib/libm/math/e_log.c",
+      "upstream_path": "newlib/libm/math/e_log.c",
+      "upstream_sha256": "c5d171440dc985644c3ffe797a2c042cdb7f05f0fea18e6a99a4d96e1d2d0638",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/e_log10.c",
+      "upstream_path": "newlib/libm/math/e_log10.c",
+      "upstream_sha256": "94b061bbfb0b9ed324766088f07e6b311568b35f9e7f2257c9a27bb93bf9a17f",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/e_pow.c",
+      "upstream_path": "newlib/libm/math/e_pow.c",
+      "upstream_sha256": "6b748503091b6001f5a342ff83ff33ef7d619dd93a6f1ec28a85624dd18bffe2",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/e_rem_pio2.c",
+      "upstream_path": "newlib/libm/math/e_rem_pio2.c",
+      "upstream_sha256": "c0d42a82e426798b382cab5299b2f95c4bf508e5c5eba5888a81096378fbee31",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/e_sqrt.c",
+      "upstream_path": "newlib/libm/math/e_sqrt.c",
+      "upstream_sha256": "6d1c65be1de7b080310a7d3bce08f7f66da3acadbaa8053d518b43024adc5d7c",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/ef_acos.c",
+      "upstream_path": "newlib/libm/math/ef_acos.c",
+      "upstream_sha256": "7b63d1cbdbab7a53569e6acc7a182721e31281c96d53a5a7b1b9b075907b4cdf",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/ef_asin.c",
+      "upstream_path": "newlib/libm/math/ef_asin.c",
+      "upstream_sha256": "3c11e39a6c6fc19326b8e632a093249465f6b01140c6f00c96ade0f9ce379afb",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/ef_atan2.c",
+      "upstream_path": "newlib/libm/math/ef_atan2.c",
+      "upstream_sha256": "639af38b04860e7b1f99e861884b85c01b22d2f848f77439d83c5ca887a9dcd6",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/ef_fmod.c",
+      "upstream_path": "newlib/libm/math/ef_fmod.c",
+      "upstream_sha256": "b39481ebcfd75620e30a4de269d9e120556fd1661c873ffce84eed478057f83a",
+      "modified": true
+    },
+    {
+      "path": "src/newlib/libm/math/ef_rem_pio2.c",
+      "upstream_path": "newlib/libm/math/ef_rem_pio2.c",
+      "upstream_sha256": "b3df5cac0996268aef347ac8b2e99d20ab92749f25f8de3fcb8a9575b34a800b",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/ef_sqrt.c",
+      "upstream_path": "newlib/libm/math/ef_sqrt.c",
+      "upstream_sha256": "55dce6ae436e7b2570200f70692e9dfd5add01a8f8504e50eca08aa4713aec67",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/k_cos.c",
+      "upstream_path": "newlib/libm/math/k_cos.c",
+      "upstream_sha256": "f0e70a8ac9e9fffc0783cba05104fa90ab676450da737cf0c0e2fdcaa4484bfd",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/k_rem_pio2.c",
+      "upstream_path": "newlib/libm/math/k_rem_pio2.c",
+      "upstream_sha256": "1123eaff975595bf56d5e1ae3c218a6c71dc8709bf86c68bee207ac53221fa16",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/k_sin.c",
+      "upstream_path": "newlib/libm/math/k_sin.c",
+      "upstream_sha256": "fb43493e9b0b882fb9dd9715d44e0e00c25c1724a18f40a9c9fc114a63e32130",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/k_tan.c",
+      "upstream_path": "newlib/libm/math/k_tan.c",
+      "upstream_sha256": "4bb3c159f1f72060fdd4f86cedb0abef77175d8a1e7d0a748ab936fa17a22c56",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/kf_cos.c",
+      "upstream_path": "newlib/libm/math/kf_cos.c",
+      "upstream_sha256": "0be4b097e803ee5594c69d027719b7a01aeb2d047fd8414ff570739637d7a1fe",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/kf_rem_pio2.c",
+      "upstream_path": "newlib/libm/math/kf_rem_pio2.c",
+      "upstream_sha256": "ca0521c7d2a745c332832eb8747780b3c87908896ebc4f0c26cf2ef572f8cf53",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/kf_sin.c",
+      "upstream_path": "newlib/libm/math/kf_sin.c",
+      "upstream_sha256": "95c33e554946eaa08255355e5241db4299c816a84d57a5f87fae59eb58445f95",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/kf_tan.c",
+      "upstream_path": "newlib/libm/math/kf_tan.c",
+      "upstream_sha256": "42f649485b5a0edf9103d2ab42ebdc75af86a843c8a62dac228ba7d56230ae36",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/s_atan.c",
+      "upstream_path": "newlib/libm/math/s_atan.c",
+      "upstream_sha256": "9f904395112772b3f1b86ba4cf4897b32dbf227db6b853a6f9fc975ebf5beaea",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/s_ceil.c",
+      "upstream_path": "newlib/libm/math/s_ceil.c",
+      "upstream_sha256": "b8afdcaf7ef28067e1a5b699c4fe1ccfebe03840119cee37c96d1aa78d50979b",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/s_cos.c",
+      "upstream_path": "newlib/libm/math/s_cos.c",
+      "upstream_sha256": "af89424f187be4d0991474f6331ae1fd23281a7bc7be5895f3fbaf54a4d07d20",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/s_fabs.c",
+      "upstream_path": "newlib/libm/math/s_fabs.c",
+      "upstream_sha256": "9123aaa7d0c3b538db9f37d2cde1156d56013d1394f6a798fa5a6c5363e31b3a",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/s_floor.c",
+      "upstream_path": "newlib/libm/math/s_floor.c",
+      "upstream_sha256": "bfcaab777d6cde5ebb3402b56ae57f8f17155cb6ec7a81793dfe67290616ddda",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/s_frexp.c",
+      "upstream_path": "newlib/libm/math/s_frexp.c",
+      "upstream_sha256": "e011be430f361eb9465b880972c8aaf8a484ac5ebbf123aee9ea361f1c27bc5f",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/s_ldexp.c",
+      "upstream_path": "newlib/libm/math/s_ldexp.c",
+      "upstream_sha256": "dfb18e1255116453a9a5efefa837101491bde2612e283d98036640fa4c7c610a",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/s_sin.c",
+      "upstream_path": "newlib/libm/math/s_sin.c",
+      "upstream_sha256": "cdaef8e0eaddbc6b7b94ec7cfddf43f2fa582394e8ea0a6641407ab7b73986f8",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/s_tan.c",
+      "upstream_path": "newlib/libm/math/s_tan.c",
+      "upstream_sha256": "c0ed049fbf303e7a89783a70b65df3eebb076abbb078bf1af163b582129293fb",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/sf_atan.c",
+      "upstream_path": "newlib/libm/math/sf_atan.c",
+      "upstream_sha256": "2179e04bf9b2274efe2d0dff31082a9d2e12d8283cf3f275768774bd2d8e7b24",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/sf_fabs.c",
+      "upstream_path": "newlib/libm/math/sf_fabs.c",
+      "upstream_sha256": "7714898070107896198789fbf8a64aae3092d5f0e03af50facb23eb5951b6dff",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/libm/math/sf_floor.c",
+      "upstream_path": "newlib/libm/math/sf_floor.c",
+      "upstream_sha256": "d6f369587250b29810d7ee3dad05fbe07d3a072e4f96ad31c96e91584984f50d",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/reent/closer.c",
+      "upstream_path": "newlib/libc/reent/closer.c",
+      "upstream_sha256": "a71d620ff451b53088e8cb188a0fc3f29c1edb754178d8c972643a4f4b63e7e3",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/reent/fstatr.c",
+      "upstream_path": "newlib/libc/reent/fstatr.c",
+      "upstream_sha256": "707f3d17659adfef04dc2cbef44875b142f606fa5e99c4e063947db810c65d69",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/reent/lseekr.c",
+      "upstream_path": "newlib/libc/reent/lseekr.c",
+      "upstream_sha256": "29584e6e5455c1d40264ab5f041c6d7e4f384b50b52b6a18d824f46d544982ce",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/reent/readr.c",
+      "upstream_path": "newlib/libc/reent/readr.c",
+      "upstream_sha256": "ea40a19f1f8d41717e9fb4f60ecfac8352a58acadfb7384023306f64b64242c4",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/reent/writer.c",
+      "upstream_path": "newlib/libc/reent/writer.c",
+      "upstream_sha256": "c2c1a9cc95229e8b95f5e4c3781e4bcb99de5bef482c6f589ad0fc74af350ff2",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/fflush.c",
+      "upstream_path": "newlib/libc/stdio/fflush.c",
+      "upstream_sha256": "734ccf4f8b90b2e690cc9bddd165260b450f3efa3048b4ca73f71a1818084513",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/floatio.h",
+      "upstream_path": "newlib/libc/stdio/floatio.h",
+      "upstream_sha256": "ceb13c8d94569d2ea6eeaecdd2953be30c003222733808e685118aaf12269045",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/fprintf.c",
+      "upstream_path": "newlib/libc/stdio/fprintf.c",
+      "upstream_sha256": "663413fd2d578b1541733a2351969ff753b2019c7feedbc1119d5d43b0b1a521",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/fread.c",
+      "upstream_path": "newlib/libc/stdio/fread.c",
+      "upstream_sha256": "aa3b9711739619c69010a7efcaac0fac4ffa47452e0234817f0f291724831d76",
+      "modified": true
+    },
+    {
+      "path": "src/newlib/stdio/fvwrite.c",
+      "upstream_path": "newlib/libc/stdio/fvwrite.c",
+      "upstream_sha256": "bb023c67e5a5b519248bb70ef965f6741f23e94005d92e609739c98fe1adf5a7",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/fvwrite.h",
+      "upstream_path": "newlib/libc/stdio/fvwrite.h",
+      "upstream_sha256": "56bdebcc58d89a26db62cc3f95773d7474a4dc5a355730c426d679cbde78c387",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/fwalk.c",
+      "upstream_path": "newlib/libc/stdio/fwalk.c",
+      "upstream_sha256": "d0e051dab8bfa43ea17eb54d0b11a298a6871fe710d46260936002593b12a73f",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/local.h",
+      "upstream_path": "newlib/libc/stdio/local.h",
+      "upstream_sha256": "d69cf9d9fe667582362041c0049d7ddd5a2b3fce34a7bf705aaa3ee38670e367",
+      "modified": true
+    },
+    {
+      "path": "src/newlib/stdio/makebuf.c",
+      "upstream_path": "newlib/libc/stdio/makebuf.c",
+      "upstream_sha256": "d0e4248af527b9b25d01ee605c6d1e9a902fcbef6a929c4bd3ce581b6939775d",
+      "modified": true
+    },
+    {
+      "path": "src/newlib/stdio/printf.c",
+      "upstream_path": "newlib/libc/stdio/printf.c",
+      "upstream_sha256": "94e22c2b2992e5ad54e64830eadca212ddcd1f6d6ae6712113929c1c6352e33a",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/puts.c",
+      "upstream_path": "newlib/libc/stdio/puts.c",
+      "upstream_sha256": "1613ed8741d59435e6896fb14a40c5ed0db06aa1c3d4f10db8ba236d7b1daddd",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/refill.c",
+      "upstream_path": "newlib/libc/stdio/refill.c",
+      "upstream_sha256": "5b62c3eab3818b89d7606b13265b2237514635b9c0d9f225dae5e3730b120cf7",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/sprintf.c",
+      "upstream_path": "newlib/libc/stdio/sprintf.c",
+      "upstream_sha256": "bb49f07119a74ae9f1e0f719863f53f1a6320f543e558ed3430b4451c1a65000",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/sscanf.c",
+      "upstream_path": "newlib/libc/stdio/sscanf.c",
+      "upstream_sha256": "23969007e1f29c448b24da604cb416ef71fba0d3923796c38fca93626506e432",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/stdio.c",
+      "upstream_path": "newlib/libc/stdio/stdio.c",
+      "upstream_sha256": "c87a527685383b1d288836be1c27762ba5e9816fc6f35a25c7f025f94f96731f",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/ungetc.c",
+      "upstream_path": "newlib/libc/stdio/ungetc.c",
+      "upstream_sha256": "ae407df30ab01b8fcfda225853fb2d1aab79434c32f89b07b2654d64a44c78d9",
+      "modified": true
+    },
+    {
+      "path": "src/newlib/stdio/vfieeefp.h",
+      "upstream_path": "newlib/libc/stdio/vfieeefp.h",
+      "upstream_sha256": "e8033dc602ee153fdf4a54dcde59d67a05ad91741582a3cebcc670a81ba87aa0",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/vfscanf.c",
+      "upstream_path": "newlib/libc/stdio/vfscanf.c",
+      "upstream_sha256": "824bad6c45dd382a66a3e5f0cdc0d770dd68d4e39cbe89359abc0bac7afcce57",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/vprintf.c",
+      "upstream_path": "newlib/libc/stdio/vprintf.c",
+      "upstream_sha256": "a1d8647a72e63c0b2a8236442de2f1ccd8c61e488721e25a15233b0876acff26",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/vsprintf.c",
+      "upstream_path": "newlib/libc/stdio/vsprintf.c",
+      "upstream_sha256": "c7ae42063a87297e70bf36503b695754ee27e61e4bcd2e68b1a8847aa120f9a6",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdio/wsetup.c",
+      "upstream_path": "newlib/libc/stdio/wsetup.c",
+      "upstream_sha256": "7cd70a7d97bb2e6c5a8ae42fdaee2a578fa3b0d2eab9b133a10303f3b7cbefa0",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/atexit.c",
+      "upstream_path": "newlib/libc/stdlib/atexit.c",
+      "upstream_sha256": "eddb37fdee8a946d6dc812521adaa9215ad3f74047bd78a74647fef0d0107f46",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/atexit.h",
+      "upstream_path": "newlib/libc/stdlib/atexit.h",
+      "upstream_sha256": "37c863fed6ad5906874986c17b76a6c37bc1af92c51fbe3d133f02d7a9459c22",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/atof.c",
+      "upstream_path": "newlib/libc/stdlib/atof.c",
+      "upstream_sha256": "132a03425875fc9657f451d10d3ade1c098aced9aaf5762f07477ef0e41ffc39",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/atoi.c",
+      "upstream_path": "newlib/libc/stdlib/atoi.c",
+      "upstream_sha256": "c8eb74d87d435681b628a85c43192fcc9bb6098eb50c546e67f7ca487a83d369",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/bsearch.c",
+      "upstream_path": "newlib/libc/stdlib/bsearch.c",
+      "upstream_sha256": "73d08be739bd9fc5684544c2cdf4db1c667f12636e1e151278b0ab5faf68c1dd",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/envlock.h",
+      "upstream_path": "newlib/libc/stdlib/envlock.h",
+      "upstream_sha256": "42de842b869f2160f997c0a5926351218754ded34266acfa541f68f6e71cdd90",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/local.h",
+      "upstream_path": "newlib/libc/stdlib/local.h",
+      "upstream_sha256": "a97fd96bb501d57f38e85e5dcb50d77f2def99b4a8bb7ecd30895328cb31ae8f",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/mbctype.h",
+      "upstream_path": "newlib/libc/stdlib/mbctype.h",
+      "upstream_sha256": "ba6083366b9d9aae12bdf8dfef9d94f626c71d859bc59a6d716e8fd90550fe34",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/mbtowc_r.c",
+      "upstream_path": "newlib/libc/stdlib/mbtowc_r.c",
+      "upstream_sha256": "8cdf73cb3224611fd52f01bbf1dea0ddf9bcac151c31a0847800b166eb0ce6d4",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/mprec.h",
+      "upstream_path": "newlib/libc/stdlib/mprec.h",
+      "upstream_sha256": "9f6dfb24ce98064c8a0a984860e8cd563eb31fb0412b84ad5aa8119f3e938ce5",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/qsort.c",
+      "upstream_path": "newlib/libc/stdlib/qsort.c",
+      "upstream_sha256": "7368f5037292be52f4ac2486a704b8c1863faeba2fc16462e4258bd34e907bad",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/rand.c",
+      "upstream_path": "newlib/libc/stdlib/rand.c",
+      "upstream_sha256": "d1cb734d07e5e1f168b1e18eebf2d408370ac13c79e0d1058d4b7593e25a4561",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/std.h",
+      "upstream_path": "newlib/libc/stdlib/std.h",
+      "upstream_sha256": "e1bf548cd9835b7546a76f49c56226ca45b955795eb2246e1eaeb6549057799c",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/strtol.c",
+      "upstream_path": "newlib/libc/stdlib/strtol.c",
+      "upstream_sha256": "0e1c3283a081c3bac9e74e38af6ba249624739bbfd350b80b6a6299812d4f8e8",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/strtoul.c",
+      "upstream_path": "newlib/libc/stdlib/strtoul.c",
+      "upstream_sha256": "3561c247567ebcb5872ecfec7a52d5648f8fcedfb493e133a40a6f8824650356",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/wcstombs.c",
+      "upstream_path": "newlib/libc/stdlib/wcstombs.c",
+      "upstream_sha256": "d901dfcc610b82acacd4c94bed74ad79cbe56466a74cd11e01ee08e84f910cf1",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/wcstombs_r.c",
+      "upstream_path": "newlib/libc/stdlib/wcstombs_r.c",
+      "upstream_sha256": "c205fa09d5873707e8fa902bed92acccc18427c932104a2f0140603433aad40c",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/stdlib/wctomb_r.c",
+      "upstream_path": "newlib/libc/stdlib/wctomb_r.c",
+      "upstream_sha256": "c4708a426367a9e09269c9685cc2f0ada3c33401338c604aeffc73bffb015368",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/memchr.c",
+      "upstream_path": "newlib/libc/string/memchr.c",
+      "upstream_sha256": "3fd97d1c290c82bf122bc799e24f87682da89a786ab210506964811e5e115d1e",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/memcmp.c",
+      "upstream_path": "newlib/libc/string/memcmp.c",
+      "upstream_sha256": "53aff56e6ae47cb8260ddcd19cd76c444491da75094dd279bdb2c19be5f7ae85",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/memcpy.c",
+      "upstream_path": "newlib/libc/string/memcpy.c",
+      "upstream_sha256": "89ee5338c9b7afed59068cfb408769c0c46cefe0c59f979731a4520311e53990",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/memmove.c",
+      "upstream_path": "newlib/libc/string/memmove.c",
+      "upstream_sha256": "018dbd67cc6087eb9015ee133a2cd5b1a792341d147772f9fb15529ac5a861d9",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/memset.c",
+      "upstream_path": "newlib/libc/string/memset.c",
+      "upstream_sha256": "86793e2d167133a652d5a31b89708e4cbcefc2192c27b0ba781977c8c473d32a",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/strcat.c",
+      "upstream_path": "newlib/libc/string/strcat.c",
+      "upstream_sha256": "ea0e8b62e141bc93fab06e3c5ef51faabdcce998068e4db4e1d4ad04cbd65c2a",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/strchr.c",
+      "upstream_path": "newlib/libc/string/strchr.c",
+      "upstream_sha256": "0a13efb5508c24d51c447be1172c4ac38774c7fccccac16ec84f0a58ac737b80",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/strcmp.c",
+      "upstream_path": "newlib/libc/string/strcmp.c",
+      "upstream_sha256": "6f62e0d671b401da18f5e708f064dacb1eef465d393cdb7d13b390e9717b0e7e",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/strcoll.c",
+      "upstream_path": "newlib/libc/string/strcoll.c",
+      "upstream_sha256": "54fffea47f4b4138b6a219517e06e6be597d6a2db9de648249f68fc64ebd0f3b",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/strcpy.c",
+      "upstream_path": "newlib/libc/string/strcpy.c",
+      "upstream_sha256": "591ce22174939e22ef839071c998c58c4e49ae0170d90499f003391d2ba8c74c",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/strcspn.c",
+      "upstream_path": "newlib/libc/string/strcspn.c",
+      "upstream_sha256": "042b87f217f959a6845b6dd5710a7f52179db07a1e403f14e4a2da96641d6085",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/strlen.c",
+      "upstream_path": "newlib/libc/string/strlen.c",
+      "upstream_sha256": "70495ac9114b96b9023be71440e31173f6a90f9b499f81b7ddca7f59ae7e981f",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/strncmp.c",
+      "upstream_path": "newlib/libc/string/strncmp.c",
+      "upstream_sha256": "e7fc79ac82b3c02a6339a149abe2a0f253be398208b224e87076e49b4778216e",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/strncpy.c",
+      "upstream_path": "newlib/libc/string/strncpy.c",
+      "upstream_sha256": "02668aeb2461c074f110b2cdda739cb0346a239196c23bf38f78db0917084da2",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/strpbrk.c",
+      "upstream_path": "newlib/libc/string/strpbrk.c",
+      "upstream_sha256": "ff1c75e57e95c5cbb7b97b7e6f7a4ab1c9c8259b351fafdf06355a0f2bdf457f",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/strrchr.c",
+      "upstream_path": "newlib/libc/string/strrchr.c",
+      "upstream_sha256": "402a6ca9631680b81811553ad4a60b85271b90f7cce71b898872c845b1931ff9",
+      "modified": false
+    },
+    {
+      "path": "src/newlib/string/strstr.c",
+      "upstream_path": "newlib/libc/string/strstr.c",
+      "upstream_sha256": "09437b966be6a045479e511b84d9ef0156823a5c9ccd29dc4c93d0f7c53998e7",
+      "modified": false
+    }
+  ],
+  "compiler_headers": {
+    "stdarg.h": {
+      "url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/gcc-2.95.2/gcc/ginclude/stdarg.h",
+      "upstream_sha256": "ddef04fd12bf68996cd5f0b4dc14f0a9b32b971db663f11eb8a90eadb982a3dc",
+      "modified": false
+    },
+    "va-ppc.h": {
+      "base_url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/egcs-1.1.2/gcc/ginclude/va-ppc.h",
+      "base_sha256": "88dd7eaa250e46077d0169063da9a7f30182029ad8aad159089579c01fd7667b",
+      "va_start_url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/gcc-2.95.2/gcc/ginclude/va-ppc.h",
+      "va_start_sha256": "bb41ad04f83eaf27164e930b32e93aac421ef5dfe54328b744fd17634413d792",
+      "modified": true
+    },
+    "stddef.h": "Minimal target declarations authored locally",
+    "limits.h": "Minimal target constants authored locally",
+    "float.h": "Minimal target constants authored locally"
+  }
+}

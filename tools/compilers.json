@@ -1,0 +1,11 @@
+{
+  "archive": {
+    "url": "https://files.decomp.dev/compilers_20251118.zip",
+    "sha256": "69b0d4980a2eccea4ae6e70b486714b5190cb6c75e3bc7b8fb5878a8854d0d1c"
+  },
+  "wibo": {
+    "version": "1.0.3",
+    "url": "https://github.com/decompals/wibo/releases/download/1.0.3/wibo-macos",
+    "sha256": "bfb53e13706506fef31c331a1b4312af84a5c71af451f0cafe42c5511b2acbe4"
+  }
+}

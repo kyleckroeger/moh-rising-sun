@@ -1,0 +1,70 @@
+{
+  "id": "newlib_e_log10",
+  "source": "src/newlib/libm/math/e_log10.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G1024",
+    "-fno-builtin",
+    "-msafe-sda",
+    "-xc++",
+    "-D__ieee754_acos=acos",
+    "-D__ieee754_acosf=acosf",
+    "-D__ieee754_asin=asin",
+    "-D__ieee754_asinf=asinf",
+    "-D__ieee754_atan2=atan2",
+    "-D__ieee754_atan2f=atan2f",
+    "-D__ieee754_exp=exp",
+    "-D__ieee754_fmod=fmod",
+    "-D__ieee754_fmodf=fmodf",
+    "-D__ieee754_log=log",
+    "-D__ieee754_log10=log10",
+    "-D__ieee754_pow=pow",
+    "-D__ieee754_powf=powf",
+    "-D__ieee754_sqrt=sqrt",
+    "-D__ieee754_sqrtf=sqrtf"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/libm/common"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8026e22c",
+      "size": 300,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x80451998",
+      "size": 56,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "log10",
+      "address": "0x8026e22c",
+      "size": 300,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "log": "0x8026df9c"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "discarded_local_functions": [],
+  "original_file": "e_log10.c",
+  "sda_externals": [],
+  "upstream": {
+    "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+    "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+    "path": "newlib/libm/math/e_log10.c"
+  }
+}

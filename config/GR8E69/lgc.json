@@ -1,0 +1,168 @@
+{
+  "id": "lgc",
+  "source": "src/lua/lgc.c",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8003bf34",
+      "size": 2956
+    }
+  ],
+  "functions": [
+    {
+      "name": "protomark",
+      "address": "0x8003bf34",
+      "size": 272,
+      "binding": 0
+    },
+    {
+      "name": "markstack",
+      "address": "0x8003c044",
+      "size": 80,
+      "binding": 0
+    },
+    {
+      "name": "marklock",
+      "address": "0x8003c094",
+      "size": 112,
+      "binding": 0
+    },
+    {
+      "name": "markclosure",
+      "address": "0x8003c104",
+      "size": 84,
+      "binding": 0
+    },
+    {
+      "name": "marktagmethods",
+      "address": "0x8003c158",
+      "size": 140,
+      "binding": 0
+    },
+    {
+      "name": "markobject",
+      "address": "0x8003c1e4",
+      "size": 172,
+      "binding": 0
+    },
+    {
+      "name": "markall",
+      "address": "0x8003c290",
+      "size": 312,
+      "binding": 0
+    },
+    {
+      "name": "hasmark",
+      "address": "0x8003c3c8",
+      "size": 112,
+      "binding": 0
+    },
+    {
+      "name": "invalidaterefs",
+      "address": "0x8003c438",
+      "size": 116,
+      "binding": 0
+    },
+    {
+      "name": "collectproto",
+      "address": "0x8003c4ac",
+      "size": 112,
+      "binding": 0
+    },
+    {
+      "name": "collectclosure",
+      "address": "0x8003c51c",
+      "size": 108,
+      "binding": 0
+    },
+    {
+      "name": "collecttable",
+      "address": "0x8003c588",
+      "size": 108,
+      "binding": 0
+    },
+    {
+      "name": "checktab",
+      "address": "0x8003c5f4",
+      "size": 88,
+      "binding": 0
+    },
+    {
+      "name": "collectstrings",
+      "address": "0x8003c64c",
+      "size": 232,
+      "binding": 0
+    },
+    {
+      "name": "collectudata",
+      "address": "0x8003c734",
+      "size": 216,
+      "binding": 0
+    },
+    {
+      "name": "checkMbuffer",
+      "address": "0x8003c80c",
+      "size": 92,
+      "binding": 0
+    },
+    {
+      "name": "callgcTM",
+      "address": "0x8003c868",
+      "size": 188,
+      "binding": 0
+    },
+    {
+      "name": "callgcTMudata",
+      "address": "0x8003c924",
+      "size": 172,
+      "binding": 0
+    },
+    {
+      "name": "luaC_collect",
+      "address": "0x8003c9d0",
+      "size": 92,
+      "binding": 1
+    },
+    {
+      "name": "luaC_collectgarbage",
+      "address": "0x8003ca2c",
+      "size": 100,
+      "binding": 1
+    },
+    {
+      "name": "luaC_checkGC",
+      "address": "0x8003ca90",
+      "size": 48,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "luaH_remove": "0x80042088",
+    "luaF_freeproto": "0x8003bdf0",
+    "luaF_freeclosure": "0x8003be74",
+    "luaH_free": "0x800422cc",
+    "luaS_resize": "0x80041a94",
+    "DWI_free": "0x801a8894",
+    "luaM_realloc": "0x8003ec90",
+    "luaT_tag": "0x80042938",
+    "luaD_checkstack": "0x8003b340",
+    "luaD_call": "0x8003b6d4",
+    "luaO_nilobject": "0x80296568"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": []
+}

@@ -1,0 +1,134 @@
+{
+  "id": "OSAlarm",
+  "source": "src/dolphin/os/OSAlarm.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80253a60",
+      "size": 1756,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80452350",
+      "size": 8,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "InsertAlarm",
+      "address": "0x80253abc",
+      "size": 592,
+      "binding": 0
+    },
+    {
+      "name": "DecrementerExceptionCallback",
+      "address": "0x80253f0c",
+      "size": 560,
+      "binding": 0
+    },
+    {
+      "name": "OSInitAlarm",
+      "address": "0x80253a60",
+      "size": 76,
+      "binding": 1
+    },
+    {
+      "name": "OSCreateAlarm",
+      "address": "0x80253aac",
+      "size": 16,
+      "binding": 1
+    },
+    {
+      "name": "OSSetAlarm",
+      "address": "0x80253d0c",
+      "size": 104,
+      "binding": 1
+    },
+    {
+      "name": "OSSetPeriodicAlarm",
+      "address": "0x80253d74",
+      "size": 124,
+      "binding": 1
+    },
+    {
+      "name": "OSCancelAlarm",
+      "address": "0x80253df0",
+      "size": 284,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__init_hardware": "0x80035668",
+    "__start": "0x80035300",
+    "__OSGetExceptionHandler": "0x802538c4",
+    "DecrementerExceptionHandler": "0x8025413c",
+    "__OSSetExceptionHandler": "0x802538a8",
+    "__OSGetSystemTime": "0x8025af9c",
+    "__div2i": "0x801afea0",
+    "PPCMtdec": "0x80231648",
+    "OSDisableInterrupts": "0x80257798",
+    "OSRestoreInterrupts": "0x802577c0",
+    "__OSTimeToSystemTime": "0x8025b000",
+    "OSLoadContext": "0x80254d34",
+    "OSDisableScheduler": "0x80259dd0",
+    "OSClearContext": "0x80254e44",
+    "OSSetCurrentContext": "0x80254c4c",
+    "OSEnableScheduler": "0x80259e10",
+    "__OSReschedule": "0x8025a32c"
+  },
+  "undefined_in_discarded_code": [
+    "__flush_cache",
+    "__copy_rom_section",
+    "__init_bss_section",
+    "__init_registers",
+    "__init_data"
+  ],
+  "discarded_functions": [],
+  "upstream": {
+    "repository": "https://github.com/PrimeDecomp/prime",
+    "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927",
+    "path": "extern/sdk/dolphin/os/OSAlarm.c"
+  },
+  "original_file": "OSAlarm.c",
+  "local_externals": [
+    "DecrementerExceptionHandler"
+  ],
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

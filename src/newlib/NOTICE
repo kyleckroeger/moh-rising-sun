@@ -1,0 +1,16 @@
+Sources and headers derive from Newlib 1.8.2, published by the Newlib project:
+https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz
+SHA-256: e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef
+
+This distribution includes software developed by the University of California,
+Berkeley, and software developed at Cygnus Solutions. Other authors and notices
+are identified in the source files and in the unmodified COPYING.NEWLIB.
+Individual source notices remain in place. No blanket project license replaces
+those notices.
+
+Target-specific adaptations and their evidence are recorded in docs/Newlib.md;
+file provenance is in config/GR8E69/newlib-source.json. AI assistance was used for
+the analysis, adaptations and verification, not for authorship of upstream code.
+
+Compiler support headers in include/newlib-compiler are separately attributed
+in that directory's NOTICE.

@@ -1,0 +1,59 @@
+{
+  "id": "newlib_ungetc",
+  "source": "src/newlib/stdio/ungetc.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char",
+    "-DMB_CAPABLE"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/stdio"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80263d6c",
+      "size": 388,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bfee4",
+      "size": 68,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "ungetc",
+      "address": "0x80263d6c",
+      "size": 388,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_impure_ptr": "0x8045171c",
+    "_sn_sinit": "0x8026337c",
+    "fflush": "0x8026322c",
+    "write": "0x80272e78"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "ungetc.c",
+  "upstream": {
+    "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+    "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+    "path": "newlib/libc/stdio/ungetc.c"
+  },
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "_impure_ptr"
+  ]
+}

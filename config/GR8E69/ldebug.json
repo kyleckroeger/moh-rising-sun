@@ -1,0 +1,179 @@
+{
+  "id": "ldebug",
+  "source": "src/lua/ldebug.c",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8003a6d8",
+      "size": 3064
+    },
+    {
+      "name": ".rodata",
+      "address": "0x80295f48",
+      "size": 256
+    }
+  ],
+  "functions": [
+    {
+      "name": "setnormalized",
+      "address": "0x8003a6d8",
+      "size": 68,
+      "binding": 0
+    },
+    {
+      "name": "isLmark",
+      "address": "0x8003a71c",
+      "size": 52,
+      "binding": 0
+    },
+    {
+      "name": "aux_stackedfunction",
+      "address": "0x8003a750",
+      "size": 84,
+      "binding": 0
+    },
+    {
+      "name": "lua_getstack",
+      "address": "0x8003a7a4",
+      "size": 72,
+      "binding": 1
+    },
+    {
+      "name": "nups",
+      "address": "0x8003a7ec",
+      "size": 60,
+      "binding": 0
+    },
+    {
+      "name": "luaG_getline",
+      "address": "0x8003a828",
+      "size": 204,
+      "binding": 1
+    },
+    {
+      "name": "currentpc",
+      "address": "0x8003a8f4",
+      "size": 56,
+      "binding": 0
+    },
+    {
+      "name": "currentline",
+      "address": "0x8003a92c",
+      "size": 104,
+      "binding": 0
+    },
+    {
+      "name": "infoLproto",
+      "address": "0x8003a994",
+      "size": 36,
+      "binding": 0
+    },
+    {
+      "name": "funcinfo",
+      "address": "0x8003a9b8",
+      "size": 200,
+      "binding": 0
+    },
+    {
+      "name": "travtagmethods",
+      "address": "0x8003aa80",
+      "size": 152,
+      "binding": 0
+    },
+    {
+      "name": "travglobals",
+      "address": "0x8003ab18",
+      "size": 148,
+      "binding": 0
+    },
+    {
+      "name": "getname",
+      "address": "0x8003abac",
+      "size": 136,
+      "binding": 0
+    },
+    {
+      "name": "lua_getinfo",
+      "address": "0x8003ac34",
+      "size": 392,
+      "binding": 1
+    },
+    {
+      "name": "pushpc",
+      "address": "0x8003adbc",
+      "size": 56,
+      "binding": 0
+    },
+    {
+      "name": "luaG_symbexec",
+      "address": "0x8003adf4",
+      "size": 500,
+      "binding": 0
+    },
+    {
+      "name": "getobjname",
+      "address": "0x8003afe8",
+      "size": 268,
+      "binding": 0
+    },
+    {
+      "name": "getfuncname",
+      "address": "0x8003b0f4",
+      "size": 168,
+      "binding": 0
+    },
+    {
+      "name": "luaG_typeerror",
+      "address": "0x8003b19c",
+      "size": 144,
+      "binding": 1
+    },
+    {
+      "name": "luaG_binerror",
+      "address": "0x8003b22c",
+      "size": 52,
+      "binding": 1
+    },
+    {
+      "name": "luaG_ordererror",
+      "address": "0x8003b260",
+      "size": 112,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "luaF_getlocalname": "0x8003beb8",
+    "lua_error": "0x8003bb9c",
+    "luaO_chunkid": "0x8003ef80",
+    "luaT_eventname": "0x80296990",
+    "luaO_equalObj": "0x8003ed4c",
+    "luaD_checkstack": "0x8003b340",
+    "luaK_opproperties": "0x80295eaf",
+    "luaO_typenames": "0x80296578",
+    "luaO_verror": "0x8003eecc"
+  },
+  "undefined_in_discarded_code": [
+    "luaA_pushobject"
+  ],
+  "discarded_functions": [
+    "getluaproto",
+    "lua_getlocal",
+    "lua_setcallhook",
+    "lua_setlinehook",
+    "lua_setlocal"
+  ]
+}

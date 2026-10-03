@@ -1,0 +1,10 @@
+stdarg.h comes from GCC 2.95.2, gcc/ginclude/stdarg.h.
+va-ppc.h derives from EGCS 1.1.2, gcc/ginclude/va-ppc.h, with the va_start block
+from GCC 2.95.2's same file. These are GNU compiler project sources. Their
+original comments are retained; the upstream GNU General Public License v2
+text is supplied as COPYING. See config/GR8E69/newlib-source.json for source
+URLs and hashes, and docs/Newlib.md for the observed ABI and modifications.
+
+stddef.h, limits.h and float.h are minimal target declarations authored for this
+reconstruction. Only their use by the accepted source units has been verified.
+This is not a complete historical compiler header distribution.

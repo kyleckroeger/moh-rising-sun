@@ -1,0 +1,114 @@
+{
+  "id": "OSAlloc",
+  "source": "src/dolphin/os/OSAlloc.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8025418c",
+      "size": 296,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802de2f8",
+      "size": 914,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x80451690",
+      "size": 4,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80452358",
+      "size": 16,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "DLInsert",
+      "address": "0x8025418c",
+      "size": 172,
+      "binding": 0
+    },
+    {
+      "name": "OSFreeToHeap",
+      "address": "0x80254238",
+      "size": 124,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "OSReport": "0x80255298"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "DLAddFront",
+    "DLLookup",
+    "DLExtract",
+    "DLOverlap",
+    "DLSize",
+    "OSAllocFromHeap",
+    "OSAllocFixed",
+    "OSSetCurrentHeap",
+    "OSInitAlloc",
+    "OSCreateHeap",
+    "OSDestroyHeap",
+    "OSAddToHeap",
+    "OSCheckHeap",
+    "OSReferentSize",
+    "OSDumpHeap",
+    "OSVisitAllocated"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/os/OSAlloc.c"
+  },
+  "original_file": "OSAlloc.c",
+  "discarded_local_functions": [
+    "DLAddFront",
+    "DLLookup",
+    "DLExtract",
+    "DLOverlap",
+    "DLSize"
+  ],
+  "sda_externals": []
+}

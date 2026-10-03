@@ -1,0 +1,163 @@
+{
+  "id": "AXAux",
+  "source": "src/dolphin/ax/AXAux.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8022ed80",
+      "size": 1172,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x8041ef40",
+      "size": 11520,
+      "type": 8
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80451fe0",
+      "size": 52,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "__AXAuxInit",
+      "address": "0x8022ed80",
+      "size": 228,
+      "binding": 1
+    },
+    {
+      "name": "__AXAuxQuit",
+      "address": "0x8022ee64",
+      "size": 16,
+      "binding": 1
+    },
+    {
+      "name": "__AXGetAuxAInput",
+      "address": "0x8022ee74",
+      "size": 52,
+      "binding": 1
+    },
+    {
+      "name": "__AXGetAuxAInputDpl2",
+      "address": "0x8022eea8",
+      "size": 32,
+      "binding": 1
+    },
+    {
+      "name": "__AXGetAuxAOutput",
+      "address": "0x8022eec8",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "__AXGetAuxAOutputDpl2R",
+      "address": "0x8022eee4",
+      "size": 32,
+      "binding": 1
+    },
+    {
+      "name": "__AXGetAuxAOutputDpl2Ls",
+      "address": "0x8022ef04",
+      "size": 32,
+      "binding": 1
+    },
+    {
+      "name": "__AXGetAuxAOutputDpl2Rs",
+      "address": "0x8022ef24",
+      "size": 32,
+      "binding": 1
+    },
+    {
+      "name": "__AXGetAuxBInput",
+      "address": "0x8022ef44",
+      "size": 52,
+      "binding": 1
+    },
+    {
+      "name": "__AXGetAuxBOutput",
+      "address": "0x8022ef78",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "__AXGetAuxBForDPL2",
+      "address": "0x8022ef94",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "__AXGetAuxBOutputDPL2",
+      "address": "0x8022efb0",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "__AXProcessAux",
+      "address": "0x8022efcc",
+      "size": 572,
+      "binding": 1
+    },
+    {
+      "name": "AXRegisterAuxACallback",
+      "address": "0x8022f208",
+      "size": 12,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__AXClMode": "0x80452028",
+    "DCInvalidateRange": "0x802545a8",
+    "DCFlushRangeNoSync": "0x80254634"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "AXRegisterAuxBCallback"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/ax/AXAux.c"
+  },
+  "original_file": "AXAux.c",
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "__AXClMode"
+  ]
+}

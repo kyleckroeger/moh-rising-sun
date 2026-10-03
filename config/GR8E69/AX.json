@@ -1,0 +1,103 @@
+{
+  "id": "AX",
+  "source": "src/dolphin/ax/AX.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8022e814",
+      "size": 164,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802d6f70",
+      "size": 68,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x80451328",
+      "size": 4,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "AXInit",
+      "address": "0x8022e814",
+      "size": 36,
+      "binding": 1
+    },
+    {
+      "name": "AXInitEx",
+      "address": "0x8022e838",
+      "size": 76,
+      "binding": 1
+    },
+    {
+      "name": "AXQuit",
+      "address": "0x8022e884",
+      "size": 52,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "OSRegisterVersion": "0x80253a34",
+    "__AXAllocInit": "0x8022e944",
+    "__AXVPBInit": "0x80230ff4",
+    "__AXSPBInit": "0x80230518",
+    "__AXAuxInit": "0x8022ed80",
+    "__AXClInit": "0x8022f908",
+    "__AXOutInit": "0x8022fd1c",
+    "__AXAllocQuit": "0x8022e9f8",
+    "__AXVPBQuit": "0x802311f4",
+    "__AXSPBQuit": "0x80230544",
+    "__AXAuxQuit": "0x8022ee64",
+    "__AXClQuit": "0x8022f92c",
+    "__AXOutQuit": "0x802300bc"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/ax/AX.c"
+  },
+  "original_file": "AX.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

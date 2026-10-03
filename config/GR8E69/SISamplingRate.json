@@ -1,0 +1,97 @@
+{
+  "id": "SISamplingRate",
+  "source": "src/dolphin/si/SISamplingRate.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8025eccc",
+      "size": 264,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802e03b8",
+      "size": 147,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80452428",
+      "size": 4,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "SISetSamplingRate",
+      "address": "0x8025eccc",
+      "size": 228,
+      "binding": 1
+    },
+    {
+      "name": "SIRefreshSamplingRate",
+      "address": "0x8025edb0",
+      "size": 36,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__init_hardware": "0x80035668",
+    "__start": "0x80035300",
+    "OSDisableInterrupts": "0x80257798",
+    "VIGetTvFormat": "0x80260c58",
+    "OSReport": "0x80255298",
+    "SISetXY": "0x8025e0c0",
+    "OSRestoreInterrupts": "0x802577c0"
+  },
+  "undefined_in_discarded_code": [
+    "__flush_cache",
+    "__copy_rom_section",
+    "__init_bss_section",
+    "__init_registers",
+    "__init_data"
+  ],
+  "discarded_functions": [],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/si/SISamplingRate.c"
+  },
+  "original_file": "SISamplingRate.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

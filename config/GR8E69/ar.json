@@ -1,0 +1,161 @@
+{
+  "id": "ar",
+  "source": "src/dolphin/ar/ar.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8022c8b8",
+      "size": 6872,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802d6ee0",
+      "size": 68,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x80451318",
+      "size": 4,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80451f88",
+      "size": 32,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "__ARHandler",
+      "address": "0x8022caf4",
+      "size": 120,
+      "binding": 0
+    },
+    {
+      "name": "__ARChecksize",
+      "address": "0x8022cb9c",
+      "size": 6132,
+      "binding": 0
+    },
+    {
+      "name": "ARRegisterDMACallback",
+      "address": "0x8022c8b8",
+      "size": 68,
+      "binding": 1
+    },
+    {
+      "name": "ARGetDMAStatus",
+      "address": "0x8022c8fc",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "ARStartDMA",
+      "address": "0x8022c938",
+      "size": 240,
+      "binding": 1
+    },
+    {
+      "name": "ARInit",
+      "address": "0x8022ca28",
+      "size": 196,
+      "binding": 1
+    },
+    {
+      "name": "ARGetBaseAddress",
+      "address": "0x8022caec",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "__ARClearInterrupt",
+      "address": "0x8022cb6c",
+      "size": 32,
+      "binding": 1
+    },
+    {
+      "name": "__ARGetInterruptStatus",
+      "address": "0x8022cb8c",
+      "size": 16,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "OSDisableInterrupts": "0x80257798",
+    "OSRestoreInterrupts": "0x802577c0",
+    "OSRegisterVersion": "0x80253a34",
+    "__OSSetInterruptHandler": "0x802577e4",
+    "__OSUnmaskInterrupts": "0x80257be8",
+    "OSClearContext": "0x80254e44",
+    "OSSetCurrentContext": "0x80254c4c",
+    "DCFlushRange": "0x802545d4",
+    "DCInvalidateRange": "0x802545a8",
+    "PPCSync": "0x80231650",
+    "memset": "0x80266778"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "__ARClearArea",
+    "__ARWaitForDMA",
+    "__ARWriteDMA",
+    "__ARReadDMA",
+    "ARAlloc",
+    "ARFree",
+    "ARCheckInit",
+    "ARReset",
+    "ARSetSize",
+    "ARGetSize",
+    "ARGetInternalSize",
+    "ARClear"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/ar/ar.c"
+  },
+  "original_file": "ar.c",
+  "discarded_local_functions": [
+    "__ARClearArea",
+    "__ARWaitForDMA",
+    "__ARWriteDMA",
+    "__ARReadDMA"
+  ],
+  "sda_externals": []
+}

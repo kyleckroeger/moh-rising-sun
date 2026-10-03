@@ -1,0 +1,105 @@
+{
+  "id": "AXSPB",
+  "source": "src/dolphin/ax/AXSPB.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80230114",
+      "size": 1224,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x80426cc0",
+      "size": 54,
+      "type": 8
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80452068",
+      "size": 36,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "__AXGetStudio",
+      "address": "0x80230114",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "__AXPrintStudio",
+      "address": "0x80230120",
+      "size": 1016,
+      "binding": 1
+    },
+    {
+      "name": "__AXSPBInit",
+      "address": "0x80230518",
+      "size": 44,
+      "binding": 1
+    },
+    {
+      "name": "__AXSPBQuit",
+      "address": "0x80230544",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "__AXDepopVoice",
+      "address": "0x80230548",
+      "size": 148,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "DCFlushRange": "0x802545d4"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "__AXDepopFade"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/ax/AXSPB.c"
+  },
+  "original_file": "AXSPB.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

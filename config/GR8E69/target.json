@@ -1,0 +1,28 @@
+{
+  "disc_id": "GR8E69",
+  "disc_number": 0,
+  "revision": 0,
+  "primary": "MOH3RDVD.ELF",
+  "files": {
+    "MOH3RDC.ELF": {
+      "size": 3583360,
+      "sha1": "b9052a947236f8c5774096a02a92f5c468e6d74e",
+      "sha256": "bcf088a7c8009bd26b20a3f04e869f5273650574def9864c3c34a09ad4f99055"
+    },
+    "MOH3RDVD.ELF": {
+      "size": 3628980,
+      "sha1": "dd797412be7d631e78c98f194a1bb47981174d75",
+      "sha256": "fc9aeb766e79f58d2db8e6bd205c76a385952eab7e532c2f13809d3371283073"
+    },
+    "STUBRDVD.ELF": {
+      "size": 260164,
+      "sha1": "630844bee74a216c692c2c78b1b97b36980cfa04",
+      "sha256": "5687e23ad52bbcf68a61cf534a64004555ec474d421468c9705cd69f2dd1b262"
+    },
+    "boot.dol": {
+      "size": 206016,
+      "sha1": "63930a29fafaf13406f0efcc0dde5634b05cb69a",
+      "sha256": "f5e1182d41c11fcf14c13a9755cc2068e774fa63c09917c8a11f06c244783c85"
+    }
+  }
+}

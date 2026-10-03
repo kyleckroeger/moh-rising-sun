@@ -1,0 +1,1421 @@
+{
+  "repository": "https://github.com/doldecomp/dolsdk2004",
+  "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+  "description": "Public SDK library reconstruction, adapted to the April 2003 code present in GR8E69. Not an original SDK source release.",
+  "files": [
+    {
+      "path": "include/dolphin-sdk/charPipeline/fileCache.h",
+      "upstream_path": "include/charPipeline/fileCache.h",
+      "upstream_sha256": "9fc5bbfba874376ec1d239271cda99d84c256b2bd07f884d1177bee6b705b985",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/charPipeline/structures.h",
+      "upstream_path": "include/charPipeline/structures.h",
+      "upstream_sha256": "13c4b6b169308ae73c966ef8658f7dae0daf4cf64ef18fab45e58dcb893df47d",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/charPipeline/structures/HTable.h",
+      "upstream_path": "include/charPipeline/structures/HTable.h",
+      "upstream_sha256": "e1e36439d044200512635bc37470f318258d75767fad9ec2d9c407f9c0ee1af8",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/charPipeline/structures/List.h",
+      "upstream_path": "include/charPipeline/structures/List.h",
+      "upstream_sha256": "5646f12d28166b80aa7ad18711a2a01b1b1e836f4f509c25a03b2220adcc3c58",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/charPipeline/structures/Tree.h",
+      "upstream_path": "include/charPipeline/structures/Tree.h",
+      "upstream_sha256": "8316aaccf9bf84076cb398d547729ccea67c59a27f51d3634aba8e040373f6af",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/charPipeline/structures/dolphinString.h",
+      "upstream_path": "include/charPipeline/structures/dolphinString.h",
+      "upstream_sha256": "39e18ad34648580996542d756c3e3cff424429cfaf9f9a19de277bcfc654dc95",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/charPipeline/texPalette.h",
+      "upstream_path": "include/charPipeline/texPalette.h",
+      "upstream_sha256": "406c7773f21d56cf6448fc327b528a045480cdf59d852b2592631811bc24b437",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/cmath.h",
+      "upstream_path": "include/cmath.h",
+      "upstream_sha256": "8e6260cd070f2b6b50553fb0422df078a02ee7b3e109d80254ad4e7be003129d",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin.h",
+      "upstream_path": "include/dolphin.h",
+      "upstream_sha256": "5898b417031bafd8d3ea314b76d77ab51626c0b627c8fec9f5ea56f318a12c7e",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/G2D.h",
+      "upstream_path": "include/dolphin/G2D.h",
+      "upstream_sha256": "e69ab1c81a53473db35ce63babe4307abf6bf5ae089c3f1fda2bf9319ef063e6",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/GBAPriv.h",
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927",
+      "upstream_path": "extern/sdk/include/dolphin/GBAPriv.h",
+      "upstream_sha256": "0fa308291edf57bc96234ab67dbf0028a83bc667f91a8bb427251c2e1335ca43",
+      "modified": true
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/ai.h",
+      "upstream_path": "include/dolphin/ai.h",
+      "upstream_sha256": "f28e3cb0fbbfd268625517f1c613f0a1a6ec152f72458ced386bd8f55dceda95",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/am.h",
+      "upstream_path": "include/dolphin/am.h",
+      "upstream_sha256": "22113580d85d41d064dca124c415eb36f4a7b0238bd16f7ac876934cc397f95a",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/amc/AmcExi2Comm.h",
+      "upstream_path": "include/dolphin/amc/AmcExi2Comm.h",
+      "upstream_sha256": "43092e0ff6d7aa61821d6a2294810e7a66ee5465ab86556d4cb7aff667d35d8a",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/amc/AmcTypes.h",
+      "upstream_path": "include/dolphin/amc/AmcTypes.h",
+      "upstream_sha256": "3704cf131bf72ab25da6bfee211d0bf56a7204d401d3c950f2138b44f936fd54",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/ar.h",
+      "upstream_path": "include/dolphin/ar.h",
+      "upstream_sha256": "ac6948054f6b4b25e33c0989346e229dabd5bb478f0baf9275b7601e52aedd37",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/ax.h",
+      "upstream_path": "include/dolphin/ax.h",
+      "upstream_sha256": "b2816ca0f2d740b154f71b94c214fc1f1ac0f30642c46b18fa160240c411eb16",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/axart.h",
+      "upstream_path": "include/dolphin/axart.h",
+      "upstream_sha256": "e4466b4be651e797fc2cccd09e7d501b638385c58dc8f0990d690a639c92da55",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/axfx.h",
+      "upstream_path": "include/dolphin/axfx.h",
+      "upstream_sha256": "6a5b670d0961bd3a3477b6a43a36df13f2725d854dd236541bf8f7665d8f5234",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/base/PPCArch.h",
+      "upstream_path": "include/dolphin/base/PPCArch.h",
+      "upstream_sha256": "e9706e5597ec1513ecfc73b889e8cc6ff6d01b1e441f1ba638532c61180f04f7",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/card.h",
+      "upstream_path": "include/dolphin/card.h",
+      "upstream_sha256": "72047f79ac42bfb22f309308a75814a9530647f861723724f1351640e56ed228",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/db.h",
+      "upstream_path": "include/dolphin/db.h",
+      "upstream_sha256": "ea21eb952a5f0f1b9b2636587bf25ce1143d7c4567dacfa7fece8abd09a40435",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/db/DBInterface.h",
+      "upstream_path": "include/dolphin/db/DBInterface.h",
+      "upstream_sha256": "f94aea2e8090b9816ab615e85c5d7dbb6fc9e6be7cd62a6d6665f2d638cf90ab",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/demo.h",
+      "upstream_path": "include/dolphin/demo.h",
+      "upstream_sha256": "ba97693c6d9cc5ee538ef3bd9d0280d89ea26da83bca3ba9aaa7ae0389b4454a",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/demo/DEMOAVX.h",
+      "upstream_path": "include/dolphin/demo/DEMOAVX.h",
+      "upstream_sha256": "48eecddf16e331005ca580ebbe5e2ecf6ca62fc821b03b77dab89906810763fb",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/demo/DEMOInit.h",
+      "upstream_path": "include/dolphin/demo/DEMOInit.h",
+      "upstream_sha256": "28f9d1f45306c954ea599ae6699581015e1846def7865516f5ee0cf7ac4b31e9",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/demo/DEMOPad.h",
+      "upstream_path": "include/dolphin/demo/DEMOPad.h",
+      "upstream_sha256": "eaffbb280596e1e2fc00e261243dcd46b6bcb1ea80251df60e2fad8ad3e5f2a2",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/demo/DEMOPuts.h",
+      "upstream_path": "include/dolphin/demo/DEMOPuts.h",
+      "upstream_sha256": "57b58bedbd361db10691486b236d76dbe4e0707cc467c85e4eb5c5567e9a5e9c",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/demo/DEMOStats.h",
+      "upstream_path": "include/dolphin/demo/DEMOStats.h",
+      "upstream_sha256": "65ecbd570dd2f4077e8993e342c838df21058b705b4a8d510528b8b687d7a0b1",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/demo/DEMOWin.h",
+      "upstream_path": "include/dolphin/demo/DEMOWin.h",
+      "upstream_sha256": "976a72a69679f426a04a8837da8fdc6b162dac0cdc1a79153370ddbac82d924a",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/dsp.h",
+      "upstream_path": "include/dolphin/dsp.h",
+      "upstream_sha256": "bf2829e4063ce6c2c149193261619de44f14b3347b3250d345f788ad107d33fd",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/dtk.h",
+      "upstream_path": "include/dolphin/dtk.h",
+      "upstream_sha256": "3b2d587c5fac2e7dbc229db97b4f69aed8adfc1c275057b9fda7ed66c48cc53d",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/dvd.h",
+      "upstream_path": "include/dolphin/dvd.h",
+      "upstream_sha256": "2683974fd9e078eda23d6860d1054a85cffa35d317c3c5e7304915565eb75fbf",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/exi.h",
+      "upstream_path": "include/dolphin/exi.h",
+      "upstream_sha256": "aa2ce0cf96f3378c3c9ff329271bcb85e867f9663fb372ca581b74c30bcf8f35",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gba.h",
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927",
+      "upstream_path": "extern/sdk/include/dolphin/gba.h",
+      "upstream_sha256": "bbec8ae43d05aed35e3372b92ced3dc284ece4589b6f8f5d172f148c21a4f39f",
+      "modified": true
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gd.h",
+      "upstream_path": "include/dolphin/gd.h",
+      "upstream_sha256": "315e4c98df80d41509a3caa4315ddf75907fc674c3198ea61fe5433f249f8231",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gd/GDBase.h",
+      "upstream_path": "include/dolphin/gd/GDBase.h",
+      "upstream_sha256": "e69a647b2dd619d77429a205f9696d945d3abfd33adef0f3f32b9f630c5b9211",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gd/GDFile.h",
+      "upstream_path": "include/dolphin/gd/GDFile.h",
+      "upstream_sha256": "5665af0a21cd4b692867b970bb3d703fcb003d470b5500eceb1c7d5a31c60734",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gd/GDGeometry.h",
+      "upstream_path": "include/dolphin/gd/GDGeometry.h",
+      "upstream_sha256": "9ea3b7d44d98f4855b0b1d31212d356600fc2e086c8143d7299851437fc6df28",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gd/GDIndirect.h",
+      "upstream_path": "include/dolphin/gd/GDIndirect.h",
+      "upstream_sha256": "a748cb898b93aba56d5a6af653f824ecf2f0f272821202f1d0e3cfff0ad378bd",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gd/GDLight.h",
+      "upstream_path": "include/dolphin/gd/GDLight.h",
+      "upstream_sha256": "0f29ab4c0388d435648f441dcc259a66d82729bebf11faff71462b298d72fd08",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gd/GDPixel.h",
+      "upstream_path": "include/dolphin/gd/GDPixel.h",
+      "upstream_sha256": "76dd05f1fcaa573de32c688dcda96ad731dba87748dabcb79738fea55f52d0c3",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gd/GDTev.h",
+      "upstream_path": "include/dolphin/gd/GDTev.h",
+      "upstream_sha256": "9dd12180e8455979ba553fb083ba24ff74d34c31ede1846f50d02130daf4c94d",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gd/GDTexture.h",
+      "upstream_path": "include/dolphin/gd/GDTexture.h",
+      "upstream_sha256": "4c6e561428358c511792c95ef3ecda56ba40f072d95f016b77d84912271b8c61",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gd/GDTransform.h",
+      "upstream_path": "include/dolphin/gd/GDTransform.h",
+      "upstream_sha256": "f2335d9c02536baf8df1d6403f2745e1d620218acc687162ebe32f380535db81",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx.h",
+      "upstream_path": "include/dolphin/gx.h",
+      "upstream_sha256": "247a687ff063e84c835dcc60bb8daaa054cc99c1360e97ee12efd02ff6f3a7c4",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXBump.h",
+      "upstream_path": "include/dolphin/gx/GXBump.h",
+      "upstream_sha256": "6d596c5a0d7fee8b1e16e31ed3fac1cb2d990e63e1cbd54947dcacffa0ae0efd",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXCommandList.h",
+      "upstream_path": "include/dolphin/gx/GXCommandList.h",
+      "upstream_sha256": "a58d128f98bfb4b1fb59e851febb5c47f55fef9f43b44465a454a2964ba31725",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXCpu2Efb.h",
+      "upstream_path": "include/dolphin/gx/GXCpu2Efb.h",
+      "upstream_sha256": "8b57d81c36efbb14733fd55c13fc7399dcdc40ab1806083264440068eb28632e",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXCull.h",
+      "upstream_path": "include/dolphin/gx/GXCull.h",
+      "upstream_sha256": "e3f8d5ffd3af07fcf601e90dcff8652c53916253d5bda22e844228eaa2a89dc0",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXDispList.h",
+      "upstream_path": "include/dolphin/gx/GXDispList.h",
+      "upstream_sha256": "a9ca1122d7cab58c79c670e456fe274e10551b0b4bd486be51986bd68537f303",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXDraw.h",
+      "upstream_path": "include/dolphin/gx/GXDraw.h",
+      "upstream_sha256": "1543da936c3050b9995813c2a2ffdb1d4ffa75b8a61c6acd87352afb48364f99",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXEnum.h",
+      "upstream_path": "include/dolphin/gx/GXEnum.h",
+      "upstream_sha256": "118846e4297df33c50a262172ecbe9ce7bd3491fda6f301466a2bcc4b6d5286e",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXFifo.h",
+      "upstream_path": "include/dolphin/gx/GXFifo.h",
+      "upstream_sha256": "f0ce5d3dc55c96fce66ad3f0530bf5d7625e15e49d15de40cac9db4c9cbda889",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXFrameBuffer.h",
+      "upstream_path": "include/dolphin/gx/GXFrameBuffer.h",
+      "upstream_sha256": "4de7f7a2f7c8942b5de36626c83256c1d8c0d22edfe477997d7450951da68a8e",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXGeometry.h",
+      "upstream_path": "include/dolphin/gx/GXGeometry.h",
+      "upstream_sha256": "de930a7a36f298da35eea16d079f251bc4ef38d3044c73c12ecca9dbb9cb37eb",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXGet.h",
+      "upstream_path": "include/dolphin/gx/GXGet.h",
+      "upstream_sha256": "c4cfa0c07fb502317ae6abad1d33812d9a0a89562babb715207b77bfc3010b20",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXLighting.h",
+      "upstream_path": "include/dolphin/gx/GXLighting.h",
+      "upstream_sha256": "03933be61394970ac14b38a8f19aff5d24845969ea60eedef1f130b4ec46c71c",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXManage.h",
+      "upstream_path": "include/dolphin/gx/GXManage.h",
+      "upstream_sha256": "00a8a5e0cc136df5ff774f8540968295f4ad6f484cc08ea27c1b330187236fde",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXPerf.h",
+      "upstream_path": "include/dolphin/gx/GXPerf.h",
+      "upstream_sha256": "23a1637449dce0b9217567b4c526ceeb1a5dcb9bc2cd3826c51e20c9b8dd927f",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXPixel.h",
+      "upstream_path": "include/dolphin/gx/GXPixel.h",
+      "upstream_sha256": "94e0febafaf6d3d1d1437c09c2acc128319ce14244b93650dc3075845e1e9cae",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXStruct.h",
+      "upstream_path": "include/dolphin/gx/GXStruct.h",
+      "upstream_sha256": "05aed87cefcf9f0faf135823fab2c020a5e467487718acc05fc7e3e771a3d31d",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXTev.h",
+      "upstream_path": "include/dolphin/gx/GXTev.h",
+      "upstream_sha256": "55d750d122b74382a6f70243709595b3dbb7d0c34c88558c508a99ca3240e6d1",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXTexture.h",
+      "upstream_path": "include/dolphin/gx/GXTexture.h",
+      "upstream_sha256": "ede41389fd9f97e828f86d384fdb7af9e8253035c500aaf06be28e65a5fc7d11",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXTransform.h",
+      "upstream_path": "include/dolphin/gx/GXTransform.h",
+      "upstream_sha256": "c86eed81fb5628b260988f782e54dcf47aeef72b1493162052fda30eda885e89",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXVerify.h",
+      "upstream_path": "include/dolphin/gx/GXVerify.h",
+      "upstream_sha256": "7215b5c60c078316d6ef7178c6e92f791cf2fb4280ac975e7614b3ec33ad7aec",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/gx/GXVert.h",
+      "upstream_path": "include/dolphin/gx/GXVert.h",
+      "upstream_sha256": "ca218260c5f5f93c462433d4acd5b7f6456ffd2da41da0fd5eb4eee630dffc66",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/hio.h",
+      "upstream_path": "include/dolphin/hio.h",
+      "upstream_sha256": "9661638fa95efd61dcf029ca1bea04a5c0a2e0648e2ee6354733c6d12854fc6d",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/hw_regs.h",
+      "upstream_path": "include/dolphin/hw_regs.h",
+      "upstream_sha256": "80ca02a431add323f5e8b5167c0ff6ecc487ebedd13b3869f757a81a2d68f736",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/mcc.h",
+      "upstream_path": "include/dolphin/mcc.h",
+      "upstream_sha256": "0e673a867324497de4f25f30934a95f8eb1efde6a752fc6402a66cbf0d7c88b3",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/mix.h",
+      "upstream_path": "include/dolphin/mix.h",
+      "upstream_sha256": "e98893ad6c274589df6f3563536624dd4963c16ff65f68c52d41a8bdb00b916c",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/mtx.h",
+      "upstream_path": "include/dolphin/mtx.h",
+      "upstream_sha256": "5e59486b0d8d1eeb7b0e50c8113a42615b2e407e1bc2ed2a80fd2eba491cc4f6",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os.h",
+      "upstream_path": "include/dolphin/os.h",
+      "upstream_sha256": "a3d81a6c250673ce3622f69aa81fd00cf86d0e7f31286c59d456d6a13c594e81",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSAlarm.h",
+      "upstream_path": "include/dolphin/os/OSAlarm.h",
+      "upstream_sha256": "457bb9533039628ed60f584ce6796b31a72ac2fc65ca2cfe0aff45b1b6a97667",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSAlloc.h",
+      "upstream_path": "include/dolphin/os/OSAlloc.h",
+      "upstream_sha256": "632dbff3188e7f448396d5f1efaf20ea56aa167e21aed425ac31fc073f8b6fea",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSCache.h",
+      "upstream_path": "include/dolphin/os/OSCache.h",
+      "upstream_sha256": "abac39323db5b11ac27051ed88ac83680ab821c066a79ac746c9603aafe31ebc",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSContext.h",
+      "upstream_path": "include/dolphin/os/OSContext.h",
+      "upstream_sha256": "e0e5ba0d504ebd85877c1a93a02f530eca85d08ade5e65370356deb54e3c12aa",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSDC.h",
+      "upstream_path": "include/dolphin/os/OSDC.h",
+      "upstream_sha256": "4e7127f8fabf9e7757e184ff5f95725ec9781b74b1b8a1f9e0d3d5abd9591639",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSError.h",
+      "upstream_path": "include/dolphin/os/OSError.h",
+      "upstream_sha256": "902f6bba9b8d8050c852f8a319e2afb96cecf6828c1a6cbb67389fce67be901a",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSException.h",
+      "upstream_path": "include/dolphin/os/OSException.h",
+      "upstream_sha256": "8902903148c5507fac4806e7d439239ff706cef5c8b358e73f4d8c2b97f0704f",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSExec.h",
+      "upstream_path": "include/dolphin/os/OSExec.h",
+      "upstream_sha256": "f274858b69c13b5707b40f868b241972a39a378b27498cc2244a59f367f068a0",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSFont.h",
+      "upstream_path": "include/dolphin/os/OSFont.h",
+      "upstream_sha256": "0fa756dae47accfd0fa3e744c7bc255ae370d3aced34f961723d410dc798dde7",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSIC.h",
+      "upstream_path": "include/dolphin/os/OSIC.h",
+      "upstream_sha256": "e7add07ce348bad12f6073172b73335698021899e03610906743ca598c8976e0",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSInterrupt.h",
+      "upstream_path": "include/dolphin/os/OSInterrupt.h",
+      "upstream_sha256": "3228f03baffc2da2860a900817dc978b2de6556794832f933ea999abe05da54c",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSL2.h",
+      "upstream_path": "include/dolphin/os/OSL2.h",
+      "upstream_sha256": "06bd75428f213713c6e387387c032a6dd1972e90f54b637561169e849160c4aa",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSLC.h",
+      "upstream_path": "include/dolphin/os/OSLC.h",
+      "upstream_sha256": "fe85de5207ed4303f18ca2b31369119c5b9582c9c99f8376ea9852522bbfe1da",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSMemory.h",
+      "upstream_path": "include/dolphin/os/OSMemory.h",
+      "upstream_sha256": "4c4291196281f26ffaa7b2276f8851a28f96c448e2f12e9f1bf62168151030b3",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSMessage.h",
+      "upstream_path": "include/dolphin/os/OSMessage.h",
+      "upstream_sha256": "19e523acdc37d6fc686889e032fa6067847a421733eb9519cc110a70b13e5ac4",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSModule.h",
+      "upstream_path": "include/dolphin/os/OSModule.h",
+      "upstream_sha256": "34a543b47a12ed0554bd7e03ad5abf3dcc9a438d67fef06c148a1070ba4bdec0",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSMutex.h",
+      "upstream_path": "include/dolphin/os/OSMutex.h",
+      "upstream_sha256": "45afd844eb65106da3da5dccc751cb136c65899d5fae916b71e92029bcc138d5",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSReboot.h",
+      "upstream_path": "include/dolphin/os/OSReboot.h",
+      "upstream_sha256": "f76d12de3bbd4655d42831d3e4ed095753db7d2fde5fbd11be13fd4c3f706707",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSReset.h",
+      "upstream_path": "include/dolphin/os/OSReset.h",
+      "upstream_sha256": "99f22ea97e990502b37e7f47de477f96af0af1a09e2006d3d335774e45635499",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSResetSW.h",
+      "upstream_path": "include/dolphin/os/OSResetSW.h",
+      "upstream_sha256": "4f23b1efcefe0dfa982b577b454b717ad1645e9a4a3afaf8ecfd8aa71baaf6f9",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSRtc.h",
+      "upstream_path": "include/dolphin/os/OSRtc.h",
+      "upstream_sha256": "24e215cca694bb8a280e23e82347c0a0c2d2527ce8bed9241400cba3da06f097",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSSemaphore.h",
+      "upstream_path": "include/dolphin/os/OSSemaphore.h",
+      "upstream_sha256": "536b1f20c3f228455279dff2018c453bacb7692fbfda487c03a141af84a2f989",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSSerial.h",
+      "upstream_path": "include/dolphin/os/OSSerial.h",
+      "upstream_sha256": "5ca27d5d770a5140565f48a772590aed1b6c33d34c22e1345499cfade6beb308",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSThread.h",
+      "upstream_path": "include/dolphin/os/OSThread.h",
+      "upstream_sha256": "89412c8c5743645053fa008cf954733615992e56ef088f7ef77ab84da42805b0",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSTime.h",
+      "upstream_path": "include/dolphin/os/OSTime.h",
+      "upstream_sha256": "22474dec2507a9b3d7cf30f99953110d38f4cd0e53eaaadbde8783a5ea5967b5",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSTimer.h",
+      "upstream_path": "include/dolphin/os/OSTimer.h",
+      "upstream_sha256": "3e6223e89665d6f12de92f71b3086acc23d3747896c3603eb03198ee6e5f2f64",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/os/OSUtf.h",
+      "upstream_path": "include/dolphin/os/OSUtf.h",
+      "upstream_sha256": "a06e076f6da6f7d50b7bb3067b43ee06184f230b61d1a593f93d819a298259fd",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/pad.h",
+      "upstream_path": "include/dolphin/pad.h",
+      "upstream_sha256": "de439591b1beda595f25ccafb734557dda5b44aba05630a8cf112f8c96f58a6e",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/perf.h",
+      "upstream_path": "include/dolphin/perf.h",
+      "upstream_sha256": "e3ed95411463f6e870bb850ac27d5f110fdde13e18bc60a4279554c5c382d10c",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/seq.h",
+      "upstream_path": "include/dolphin/seq.h",
+      "upstream_sha256": "3895171cb82974f7d7167c9db084f89114d6d3a7d5a23c5c6130621e30c51006",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/si.h",
+      "upstream_path": "include/dolphin/si.h",
+      "upstream_sha256": "e8baecd5314704a90ee9faa59eeefd235c7bfadf9ea06bc963fa61e8dc3de7ac",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/sp.h",
+      "upstream_path": "include/dolphin/sp.h",
+      "upstream_sha256": "d0a0cb84b9b112ab6886e8ff0011e3938da930efb5fd69ca81d00d0bdeb48e12",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/syn.h",
+      "upstream_path": "include/dolphin/syn.h",
+      "upstream_sha256": "204aed03f84fa2b99c2bb79fa2777e5c16f6ac69f60ed9e2043a6f738f51f345",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/types.h",
+      "upstream_path": "include/dolphin/types.h",
+      "upstream_sha256": "a86d1c92f8e6e6d1ce990caacbcbf3b5ae3ac55dafd0b2c7357258e27fdb8f04",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/vi.h",
+      "upstream_path": "include/dolphin/vi.h",
+      "upstream_sha256": "15b23ea2fdfddc0c5c0fc1433a51c490ec8a101bd14882ec1f039e72acdf4e39",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/vi/vifuncs.h",
+      "upstream_path": "include/dolphin/vi/vifuncs.h",
+      "upstream_sha256": "3d0f57789854d678417cfcad2fc534eb1ebf55ba797777742109137ecbb19bcf",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/dolphin/vi/vitypes.h",
+      "upstream_path": "include/dolphin/vi/vitypes.h",
+      "upstream_sha256": "f903c37071502f8509edb7e2f15f5bc6eb52e06b57366143e19c97d266d337da",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/fake_tgmath.h",
+      "upstream_path": "include/fake_tgmath.h",
+      "upstream_sha256": "20f8ad65764ae66ea8dce34d6e7c4c689625c8e63ec14941d530bf2276b09c25",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/libc/assert.h",
+      "upstream_path": "include/libc/assert.h",
+      "upstream_sha256": "3507508b59b00662afd3abfbf762930f4bdd5138fdb1a762f7718292c4b0c447",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/libc/ctype.h",
+      "upstream_path": "include/libc/ctype.h",
+      "upstream_sha256": "24c188a206d41040c37526dd97cc00d06773fe57e4f46e0cf25e720f5f6d186d",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/libc/errno.h",
+      "upstream_path": "include/libc/errno.h",
+      "upstream_sha256": "69a5cf5e915d1e4232242ff12d643453d41ef67099baadff44d9956a160b1bb4",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/libc/float.h",
+      "upstream_path": "include/libc/float.h",
+      "upstream_sha256": "9d2d0abc3d27b33d1452202a2edd5bf2ccb40a21c077a86b0c90c9836ba255fb",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/libc/limits.h",
+      "upstream_path": "include/libc/limits.h",
+      "upstream_sha256": "4e6a1ef2d8537b587ce64183d685125a1fa04c677eb4be38aecf72d55b7f7ee8",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/libc/math.h",
+      "upstream_path": "include/libc/math.h",
+      "upstream_sha256": "be0a1c3748c9dc4c195d7d9a3c535dff1ad9bfc3cba3f63bbfb64b437abe823b",
+      "modified": true
+    },
+    {
+      "path": "include/dolphin-sdk/libc/stdarg.h",
+      "upstream_path": "include/libc/stdarg.h",
+      "upstream_sha256": "11807dcf97c007da7302cdbe529da394e77e6cae769e845d1670d44c82b62c57",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/libc/stddef.h",
+      "upstream_path": "include/libc/stddef.h",
+      "upstream_sha256": "9406c1be01e6e45abe6d3d4e3c4743021888e048641372f20f26216d1c021ecc",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/libc/stdint.h",
+      "upstream_path": "include/libc/stdint.h",
+      "upstream_sha256": "1b2e592f75216a88a782c5fbd38536afb4c184ea1e1c2142d5c8f9b7e2988c61",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/libc/stdio.h",
+      "upstream_path": "include/libc/stdio.h",
+      "upstream_sha256": "88d1b8073d71eed532a23b917efdab80c296d1a4d1ab0aabcc592b4d60f733af",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/libc/stdlib.h",
+      "upstream_path": "include/libc/stdlib.h",
+      "upstream_sha256": "96b73df29a8c319611c0f48dc44fbd7dd4dc1cea46c935543e3af87a6038992c",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/libc/string.h",
+      "upstream_path": "include/libc/string.h",
+      "upstream_sha256": "32c15447719e8675170844ae143c87bbee0646207012c59ffc7352b50c561956",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/libc/wchar.h",
+      "upstream_path": "include/libc/wchar.h",
+      "upstream_sha256": "eb9359b3f8c80e980c291b31b08b913739a9fda753a2a5007f8bf2bf3c646439",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-sdk/macros.inc",
+      "upstream_path": "include/macros.inc",
+      "upstream_sha256": "4e92f656bb511fbb45d66081291371c47ceba7bce9c55f86871116203cf38a46",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ai/ai.c",
+      "upstream_path": "src/ai/ai.c",
+      "upstream_sha256": "bf87d37206d7a5c5aa4b51e2ce832355b5462b869ddc5746037e94637a4f53f4",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ai/ai_src.c",
+      "upstream_path": "src/ai/ai.c",
+      "upstream_sha256": "bf87d37206d7a5c5aa4b51e2ce832355b5462b869ddc5746037e94637a4f53f4",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/am/__am.h",
+      "upstream_path": "src/am/__am.h",
+      "upstream_sha256": "137f11f4b674b6092eb50d6c758b3dd3992d4061d35e4a291c9119e5637ec11e",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/amcstubs/AmcExi2Stubs.c",
+      "upstream_path": "src/amcstubs/AmcExi2Stubs.c",
+      "upstream_sha256": "ce733638d79f518a95c170728fb8ed670ffdfaf693a33ff7ef72a8f039cbc1ca",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ar/__ar.h",
+      "upstream_path": "src/ar/__ar.h",
+      "upstream_sha256": "17242784988ea0273bcf5d7d4bbca91e4e65ceb73330694dd5b531150584c102",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ar/ar.c",
+      "upstream_path": "src/ar/ar.c",
+      "upstream_sha256": "07f26a8963731250d1968dcefe704a3165f6f1cceeea95538140364ce6196e39",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ar/arq.c",
+      "upstream_path": "src/ar/arq.c",
+      "upstream_sha256": "fae186d291f01f455282ef884421d29dbc5daa2e24b25abc0736165b72741969",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ax/AX.c",
+      "upstream_path": "src/ax/AX.c",
+      "upstream_sha256": "a0c6f76ad171534e27a80ac391bb45f6c42389ac7400ac9c0ceb65add180d147",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ax/AXAlloc.c",
+      "upstream_path": "src/ax/AXAlloc.c",
+      "upstream_sha256": "947a2101490ce7c8b9577d290435a899665a078eebae9fe5aab9e9fd7fbaf170",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ax/AXAux.c",
+      "upstream_path": "src/ax/AXAux.c",
+      "upstream_sha256": "1f8e7a82c9687a78ec4406fc4a13ce63d5e7c5f9ca030bb18b274e54a9a45477",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ax/AXCL.c",
+      "upstream_path": "src/ax/AXCL.c",
+      "upstream_sha256": "d88935540247eb1512da7d03e5c4b7d2dd86d4686cd372ed06029af8ed7d95f0",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ax/AXOut.c",
+      "upstream_path": "src/ax/AXOut.c",
+      "upstream_sha256": "1a22da20faf7d1d6827b619c04a2835c87892e9e9b18abed5baa6bd47a540487",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ax/AXProf.c",
+      "upstream_path": "src/ax/AXProf.c",
+      "upstream_sha256": "86370b0b3832a317e8a1aa49bf2010f6a87c2a7a67f163f8137d05f97d0829a7",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ax/AXSPB.c",
+      "upstream_path": "src/ax/AXSPB.c",
+      "upstream_sha256": "862d267d0bb4458a09b25eb81399d273cf83628521970bc781002ca4241d72f6",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ax/AXVPB.c",
+      "upstream_path": "src/ax/AXVPB.c",
+      "upstream_sha256": "25f5d05d947d5dbccb3d4946f0461760b678e4d25ad1d6f34d4ab73e64214cb5",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ax/__ax.h",
+      "upstream_path": "src/ax/__ax.h",
+      "upstream_sha256": "2357bb9dbe06cabc45d73aa3e1db833627ba3d564eba3f485bb20d558a1be2b6",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/axfx/__axfx.h",
+      "upstream_path": "src/axfx/__axfx.h",
+      "upstream_sha256": "73686c724654e027e956a59e2806002dd51484baedb37791962dc354dee8a43f",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDBios.c",
+      "upstream_path": "src/card/CARDBios.c",
+      "upstream_sha256": "0da2bddb2117f166b7321141b1134f25c323c4dc27fe41339b0cbf0b6652d876",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/card/CARDBlock.c",
+      "upstream_path": "src/card/CARDBlock.c",
+      "upstream_sha256": "af6009b5e8adbbc7ca67669ac860d04f99cc7cf98138d48ce9bfea20dc96c340",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDCheck.c",
+      "upstream_path": "src/card/CARDCheck.c",
+      "upstream_sha256": "8f6d3d01cd67812d41ed2e75a8f5845d0b88015ab8f0460e894c72705689f4fb",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDCreate.c",
+      "upstream_path": "src/card/CARDCreate.c",
+      "upstream_sha256": "64954da2c10ef3a7630e815f944be9adc8911b0edfa6f6aee0d7d4b7d03ed55e",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDDelete.c",
+      "upstream_path": "src/card/CARDDelete.c",
+      "upstream_sha256": "2abf75a7181861bf84bf2debc97314e4950f7fe1f02268854f574ae24eaf0540",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDDir.c",
+      "upstream_path": "src/card/CARDDir.c",
+      "upstream_sha256": "7bc7f6cec27df1d343f43232be84675c763bf913ccdc6597a8cfd56a4b3d98a9",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDFormat.c",
+      "upstream_path": "src/card/CARDFormat.c",
+      "upstream_sha256": "cef8ee2570f64969c5eaf3746a3b321d23d25765b55bb8baca34d131ce9fa39d",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDMount.c",
+      "upstream_path": "src/card/CARDMount.c",
+      "upstream_sha256": "2ae4c5c180e00f7a667fcebf10ec05138d36abd8cabeeb449a33699d1d65d39c",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/card/CARDNet.c",
+      "upstream_path": "src/card/CARDNet.c",
+      "upstream_sha256": "4b05df1e6871bb4b7064d0a4b6dbf8bdac17edb1c39ee5196d2b71c2de60dd22",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDOpen.c",
+      "upstream_path": "src/card/CARDOpen.c",
+      "upstream_sha256": "666a8119c9431235014123743e37b7ecbe10996d3bc326de39469b52ca215a1f",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDRdwr.c",
+      "upstream_path": "src/card/CARDRdwr.c",
+      "upstream_sha256": "caaeb30c8a3cbb39af0e5be5066ab69572d8febee818f84bb40f365c5563080d",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/card/CARDRead.c",
+      "upstream_path": "src/card/CARDRead.c",
+      "upstream_sha256": "785fbaf777741e7259ad31681a2f9032cca31b16b5fcee5facccb750d851a92d",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDRename.c",
+      "upstream_path": "src/card/CARDRename.c",
+      "upstream_sha256": "670bcf09749f19d6a28adf2ff1e4140b3a52a088d7ce4568ce734d7c574f8805",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDStat.c",
+      "upstream_path": "src/card/CARDStat.c",
+      "upstream_sha256": "965da27fe108b91e933e7a5df40b56c22d9aa6d64db3faf66159d195616fc682",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDStatEx.c",
+      "upstream_path": "src/card/CARDStatEx.c",
+      "upstream_sha256": "1739cc582bece6fc3e160e4a7ea1bee65c7cd243f87b7b25a6373d5a4104b42b",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDUnlock.c",
+      "upstream_path": "src/card/CARDUnlock.c",
+      "upstream_sha256": "a1463f934bcab1b024e306875ff63e1176c48398d991b4ef2e2ca1095aa21815",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/CARDWrite.c",
+      "upstream_path": "src/card/CARDWrite.c",
+      "upstream_sha256": "b8a307f52d8dd379d8853046dd1ad393075a7729d1f70d942a4502b59a46ac80",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/card/__card.h",
+      "upstream_path": "src/card/__card.h",
+      "upstream_sha256": "816a5b93b6785e51d283d53d3b9e106d3a8951f4db22120e566b7df1c73ccfc7",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/demo/__demo.h",
+      "upstream_path": "src/demo/__demo.h",
+      "upstream_sha256": "32c8db3d5a18e8cd2f080bec3eea4150709f761eb638835d6d4aace0e2b2d481",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/dsp/__dsp.h",
+      "upstream_path": "src/dsp/__dsp.h",
+      "upstream_sha256": "c6edc766873de40e00c182182e6acad32d25cabed3f3b7f15ff87a02b8c52842",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/dsp/dsp.c",
+      "upstream_path": "src/dsp/dsp.c",
+      "upstream_sha256": "6621d2bfcfbd6366750e62f0e702d85322db7e7de3f5154d185c49c71ac61499",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/dsp/dsp_debug.c",
+      "upstream_path": "src/dsp/dsp_debug.c",
+      "upstream_sha256": "34292d0ed4d1e2080b974ff6c6f978ef7c602aaa5ba15f3893421ca13c501ff6",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/dsp/dsp_task.c",
+      "upstream_path": "src/dsp/dsp_task.c",
+      "upstream_sha256": "84d778c127056bf37e1d4a7ee8e71c48a37449e4c99afb850ffe86857cae054c",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/dvd/__dvd.h",
+      "upstream_path": "src/dvd/__dvd.h",
+      "upstream_sha256": "1268e8cf9a346bfa107545672fbcb2b8cbea9f3f3adeb430d01de894b1469f56",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/dvd/dvd.c",
+      "upstream_path": "src/dvd/dvd.c",
+      "upstream_sha256": "4f551d89fe2b6b86a52ed31899f2ed6871acee180e26d49cbab34c462b4f01e2",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/dvd/dvderror.c",
+      "upstream_path": "src/dvd/dvderror.c",
+      "upstream_sha256": "f12f08430c472e4d748bf2ed408df7291f67dd36bff77735cd4cd9bd8f745719",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/dvd/dvdfs.c",
+      "upstream_path": "src/dvd/dvdfs.c",
+      "upstream_sha256": "b67f5de07334e3303c91f382a3d8ec8d84532e5a14a0c9c2f800c9ec1f99340d",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/dvd/dvdidutils.c",
+      "upstream_path": "src/dvd/dvdidutils.c",
+      "upstream_sha256": "17c781caee65ff9580899dde3a41c9ad12089f182f62a145d5a2dfa7d195e29a",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/dvd/dvdlow.c",
+      "upstream_path": "src/dvd/dvdlow.c",
+      "upstream_sha256": "c064dd1a2a8969650016cf742c7009ac20aadcec5a6ae990b864feab04ea5686",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/dvd/dvdqueue.c",
+      "upstream_path": "extern/sdk/dolphin/dvd/dvdqueue.c",
+      "upstream_sha256": "12dc34b1bee4e5d773d180eb64f2401fd97ca40916f1a3932aacc4f285a17314",
+      "modified": true,
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927"
+    },
+    {
+      "path": "src/dolphin/dvd/fstload.c",
+      "upstream_path": "src/dvd/fstload.c",
+      "upstream_sha256": "d90c3493b439305f26170362d1eff37da7678f42b6cdfcf77f1445a63ed5334a",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/exi/EXIBios.c",
+      "upstream_path": "src/exi/EXIBios.c",
+      "upstream_sha256": "1f5519662d19593dc343b0fb03da643aeb32eb1340e772a48074884190cab9da",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/exi/EXIUart.c",
+      "upstream_path": "src/exi/EXIUart.c",
+      "upstream_sha256": "40081fb49c03ce42e79aefade0db46552fe85d82c051d9190f40847b44ef7ab9",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/gba/GBA.c",
+      "upstream_path": "extern/sdk/dolphin/GBA/GBA.c",
+      "upstream_sha256": "1b1ffa0d38b0120868c3106806eac373415141c68a4ce68042944e8123e0806d",
+      "modified": true,
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927"
+    },
+    {
+      "path": "src/dolphin/gba/GBAGetProcessStatus.c",
+      "upstream_path": "extern/sdk/dolphin/GBA/GBAGetProcessStatus.c",
+      "upstream_sha256": "88e8132c776c1bfc9d3f0bb3e6cac8ea7462ca52a12d0438283178ab114f5a6a",
+      "modified": false,
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927"
+    },
+    {
+      "path": "src/dolphin/gba/GBAJoyBoot.c",
+      "upstream_path": "extern/sdk/dolphin/GBA/GBAJoyBoot.c",
+      "upstream_sha256": "7bf5d52de9682f90e2f14164d257425911c34b42ec9ad29d086cd6bdf67b77d2",
+      "modified": true,
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927"
+    },
+    {
+      "path": "src/dolphin/gba/GBAKey.c",
+      "upstream_path": "extern/sdk/dolphin/GBA/GBAKey.c",
+      "upstream_sha256": "2f4228571a0f9f870dcf366be38ec437a16f5ec9f230b99f7d4bd1ac9b7bcd8d",
+      "modified": true,
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927"
+    },
+    {
+      "path": "src/dolphin/gba/GBARead.c",
+      "upstream_path": "extern/sdk/dolphin/GBA/GBARead.c",
+      "upstream_sha256": "87cf5d3562da83d488964c311425e6a5a2ae0618f719e414495d64cb9f6e4a28",
+      "modified": false,
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927"
+    },
+    {
+      "path": "src/dolphin/gba/GBAWrite.c",
+      "upstream_path": "extern/sdk/dolphin/GBA/GBAWrite.c",
+      "upstream_sha256": "c5e5a9338128a4cf7b4efcdcc2230a702456e09448df2e33344f671da4e7f6b8",
+      "modified": false,
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927"
+    },
+    {
+      "path": "src/dolphin/gba/GBAXfer.c",
+      "upstream_path": "extern/sdk/dolphin/GBA/GBAXfer.c",
+      "upstream_sha256": "c19c8dc06a77ecf607eaacc4a2a5ebbd9f3e77afcf40fe0ae3ec14b500b72b53",
+      "modified": true,
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927"
+    },
+    {
+      "path": "src/dolphin/gx/GXAttr.c",
+      "upstream_path": "src/gx/GXAttr.c",
+      "upstream_sha256": "986f2b3891737989ec3ee309c8becbe5082e74eb79b3b0c2072d6ff2b0dba049",
+      "modified": true,
+      "additional_sources": [
+        {
+          "repository": "https://github.com/doldecomp/dolsdk2001",
+          "commit": "eb1234c45e6df75757c652c835507ca89674f9a8",
+          "upstream_path": "src/gx/GXAttr.c",
+          "upstream_sha256": "24198fc8241505c87aaff62eb33542f90fc03e67db62cf58dab8b3a7a48ac180",
+          "purpose": "Older __GXSetVAT loop"
+        }
+      ]
+    },
+    {
+      "path": "src/dolphin/gx/GXBump.c",
+      "upstream_path": "src/gx/GXBump.c",
+      "upstream_sha256": "3f68039bf91977383e636aa6c7b9553de66f647c9a4bab1c223783e22ceda6ba",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/gx/GXDisplayList.c",
+      "upstream_path": "src/gx/GXDisplayList.c",
+      "upstream_sha256": "1628e3f98fc1f5c9ad793f7343cffa874e54d7b34269877280a7853d6c7059ae",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/gx/GXFifo.c",
+      "upstream_path": "src/gx/GXFifo.c",
+      "upstream_sha256": "8aa2729d807197160099841553323ff556154874ced891cd58ffb29a6e256374",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/gx/GXFrameBuf.c",
+      "upstream_path": "extern/sdk/dolphin/gx/GXFrameBuf.c",
+      "upstream_sha256": "07f34cf0ca953833b8aea2548cf843f7e23efe16d90686cdde5d192569eec385",
+      "modified": true,
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927"
+    },
+    {
+      "path": "src/dolphin/gx/GXGeometry.c",
+      "upstream_path": "src/gx/GXGeometry.c",
+      "upstream_sha256": "c3fef92aead1752c90f3cc04b7e8676464db3ebcc497660b4419f09a1181958e",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/gx/GXInit.c",
+      "upstream_path": "src/gx/GXInit.c",
+      "upstream_sha256": "727cf57f11e45529a95131ff572794cd43f67d96d67afe0e43227cdca6a2c4cb",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/gx/GXLight.c",
+      "upstream_path": "src/gx/GXLight.c",
+      "upstream_sha256": "d2c6f80ddc62b2ff01780820ad8bacf1b3905549d94dd1268565f1a87ce8a748",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/gx/GXMisc.c",
+      "upstream_path": "src/gx/GXMisc.c",
+      "upstream_sha256": "9f39645d3687cbd2fb63b6dfcbe6ccb2b3e6177f9b8ab6b3d0324d54132d8e05",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/gx/GXPerf.c",
+      "upstream_path": "src/gx/GXPerf.c",
+      "upstream_sha256": "013f5c6cab1fcf9ca3609ee3ddb024d88513d4804af7958493f0ff81a7dd3be9",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/gx/GXPixel.c",
+      "upstream_path": "src/gx/GXPixel.c",
+      "upstream_sha256": "bb19b08fb283dbfee4945ea8a432565ea35c957d8ad641328b88542e1067a2ed",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/gx/GXTev.c",
+      "upstream_path": "src/gx/GXTev.c",
+      "upstream_sha256": "916fe62c2bd88e378da5b71a523b26dbb068ed5bbda8311fe3668065e98eac1a",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/gx/GXTexture.c",
+      "upstream_path": "src/gx/GXTexture.c",
+      "upstream_sha256": "6a4338c827df7f3eaf9a80f7d1ed1719f9467eb2efd3e7cd425e08e47ce19148",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/gx/__gx.h",
+      "upstream_path": "src/gx/__gx.h",
+      "upstream_sha256": "97e9a947033670f7d5c1aa1d83f4bdc141a1053c78ed0790d8f423488f31754c",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/mtx/mtx44.c",
+      "upstream_path": "src/mtx/mtx44.c",
+      "upstream_sha256": "89d191bf50e31f7ac4ebd7bc8803ce036b1b558c5f386ef46edc725a2ef7cc81",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/os/OS.c",
+      "upstream_path": "src/os/OS.c",
+      "upstream_sha256": "6947478948831f23881fe744bd3a6850a37b09677ab8f0dc601d58512a2a8caf",
+      "modified": true,
+      "additional_sources": [
+        {
+          "repository": "https://github.com/PrimeDecomp/prime",
+          "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927",
+          "upstream_path": "extern/sdk/dolphin/os/OS.c",
+          "upstream_sha256": "be3dcee43545d441d2e0f8a985f6e79de3e234bcd036f06a5813f0abaa9facf1",
+          "purpose": "Older ClearArena implementation and saved-region declarations"
+        }
+      ]
+    },
+    {
+      "path": "src/dolphin/os/OSAlarm.c",
+      "upstream_path": "extern/sdk/dolphin/os/OSAlarm.c",
+      "upstream_sha256": "a950566b2cebcd6c2b4031a21efdd39cbbd8faf1a49d9fd5cec273f1f31e219b",
+      "modified": true,
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927"
+    },
+    {
+      "path": "src/dolphin/os/OSAlloc.c",
+      "upstream_path": "src/os/OSAlloc.c",
+      "upstream_sha256": "973c896549d15693041f2c44817dddf62c054896adb8ecbe9352deee6aebc4f6",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/os/OSArena.c",
+      "upstream_path": "src/os/OSArena.c",
+      "upstream_sha256": "4d4dcb84cf0ff6e06c8a00c362993598033b5142bd352d8f7dc3997a62fbae2c",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/os/OSAudioSystem.c",
+      "upstream_path": "src/os/OSAudioSystem.c",
+      "upstream_sha256": "8825adcdecc52c81582f148ce7dbf654352dad4e0a7fcfd90c3adeebe0d86de3",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/os/OSCache.c",
+      "upstream_path": "src/os/OSCache.c",
+      "upstream_sha256": "9734dc9af6a81ab358e257313479b84cae4db8c0468c9e7cf62c6b7ea00c89ed",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/os/OSDumpContext.c",
+      "upstream_path": "src/os/OSContext.c",
+      "upstream_sha256": "456e43f94d38575b70546c7e9a103cbbac3fc540172710746c43a86c474b1469",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/os/OSError.c",
+      "upstream_path": "src/os/OSError.c",
+      "upstream_sha256": "5e03f95da7a21b9b9de8de421a9611006e9bd16212a6207c2bc63e29297f3b00",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/os/OSFatalScreen.c",
+      "upstream_path": "src/os/OSFatal.c",
+      "upstream_sha256": "f52fe14069dcc30ff0381added62772a93089b8abe2a4d323db664f458977e74",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/os/OSFont.c",
+      "upstream_path": "extern/sdk/dolphin/os/OSFont.c",
+      "upstream_sha256": "2d731820c6a64fc6aca76d5330a32827a635759cdef6cbe005473b7bbfb047cb",
+      "modified": true,
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927"
+    },
+    {
+      "path": "src/dolphin/os/OSInterrupt.c",
+      "upstream_path": "extern/sdk/dolphin/os/OSInterrupt.c",
+      "upstream_sha256": "c76e5a43181da61b1dd2f11bc866e97f8a135ee142379689ffd54c3c00e735af",
+      "modified": true,
+      "repository": "https://github.com/PrimeDecomp/prime",
+      "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927"
+    },
+    {
+      "path": "src/dolphin/os/OSLink.c",
+      "upstream_path": "src/os/OSLink.c",
+      "upstream_sha256": "d16d1bb119b4f64183077edaaf849555e275e5152bf59ffc36ee7e9f94e14da8",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/os/OSMemory.c",
+      "upstream_path": "src/os/OSMemory.c",
+      "upstream_sha256": "abe9a81ecc79c247b734ec2340414ade53ee74b70ee3834bdad4a6d566c7705e",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/os/OSMessage.c",
+      "upstream_path": "src/os/OSMessage.c",
+      "upstream_sha256": "9bb48fe1a23cd3921bdaf5695af91ca39bc6aaa271d3057a11220349467464b0",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/os/OSMutex.c",
+      "upstream_path": "src/os/OSMutex.c",
+      "upstream_sha256": "4e604e4f34cbea5246aff955fd852e988cc1a784b6d0fcdabf85326baa50f37e",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/os/OSReset.c",
+      "upstream_path": "src/os/OSReset.c",
+      "upstream_sha256": "65e308f432e21c5b49045391fedcd22c1bbed103d13f8a3994cde27353ea34f8",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/os/OSResetSW.c",
+      "upstream_path": "src/os/OSResetSW.c",
+      "upstream_sha256": "ef0374e2f0638de2f9e51fbbb9f3b0f213e1f5c7ab2d798832a996bfdce0ca24",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/os/OSRtc.c",
+      "upstream_path": "src/os/OSRtc.c",
+      "upstream_sha256": "2b66f072e8ab933f07f5a813ebae25fdd371fd26dddeac517f8d9bf7f55af3fb",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/os/OSSync.c",
+      "upstream_path": "src/os/OSSync.c",
+      "upstream_sha256": "cc7d830686769f32bebb0e15a12e1a47a0743e9534ab3921bd6203aefd4021e6",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/os/OSThread.c",
+      "upstream_path": "src/os/OSThread.c",
+      "upstream_sha256": "0cb186937e515974a464a69d2d579dc2dd0e84d4df5884c64b95d6ce5c126e57",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/os/OSTime.c",
+      "upstream_path": "src/os/OSTime.c",
+      "upstream_sha256": "0f1a238bc8c3f12867adc599df1f51b90ac0c40c7651110dab15a3f064def444",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/os/__os.h",
+      "upstream_path": "src/os/__os.h",
+      "upstream_sha256": "d2f66ca0cc016fa0684da5b96179a0eebbdcd8cdc7f7b7f0f4ac27230e5d8772",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/pad/Pad.c",
+      "upstream_path": "src/pad/Pad.c",
+      "upstream_sha256": "5bcebf6de6203276a09b3d116595bade56e6d030c9ce13e7ad050ad00d790f7c",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/pad/Padclamp.c",
+      "upstream_path": "src/pad/Padclamp.c",
+      "upstream_sha256": "fa848000dbd3329478b38b42547f1b3fe5f53f44f4c46def3ce7cb9d84f45158",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/perf/__perf.h",
+      "upstream_path": "src/perf/__perf.h",
+      "upstream_sha256": "cc9b3899d19787ff82f8f06a624846f130365f47f9a3f62e259c9771a1845a5c",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/si/SIBios.c",
+      "upstream_path": "src/si/SIBios.c",
+      "upstream_sha256": "4a93a8a605edb72a2eb63ee2d7eba480c38d153177f1cc20f365c519a5d0d12b",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/si/SISamplingRate.c",
+      "upstream_path": "src/si/SISamplingRate.c",
+      "upstream_sha256": "fdc2c788fe644eae91506bc7179bfe9d998be2ab6f1cbe1fdaa9b112f989ab00",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/si/__si.h",
+      "upstream_path": "src/si/__si.h",
+      "upstream_sha256": "ebdc70a1a12a5199f2f59b68f53f206222205e63d6b39a0dd42044298465b0d6",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/syn/__syn.h",
+      "upstream_path": "src/syn/__syn.h",
+      "upstream_sha256": "08b05a8b8e04e272305efa50936912ac395d76d937bd73a403065601e469f8ee",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/vi/__vi.h",
+      "upstream_path": "src/vi/__vi.h",
+      "upstream_sha256": "22201b234d317ca8d2724210a124ac6ceb9708df13c1b73eae87afab8e625b7b",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/vi/vi.c",
+      "upstream_path": "src/vi/vi.c",
+      "upstream_sha256": "d32fb1f2c96016f06353a6a6461af7ef58780c1bd81f2d9b8cf6bab0a5b0564b",
+      "modified": true
+    }
+  ]
+}

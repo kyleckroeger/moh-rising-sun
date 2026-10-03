@@ -1,0 +1,83 @@
+{
+  "id": "GBAWrite",
+  "source": "src/dolphin/gba/GBAWrite.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80240c04",
+      "size": 392,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "WriteProc",
+      "address": "0x80240c04",
+      "size": 48,
+      "binding": 0
+    },
+    {
+      "name": "GBAWriteAsync",
+      "address": "0x80240c34",
+      "size": 148,
+      "binding": 1
+    },
+    {
+      "name": "GBAWrite",
+      "address": "0x80240cc8",
+      "size": 196,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__GBA": "0x80438b00",
+    "memcpy": "0x802665e8",
+    "__GBATransfer": "0x8024102c",
+    "__GBASyncCallback": "0x80240e68",
+    "__GBASync": "0x80240e9c"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "upstream": {
+    "repository": "https://github.com/PrimeDecomp/prime",
+    "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927",
+    "path": "extern/sdk/dolphin/GBA/GBAWrite.c"
+  },
+  "original_file": "GBAWrite.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

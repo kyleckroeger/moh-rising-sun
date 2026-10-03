@@ -1,0 +1,116 @@
+{
+  "id": "OSCache",
+  "source": "src/dolphin/os/OSCache.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE",
+    "-opt",
+    "nopeep"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8025470c",
+      "size": 748,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802de710",
+      "size": 554,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "L2GlobalInvalidate",
+      "address": "0x8025470c",
+      "size": 152,
+      "binding": 1
+    },
+    {
+      "name": "DMAErrorHandler",
+      "address": "0x802547a4",
+      "size": 352,
+      "binding": 1
+    },
+    {
+      "name": "__OSCacheInit",
+      "address": "0x80254904",
+      "size": 244,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__init_hardware": "0x80035668",
+    "__start": "0x80035300",
+    "PPCMfmsr": "0x80231618",
+    "PPCMtmsr": "0x80231620",
+    "PPCMfl2cr": "0x80231638",
+    "PPCMtl2cr": "0x80231640",
+    "DBPrintf": "0x802389cc",
+    "PPCMfhid2": "0x802316e4",
+    "OSReport": "0x80255298",
+    "OSDumpContext": "0x80254f24",
+    "PPCHalt": "0x80231658",
+    "PPCMthid2": "0x802316ec",
+    "PPCMfhid0": "0x80231628",
+    "ICEnable": "0x802546d0",
+    "DCEnable": "0x80254594",
+    "OSSetErrorHandler": "0x80255444"
+  },
+  "undefined_in_discarded_code": [
+    "__flush_cache",
+    "__copy_rom_section",
+    "__init_bss_section",
+    "__init_registers",
+    "__init_data"
+  ],
+  "discarded_functions": [
+    "L2Init",
+    "L2Disable",
+    "L2Enable",
+    "L2SetDataOnly",
+    "L2SetWriteThrough"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/os/OSCache.c"
+  },
+  "original_file": "OSCache.c",
+  "discarded_local_functions": [
+    "L2Init"
+  ],
+  "sda_externals": []
+}

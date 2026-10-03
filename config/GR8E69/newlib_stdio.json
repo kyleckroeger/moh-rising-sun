@@ -1,0 +1,69 @@
+{
+  "id": "newlib_stdio",
+  "source": "src/newlib/stdio/stdio.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char",
+    "-DMB_CAPABLE"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/stdio"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80263c0c",
+      "size": 352,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "__sread",
+      "address": "0x80263c0c",
+      "size": 100,
+      "binding": 1
+    },
+    {
+      "name": "__swrite",
+      "address": "0x80263c70",
+      "size": 112,
+      "binding": 1
+    },
+    {
+      "name": "__sseek",
+      "address": "0x80263ce0",
+      "size": 100,
+      "binding": 1
+    },
+    {
+      "name": "__sclose",
+      "address": "0x80263d44",
+      "size": 40,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_read_r": "0x8026b550",
+    "_lseek_r": "0x8026b4f8",
+    "_write_r": "0x8026b5a8",
+    "_close_r": "0x8026b450"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "stdio.c",
+  "upstream": {
+    "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+    "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+    "path": "newlib/libc/stdio/stdio.c"
+  },
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "newlib_strpbrk",
+  "source": "src/newlib/string/strpbrk.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char",
+    "-DMB_CAPABLE"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/string"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80266ea0",
+      "size": 128,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "strpbrk",
+      "address": "0x80266ea0",
+      "size": 128,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "strpbrk.c",
+  "upstream": {
+    "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+    "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+    "path": "newlib/libc/string/strpbrk.c"
+  },
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

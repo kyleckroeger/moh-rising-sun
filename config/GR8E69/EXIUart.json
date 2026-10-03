@@ -1,0 +1,115 @@
+{
+  "id": "EXIUart",
+  "source": "src/dolphin/exi/EXIUart.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8023f2d4",
+      "size": 1492,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x804521d0",
+      "size": 16,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "ProbeBarnacle",
+      "address": "0x8023f2d4",
+      "size": 396,
+      "binding": 0
+    },
+    {
+      "name": "__OSEnableBarnacle",
+      "address": "0x8023f460",
+      "size": 444,
+      "binding": 1
+    },
+    {
+      "name": "InitializeUART",
+      "address": "0x8023f61c",
+      "size": 112,
+      "binding": 1
+    },
+    {
+      "name": "WriteUARTN",
+      "address": "0x8023f68c",
+      "size": 540,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__init_hardware": "0x80035668",
+    "__start": "0x80035300",
+    "EXIAttach": "0x8023e38c",
+    "EXILock": "0x8023ed14",
+    "EXISelect": "0x8023e554",
+    "EXIImm": "0x8023d9ec",
+    "EXISync": "0x8023ddd4",
+    "EXIDeselect": "0x8023e680",
+    "EXIUnlock": "0x8023ee08",
+    "EXIDetach": "0x8023e498",
+    "EXIGetID": "0x8023ef24",
+    "OSGetConsoleType": "0x8025309c",
+    "OSDisableInterrupts": "0x80257798",
+    "OSRestoreInterrupts": "0x802577c0"
+  },
+  "undefined_in_discarded_code": [
+    "__flush_cache",
+    "__copy_rom_section",
+    "__init_bss_section",
+    "__init_registers",
+    "__init_data"
+  ],
+  "discarded_functions": [
+    "QueueLength",
+    "ReadUARTN"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/exi/EXIUart.c"
+  },
+  "original_file": "EXIUart.c",
+  "discarded_local_functions": [
+    "QueueLength"
+  ],
+  "sda_externals": []
+}

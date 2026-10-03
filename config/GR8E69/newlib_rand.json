@@ -1,0 +1,56 @@
+{
+  "id": "newlib_rand",
+  "source": "src/newlib/stdlib/rand.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char",
+    "-DMB_CAPABLE"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/stdlib"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80265c8c",
+      "size": 48,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "srand",
+      "address": "0x80265c8c",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "rand",
+      "address": "0x80265c98",
+      "size": 36,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_impure_ptr": "0x8045171c"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "rand.c",
+  "upstream": {
+    "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+    "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+    "path": "newlib/libc/stdlib/rand.c"
+  },
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "_impure_ptr"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "OSFont",
+  "source": "src/dolphin/os/OSFont.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802565f4",
+      "size": 2604,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802dee38",
+      "size": 2826,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x804516b0",
+      "size": 2,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80452370",
+      "size": 16,
+      "type": 8
+    },
+    {
+      "name": ".sdata2",
+      "address": "0x804529d0",
+      "size": 8,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetFontCode",
+      "address": "0x802565f4",
+      "size": 412,
+      "binding": 0
+    },
+    {
+      "name": "Decode",
+      "address": "0x80256790",
+      "size": 372,
+      "binding": 0
+    },
+    {
+      "name": "ReadROM",
+      "address": "0x8025695c",
+      "size": 140,
+      "binding": 0
+    },
+    {
+      "name": "OSGetFontEncode",
+      "address": "0x80256904",
+      "size": 88,
+      "binding": 1
+    },
+    {
+      "name": "OSLoadFont",
+      "address": "0x802569e8",
+      "size": 820,
+      "binding": 1
+    },
+    {
+      "name": "OSGetFontTexel",
+      "address": "0x80256d1c",
+      "size": 772,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__init_hardware": "0x80035668",
+    "__start": "0x80035300",
+    "__OSReadROM": "0x80259694"
+  },
+  "undefined_in_discarded_code": [
+    "__flush_cache",
+    "__copy_rom_section",
+    "__init_bss_section",
+    "__init_registers",
+    "__init_data"
+  ],
+  "discarded_functions": [],
+  "upstream": {
+    "repository": "https://github.com/PrimeDecomp/prime",
+    "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927",
+    "path": "extern/sdk/dolphin/os/OSFont.c"
+  },
+  "original_file": "OSFont.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

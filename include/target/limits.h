@@ -1,0 +1,8 @@
+#define INT_MAX 2147483647
+#define CHAR_BIT 8
+#define UCHAR_MAX 255
+#define SHRT_MAX 32767
+
+#define ULONG_MAX 4294967295UL
+#define LONG_MAX 2147483647L
+#define LONG_MIN (-LONG_MAX - 1L)

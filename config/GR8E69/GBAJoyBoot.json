@@ -1,0 +1,158 @@
+{
+  "id": "GBAJoyBoot",
+  "source": "src/dolphin/gba/GBAJoyBoot.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8023fb98",
+      "size": 3852,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802dba58",
+      "size": 45,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "F23",
+      "address": "0x8023fcd4",
+      "size": 168,
+      "binding": 0
+    },
+    {
+      "name": "F25",
+      "address": "0x8023fd7c",
+      "size": 208,
+      "binding": 0
+    },
+    {
+      "name": "F27",
+      "address": "0x8023fe4c",
+      "size": 208,
+      "binding": 0
+    },
+    {
+      "name": "F29",
+      "address": "0x8023ff1c",
+      "size": 128,
+      "binding": 0
+    },
+    {
+      "name": "F31",
+      "address": "0x80240178",
+      "size": 1176,
+      "binding": 0
+    },
+    {
+      "name": "F33",
+      "address": "0x80240610",
+      "size": 372,
+      "binding": 0
+    },
+    {
+      "name": "F35",
+      "address": "0x80240784",
+      "size": 348,
+      "binding": 0
+    },
+    {
+      "name": "F37",
+      "address": "0x802408e0",
+      "size": 252,
+      "binding": 0
+    },
+    {
+      "name": "F39",
+      "address": "0x802409dc",
+      "size": 128,
+      "binding": 0
+    },
+    {
+      "name": "GBAJoyBootAsync",
+      "address": "0x8023fb98",
+      "size": 316,
+      "binding": 1
+    },
+    {
+      "name": "__GBAX01",
+      "address": "0x8023ff9c",
+      "size": 476,
+      "binding": 1
+    },
+    {
+      "name": "GBAJoyBoot",
+      "address": "0x80240a5c",
+      "size": 72,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__GBA": "0x80438b00",
+    "GBAGetProcessStatus": "0x8024132c",
+    "GBAGetStatusAsync": "0x8023f9a0",
+    "GBAResetAsync": "0x8023fa94",
+    "GBAReadAsync": "0x80240b04",
+    "__GBAX02": "0x80241248",
+    "OSGetTime": "0x8025af7c",
+    "GBAWriteAsync": "0x80240c34",
+    "OSGetTick": "0x8025af94",
+    "__GBASetDelay": "0x802410a0",
+    "__GBASyncCallback": "0x80240e68",
+    "__GBASync": "0x80240e9c"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "F72",
+    "F95",
+    "F104"
+  ],
+  "upstream": {
+    "repository": "https://github.com/PrimeDecomp/prime",
+    "commit": "693fa74f9a9a7cdbb97f09a09d30853415e40927",
+    "path": "extern/sdk/dolphin/GBA/GBAJoyBoot.c"
+  },
+  "original_file": "GBAJoyBoot.c",
+  "discarded_local_functions": [
+    "F72",
+    "F95",
+    "F104"
+  ],
+  "sda_externals": []
+}

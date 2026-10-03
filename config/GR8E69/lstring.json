@@ -1,0 +1,92 @@
+{
+  "id": "lstring",
+  "source": "src/lua/lstring.c",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80041978",
+      "size": 1032
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802968fc",
+      "size": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "luaS_init",
+      "address": "0x80041978",
+      "size": 132,
+      "binding": 1
+    },
+    {
+      "name": "luaS_freeall",
+      "address": "0x800419fc",
+      "size": 84,
+      "binding": 1
+    },
+    {
+      "name": "hash_s",
+      "address": "0x80041a50",
+      "size": 68,
+      "binding": 0
+    },
+    {
+      "name": "luaS_resize",
+      "address": "0x80041a94",
+      "size": 268,
+      "binding": 1
+    },
+    {
+      "name": "newentry",
+      "address": "0x80041ba0",
+      "size": 100,
+      "binding": 0
+    },
+    {
+      "name": "luaS_newlstr",
+      "address": "0x80041c04",
+      "size": 260,
+      "binding": 1
+    },
+    {
+      "name": "luaS_new",
+      "address": "0x80041d08",
+      "size": 68,
+      "binding": 1
+    },
+    {
+      "name": "luaS_newfixed",
+      "address": "0x80041d4c",
+      "size": 52,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "DWI_alloc": "0x801a8670",
+    "DWI_free": "0x801a8894",
+    "memcmp": "0x80266558",
+    "memcpy": "0x802665e8",
+    "strlen": "0x80266b70"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "luaS_createudata",
+    "luaS_newudata"
+  ]
+}

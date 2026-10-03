@@ -1,0 +1,207 @@
+{
+  "id": "ai",
+  "source": "src/dolphin/ai/ai.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8022bfac",
+      "size": 1704,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802d6e98",
+      "size": 68,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x80451310",
+      "size": 4,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80451f48",
+      "size": 64,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "__AI_set_stream_sample_rate",
+      "address": "0x8022c284",
+      "size": 212,
+      "binding": 0
+    },
+    {
+      "name": "__AIDHandler",
+      "address": "0x8022c5a8",
+      "size": 172,
+      "binding": 0
+    },
+    {
+      "name": "__AISHandler",
+      "address": "0x8022c52c",
+      "size": 124,
+      "binding": 0
+    },
+    {
+      "name": "AIRegisterDMACallback",
+      "address": "0x8022bfac",
+      "size": 68,
+      "binding": 1
+    },
+    {
+      "name": "AIInitDMA",
+      "address": "0x8022bff0",
+      "size": 136,
+      "binding": 1
+    },
+    {
+      "name": "AIStartDMA",
+      "address": "0x8022c078",
+      "size": 24,
+      "binding": 1
+    },
+    {
+      "name": "AIStopDMA",
+      "address": "0x8022c090",
+      "size": 24,
+      "binding": 1
+    },
+    {
+      "name": "AISetStreamPlayState",
+      "address": "0x8022c0a8",
+      "size": 216,
+      "binding": 1
+    },
+    {
+      "name": "AIGetStreamPlayState",
+      "address": "0x8022c180",
+      "size": 16,
+      "binding": 1
+    },
+    {
+      "name": "AIGetStreamSampleRate",
+      "address": "0x8022c358",
+      "size": 16,
+      "binding": 1
+    },
+    {
+      "name": "AIGetStreamVolRight",
+      "address": "0x8022c3b0",
+      "size": 16,
+      "binding": 1
+    },
+    {
+      "name": "AIGetStreamVolLeft",
+      "address": "0x8022c384",
+      "size": 16,
+      "binding": 1
+    },
+    {
+      "name": "AISetStreamVolRight",
+      "address": "0x8022c394",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "AISetStreamVolLeft",
+      "address": "0x8022c368",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "AISetDSPSampleRate",
+      "address": "0x8022c190",
+      "size": 224,
+      "binding": 1
+    },
+    {
+      "name": "AIGetDSPSampleRate",
+      "address": "0x8022c270",
+      "size": 20,
+      "binding": 1
+    },
+    {
+      "name": "AIInit",
+      "address": "0x8022c3c0",
+      "size": 364,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "OSDisableInterrupts": "0x80257798",
+    "OSRestoreInterrupts": "0x802577c0",
+    "__AI_SRC_INIT": "0x8022c6ac",
+    "OSRegisterVersion": "0x80253a34",
+    "__OSSetInterruptHandler": "0x802577e4",
+    "__OSUnmaskInterrupts": "0x80257be8",
+    "OSClearContext": "0x80254e44",
+    "OSSetCurrentContext": "0x80254c4c",
+    "__AICallbackStackSwitch": "0x8022c654"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "AIGetDMAEnableFlag",
+    "AIGetDMABytesLeft",
+    "AIGetDMAStartAddr",
+    "AIGetDMALength",
+    "AICheckInit",
+    "AIRegisterStreamCallback",
+    "AIGetStreamSampleCount",
+    "AIResetStreamSampleCount",
+    "AISetStreamTrigger",
+    "AIGetStreamTrigger",
+    "AISetStreamSampleRate",
+    "__AI_DEBUG_set_stream_sample_rate",
+    "AIReset"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/ai/ai.c"
+  },
+  "original_file": "ai.c",
+  "local_externals": [
+    "__AICallbackStackSwitch",
+    "__AI_SRC_INIT"
+  ],
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

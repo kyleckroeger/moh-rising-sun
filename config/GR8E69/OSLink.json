@@ -1,0 +1,99 @@
+{
+  "id": "OSLink",
+  "source": "src/dolphin/os/OSLink.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80258004",
+      "size": 24,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802df978",
+      "size": 79,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "__OSModuleInit",
+      "address": "0x80258004",
+      "size": 24,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__init_hardware": "0x80035668",
+    "__start": "0x80035300",
+    "DCFlushRange": "0x802545d4",
+    "ICInvalidateRange": "0x8025468c",
+    "OSReport": "0x80255298",
+    "memset": "0x80266778"
+  },
+  "undefined_in_discarded_code": [
+    "__flush_cache",
+    "__copy_rom_section",
+    "__init_bss_section",
+    "__init_registers",
+    "__init_data"
+  ],
+  "discarded_functions": [
+    "Relocate",
+    "Link",
+    "Undo",
+    "OSNotifyLink",
+    "OSNotifyUnlink",
+    "OSSetStringTable",
+    "OSLink",
+    "OSLinkFixed",
+    "OSUnlink",
+    "OSSearchModule"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/os/OSLink.c"
+  },
+  "original_file": "OSLink.c",
+  "discarded_local_functions": [
+    "Relocate",
+    "Link",
+    "Undo"
+  ],
+  "sda_externals": []
+}

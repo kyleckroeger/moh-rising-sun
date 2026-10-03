@@ -1,0 +1,19 @@
+{
+  "entry": "0x80035300",
+  "sda_base": "0x80459220",
+  "sda2_base": "0x80469220",
+  "normalized_dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
+  "normalized_dol_size": 2860576,
+  "sections": {
+    ".init": "0x80035300",
+    ".text": "0x800356a0",
+    ".data2": "0x802959a0",
+    ".data3": "0x80295bc0",
+    ".data4": "0x80295be0",
+    ".data5": "0x802c1680",
+    ".bss": "0x802edd00",
+    ".data6": "0x80451220",
+    ".sbss": "0x80451f20",
+    ".data7": "0x804527a0"
+  }
+}

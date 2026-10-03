@@ -1,0 +1,95 @@
+{
+  "id": "ltm",
+  "source": "src/lua/ltm.c",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800426ec",
+      "size": 932
+    },
+    {
+      "name": ".rodata",
+      "address": "0x80296990",
+      "size": 584
+    }
+  ],
+  "functions": [
+    {
+      "name": "findevent",
+      "address": "0x800426ec",
+      "size": 116,
+      "binding": 0
+    },
+    {
+      "name": "luaI_checkevent",
+      "address": "0x80042760",
+      "size": 164,
+      "binding": 0
+    },
+    {
+      "name": "luaT_validevent",
+      "address": "0x80042804",
+      "size": 48,
+      "binding": 1
+    },
+    {
+      "name": "init_entry",
+      "address": "0x80042834",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "luaT_init",
+      "address": "0x80042874",
+      "size": 132,
+      "binding": 1
+    },
+    {
+      "name": "checktag",
+      "address": "0x800428f8",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "luaT_tag",
+      "address": "0x80042938",
+      "size": 52,
+      "binding": 1
+    },
+    {
+      "name": "lua_settagmethod",
+      "address": "0x8004296c",
+      "size": 292,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "strcmp": "0x802669b4",
+    "luaO_verror": "0x8003eecc",
+    "luaM_growaux": "0x8003ec08",
+    "luaD_checkstack": "0x8003b340",
+    "luaO_typenames": "0x80296578",
+    "lua_error": "0x8003bb9c"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "luaT_realtag",
+    "lua_copytagmethods",
+    "lua_gettagmethod",
+    "lua_newtag"
+  ]
+}

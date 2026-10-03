@@ -1,0 +1,91 @@
+{
+  "id": "CARDDir",
+  "source": "src/dolphin/card/CARDDir.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80232e74",
+      "size": 612,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "WriteCallback",
+      "address": "0x80232e7c",
+      "size": 208,
+      "binding": 0
+    },
+    {
+      "name": "EraseCallback",
+      "address": "0x80232f4c",
+      "size": 200,
+      "binding": 0
+    },
+    {
+      "name": "__CARDGetDirBlock",
+      "address": "0x80232e74",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "__CARDUpdateDir",
+      "address": "0x80233014",
+      "size": 196,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__CARDBlock": "0x80438500",
+    "memcpy": "0x802665e8",
+    "__CARDPutControlBlock": "0x80232750",
+    "__CARDWrite": "0x8023858c",
+    "__CARDCheckSum": "0x802330d8",
+    "DCStoreRange": "0x80254604",
+    "__CARDEraseSector": "0x802324cc"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/card/CARDDir.c"
+  },
+  "original_file": "CARDDir.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

@@ -1,0 +1,54 @@
+{
+  "id": "newlib_fread",
+  "source": "src/newlib/stdio/fread.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char",
+    "-DMB_CAPABLE"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/stdio"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802634e8",
+      "size": 268,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "memcpyalpha",
+      "address": "0x802634e8",
+      "size": 44,
+      "binding": 1
+    },
+    {
+      "name": "fread",
+      "address": "0x80263514",
+      "size": 224,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__srefill": "0x802638c8"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "fread.c",
+  "upstream": {
+    "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+    "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+    "path": "newlib/libc/stdio/fread.c"
+  },
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

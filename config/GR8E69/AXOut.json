@@ -1,0 +1,139 @@
+{
+  "id": "AXOut",
+  "source": "src/dolphin/ax/AXOut.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8022fb04",
+      "size": 1552,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x80422240",
+      "size": 19024,
+      "type": 8
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80452030",
+      "size": 52,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "__AXDSPInitCallback",
+      "address": "0x8022fbc0",
+      "size": 12,
+      "binding": 0
+    },
+    {
+      "name": "__AXDSPResumeCallback",
+      "address": "0x8022fbcc",
+      "size": 88,
+      "binding": 0
+    },
+    {
+      "name": "__AXDSPDoneCallback",
+      "address": "0x8022fc24",
+      "size": 44,
+      "binding": 0
+    },
+    {
+      "name": "__AXOutAiCallback",
+      "address": "0x8022fb04",
+      "size": 188,
+      "binding": 1
+    },
+    {
+      "name": "__AXOutInitDSP",
+      "address": "0x8022fc50",
+      "size": 204,
+      "binding": 1
+    },
+    {
+      "name": "__AXOutInit",
+      "address": "0x8022fd1c",
+      "size": 928,
+      "binding": 1
+    },
+    {
+      "name": "__AXOutQuit",
+      "address": "0x802300bc",
+      "size": 88,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "OSGetTime": "0x8025af7c",
+    "__AXOutNewFrame": "0x8022f94c",
+    "DSPAssertTask": "0x80238be4",
+    "AIInitDMA": "0x8022bff0",
+    "OSWakeupThread": "0x8025ad04",
+    "axDspSlave": "0x802d8ae0",
+    "axDspSlaveLength": "0x80451330",
+    "OSInitThreadQueue": "0x80259d80",
+    "DSPCheckInit": "0x80238b2c",
+    "DSPInit": "0x80238a68",
+    "DSPAddTask": "0x80238b34",
+    "DCFlushRange": "0x802545d4",
+    "AIRegisterDMACallback": "0x8022bfac",
+    "__AXNextFrame": "0x8022f258",
+    "AIStartDMA": "0x8022c078",
+    "OSDisableInterrupts": "0x80257798",
+    "DSPCancelTask": "0x80238ba4",
+    "OSSleepThread": "0x8025ac18",
+    "AIStopDMA": "0x8022c090",
+    "OSRestoreInterrupts": "0x802577c0"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "AXSetStepMode",
+    "AXRegisterCallback"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/ax/AXOut.c"
+  },
+  "original_file": "AXOut.c",
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "axDspSlaveLength"
+  ]
+}

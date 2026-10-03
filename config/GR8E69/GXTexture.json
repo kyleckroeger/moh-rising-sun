@@ -1,0 +1,265 @@
+{
+  "id": "GXTexture",
+  "source": "src/dolphin/gx/GXTexture.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802465ac",
+      "size": 4240,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802dc4d0",
+      "size": 792,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x80451430",
+      "size": 72,
+      "type": 1
+    },
+    {
+      "name": ".sdata2",
+      "address": "0x80452830",
+      "size": 56,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "__GXGetTexTileShift",
+      "address": "0x802465ac",
+      "size": 100,
+      "binding": 0
+    },
+    {
+      "name": "__SetSURegs",
+      "address": "0x802470cc",
+      "size": 160,
+      "binding": 0
+    },
+    {
+      "name": "GXGetTexBufferSize",
+      "address": "0x80246610",
+      "size": 348,
+      "binding": 1
+    },
+    {
+      "name": "__GetImageTileCount",
+      "address": "0x8024676c",
+      "size": 200,
+      "binding": 1
+    },
+    {
+      "name": "GXInitTexObj",
+      "address": "0x80246834",
+      "size": 588,
+      "binding": 1
+    },
+    {
+      "name": "GXInitTexObjCI",
+      "address": "0x80246a80",
+      "size": 72,
+      "binding": 1
+    },
+    {
+      "name": "GXInitTexObjLOD",
+      "address": "0x80246ac8",
+      "size": 356,
+      "binding": 1
+    },
+    {
+      "name": "GXInitTexObjWrapMode",
+      "address": "0x80246c2c",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "GXInitTexObjTlut",
+      "address": "0x80246c48",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GXGetTexObjWidth",
+      "address": "0x80246c50",
+      "size": 16,
+      "binding": 1
+    },
+    {
+      "name": "GXGetTexObjHeight",
+      "address": "0x80246c60",
+      "size": 16,
+      "binding": 1
+    },
+    {
+      "name": "GXGetTexObjFmt",
+      "address": "0x80246c70",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GXGetTexObjMipMap",
+      "address": "0x80246c78",
+      "size": 24,
+      "binding": 1
+    },
+    {
+      "name": "GXLoadTexObjPreLoaded",
+      "address": "0x80246c90",
+      "size": 380,
+      "binding": 1
+    },
+    {
+      "name": "GXLoadTexObj",
+      "address": "0x80246e0c",
+      "size": 84,
+      "binding": 1
+    },
+    {
+      "name": "GXInitTlutObj",
+      "address": "0x80246e60",
+      "size": 56,
+      "binding": 1
+    },
+    {
+      "name": "GXLoadTlut",
+      "address": "0x80246e98",
+      "size": 152,
+      "binding": 1
+    },
+    {
+      "name": "GXInitTexCacheRegion",
+      "address": "0x80246f30",
+      "size": 244,
+      "binding": 1
+    },
+    {
+      "name": "GXInitTlutRegion",
+      "address": "0x80247024",
+      "size": 56,
+      "binding": 1
+    },
+    {
+      "name": "GXInvalidateTexAll",
+      "address": "0x8024705c",
+      "size": 72,
+      "binding": 1
+    },
+    {
+      "name": "GXSetTexRegionCallback",
+      "address": "0x802470a4",
+      "size": 20,
+      "binding": 1
+    },
+    {
+      "name": "GXSetTlutRegionCallback",
+      "address": "0x802470b8",
+      "size": 20,
+      "binding": 1
+    },
+    {
+      "name": "__GXSetSUTexRegs",
+      "address": "0x8024716c",
+      "size": 380,
+      "binding": 1
+    },
+    {
+      "name": "__GXSetTmemConfig",
+      "address": "0x802472e8",
+      "size": 852,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "memset": "0x80266778",
+    "__GXData": "0x804527b0",
+    "__GXFlushTextureState": "0x80247b08"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "GXInitTexObjData",
+    "GXInitTexObjFilter",
+    "GXInitTexObjMaxLOD",
+    "GXInitTexObjMinLOD",
+    "GXInitTexObjLODBias",
+    "GXInitTexObjBiasClamp",
+    "GXInitTexObjEdgeLOD",
+    "GXInitTexObjMaxAniso",
+    "GXInitTexObjUserData",
+    "GXGetTexObjUserData",
+    "GXGetTexObjAll",
+    "GXGetTexObjData",
+    "GXGetTexObjWrapS",
+    "GXGetTexObjWrapT",
+    "GXGetTexObjLODAll",
+    "GXGetTexObjMinFilt",
+    "GXGetTexObjMagFilt",
+    "GXGetTexObjMinLOD",
+    "GXGetTexObjMaxLOD",
+    "GXGetTexObjLODBias",
+    "GXGetTexObjBiasClamp",
+    "GXGetTexObjEdgeLOD",
+    "GXGetTexObjMaxAniso",
+    "GXGetTexObjTlut",
+    "GXGetTlutObjAll",
+    "GXGetTlutObjData",
+    "GXGetTlutObjFmt",
+    "GXGetTlutObjNumEntries",
+    "GXInitTexPreLoadRegion",
+    "GXGetTexRegionAll",
+    "GXGetTlutRegionAll",
+    "GXInvalidateTexRegion",
+    "GXPreLoadEntireTexture",
+    "GXSetTexCoordScaleManually",
+    "GXSetTexCoordCylWrap",
+    "GXSetTexCoordBias",
+    "__GXGetSUTexSize"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/gx/GXTexture.c"
+  },
+  "original_file": "GXTexture.c",
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "__GXData"
+  ]
+}

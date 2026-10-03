@@ -1,0 +1,280 @@
+{
+  "id": "OSThread",
+  "source": "src/dolphin/os/OSThread.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80259c24",
+      "size": 4952,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802df9d8",
+      "size": 2061,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x80446178",
+      "size": 2552,
+      "type": 8
+    },
+    {
+      "name": ".sdata",
+      "address": "0x804516b8",
+      "size": 5,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x804523c8",
+      "size": 12,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "DefaultSwitchThreadCallback",
+      "address": "0x80259c24",
+      "size": 4,
+      "binding": 0
+    },
+    {
+      "name": "UnsetRun",
+      "address": "0x80259e50",
+      "size": 104,
+      "binding": 0
+    },
+    {
+      "name": "SetEffectivePriority",
+      "address": "0x80259ef4",
+      "size": 448,
+      "binding": 0
+    },
+    {
+      "name": "SelectThread",
+      "address": "0x8025a104",
+      "size": 552,
+      "binding": 0
+    },
+    {
+      "name": "__OSThreadInit",
+      "address": "0x80259c28",
+      "size": 344,
+      "binding": 1
+    },
+    {
+      "name": "OSInitThreadQueue",
+      "address": "0x80259d80",
+      "size": 16,
+      "binding": 1
+    },
+    {
+      "name": "OSClearStack",
+      "address": "0x8025aed0",
+      "size": 172,
+      "binding": 1
+    },
+    {
+      "name": "OSGetCurrentThread",
+      "address": "0x80259d90",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "OSIsThreadTerminated",
+      "address": "0x80259d9c",
+      "size": 52,
+      "binding": 1
+    },
+    {
+      "name": "OSDisableScheduler",
+      "address": "0x80259dd0",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "OSEnableScheduler",
+      "address": "0x80259e10",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "__OSGetEffectivePriority",
+      "address": "0x80259eb8",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "__OSPromoteThread",
+      "address": "0x8025a0b4",
+      "size": 80,
+      "binding": 1
+    },
+    {
+      "name": "__OSReschedule",
+      "address": "0x8025a32c",
+      "size": 48,
+      "binding": 1
+    },
+    {
+      "name": "OSYieldThread",
+      "address": "0x8025a35c",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "OSCreateThread",
+      "address": "0x8025a398",
+      "size": 488,
+      "binding": 1
+    },
+    {
+      "name": "OSExitThread",
+      "address": "0x8025a580",
+      "size": 228,
+      "binding": 1
+    },
+    {
+      "name": "OSWakeupThread",
+      "address": "0x8025ad04",
+      "size": 260,
+      "binding": 1
+    },
+    {
+      "name": "OSCancelThread",
+      "address": "0x8025a664",
+      "size": 444,
+      "binding": 1
+    },
+    {
+      "name": "OSSleepThread",
+      "address": "0x8025ac18",
+      "size": 236,
+      "binding": 1
+    },
+    {
+      "name": "OSResumeThread",
+      "address": "0x8025a820",
+      "size": 648,
+      "binding": 1
+    },
+    {
+      "name": "OSSuspendThread",
+      "address": "0x8025aaa8",
+      "size": 368,
+      "binding": 1
+    },
+    {
+      "name": "OSSetThreadPriority",
+      "address": "0x8025ae08",
+      "size": 192,
+      "binding": 1
+    },
+    {
+      "name": "OSGetThreadPriority",
+      "address": "0x8025aec8",
+      "size": 8,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__init_hardware": "0x80035668",
+    "__start": "0x80035300",
+    "OSDisableInterrupts": "0x80257798",
+    "OSRestoreInterrupts": "0x802577c0",
+    "_stack_addr": "0x8049c1e0",
+    "_stack_end": "0x8047c1e0",
+    "OSClearContext": "0x80254e44",
+    "OSSetCurrentContext": "0x80254c4c",
+    "OSLoadContext": "0x80254d34",
+    "OSGetCurrentContext": "0x80254ca8",
+    "OSSaveContext": "0x80254cb4",
+    "OSEnableInterrupts": "0x802577ac",
+    "__OSErrorTable": "0x80445df0",
+    "OSInitContext": "0x80254e68",
+    "__OSFpscrEnableBits": "0x804516a0",
+    "__OSUnlockAllMutex": "0x802586e0",
+    "OSReport": "0x80255298",
+    "OSPanic": "0x80255318",
+    "OSGetStackPointer": "0x80254e0c"
+  },
+  "undefined_in_discarded_code": [
+    "__flush_cache",
+    "__copy_rom_section",
+    "__init_bss_section",
+    "__init_registers",
+    "__init_data",
+    "__OSCheckDeadLock",
+    "__OSCheckMutexes"
+  ],
+  "discarded_functions": [
+    "__OSSwitchThread",
+    "__OSIsThreadActive",
+    "SetRun",
+    "UpdatePriority",
+    "CheckThreadQueue",
+    "IsMember",
+    "OSSetSwitchThreadCallback",
+    "OSIsThreadSuspended",
+    "OSJoinThread",
+    "OSDetachThread",
+    "OSSetIdleFunction",
+    "OSGetIdleFunction",
+    "OSCheckActiveThreads",
+    "OSSetThreadSpecific",
+    "OSGetThreadSpecific"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/os/OSThread.c"
+  },
+  "original_file": "OSThread.c",
+  "discarded_local_functions": [
+    "__OSSwitchThread",
+    "__OSIsThreadActive",
+    "SetRun",
+    "UpdatePriority",
+    "CheckThreadQueue",
+    "IsMember"
+  ],
+  "sda_externals": [
+    "__OSFpscrEnableBits"
+  ]
+}

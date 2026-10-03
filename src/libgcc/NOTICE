@@ -1,0 +1,13 @@
+GCC runtime restoration
+
+These files derive from GCC 2.95.2, copyright the Free Software Foundation
+and the authors credited in each file. Source URLs and hashes are recorded
+in config/GR8E69/libgcc-source.json. COPYING is the unmodified GNU GPL v2.
+The special runtime-linking exception is preserved in libgcc2.c itself.
+
+Local modifications, made with AI assistance, annotate the observed .sdata2
+placement of each private __clz_tab lookup table. tconfig.h is a local
+target configuration selecting 32-bit big-endian PowerPC, 64-bit long double,
+no libc dependencies and the upstream portable C arithmetic macros.
+Unselected runtime functions and inline assembly branches are not built or
+credited. See docs/Libgcc.md for the accepted profile and evidence.

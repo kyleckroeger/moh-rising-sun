@@ -1,0 +1,55 @@
+{
+  "id": "newlib_wctomb_r",
+  "source": "src/newlib/stdlib/wctomb_r.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char",
+    "-DMB_CAPABLE"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/stdlib"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80266350",
+      "size": 520,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802c0210",
+      "size": 24,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "_wctomb_r",
+      "address": "0x80266350",
+      "size": 520,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "strlen": "0x80266b70",
+    "strcmp": "0x802669b4"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "wctomb_r.c",
+  "upstream": {
+    "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+    "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+    "path": "newlib/libc/stdlib/wctomb_r.c"
+  },
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

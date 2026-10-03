@@ -1,0 +1,87 @@
+{
+  "id": "ai_src",
+  "source": "src/dolphin/ai/ai_src.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE",
+    "-opt",
+    "nopeep"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8022c6ac",
+      "size": 484,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "__AI_SRC_INIT",
+      "address": "0x8022c6ac",
+      "size": 484,
+      "binding": 0
+    }
+  ],
+  "externals": {
+    "OSGetTime": "0x8025af7c",
+    "bound_32KHz": "0x80451f60",
+    "buffer": "0x80451f80",
+    "min_wait": "0x80451f70",
+    "bound_48KHz": "0x80451f68",
+    "max_wait": "0x80451f78"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/ai/ai.c"
+  },
+  "original_file": "ai.c",
+  "local_externals": [
+    "bound_32KHz",
+    "bound_48KHz",
+    "min_wait",
+    "max_wait",
+    "buffer"
+  ],
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "bound_32KHz",
+    "bound_48KHz",
+    "buffer",
+    "max_wait",
+    "min_wait"
+  ]
+}

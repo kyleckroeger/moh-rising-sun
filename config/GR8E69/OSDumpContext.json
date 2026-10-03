@@ -1,0 +1,87 @@
+{
+  "id": "OSDumpContext",
+  "source": "src/dolphin/os/OSDumpContext.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE",
+    "-opt",
+    "nopeep"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80254f24",
+      "size": 680,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802de940",
+      "size": 436,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "OSDumpContext",
+      "address": "0x80254f24",
+      "size": 680,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__init_hardware": "0x80035668",
+    "__start": "0x80035300",
+    "OSReport": "0x80255298",
+    "OSDisableInterrupts": "0x80257798",
+    "OSSetCurrentContext": "0x80254c4c",
+    "__cvt_fp2unsigned": "0x801afe54",
+    "OSRestoreInterrupts": "0x802577c0"
+  },
+  "undefined_in_discarded_code": [
+    "__flush_cache",
+    "__copy_rom_section",
+    "__init_bss_section",
+    "__init_registers",
+    "__init_data"
+  ],
+  "discarded_functions": [],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/os/OSContext.c"
+  },
+  "original_file": "OSContext.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

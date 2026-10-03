@@ -1,0 +1,95 @@
+{
+  "id": "CARDStat",
+  "source": "src/dolphin/card/CARDStat.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802368d8",
+      "size": 1224,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "UpdateIconOffsets",
+      "address": "0x802368d8",
+      "size": 504,
+      "binding": 0
+    },
+    {
+      "name": "CARDGetStatus",
+      "address": "0x80236ad0",
+      "size": 276,
+      "binding": 1
+    },
+    {
+      "name": "CARDSetStatusAsync",
+      "address": "0x80236be4",
+      "size": 372,
+      "binding": 1
+    },
+    {
+      "name": "CARDSetStatus",
+      "address": "0x80236d58",
+      "size": 72,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__CARDGetControlBlock": "0x80232698",
+    "__CARDGetDirBlock": "0x80232e74",
+    "__CARDIsReadable": "0x80235520",
+    "memcpy": "0x802665e8",
+    "__CARDPutControlBlock": "0x80232750",
+    "__CARDIsWritable": "0x802353ec",
+    "OSGetTime": "0x8025af7c",
+    "__div2i": "0x801afea0",
+    "__CARDUpdateDir": "0x80233014",
+    "__CARDSyncCallback": "0x8023173c",
+    "__CARDSync": "0x80232988"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/card/CARDStat.c"
+  },
+  "original_file": "CARDStat.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

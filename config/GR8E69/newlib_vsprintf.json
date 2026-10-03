@@ -1,0 +1,53 @@
+{
+  "id": "newlib_vsprintf",
+  "source": "src/newlib/stdio/vsprintf.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char",
+    "-DMB_CAPABLE"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/stdio"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80264dfc",
+      "size": 92,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "vsprintf",
+      "address": "0x80264dfc",
+      "size": 92,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_impure_ptr": "0x8045171c",
+    "vfprintf": "0x80267760"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "vsprintf_r"
+  ],
+  "original_file": "vsprintf.c",
+  "upstream": {
+    "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+    "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+    "path": "newlib/libc/stdio/vsprintf.c"
+  },
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "_impure_ptr"
+  ]
+}

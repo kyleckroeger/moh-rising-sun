@@ -1,0 +1,63 @@
+{
+  "id": "lmem",
+  "source": "src/lua/lmem.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8003ec08",
+      "size": 292,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802964f8",
+      "size": 44,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "luaM_growaux",
+      "address": "0x8003ec08",
+      "size": 136,
+      "binding": 1
+    },
+    {
+      "name": "luaM_realloc",
+      "address": "0x8003ec90",
+      "size": 156,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "lua_error": "0x8003bb9c",
+    "luaO_power2": "0x8003ed2c",
+    "DWI_free": "0x801a8894",
+    "DWI_realloc": "0x801a87e4",
+    "luaD_breakrun": "0x8003bbdc"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "lmem.c",
+  "upstream": {
+    "archive": "https://www.lua.org/ftp/lua-4.0.1.tar.gz",
+    "sha256": "df746e149cf6939e90009d2e540eee918d585b4d1bc6d68b19316a050d484d2a",
+    "path": "src/lmem.c"
+  },
+  "discarded_local_functions": []
+}

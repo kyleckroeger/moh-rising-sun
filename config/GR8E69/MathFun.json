@@ -1,0 +1,64 @@
+{
+  "source": "src/MathFun.cpp",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0"
+  ],
+  "functions": [
+    {
+      "name": "MathFunCloseToZero__Fff",
+      "address": "0x80133904",
+      "size": 40,
+      "binding": 1
+    },
+    {
+      "name": "MathFunSRandom__FUi",
+      "address": "0x8013392c",
+      "size": 44,
+      "binding": 1
+    },
+    {
+      "name": "MathFunRandomUI32Raw__Fv",
+      "address": "0x80133958",
+      "size": 32,
+      "binding": 1
+    },
+    {
+      "name": "MathFunRandomSign__Fv",
+      "address": "0x80133978",
+      "size": 40,
+      "binding": 1
+    },
+    {
+      "name": "MathFunRandomSignOrZero__Fv",
+      "address": "0x801339a0",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "MathFunRandomI64__Fxx",
+      "address": "0x801339dc",
+      "size": 120,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "srand": "0x80265c8c",
+    "rand": "0x80265c98",
+    "g_bMathFunRandomSeeded": "0x802c4d40"
+  },
+  "id": "MathFun",
+  "category": "reconstructed_game",
+  "include_dirs": [],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80133904",
+      "size": 336
+    }
+  ],
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

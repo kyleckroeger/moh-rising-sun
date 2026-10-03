@@ -1,0 +1,90 @@
+{
+  "id": "lstate",
+  "source": "src/lua/lstate.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800416c0",
+      "size": 696,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802968cc",
+      "size": 48,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "errormessage",
+      "address": "0x800416c0",
+      "size": 84,
+      "binding": 0
+    },
+    {
+      "name": "f_luaopen",
+      "address": "0x80041714",
+      "size": 172,
+      "binding": 0
+    },
+    {
+      "name": "lua_open",
+      "address": "0x800417c0",
+      "size": 244,
+      "binding": 1
+    },
+    {
+      "name": "lua_close",
+      "address": "0x800418b4",
+      "size": 196,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "lua_tostring": "0x80038c90",
+    "_impure_ptr": "0x8045171c",
+    "fprintf": "0x80263454",
+    "luaH_new": "0x8004223c",
+    "luaD_init": "0x8003b2d0",
+    "luaS_init": "0x80041978",
+    "luaX_init": "0x8003cac0",
+    "luaT_init": "0x80042874",
+    "lua_newtable": "0x80038e84",
+    "lua_ref": "0x80038f34",
+    "lua_pushcclosure": "0x80038e64",
+    "lua_setglobal": "0x80038ef0",
+    "DWI_alloc": "0x801a8670",
+    "luaD_runprotected": "0x8003bc04",
+    "luaC_collect": "0x8003c9d0",
+    "luaS_freeall": "0x800419fc",
+    "DWI_free": "0x801a8894"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "lstate.c",
+  "upstream": {
+    "archive": "https://www.lua.org/ftp/lua-4.0.1.tar.gz",
+    "sha256": "df746e149cf6939e90009d2e540eee918d585b4d1bc6d68b19316a050d484d2a",
+    "path": "src/lstate.c"
+  },
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "_impure_ptr"
+  ]
+}

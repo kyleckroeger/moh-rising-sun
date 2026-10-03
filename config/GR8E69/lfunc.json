@@ -1,0 +1,80 @@
+{
+  "id": "lfunc",
+  "source": "src/lua/lfunc.c",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8003bc60",
+      "size": 724
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802960b0",
+      "size": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "luaF_newclosure",
+      "address": "0x8003bc60",
+      "size": 108,
+      "binding": 1
+    },
+    {
+      "name": "luaF_newproto",
+      "address": "0x8003bccc",
+      "size": 152,
+      "binding": 1
+    },
+    {
+      "name": "protosize",
+      "address": "0x8003bd64",
+      "size": 76,
+      "binding": 0
+    },
+    {
+      "name": "luaF_protook",
+      "address": "0x8003bdb0",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "luaF_freeproto",
+      "address": "0x8003bdf0",
+      "size": 132,
+      "binding": 1
+    },
+    {
+      "name": "luaF_freeclosure",
+      "address": "0x8003be74",
+      "size": 68,
+      "binding": 1
+    },
+    {
+      "name": "luaF_getlocalname",
+      "address": "0x8003beb8",
+      "size": 124,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "DWI_alloc": "0x801a8670",
+    "DWI_free": "0x801a8894"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": []
+}

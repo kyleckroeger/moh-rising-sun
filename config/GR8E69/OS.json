@@ -1,0 +1,191 @@
+{
+  "id": "OS",
+  "source": "src/dolphin/os/OS.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE",
+    "-opt",
+    "nopeep"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8025309c",
+      "size": 2020,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802ddf18",
+      "size": 503,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x80445da0",
+      "size": 80,
+      "type": 8
+    },
+    {
+      "name": ".sdata",
+      "address": "0x80451680",
+      "size": 10,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80452310",
+      "size": 64,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "ClearArena",
+      "address": "0x802530c4",
+      "size": 296,
+      "binding": 0
+    },
+    {
+      "name": "InquiryCallback",
+      "address": "0x802531ec",
+      "size": 60,
+      "binding": 0
+    },
+    {
+      "name": "OSExceptionInit",
+      "address": "0x80253600",
+      "size": 640,
+      "binding": 0
+    },
+    {
+      "name": "OSGetConsoleType",
+      "address": "0x8025309c",
+      "size": 40,
+      "binding": 1
+    },
+    {
+      "name": "OSInit",
+      "address": "0x80253228",
+      "size": 984,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__init_hardware": "0x80035668",
+    "__start": "0x80035300",
+    "PPCMfhid2": "0x802316e4",
+    "PPCMthid2": "0x802316ec",
+    "OSGetResetCode": "0x80258bd8",
+    "OSGetArenaHi": "0x802542b4",
+    "OSGetArenaLo": "0x802542bc",
+    "memset": "0x80266778",
+    "__ArenaLo": "0x8049c200",
+    "_stack_addr": "0x8049c1e0",
+    "__ArenaHi": "0x81780000",
+    "__OSGetSystemTime": "0x8025af9c",
+    "OSDisableInterrupts": "0x80257798",
+    "PPCMtmmcr0": "0x8023166c",
+    "PPCMtmmcr1": "0x80231674",
+    "PPCMtpmc1": "0x8023167c",
+    "PPCMtpmc2": "0x80231684",
+    "PPCMtpmc3": "0x8023168c",
+    "PPCMtpmc4": "0x80231694",
+    "PPCDisableSpeculation": "0x80231708",
+    "PPCSetFpNonIEEEMode": "0x80231730",
+    "__DVDLongFileNameFlag": "0x80452104",
+    "__PADSpec": "0x80452410",
+    "OSSetArenaLo": "0x802542cc",
+    "OSSetArenaHi": "0x802542c4",
+    "__OSInitSystemCall": "0x80259bc0",
+    "OSInitAlarm": "0x80253a60",
+    "__OSModuleInit": "0x80258004",
+    "__OSInterruptInit": "0x80257814",
+    "__OSResetSWInterruptHandler": "0x80258c08",
+    "__OSSetInterruptHandler": "0x802577e4",
+    "__OSContextInit": "0x80255250",
+    "__OSCacheInit": "0x80254904",
+    "EXIInit": "0x8023eb40",
+    "SIInit": "0x8025dd60",
+    "__OSInitSram": "0x8025910c",
+    "__OSThreadInit": "0x80259c28",
+    "__OSInitAudioSystem": "0x80254300",
+    "__OSInitMemoryProtection": "0x802583ec",
+    "OSReport": "0x80255298",
+    "OSRegisterVersion": "0x80253a34",
+    "EnableMetroTRKInterrupts": "0x801ad1e8",
+    "OSEnableInterrupts": "0x802577ac",
+    "DVDInit": "0x80239a38",
+    "DCInvalidateRange": "0x802545a8",
+    "DVDInquiryAsync": "0x8023ba6c",
+    "__OSEVSetNumber": "0x80253940",
+    "__OSEVStart": "0x802538d8",
+    "__OSEVEnd": "0x80253970",
+    "DBPrintf": "0x802389cc",
+    "__OSDBINTSTART": "0x80253880",
+    "__OSDBINTEND": "0x802538a4",
+    "memcpy": "0x802665e8",
+    "DCFlushRangeNoSync": "0x80254634",
+    "ICInvalidateRange": "0x8025468c",
+    "__OSDBJUMPSTART": "0x802538a4",
+    "__OSDBJUMPEND": "0x802538a8",
+    "__DBVECTOR": "0x80253930",
+    "__DBIsExceptionMarked": "0x802389b0",
+    "OSDefaultExceptionHandler": "0x80253974",
+    "__OSSetExceptionHandler": "0x802538a8"
+  },
+  "undefined_in_discarded_code": [
+    "__flush_cache",
+    "__copy_rom_section",
+    "__init_bss_section",
+    "__init_registers",
+    "__init_data"
+  ],
+  "discarded_functions": [
+    "DisableWriteGatherPipe",
+    "__OSIsDebuggerPresent"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/os/OS.c"
+  },
+  "original_file": "OS.c",
+  "discarded_local_functions": [
+    "DisableWriteGatherPipe"
+  ],
+  "sda_externals": [
+    "__DVDLongFileNameFlag",
+    "__PADSpec"
+  ]
+}

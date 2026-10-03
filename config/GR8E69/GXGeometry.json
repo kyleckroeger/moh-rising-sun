@@ -1,0 +1,126 @@
+{
+  "id": "GXGeometry",
+  "source": "src/dolphin/gx/GXGeometry.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80244fcc",
+      "size": 828,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "__GXSetDirtyState",
+      "address": "0x80244fcc",
+      "size": 128,
+      "binding": 1
+    },
+    {
+      "name": "__GXSetGenMode",
+      "address": "0x802452e4",
+      "size": 36,
+      "binding": 1
+    },
+    {
+      "name": "GXBegin",
+      "address": "0x8024504c",
+      "size": 208,
+      "binding": 1
+    },
+    {
+      "name": "__GXSendFlushPrim",
+      "address": "0x8024511c",
+      "size": 136,
+      "binding": 1
+    },
+    {
+      "name": "GXSetLineWidth",
+      "address": "0x802451a4",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "GXSetPointSize",
+      "address": "0x802451e4",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "GXEnableTexOffsets",
+      "address": "0x80245224",
+      "size": 72,
+      "binding": 1
+    },
+    {
+      "name": "GXSetCullMode",
+      "address": "0x8024526c",
+      "size": 68,
+      "binding": 1
+    },
+    {
+      "name": "GXSetCoPlanar",
+      "address": "0x802452b0",
+      "size": 52,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__GXData": "0x804527b0",
+    "__GXSetSUTexRegs": "0x8024716c",
+    "__GXUpdateBPMask": "0x80247b04",
+    "__GXSetVCD": "0x80243864",
+    "__GXSetVAT": "0x8024410c",
+    "__GXCalculateVLim": "0x80243920"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "GXGetLineWidth",
+    "GXGetPointSize",
+    "GXGetCullMode"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/gx/GXGeometry.c"
+  },
+  "original_file": "GXGeometry.c",
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "__GXData"
+  ]
+}

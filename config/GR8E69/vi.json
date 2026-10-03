@@ -1,0 +1,278 @@
+{
+  "id": "vi",
+  "source": "src/dolphin/vi/vi.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8025edd4",
+      "size": 8552,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802e0450",
+      "size": 976,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x80446df0",
+      "size": 328,
+      "type": 8
+    },
+    {
+      "name": ".sdata",
+      "address": "0x804516f8",
+      "size": 9,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80452430",
+      "size": 96,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "getCurrentFieldEvenOdd",
+      "address": "0x80260abc",
+      "size": 104,
+      "binding": 0
+    },
+    {
+      "name": "__VIRetraceHandler",
+      "address": "0x8025edd4",
+      "size": 628,
+      "binding": 0
+    },
+    {
+      "name": "getTiming",
+      "address": "0x8025f08c",
+      "size": 160,
+      "binding": 0
+    },
+    {
+      "name": "setFbbRegs",
+      "address": "0x8025f830",
+      "size": 724,
+      "binding": 0
+    },
+    {
+      "name": "setVerticalRegs",
+      "address": "0x8025fb04",
+      "size": 416,
+      "binding": 0
+    },
+    {
+      "name": "GetCurrentDisplayPosition",
+      "address": "0x80260a80",
+      "size": 60,
+      "binding": 0
+    },
+    {
+      "name": "__VIGetCurrentPosition",
+      "address": "0x80260edc",
+      "size": 96,
+      "binding": 1
+    },
+    {
+      "name": "VISetPostRetraceCallback",
+      "address": "0x8025f048",
+      "size": 68,
+      "binding": 1
+    },
+    {
+      "name": "__VIInit",
+      "address": "0x8025f12c",
+      "size": 512,
+      "binding": 1
+    },
+    {
+      "name": "VIInit",
+      "address": "0x8025f32c",
+      "size": 1200,
+      "binding": 1
+    },
+    {
+      "name": "VIWaitForRetrace",
+      "address": "0x8025f7dc",
+      "size": 84,
+      "binding": 1
+    },
+    {
+      "name": "VIConfigure",
+      "address": "0x8025fca4",
+      "size": 2088,
+      "binding": 1
+    },
+    {
+      "name": "VIConfigurePan",
+      "address": "0x802604cc",
+      "size": 916,
+      "binding": 1
+    },
+    {
+      "name": "VIFlush",
+      "address": "0x80260860",
+      "size": 304,
+      "binding": 1
+    },
+    {
+      "name": "VISetNextFrameBuffer",
+      "address": "0x80260990",
+      "size": 108,
+      "binding": 1
+    },
+    {
+      "name": "VISetBlack",
+      "address": "0x802609fc",
+      "size": 124,
+      "binding": 1
+    },
+    {
+      "name": "VIGetRetraceCount",
+      "address": "0x80260a78",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "VIGetNextField",
+      "address": "0x80260b24",
+      "size": 156,
+      "binding": 1
+    },
+    {
+      "name": "VIGetCurrentLine",
+      "address": "0x80260bc0",
+      "size": 152,
+      "binding": 1
+    },
+    {
+      "name": "VIGetTvFormat",
+      "address": "0x80260c58",
+      "size": 104,
+      "binding": 1
+    },
+    {
+      "name": "__VIDisplayPositionToXY",
+      "address": "0x80260cc0",
+      "size": 540,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__init_hardware": "0x80035668",
+    "__start": "0x80035300",
+    "__shr2u": "0x801afe9c",
+    "__shl2i": "0x801afea4",
+    "OSClearContext": "0x80254e44",
+    "OSSetCurrentContext": "0x80254c4c",
+    "SIRefreshSamplingRate": "0x8025edb0",
+    "OSWakeupThread": "0x8025ad04",
+    "OSDisableInterrupts": "0x80257798",
+    "OSRestoreInterrupts": "0x802577c0",
+    "__OSLockSram": "0x80259248",
+    "__OSUnlockSram": "0x8025963c",
+    "OSRegisterVersion": "0x80253a34",
+    "OSInitThreadQueue": "0x80259d80",
+    "__OSSetInterruptHandler": "0x802577e4",
+    "__OSUnmaskInterrupts": "0x80257be8",
+    "OSSleepThread": "0x8025ac18",
+    "OSReport": "0x80255298",
+    "OSPanic": "0x80255318"
+  },
+  "undefined_in_discarded_code": [
+    "__flush_cache",
+    "__copy_rom_section",
+    "__init_bss_section",
+    "__init_registers",
+    "__init_data"
+  ],
+  "discarded_functions": [
+    "getEncoderType",
+    "cntlzd",
+    "VISetRegs",
+    "AdjustPosition",
+    "ImportAdjustingValues",
+    "setInterruptRegs",
+    "setPicConfig",
+    "setBBIntervalRegs",
+    "setScalingRegs",
+    "calcFbbs",
+    "setHorizontalRegs",
+    "PrintDebugPalCaution",
+    "getCurrentHalfLine",
+    "VISetPreRetraceCallback",
+    "VIGetNextFrameBuffer",
+    "VIGetCurrentFrameBuffer",
+    "VISetNextRightFrameBuffer",
+    "VISet3D",
+    "VIGetScanMode",
+    "VIGetDTVStatus",
+    "__VISetAdjustingValues",
+    "__VIGetAdjustingValues",
+    "__VIEnableRawPositionInterrupt",
+    "__VIDisableRawPositionInterrupt",
+    "__VISetLatchMode",
+    "__VIGetLatch0Position",
+    "__VIGetLatch1Position",
+    "__VIGetLatchPosition"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/vi/vi.c"
+  },
+  "original_file": "vi.c",
+  "discarded_local_functions": [
+    "getEncoderType",
+    "cntlzd",
+    "VISetRegs",
+    "AdjustPosition",
+    "ImportAdjustingValues",
+    "setInterruptRegs",
+    "setPicConfig",
+    "setBBIntervalRegs",
+    "setScalingRegs",
+    "calcFbbs",
+    "setHorizontalRegs",
+    "PrintDebugPalCaution",
+    "getCurrentHalfLine"
+  ],
+  "sda_externals": []
+}

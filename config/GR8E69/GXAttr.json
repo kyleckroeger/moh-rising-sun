@@ -1,0 +1,173 @@
+{
+  "id": "GXAttr",
+  "source": "src/dolphin/gx/GXAttr.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80243370",
+      "size": 5136,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802dc080",
+      "size": 628,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x80451420",
+      "size": 12,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "GXSetVtxDesc",
+      "address": "0x80243370",
+      "size": 620,
+      "binding": 1
+    },
+    {
+      "name": "GXSetVtxDescv",
+      "address": "0x802435dc",
+      "size": 648,
+      "binding": 1
+    },
+    {
+      "name": "__GXSetVCD",
+      "address": "0x80243864",
+      "size": 188,
+      "binding": 1
+    },
+    {
+      "name": "__GXCalculateVLim",
+      "address": "0x80243920",
+      "size": 292,
+      "binding": 1
+    },
+    {
+      "name": "GXGetVtxDesc",
+      "address": "0x80243a44",
+      "size": 436,
+      "binding": 1
+    },
+    {
+      "name": "GXClearVtxDesc",
+      "address": "0x80243bf8",
+      "size": 56,
+      "binding": 1
+    },
+    {
+      "name": "GXSetVtxAttrFmt",
+      "address": "0x80243c30",
+      "size": 604,
+      "binding": 1
+    },
+    {
+      "name": "GXSetVtxAttrFmtv",
+      "address": "0x80243e8c",
+      "size": 640,
+      "binding": 1
+    },
+    {
+      "name": "__GXSetVAT",
+      "address": "0x8024410c",
+      "size": 156,
+      "binding": 1
+    },
+    {
+      "name": "GXGetVtxAttrFmt",
+      "address": "0x802441a8",
+      "size": 640,
+      "binding": 1
+    },
+    {
+      "name": "GXSetArray",
+      "address": "0x80244428",
+      "size": 140,
+      "binding": 1
+    },
+    {
+      "name": "GXInvalidateVtxCache",
+      "address": "0x802444b4",
+      "size": 16,
+      "binding": 1
+    },
+    {
+      "name": "GXSetTexCoordGen2",
+      "address": "0x802444c4",
+      "size": 640,
+      "binding": 1
+    },
+    {
+      "name": "GXSetNumTexGens",
+      "address": "0x80244744",
+      "size": 60,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__GXData": "0x804527b0",
+    "__GXSetMatrixIndex": "0x80248eec"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "__GXXfVtxSpecs",
+    "GXGetVtxDescv",
+    "GXGetVtxAttrFmtv"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/gx/GXAttr.c"
+  },
+  "original_file": "GXAttr.c",
+  "discarded_local_functions": [
+    "__GXXfVtxSpecs"
+  ],
+  "sda_externals": [
+    "__GXData"
+  ],
+  "additional_upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2001",
+    "commit": "eb1234c45e6df75757c652c835507ca89674f9a8",
+    "path": "src/gx/GXAttr.c",
+    "scope": "__GXSetVAT, with gx renamed to __GXData",
+    "sha256": "24198fc8241505c87aaff62eb33542f90fc03e67db62cf58dab8b3a7a48ac180"
+  }
+}

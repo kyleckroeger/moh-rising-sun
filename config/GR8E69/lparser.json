@@ -1,0 +1,458 @@
+{
+  "id": "lparser",
+  "source": "src/lua/lparser.c",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8003f0d8",
+      "size": 9704
+    },
+    {
+      "name": ".rodata",
+      "address": "0x80296610",
+      "size": 700
+    }
+  ],
+  "functions": [
+    {
+      "name": "next",
+      "address": "0x8003f0d8",
+      "size": 124,
+      "binding": 0
+    },
+    {
+      "name": "lookahead",
+      "address": "0x8003f154",
+      "size": 52,
+      "binding": 0
+    },
+    {
+      "name": "error_expected",
+      "address": "0x8003f188",
+      "size": 92,
+      "binding": 0
+    },
+    {
+      "name": "check",
+      "address": "0x8003f1e4",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "check_condition",
+      "address": "0x8003f224",
+      "size": 44,
+      "binding": 0
+    },
+    {
+      "name": "optional",
+      "address": "0x8003f250",
+      "size": 60,
+      "binding": 0
+    },
+    {
+      "name": "check_match",
+      "address": "0x8003f28c",
+      "size": 168,
+      "binding": 0
+    },
+    {
+      "name": "string_constant",
+      "address": "0x8003f334",
+      "size": 148,
+      "binding": 0
+    },
+    {
+      "name": "code_string",
+      "address": "0x8003f3c8",
+      "size": 60,
+      "binding": 0
+    },
+    {
+      "name": "str_checkname",
+      "address": "0x8003f404",
+      "size": 84,
+      "binding": 0
+    },
+    {
+      "name": "checkname",
+      "address": "0x8003f458",
+      "size": 60,
+      "binding": 0
+    },
+    {
+      "name": "luaI_registerlocalvar",
+      "address": "0x8003f494",
+      "size": 120,
+      "binding": 0
+    },
+    {
+      "name": "new_localvar",
+      "address": "0x8003f50c",
+      "size": 112,
+      "binding": 0
+    },
+    {
+      "name": "adjustlocalvars",
+      "address": "0x8003f57c",
+      "size": 84,
+      "binding": 0
+    },
+    {
+      "name": "removelocalvars",
+      "address": "0x8003f5d0",
+      "size": 84,
+      "binding": 0
+    },
+    {
+      "name": "new_localvarstr",
+      "address": "0x8003f624",
+      "size": 68,
+      "binding": 0
+    },
+    {
+      "name": "search_local",
+      "address": "0x8003f668",
+      "size": 128,
+      "binding": 0
+    },
+    {
+      "name": "singlevar",
+      "address": "0x8003f6e8",
+      "size": 108,
+      "binding": 0
+    },
+    {
+      "name": "indexupvalue",
+      "address": "0x8003f754",
+      "size": 204,
+      "binding": 0
+    },
+    {
+      "name": "pushupvalue",
+      "address": "0x8003f820",
+      "size": 172,
+      "binding": 0
+    },
+    {
+      "name": "adjust_mult_assign",
+      "address": "0x8003f8cc",
+      "size": 120,
+      "binding": 0
+    },
+    {
+      "name": "code_params",
+      "address": "0x8003f944",
+      "size": 148,
+      "binding": 0
+    },
+    {
+      "name": "enterbreak",
+      "address": "0x8003f9d8",
+      "size": 32,
+      "binding": 0
+    },
+    {
+      "name": "leavebreak",
+      "address": "0x8003f9f8",
+      "size": 72,
+      "binding": 0
+    },
+    {
+      "name": "pushclosure",
+      "address": "0x8003fa40",
+      "size": 200,
+      "binding": 0
+    },
+    {
+      "name": "open_func",
+      "address": "0x8003fb08",
+      "size": 148,
+      "binding": 0
+    },
+    {
+      "name": "close_func",
+      "address": "0x8003fb9c",
+      "size": 284,
+      "binding": 0
+    },
+    {
+      "name": "luaY_parser",
+      "address": "0x8003fcb8",
+      "size": 144,
+      "binding": 1
+    },
+    {
+      "name": "explist1",
+      "address": "0x8003fd48",
+      "size": 124,
+      "binding": 0
+    },
+    {
+      "name": "funcargs",
+      "address": "0x8003fdc4",
+      "size": 228,
+      "binding": 0
+    },
+    {
+      "name": "var_or_func_tail",
+      "address": "0x8003fea8",
+      "size": 340,
+      "binding": 0
+    },
+    {
+      "name": "var_or_func",
+      "address": "0x8003fffc",
+      "size": 140,
+      "binding": 0
+    },
+    {
+      "name": "recfield",
+      "address": "0x80040088",
+      "size": 148,
+      "binding": 0
+    },
+    {
+      "name": "recfields",
+      "address": "0x8004011c",
+      "size": 224,
+      "binding": 0
+    },
+    {
+      "name": "listfields",
+      "address": "0x800401fc",
+      "size": 248,
+      "binding": 0
+    },
+    {
+      "name": "constructor_part",
+      "address": "0x800402f4",
+      "size": 168,
+      "binding": 0
+    },
+    {
+      "name": "constructor",
+      "address": "0x8004039c",
+      "size": 264,
+      "binding": 0
+    },
+    {
+      "name": "simpleexp",
+      "address": "0x800404a4",
+      "size": 352,
+      "binding": 0
+    },
+    {
+      "name": "exp1",
+      "address": "0x80040604",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "getunopr",
+      "address": "0x80040644",
+      "size": 40,
+      "binding": 0
+    },
+    {
+      "name": "getbinopr",
+      "address": "0x8004066c",
+      "size": 272,
+      "binding": 0
+    },
+    {
+      "name": "subexpr",
+      "address": "0x8004077c",
+      "size": 288,
+      "binding": 0
+    },
+    {
+      "name": "expr",
+      "address": "0x8004089c",
+      "size": 36,
+      "binding": 0
+    },
+    {
+      "name": "block_follow",
+      "address": "0x800408c0",
+      "size": 56,
+      "binding": 0
+    },
+    {
+      "name": "block",
+      "address": "0x800408f8",
+      "size": 84,
+      "binding": 0
+    },
+    {
+      "name": "assignment",
+      "address": "0x8004094c",
+      "size": 260,
+      "binding": 0
+    },
+    {
+      "name": "cond",
+      "address": "0x80040a50",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "whilestat",
+      "address": "0x80040a90",
+      "size": 200,
+      "binding": 0
+    },
+    {
+      "name": "repeatstat",
+      "address": "0x80040b58",
+      "size": 152,
+      "binding": 0
+    },
+    {
+      "name": "forbody",
+      "address": "0x80040bf0",
+      "size": 184,
+      "binding": 0
+    },
+    {
+      "name": "fornum",
+      "address": "0x80040ca8",
+      "size": 208,
+      "binding": 0
+    },
+    {
+      "name": "forlist",
+      "address": "0x80040d78",
+      "size": 216,
+      "binding": 0
+    },
+    {
+      "name": "forstat",
+      "address": "0x80040e50",
+      "size": 176,
+      "binding": 0
+    },
+    {
+      "name": "test_then_block",
+      "address": "0x80040f00",
+      "size": 80,
+      "binding": 0
+    },
+    {
+      "name": "ifstat",
+      "address": "0x80040f50",
+      "size": 292,
+      "binding": 0
+    },
+    {
+      "name": "localstat",
+      "address": "0x80041074",
+      "size": 156,
+      "binding": 0
+    },
+    {
+      "name": "funcname",
+      "address": "0x80041110",
+      "size": 152,
+      "binding": 0
+    },
+    {
+      "name": "funcstat",
+      "address": "0x800411a8",
+      "size": 88,
+      "binding": 0
+    },
+    {
+      "name": "namestat",
+      "address": "0x80041200",
+      "size": 136,
+      "binding": 0
+    },
+    {
+      "name": "retstat",
+      "address": "0x80041288",
+      "size": 112,
+      "binding": 0
+    },
+    {
+      "name": "breakstat",
+      "address": "0x800412f8",
+      "size": 140,
+      "binding": 0
+    },
+    {
+      "name": "stat",
+      "address": "0x80041384",
+      "size": 360,
+      "binding": 0
+    },
+    {
+      "name": "parlist",
+      "address": "0x800414ec",
+      "size": 188,
+      "binding": 0
+    },
+    {
+      "name": "body",
+      "address": "0x800415a8",
+      "size": 184,
+      "binding": 0
+    },
+    {
+      "name": "chunk",
+      "address": "0x80041660",
+      "size": 96,
+      "binding": 0
+    }
+  ],
+  "externals": {
+    "luaX_lex": "0x8003dab4",
+    "luaX_token2str": "0x8003cc50",
+    "sprintf": "0x80263a3c",
+    "luaK_error": "0x8003930c",
+    "luaM_growaux": "0x8003ec08",
+    "luaK_kstr": "0x80039550",
+    "luaX_checklimit": "0x8003cb1c",
+    "luaS_newfixed": "0x80041d4c",
+    "luaX_syntaxerror": "0x8003cb7c",
+    "luaK_code1": "0x8003a1cc",
+    "luaK_lastisopen": "0x80039718",
+    "luaK_setcallreturns": "0x80039758",
+    "luaK_adjuststack": "0x800396d8",
+    "luaK_deltastack": "0x800394e4",
+    "luaK_getlabel": "0x80039494",
+    "luaK_patchlist": "0x80039ab0",
+    "luaK_tostack": "0x80039d64",
+    "luaK_code2": "0x8003a1f0",
+    "luaF_newproto": "0x8003bccc",
+    "luaK_code0": "0x8003a1a4",
+    "luaM_realloc": "0x8003ec90",
+    "luaF_protook": "0x8003bdb0",
+    "luaS_new": "0x80041d08",
+    "luaX_setinput": "0x8003cd98",
+    "luaK_number": "0x80039644",
+    "luaK_prefix": "0x80039f04",
+    "luaK_infix": "0x80039fbc",
+    "luaK_posfix": "0x8003a020",
+    "luaK_storevar": "0x800398b4",
+    "luaK_goiftrue": "0x80039cb8",
+    "luaK_jump": "0x80039360",
+    "luaK_concat": "0x80039b60"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": []
+}

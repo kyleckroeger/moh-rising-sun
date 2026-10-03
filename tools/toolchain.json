@@ -1,0 +1,12 @@
+{
+  "dtk": {
+    "version": "1.8.4",
+    "url": "https://github.com/encounter/decomp-toolkit/releases/download/v1.8.4/dtk-macos-arm64",
+    "sha256": "5ba1fd76adf937847277a1ebe2238b698df0020c3dbbde23ecb126f00fb10353"
+  },
+  "binutils": {
+    "version": "2.42-2",
+    "url": "https://github.com/encounter/gc-wii-binutils/releases/download/2.42-2/macos-universal.zip",
+    "sha256": "c40bad23fd7d9eb22d4533875922fc19785ed067978b605804e345bc6e62449d"
+  }
+}

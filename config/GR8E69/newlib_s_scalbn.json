@@ -1,0 +1,70 @@
+{
+  "id": "newlib_s_scalbn",
+  "source": "src/newlib/libm/common/s_scalbn.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G1024",
+    "-fno-builtin",
+    "-msafe-sda",
+    "-xc++",
+    "-D__ieee754_acos=acos",
+    "-D__ieee754_acosf=acosf",
+    "-D__ieee754_asin=asin",
+    "-D__ieee754_asinf=asinf",
+    "-D__ieee754_atan2=atan2",
+    "-D__ieee754_atan2f=atan2f",
+    "-D__ieee754_exp=exp",
+    "-D__ieee754_fmod=fmod",
+    "-D__ieee754_fmodf=fmodf",
+    "-D__ieee754_log=log",
+    "-D__ieee754_log10=log10",
+    "-D__ieee754_pow=pow",
+    "-D__ieee754_powf=powf",
+    "-D__ieee754_sqrt=sqrt",
+    "-D__ieee754_sqrtf=sqrtf"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/libm/common"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80270b88",
+      "size": 340,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x80451cc0",
+      "size": 32,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "scalbn",
+      "address": "0x80270b88",
+      "size": 340,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "copysign": "0x80271c3c"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "discarded_local_functions": [],
+  "original_file": "s_scalbn.c",
+  "sda_externals": [],
+  "upstream": {
+    "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+    "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+    "path": "newlib/libm/common/s_scalbn.c"
+  }
+}

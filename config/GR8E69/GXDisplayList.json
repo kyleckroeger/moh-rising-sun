@@ -1,0 +1,98 @@
+{
+  "id": "GXDisplayList",
+  "source": "src/dolphin/gx/GXDisplayList.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80248990",
+      "size": 112,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x80439530",
+      "size": 1492,
+      "type": 8
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80452248",
+      "size": 4,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "GXCallDisplayList",
+      "address": "0x80248990",
+      "size": 112,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GXGetCPUFifo": "0x802430b8",
+    "__GXData": "0x804527b0",
+    "__GXSetDirtyState": "0x80244fcc",
+    "memcpy": "0x802665e8",
+    "GXSetCPUFifo": "0x80242a34",
+    "GXFlush": "0x80244814",
+    "__piReg": "0x804521e8",
+    "OSDisableInterrupts": "0x80257798",
+    "OSRestoreInterrupts": "0x802577c0",
+    "__GXSendFlushPrim": "0x8024511c"
+  },
+  "undefined_in_discarded_code": [
+    "GXSaveCPUFifo",
+    "GXResetWriteGatherPipe",
+    "__GXSaveCPUFifoAux"
+  ],
+  "discarded_functions": [
+    "GXBeginDisplayList",
+    "GXEndDisplayList"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/gx/GXDisplayList.c"
+  },
+  "original_file": "GXDisplayList.c",
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "__GXData",
+    "__piReg"
+  ]
+}

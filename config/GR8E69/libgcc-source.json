@@ -1,0 +1,36 @@
+{
+  "reference": "GCC 2.95.2",
+  "files": [
+    {
+      "path": "src/libgcc/libgcc2.c",
+      "url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/gcc-2.95.2/gcc/libgcc2.c",
+      "sha256": "83e33577971c17f33c4b4c66780c860319cb8828ac611cfb0cd14bb0320eaea9",
+      "modified": true
+    },
+    {
+      "path": "src/libgcc/longlong.h",
+      "url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/gcc-2.95.2/gcc/longlong.h",
+      "sha256": "ef207d96698d0f66a3a8ba7823d986cce48aa0f46460a2ae6df5d3d4524f0495",
+      "modified": true
+    },
+    {
+      "path": "src/libgcc/machmode.h",
+      "url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/gcc-2.95.2/gcc/machmode.h",
+      "sha256": "23e978f62f9b1376677035581c3a1ae3aea5cdca88aff96934b4aa45a6e2e14b",
+      "modified": false
+    },
+    {
+      "path": "src/libgcc/machmode.def",
+      "url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/gcc-2.95.2/gcc/machmode.def",
+      "sha256": "1cb3699a3e86c80ebd2b8698bbd0d098cb339369bbf3a7026282e71ca3a3009a",
+      "modified": false
+    },
+    {
+      "path": "src/libgcc/defaults.h",
+      "url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/gcc-2.95.2/gcc/defaults.h",
+      "sha256": "80a6d3ddc1d981789b99116a3316f807cb2e098bc0a8a4dc28cdc077148dd460",
+      "modified": false
+    }
+  ],
+  "target_configuration": "src/libgcc/tconfig.h"
+}

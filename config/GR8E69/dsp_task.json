@@ -1,0 +1,111 @@
+{
+  "id": "dsp_task",
+  "source": "src/dolphin/dsp/dsp_task.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80238cfc",
+      "size": 2180,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802dac38",
+      "size": 315,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x804520c8",
+      "size": 36,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "__DSPHandler",
+      "address": "0x80238cfc",
+      "size": 1060,
+      "binding": 1
+    },
+    {
+      "name": "__DSP_exec_task",
+      "address": "0x80239120",
+      "size": 416,
+      "binding": 1
+    },
+    {
+      "name": "__DSP_remove_task",
+      "address": "0x802394ec",
+      "size": 148,
+      "binding": 1
+    },
+    {
+      "name": "__DSP_boot_task",
+      "address": "0x802392c0",
+      "size": 396,
+      "binding": 1
+    },
+    {
+      "name": "__DSP_insert_task",
+      "address": "0x8023944c",
+      "size": 160,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "OSClearContext": "0x80254e44",
+    "OSSetCurrentContext": "0x80254c4c",
+    "DSPCheckMailFromDSP": "0x80238a2c",
+    "DSPReadMailFromDSP": "0x80238a3c",
+    "DSPSendMailToDSP": "0x80238a54",
+    "DSPCheckMailToDSP": "0x80238a1c",
+    "__DSP_debug_printf": "0x80238cac"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "__DSP_add_task"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/dsp/dsp_task.c"
+  },
+  "original_file": "dsp_task.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

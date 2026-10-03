@@ -1,0 +1,50 @@
+{
+  "id": "libgcc_udivdi3",
+  "source": "src/libgcc/libgcc2.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-DL_udivdi3"
+  ],
+  "include_dirs": [
+    "src/libgcc",
+    "include/newlib-compiler"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8026c82c",
+      "size": 1252,
+      "type": 1
+    },
+    {
+      "name": ".sdata2",
+      "address": "0x80452bf8",
+      "size": 256,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "__udivdi3",
+      "address": "0x8026c82c",
+      "size": 1252,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "discarded_local_functions": [],
+  "sda_externals": [],
+  "original_file": "libgcc2.c",
+  "upstream": {
+    "repository": "https://github.com/gcc-mirror/gcc",
+    "ref": "releases/gcc-2.95.2",
+    "path": "gcc/libgcc2.c"
+  }
+}

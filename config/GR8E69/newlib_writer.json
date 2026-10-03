@@ -1,0 +1,52 @@
+{
+  "id": "newlib_writer",
+  "source": "src/newlib/reent/writer.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char",
+    "-DMB_CAPABLE",
+    "-DMISSING_SYSCALL_NAMES"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/reent"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8026b5a8",
+      "size": 88,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "_write_r",
+      "address": "0x8026b5a8",
+      "size": 88,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "errno": "0x80452798",
+    "write": "0x80272e78"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "writer.c",
+  "upstream": {
+    "archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+    "sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+    "path": "newlib/libc/reent/writer.c"
+  },
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "errno"
+  ]
+}

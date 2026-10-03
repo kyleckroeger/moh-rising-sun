@@ -1,0 +1,108 @@
+{
+  "id": "CARDFormat",
+  "source": "src/dolphin/card/CARDFormat.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80234b00",
+      "size": 2032,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "FormatCallback",
+      "address": "0x80234b00",
+      "size": 324,
+      "binding": 0
+    },
+    {
+      "name": "__CARDFormatRegionAsync",
+      "address": "0x80234c44",
+      "size": 1624,
+      "binding": 1
+    },
+    {
+      "name": "CARDFormat",
+      "address": "0x8023529c",
+      "size": 84,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__init_hardware": "0x80035668",
+    "__start": "0x80035300",
+    "__CARDBlock": "0x80438500",
+    "__CARDEraseSector": "0x802324cc",
+    "__CARDWrite": "0x8023858c",
+    "memcpy": "0x802665e8",
+    "__CARDPutControlBlock": "0x80232750",
+    "__CARDGetControlBlock": "0x80232698",
+    "memset": "0x80266778",
+    "__OSLockSram": "0x80259248",
+    "__OSUnlockSram": "0x8025963c",
+    "OSGetTime": "0x8025af7c",
+    "__OSLockSramEx": "0x802592a4",
+    "__shr2i": "0x801afeac",
+    "__OSUnlockSramEx": "0x80259660",
+    "__CARDCheckSum": "0x802330d8",
+    "__CARDDefaultApiCallback": "0x80231738",
+    "DCStoreRange": "0x80254604",
+    "__CARDSyncCallback": "0x8023173c",
+    "__CARDSync": "0x80232988",
+    "__CARDGetFontEncode": "0x80232658"
+  },
+  "undefined_in_discarded_code": [
+    "__flush_cache",
+    "__copy_rom_section",
+    "__init_bss_section",
+    "__init_registers",
+    "__init_data"
+  ],
+  "discarded_functions": [
+    "__CARDFormatRegion",
+    "CARDFormatAsync"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/card/CARDFormat.c"
+  },
+  "original_file": "CARDFormat.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

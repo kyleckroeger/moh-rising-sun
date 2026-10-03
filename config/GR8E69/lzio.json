@@ -1,0 +1,67 @@
+{
+  "id": "lzio",
+  "source": "src/lua/lzio.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800453a4",
+      "size": 264,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "zmfilbuf",
+      "address": "0x800453a4",
+      "size": 8,
+      "binding": 0
+    },
+    {
+      "name": "luaZ_mopen",
+      "address": "0x800453ac",
+      "size": 56,
+      "binding": 1
+    },
+    {
+      "name": "luaZ_read",
+      "address": "0x800453e4",
+      "size": 200,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "strlen": "0x80266b70",
+    "fread": "0x80263514",
+    "memcpy": "0x802665e8"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "luaZ_sopen",
+    "zffilbuf",
+    "luaZ_Fopen"
+  ],
+  "original_file": "lzio.c",
+  "upstream": {
+    "archive": "https://www.lua.org/ftp/lua-4.0.1.tar.gz",
+    "sha256": "df746e149cf6939e90009d2e540eee918d585b4d1bc6d68b19316a050d484d2a",
+    "path": "src/lzio.c"
+  },
+  "discarded_local_functions": [
+    "zffilbuf"
+  ]
+}

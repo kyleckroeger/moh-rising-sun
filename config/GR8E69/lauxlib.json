@@ -1,0 +1,117 @@
+{
+  "id": "lauxlib",
+  "source": "src/lua/lauxlib.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80039080",
+      "size": 652,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x80295d08",
+      "size": 120,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "luaL_argerror",
+      "address": "0x80039080",
+      "size": 136,
+      "binding": 1
+    },
+    {
+      "name": "luaL_verror",
+      "address": "0x8003925c",
+      "size": 176,
+      "binding": 1
+    },
+    {
+      "name": "type_error",
+      "address": "0x80039108",
+      "size": 124,
+      "binding": 0
+    },
+    {
+      "name": "luaL_check_number",
+      "address": "0x80039184",
+      "size": 116,
+      "binding": 1
+    },
+    {
+      "name": "luaL_openlib",
+      "address": "0x800391f8",
+      "size": 100,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "strcmp": "0x802669b4",
+    "lua_getstack": "0x8003a7a4",
+    "lua_getinfo": "0x8003ac34",
+    "lua_typename": "0x80038b7c",
+    "lua_type": "0x80038b48",
+    "sprintf": "0x80263a3c",
+    "lua_tostring": "0x80038c90",
+    "strlen": "0x80266b70",
+    "lua_tonumber": "0x80038c34",
+    "lua_isnumber": "0x80038ba4",
+    "lua_pushcclosure": "0x80038e64",
+    "lua_setglobal": "0x80038ef0",
+    "vsprintf": "0x80264dfc",
+    "lua_error": "0x8003bb9c",
+    "lua_pushlstring": "0x80038dac",
+    "memcpy": "0x802665e8"
+  },
+  "undefined_in_discarded_code": [
+    "lua_stackspace",
+    "lua_strlen",
+    "lua_concat",
+    "lua_settop",
+    "lua_insert"
+  ],
+  "discarded_functions": [
+    "luaL_findstring",
+    "luaL_checkstack",
+    "luaL_checktype",
+    "luaL_checkany",
+    "luaL_check_lstr",
+    "luaL_opt_lstr",
+    "luaL_opt_number",
+    "emptybuffer",
+    "adjuststack",
+    "luaL_prepbuffer",
+    "luaL_addlstring",
+    "luaL_addstring",
+    "luaL_pushresult",
+    "luaL_addvalue",
+    "luaL_buffinit"
+  ],
+  "original_file": "lauxlib.c",
+  "upstream": {
+    "archive": "https://www.lua.org/ftp/lua-4.0.1.tar.gz",
+    "sha256": "df746e149cf6939e90009d2e540eee918d585b4d1bc6d68b19316a050d484d2a",
+    "path": "src/lib/lauxlib.c"
+  },
+  "discarded_local_functions": [
+    "emptybuffer",
+    "adjuststack"
+  ]
+}

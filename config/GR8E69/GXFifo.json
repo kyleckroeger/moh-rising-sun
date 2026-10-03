@@ -1,0 +1,233 @@
+{
+  "id": "GXFifo",
+  "source": "src/dolphin/gx/GXFifo.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80242818",
+      "size": 2904,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80452210",
+      "size": 32,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "__GXWriteFifoIntEnable",
+      "address": "0x80242f58",
+      "size": 48,
+      "binding": 0
+    },
+    {
+      "name": "__GXWriteFifoIntReset",
+      "address": "0x80242f88",
+      "size": 48,
+      "binding": 0
+    },
+    {
+      "name": "GXCPInterruptHandler",
+      "address": "0x80242818",
+      "size": 308,
+      "binding": 0
+    },
+    {
+      "name": "__GXFifoLink",
+      "address": "0x80242f24",
+      "size": 52,
+      "binding": 0
+    },
+    {
+      "name": "__GXFifoReadDisable",
+      "address": "0x80242f00",
+      "size": 36,
+      "binding": 0
+    },
+    {
+      "name": "__GXFifoReadEnable",
+      "address": "0x80242edc",
+      "size": 36,
+      "binding": 0
+    },
+    {
+      "name": "GXInitFifoBase",
+      "address": "0x8024294c",
+      "size": 108,
+      "binding": 1
+    },
+    {
+      "name": "GXInitFifoLimits",
+      "address": "0x80242a28",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "GXInitFifoPtrs",
+      "address": "0x802429b8",
+      "size": 112,
+      "binding": 1
+    },
+    {
+      "name": "GXSetCPUFifo",
+      "address": "0x80242a34",
+      "size": 296,
+      "binding": 1
+    },
+    {
+      "name": "GXSetGPFifo",
+      "address": "0x80242b5c",
+      "size": 376,
+      "binding": 1
+    },
+    {
+      "name": "GXGetFifoPtrs",
+      "address": "0x80242cd4",
+      "size": 152,
+      "binding": 1
+    },
+    {
+      "name": "GXSetBreakPtCallback",
+      "address": "0x80242d6c",
+      "size": 68,
+      "binding": 1
+    },
+    {
+      "name": "GXEnableBreakPt",
+      "address": "0x80242db0",
+      "size": 140,
+      "binding": 1
+    },
+    {
+      "name": "GXDisableBreakPt",
+      "address": "0x80242e3c",
+      "size": 84,
+      "binding": 1
+    },
+    {
+      "name": "__GXFifoInit",
+      "address": "0x80242e90",
+      "size": 76,
+      "binding": 1
+    },
+    {
+      "name": "__GXCleanGPFifo",
+      "address": "0x80242fb8",
+      "size": 256,
+      "binding": 1
+    },
+    {
+      "name": "GXGetGPFifo",
+      "address": "0x802430c0",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GXGetCPUFifo",
+      "address": "0x802430b8",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GXRedirectWriteGatherPipe",
+      "address": "0x802430c8",
+      "size": 264,
+      "binding": 1
+    },
+    {
+      "name": "GXRestoreWriteGatherPipe",
+      "address": "0x802431d0",
+      "size": 416,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "OSSuspendThread": "0x8025aaa8",
+    "OSResumeThread": "0x8025a820",
+    "__GXData": "0x804527b0",
+    "__cpReg": "0x804521ec",
+    "OSClearContext": "0x80254e44",
+    "OSSetCurrentContext": "0x80254c4c",
+    "OSDisableInterrupts": "0x80257798",
+    "OSRestoreInterrupts": "0x802577c0",
+    "__piReg": "0x804521e8",
+    "PPCSync": "0x80231650",
+    "GXFlush": "0x80244814",
+    "__OSSetInterruptHandler": "0x802577e4",
+    "__OSUnmaskInterrupts": "0x80257be8",
+    "OSGetCurrentThread": "0x80259d90",
+    "PPCMfwpar": "0x802316f4",
+    "PPCMtwpar": "0x80231700"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "GXOverflowHandler",
+    "GXUnderflowHandler",
+    "GXBreakPointHandler",
+    "GXSaveCPUFifo",
+    "__GXSaveCPUFifoAux",
+    "GXSaveGPFifo",
+    "GXGetGPStatus",
+    "GXGetFifoStatus",
+    "GXGetFifoBase",
+    "GXGetFifoSize",
+    "GXGetFifoLimits",
+    "__GXInsaneWatermark",
+    "GXSetCurrentGXThread",
+    "GXGetCurrentGXThread",
+    "GXGetOverflowCount",
+    "GXResetOverflowCount"
+  ],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/gx/GXFifo.c"
+  },
+  "original_file": "GXFifo.c",
+  "discarded_local_functions": [
+    "GXOverflowHandler",
+    "GXUnderflowHandler",
+    "GXBreakPointHandler"
+  ],
+  "sda_externals": [
+    "__GXData",
+    "__cpReg",
+    "__piReg"
+  ]
+}

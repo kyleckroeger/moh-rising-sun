@@ -1,0 +1,202 @@
+{
+  "id": "ldo",
+  "source": "src/lua/ldo.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8003b2d0",
+      "size": 2448,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x80296048",
+      "size": 104,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "luaD_init",
+      "address": "0x8003b2d0",
+      "size": 112,
+      "binding": 1
+    },
+    {
+      "name": "luaD_checkstack",
+      "address": "0x8003b340",
+      "size": 112,
+      "binding": 1
+    },
+    {
+      "name": "luaD_breakrun",
+      "address": "0x8003bbdc",
+      "size": 40,
+      "binding": 1
+    },
+    {
+      "name": "lua_error",
+      "address": "0x8003bb9c",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "luaD_adjusttop",
+      "address": "0x8003b3b0",
+      "size": 132,
+      "binding": 1
+    },
+    {
+      "name": "luaD_openstack",
+      "address": "0x8003b434",
+      "size": 164,
+      "binding": 0
+    },
+    {
+      "name": "dohook",
+      "address": "0x8003b4d8",
+      "size": 108,
+      "binding": 0
+    },
+    {
+      "name": "luaD_lineHook",
+      "address": "0x8003b544",
+      "size": 72,
+      "binding": 1
+    },
+    {
+      "name": "luaD_callHook",
+      "address": "0x8003b58c",
+      "size": 68,
+      "binding": 0
+    },
+    {
+      "name": "callCclosure",
+      "address": "0x8003b5d0",
+      "size": 164,
+      "binding": 0
+    },
+    {
+      "name": "luaD_callTM",
+      "address": "0x8003b674",
+      "size": 96,
+      "binding": 1
+    },
+    {
+      "name": "luaD_call",
+      "address": "0x8003b6d4",
+      "size": 500,
+      "binding": 1
+    },
+    {
+      "name": "f_call",
+      "address": "0x8003b8c8",
+      "size": 40,
+      "binding": 0
+    },
+    {
+      "name": "lua_call",
+      "address": "0x8003b8f0",
+      "size": 92,
+      "binding": 1
+    },
+    {
+      "name": "luaD_runprotected",
+      "address": "0x8003bc04",
+      "size": 92,
+      "binding": 1
+    },
+    {
+      "name": "f_parser",
+      "address": "0x8003b94c",
+      "size": 92,
+      "binding": 0
+    },
+    {
+      "name": "protectedparser",
+      "address": "0x8003b9a8",
+      "size": 160,
+      "binding": 0
+    },
+    {
+      "name": "parse_buffer",
+      "address": "0x8003ba48",
+      "size": 100,
+      "binding": 0
+    },
+    {
+      "name": "lua_dobuffer",
+      "address": "0x8003baac",
+      "size": 68,
+      "binding": 1
+    },
+    {
+      "name": "message",
+      "address": "0x8003baf0",
+      "size": 172,
+      "binding": 0
+    }
+  ],
+  "externals": {
+    "DWI_alloc": "0x801a8670",
+    "luaT_tag": "0x80042938",
+    "luaG_typeerror": "0x8003b19c",
+    "luaV_execute": "0x80044494",
+    "luaC_checkGC": "0x8003ca90",
+    "luaU_undump": "0x800435a0",
+    "luaY_parser": "0x8003fcb8",
+    "luaV_Lclosure": "0x8004393c",
+    "luaC_collectgarbage": "0x8003ca2c",
+    "_impure_ptr": "0x8045171c",
+    "ungetc": "0x80263d6c",
+    "lua_pushstring": "0x80038e14",
+    "lua_gettop": "0x80038b34",
+    "lua_tostring": "0x80038c90",
+    "luaZ_mopen": "0x800453ac",
+    "strlen": "0x80266b70",
+    "luaH_getglobal": "0x800426b0"
+  },
+  "undefined_in_discarded_code": [
+    "fopen",
+    "fgetc",
+    "freopen",
+    "lua_concat",
+    "luaZ_Fopen",
+    "lua_remove",
+    "fclose"
+  ],
+  "discarded_functions": [
+    "restore_stack_limit",
+    "parse_file",
+    "lua_dofile",
+    "lua_dostring"
+  ],
+  "original_file": "ldo.c",
+  "upstream": {
+    "archive": "https://www.lua.org/ftp/lua-4.0.1.tar.gz",
+    "sha256": "df746e149cf6939e90009d2e540eee918d585b4d1bc6d68b19316a050d484d2a",
+    "path": "src/ldo.c"
+  },
+  "discarded_local_functions": [
+    "restore_stack_limit",
+    "parse_file"
+  ],
+  "sda_externals": [
+    "_impure_ptr"
+  ]
+}

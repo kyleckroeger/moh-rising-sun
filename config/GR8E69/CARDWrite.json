@@ -1,0 +1,99 @@
+{
+  "id": "CARDWrite",
+  "source": "src/dolphin/card/CARDWrite.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802361ec",
+      "size": 892,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "WriteCallback",
+      "address": "0x802361ec",
+      "size": 368,
+      "binding": 0
+    },
+    {
+      "name": "EraseCallback",
+      "address": "0x8023635c",
+      "size": 176,
+      "binding": 0
+    },
+    {
+      "name": "CARDWriteAsync",
+      "address": "0x8023640c",
+      "size": 276,
+      "binding": 1
+    },
+    {
+      "name": "CARDWrite",
+      "address": "0x80236520",
+      "size": 72,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__CARDBlock": "0x80438500",
+    "__CARDGetDirBlock": "0x80232e74",
+    "OSGetTime": "0x8025af7c",
+    "__div2i": "0x801afea0",
+    "__CARDUpdateDir": "0x80233014",
+    "__CARDGetFatBlock": "0x80232a70",
+    "__CARDEraseSector": "0x802324cc",
+    "__CARDPutControlBlock": "0x80232750",
+    "__CARDWrite": "0x8023858c",
+    "__CARDSeek": "0x80235d78",
+    "__CARDIsWritable": "0x802353ec",
+    "DCStoreRange": "0x80254604",
+    "__CARDDefaultApiCallback": "0x80231738",
+    "__CARDSyncCallback": "0x8023173c",
+    "__CARDSync": "0x80232988"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/card/CARDWrite.c"
+  },
+  "original_file": "CARDWrite.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}

@@ -1,0 +1,103 @@
+{
+  "id": "CARDDelete",
+  "source": "src/dolphin/card/CARDDelete.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "unsigned",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80236568",
+      "size": 880,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "DeleteCallback",
+      "address": "0x80236568",
+      "size": 164,
+      "binding": 0
+    },
+    {
+      "name": "CARDFastDeleteAsync",
+      "address": "0x8023660c",
+      "size": 300,
+      "binding": 1
+    },
+    {
+      "name": "CARDFastDelete",
+      "address": "0x80236738",
+      "size": 72,
+      "binding": 1
+    },
+    {
+      "name": "CARDDeleteAsync",
+      "address": "0x80236780",
+      "size": 272,
+      "binding": 1
+    },
+    {
+      "name": "CARDDelete",
+      "address": "0x80236890",
+      "size": 72,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__CARDBlock": "0x80438500",
+    "__CARDFreeBlock": "0x80232d2c",
+    "__CARDPutControlBlock": "0x80232750",
+    "__CARDGetControlBlock": "0x80232698",
+    "__CARDGetDirBlock": "0x80232e74",
+    "__CARDIsWritable": "0x802353ec",
+    "__CARDIsOpened": "0x802359d8",
+    "memset": "0x80266778",
+    "__CARDDefaultApiCallback": "0x80231738",
+    "__CARDUpdateDir": "0x80233014",
+    "__CARDSyncCallback": "0x8023173c",
+    "__CARDSync": "0x80232988",
+    "__CARDGetFileNo": "0x80235614"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "upstream": {
+    "repository": "https://github.com/doldecomp/dolsdk2004",
+    "commit": "2328b4164b1a98422a2255d83ce9a5a7548990cc",
+    "path": "src/card/CARDDelete.c"
+  },
+  "original_file": "CARDDelete.c",
+  "discarded_local_functions": [],
+  "sda_externals": []
+}
