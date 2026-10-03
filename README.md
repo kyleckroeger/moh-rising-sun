@@ -37,6 +37,12 @@ assets, compiler binaries or complete debug dumps to commits, issues or PRs.
 
 ## Progress integration
 
+Explore the [live decomp.dev map](https://decomp.dev/lifewillbeokay/moh-rising-sun)
+to find unfinished functions. The remaining code is divided into 725 grey boxes:
+named file groups where supported by symbols, unknown-file groups, shared entry
+points and unidentified bytes. Inferred ownership is labeled and earns no matching
+credit. See [code-map evidence and starting points](docs/CodeMap.md).
+
 The [progress workflow](.github/workflows/progress.yml) publishes an objdiff v2
 `GR8E69_report` artifact compatible with decomp.dev. CI validates source hashes
 against a locally verified snapshot; it does not rebuild the game. Source changes
@@ -82,7 +88,7 @@ Run the scripts from any directory; all outputs remain inside this checkout. `ba
 | `build/reconstruction/report.json` | Full-image result and source/tool fingerprints |
 | `build/reconstruction/units/` | Per-unit compiler, linker and generated-section output |
 | `build/reconstruction/rebuilt.dol` | Analysis image containing all accepted compiled source |
-| `progress/GR8E69.snapshot.json` | Public verification metadata and source hashes; no original bytes |
+| `progress/GR8E69.snapshot.json` | Verification metadata, source hashes and unfinished-code map; no original bytes |
 | `build/progress/report.json` | Generated objdiff v2 progress for decomp.dev |
 
 The automatic dtk ELF split export emits warnings for this executable's symbol ordering. Treat it as research output; it is not accepted source ownership. The baseline uses a separate original-object split and retains every compared byte.

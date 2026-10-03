@@ -25,13 +25,18 @@ class PublicProgress(unittest.TestCase):
         self.write("example.json", self.manifest)
         self.write("project.json", {"units": ["example.json"],
                                    "progress": {"code_bytes": 100, "executable_sections": {".text": 100}}})
-        self.snapshot = {"schema_version": 1, "verification": "local-complete-image-match",
+        self.write("baseline.json", {"sections": {".text": "0x80001000"}})
+        self.snapshot = {"schema_version": 2, "verification": "local-complete-image-match",
                          "input_sha256": fingerprints(self.root),
                          "units": [{"id": "example", "category": "reconstructed_game",
                                     "functions": 1, "code_bytes": 8}],
                          "progress": {"matching_code_bytes": 8, "total_executable_code_bytes": 100,
                                       "matching_functions": 1,
-                                      "categories": {"reconstructed_game": 8, "restored_library": 0}}}
+                                      "categories": {"reconstructed_game": 8, "restored_library": 0}},
+                         "code_map": {"schema_version": 1,
+                                      "sections": [{"name": ".text", "address": "0x80001000", "size": 100}],
+                                      "units": [{"name": "Unknown file/example", "ranges": [
+                                          {"kind": "function", "name": "unfinished", "address": "0x80001008", "size": 92}]}]}}
 
     def write(self, name, value):
         (self.config / name).write_text(json.dumps(value))
@@ -77,6 +82,29 @@ class PublicProgress(unittest.TestCase):
         self.snapshot["units"].append(copy.deepcopy(self.snapshot["units"][0]))
         with self.assertRaisesRegex(ValueError, "Duplicate"):
             export(self.snapshot, self.root)
+
+    def test_map_cannot_double_count_matched_source(self):
+        item = self.snapshot["code_map"]["units"][0]["ranges"][0]
+        item.update(address="0x80001000", size=100)
+        with self.assertRaisesRegex(ValueError, "coverage"):
+            export(self.snapshot, self.root)
+
+    def test_missing_map_bytes_are_rejected(self):
+        self.snapshot["code_map"]["units"][0]["ranges"][0]["size"] -= 4
+        with self.assertRaisesRegex(ValueError, "coverage"):
+            export(self.snapshot, self.root)
+
+    def test_map_cannot_move_the_original_section(self):
+        self.snapshot["code_map"]["sections"][0]["address"] = "0x80002000"
+        with self.assertRaisesRegex(ValueError, "pinned"):
+            export(self.snapshot, self.root)
+
+    def test_unidentified_bytes_are_not_reported_as_functions(self):
+        self.snapshot["code_map"]["units"][0]["ranges"][0]["kind"] = "unidentified"
+        unit = export(self.snapshot, self.root)["units"][-1]
+        self.assertFalse(unit["functions"])
+        self.assertEqual(unit["sections"][0]["size"], "92")
+        self.assertEqual(unit["measures"]["matched_code"], "0")
 
 
 if __name__ == "__main__":

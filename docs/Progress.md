@@ -12,6 +12,8 @@ The public workflow validates a **locally verified snapshot**. It does not have
 the original executables and does not rerun the proprietary compiler toolchain.
 `progress/GR8E69.snapshot.json` records hashes of every source file, header,
 configuration file and build script, plus verified unit counts and object hashes.
+Snapshot schema 2 also includes a selected executable-symbol map for unfinished
+code. It is generated from the pinned original during capture.
 Changes, additions and removals in those directories make CI fail until someone
 with the pinned original completes verification and refreshes the snapshot.
 Documentation-only changes do not require rebuilding.
@@ -46,15 +48,22 @@ categories. Accepted units may be fragments of an original translation unit.
 Their categories describe accepted ranges, so 100% within an accepted category
 does not mean all game code or all library code is done.
 
-Unreconstructed code is represented by an explicitly synthetic context unit. Its
-bytes are included in the overall denominator and earn zero credit. Its game vs.
-library ownership has not been exhaustively classified. Data, BSS and original
-context earn no code credit. Unknown total function/unit/data counts are omitted
-rather than inferred from duplicate symbol entries or partial source boundaries.
+Unreconstructed code is represented by named file groups, explicitly unassigned
+function groups, shared entry-point groups, and unidentified code/padding ranges.
+See [the code map](CodeMap.md) for evidence and limitations. All are generated
+inventory units with zero matching credit. Their ranges plus accepted source
+must partition the complete executable with no gaps or overlaps. Inferred file
+groups are labeled; their game vs. library ownership is not exhaustively
+classified. Data, BSS and original context earn no code credit. Unknown total
+function/unit/data counts are omitted rather than inferred from overlapping
+symbol entries, synthetic navigation groups or partial source boundaries.
 No fuzzy partial-match credit is used. This is progress on the initial Disc 1
 executable, not on both discs or the whole game, and runtime remains untested.
 
 ## Registering the project
+
+The project is registered at
+<https://decomp.dev/lifewillbeokay/moh-rising-sun>.
 
 Once a successful default-branch workflow has uploaded its report, a repository
 admin can add the repository at <https://decomp.dev/manage/new>, naming the game

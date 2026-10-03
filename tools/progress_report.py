@@ -9,12 +9,14 @@ import hashlib
 import json
 from pathlib import Path
 
+from code_map import bounds, build_code_map, validate_code_map
+
 ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = Path("progress/GR8E69.snapshot.json")
 CATEGORIES = {
     "reconstructed_game": "Accepted game fragments",
     "restored_library": "Accepted library fragments",
-    "unreconstructed": "Unreconstructed context (unclassified)",
+    "unreconstructed": "Unreconstructed code (symbol map)",
 }
 
 
@@ -73,11 +75,13 @@ def capture(root):
                 raise ValueError("Source-built unit differs from verified build")
         verify_unit(original, Elf32((work / "compiled.elf").read_bytes()), unit)
     # Allow-list public fields. In particular, never copy source_blobs paths.
-    return {"schema_version": 1, "verification": "local-complete-image-match",
+    accepted = [(int(f["address"], 16), int(f["address"], 16) + f["size"])
+                for unit in units for f in unit["functions"]]
+    return {"schema_version": 2, "verification": "local-complete-image-match",
             "target": report["target"], "original_elf_sha256": report["original_elf_sha256"],
             "dol_sha1": report["dol_sha1"], "runtime_tested": False,
             "progress": report["progress"], "input_sha256": report["input_sha256"],
-            "units": report["units"]}
+            "units": report["units"], "code_map": build_code_map(original, accepted)}
 
 
 def measures(total, matched):
@@ -89,7 +93,7 @@ def measures(total, matched):
 
 def export(snapshot, root):
     require_fresh(snapshot, root)
-    if snapshot["schema_version"] != 1 or snapshot["verification"] != "local-complete-image-match":
+    if snapshot["schema_version"] != 2 or snapshot["verification"] != "local-complete-image-match":
         raise ValueError("Unsupported verification snapshot")
     config = root / "config/GR8E69"
     project = read(config / "project.json")
@@ -137,10 +141,25 @@ def export(snapshot, root):
             p["categories"] != {k: totals[k] for k in ("reconstructed_game", "restored_library")}):
         raise ValueError("Snapshot totals differ from source coverage")
     totals["unreconstructed"] = total - matched
-    units.append({"name": "Unreconstructed executable context (not an original source unit)",
-                  "measures": measures(total - matched, 0),
-                  "metadata": {"complete": False, "auto_generated": True,
-                               "progress_categories": ["unreconstructed"]}})
+    baseline = read(config / "baseline.json")
+    sections = sorted([{"name": name, "address": baseline["sections"][name], "size": size}
+                       for name, size in project["progress"]["executable_sections"].items()],
+                      key=lambda s: int(s["address"], 16))
+    code_map = snapshot["code_map"]
+    validate_code_map(code_map, intervals, sections)
+    for mapped in code_map["units"]:
+        functions, mapped_sections = [], []
+        for item in mapped["ranges"]:
+            record = {"name": item["name"], "size": str(item["size"]), "fuzzy_match_percent": 0,
+                      "metadata": {"virtual_address": str(bounds(item)[0])}}
+            (mapped_sections if item["kind"] == "unidentified" else functions).append(record)
+        units.append({"name": mapped["name"],
+                      "measures": measures(sum(r["size"] for r in mapped["ranges"]), 0),
+                      "functions": functions, "sections": mapped_sections,
+                      "metadata": {"complete": False, "auto_generated": True,
+                                   "progress_categories": ["unreconstructed"]}})
+    if len({u["name"] for u in units}) != len(units):
+        raise ValueError("Duplicate accepted/mapped unit name")
     # Unknown function/unit/data denominators are intentionally not fabricated.
     return {"version": 2, "measures": measures(total, matched), "units": units,
             "categories": [{"id": key, "name": name,
