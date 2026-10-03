@@ -1,0 +1,48 @@
+{
+  "reference_commit": "9b76ff003081d6ece8b838453fb8310743a972c7",
+  "references": [
+    {
+      "url": "https://github.com/adonis-singh/re4/blob/9b76ff003081d6ece8b838453fb8310743a972c7/src/game/vfprintf.c",
+      "sha256": "7663f286cda728ac246567ed4c285579189ae9eb54e0e9d888c55d53b743289e"
+    },
+    {
+      "url": "https://github.com/adonis-singh/re4/blob/9b76ff003081d6ece8b838453fb8310743a972c7/src/game/math_support.c",
+      "sha256": "6920da14eb155b294ba26b2216cea48303d541760b09adcc02c1852a6b0ac6c8"
+    }
+  ],
+  "newlib_archive": "https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz",
+  "newlib_archive_sha256": "e52667ed78595dd1919f4a303f8b658b1d57b926e085e8021851b279143cf3ef",
+  "files": [
+    {
+      "path": "src/newlib/sn_math/s_floor.c",
+      "upstream_path": "newlib/libm/math/s_floor.c",
+      "upstream_sha256": "bfcaab777d6cde5ebb3402b56ae57f8f17155cb6ec7a81793dfe67290616ddda",
+      "modified": true
+    },
+    {
+      "path": "src/newlib/sn_math/e_fmod.c",
+      "upstream_path": "newlib/libm/math/e_fmod.c",
+      "upstream_sha256": "a2a86b8b4988672fae5a38306be2846b3724820b82eee6728a89bbdc65a296e4",
+      "modified": true
+    },
+    {
+      "path": "src/newlib/sn_math/e_log.c",
+      "upstream_path": "newlib/libm/math/e_log.c",
+      "upstream_sha256": "c5d171440dc985644c3ffe797a2c042cdb7f05f0fea18e6a99a4d96e1d2d0638",
+      "modified": true
+    },
+    {
+      "path": "src/newlib/sn_math/e_log10.c",
+      "upstream_path": "newlib/libm/math/e_log10.c",
+      "upstream_sha256": "94b061bbfb0b9ed324766088f07e6b311568b35f9e7f2257c9a27bb93bf9a17f",
+      "modified": true
+    }
+  ],
+  "adapted_formatter": "src/newlib/stdio/vfprintf.c",
+  "integration_files": [
+    "src/newlib/sn_math/math_support.c",
+    "src/newlib/sn_math/fdlibm.h"
+  ],
+  "notice": "src/newlib/NOTICE.SN",
+  "notes": "The original formatter is compiled twice. File symbols are disambiguated by their symbol-table indices; static-object numeric suffixes are compilation-local. add_separators remains original context."
+}

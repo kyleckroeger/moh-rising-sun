@@ -1,0 +1,121 @@
+{
+  "id": "newlib_vfprintf",
+  "source": "src/newlib/stdio/vfprintf.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char",
+    "-DMB_CAPABLE"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80267080",
+      "size": 8104,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802c0228",
+      "size": 208,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802e0f10",
+      "size": 40,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x8045172c",
+      "size": 8,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x80447304",
+      "size": 292,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "strround",
+      "size": 92,
+      "binding": 1,
+      "address": "0x80267080"
+    },
+    {
+      "name": "strrev",
+      "size": 76,
+      "binding": 1,
+      "address": "0x802670dc"
+    },
+    {
+      "name": "itoa",
+      "size": 124,
+      "binding": 1,
+      "address": "0x80267128"
+    },
+    {
+      "name": "fftoa",
+      "size": 1256,
+      "binding": 1,
+      "address": "0x802671a4"
+    },
+    {
+      "name": "_vfwrite",
+      "size": 212,
+      "binding": 0,
+      "address": "0x8026768c"
+    },
+    {
+      "name": "vfprintf",
+      "size": 216,
+      "binding": 1,
+      "address": "0x80267760"
+    },
+    {
+      "name": "_vfprintf_r",
+      "size": 6128,
+      "binding": 1,
+      "address": "0x80267838"
+    }
+  ],
+  "externals": {
+    "sn_floor": "0x8026ab3c",
+    "sn_fmod": "0x8026acb0",
+    "write": "0x80272e78",
+    "_vfiprintf_r": "0x80269284",
+    "__umoddi3": "0x8026cd10",
+    "__udivdi3": "0x8026c82c",
+    "localeconv": "0x8026ab18",
+    "_impure_ptr": "0x8045171c",
+    "__mb_cur_max": "0x8045173c",
+    "_mbtowc_r": "0x80264fd4",
+    "memcpy": "0x802665e8",
+    "sn_log10": "0x8026b308",
+    "strlen": "0x80266b70",
+    "memchr": "0x8026ba64",
+    "add_separators": "0x80269028"
+  },
+  "undefined_in_discarded_code": [],
+  "original_file": "vfprintf.c",
+  "original_file_index": 4840,
+  "discarded_functions": [],
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "__mb_cur_max",
+    "_impure_ptr"
+  ],
+  "provenance": "config/GR8E69/sn-library-source.json"
+}

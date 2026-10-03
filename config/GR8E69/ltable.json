@@ -1,0 +1,158 @@
+{
+  "id": "ltable",
+  "source": "src/lua/ltable.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80041d80",
+      "size": 2412,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x80296968",
+      "size": 40,
+      "type": 1
+    },
+    {
+      "name": ".rodata.prefix",
+      "target_name": ".rodata",
+      "address": "0x8029693c",
+      "size": 44,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "luaH_mainposition",
+      "size": 148,
+      "binding": 1,
+      "address": "0x80041d80"
+    },
+    {
+      "name": "luaH_getany",
+      "size": 132,
+      "binding": 0,
+      "address": "0x80041e14"
+    },
+    {
+      "name": "luaH_getnum",
+      "size": 100,
+      "binding": 1,
+      "address": "0x80041e98"
+    },
+    {
+      "name": "luaH_getstr",
+      "size": 84,
+      "binding": 1,
+      "address": "0x80041efc"
+    },
+    {
+      "name": "luaH_get",
+      "size": 96,
+      "binding": 1,
+      "address": "0x80041f50"
+    },
+    {
+      "name": "luaH_next",
+      "size": 216,
+      "binding": 1,
+      "address": "0x80041fb0"
+    },
+    {
+      "name": "luaH_remove",
+      "size": 228,
+      "binding": 1,
+      "address": "0x80042088"
+    },
+    {
+      "name": "setnodevector",
+      "size": 208,
+      "binding": 0,
+      "address": "0x8004216c"
+    },
+    {
+      "name": "luaH_new",
+      "size": 144,
+      "binding": 1,
+      "address": "0x8004223c"
+    },
+    {
+      "name": "luaH_free",
+      "size": 80,
+      "binding": 1,
+      "address": "0x800422cc"
+    },
+    {
+      "name": "numuse",
+      "size": 60,
+      "binding": 0,
+      "address": "0x8004231c"
+    },
+    {
+      "name": "rehash",
+      "size": 280,
+      "binding": 0,
+      "address": "0x80042358"
+    },
+    {
+      "name": "luaH_set",
+      "size": 424,
+      "binding": 1,
+      "address": "0x80042470"
+    },
+    {
+      "name": "luaH_setint",
+      "size": 80,
+      "binding": 1,
+      "address": "0x80042618"
+    },
+    {
+      "name": "luaH_setstrnum",
+      "size": 72,
+      "binding": 1,
+      "address": "0x80042668"
+    },
+    {
+      "name": "luaH_getglobal",
+      "size": 60,
+      "binding": 1,
+      "address": "0x800426b0"
+    }
+  ],
+  "externals": {
+    "lua_error": "0x8003bb9c",
+    "luaO_equalObj": "0x8003ed4c",
+    "luaO_nilobject": "0x80296568",
+    "DWI_alloc": "0x801a8670",
+    "luaO_power2": "0x8003ed2c",
+    "DWI_free": "0x801a8894",
+    "luaS_new": "0x80041d08"
+  },
+  "undefined_in_discarded_code": [],
+  "original_file": "ltable.c",
+  "discarded_functions": [],
+  "discarded_local_functions": [],
+  "sda_externals": [],
+  "upstream": {
+    "archive": "https://www.lua.org/ftp/lua-4.0.1.tar.gz",
+    "sha256": "df746e149cf6939e90009d2e540eee918d585b4d1bc6d68b19316a050d484d2a",
+    "path": "src/ltable.c",
+    "modified": true
+  }
+}

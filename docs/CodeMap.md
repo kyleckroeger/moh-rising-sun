@@ -6,7 +6,7 @@ function ranges. This inventory helps choose work; it is not reconstructed sourc
 or an accepted linker split. Existing matched source units remain separate green
 boxes, so a grey file group contains only that file's still-unmatched ranges.
 
-The initial map replaces the single remaining-code placeholder with **725 units**:
+At the initial 10.000995% snapshot, the map replaced the single remaining-code placeholder with **725 units**:
 
 | Group | Grey boxes | Function-symbol records | Executable bytes |
 | --- | ---: | ---: | ---: |
@@ -17,10 +17,16 @@ The initial map replaces the single remaining-code placeholder with **725 units*
 | Total unfinished | 725 | 8,850 | 2,242,804 |
 
 Together with the 209 accepted source units/fragments (249,228 bytes), this covers
-all 2,492,032 executable bytes exactly once. Matching progress remains 10.000995%.
+all 2,492,032 executable bytes exactly once. Matching progress at that snapshot was 10.000995%.
 The original's 9,883 function-symbol records are accounted for by 1,033 accepted
 records and 8,850 unfinished records. These are symbol counts, not a claim that
 there are 9,883 independent function bodies.
+
+The current verified snapshot has **215 accepted units/fragments (274,524 bytes)**
+and **715 grey groups (2,217,508 bytes)**. Its 1,112 accepted and 8,771 remaining
+function-symbol records still account for all 9,883 records. Grey groups shrink or
+disappear as source is accepted. See the [reuse index](ReuseMap.md) for ways to turn
+this coverage map into productive work.
 
 ## Evidence and uncertainty
 

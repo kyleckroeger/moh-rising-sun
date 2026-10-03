@@ -1,6 +1,6 @@
 # Lua source restoration
 
-15 Lua compilation units restore **39,664 executable code bytes in 226 functions**, plus **3,416 bytes of read-only data**. Every retained function and every generated data byte matches the pinned `MOH3RDVD.ELF`. They are integrated into the complete-image comparison run by `python3 tools/reconstruct.py`.
+18 Lua compilation units restore **48,564 executable code bytes in 292 functions**, plus **4,032 bytes of read-only data**. Every retained function and every generated data byte matches the pinned `MOH3RDVD.ELF`. They are integrated into the complete-image comparison run by `python3 tools/reconstruct.py`.
 
 This is restoration of an existing open-source library, with its game integration recovered from the executable. It is reported separately from independently reconstructed game-specific code. AI assistance was used to identify the source version, investigate the allocator/linker behavior, configure the build and verify the results; the original Lua implementation was written by its credited authors.
 
@@ -10,7 +10,7 @@ The source is [Lua 4.0.1](https://www.lua.org/ftp/lua-4.0.1.tar.gz), from the [o
 
 `df746e149cf6939e90009d2e540eee918d585b4d1bc6d68b19316a050d484d2a`
 
-The 15 C files and supporting Lua headers are in `src/lua/`. The original copyright and permission notice is preserved in `src/lua/COPYRIGHT` and in the source headers. All vendored Lua files are unmodified upstream files except `lmem.h`, `lmem.c` and `ldo.c`, which are explicitly marked as modified. The archive is only needed to audit provenance; builds use the checked-in source files.
+The 18 C files and supporting Lua headers are in `src/lua/`. The original copyright and permission notice is preserved in `src/lua/COPYRIGHT` and in the source headers. All vendored Lua files are unmodified upstream files except `lmem.h`, `lmem.c`, `ldo.c`, `lapi.c`, `lcode.c` and `ltable.c`, which are explicitly marked as modified. The archive is only needed to audit provenance; builds use the checked-in source files.
 
 Lua 4.0 was also investigated. Its `lparser.c` lacks the semicolon check in `retstat`, producing a 100-byte function where Rising Sun has 112 bytes. Lua 4.0.1 contains that check and reproduces the entire 9,704-byte parser. This evidence supports the selected source version for the accepted units; it does not claim every Lua unit in the game has been recovered.
 
@@ -33,6 +33,9 @@ Lua 4.0 was also investigated. Its `lparser.c` lacks the semicolon check in `ret
 | `lobject.c` | `0x8003ed2c–0x8003f0d8` | 6 | 940 | `0x80296568`, 168 bytes |
 | `lstate.c` | `0x800416c0–0x80041978` | 4 | 696 | `0x802968cc`, 48 bytes |
 | `lzio.c` | `0x800453a4–0x800454ac` | 3 | 264 | None |
+| `lapi.c` | `0x80038af4–0x80039080` | 17 | 1,420 | `0x80295c7c`, 12 bytes; `0x80295c88`, 128 bytes |
+| `lcode.c` | `0x8003930c–0x8003a6d8` | 33 | 5,068 | `0x80295dbc`, 88 bytes; `0x80295e18`, 304 bytes |
+| `ltable.c` | `0x80041d80–0x800426ec` | 16 | 2,412 | `0x8029693c`, 44 bytes; `0x80296968`, 40 bytes |
 
 The original file symbols and `gcc2_compiled.` markers support these text-unit boundaries. Each manifest in `config/GR8E69/` enumerates the original function names, binding, addresses, lengths, external references and generated section placement. The build checks these against the pinned executable on every run. Read-only data addresses were derived from original references and then verified by linking and comparing the complete generated sections, including strings, constants and pointer tables.
 
@@ -44,9 +47,29 @@ The original file symbols and `gcc2_compiled.` markers support these text-unit b
 
 `ldo.c` preserves the target's changed error handling. `luaD_breakrun` reports `LUA is screwed.\n`; `luaD_runprotected` links and initializes the original error record, calls its callback directly, restores the previous record and returns its status. The upstream setjmp/longjmp recovery path is absent in the observed code. The original `lua_longjmp` structure accounts for its stack storage; no synthetic padding is introduced.
 
+## Observed constant placement
+
+Three additional units reproduce an original string prefix followed by an independently
+aligned constant block. The original instruction references establish both addresses;
+the complete strings, tables and floating constants are compared. Ordinary assembly
+of a single `.rodata` input would instead apply its maximum alignment to the prefix,
+shifting some string addresses by four bytes.
+
+`lapi.c`, `lcode.c` and `ltable.c` therefore give the affected string arrays explicit
+`.rodata.prefix` placement and four-byte alignment. These are target storage annotations,
+not claims about historical source spelling or original linker input sections. Their
+array names are descriptive. The linker places both complete compiler-produced blocks
+within the original `.rodata`; all gaps remain original context. No emitted instruction,
+constant or object byte is edited. The algorithms retain their upstream source.
+
+The unused `lua_ident` definition and its version-string object are absent from the
+pinned executable and are omitted from `lapi.c`. Lua notices remain in the source and
+COPYRIGHT. The Lua 4.0.1 parser evidence still applies; this is not a claim that the game
+shipped an entirely unmodified Lua release. `lundump.c` remains unaccepted.
+
 ## Compiler and linker evidence
 
-The accepted library profile is ProDG 3.8.1 from the pinned compiler archive, with **`-O2 -G0 -ffast-math`**, applied uniformly to all 15 Lua units. The working compiler is GNU C 2.95.2 with SN modifications. The floating-point option is supported by comparing the emitted branches and arithmetic with the target; it is not applied to the separate MathFun game-code profile. This is a verified working profile, not proof of the original toolchain release or exact historical command line.
+The accepted library profile is ProDG 3.8.1 from the pinned compiler archive, with **`-O2 -G0 -ffast-math`**, applied uniformly to all 18 Lua units. The working compiler is GNU C 2.95.2 with SN modifications. The floating-point option is supported by comparing the emitted branches and arithmetic with the target; it is not applied to the separate MathFun game-code profile. This is a verified working profile, not proof of the original toolchain release or exact historical command line.
 
 The original executable lacks several functions present in upstream source, while retaining their associated constant data. SN's native **`--strip-unused`** behavior reproduces this. The source keeps the upstream functions; it does not delete or stub them. The link roots are the unit's exported functions actually present in the original ELF. Examples of removed functions from the initial seven units are listed below; every accepted manifest enumerates its complete discard list:
 

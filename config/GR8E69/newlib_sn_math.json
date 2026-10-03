@@ -1,0 +1,65 @@
+{
+  "id": "newlib_sn_math",
+  "source": "src/newlib/sn_math/math_support.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/newlib/sn_math"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8026ab3c",
+      "size": 2324,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802c03b8",
+      "size": 224,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "sn_floor",
+      "size": 372,
+      "binding": 1,
+      "address": "0x8026ab3c"
+    },
+    {
+      "name": "sn_fmod",
+      "size": 860,
+      "binding": 1,
+      "address": "0x8026acb0"
+    },
+    {
+      "name": "sn_log",
+      "size": 764,
+      "binding": 1,
+      "address": "0x8026b00c"
+    },
+    {
+      "name": "sn_log10",
+      "size": 328,
+      "binding": 1,
+      "address": "0x8026b308"
+    }
+  ],
+  "externals": {},
+  "undefined_in_discarded_code": [],
+  "original_file": "math_support.c",
+  "discarded_functions": [],
+  "discarded_local_functions": [],
+  "sda_externals": [],
+  "provenance": "config/GR8E69/sn-library-source.json"
+}

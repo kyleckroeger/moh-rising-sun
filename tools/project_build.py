@@ -31,11 +31,23 @@ def manifest_functions(unit):
 
 def object_record(symbol):
     name = symbol["name"]
-    # MW appends a compilation-local sequence number to function statics.
+    # MW and SN append compilation-local sequence numbers to function statics.
     # Compare their C identifier, binding, exact address and size instead.
     if symbol["binding"] == 0 and re.fullmatch(r"[A-Za-z_]\w*\$\d+", name):
         name = name.rsplit("$", 1)[0]
+    if symbol["binding"] == 0 and re.fullmatch(r"[A-Za-z_]\w*\.\d+", name):
+        name = name.rsplit(".", 1)[0]
     return name, symbol["address"], symbol["size"], symbol["binding"]
+
+
+def target_section(section):
+    """Permit explicit read-only input subsections, never remapped code or BSS."""
+    name = section["name"]
+    target = section.get("target_name", name)
+    if target != name and (target != ".rodata" or not name.startswith(".rodata.")
+                           or section.get("type", 1) != 1):
+        raise ValueError("Unsupported source section mapping")
+    return target
 
 
 def validate_units(original, units):
@@ -47,6 +59,12 @@ def validate_units(original, units):
     if len({u["id"] for u in units}) != len(units):
         raise ValueError("Duplicate unit identifier")
     for unit in units:
+        file_index = unit.get("original_file_index")
+        if file_index is not None:
+            if (not isinstance(file_index, int) or not 0 <= file_index < len(symbols)
+                    or symbols[file_index]["type"] != 4
+                    or symbols[file_index]["name"] != unit.get("original_file")):
+                raise ValueError("Original source-file record differs")
         if unit["category"] not in ("reconstructed_game", "restored_library"):
             raise ValueError("Unknown source category")
         if not set(unit.get("sda_externals", [])) <= set(unit["externals"]):
@@ -69,7 +87,7 @@ def validate_units(original, units):
             raise ValueError("Code coverage excludes part of a function")
         for section in unit["sections"]:
             address, size = int(section["address"], 16), section["size"]
-            matches = [s for s in original.sections if s["name"] == section["name"] and
+            matches = [s for s in original.sections if s["name"] == target_section(section) and
                        s["flags"] & 2 and s["type"] == section.get("type", 1) and size > 0 and
                        s["address"] <= address < address + size <= s["address"] + s["size"]]
             if len(matches) != 1:
@@ -180,32 +198,41 @@ def verify_unit(original, linked, unit):
         raise ValueError("Unresolved linked source dependency")
     blobs = []
     for section in actual_sections:
-        target = next(s for s in original.sections if s["name"] == section["name"])
+        manifest_section = next(s for s in unit["sections"] if s["name"] == section["name"])
+        target = next(s for s in original.sections if s["name"] == target_section(manifest_section))
         if section["type"] != target["type"] or section["flags"] != target["flags"]:
             raise ValueError("Linked source section flags or type differ")
         if section["type"] == 8:
             # Zeroes alone cannot verify BSS ownership. Require the original
             # named objects, sizes and addresses, scoped by source-file symbols.
-            original_objects, file_name = [], None
-            for symbol in original.symbols():
+            # SN .lcomm records retain a size but use STT_NOTYPE, including in
+            # the original executable. Zero-size labels never establish storage.
+            storage_types = (0, 1) if unit.get("compiler_family", "ProDG") == "ProDG" else (1,)
+            original_objects, file_name, file_index = [], None, None
+            for index, symbol in enumerate(original.symbols()):
                 if symbol["type"] == 4:
                     file_name = symbol["name"]
-                if symbol["type"] == 1 and symbol["section"] == target["index"]:
+                    file_index = index
+                if symbol["type"] in storage_types and symbol["size"] and symbol["section"] == target["index"]:
                     if symbol["address"] < section["address"] + section["size"] and symbol["address"] + symbol["size"] > section["address"]:
                         if not section["address"] <= symbol["address"] < symbol["address"] + symbol["size"] <= section["address"] + section["size"]:
                             raise ValueError("BSS range excludes part of an original object")
                         if not symbol["binding"] and file_name != unit.get("original_file"):
                             raise ValueError("BSS range contains another source file's object")
+                        if (not symbol["binding"] and "original_file_index" in unit
+                                and file_index != unit["original_file_index"]):
+                            raise ValueError("BSS range contains another source-file record's object")
                         original_objects.append(object_record(symbol))
             actual_objects = [object_record(s)
-                              for s in linked.symbols() if s["type"] == 1 and s["section"] == section["index"]]
+                              for s in linked.symbols() if s["type"] in storage_types and s["size"]
+                              and s["section"] == section["index"]]
             if not original_objects or sorted(actual_objects) != sorted(original_objects):
                 raise ValueError(f"BSS object ownership differs: {unit['id']} {section['name']}")
         offset = section["address"] - target["address"]
         data = linked.contents(section) if section["type"] != 8 else None
         if section["type"] != 8 and data != original.contents(target)[offset:offset + section["size"]]:
             raise ValueError(f"Compiled source bytes differ: {unit['id']} {section['name']}")
-        blobs.append(dict(unit=unit["id"], section=section["name"], address=section["address"],
+        blobs.append(dict(unit=unit["id"], section=target["name"], source_section=section["name"], address=section["address"],
                           size=section["size"], type=section["type"], data=data, category=unit["category"]))
     return blobs
 
@@ -240,9 +267,10 @@ def write_context(original_path, original, blobs, directory):
             if blob["address"] > cursor:
                 label = f'.orig{name}_{index}'
                 original_fragment(label, cursor, blob["address"] - cursor)
-            label = f'.source.{blob["unit"]}{name}'
-            begin = f'__source_{blob["unit"]}_{name[1:]}_start'
-            finish = f'__source_{blob["unit"]}_{name[1:]}_end'
+            source_name = blob.get("source_section", name)
+            label = f'.source.{blob["unit"]}{source_name}'
+            begin = f'__source_{blob["unit"]}_{source_name[1:]}_start'
+            finish = f'__source_{blob["unit"]}_{source_name[1:]}_end'
             if blob.get("type", 1) != section["type"]:
                 raise ValueError("Source context section type differs")
             body = f'.space {blob["size"]}' if nobits else f'.incbin "{blob["path"]}"'
@@ -332,7 +360,7 @@ def build_project():
         for blob in generated:
             data = blob.pop("data")
             if data is not None:
-                blob["path"] = str(work / (blob["section"][1:] + ".bin"))
+                blob["path"] = str(work / (blob["source_section"][1:] + ".bin"))
                 Path(blob["path"]).write_bytes(data)
         blobs.extend(generated)
         reports.append(dict(id=unit["id"], category=unit["category"],

@@ -1,6 +1,6 @@
 # MathFun.cpp: first reconstructed fragment
 
-Six functions, **336 code bytes**, are compiled from `src/MathFun.cpp`. These are a partial reconstruction of one original file, not six complete source units. The project also restores 15 [Lua units](Lua.md); the remaining bytes stay original context. AI assistance was used for analysis, reconstruction and verification tooling.
+Six functions, **336 code bytes**, are compiled from `src/MathFun.cpp`. These are a partial reconstruction of one original file, not six complete source units. The project also restores 18 [Lua units](Lua.md); the remaining bytes stay original context. AI assistance was used for analysis, reconstruction and verification tooling.
 
 ## Evidence and boundaries
 

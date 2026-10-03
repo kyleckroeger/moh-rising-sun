@@ -1,0 +1,81 @@
+{
+  "id": "newlib_vfiprintf",
+  "source": "src/newlib/stdio/vfprintf.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G8",
+    "-fsigned-char",
+    "-DMB_CAPABLE",
+    "-DINTEGER_ONLY"
+  ],
+  "include_dirs": [
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802691b0",
+      "size": 5968,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802c02f8",
+      "size": 108,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x80451734",
+      "size": 8,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x80447428",
+      "size": 128,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "_vfwrite",
+      "size": 212,
+      "binding": 0,
+      "address": "0x802691b0"
+    },
+    {
+      "name": "_vfiprintf_r",
+      "size": 5756,
+      "binding": 1,
+      "address": "0x80269284"
+    }
+  ],
+  "externals": {
+    "write": "0x80272e78",
+    "__umoddi3": "0x8026cd10",
+    "__udivdi3": "0x8026c82c",
+    "_impure_ptr": "0x8045171c",
+    "__mb_cur_max": "0x8045173c",
+    "_mbtowc_r": "0x80264fd4",
+    "memcpy": "0x802665e8",
+    "memchr": "0x8026ba64",
+    "strlen": "0x80266b70",
+    "add_separators": "0x80269028"
+  },
+  "undefined_in_discarded_code": [],
+  "original_file": "vfprintf.c",
+  "original_file_index": 4850,
+  "discarded_functions": [],
+  "discarded_local_functions": [],
+  "sda_externals": [
+    "__mb_cur_max",
+    "_impure_ptr"
+  ],
+  "provenance": "config/GR8E69/sn-library-source.json"
+}

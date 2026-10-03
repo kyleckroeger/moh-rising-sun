@@ -1,0 +1,225 @@
+{
+  "id": "lapi",
+  "source": "src/lua/lapi.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80038af4",
+      "size": 1420,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x80295c88",
+      "size": 128,
+      "type": 1
+    },
+    {
+      "name": ".rodata.prefix",
+      "target_name": ".rodata",
+      "address": "0x80295c7c",
+      "size": 12,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "luaA_indexAcceptable",
+      "size": 64,
+      "binding": 0,
+      "address": "0x80038af4"
+    },
+    {
+      "name": "lua_gettop",
+      "size": 20,
+      "binding": 1,
+      "address": "0x80038b34"
+    },
+    {
+      "name": "lua_type",
+      "size": 52,
+      "binding": 1,
+      "address": "0x80038b48"
+    },
+    {
+      "name": "lua_typename",
+      "size": 40,
+      "binding": 1,
+      "address": "0x80038b7c"
+    },
+    {
+      "name": "lua_isnumber",
+      "size": 96,
+      "binding": 1,
+      "address": "0x80038ba4"
+    },
+    {
+      "name": "lua_isstring",
+      "size": 48,
+      "binding": 1,
+      "address": "0x80038c04"
+    },
+    {
+      "name": "lua_tonumber",
+      "size": 92,
+      "binding": 1,
+      "address": "0x80038c34"
+    },
+    {
+      "name": "lua_tostring",
+      "size": 100,
+      "binding": 1,
+      "address": "0x80038c90"
+    },
+    {
+      "name": "lua_pushnil",
+      "size": 88,
+      "binding": 1,
+      "address": "0x80038cf4"
+    },
+    {
+      "name": "lua_pushnumber",
+      "size": 96,
+      "binding": 1,
+      "address": "0x80038d4c"
+    },
+    {
+      "name": "lua_pushlstring",
+      "size": 104,
+      "binding": 1,
+      "address": "0x80038dac"
+    },
+    {
+      "name": "lua_pushstring",
+      "size": 80,
+      "binding": 1,
+      "address": "0x80038e14"
+    },
+    {
+      "name": "lua_pushcclosure",
+      "size": 32,
+      "binding": 1,
+      "address": "0x80038e64"
+    },
+    {
+      "name": "lua_newtable",
+      "size": 108,
+      "binding": 1,
+      "address": "0x80038e84"
+    },
+    {
+      "name": "lua_setglobal",
+      "size": 68,
+      "binding": 1,
+      "address": "0x80038ef0"
+    },
+    {
+      "name": "lua_ref",
+      "size": 272,
+      "binding": 1,
+      "address": "0x80038f34"
+    },
+    {
+      "name": "lua_setgcthreshold",
+      "size": 60,
+      "binding": 1,
+      "address": "0x80039044"
+    }
+  ],
+  "externals": {
+    "luaD_checkstack": "0x8003b340",
+    "luaD_adjusttop": "0x8003b3b0",
+    "luaO_typenames": "0x80296578",
+    "luaV_tonumber": "0x80043694",
+    "luaT_tag": "0x80042938",
+    "luaO_equalObj": "0x8003ed4c",
+    "luaV_lessthan": "0x8004404c",
+    "luaV_tostring": "0x800436f8",
+    "luaS_newlstr": "0x80041c04",
+    "strlen": "0x80266b70",
+    "luaV_Cclosure": "0x80043900",
+    "luaO_verror": "0x8003eecc",
+    "luaS_new": "0x80041d08",
+    "luaV_getglobal": "0x80043c60",
+    "luaV_gettable": "0x80043978",
+    "luaH_get": "0x80041f50",
+    "luaH_getnum": "0x80041e98",
+    "luaH_new": "0x8004223c",
+    "luaV_setglobal": "0x80043d34",
+    "luaV_settable": "0x80043ad8",
+    "luaH_set": "0x80042470",
+    "luaH_setint": "0x80042618",
+    "luaM_growaux": "0x8003ec08",
+    "luaD_call": "0x8003b6d4",
+    "luaC_checkGC": "0x8003ca90",
+    "luaH_next": "0x80041fb0",
+    "luaH_getstr": "0x80041efc",
+    "luaV_strconc": "0x80044170"
+  },
+  "undefined_in_discarded_code": [
+    "luaS_createudata",
+    "luaT_realtag",
+    "luaS_newudata"
+  ],
+  "original_file": "lapi.c",
+  "discarded_functions": [
+    "luaA_index",
+    "luaA_pushobject",
+    "lua_stackspace",
+    "lua_settop",
+    "lua_remove",
+    "lua_insert",
+    "lua_pushvalue",
+    "lua_iscfunction",
+    "lua_tag",
+    "lua_equal",
+    "lua_lessthan",
+    "lua_strlen",
+    "lua_tocfunction",
+    "lua_touserdata",
+    "lua_topointer",
+    "lua_pushusertag",
+    "lua_getglobal",
+    "lua_gettable",
+    "lua_rawget",
+    "lua_rawgeti",
+    "lua_getglobals",
+    "lua_getref",
+    "lua_settable",
+    "lua_rawset",
+    "lua_rawseti",
+    "lua_setglobals",
+    "lua_rawcall",
+    "lua_getgcthreshold",
+    "lua_getgccount",
+    "lua_settag",
+    "lua_unref",
+    "lua_next",
+    "lua_getn",
+    "lua_concat",
+    "lua_newuserdata"
+  ],
+  "discarded_local_functions": [],
+  "sda_externals": [],
+  "upstream": {
+    "archive": "https://www.lua.org/ftp/lua-4.0.1.tar.gz",
+    "sha256": "df746e149cf6939e90009d2e540eee918d585b4d1bc6d68b19316a050d484d2a",
+    "path": "src/lapi.c",
+    "modified": true
+  }
+}

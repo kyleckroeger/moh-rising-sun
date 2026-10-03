@@ -1,6 +1,6 @@
 # Dolphin SDK matching evidence
 
-The accepted SDK contribution is **166,200 code bytes in 686 functions across 89 source units/fragments**. Together with MathFun, Lua, Newlib and GCC runtime helpers, the complete build verifies **249,228 / 2,492,032 executable bytes (10.000995%)**, across 1,033 functions. SDK code is reported as `restored_library`, separately from reconstructed game code. The coverage includes runtime libraries, not just gameplay logic.
+The accepted SDK contribution is **166,200 code bytes in 686 functions across 89 source units/fragments**. Together with MathFun, Lua, Newlib and GCC runtime helpers, the complete build verifies **274,524 / 2,492,032 executable bytes (11.016070%)**, across 1,112 functions. SDK code is reported as `restored_library`, separately from reconstructed game code. The coverage includes runtime libraries, not just gameplay logic.
 
 ## Source and attribution
 
@@ -78,8 +78,8 @@ The verifier rejects unexpected compiler functions, unaccounted allocated sectio
 
 BSS needs more than a zero-byte comparison: every named object in each claimed BSS range must match the original file scope, address, size and binding. Partial objects and foreign storage are rejected. This caught unresolved ownership of `AXOut`'s profiling buffer: the reference declaration overlaps the following original storage. The accepted AXOut fragment excludes `__AXOutNewFrame` and that declaration, leaving the 440-byte function as original context. Its seven retained functions and four nonoverlapping buffers match.
 
-The final image includes each verified compiler-produced interval exactly once and removes its corresponding original interval. Source BSS reservations are included with linker address/size assertions. The complete 2,860,576-byte derived DOL equals the pinned reference SHA-1 `6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d`. Every original allocated file byte, entry point and BSS extent is also checked independently. Across the entire project, 26,606 generated data bytes and 114,444 BSS bytes are verified but earn no code credit.
+The final image includes each verified compiler-produced interval exactly once and removes its corresponding original interval. Source BSS reservations are included with linker address/size assertions. The complete 2,860,576-byte derived DOL equals the pinned reference SHA-1 `6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d`. Every original allocated file byte, entry point and BSS extent is also checked independently. Across the entire project, 27,818 generated data bytes and 114,864 BSS bytes are verified but earn no code credit.
 
-Run `python3 tools/reconstruct.py` and `python3 -m unittest discover -s tests -v`. The 21 tests include corrupted code/data, missing BSS endpoints, wrong progress denominators, duplicate coverage, incorrect BSS object sizes, changed SDA anchors a discarded local helper changed to global binding, and incorrect private-dependency scope, binding or address. Build reports fingerprint source, headers, manifests and tool binaries.
+Run `python3 tools/reconstruct.py` and `python3 -m unittest discover -s tests -v`. The verification tests include corrupted code/data, missing BSS endpoints, wrong progress denominators, duplicate coverage, incorrect BSS object sizes, changed SDA anchors a discarded local helper changed to global binding, and incorrect private-dependency scope, binding or address. Build reports fingerprint source, headers, manifests and tool binaries.
 
 Runtime has not been tested. The verified image is an ELF-derived analysis DOL, not a replacement disc. Public progress uses the source-pinned verification snapshot described in [Progress.md](Progress.md).

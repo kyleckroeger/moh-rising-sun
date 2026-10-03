@@ -4,9 +4,9 @@ An early matching decompilation of **Medal of Honor: Rising Sun** for GameCube, 
 
 [![Verified progress snapshot](https://github.com/lifewillbeokay/moh-rising-sun/actions/workflows/progress.yml/badge.svg)](https://github.com/lifewillbeokay/moh-rising-sun/actions/workflows/progress.yml)
 
-**Matching source coverage is 10.000995%: 249,228 of 2,492,032 executable code bytes, across 1,033 functions.** This comprises 336 bytes of reconstructed game-specific C++, 39,664 bytes restored from Lua 4.0.1, 166,200 bytes restored from public Dolphin SDK reconstructions, 37,496 bytes restored from Newlib, and 5,532 bytes restored from GCC runtime helpers. The complete rebuilt analysis image is verified; the remainder stays original binary context. AI-assisted contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
+**Matching source coverage is 11.016070%: 274,524 of 2,492,032 executable code bytes, across 1,112 functions.** This comprises 336 bytes of reconstructed game-specific C++, 48,564 bytes restored from Lua 4.0.1, 166,200 bytes restored from public Dolphin SDK reconstructions, 53,892 bytes restored from Newlib, and 5,532 bytes restored from GCC runtime helpers. The complete rebuilt analysis image is verified; the remainder stays original binary context. AI-assisted contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Progress uses all bytes in the original allocated executable sections (`.init` and `.text`) as its denominator. It counts verified, nonoverlapping source-built function bytes only. The 26,606 restored data bytes and 114,444 source-owned BSS bytes, stripped library functions, original context and debug metadata earn no code-progress credit. See [Lua evidence and attribution](docs/Lua.md) and [MathFun evidence](docs/MathFun.md), and [Dolphin SDK evidence and attribution](docs/Dolphin.md), [Newlib evidence and attribution](docs/Newlib.md), and [GCC runtime evidence](docs/Libgcc.md).
+Progress uses all bytes in the original allocated executable sections (`.init` and `.text`) as its denominator. It counts verified, nonoverlapping source-built function bytes only. The 27,818 restored data bytes and 114,864 source-owned BSS bytes, stripped library functions, original context and debug metadata earn no code-progress credit. See [Lua evidence and attribution](docs/Lua.md) and [MathFun evidence](docs/MathFun.md), and [Dolphin SDK evidence and attribution](docs/Dolphin.md), [Newlib evidence and attribution](docs/Newlib.md), and [GCC runtime evidence](docs/Libgcc.md).
 
 ## Verified starting point
 
@@ -14,7 +14,7 @@ Progress uses all bytes in the original allocated executable sections (`.init` a
 - 15,507 symbol entries, including 9,883 function entries and 954 source-file entries. Entries are not necessarily unique functions or complete original source units.
 - Preserved DWARF 1 information covers seven Nintendo GBA-library compilation units. It is not full game-wide type information.
 - The original-object relink matches the complete 2,860,576-byte DOL derived from the ELF, including its header. Every original allocated ELF file byte, entry point, and BSS extent is checked separately.
-- The source build passes that same complete-image comparison with six MathFun functions, 15 Lua units, 89 Dolphin SDK units, 96 Newlib units and eight GCC runtime variants compiled from source. Code and generated data are both checked; coverage is reported by category.
+- The source build passes that same complete-image comparison with six MathFun functions, 18 Lua units, 89 Dolphin SDK units, 99 Newlib units/fragments and eight GCC runtime variants compiled from source. Code and generated data are both checked; coverage is reported by category.
 
 This comparison is against a derived analysis image. It does **not** mean the original ELF's debug/symbol tables have been reproduced, the on-disc boot DOL has been replaced, or the game has been tested in an emulator. The boot DOL is a separate 206,016-byte program containing references to the game ELFs.
 
@@ -38,10 +38,11 @@ assets, compiler binaries or complete debug dumps to commits, issues or PRs.
 ## Progress integration
 
 Explore the [live decomp.dev map](https://decomp.dev/lifewillbeokay/moh-rising-sun)
-to find unfinished functions. The remaining code is divided into 725 grey boxes:
+to find unfinished functions. The remaining code is divided into 715 grey boxes:
 named file groups where supported by symbols, unknown-file groups, shared entry
 points and unidentified bytes. Inferred ownership is labeled and earns no matching
-credit. See [code-map evidence and starting points](docs/CodeMap.md).
+credit. See [code-map evidence and starting points](docs/CodeMap.md) and the
+[reuse index and ranked next work](docs/ReuseMap.md).
 
 The [progress workflow](.github/workflows/progress.yml) publishes an objdiff v2
 `GR8E69_report` artifact compatible with decomp.dev. CI validates source hashes
@@ -79,9 +80,9 @@ Run the scripts from any directory; all outputs remain inside this checkout. `ba
 | `build/baseline/report.json` | Verified baseline result, with zero source credit |
 | `build/baseline/relinked.dol` | Rebuilt analysis image |
 | `src/MathFun.cpp` | Six reconstructed functions from the original MathFun unit |
-| `src/lua/` | 15 restored Lua 4.0.1 source units, headers and copyright notice |
+| `src/lua/` | 18 restored Lua 4.0.1 source units, headers and copyright notice |
 | `src/dolphin/`, `include/dolphin-sdk/` | 89 accepted SDK source units, reference headers and attribution |
-| `src/newlib/`, `include/newlib/` | 96 accepted Newlib units, supporting headers and attribution |
+| `src/newlib/`, `include/newlib/` | 99 accepted Newlib units, supporting headers and attribution |
 | `src/libgcc/` | Eight verified GCC 2.95.2 runtime variants, shared source, target configuration and notices |
 | `config/GR8E69/MathFun.json` | Function ranges, external references and compiler profile |
 | `config/GR8E69/project.json` | Accepted unit list, source provenance and fixed progress denominator |

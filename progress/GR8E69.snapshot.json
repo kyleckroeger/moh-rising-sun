@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 249228,
+    "matching_code_bytes": 274524,
     "total_executable_code_bytes": 2492032,
-    "percent": 10.000995171811597,
+    "percent": 11.016070419641482,
     "categories": {
       "reconstructed_game": 336,
-      "restored_library": 248892
+      "restored_library": 274188
     },
-    "matching_functions": 1033
+    "matching_functions": 1112
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -106,7 +106,9 @@
     "config/GR8E69/dvdlow.json": "e7c3f8c921d458b9f0a4c9c1b60d76522a25bbcc6eff2994cf01b304525c2630",
     "config/GR8E69/dvdqueue.json": "50714e893a617523e6e28eff930b1d91d1a5eaa8a00c9cce217acf50c4337821",
     "config/GR8E69/fstload.json": "d49e84fe0d1e9af1dd569811065db3c015f596b540ac5988c5078fa2f9c5dd5e",
+    "config/GR8E69/lapi.json": "d4d026e1a8397f43593a65d06dadf3a619f11d021cbfd8a7759fec9804f0da35",
     "config/GR8E69/lauxlib.json": "954c02e3cf91c26a7e1cd13537a99e479d8113b8b3cecb4e214332cc4e315d1b",
+    "config/GR8E69/lcode.json": "162f9b95c02e2deadb9bd20fb8f981fadb822e69f034df9ef9e3470a7bd133f8",
     "config/GR8E69/ldebug.json": "9420eb2090ea2419519042fc7adf487c24936358c90eefc650246963b92dc186",
     "config/GR8E69/ldo.json": "d4b21d34601adf0fd4ca342bfc4ee9afe5b1ece56671d8a979b31aad0e4fe4d0",
     "config/GR8E69/lfunc.json": "e68ccf18bd5ced2bbb611c4baee777b6a9f72bf51067afaafdc9e71280dacf1c",
@@ -127,6 +129,7 @@
     "config/GR8E69/lparser.json": "93ae5c377b25a2aab5cdf8bb334ae1e32566aebd1c42ba610011677ed1fc3f22",
     "config/GR8E69/lstate.json": "2dca6c0d1b7a242a49b878f236087d5f34d38038be296ef821b42c07a08d6b86",
     "config/GR8E69/lstring.json": "c6a931fda5622630192db62b22c3f2825c39dde05a150286e4697277332dd41a",
+    "config/GR8E69/ltable.json": "7930ea4bb893edeb524fe2f2a36273c78a6fa13147aa292140e4a4639fe89a41",
     "config/GR8E69/ltm.json": "001dc4c2add11b1bfe6f5d952acb119d4a912d61d7f630c9ac48379f711f39ad",
     "config/GR8E69/lvm.json": "2a9cc1435ec6bac77253f0b89a8fc9980fdef901fc701b3cda691817cc4e93e8",
     "config/GR8E69/lzio.json": "fd6b343d8b40cee7692844cb7688dcbe058747c304066035668babf64217001b",
@@ -201,6 +204,7 @@
     "config/GR8E69/newlib_sf_fabs.json": "8edb75e9478ac77cbd44a7d84c47b463868adcfb80a8d115a0f0776e2b106481",
     "config/GR8E69/newlib_sf_floor.json": "cc45c3d4a03e939b4fd60dbaffea1b11207196db939593e9accf7662356c6a15",
     "config/GR8E69/newlib_sf_scalbn.json": "7baa4e325e324ed95e4c9b6b23a90c44abeea3a7440a495124bf296508fba454",
+    "config/GR8E69/newlib_sn_math.json": "2e761738f8f23b14a032ea9447a868372db65d6d7331e6870804f91a23a599d3",
     "config/GR8E69/newlib_sprintf.json": "9b40f494bb2e62e477ad461b06a119eff304952de8af0c4b7ef751b20d35497f",
     "config/GR8E69/newlib_sscanf.json": "06c676ae28c498d7982717b859d2ac0685202abac4bf45c66835a726878bc5e9",
     "config/GR8E69/newlib_stdio.json": "d96c3bd7e7ed38eaa66fbb9907466d35343a8cfe4c00086e284ef1d28bd120b3",
@@ -220,6 +224,8 @@
     "config/GR8E69/newlib_strtoul.json": "7d0b9139a721f29f40cd60bde620c24a48a5bdf92b47c7cad7a36bc7486fdf93",
     "config/GR8E69/newlib_tolower.json": "66d28f4170d2d2f4cf4f491eb14d97935865122082ddd5ef265c06708cd20977",
     "config/GR8E69/newlib_ungetc.json": "7f693965a321260da6dd693934f4289d9df17b40d32cb8f287291ac37c034376",
+    "config/GR8E69/newlib_vfiprintf.json": "f39a7b4eb8cad732996bf61627e9948bfd92e16dfe36ce1fd94760d04e898837",
+    "config/GR8E69/newlib_vfprintf.json": "a770e0a9a768c6557881ecbcce0b4b9d01a59b21c51ecc134f85fc4ad81e4502",
     "config/GR8E69/newlib_vfscanf.json": "0a1339d137719dff60de756e4fde16f0e48d6294fbf61a859744a34a6231617c",
     "config/GR8E69/newlib_vprintf.json": "b3ee72b353ab030b9f551ab55c52718a08e4fd10d9bd8f3b42c4459c5d93dc51",
     "config/GR8E69/newlib_vsprintf.json": "ea05872b619cd4bb6716ecab518ce4b526b966269d744b55d1a24ceee5a52de5",
@@ -228,7 +234,8 @@
     "config/GR8E69/newlib_wctomb_r.json": "fc59b588e63f3a1f302300e1257e93abec1acb4041e2ef289f02d12774f5ae70",
     "config/GR8E69/newlib_writer.json": "cf7eab1eebe3bf4b04912e61b9ce9a2c7c4191ebecc610aa267f69bdabe6512f",
     "config/GR8E69/newlib_wsetup.json": "61dd8c7f513073a2f4c355ee89bdcf2d300345cd74c632de1997cba9f3e84020",
-    "config/GR8E69/project.json": "0022faa5098cfd0e29a5ad32e508ec0df0eb2de4540ece6e2aea8f9b04b4ac84",
+    "config/GR8E69/project.json": "26ebce8a39363fd86df3eaeb70ea7b5f70a2353a0fe3986cd0e4b6abf5a58e72",
+    "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/target.json": "48fb9548419f5549d49ebba1794d3193398e58c37c0d15569e6ed1810d8adb8f",
     "config/GR8E69/vi.json": "dd95046e01890cb33bdb0006c936ff713366f21401f267c9cf268a70ac8b8833",
     "include/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -539,9 +546,11 @@
     "src/libgcc/machmode.h": "23e978f62f9b1376677035581c3a1ae3aea5cdca88aff96934b4aa45a6e2e14b",
     "src/libgcc/tconfig.h": "cb653912c0d78e81398d7ea015acd2622696a9b5022e710bcc0a4142e2088da3",
     "src/lua/COPYRIGHT": "c1cfb9b1dfefcd570ae07258045f0929ea4500bc9c215d69bcfabf9a665564da",
+    "src/lua/lapi.c": "f850cb4d0eea5f41ecca46cf525522d2b3b8eb127d2aad9fdd8aa41110e93f3b",
     "src/lua/lapi.h": "bec7a4282df1dd51c772b6edfbb0e29e5e01632398ae31d0878789143dff28c3",
     "src/lua/lauxlib.c": "ecfcf916a21a7f7ea4f576afbe008f36ee6c230bcfc3b4dc17d906ef57d501b2",
     "src/lua/lauxlib.h": "67bb2e7a372e428571975e8ff6d087f022da76e531e3bccdb4336c3934a8c60c",
+    "src/lua/lcode.c": "ed373c5d0f8d03bc3d0b4b2dd9155bf001e16adaae3055536e304bcdd533fa63",
     "src/lua/lcode.h": "71169a0566560a2ec51917ed899ebca3393f2488eabe5293b6e1afd78802bc5e",
     "src/lua/ldebug.c": "98094b921dbae78c1ecd72943570fe96ae31a633e13f4005e5d81647a1427f82",
     "src/lua/ldebug.h": "531d63d4f3729e80e123707c2a97ba08ca735ba3569751846f67d1619d3fe301",
@@ -566,6 +575,7 @@
     "src/lua/lstate.h": "5282ee333b426c7442af3a73108526e5924fcea111407a2bb2ec58c41f7dd47e",
     "src/lua/lstring.c": "f6d3c03f0083b0e642d93e6a82e11c0607bf414f85d9d3c33843ce5e11067fbb",
     "src/lua/lstring.h": "4feb6e39dc41d847173929885e1a895d380253b468ab2b093b05768555b1c1c8",
+    "src/lua/ltable.c": "2f79b5a94f4caee527a3938936d3ff6eb2363cc97eeb45345827b8be6f6ed08d",
     "src/lua/ltable.h": "5f7143074f521d808b1a7b7ea8113ea92fbe9a6685e25eb2226a54c9d97cc978",
     "src/lua/ltm.c": "697845eb37e6ba0c9e85f496562116696d4b73707889f869847fc80438509aba",
     "src/lua/ltm.h": "ef399ca5af756aec4cc701b52cac5afb1f0d265917c54a9817b2ee20df89f9d1",
@@ -579,6 +589,7 @@
     "src/lua/lzio.h": "be259449bd1fb99b1cb9b5dbfcc5a0f6afbf27e22836e76429f4aa8cd4c29e07",
     "src/newlib/COPYING.NEWLIB": "926114809b158088f2672ad7d05c60e72b3217edadbfd55ad3c1ba319b84f852",
     "src/newlib/NOTICE": "03cf2a4fe95fd7219fc9bf1e9967b9f29dceb614612006c4f7797c6b6889504c",
+    "src/newlib/NOTICE.SN": "a3da43a64bc3abf524de4040183830a89bed291689a0a77dbe0cfaae247a45f8",
     "src/newlib/ctype/_tolower.c": "9277866316489dc8db5959951d58557fa0685e32033b6587c417a9601720bd70",
     "src/newlib/ctype/isdigit.c": "ad9a5e9c29e8ef25041b01cd430a27335a2a7570a8ba0ee2106768e1b2fc2c43",
     "src/newlib/ctype/isspace.c": "1a40ce65f9f373d3ed42fd9f16346028f4cdd95528bfba1718e6c95f43b3abd4",
@@ -630,6 +641,12 @@
     "src/newlib/reent/lseekr.c": "29584e6e5455c1d40264ab5f041c6d7e4f384b50b52b6a18d824f46d544982ce",
     "src/newlib/reent/readr.c": "ea40a19f1f8d41717e9fb4f60ecfac8352a58acadfb7384023306f64b64242c4",
     "src/newlib/reent/writer.c": "c2c1a9cc95229e8b95f5e4c3781e4bcb99de5bef482c6f589ad0fc74af350ff2",
+    "src/newlib/sn_math/e_fmod.c": "ba2a867ca7bdcd587d33f425ae9d5038ddae1f33f6765c8481fb4238295be88b",
+    "src/newlib/sn_math/e_log.c": "82f42bbf245aed1ff2f526fad1afe345f1990da2e11af99865f3b3333b08f316",
+    "src/newlib/sn_math/e_log10.c": "572542cb982d0af68c63f8e0d2be9c54a7edd976c6257c7ce142d020e398706d",
+    "src/newlib/sn_math/fdlibm.h": "e033ed25245192043e394909a9e02f73d899f8a20cbe006e7870e121ec920e79",
+    "src/newlib/sn_math/math_support.c": "2df91991ecb17253db73a72246a26cac09a0fb5b2a75b1ca4e3dd232603f3b3a",
+    "src/newlib/sn_math/s_floor.c": "2dbd1f84005bbe0f78e4c2f98cea704d03f164bedb201000b7ff7fa67063a2c4",
     "src/newlib/stdio/fflush.c": "734ccf4f8b90b2e690cc9bddd165260b450f3efa3048b4ca73f71a1818084513",
     "src/newlib/stdio/floatio.h": "ceb13c8d94569d2ea6eeaecdd2953be30c003222733808e685118aaf12269045",
     "src/newlib/stdio/fprintf.c": "663413fd2d578b1541733a2351969ff753b2019c7feedbc1119d5d43b0b1a521",
@@ -647,6 +664,7 @@
     "src/newlib/stdio/stdio.c": "c87a527685383b1d288836be1c27762ba5e9816fc6f35a25c7f025f94f96731f",
     "src/newlib/stdio/ungetc.c": "5b77274842e7871a942b1145a533f37af3fc5978aab186ae47461d35c20732ab",
     "src/newlib/stdio/vfieeefp.h": "e8033dc602ee153fdf4a54dcde59d67a05ad91741582a3cebcc670a81ba87aa0",
+    "src/newlib/stdio/vfprintf.c": "ed52c9648a03f42b622b5a50c9e510cc14d8286a6b6322a0d357d7fd2de17510",
     "src/newlib/stdio/vfscanf.c": "824bad6c45dd382a66a3e5f0cdc0d770dd68d4e39cbe89359abc0bac7afcce57",
     "src/newlib/stdio/vprintf.c": "a1d8647a72e63c0b2a8236442de2f1ccd8c61e488721e25a15233b0876acff26",
     "src/newlib/stdio/vsprintf.c": "c7ae42063a87297e70bf36503b695754ee27e61e4bcd2e68b1a8847aa120f9a6",
@@ -693,7 +711,7 @@
     "tools/formats.py": "3124d742d0518c913dfc575602bba63befbd9e0e78220e5a85059cda277f8f81",
     "tools/import_disc.py": "c4adacc1b86bf05f5fed84a3101c04a6815c5cba449883a9b555114b140b541c",
     "tools/progress_report.py": "ad145493ae9def5a34cc29839db219d885e2c3922e3434a71909ea208ac554c4",
-    "tools/project_build.py": "a76fb145441d12fa620c493c91bad556e80c79afa49528fcfe3a6b6cada75e9e",
+    "tools/project_build.py": "9a07cc85cdbea99c76e545642e833b45042dbbb208878263daab99c6da44c20d",
     "tools/reconstruct.py": "ae713fceeb3eef9f113af483ad5e3d5d6f1123fc424d0595099247e3e07a4cf2",
     "tools/sdk_build.py": "8d2dce457fa5de303d9e46e0c4821094065e9814ef3a1e3723d0c0bb618dbce1",
     "tools/setup.py": "2c60adbeb6ef1717971d1aab37afbb9885a2c0842b0b3eea5a4e81eeaabf36fa",
@@ -7442,6 +7460,147 @@
       "discarded_functions": [],
       "object_sha256": "cabd2636052fcb9e55ffaf4bc7f7c86747191351e4a95f4959399102701987e4",
       "linked_sha256": "b13596df2f7d7e1957dc345853a311dd92a6af62d452b131dade8e69f962c1e8"
+    },
+    {
+      "id": "lapi",
+      "category": "restored_library",
+      "functions": 17,
+      "code_bytes": 1420,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-ffast-math"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "luaA_index",
+        "luaA_pushobject",
+        "lua_stackspace",
+        "lua_settop",
+        "lua_remove",
+        "lua_insert",
+        "lua_pushvalue",
+        "lua_iscfunction",
+        "lua_tag",
+        "lua_equal",
+        "lua_lessthan",
+        "lua_strlen",
+        "lua_tocfunction",
+        "lua_touserdata",
+        "lua_topointer",
+        "lua_pushusertag",
+        "lua_getglobal",
+        "lua_gettable",
+        "lua_rawget",
+        "lua_rawgeti",
+        "lua_getglobals",
+        "lua_getref",
+        "lua_settable",
+        "lua_rawset",
+        "lua_rawseti",
+        "lua_setglobals",
+        "lua_rawcall",
+        "lua_getgcthreshold",
+        "lua_getgccount",
+        "lua_settag",
+        "lua_unref",
+        "lua_next",
+        "lua_getn",
+        "lua_concat",
+        "lua_newuserdata"
+      ],
+      "object_sha256": "c8a7ab1ccdc8b3e1e5633b993d14abe6b3ec58fc5d4e22244dcd66e3c4359353",
+      "linked_sha256": "54c2e692c174af3aa23b7617479fa60782b2d6025fbc8fc8759152603571f59b"
+    },
+    {
+      "id": "lcode",
+      "category": "restored_library",
+      "functions": 33,
+      "code_bytes": 5068,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-ffast-math"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [],
+      "object_sha256": "920b3ff4d16bed8dc667f49761c8bd2d91029058997ca5de37220b12be3d798e",
+      "linked_sha256": "b9950fe9f969b49e2b89dda1a679a96ae0ef448d7044117d7f3d38d131472a2d"
+    },
+    {
+      "id": "ltable",
+      "category": "restored_library",
+      "functions": 16,
+      "code_bytes": 2412,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-ffast-math"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [],
+      "object_sha256": "8d6c43edbc43c32842895e7ff7be8989d4819cdb58e014be2db77a1e6f56fc91",
+      "linked_sha256": "5231ed2bfadc085e7b6e4f52b215642ae05ca99418c64adecaa1ed9ba074cc0e"
+    },
+    {
+      "id": "newlib_vfprintf",
+      "category": "restored_library",
+      "functions": 7,
+      "code_bytes": 8104,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G8",
+        "-fsigned-char",
+        "-DMB_CAPABLE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [],
+      "object_sha256": "cad2c3a31496871cc733a00fa673b6fd06a8b632252b5148026e2d877ed05d85",
+      "linked_sha256": "445413507b18dbe34a7cc77229e2298acb591a6d0eebe7c6c1df8e21c82645df"
+    },
+    {
+      "id": "newlib_vfiprintf",
+      "category": "restored_library",
+      "functions": 2,
+      "code_bytes": 5968,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G8",
+        "-fsigned-char",
+        "-DMB_CAPABLE",
+        "-DINTEGER_ONLY"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [],
+      "object_sha256": "e9651d1c5c0d3e7a2eae058446e277f2fe992f56917615ffc52470943ad7baa2",
+      "linked_sha256": "dfcb979ed3bd8b6ffcd51307f372a0f1e89915c956824519b02a1ebf39fb6db1"
+    },
+    {
+      "id": "newlib_sn_math",
+      "category": "restored_library",
+      "functions": 4,
+      "code_bytes": 2324,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G8",
+        "-fsigned-char"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [],
+      "object_sha256": "82585f26a40720beda22d0b06af9ecf6d565387889741686b261b48b30475eea",
+      "linked_sha256": "1e98f788bf9af4bf24d62fa123199d11775960a36bc61b3a718fe6aa7d23df90"
     }
   ],
   "code_map": {
@@ -7752,518 +7911,6 @@
             "size": 444,
             "kind": "function",
             "name": "PATH_fade",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unmatched files/lapi.c [local symbols only]",
-        "file_record": 1,
-        "file_name": "lapi.c",
-        "ranges": [
-          {
-            "address": "0x80038af4",
-            "size": 64,
-            "kind": "function",
-            "name": "luaA_indexAcceptable",
-            "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 80038b34",
-        "ranges": [
-          {
-            "address": "0x80038b34",
-            "size": 20,
-            "kind": "function",
-            "name": "lua_gettop",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038b48",
-            "size": 52,
-            "kind": "function",
-            "name": "lua_type",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038b7c",
-            "size": 40,
-            "kind": "function",
-            "name": "lua_typename",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038ba4",
-            "size": 96,
-            "kind": "function",
-            "name": "lua_isnumber",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038c04",
-            "size": 48,
-            "kind": "function",
-            "name": "lua_isstring",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038c34",
-            "size": 92,
-            "kind": "function",
-            "name": "lua_tonumber",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038c90",
-            "size": 100,
-            "kind": "function",
-            "name": "lua_tostring",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038cf4",
-            "size": 88,
-            "kind": "function",
-            "name": "lua_pushnil",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038d4c",
-            "size": 96,
-            "kind": "function",
-            "name": "lua_pushnumber",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038dac",
-            "size": 104,
-            "kind": "function",
-            "name": "lua_pushlstring",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038e14",
-            "size": 80,
-            "kind": "function",
-            "name": "lua_pushstring",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038e64",
-            "size": 32,
-            "kind": "function",
-            "name": "lua_pushcclosure",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038e84",
-            "size": 108,
-            "kind": "function",
-            "name": "lua_newtable",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038ef0",
-            "size": 68,
-            "kind": "function",
-            "name": "lua_setglobal",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80038f34",
-            "size": 272,
-            "kind": "function",
-            "name": "lua_ref",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80039044",
-            "size": 60,
-            "kind": "function",
-            "name": "lua_setgcthreshold",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unmatched files/lcode.c [inferred file group]",
-        "file_record": 3,
-        "file_name": "lcode.c",
-        "ranges": [
-          {
-            "address": "0x8003930c",
-            "size": 36,
-            "kind": "function",
-            "name": "luaK_error",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80039330",
-            "size": 48,
-            "kind": "function",
-            "name": "previous_instruction",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80039360",
-            "size": 96,
-            "kind": "function",
-            "name": "luaK_jump",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800393c0",
-            "size": 156,
-            "kind": "function",
-            "name": "luaK_fixjump",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8003945c",
-            "size": 56,
-            "kind": "function",
-            "name": "luaK_getjump",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80039494",
-            "size": 80,
-            "kind": "function",
-            "name": "luaK_getlabel",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800394e4",
-            "size": 108,
-            "kind": "function",
-            "name": "luaK_deltastack",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80039550",
-            "size": 44,
-            "kind": "function",
-            "name": "luaK_kstr",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8003957c",
-            "size": 200,
-            "kind": "function",
-            "name": "number_constant",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80039644",
-            "size": 148,
-            "kind": "function",
-            "name": "luaK_number",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800396d8",
-            "size": 64,
-            "kind": "function",
-            "name": "luaK_adjuststack",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80039718",
-            "size": 64,
-            "kind": "function",
-            "name": "luaK_lastisopen",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80039758",
-            "size": 108,
-            "kind": "function",
-            "name": "luaK_setcallreturns",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800397c4",
-            "size": 156,
-            "kind": "function",
-            "name": "discharge",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80039860",
-            "size": 84,
-            "kind": "function",
-            "name": "discharge1",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x800398b4",
-            "size": 112,
-            "kind": "function",
-            "name": "luaK_storevar",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80039924",
-            "size": 192,
-            "kind": "function",
-            "name": "invertjump",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x800399e4",
-            "size": 204,
-            "kind": "function",
-            "name": "luaK_patchlistaux",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80039ab0",
-            "size": 68,
-            "kind": "function",
-            "name": "luaK_patchlist",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80039af4",
-            "size": 108,
-            "kind": "function",
-            "name": "need_value",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80039b60",
-            "size": 120,
-            "kind": "function",
-            "name": "luaK_concat",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80039bd8",
-            "size": 224,
-            "kind": "function",
-            "name": "luaK_testgo",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80039cb8",
-            "size": 52,
-            "kind": "function",
-            "name": "luaK_goiftrue",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80039cec",
-            "size": 52,
-            "kind": "function",
-            "name": "luaK_goiffalse",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80039d20",
-            "size": 68,
-            "kind": "function",
-            "name": "code_label",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80039d64",
-            "size": 416,
-            "kind": "function",
-            "name": "luaK_tostack",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80039f04",
-            "size": 184,
-            "kind": "function",
-            "name": "luaK_prefix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80039fbc",
-            "size": 100,
-            "kind": "function",
-            "name": "luaK_infix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8003a020",
-            "size": 196,
-            "kind": "function",
-            "name": "luaK_posfix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8003a0e4",
-            "size": 192,
-            "kind": "function",
-            "name": "codelineinfo",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8003a1a4",
-            "size": 40,
-            "kind": "function",
-            "name": "luaK_code0",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8003a1cc",
-            "size": 36,
-            "kind": "function",
-            "name": "luaK_code1",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8003a1f0",
-            "size": 1256,
-            "kind": "function",
-            "name": "luaK_code2",
-            "evidence": "adjacent-compiler-markers"
-          }
-        ],
-        "marker_interval": [
-          "0x8003930c",
-          "0x8003a6d8"
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 80041d80",
-        "ranges": [
-          {
-            "address": "0x80041d80",
-            "size": 148,
-            "kind": "function",
-            "name": "luaH_mainposition",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unmatched files/ltable.c [local symbols only]",
-        "file_record": 15,
-        "file_name": "ltable.c",
-        "ranges": [
-          {
-            "address": "0x80041e14",
-            "size": 132,
-            "kind": "function",
-            "name": "luaH_getany",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8004216c",
-            "size": 208,
-            "kind": "function",
-            "name": "setnodevector",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8004231c",
-            "size": 60,
-            "kind": "function",
-            "name": "numuse",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80042358",
-            "size": 280,
-            "kind": "function",
-            "name": "rehash",
-            "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 80041e98",
-        "ranges": [
-          {
-            "address": "0x80041e98",
-            "size": 100,
-            "kind": "function",
-            "name": "luaH_getnum",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80041efc",
-            "size": 84,
-            "kind": "function",
-            "name": "luaH_getstr",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80041f50",
-            "size": 96,
-            "kind": "function",
-            "name": "luaH_get",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80041fb0",
-            "size": 216,
-            "kind": "function",
-            "name": "luaH_next",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80042088",
-            "size": 228,
-            "kind": "function",
-            "name": "luaH_remove",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8004223c",
-        "ranges": [
-          {
-            "address": "0x8004223c",
-            "size": 144,
-            "kind": "function",
-            "name": "luaH_new",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x800422cc",
-            "size": 80,
-            "kind": "function",
-            "name": "luaH_free",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 80042470",
-        "ranges": [
-          {
-            "address": "0x80042470",
-            "size": 424,
-            "kind": "function",
-            "name": "luaH_set",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80042618",
-            "size": 80,
-            "kind": "function",
-            "name": "luaH_setint",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80042668",
-            "size": 72,
-            "kind": "function",
-            "name": "luaH_setstrnum",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x800426b0",
-            "size": 60,
-            "kind": "function",
-            "name": "luaH_getglobal",
             "evidence": "unknown-file"
           }
         ]
@@ -70066,55 +69713,6 @@
         "file_name": "vfprintf.c",
         "ranges": [
           {
-            "address": "0x80267080",
-            "size": 92,
-            "kind": "function",
-            "name": "strround",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x802670dc",
-            "size": 76,
-            "kind": "function",
-            "name": "strrev",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80267128",
-            "size": 124,
-            "kind": "function",
-            "name": "itoa",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x802671a4",
-            "size": 1256,
-            "kind": "function",
-            "name": "fftoa",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8026768c",
-            "size": 212,
-            "kind": "function",
-            "name": "_vfwrite",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80267760",
-            "size": 216,
-            "kind": "function",
-            "name": "vfprintf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80267838",
-            "size": 6128,
-            "kind": "function",
-            "name": "_vfprintf_r",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80269028",
             "size": 392,
             "kind": "function",
@@ -70125,31 +69723,6 @@
         "marker_interval": [
           "0x80267080",
           "0x802691b0"
-        ]
-      },
-      {
-        "name": "Unmatched files/vfprintf.c [file record 867] [inferred file group]",
-        "file_record": 867,
-        "file_name": "vfprintf.c",
-        "ranges": [
-          {
-            "address": "0x802691b0",
-            "size": 212,
-            "kind": "function",
-            "name": "_vfwrite",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80269284",
-            "size": 5756,
-            "kind": "function",
-            "name": "_vfiprintf_r",
-            "evidence": "adjacent-compiler-markers"
-          }
-        ],
-        "marker_interval": [
-          "0x802691b0",
-          "0x8026a900"
         ]
       },
       {
@@ -70176,45 +69749,6 @@
             "name": "localeconv",
             "evidence": "unknown-file"
           }
-        ]
-      },
-      {
-        "name": "Unmatched files/math_support.c [inferred file group]",
-        "file_record": 872,
-        "file_name": "math_support.c",
-        "ranges": [
-          {
-            "address": "0x8026ab3c",
-            "size": 372,
-            "kind": "function",
-            "name": "sn_floor",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8026acb0",
-            "size": 860,
-            "kind": "function",
-            "name": "sn_fmod",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8026b00c",
-            "size": 764,
-            "kind": "function",
-            "name": "sn_log",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8026b308",
-            "size": 328,
-            "kind": "function",
-            "name": "sn_log10",
-            "evidence": "adjacent-compiler-markers"
-          }
-        ],
-        "marker_interval": [
-          "0x8026ab3c",
-          "0x8026b450"
         ]
       },
       {

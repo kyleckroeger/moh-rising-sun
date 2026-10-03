@@ -1,0 +1,255 @@
+{
+  "id": "lcode",
+  "source": "src/lua/lcode.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8003930c",
+      "size": 5068,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x80295e18",
+      "size": 304,
+      "type": 1
+    },
+    {
+      "name": ".rodata.prefix",
+      "target_name": ".rodata",
+      "address": "0x80295dbc",
+      "size": 88,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "luaK_error",
+      "size": 36,
+      "binding": 1,
+      "address": "0x8003930c"
+    },
+    {
+      "name": "previous_instruction",
+      "size": 48,
+      "binding": 0,
+      "address": "0x80039330"
+    },
+    {
+      "name": "luaK_jump",
+      "size": 96,
+      "binding": 1,
+      "address": "0x80039360"
+    },
+    {
+      "name": "luaK_code1",
+      "size": 36,
+      "binding": 1,
+      "address": "0x8003a1cc"
+    },
+    {
+      "name": "luaK_concat",
+      "size": 120,
+      "binding": 1,
+      "address": "0x80039b60"
+    },
+    {
+      "name": "luaK_fixjump",
+      "size": 156,
+      "binding": 0,
+      "address": "0x800393c0"
+    },
+    {
+      "name": "luaK_getjump",
+      "size": 56,
+      "binding": 0,
+      "address": "0x8003945c"
+    },
+    {
+      "name": "luaK_getlabel",
+      "size": 80,
+      "binding": 1,
+      "address": "0x80039494"
+    },
+    {
+      "name": "luaK_patchlist",
+      "size": 68,
+      "binding": 1,
+      "address": "0x80039ab0"
+    },
+    {
+      "name": "luaK_deltastack",
+      "size": 108,
+      "binding": 1,
+      "address": "0x800394e4"
+    },
+    {
+      "name": "luaK_kstr",
+      "size": 44,
+      "binding": 1,
+      "address": "0x80039550"
+    },
+    {
+      "name": "number_constant",
+      "size": 200,
+      "binding": 0,
+      "address": "0x8003957c"
+    },
+    {
+      "name": "luaK_number",
+      "size": 148,
+      "binding": 1,
+      "address": "0x80039644"
+    },
+    {
+      "name": "luaK_adjuststack",
+      "size": 64,
+      "binding": 1,
+      "address": "0x800396d8"
+    },
+    {
+      "name": "luaK_lastisopen",
+      "size": 64,
+      "binding": 1,
+      "address": "0x80039718"
+    },
+    {
+      "name": "luaK_setcallreturns",
+      "size": 108,
+      "binding": 1,
+      "address": "0x80039758"
+    },
+    {
+      "name": "discharge",
+      "size": 156,
+      "binding": 0,
+      "address": "0x800397c4"
+    },
+    {
+      "name": "luaK_code0",
+      "size": 40,
+      "binding": 1,
+      "address": "0x8003a1a4"
+    },
+    {
+      "name": "discharge1",
+      "size": 84,
+      "binding": 0,
+      "address": "0x80039860"
+    },
+    {
+      "name": "luaK_storevar",
+      "size": 112,
+      "binding": 1,
+      "address": "0x800398b4"
+    },
+    {
+      "name": "luaK_code2",
+      "size": 1256,
+      "binding": 1,
+      "address": "0x8003a1f0"
+    },
+    {
+      "name": "invertjump",
+      "size": 192,
+      "binding": 0,
+      "address": "0x80039924"
+    },
+    {
+      "name": "luaK_patchlistaux",
+      "size": 204,
+      "binding": 0,
+      "address": "0x800399e4"
+    },
+    {
+      "name": "need_value",
+      "size": 108,
+      "binding": 0,
+      "address": "0x80039af4"
+    },
+    {
+      "name": "luaK_testgo",
+      "size": 224,
+      "binding": 0,
+      "address": "0x80039bd8"
+    },
+    {
+      "name": "luaK_goiftrue",
+      "size": 52,
+      "binding": 1,
+      "address": "0x80039cb8"
+    },
+    {
+      "name": "luaK_goiffalse",
+      "size": 52,
+      "binding": 0,
+      "address": "0x80039cec"
+    },
+    {
+      "name": "code_label",
+      "size": 68,
+      "binding": 0,
+      "address": "0x80039d20"
+    },
+    {
+      "name": "luaK_tostack",
+      "size": 416,
+      "binding": 1,
+      "address": "0x80039d64"
+    },
+    {
+      "name": "luaK_prefix",
+      "size": 184,
+      "binding": 1,
+      "address": "0x80039f04"
+    },
+    {
+      "name": "luaK_infix",
+      "size": 100,
+      "binding": 1,
+      "address": "0x80039fbc"
+    },
+    {
+      "name": "luaK_posfix",
+      "size": 196,
+      "binding": 1,
+      "address": "0x8003a020"
+    },
+    {
+      "name": "codelineinfo",
+      "size": 192,
+      "binding": 0,
+      "address": "0x8003a0e4"
+    }
+  ],
+  "externals": {
+    "luaX_error": "0x8003cbe4",
+    "luaM_growaux": "0x8003ec08"
+  },
+  "undefined_in_discarded_code": [],
+  "original_file": "lcode.c",
+  "discarded_functions": [],
+  "discarded_local_functions": [],
+  "sda_externals": [],
+  "upstream": {
+    "archive": "https://www.lua.org/ftp/lua-4.0.1.tar.gz",
+    "sha256": "df746e149cf6939e90009d2e540eee918d585b4d1bc6d68b19316a050d484d2a",
+    "path": "src/lcode.c",
+    "modified": true
+  }
+}

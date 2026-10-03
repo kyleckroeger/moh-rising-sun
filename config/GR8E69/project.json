@@ -209,7 +209,13 @@
     "OS.json",
     "mtx44.json",
     "GXLight.json",
-    "OSSync.json"
+    "OSSync.json",
+    "lapi.json",
+    "lcode.json",
+    "ltable.json",
+    "newlib_vfprintf.json",
+    "newlib_vfiprintf.json",
+    "newlib_sn_math.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

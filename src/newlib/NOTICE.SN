@@ -1,0 +1,13 @@
+SN Systems library restoration
+
+The formatter and combined math-support reference comes from adonis-singh/re4,
+commit 9b76ff003081d6ece8b838453fb8310743a972c7. See config/GR8E69/sn-library-source.json.
+That project does not apply its tooling CC0 license to reconstructed source;
+no additional license grant is asserted here.
+
+The formatter derives from Newlib 1.8.2 and retains the Regents of the University
+of California notice. This product includes software developed by the University
+of California, Berkeley and its contributors. The four math implementations
+retain Sun Microsystems notices and permission text. See COPYING.NEWLIB.
+
+Target adaptations and verification used AI assistance.

@@ -33,11 +33,40 @@ class SourceVerification(unittest.TestCase):
         for unit in self.units:
             verify_unit(self.original, Elf32(self.linked(unit['id'])), unit)
         result = progress(self.original, self.units, self.project)
-        self.assertEqual(result['matching_code_bytes'], 249228)
+        self.assertEqual(result['matching_code_bytes'], 274524)
         self.assertEqual(result['total_executable_code_bytes'], 2492032)
-        self.assertGreaterEqual(result['percent'], 10)
+        self.assertGreaterEqual(result['percent'], 11)
         self.assertEqual(result['categories']['reconstructed_game'], 336)
-        self.assertEqual(result['categories']['restored_library'], 248892)
+        self.assertEqual(result['categories']['restored_library'], 274188)
+
+    def test_sn_bss_records_require_size_name_and_file_identity(self):
+        unit = self.by_name['newlib_vfprintf']
+        for mutation in ('size', 'name', 'file_record'):
+            with self.subTest(mutation=mutation):
+                data = bytearray(self.linked(unit['id']))
+                changed = copy.deepcopy(unit)
+                if mutation == 'file_record':
+                    changed['original_file_index'] = self.by_name['newlib_vfiprintf']['original_file_index']
+                else:
+                    elf = Elf32(data)
+                    symbol = next(s for s in elf.symbols() if s['name'].startswith('pch.') and s['size'])
+                    offset = self.symbol_offset(data, symbol['name'])
+                    if mutation == 'size':
+                        struct.pack_into('>I', data, offset + 8, symbol['size'] - 4)
+                    else:
+                        table = next(s for s in elf.sections if s['type'] == 2)
+                        strings = elf.sections[table['link']]
+                        name_offset = struct.unpack_from('>I', data, offset)[0]
+                        data[strings['offset'] + name_offset] = ord('q')
+                with self.assertRaisesRegex(ValueError, 'BSS'):
+                    verify_unit(self.original, Elf32(data), changed)
+
+    def test_readonly_subsection_cannot_be_remapped_to_code(self):
+        unit = copy.deepcopy(self.by_name['lcode'])
+        prefix = next(s for s in unit['sections'] if s['name'] == '.rodata.prefix')
+        prefix['target_name'] = '.text'
+        with self.assertRaisesRegex(ValueError, 'Unsupported source section mapping'):
+            validate_units(self.original, [unit])
 
     def symbol_offset(self, data, name):
         elf = Elf32(data)
@@ -165,11 +194,13 @@ class SourceVerification(unittest.TestCase):
     def test_context_really_includes_generated_code_and_data(self):
         # A bad source result must not be hidden by retaining original bytes.
         blobs = json.loads((self.build / 'report.json').read_text())['source_blobs']
-        for section in ['.text', '.rodata']:
-            with self.subTest(section=section), tempfile.TemporaryDirectory() as temporary:
+        for unit, section in [('lvm', '.text'), ('lvm', '.rodata'),
+                              ('lcode', '.rodata'), ('lcode', '.rodata.prefix')]:
+            with self.subTest(unit=unit, section=section), tempfile.TemporaryDirectory() as temporary:
                 directory = Path(temporary)
                 sources = copy.deepcopy(blobs)
-                blob = next(b for b in sources if b['unit'] == 'lvm' and b['section'] == section)
+                blob = next(b for b in sources if b['unit'] == unit
+                            and b.get('source_section', b['section']) == section)
                 damaged = bytearray(Path(blob['path']).read_bytes())
                 damaged[0] ^= 1
                 target = directory / 'damaged.bin'
