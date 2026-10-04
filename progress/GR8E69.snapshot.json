@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 329936,
+    "matching_code_bytes": 345784,
     "total_executable_code_bytes": 2492032,
-    "percent": 13.23963737223278,
+    "percent": 13.875584262160357,
     "categories": {
       "reconstructed_game": 2648,
-      "restored_library": 327288
+      "restored_library": 343136
     },
-    "matching_functions": 1277
+    "matching_functions": 1331
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -67,6 +67,7 @@
     "config/GR8E69/GXTexture.json": "c622bcb9d345d3f792c5de531161c9c40a84c265bbede6e8e19392fbf81902bb",
     "config/GR8E69/IFFifo.json": "8934ff84f3bfbeed0b9f53a01b4051bb8b233c9365d6e9d4d0c0bbe3e1444aaf",
     "config/GR8E69/IFRing.json": "dfd3f2db5b9e62b8d72d730959338cc4814c655b1a564fba33ffbafd17b9480a",
+    "config/GR8E69/IPCore.json": "49004882f98339bc72bb22527b7405aee848a3e70cf5029f99e84c6847db9883",
     "config/GR8E69/IPDnsDiagnostic.json": "9582e8a480d6f7222dd8eae7e4918c0f066d268ef9e0660ca0c329f5ca2ea42a",
     "config/GR8E69/IPLcp.json": "515d85eb4eed3f5e6265f41d375a17bef8bb3f36c5d0af81e75af1ff66d22af1",
     "config/GR8E69/IPOpt.json": "fd1ff1570368d7039d91cd5fc7ee83ae94c8905cac819bd76ce4a68f64ddb9c6",
@@ -98,13 +99,17 @@
     "config/GR8E69/Padclamp.json": "5997107cb29ce7a712556571acac3dcb64731a599cb5336e623ba3f3d309317a",
     "config/GR8E69/SIBios.json": "8ca7ce9de6c9151af924fc0bfd8dab7f75f282ba6287ea302f56fc4d240f0732",
     "config/GR8E69/SISamplingRate.json": "0ab6d8244a3907d59dfcc33be57c140b59fbbee9440129b55fc8be80adbc2dd1",
+    "config/GR8E69/SocketAPI.json": "a349662c6cc8b00ea898c6ce6124664d8dc2afd4766e91cc9f731bb473afd94e",
+    "config/GR8E69/TCPTransport.json": "914ea84646db4c4e89ba25e141530951212f2e1ea01cbc7d8811225603af0166",
+    "config/GR8E69/TCPUser.json": "aa0a4446ec56243061f0ffc64225cf58dd06106ce25d02dbb4a60f850990a132",
+    "config/GR8E69/UDPTransport.json": "2c2b2e2ed43cd5a432f9ba61b70b14c627ec3416e9a439b78e980b9aeb584f5c",
     "config/GR8E69/ai.json": "7b00f17f4fb56ada896ab693b54981297a779945d629d8e0920f1bffedda5893",
     "config/GR8E69/ai_src.json": "136c56ec3f12ec8b879525cc1d5766e8b42c5f266a23e090ce86f5fae181bf66",
     "config/GR8E69/ar.json": "d8da1ec6cb2ac6c8f83ac2a4b995898cbb723d38d41c84a1d25a8d7a863b1908",
     "config/GR8E69/arq.json": "b79b6daec16d9806b4df0388a3f927cb06d48ce10fdb9fa35772dcecce291de7",
     "config/GR8E69/base64.json": "e88ebd5740a86b7f43b5b6812b6c4e81114d43dfae07a3e7429abb7c6a1bfec7",
     "config/GR8E69/baseline.json": "9ebff32fd809e72fdf889ab49760be2aa1172768f855af86d0251c1fc4da2ef7",
-    "config/GR8E69/dolphin-network-source.json": "e97b9a4c5a7ddc73015864061533e6e379c45d825edff5f5758edcb1ea46f628",
+    "config/GR8E69/dolphin-network-source.json": "e4fec6a26d62cf5cfb620d454ac6c3f868fbf35d20990bd7c5908f816d3323c0",
     "config/GR8E69/dolphin-source.json": "00e4890e3bb570018abbacc62a7beee8052c2ef4f115363b1716785b62884cf1",
     "config/GR8E69/dsp.json": "bcc4a05a8ec25869e7675234c297eb8243e9a2e03983f64bf5e7040c7a897cd7",
     "config/GR8E69/dsp_debug.json": "2c0310fa0176274558e8b7835044c6eb9dc060213f74257a1f46cb54d1746654",
@@ -252,7 +257,7 @@
     "config/GR8E69/newlib_wctomb_r.json": "fc59b588e63f3a1f302300e1257e93abec1acb4041e2ef289f02d12774f5ae70",
     "config/GR8E69/newlib_writer.json": "cf7eab1eebe3bf4b04912e61b9ce9a2c7c4191ebecc610aa267f69bdabe6512f",
     "config/GR8E69/newlib_wsetup.json": "61dd8c7f513073a2f4c355ee89bdcf2d300345cd74c632de1997cba9f3e84020",
-    "config/GR8E69/project.json": "8e4c1f2002b1222cd541e4910b6dd363d4be8f02b3c66cf3f8fa119f39cc0ad4",
+    "config/GR8E69/project.json": "ef98cd329aa8bf15ea10d662150c0d082ea1995764fa6bd0634416859e56ce2d",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/stl_80278d64.json": "04dc314cda8644a93aa797638a2f5a3e946a7bc954506e9bb2be731800b7646a",
     "config/GR8E69/stl_80278ea0.json": "784844808dbfcbe4c0b2a360cdd8a5cd6c1115260192d1fa5e52d4a7ae8c4ebf",
@@ -380,6 +385,8 @@
     "include/dolphin-network/dolphin/md5.h": "e550087c26b2bc319fde5ad67acbd8986fcaf94b2a721f4d3d067ae612d13c01",
     "include/dolphin-network/dolphin/private/ip.h": "1622b54cd024406b7315977f3b47128907c85228f56641a13afaf44f68a4d867",
     "include/dolphin-network/dolphin/private/sdk.h": "e3cfbd8cf9e11458d30df56cb4fc6ec76d8c359a86656e1f04ca05a3b8c10d48",
+    "include/dolphin-network-2003/dolphin/ip/IP.h": "306af9d590237966439f13bbec061d89935bf3e20260cfb57cc06592f7113996",
+    "include/dolphin-network-2003/dolphin/ip/IPTcp.h": "278fbf18e676218649e45b0170f8d0c4282f711057186fbdb1b591023e0115b2",
     "include/dolphin-sdk/charPipeline/fileCache.h": "9fc5bbfba874376ec1d239271cda99d84c256b2bd07f884d1177bee6b705b985",
     "include/dolphin-sdk/charPipeline/structures/HTable.h": "e1e36439d044200512635bc37470f318258d75767fad9ec2d9c407f9c0ee1af8",
     "include/dolphin-sdk/charPipeline/structures/List.h": "5646f12d28166b80aa7ad18711a2a01b1b1e836f4f509c25a03b2220adcc3c58",
@@ -721,11 +728,16 @@
     "src/dolphin/ip/DHCPDump.c": "497c14e8e67e4da6ff79d59666cacd3c93f07441aa6366a8702271967db17977",
     "src/dolphin/ip/IFFifo.c": "680d4950dd89befbeff3dc21362d11af5f9cc37d95931321262caede9a35b456",
     "src/dolphin/ip/IFRing.c": "358f03ca6759bbb393210fa5d201e48cb9a294078fdf48e0e80ea21a710fb79f",
+    "src/dolphin/ip/IPCore.c": "05adafd75c4f7d44b14b368388d3a5ee00897d67ea3fe1b6e1a4818df0271236",
     "src/dolphin/ip/IPDnsDiagnostic.c": "54ba1c69db73c68aa6f4f8f83014a7f4855f5c2b83f712ea93b172af4bfd0691",
     "src/dolphin/ip/IPLcp.c": "96ffc2208848f5c1419367fba13ac141101afd2ef4c9c447e5f3fafdc80e6512",
     "src/dolphin/ip/IPOpt.c": "9b7d5a85b9516eab8e3f31dc35751f2785e7d178880154b9428a7b1f5855db52",
     "src/dolphin/ip/IPRoute.c": "6152d89fe1572084180844950d26b47f01d3b3448de916bb2bf82b4abd378886",
     "src/dolphin/ip/IPTcpTimeWait.c": "c6d8523182cedfe48527a9b64a8004e118c2c5b75f8f97484564dcc02e24f3a7",
+    "src/dolphin/ip/SocketAPI.c": "9894aa99000e0c7a81f3f42c16cd285d46acc6ab1d93024a5e1b9f933ff0d1b5",
+    "src/dolphin/ip/TCPTransport.c": "81b566ef3453567feb05d82fef724f9b418db6931b28ca215de6fcb40b9aa616",
+    "src/dolphin/ip/TCPUser.c": "56ac1f304f2b050e7beb15f2d6238cb27cfc7158b07a06ed0f44263035c71b23",
+    "src/dolphin/ip/UDPTransport.c": "072293a2c4773c4e7eec45a7500bb8545b41678c6f2be0224000d0c16f81f625",
     "src/dolphin/mtx/mtx44.c": "7e0525518b6d66fb81116b920c97b3dd1d888c2dbbce844f520606cbc140ee34",
     "src/dolphin/os/OS.c": "bef87476a6b40543ba86c2b96ceeac7905236169c14d16b401c4e2f0bfccda0f",
     "src/dolphin/os/OSAlarm.c": "34697e9fef0b467d5787cdc78a9445a237f7e9f08724e0c0b495a6da049878b6",
@@ -10173,6 +10185,209 @@
       ],
       "object_sha256": "a114e7613bacb2e89f3c3e3c33d977edbbbb0a9f9807340d80eeb8e214085ff2",
       "linked_sha256": "4ca17229139b3fcd8bf4b65c6e70c7196ce091735e516a2fec9d7fd45aef17de"
+    },
+    {
+      "id": "IPCore",
+      "category": "restored_library",
+      "functions": 6,
+      "code_bytes": 1760,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "IPCheckSum"
+      ],
+      "object_sha256": "87359a3a12d623d4727e7d50fa80787c0795ba3e9a50e4473feb636b11576b26",
+      "linked_sha256": "e468469f9468c5be4f76c4310fe1fd1801519893c4c637b7d5cba86b7773616d"
+    },
+    {
+      "id": "UDPTransport",
+      "category": "restored_library",
+      "functions": 13,
+      "code_bytes": 3680,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "PeekInput",
+        "DiscardInput",
+        "CopySockets"
+      ],
+      "object_sha256": "f0cf5a59d5f113ea10124e38cc474e272fbc78e1534558df4043b17b5bf253c6",
+      "linked_sha256": "fbe709a5317fab9fd56919fcd3ed778a149b6f939e6c4dcca478b97bc1378656"
+    },
+    {
+      "id": "TCPTransport",
+      "category": "restored_library",
+      "functions": 8,
+      "code_bytes": 1664,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "Rotate"
+      ],
+      "object_sha256": "0818b1335158bb8ab68ae297a489e3b29d5195b9d41602797611353212256831",
+      "linked_sha256": "343df7bc8085670fb1dfc9a70af0a90cba7b3b178f553debb2e3ca6f7b6ad2a7"
+    },
+    {
+      "id": "TCPUser",
+      "category": "restored_library",
+      "functions": 19,
+      "code_bytes": 5340,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "Send"
+      ],
+      "object_sha256": "c49d564e6e68514a871c0671e81711426f4cd8c721d5830b8de6431f9dc3fbb6",
+      "linked_sha256": "0fc56b3145f5f9b7117a46326b68eb7dd18eaafd71c07dc87fc827a8ddedcfed"
+    },
+    {
+      "id": "SocketAPI",
+      "category": "restored_library",
+      "functions": 8,
+      "code_bytes": 3404,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "SOFree",
+        "SOInetNtoP"
+      ],
+      "object_sha256": "3d556f3460e251c978f1f850a2c2ae636ddefb99ce52e5aa2648698ff7a2c6fe",
+      "linked_sha256": "6b896b7d388451e9cc150fb50f4e4b2bf5ac9996bca5cc3590a0a06c63b8297e"
     }
   ],
   "code_map": {
@@ -69807,121 +70022,6 @@
         ]
       },
       {
-        "name": "Unmatched files/IPSocket.c [local symbols only]",
-        "file_record": 740,
-        "file_name": "IPSocket.c",
-        "ranges": [
-          {
-            "address": "0x80249aa8",
-            "size": 680,
-            "kind": "function",
-            "name": "GetNode",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80249d50",
-            "size": 772,
-            "kind": "function",
-            "name": "PutNode",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8024a7e4",
-            "size": 16,
-            "kind": "function",
-            "name": "OnReset",
-            "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024a054",
-        "ranges": [
-          {
-            "address": "0x8024a054",
-            "size": 396,
-            "kind": "function",
-            "name": "SOConnect",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024a1e0",
-            "size": 260,
-            "kind": "function",
-            "name": "SOShutdown",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024a2e4",
-            "size": 568,
-            "kind": "function",
-            "name": "SORecvFrom",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024a51c",
-            "size": 676,
-            "kind": "function",
-            "name": "SOSendTo",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024a7c0",
-            "size": 36,
-            "kind": "function",
-            "name": "__IPWakeupPollingThreads",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024a944",
-        "ranges": [
-          {
-            "address": "0x8024a944",
-            "size": 300,
-            "kind": "function",
-            "name": "IPLookupInfo",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024aa70",
-            "size": 184,
-            "kind": "function",
-            "name": "IPGetAnonPort",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024ab28",
-            "size": 652,
-            "kind": "function",
-            "name": "IPConnect",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024adb4",
-            "size": 52,
-            "kind": "function",
-            "name": "IPGetRemoteSocket",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024ade8",
-            "size": 512,
-            "kind": "function",
-            "name": "IPOut",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024afe8",
-            "size": 60,
-            "kind": "function",
-            "name": "IPCancel",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
         "name": "Unmatched files/IPIcmp.c [local symbols only]",
         "file_record": 746,
         "file_name": "IPIcmp.c",
@@ -69955,119 +70055,6 @@
         ]
       },
       {
-        "name": "Unmatched files/IPUdp.c [local symbols only]",
-        "file_record": 748,
-        "file_name": "IPUdp.c",
-        "ranges": [
-          {
-            "address": "0x8024c824",
-            "size": 4,
-            "kind": "function",
-            "name": "NullCallback",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8024c828",
-            "size": 36,
-            "kind": "function",
-            "name": "SyncCallback",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8024c970",
-            "size": 156,
-            "kind": "function",
-            "name": "SendCallback",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8024d35c",
-            "size": 260,
-            "kind": "function",
-            "name": "Cancel",
-            "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024c84c",
-        "ranges": [
-          {
-            "address": "0x8024c84c",
-            "size": 168,
-            "kind": "function",
-            "name": "UDPCheckSum",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024c8f4",
-            "size": 124,
-            "kind": "function",
-            "name": "UDPConnect",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024ca0c",
-        "ranges": [
-          {
-            "address": "0x8024ca0c",
-            "size": 1120,
-            "kind": "function",
-            "name": "UDPSendAsync",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024ce6c",
-            "size": 120,
-            "kind": "function",
-            "name": "UDPSend",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024cee4",
-            "size": 1024,
-            "kind": "function",
-            "name": "UDPReceiveExAsync",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024d2e4",
-            "size": 120,
-            "kind": "function",
-            "name": "UDPReceiveEx",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024d460",
-        "ranges": [
-          {
-            "address": "0x8024d460",
-            "size": 192,
-            "kind": "function",
-            "name": "UDPClose",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024d520",
-            "size": 280,
-            "kind": "function",
-            "name": "UDPNotify",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024d638",
-            "size": 76,
-            "kind": "function",
-            "name": "UDPOnReset",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
         "name": "Unmatched files/IPEther.c [local symbols only]",
         "file_record": 750,
         "file_name": "IPEther.c",
@@ -70078,67 +70065,6 @@
             "kind": "function",
             "name": "OnReset",
             "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024d9d4",
-        "ranges": [
-          {
-            "address": "0x8024d9d4",
-            "size": 232,
-            "kind": "function",
-            "name": "TCPIsn",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024dabc",
-            "size": 224,
-            "kind": "function",
-            "name": "TCPCheckSum",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024db9c",
-            "size": 308,
-            "kind": "function",
-            "name": "TCPRespond",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024dcd0",
-            "size": 276,
-            "kind": "function",
-            "name": "TCPSendIn",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024dde4",
-            "size": 328,
-            "kind": "function",
-            "name": "TCPPeekOut",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024df2c",
-            "size": 128,
-            "kind": "function",
-            "name": "TCPRecvOut",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024dfac",
-            "size": 88,
-            "kind": "function",
-            "name": "TCPNotify",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024e004",
-            "size": 80,
-            "kind": "function",
-            "name": "TCPSourceQuench",
-            "evidence": "unknown-file"
           }
         ]
       },
@@ -70211,156 +70137,6 @@
             "size": 60,
             "kind": "function",
             "name": "TCPCancelRxmitTimer",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unmatched files/IPTcpUser.c [local symbols only]",
-        "file_record": 756,
-        "file_name": "IPTcpUser.c",
-        "ranges": [
-          {
-            "address": "0x8024ebd4",
-            "size": 4,
-            "kind": "function",
-            "name": "NullCallback",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8024ebd8",
-            "size": 36,
-            "kind": "function",
-            "name": "SyncCallback",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8024f0e8",
-            "size": 516,
-            "kind": "function",
-            "name": "SendAsync",
-            "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024ebfc",
-        "ranges": [
-          {
-            "address": "0x8024ebfc",
-            "size": 116,
-            "kind": "function",
-            "name": "TCPGetRemoteSocket",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024ec70",
-            "size": 668,
-            "kind": "function",
-            "name": "TCPAbort",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024ef0c",
-            "size": 356,
-            "kind": "function",
-            "name": "TCPConnectAsync",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024f070",
-            "size": 120,
-            "kind": "function",
-            "name": "TCPConnect",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024f2ec",
-        "ranges": [
-          {
-            "address": "0x8024f2ec",
-            "size": 56,
-            "kind": "function",
-            "name": "TCPSendNonblock",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024f324",
-            "size": 56,
-            "kind": "function",
-            "name": "TCPSendUrgNonblock",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024f35c",
-            "size": 124,
-            "kind": "function",
-            "name": "TCPSend",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024f3d8",
-            "size": 124,
-            "kind": "function",
-            "name": "TCPSendUrg",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024f454",
-            "size": 780,
-            "kind": "function",
-            "name": "TCPReceiveExAsync",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024f760",
-            "size": 120,
-            "kind": "function",
-            "name": "TCPReceiveEx",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024f7d8",
-            "size": 372,
-            "kind": "function",
-            "name": "TCPCloseAsync",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024f94c",
-            "size": 696,
-            "kind": "function",
-            "name": "TCPShutdown",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024fc04",
-            "size": 200,
-            "kind": "function",
-            "name": "TCPCancel",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024fccc",
-            "size": 660,
-            "kind": "function",
-            "name": "TCPReceiveUrgExAsync",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024ff60",
-            "size": 120,
-            "kind": "function",
-            "name": "TCPReceiveUrgEx",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024ffd8",
-            "size": 216,
-            "kind": "function",
-            "name": "TCPOnReset",
             "evidence": "unknown-file"
           }
         ]

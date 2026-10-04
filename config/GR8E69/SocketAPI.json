@@ -1,0 +1,157 @@
+{
+  "id": "SocketAPI",
+  "source": "src/dolphin/ip/SocketAPI.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-network-2003",
+    "include/dolphin-network",
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80249aa8",
+      "size": 3404,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802dc9c8",
+      "size": 348,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x80439b08",
+      "size": 14336,
+      "type": 8
+    },
+    {
+      "name": ".sdata",
+      "address": "0x80451478",
+      "size": 8,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x80452250",
+      "size": 88,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "OnReset",
+      "address": "0x8024a7e4",
+      "size": 16,
+      "binding": 0
+    },
+    {
+      "name": "GetNode",
+      "address": "0x80249aa8",
+      "size": 680,
+      "binding": 0
+    },
+    {
+      "name": "PutNode",
+      "address": "0x80249d50",
+      "size": 772,
+      "binding": 0
+    },
+    {
+      "name": "SOConnect",
+      "address": "0x8024a054",
+      "size": 396,
+      "binding": 1
+    },
+    {
+      "name": "SOShutdown",
+      "address": "0x8024a1e0",
+      "size": 260,
+      "binding": 1
+    },
+    {
+      "name": "SORecvFrom",
+      "address": "0x8024a2e4",
+      "size": 568,
+      "binding": 1
+    },
+    {
+      "name": "SOSendTo",
+      "address": "0x8024a51c",
+      "size": 676,
+      "binding": 1
+    },
+    {
+      "name": "__IPWakeupPollingThreads",
+      "address": "0x8024a7c0",
+      "size": 36,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "OSDisableInterrupts": "0x80257798",
+    "OSWakeupThread": "0x8025ad04",
+    "OSRestoreInterrupts": "0x802577c0",
+    "sprintf": "0x80263a3c",
+    "OSPanic": "0x80255318",
+    "UDPConnect": "0x8024c8f4",
+    "TCPConnect": "0x8024f070",
+    "TCPConnectAsync": "0x8024ef0c",
+    "TCPShutdown": "0x8024f94c",
+    "OSLockMutex": "0x8025853c",
+    "UDPReceiveEx": "0x8024d2e4",
+    "OSUnlockMutex": "0x80258618",
+    "TCPGetRemoteSocket": "0x8024ebfc",
+    "TCPReceiveEx": "0x8024f760",
+    "TCPReceiveUrgEx": "0x8024ff60",
+    "UDPSend": "0x8024ce6c",
+    "TCPSend": "0x8024f35c",
+    "TCPSendUrg": "0x8024f3d8",
+    "TCPSendNonblock": "0x8024f2ec",
+    "TCPSendUrgNonblock": "0x8024f324"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "SOFree",
+    "SOInetNtoP"
+  ],
+  "original_file": "IPSocket.c",
+  "discarded_local_functions": [],
+  "sda_externals": [],
+  "upstream": {
+    "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+    "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+    "path": "src/ip/IPSocket.c"
+  }
+}

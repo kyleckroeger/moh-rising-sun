@@ -1,0 +1,120 @@
+{
+  "id": "IPCore",
+  "source": "src/dolphin/ip/IPCore.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-network-2003",
+    "include/dolphin-network",
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8024a944",
+      "size": 1760,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x804514b0",
+      "size": 2,
+      "type": 1
+    },
+    {
+      "name": ".sdata2",
+      "address": "0x80452908",
+      "size": 12,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "IPLookupInfo",
+      "address": "0x8024a944",
+      "size": 300,
+      "binding": 1
+    },
+    {
+      "name": "IPGetAnonPort",
+      "address": "0x8024aa70",
+      "size": 184,
+      "binding": 1
+    },
+    {
+      "name": "IPConnect",
+      "address": "0x8024ab28",
+      "size": 652,
+      "binding": 1
+    },
+    {
+      "name": "IPGetRemoteSocket",
+      "address": "0x8024adb4",
+      "size": 52,
+      "binding": 1
+    },
+    {
+      "name": "IPOut",
+      "address": "0x8024ade8",
+      "size": 512,
+      "binding": 1
+    },
+    {
+      "name": "IPCancel",
+      "address": "0x8024afe8",
+      "size": 60,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "IPGetRoute": "0x8024b8b0",
+    "IPIsBroadcastAddr": "0x8024b6c0",
+    "memcmp": "0x80266558",
+    "TCPLookupTimeWaitInfo": "0x802500b0",
+    "memmove": "0x8026668c",
+    "memcpy": "0x802665e8",
+    "UDPCheckSum": "0x8024c84c",
+    "TCPCheckSum": "0x8024dabc"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "IPCheckSum"
+  ],
+  "original_file": "IP.c",
+  "discarded_local_functions": [],
+  "sda_externals": [],
+  "upstream": {
+    "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+    "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+    "path": "src/ip/IP.c"
+  }
+}

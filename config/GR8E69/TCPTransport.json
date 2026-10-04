@@ -1,0 +1,124 @@
+{
+  "id": "TCPTransport",
+  "source": "src/dolphin/ip/TCPTransport.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-network-2003",
+    "include/dolphin-network",
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8024d9d4",
+      "size": 1664,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "TCPIsn",
+      "address": "0x8024d9d4",
+      "size": 232,
+      "binding": 1
+    },
+    {
+      "name": "TCPCheckSum",
+      "address": "0x8024dabc",
+      "size": 224,
+      "binding": 1
+    },
+    {
+      "name": "TCPRespond",
+      "address": "0x8024db9c",
+      "size": 308,
+      "binding": 1
+    },
+    {
+      "name": "TCPSendIn",
+      "address": "0x8024dcd0",
+      "size": 276,
+      "binding": 1
+    },
+    {
+      "name": "TCPPeekOut",
+      "address": "0x8024dde4",
+      "size": 328,
+      "binding": 1
+    },
+    {
+      "name": "TCPRecvOut",
+      "address": "0x8024df2c",
+      "size": 128,
+      "binding": 1
+    },
+    {
+      "name": "TCPNotify",
+      "address": "0x8024dfac",
+      "size": 88,
+      "binding": 1
+    },
+    {
+      "name": "TCPSourceQuench",
+      "address": "0x8024e004",
+      "size": 80,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "OSGetTime": "0x8025af7c",
+    "__div2i": "0x801afea0",
+    "memmove": "0x8026668c",
+    "IPOut": "0x8024ade8",
+    "IFRingIn": "0x8024d818",
+    "IFRingOut": "0x8024d8cc",
+    "TCPInfoQueue": "0x804522e8",
+    "IPLookupInfo": "0x8024a944"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "Rotate"
+  ],
+  "original_file": "IPTcp.c",
+  "discarded_local_functions": [
+    "Rotate"
+  ],
+  "sda_externals": [
+    "TCPInfoQueue"
+  ],
+  "upstream": {
+    "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+    "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+    "path": "src/ip/IPTcp.c"
+  }
+}

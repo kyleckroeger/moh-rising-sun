@@ -325,7 +325,12 @@
     "base64.json",
     "ethsec.json",
     "DHCPDump.json",
-    "IPDnsDiagnostic.json"
+    "IPDnsDiagnostic.json",
+    "IPCore.json",
+    "UDPTransport.json",
+    "TCPTransport.json",
+    "TCPUser.json",
+    "SocketAPI.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

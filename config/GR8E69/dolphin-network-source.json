@@ -320,6 +320,62 @@
       "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
       "upstream_sha256": "98bdcbed28a29e7e42e2189deeb47bc62b83abadb9ed7f7fdba099afd2d402f0",
       "modified": true
+    },
+    {
+      "path": "include/dolphin-network-2003/dolphin/ip/IP.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IP.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "7f2d6180d3a595d20139f8ae01f21c08d8fb16484c1240c3b65ac5e6ff4e6cc6",
+      "modified": true
+    },
+    {
+      "path": "include/dolphin-network-2003/dolphin/ip/IPTcp.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPTcp.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "5301226f015327ba52b2b89eb12195e34cd581f62f00d336d2ee46dd889c1000",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ip/IPCore.c",
+      "upstream_path": "src/ip/IP.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "25b0a58312ff72293987481fab1234931c50897a38e5d73ad924333c61db5a42",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ip/UDPTransport.c",
+      "upstream_path": "src/ip/IPUdp.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "a13dfc02c61a1e8daa2136858d664022950827abb382ec171bce8c1e653ee0ff",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ip/TCPTransport.c",
+      "upstream_path": "src/ip/IPTcp.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "3678572248f10740aa82171e269fdeaa0a6e51f8c103491e31d20b18dfe005d1",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ip/TCPUser.c",
+      "upstream_path": "src/ip/IPTcpUser.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "9d1d6eb6c556651fc9c1c73f7974817ee16ad7225aa1528fb93facdf459c25c5",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ip/SocketAPI.c",
+      "upstream_path": "src/ip/IPSocket.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "5689da69e4d6736bd53b96b6037bbd5278435b092c0b8cd91af52a6233630e34",
+      "modified": true
     }
   ]
 }

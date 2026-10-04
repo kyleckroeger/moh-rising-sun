@@ -1,0 +1,179 @@
+{
+  "id": "UDPTransport",
+  "source": "src/dolphin/ip/UDPTransport.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-network-2003",
+    "include/dolphin-network",
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8024c824",
+      "size": 3680,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x804514c8",
+      "size": 2,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x804522c0",
+      "size": 8,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "NullCallback",
+      "address": "0x8024c824",
+      "size": 4,
+      "binding": 0
+    },
+    {
+      "name": "SyncCallback",
+      "address": "0x8024c828",
+      "size": 36,
+      "binding": 0
+    },
+    {
+      "name": "SendCallback",
+      "address": "0x8024c970",
+      "size": 156,
+      "binding": 0
+    },
+    {
+      "name": "Cancel",
+      "address": "0x8024d35c",
+      "size": 260,
+      "binding": 0
+    },
+    {
+      "name": "UDPCheckSum",
+      "address": "0x8024c84c",
+      "size": 168,
+      "binding": 1
+    },
+    {
+      "name": "UDPConnect",
+      "address": "0x8024c8f4",
+      "size": 124,
+      "binding": 1
+    },
+    {
+      "name": "UDPSendAsync",
+      "address": "0x8024ca0c",
+      "size": 1120,
+      "binding": 1
+    },
+    {
+      "name": "UDPSend",
+      "address": "0x8024ce6c",
+      "size": 120,
+      "binding": 1
+    },
+    {
+      "name": "UDPReceiveExAsync",
+      "address": "0x8024cee4",
+      "size": 1024,
+      "binding": 1
+    },
+    {
+      "name": "UDPReceiveEx",
+      "address": "0x8024d2e4",
+      "size": 120,
+      "binding": 1
+    },
+    {
+      "name": "UDPClose",
+      "address": "0x8024d460",
+      "size": 192,
+      "binding": 1
+    },
+    {
+      "name": "UDPNotify",
+      "address": "0x8024d520",
+      "size": 280,
+      "binding": 1
+    },
+    {
+      "name": "UDPOnReset",
+      "address": "0x8024d638",
+      "size": 76,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "IFRingGet": "0x8024d960",
+    "memmove": "0x8026668c",
+    "IFRingPut": "0x8024d9ac",
+    "OSWakeupThread": "0x8025ad04",
+    "OSDisableInterrupts": "0x80257798",
+    "IPConnect": "0x8024ab28",
+    "OSRestoreInterrupts": "0x802577c0",
+    "__IPWakeupPollingThreads": "0x8024a7c0",
+    "__IFDefault": "0x80442d20",
+    "IPGetAnonPort": "0x8024aa70",
+    "IPAddrAny": "0x80452908",
+    "IPLoopbackAddr": "0x8045290c",
+    "memcmp": "0x80266558",
+    "IPOut": "0x8024ade8",
+    "OSSleepThread": "0x8025ac18",
+    "IPCancel": "0x8024afe8"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "PeekInput",
+    "DiscardInput",
+    "CopySockets"
+  ],
+  "original_file": "IPUdp.c",
+  "discarded_local_functions": [
+    "PeekInput",
+    "DiscardInput",
+    "CopySockets"
+  ],
+  "sda_externals": [
+    "IPAddrAny",
+    "IPLoopbackAddr"
+  ],
+  "upstream": {
+    "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+    "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+    "path": "src/ip/IPUdp.c"
+  }
+}
