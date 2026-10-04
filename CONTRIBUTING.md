@@ -25,3 +25,8 @@ Pseudonymous contributions are welcome. Check your commit author/email before
 committing and use your own GitHub noreply address if desired. Never remove upstream
 author or license notices. AI assistance must be disclosed in the PR, along with
 the checks you performed; generated output is a proposal until verified.
+
+Original contributions are submitted under [CC0 1.0 Universal](LICENSE), only for
+rights you are entitled to dedicate. Imported material and adaptations retain
+their applicable upstream terms: preserve notices and record provenance, including
+any licensing uncertainty. See [licensing scope and third-party notices](docs/Licensing.md).

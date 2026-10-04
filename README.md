@@ -109,6 +109,14 @@ The automatic dtk ELF split export emits warnings for this executable's symbol o
 
 See [the initial audit](docs/initial-audit.md) for evidence and limitations.
 
+## License
+
+Original project contributions are dedicated under [CC0 1.0 Universal](LICENSE),
+to the extent contributors hold the relevant rights. Third-party source and
+adaptations retain their existing terms and notices; the dedication grants no
+rights in the original game or its assets. See [licensing scope and third-party
+notices](docs/Licensing.md).
+
 ## Tooling
 
 Uses [decomp-toolkit](https://github.com/encounter/decomp-toolkit) 1.8.4, [gc-wii-binutils](https://github.com/encounter/gc-wii-binutils) 2.42-2, and [wibo](https://github.com/decompals/wibo) 1.0.3. The project layout follows the separation of originals, source and build output documented by [dtk-template](https://github.com/encounter/dtk-template); its standard CodeWarrior build configuration has not been adopted for the SN-compiled game code.
