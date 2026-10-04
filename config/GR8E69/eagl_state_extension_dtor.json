@@ -1,0 +1,40 @@
+{
+  "id": "eagl_state_extension_dtor",
+  "source": "src/eagl/eagl_state_extension_dtor.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801df2a8",
+      "size": 40
+    }
+  ],
+  "functions": [
+    {
+      "name": "_._Q24EAGL21GeoPrimStateExtension",
+      "address": "0x801df2a8",
+      "size": 40,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__builtin_delete": "0x801a8990"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

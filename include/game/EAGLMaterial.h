@@ -1,6 +1,7 @@
 #ifndef GAME_EAGL_MATERIAL_H
 #define GAME_EAGL_MATERIAL_H
 #include "EAGLTransform.h"
+#include "EAGLGeoPrimState.h"
 #include "TARExtension.h"
 #include "TevStage.h"
 #include <dolphin/gx/GXGeometry.h>
@@ -9,34 +10,28 @@
 #include <dolphin/gx/GXDispList.h>
 #include <dolphin/os/OSCache.h>
 namespace EAGL {
+enum MipMapModeOverride {MMMO_INHERIT=-1};
+enum FilterModeOverride {FMO_INHERIT=-1};
+enum AnisotropyOverride {AO_INHERIT=-1};
+
 class GeoPrim;
 class RenderContext;
 class RenderContextExtensionBase {
 public:
     void GetFogEnable(bool&) const;
     void SetFogEnable(bool);
+    static void GetAlphaWritesOverride(AlphaWritesOverride&);
+    static void GetMipMapModeOverride(MipMapModeOverride&);
+    static void GetFilterModeOverride(FilterModeOverride&);
+    static void GetMipmapLODBiasOverride(float&);
+    static void GetMaxAnisotropyOverride(AnisotropyOverride&);
 };
 class Device {
 public:
     static Device* Get();
     RenderContext* GetCurrentRenderContext() const;
 };
-// Numeric enumerators record observed arguments; original enumerator names are unknown.
-enum ClampMode { CLAMP_MODE_0 = 0 };
-enum FilterMode { FILTER_MODE_2 = 2 };
-class TAR { public: void Use(); void SetClampMode(ClampMode); void SetFilterMode(FilterMode); };
 
-enum PrimitiveType { PRIMITIVE_TRIANGLE_STRIP=0x98 };
-class GeoPrimState {
-public:
-    void GetPrimitiveType(PrimitiveType&) const;
-};
-class GeoPrimStateExtension {
-public:
-    void Use() const;
-    static void SetCurrentVertex(unsigned int, unsigned int);
-    static void SetAttributeFormat(int,GXAttr,GXCompCnt,GXCompType,unsigned char);
-};
 class RenderMethod {
 public:
     static void IncrementArrays(int);

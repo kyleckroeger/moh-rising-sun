@@ -1,0 +1,55 @@
+{
+  "id": "eagl_tar_init_shape",
+  "source": "src/eagl/eagl_tar_init_shape.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e0408",
+      "size": 604
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bd730",
+      "size": 64
+    }
+  ],
+  "functions": [
+    {
+      "name": "InitFromShape__Q24EAGL12TARExtensionPC5SHAPE",
+      "address": "0x801e0408",
+      "size": 604,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_12EAGLInternal.failed_shape": "0x802ce360",
+    "SHAPE_clut": "0x80206a74",
+    "SetClut__Q24EAGL12TARExtensionPC5SHAPE": "0x801e0e30",
+    "PrintMessage__4EAGLiPCce": "0x801e8890",
+    "GXInitTexObjCI": "0x80246a80",
+    "GXInitTexObj": "0x80246834"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "local_externals": [
+    "_12EAGLInternal.failed_shape"
+  ],
+  "original_file_index": 2632,
+  "original_file": "tar.cpp"
+}

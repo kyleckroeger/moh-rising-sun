@@ -1,8 +1,9 @@
 # EAGL rendering reconstruction
 
-The rendering reconstruction covers 89 functions and 99,780 executable bytes
-across 69 accepted fragments. All code was reconstructed from the pinned target;
-generated data is checked separately and earns no code credit.
+The rendering reconstruction covers material drawing, transforms, render state,
+property parsing and texture loading. All rendering code was reconstructed from
+the pinned target; generated data is checked separately and earns no code credit.
+Current totals are recorded in the verified progress snapshot.
 
 The first unit reconstructs `EAGL::TevStage`: 15 functions and
 1,744 executable bytes, plus 1,488 initialized data bytes and a four-byte
@@ -85,9 +86,9 @@ Three texture-coordinate cache functions add 228 bytes. Their setters and reset
 loop establish eight texture generators, with type/source/matrix arrays at
 `0x00`, `0x20` and `0x40`, eight normalization bytes at `0x60`, and post-matrix
 indices at `0x68`. The original named cache is 136 bytes. The cache and generator
-count remain external original data; the `TARExtension` instance layout is not
-claimed. Calls to a TAR's extension use its independently observed four-byte
-offset without asserting its complete inheritance or storage.
+count remain external original data. Subsequent constructor, destructor and
+instance-method work establishes an 84-byte `TARExtension` at offset four of the
+88-byte TAR object; see the shared state/property/TAR evidence below.
 
 Seventeen transform and matrix functions add 3,488 bytes, including both transpose
 overloads, matrix multiplication, point transforms, identity/scale construction,
@@ -189,3 +190,57 @@ functions cover 79 platform names and 47 common names. The declared integer
 return represents the observed ABI; the original return-type spelling is unknown.
 Neither the strings nor the reconstructed lookup tables establish complete
 historical enum declarations.
+
+## Shared state, properties and texture loading
+
+`GeoPrimStateExtension` now has a shared 60-byte storage view, supported by its
+constructor, setters, full-record copies in `Use`, and the named current-state
+object. `GeoPrimState` contains the extension at offset zero: the destructor's
+member-destruction ABI flag distinguishes this from base-class destruction.
+The extension fields retain descriptive names. Its custom blend fields are not
+initialized by the default constructor, matching the original.
+
+State use retains the original cache invalidation, culling and depth overrides,
+blend/alpha tests and alpha-write override. Initial invalidation copies the state
+and increments every byte of the cached record; it is not replaced by clearing
+memory. The vertex-format cache configures the observed 22 attribute bits.
+Unsupported primitive values and no-op shading/texture/chroma setters retain
+their original failure results. Global cache storage remains original context.
+
+The property dispatcher and runtime state/texture constructors share a recovered
+parser. Twelve-byte property records contain a name, argument count and argument
+array. Sixteen-byte parser locals contain the property count/array and copied
+text length/pointer. Parsing recognizes `=`, `,` and `;`, preserves its original
+termination behavior and frees both argument arrays and copied text. The
+four-byte argument wrapper is descriptive; its original name is unknown. Its
+zero initialization, native array cookies and sized cleanup are verified rather
+than replaced with raw object bytes. State/texture argument quirks remain intact,
+including the state loader's indexed vertex-format arguments and its repeated
+first argument for the fractional format field.
+
+The four-byte `Colour` view is independently supported by by-value argument
+copies and the Gouraud vertex array's allocation, four-byte stride and copies.
+Its packed member name does not establish channel order or the original union.
+
+Texture constructors, copy/destruction, setters, upload and property loading
+establish an 88-byte `TAR` containing its 84-byte extension at offset four. The
+copy constructor copies the extension only; the unknown leading word is retained.
+The runtime loader rounds allocation/element spacing to 96 bytes. That spacing
+is distinct from the object size passed by the deleting destructor. Texture and
+palette objects use the existing attributed GX declarations.
+
+Only the first sixteen bytes of a variable-sized `SHAPE` are described by the
+header view. Width/height accesses, format bytes, flags and inline/offset pixel
+access agree across initialization, clamping, palette upload and drawing. The
+original fallback shape and symbol pool remain external context. The texture
+loader preserves its symbol lookup and fallback behavior, including the CLUT
+lookup path that discards the secondary lookup result. Reconstructing that path
+is not a runtime bug fix.
+
+Texture initialization and palette-format switches use inline empty helpers for
+the observed no-work cases, as the existing material dispatch does. These retain
+native switch lowering without adding instructions or hiding comparisons.
+Mipmap filtering preserves context overrides, palette restrictions, anisotropy
+selection and the original LOD-bias bounds. Generated property strings, diagnostics
+and float/double constants are all compared in full. Runtime loading and rendering
+remain untested.

@@ -1,0 +1,51 @@
+{
+  "id": "eagl_tar_lod_states",
+  "source": "src/eagl/eagl_tar_lod_states.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e0664",
+      "size": 548
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bd770",
+      "size": 16
+    }
+  ],
+  "functions": [
+    {
+      "name": "SetTextureLODStates__Q24EAGL12TARExtension",
+      "address": "0x801e0664",
+      "size": 548,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "Get__Q24EAGL6Device": "0x801db480",
+    "GetCurrentRenderContext__CQ24EAGL6Device": "0x801db43c",
+    "GetMipMapModeOverride__Q24EAGL26RenderContextExtensionBaseRQ24EAGL18MipMapModeOverride": "0x801dd158",
+    "GetFilterModeOverride__Q24EAGL26RenderContextExtensionBaseRQ24EAGL18FilterModeOverride": "0x801dd130",
+    "GetMipmapLODBiasOverride__Q24EAGL26RenderContextExtensionBaseRf": "0x801dd11c",
+    "GetMaxAnisotropyOverride__Q24EAGL26RenderContextExtensionBaseRQ24EAGL18AnisotropyOverride": "0x801dd16c",
+    "GXInitTexObjLOD": "0x80246ac8"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

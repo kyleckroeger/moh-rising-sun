@@ -1,0 +1,40 @@
+{
+  "id": "eagl_tar_set_clut",
+  "source": "src/eagl/eagl_tar_set_clut.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e0e30",
+      "size": 156
+    }
+  ],
+  "functions": [
+    {
+      "name": "SetClut__Q24EAGL12TARExtensionPC5SHAPE",
+      "address": "0x801e0e30",
+      "size": 156,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GXInitTlutObj": "0x80246e60"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

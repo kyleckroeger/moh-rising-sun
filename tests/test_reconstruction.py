@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 from audit import load_target
 from formats import Elf32, verify_load_image, cstring
-from project_build import progress, validate_object, validate_units, verify_unit, write_context
+from project_build import progress, target_section, validate_object, validate_units, verify_unit, write_context
 from tool_runner import run
 
 
@@ -33,10 +33,10 @@ class SourceVerification(unittest.TestCase):
         for unit in self.units:
             verify_unit(self.original, Elf32(self.linked(unit['id'])), unit)
         result = progress(self.original, self.units, self.project)
-        self.assertEqual(result['matching_code_bytes'], 498568)
+        self.assertEqual(result['matching_code_bytes'], 525084)
         self.assertEqual(result['total_executable_code_bytes'], 2492032)
-        self.assertGreaterEqual(result['percent'], 20)
-        self.assertEqual(result['categories']['reconstructed_game'], 106352)
+        self.assertGreaterEqual(result['percent'], 21)
+        self.assertEqual(result['categories']['reconstructed_game'], 132868)
         self.assertEqual(result['categories']['restored_library'], 392216)
 
     def test_private_ppp_entry_point_requires_its_function_symbol(self):
@@ -75,6 +75,32 @@ class SourceVerification(unittest.TestCase):
         prefix['target_name'] = '.text'
         with self.assertRaisesRegex(ValueError, 'Unsupported source section mapping'):
             validate_units(self.original, [unit])
+
+    def test_native_vtable_must_own_the_complete_original_object(self):
+        for field, value in [('size', 180), ('address', '0x802ecb7c')]:
+            with self.subTest(field=field):
+                unit = copy.deepcopy(self.by_name['eagl_anim_delta_f1'])
+                section = next(s for s in unit['sections'] if s['name'].startswith('.gnu.linkonce.d.'))
+                section[field] = value
+                with self.assertRaisesRegex(ValueError, 'Native vtable object ownership differs'):
+                    validate_units(self.original, [unit])
+
+    def test_native_vtable_linked_metadata_is_verified(self):
+        unit = self.by_name['eagl_anim_delta_f1']
+        for mutation in ('name', 'size', 'binding', 'address'):
+            with self.subTest(mutation=mutation):
+                data = bytearray(self.linked(unit['id']))
+                offset = self.symbol_offset(data, '_vt.Q28EAGLAnim9FnDeltaF1')
+                if mutation == 'name':
+                    struct.pack_into('>I', data, offset, 0)
+                elif mutation == 'size':
+                    struct.pack_into('>I', data, offset + 8, 180)
+                elif mutation == 'binding':
+                    data[offset + 12] = 0x21  # Weak after linking, unlike the original.
+                else:
+                    struct.pack_into('>I', data, offset + 4, 0x802ecb7c)
+                with self.assertRaisesRegex(ValueError, 'Native vtable object ownership differs'):
+                    verify_unit(self.original, Elf32(data), unit)
 
     def symbol_offset(self, data, name):
         elf = Elf32(data)
@@ -225,6 +251,17 @@ class SourceVerification(unittest.TestCase):
                     run(command, directory, directory / f'{i}.log')
                 with self.assertRaisesRegex(ValueError, 'Loaded bytes changed'):
                     verify_load_image(self.original, (directory / 'damaged.dol').read_bytes())
+
+
+class SectionMappingPolicy(unittest.TestCase):
+    def test_only_named_native_vtables_can_map_to_data(self):
+        section = dict(name='.gnu.linkonce.d._vt.Q28EAGLAnim9FnDeltaF1', target_name='.data')
+        self.assertEqual(target_section(section), '.data')
+        for changes in [dict(target_name='.text'), dict(target_name='.bss'), dict(type=8),
+                        dict(name='.gnu.linkonce.d.arbitrary'),
+                        dict(name='.gnu.linkonce.t._vt.Q28EAGLAnim9FnDeltaF1')]:
+            with self.subTest(changes=changes), self.assertRaisesRegex(ValueError, 'Unsupported source section mapping'):
+                target_section(dict(section, **changes))
 
 
 if __name__ == '__main__':

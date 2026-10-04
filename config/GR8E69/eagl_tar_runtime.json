@@ -1,0 +1,78 @@
+{
+  "id": "eagl_tar_runtime",
+  "source": "src/eagl/eagl_tar_runtime.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801df394",
+      "size": 3648
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bd488",
+      "size": 620
+    }
+  ],
+  "functions": [
+    {
+      "name": "RuntimeAllocTARConstructor__12EAGLInternalPCcPQ24EAGL13DynamicLoaderRiRbT1",
+      "address": "0x801df394",
+      "size": 3648,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "strlen": "0x80266b70",
+    "_12EAGLInternal.EAGLMalloc": "0x802d2e08",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c",
+    "strcpy": "0x80266a7c",
+    "MAXINT__Q212EAGLInternal14PropertyParserii": "0x80292344",
+    "SkipDelims__Q212EAGLInternal14PropertyParserPc": "0x80292358",
+    "FindTokenEnd__Q212EAGLInternal14PropertyParserPcRPc": "0x802923bc",
+    "strcmp": "0x802669b4",
+    "atoi": "0x80264f14",
+    "_Q24EAGL13DynamicLoader.gSymbolPool": "0x803ff390",
+    "Search__Q24EAGL10SymbolPoolPCcRb": "0x801eb418",
+    "_Q24EAGL13DynamicLoader.ShapeType": "0x802be27c",
+    "GetAddr__CQ24EAGL13DynamicLoaderPCcT1RPv": "0x801ea670",
+    "_12EAGLInternal.failed_shape": "0x802ce360",
+    "__Q24EAGL3TARPC5SHAPE": "0x801e09cc",
+    "GetShape__CQ24EAGL3TAR": "0x801e0b64",
+    "SHAPE_clut": "0x80206a74",
+    "SwapClut__Q24EAGL3TARPC5SHAPE": "0x801e0dd8",
+    "strncmp": "0x80266cf4",
+    "SetLODBiasClamp__Q24EAGL12TARExtensionb": "0x801e0d70",
+    "PrintMessage__4EAGLiPCce": "0x801e8890",
+    "SetClampModeU__Q24EAGL12TARExtensionQ24EAGL11GCClampMode": "0x801e0bdc",
+    "SetClampModeV__Q24EAGL12TARExtensionQ24EAGL11GCClampMode": "0x801e0c30",
+    "SetClampMode__Q24EAGL3TARQ24EAGL9ClampMode": "0x801e0b6c",
+    "SetFilterMode__Q24EAGL3TARQ24EAGL10FilterMode": "0x801e0d78",
+    "atof": "0x80264ef0",
+    "SetMIPMAPLODBias__Q24EAGL3TARf": "0x801e0d94",
+    "SetMIPMAPMode__Q24EAGL3TARQ24EAGL10MIPMAPMode": "0x801e0dcc",
+    "__Q24EAGL3TARRCQ24EAGL3TAR": "0x801e0a44"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "local_externals": [
+    "_12EAGLInternal.failed_shape"
+  ],
+  "original_file_index": 2632,
+  "original_file": "tar.cpp"
+}

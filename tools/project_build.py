@@ -41,13 +41,31 @@ def object_record(symbol):
 
 
 def target_section(section):
-    """Permit explicit read-only input subsections, never remapped code or BSS."""
+    """Permit read-only subsections and named native SN vtables, never code/BSS."""
     name = section["name"]
     target = section.get("target_name", name)
-    if target != name and (target != ".rodata" or not name.startswith(".rodata.")
-                           or section.get("type", 1) != 1):
+    readonly = target == ".rodata" and name.startswith(".rodata.")
+    vtable = target == ".data" and re.fullmatch(r"\.gnu\.linkonce\.d\._vt\.[A-Za-z0-9_]+", name)
+    if target != name and (not (readonly or vtable) or section.get("type", 1) != 1):
         raise ValueError("Unsupported source section mapping")
     return target
+
+
+def check_vtable_storage(elf, section, address, binding):
+    """A linkonce mapping must own exactly one complete, named compiler vtable."""
+    name = section["name"].removeprefix(".gnu.linkonce.d.")
+    objects = [s for s in elf.symbols() if s["name"] == name and s["section"]]
+    if (len(objects) != 1 or objects[0]["type"] != 1
+            or objects[0]["address"] != address or objects[0]["size"] != section["size"]
+            or objects[0]["binding"] not in binding):
+        raise ValueError("Native vtable object ownership differs")
+    overlapping = [s for s in elf.symbols() if s["size"] and s["type"] in (0, 1)
+                   and s["section"] == objects[0]["section"]
+                   and s["address"] < address + section["size"]
+                   and address < s["address"] + s["size"]]
+    if overlapping != objects:
+        raise ValueError("Native vtable has overlapping object definitions")
+    return objects[0]
 
 
 def validate_units(original, units):
@@ -95,6 +113,10 @@ def validate_units(original, units):
                        s["address"] <= address < address + size <= s["address"] + s["size"]]
             if len(matches) != 1:
                 raise ValueError("Source section is outside the original section")
+            if section["name"].startswith(".gnu.linkonce.d."):
+                obj = check_vtable_storage(original, section, address, (1, 2))
+                if obj["section"] != matches[0]["index"]:
+                    raise ValueError("Native vtable belongs to another section")
             intervals.append((address, address + size, unit["id"], section["name"]))
         for name, address in unit["externals"].items():
             resolve_external(original, unit, name)
@@ -144,6 +166,10 @@ def validate_object(obj, unit):
         actual = output[section["name"]]
         if actual["type"] != section.get("type", 1) or (section["name"] != ".text" and actual["size"] != section["size"]):
             raise ValueError("Compiler data layout differs from manifest")
+        if section["name"].startswith(".gnu.linkonce.d."):
+            obj_symbol = check_vtable_storage(obj, section, 0, (2,))
+            if actual["flags"] != 3 or obj_symbol["section"] != actual["index"]:
+                raise ValueError("Native vtable compiler section differs")
     absent = set(unit["undefined_in_discarded_code"])
     undefined = {s["name"] for s in symbols if s["binding"] and not s["section"] and s["name"]}
     if undefined != set(unit["externals"]) | absent:
@@ -205,6 +231,11 @@ def verify_unit(original, linked, unit):
         target = next(s for s in original.sections if s["name"] == target_section(manifest_section))
         if section["type"] != target["type"] or section["flags"] != target["flags"]:
             raise ValueError("Linked source section flags or type differ")
+        if section["name"].startswith(".gnu.linkonce.d."):
+            original_object = check_vtable_storage(original, manifest_section, section["address"], (1, 2))
+            obj = check_vtable_storage(linked, manifest_section, section["address"], (original_object["binding"],))
+            if obj["section"] != section["index"]:
+                raise ValueError("Native vtable linked section differs")
         if section["type"] == 8:
             # Zeroes alone cannot verify BSS ownership. Require the original
             # named objects, sizes and addresses, scoped by source-file symbols.

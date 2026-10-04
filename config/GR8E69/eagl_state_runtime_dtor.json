@@ -1,0 +1,40 @@
+{
+  "id": "eagl_state_runtime_dtor",
+  "source": "src/eagl/eagl_state_runtime_dtor.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801df0e8",
+      "size": 44
+    }
+  ],
+  "functions": [
+    {
+      "name": "RuntimeAllocGeoPrimStateDestructor__12EAGLInternalPvi",
+      "address": "0x801df0e8",
+      "size": 44,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_._Q24EAGL12GeoPrimState": "0x801df144"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -21,12 +21,12 @@
     {
       "name": ".text",
       "address": "0x801e8964",
-      "size": 1632
+      "size": 2696
     },
     {
       "name": ".rodata",
-      "address": "0x802bdd10",
-      "size": 1048
+      "address": "0x802bdd00",
+      "size": 1296
     }
   ],
   "functions": [
@@ -35,12 +35,32 @@
       "address": "0x801e8964",
       "size": 1632,
       "binding": 1
+    },
+    {
+      "name": "HandleDefaultStateProp__12EAGLInternalRQ24EAGL12GeoPrimStateRCQ212EAGLInternal8Property",
+      "address": "0x801e8fc4",
+      "size": 1064,
+      "binding": 1
     }
   ],
   "externals": {
     "strncmp": "0x80266cf4",
     "strcmp": "0x802669b4",
-    "PrintMessage__4EAGLiPCce": "0x801e8890"
+    "PrintMessage__4EAGLiPCce": "0x801e8890",
+    "SetPrimitiveType__Q24EAGL12GeoPrimStateQ24EAGL13PrimitiveType": "0x801df198",
+    "SetShading__Q24EAGL12GeoPrimStateQ24EAGL7Shading": "0x801df1d8",
+    "SetCullEnable__Q24EAGL12GeoPrimStateb": "0x801df1e0",
+    "SetTextureEnable__Q24EAGL12GeoPrimStateb": "0x801df228",
+    "SetTextureCoordType__Q24EAGL12GeoPrimStateQ24EAGL16TextureCoordType": "0x801df230",
+    "SetDepthTestMethod__Q24EAGL12GeoPrimStateQ24EAGL15DepthTestMethod": "0x801df1ec",
+    "SetTransparencyMethod__Q24EAGL12GeoPrimStateQ24EAGL18TransparencyMethod": "0x801df238",
+    "sscanf": "0x80263b1c",
+    "SetChromaColour__Q24EAGL12GeoPrimStateGQ24EAGL6Colour": "0x801df254",
+    "SetAlphaBlendMode__Q24EAGL12GeoPrimStateQ24EAGL14AlphaBlendMode": "0x801df1f8",
+    "SetAlphaTestEnable__Q24EAGL12GeoPrimStateb": "0x801df204",
+    "atoi": "0x80264f14",
+    "SetAlphaCompareValue__Q24EAGL12GeoPrimStatei": "0x801df210",
+    "SetAlphaTestMethod__Q24EAGL12GeoPrimStateQ24EAGL15AlphaTestMethod": "0x801df21c"
   },
   "discarded_functions": [],
   "undefined_in_discarded_code": []

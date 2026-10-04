@@ -1,0 +1,50 @@
+{
+  "id": "eagl_state_use",
+  "source": "src/eagl/eagl_state_use.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801dea70",
+      "size": 1056
+    }
+  ],
+  "functions": [
+    {
+      "name": "Use__CQ24EAGL21GeoPrimStateExtension",
+      "address": "0x801dea70",
+      "size": 1056,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_Q24EAGL21GeoPrimStateExtension.gStateInitialized": "0x802ce2c8",
+    "_Q24EAGL21GeoPrimStateExtension.gCurrentState": "0x802ce2f8",
+    "_Q24EAGL21GeoPrimStateExtension.gCullClockwise": "0x802ce2d0",
+    "_Q24EAGL21GeoPrimStateExtension.gZWritesEnable": "0x802ce2d4",
+    "GXSetCullMode": "0x8024526c",
+    "GXSetZMode": "0x8024873c",
+    "GXSetBlendMode": "0x80248690",
+    "GXSetZCompLoc": "0x80248770",
+    "GXSetAlphaCompare": "0x80247f04",
+    "GetAlphaWritesOverride__Q24EAGL26RenderContextExtensionBaseRQ24EAGL19AlphaWritesOverride": "0x801dd144",
+    "GXSetAlphaUpdate": "0x80248710"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

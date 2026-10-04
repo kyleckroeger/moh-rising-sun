@@ -1,0 +1,41 @@
+{
+  "id": "eagl_tar_shape_ctor",
+  "source": "src/eagl/eagl_tar_shape_ctor.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e09cc",
+      "size": 120
+    }
+  ],
+  "functions": [
+    {
+      "name": "__Q24EAGL3TARPC5SHAPE",
+      "address": "0x801e09cc",
+      "size": 120,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__Q24EAGL12TARExtension": "0x801e0fb0",
+    "InitFromShape__Q24EAGL12TARExtensionPC5SHAPE": "0x801e0408"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

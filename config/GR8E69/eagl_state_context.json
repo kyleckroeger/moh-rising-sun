@@ -1,0 +1,46 @@
+{
+  "id": "eagl_state_context",
+  "source": "src/eagl/eagl_state_context.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801de99c",
+      "size": 212
+    }
+  ],
+  "functions": [
+    {
+      "name": "SetRenderContextStates__Q24EAGL21GeoPrimStateExtension",
+      "address": "0x801de99c",
+      "size": 212,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_Q24EAGL21GeoPrimStateExtension.gCurrentState": "0x802ce2f8",
+    "_Q24EAGL21GeoPrimStateExtension.gCullClockwise": "0x802ce2d0",
+    "_Q24EAGL21GeoPrimStateExtension.gZWritesEnable": "0x802ce2d4",
+    "GXSetCullMode": "0x8024526c",
+    "GXSetZMode": "0x8024873c",
+    "_Q24EAGL21GeoPrimStateExtension.gColourWritesEnable": "0x802ce2d8",
+    "GXSetColorUpdate": "0x802486e4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

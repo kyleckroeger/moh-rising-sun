@@ -1,0 +1,40 @@
+{
+  "id": "eagl_state_attribute_format",
+  "source": "src/eagl/eagl_state_attribute_format.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801df348",
+      "size": 32
+    }
+  ],
+  "functions": [
+    {
+      "name": "SetAttributeFormat__Q24EAGL21GeoPrimStateExtensioni7_GXAttr10_GXCompCnt11_GXCompTypeUc",
+      "address": "0x801df348",
+      "size": 32,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GXSetVtxAttrFmt": "0x80243c30"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

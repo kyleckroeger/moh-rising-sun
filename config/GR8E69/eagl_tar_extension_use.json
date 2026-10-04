@@ -1,0 +1,45 @@
+{
+  "id": "eagl_tar_extension_use",
+  "source": "src/eagl/eagl_tar_extension_use.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e0c84",
+      "size": 236
+    }
+  ],
+  "functions": [
+    {
+      "name": "Use__Q24EAGL12TARExtension11_GXTexMapIDUi",
+      "address": "0x801e0c84",
+      "size": 236,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "SetTextureLODStates__Q24EAGL12TARExtension": "0x801e0664",
+    "GXLoadTlut": "0x80246e98",
+    "GXInitTexObjTlut": "0x80246c48",
+    "GXLoadTexObj": "0x80246e0c",
+    "SHAPE_clut": "0x80206a74",
+    "GXInitTlutObj": "0x80246e60"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

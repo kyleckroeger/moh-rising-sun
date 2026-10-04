@@ -1,0 +1,38 @@
+{
+  "id": "eagl_property_end",
+  "source": "src/eagl/eagl_property_end.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802923bc",
+      "size": 96
+    }
+  ],
+  "functions": [
+    {
+      "name": "FindTokenEnd__Q212EAGLInternal14PropertyParserPcRPc",
+      "address": "0x802923bc",
+      "size": 96,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

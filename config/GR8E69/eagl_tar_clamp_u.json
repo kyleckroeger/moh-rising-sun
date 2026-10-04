@@ -1,0 +1,40 @@
+{
+  "id": "eagl_tar_clamp_u",
+  "source": "src/eagl/eagl_tar_clamp_u.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e0bdc",
+      "size": 84
+    }
+  ],
+  "functions": [
+    {
+      "name": "SetClampModeU__Q24EAGL12TARExtensionQ24EAGL11GCClampMode",
+      "address": "0x801e0bdc",
+      "size": 84,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GXInitTexObjWrapMode": "0x80246c2c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

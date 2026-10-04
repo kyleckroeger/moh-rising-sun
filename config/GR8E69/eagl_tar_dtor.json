@@ -1,0 +1,41 @@
+{
+  "id": "eagl_tar_dtor",
+  "source": "src/eagl/eagl_tar_dtor.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e0ae0",
+      "size": 88
+    }
+  ],
+  "functions": [
+    {
+      "name": "_._Q24EAGL3TAR",
+      "address": "0x801e0ae0",
+      "size": 88,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_._Q24EAGL12TARExtension": "0x801e0ff0",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

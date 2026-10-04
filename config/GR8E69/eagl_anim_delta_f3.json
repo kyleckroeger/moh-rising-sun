@@ -1,0 +1,127 @@
+{
+  "id": "eagl_anim_delta_f3",
+  "source": "src/eagl_anim/FnDeltaF3.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801f16a4",
+      "size": 8624
+    },
+    {
+      "name": ".gnu.linkonce.d._vt.Q28EAGLAnim9FnDeltaF3",
+      "address": "0x802eca00",
+      "size": 184,
+      "target_name": ".data"
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802becd0",
+      "size": 80
+    }
+  ],
+  "functions": [
+    {
+      "name": "EvalSQT__Q28EAGLAnim9FnDeltaF3fPfPCQ28EAGLAnim8BoneMask",
+      "address": "0x801f16a4",
+      "size": 3420,
+      "binding": 1
+    },
+    {
+      "name": "InitBuffersAsRequired__Q28EAGLAnim9FnDeltaF3",
+      "address": "0x801f330c",
+      "size": 512,
+      "binding": 1
+    },
+    {
+      "name": "EvalSQTMask__Q28EAGLAnim9FnDeltaF3fPfPCQ28EAGLAnim8BoneMask",
+      "address": "0x801f2400",
+      "size": 3852,
+      "binding": 1
+    },
+    {
+      "name": "_._Q28EAGLAnim9FnDeltaF3",
+      "address": "0x801f3570",
+      "size": 212,
+      "binding": 1
+    },
+    {
+      "name": "Eval__Q28EAGLAnim9FnDeltaF3ffPf",
+      "address": "0x801f36bc",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "GetLength__CQ28EAGLAnim9FnDeltaF3Rf",
+      "address": "0x801f3658",
+      "size": 100,
+      "binding": 1
+    },
+    {
+      "name": "EvalVel2D__Q28EAGLAnim9FnDeltaF3fPf",
+      "address": "0x801f3734",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "EvalWeights__Q28EAGLAnim9FnDeltaF3fPf",
+      "address": "0x801f36f8",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "GetAnimatedBonesAux__Q28EAGLAnim9FnDeltaF3PQ28EAGLAnim8BoneMaskRiN22",
+      "address": "0x801f3770",
+      "size": 228,
+      "binding": 1
+    },
+    {
+      "name": "SetAnimMemoryMap__Q28EAGLAnim9FnDeltaF3PQ28EAGLAnim13AnimMemoryMap",
+      "address": "0x801f3644",
+      "size": 20,
+      "binding": 1
+    },
+    {
+      "name": "__Q28EAGLAnim9FnDeltaF3",
+      "address": "0x801f350c",
+      "size": 100,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_Q28EAGLAnim6FnAnim.gReverseDeltaSumEnabled": "0x802d330c",
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryManager": "0x802d2e5c",
+    "GetTargetCheckSum__CQ28EAGLAnim15FnAnimMemoryMap": "0x801ee22c",
+    "UseFPS__Q28EAGLAnim6FnAnimb": "0x801ee148",
+    "FindMatchTime__CQ28EAGLAnim6FnAnimRCQ28EAGLAnim15MatchPhaseInputRf": "0x801ee158",
+    "EvalPhase__Q28EAGLAnim6FnAnimfRQ28EAGLAnim10PhaseValue": "0x801ee168",
+    "EvalEvent__Q28EAGLAnim6FnAnimffPPQ28EAGLAnim12EventHandlerPv": "0x801ee178",
+    "EvalState__Q28EAGLAnim6FnAnimfPQ28EAGLAnim5State": "0x801ee188",
+    "EvalPose__Q28EAGLAnim6FnAnimfPCQ28EAGLAnim15PosePaletteBankPf": "0x801ee190",
+    "FindTime__Q28EAGLAnim6FnAnimRCQ28EAGLAnim9StateTestfRf": "0x801ee198",
+    "GetPhaseChan__Q28EAGLAnim6FnAnim": "0x801ee1a0",
+    "GetAttributes__CQ28EAGLAnim6FnAnim": "0x801ee1b8",
+    "GetAnimatedBones__Q28EAGLAnim6FnAnimPQ28EAGLAnim8BoneMaskRiN22": "0x801ee1a8",
+    "GetAnimMemoryMap__Q28EAGLAnim15FnAnimMemoryMap": "0x801ee21c",
+    "GetAnimMemoryMap__CQ28EAGLAnim15FnAnimMemoryMap": "0x801ee224",
+    "__Q28EAGLAnim15FnAnimMemoryMap": "0x801ee1c0",
+    "_._Q28EAGLAnim15FnAnimMemoryMap": "0x801ee1e0",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c",
+    "SetBone__Q28EAGLAnim8BoneMaskib": "0x801ede64"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

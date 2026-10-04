@@ -1,0 +1,40 @@
+{
+  "id": "eagl_state_ctor",
+  "source": "src/eagl/eagl_state_ctor.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801df114",
+      "size": 48
+    }
+  ],
+  "functions": [
+    {
+      "name": "__Q24EAGL12GeoPrimState",
+      "address": "0x801df114",
+      "size": 48,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__Q24EAGL21GeoPrimStateExtension": "0x801df25c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

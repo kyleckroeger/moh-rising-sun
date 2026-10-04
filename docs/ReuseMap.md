@@ -15,19 +15,21 @@ code/data and full-image verification establish accepted source coverage.
 | GCC runtime | [GCC 2.95.2](https://github.com/gcc-mirror/gcc/tree/releases/gcc-2.95.2/gcc) | 5,532 | Target ABI, configuration and private tables matter as much as function names. |
 | STLport | [STLport 4.5.3](https://sourceforge.net/projects/stlport/files/STLport%20archive/STLport%204/) | 71,452 | Six tree helpers and 186 container/algorithm instances match; scoped game-operation models support sorting, heaps and resource containers. The exact historical release remains unconfirmed. |
 | Network helpers and RSA MD5 | [SocketLibrary](https://github.com/Cuyler36/dolsocketlibrary/tree/e02356692695e64429dd70dc421a4a71a493e9c8), [NetworkBasePackage](https://github.com/Cuyler36/dolnetbp/tree/ba3846a83bf86505fe60e07aefe89e3e0ffc0e34) | 43,500 | Older transport, TCP output/timers, ICMP and PPP control join routing and diagnostics; unverified stack and driver code remains. The digest source is the RSA Data Security, Inc. MD5 Message-Digest Algorithm. |
+| EAGL animation (game code) | [NFS Most Wanted reconstruction](https://github.com/dbalatoni13/nfsmw/tree/1f2cdd7996791c81a580b3f7b36b44d4f9f6719c/src/Speed/Indep/Src/EAGL4Anim) | 15,012 | The older Rising Sun interfaces and layouts differ, but the attributed reference supports two complete delta decoders. Shared vtable and memory-map evidence can support additional formats. |
 
 These are separate, already accepted byte totals, not estimates of future gains.
 See the individual library evidence documents for exact scopes, provenance and licenses.
 Current combined coverage is recorded in the [verified snapshot](../progress/GR8E69.snapshot.json).
-The latest extension adds 21,284 library bytes and 3,668 game bytes across
-[sorting/resource containers](GameAlgorithms.md), [observers and the destruction
-queue](Observers.md), and [matrix routines](Matrix.md). The earlier
-[game-container extension](GameContainers.md) established the storage models
-used by part of this work.
-The [rendering reconstruction](Rendering.md) adds a shared TevStage layout,
-texture-coordinate cache interfaces, transform helpers, material and particle
-drawing paths, render dispatch and state-name lookup. Their common parameter-slot
-and FIFO models now support further work on lighting and startup routines.
+The [sorting/resource containers](GameAlgorithms.md), [observers and destruction
+queue](Observers.md), and [matrix routines](Matrix.md) build on the earlier
+[game-container storage models](GameContainers.md).
+The [rendering reconstruction](Rendering.md) establishes shared TevStage, state,
+property-parser and TAR interfaces alongside transform, material and particle
+drawing paths. Runtime constructors now connect the property parser to state
+and texture objects. The [animation reconstruction](Animation.md) adds two complete
+scalar/vector delta decoders and a checked common virtual interface. These game
+code matches demonstrate reuse from another EA reconstruction without assuming
+its newer headers describe Rising Sun unchanged.
 Runtime remains untested.
 
 ## Ranked research queue
@@ -36,12 +38,13 @@ This is a qualitative work order, not a prediction of hours or a promise of matc
 
 | Priority | Candidate | Evidence / size | Next useful step |
 | --- | --- | --- | --- |
-| 1 | EAGL material families | Unlit mesh/CPT blocks, falloff blocks and outer render functions now match | Extend the remaining lighting blocks, startup registration and PCode interpreter using the established interfaces. See [rendering evidence](Rendering.md). |
-| 2 | Remaining STL instances | Remaining custom values, anonymous-namespace containers and string support | Builtin/pointer containers and the reviewed game-storage subset now match. Recover the remaining custom comparators and value representations before extending coverage. This includes game routines, not just reusable library code. |
-| 3 | `powf` | 1,780 bytes; the research candidate differs in three indexed-load operand encodings | Further source/flag probes leave the same difference. A compiler word-size address-canonicalization difference is a research lead, not yet a proven cause; do not patch instructions. |
-| 4 | SN `add_separators` | 392 bytes; its ABI and formatter callers now match | Finish the helper's C reconstruction and register allocation; it remains context. |
-| 5 | Older network stack | Twenty accepted fragments establish older transport and PPP layouts; the Ethernet driver and unretained stack routines still differ | Compare protocol structures and behavior with original call sites, keeping retained code and storage complete. |
-| 6 | Shared game math, strings and allocation | `MathFun.cpp` has 1,268 unmatched bytes; string/allocation groups are also mapped | Recover common types, allocator contracts and constant ownership, then work through callers. |
+| 1 | EAGL animation formats | Scalar/vector delta decoders now match using an attributed public reference and a shared base interface | Compare quaternion delta and remaining formats against original layouts and complete generated vtables/constants. See [animation evidence](Animation.md). |
+| 2 | EAGL material families | Unlit mesh/CPT blocks, state and texture runtime constructors now match | Extend the remaining lighting blocks, startup registration and PCode interpreter using the established interfaces. See [rendering evidence](Rendering.md). |
+| 3 | Remaining STL instances | Remaining custom values, anonymous-namespace containers and string support | Builtin/pointer containers and the reviewed game-storage subset now match. Recover the remaining custom comparators and value representations before extending coverage. This includes game routines, not just reusable library code. |
+| 4 | `powf` | 1,780 bytes; the research candidate differs in three indexed-load operand encodings | Further source/flag probes leave the same difference. A compiler word-size address-canonicalization difference is a research lead, not yet a proven cause; do not patch instructions. |
+| 5 | SN `add_separators` | 392 bytes; its ABI and formatter callers now match | Finish the helper's C reconstruction and register allocation; it remains context. |
+| 6 | Older network stack | Twenty accepted fragments establish older transport and PPP layouts; the Ethernet driver and unretained stack routines still differ | Compare protocol structures and behavior with original call sites, keeping retained code and storage complete. |
+| 7 | Shared game math, strings and allocation | `MathFun.cpp` has 1,268 unmatched bytes; string/allocation groups are also mapped | Recover common types, allocator contracts and constant ownership, then work through callers. |
 
 The verified STL container profile now covers builtin, string, pointer and
 [scoped game-storage instances](GameContainers.md). The exact original release and broader configurations remain

@@ -1,0 +1,38 @@
+{
+  "id": "eagl_state_property_alpha_method",
+  "source": "src/eagl/eagl_state_property_alpha_method.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801df21c",
+      "size": 12
+    }
+  ],
+  "functions": [
+    {
+      "name": "SetAlphaTestMethod__Q24EAGL12GeoPrimStateQ24EAGL15AlphaTestMethod",
+      "address": "0x801df21c",
+      "size": 12,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

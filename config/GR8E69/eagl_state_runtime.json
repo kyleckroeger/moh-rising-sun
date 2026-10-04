@@ -1,0 +1,63 @@
+{
+  "id": "eagl_state_runtime",
+  "source": "src/eagl/eagl_state_runtime.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801dd9bc",
+      "size": 1600
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bcd20",
+      "size": 168
+    }
+  ],
+  "functions": [
+    {
+      "name": "RuntimeAllocGeoPrimStateConstructor__12EAGLInternalPCcPQ24EAGL13DynamicLoaderRiRbT1",
+      "address": "0x801dd9bc",
+      "size": 1600,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "strlen": "0x80266b70",
+    "_12EAGLInternal.EAGLMalloc": "0x802d2e08",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c",
+    "strcpy": "0x80266a7c",
+    "MAXINT__Q212EAGLInternal14PropertyParserii": "0x80292344",
+    "SkipDelims__Q212EAGLInternal14PropertyParserPc": "0x80292358",
+    "FindTokenEnd__Q212EAGLInternal14PropertyParserPcRPc": "0x802923bc",
+    "__Q24EAGL12GeoPrimState": "0x801df114",
+    "strcmp": "0x802669b4",
+    "strncmp": "0x80266cf4",
+    "SetZWritesEnable__Q24EAGL21GeoPrimStateExtensionb": "0x801df2d0",
+    "StringToCommonStateEnum__12EAGLInternalPCc": "0x801e8964",
+    "SetCullDirection__Q24EAGL21GeoPrimStateExtensionQ24EAGL13CullDirection": "0x801df2f0",
+    "StringToPlatformStateEnum__12EAGLInternalPCc": "0x801ddffc",
+    "SetBlendMode__Q24EAGL21GeoPrimStateExtension12_GXBlendMode14_GXBlendFactorT210_GXLogicOp": "0x801df310",
+    "atoi": "0x80264f14",
+    "SetCurrentVertex__Q24EAGL21GeoPrimStateExtensionUiUi": "0x801dee90",
+    "SetAttributeFormat__Q24EAGL21GeoPrimStateExtensioni7_GXAttr10_GXCompCnt11_GXCompTypeUc": "0x801df348",
+    "HandleDefaultStateProp__12EAGLInternalRQ24EAGL12GeoPrimStateRCQ212EAGLInternal8Property": "0x801e8fc4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}
