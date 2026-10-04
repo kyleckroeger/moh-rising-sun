@@ -22,8 +22,8 @@ The original's 9,883 function-symbol records are accounted for by 1,033 accepted
 records and 8,850 unfinished records. These are symbol counts, not a claim that
 there are 9,883 independent function bodies.
 
-The current verified snapshot has **334 accepted units/fragments (356,988 bytes)**
-and **708 grey groups (2,135,044 bytes)**. Its 1,355 accepted and 8,528 remaining
+The current verified snapshot has **379 accepted units/fragments (373,836 bytes)**
+and **717 grey groups (2,118,196 bytes)**. Its 1,400 accepted and 8,483 remaining
 function-symbol records still account for all 9,883 records. Grey groups can shrink, split or
 disappear as source is accepted. See the [reuse index](ReuseMap.md) for ways to turn
 this coverage map into productive work, and the [dependency map](Dependencies.md)

@@ -11,10 +11,11 @@
     "Vendored excerpts preserve node/member declarations, swap and six Rb_global algorithm bodies.",
     "Configuration macros are expanded for the supported namespace/calling convention; unrelated declarations are omitted.",
     "Explicit-instantiation translation units are project integration files, not recovered original file boundaries.",
-    "The 86 container fragments use only builtin, STLport and pointer types; game pointees are forward declarations.",
+    "The first 86 container fragments use only builtin, STLport and pointer types; game pointees are forward declarations.",
     "Native new keeps bad_alloc::what as a declaration, without its unused inline body/string; no retained instantiation calls it. This is an integration boundary, not recovered original header text.",
     "All container-generated allocated output is text, checked completely. No unused generated data is dropped.",
-    "The selected profile disables exceptions, iostreams, wide-character facilities and threading; it uses new/delete allocation and the _STL namespace. Other profiles remain unverified."
+    "The selected profile disables exceptions, iostreams, wide-character facilities and threading; it uses new/delete allocation and the _STL namespace. Other profiles remain unverified.",
+    "A further 44 container fragments use scoped game storage declarations and two recovered comparator behaviors; see docs/GameContainers.md for exact evidence, unknowns and restrictions. The separate PathFindingNetwork copy constructor is reconstructed game code."
   ],
   "container_headers": [
     {
@@ -93,6 +94,12 @@
       "path": "include/stlport-containers/iosfwd",
       "upstream_path": "stlport/iosfwd",
       "upstream_sha256": "e294d510739a033a801afdbe771e9e9f2e797ffb470d2320150a456178cb162c",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/list",
+      "upstream_path": "stlport/list",
+      "upstream_sha256": "d5e9b90b7c0df63bac4675be24768312547180226d2d6df450dfd76e4d6a0d76",
       "modified": false
     },
     {
@@ -198,6 +205,12 @@
       "modified": false
     },
     {
+      "path": "include/stlport-containers/stl/_function.h",
+      "upstream_path": "stlport/stl/_function.h",
+      "upstream_sha256": "04bc20640953e11f064dbf6cda25dfc09db73b3425f5ad44fff82ca7e4da13db",
+      "modified": false
+    },
+    {
       "path": "include/stlport-containers/stl/_function_base.h",
       "upstream_path": "stlport/stl/_function_base.h",
       "upstream_sha256": "459a911033725fb0f7b2737c6ae00fb82f9810d4cb301d54fc120e46b5424003",
@@ -219,6 +232,18 @@
       "path": "include/stlport-containers/stl/_iterator_base.h",
       "upstream_path": "stlport/stl/_iterator_base.h",
       "upstream_sha256": "d61032f9f00ca07b29617bda5bc541311f412a29f4b6f188cc74be8c5e972ede",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_list.c",
+      "upstream_path": "stlport/stl/_list.c",
+      "upstream_sha256": "43210fee6f1db33e44a3f336a6c649c9f1881d9b1f225653473247da07e400df",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_list.h",
+      "upstream_path": "stlport/stl/_list.h",
+      "upstream_sha256": "cdfa89dc46c6f38bfe35a80913abd82d7675978dfb68beec641946ba877ee6c5",
       "modified": false
     },
     {

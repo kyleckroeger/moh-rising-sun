@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 356988,
+    "matching_code_bytes": 373836,
     "total_executable_code_bytes": 2492032,
-    "percent": 14.325177204787098,
+    "percent": 15.001251990343624,
     "categories": {
-      "reconstructed_game": 2648,
-      "restored_library": 354340
+      "reconstructed_game": 2904,
+      "restored_library": 370932
     },
-    "matching_functions": 1355
+    "matching_functions": 1400
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -99,6 +99,7 @@
     "config/GR8E69/PPP.json": "cd7b2aae1d107a9a3f4d9eb3f33f295b613156740f421bdbd6559fc8490b9dd4",
     "config/GR8E69/Pad.json": "d3a33fb4a73c88e7fb5f39734aec8ef4cbd45b6cbaa56823bce13b8a6146f6e6",
     "config/GR8E69/Padclamp.json": "5997107cb29ce7a712556571acac3dcb64731a599cb5336e623ba3f3d309317a",
+    "config/GR8E69/PathFindingNetworkCopy.json": "37371ed68eae9342babde4ae9934aaa9bf8890a58dd9d140576b1f3743e18a93",
     "config/GR8E69/SIBios.json": "8ca7ce9de6c9151af924fc0bfd8dab7f75f282ba6287ea302f56fc4d240f0732",
     "config/GR8E69/SISamplingRate.json": "0ab6d8244a3907d59dfcc33be57c140b59fbbee9440129b55fc8be80adbc2dd1",
     "config/GR8E69/SocketAPI.json": "a349662c6cc8b00ea898c6ce6124664d8dc2afd4766e91cc9f731bb473afd94e",
@@ -261,7 +262,7 @@
     "config/GR8E69/newlib_wctomb_r.json": "fc59b588e63f3a1f302300e1257e93abec1acb4041e2ef289f02d12774f5ae70",
     "config/GR8E69/newlib_writer.json": "cf7eab1eebe3bf4b04912e61b9ce9a2c7c4191ebecc610aa267f69bdabe6512f",
     "config/GR8E69/newlib_wsetup.json": "61dd8c7f513073a2f4c355ee89bdcf2d300345cd74c632de1997cba9f3e84020",
-    "config/GR8E69/project.json": "9d64963400d8543e168d4d193040268d55192093fb0b35e1231aeb68f023db68",
+    "config/GR8E69/project.json": "1f3224413aabd01d2aa0fb934dad4d0ca7aeaed60eb13230e0d77a962a5a8a00",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/stl_80278d64.json": "04dc314cda8644a93aa797638a2f5a3e946a7bc954506e9bb2be731800b7646a",
     "config/GR8E69/stl_80278ea0.json": "784844808dbfcbe4c0b2a360cdd8a5cd6c1115260192d1fa5e52d4a7ae8c4ebf",
@@ -271,10 +272,32 @@
     "config/GR8E69/stl_80279e58.json": "51cfdffc3fb49584e6ffa136235ac135aa20e6bc2fd8a2801cbff790f07f072b",
     "config/GR8E69/stl_80279f70.json": "e974c1801e25373268cd579fee2944469587d91b211e22a23ac067bf60fc113f",
     "config/GR8E69/stl_8027a234.json": "88010af12e42926f310e39d86bb72511bfa92d7daeea08e5f71f5d543eb806a6",
+    "config/GR8E69/stl_8027a290.json": "3d88801378afc0b2cfbe5e34b5a0daf037e4acea7acef628ddb69b9f5c9f5b35",
+    "config/GR8E69/stl_8027a438.json": "0907faf8dd404fe80f64a7454f58b793c134c68a36500858cafec2d1f1308c81",
+    "config/GR8E69/stl_8027a56c.json": "0c813c8dcf6e38407dd928af62eda17770d974c81ca2dec5f42f1ca8f5ae4560",
+    "config/GR8E69/stl_8027a684.json": "054c8a2646cc2cd043eeff303ab240e4c35cc1582f078e685f2763126ab27e9f",
     "config/GR8E69/stl_8027a8ec.json": "e7fa255504ee83378cf37bcfb817267da7a50416576ceeeeedf5a0ad033250f7",
     "config/GR8E69/stl_8027ab0c.json": "89dda7907131be7f38f4ace5a1eb915f5cbe421071c0791c76f93b9096c9d1b5",
+    "config/GR8E69/stl_8027ab64.json": "ed9d96c5c2a00d9cd87d391e84fedd56e53c23ecfe8a3202dcf5d5e6546e3fca",
     "config/GR8E69/stl_8027aca4.json": "bd27e5a07c9d1d72fa7125ee9ac6d6a76112fce586f0f8c30de3e5dcf2bc70b1",
     "config/GR8E69/stl_8027aefc.json": "3c35c3c3b4a93568b650cecfcdc77a6ef2f39bb499741305cdf6359b47c389c0",
+    "config/GR8E69/stl_8027b294.json": "794873ee373a03a60f6ada4861530861b7f8399028ecdfe8d67415b2d056357c",
+    "config/GR8E69/stl_8027d258.json": "59713c0aca91d14cf07fb9afe2f9f345ee4354b01ced286905d54599736fa25c",
+    "config/GR8E69/stl_8027d2b0.json": "b850c3cc6e40846da689b315535084c0f85f8d2714b593e4d22af7895a64c3b3",
+    "config/GR8E69/stl_8027d308.json": "039d7ede889c8048dff1e13ecc06ce0efafef8f9112201fbe5642ab4149be4d0",
+    "config/GR8E69/stl_8027d460.json": "771a6a2af0a092a114a8ec79713901d05f3e794a2726eb038e8d3af1aaff4da1",
+    "config/GR8E69/stl_8027d574.json": "516156ded24a5d479a2936aa0f0a56131567002b12535b317e69776f60724c35",
+    "config/GR8E69/stl_8027d80c.json": "227241b3ca81656415e010a6723f57f52cd88fd86f7766e33577967a32dda863",
+    "config/GR8E69/stl_8027d980.json": "d6ea008569b50c04644f767749d3f190df71e82070d3d83794b6e97d7f40ab0c",
+    "config/GR8E69/stl_8027da98.json": "8cd84ba4af08389357f0e3619a69694a3da0928b7fd672a90bb5bfb1f7e53ab2",
+    "config/GR8E69/stl_8027dd88.json": "5a48d876b2ff661bb6f57c8923547fe8bc40099300326b303f46c712a346ced4",
+    "config/GR8E69/stl_8027ddf0.json": "fbc389eaeb19ef46cdbce9712867ef4ed248d043a7005a1c32ada22297d51dac",
+    "config/GR8E69/stl_8027e3c0.json": "72263600b382c4d5c24a113e0ff53e328040fd98fe41a863800c01c57fbd0339",
+    "config/GR8E69/stl_8027e554.json": "a8924650fca9259a52c13b4bdc4f9ea9ceeed1ee56ed5e7742328cb600a1ad5b",
+    "config/GR8E69/stl_8027e70c.json": "8fc972fb24250b0325d5a701e8ef915e3625c0d7614e6d47486bef906348114a",
+    "config/GR8E69/stl_8027ec64.json": "e3d12369eca645b2eaf8d16361ce816e54a59369d9fb22660ffcc2a9030773a6",
+    "config/GR8E69/stl_8027ede8.json": "917c8efab95c6a33985d6921dc84cb11a60fa8c5c9651fc4699581b3d19d4ac0",
+    "config/GR8E69/stl_8027efa0.json": "90772b155d18cd524478cdbf534c00bb77e9661a7ded143e73bf7eff90d01285",
     "config/GR8E69/stl_8027f89c.json": "df4fa0676f972054b257c87fbc91ddbf069b8dfb30bd64624f69cb48d6423058",
     "config/GR8E69/stl_8027f984.json": "67510bcd9c065e5428fccc2d855f26babd87d1d1c15f2e3b2c3c92b2bbf66da1",
     "config/GR8E69/stl_8027f9ec.json": "ca9b64f87ae02c94d2d8b50f1dd0137ffa43498cd02fab2760729633a4b9ea1f",
@@ -303,6 +326,19 @@
     "config/GR8E69/stl_80285020.json": "a2a7422cf044cad50fc573ee82342fefddb6067bba520cfcfa51fad709535e99",
     "config/GR8E69/stl_80285138.json": "982219d85ee7b1dc51c16611f230d71f2def0ffed786ef0ed19fb346ad752e90",
     "config/GR8E69/stl_802853a4.json": "43a481098f96636eef7d37dd096f380ffd075864d90ad2781817c2464252be12",
+    "config/GR8E69/stl_80285510.json": "ae4793eedc1cabd10b55b3b39187887846338a01e5c6e8e9461761b8560f6670",
+    "config/GR8E69/stl_80285578.json": "d7a8f09804c5527976c3e0996a1cc8deb438ca836e3c12b30d8f308f491034f2",
+    "config/GR8E69/stl_802856a4.json": "472dfff623085f10992aecc19f763c5e31a184ff630c623bb71d2125143b2ee7",
+    "config/GR8E69/stl_802857bc.json": "eec4949837065c2edcfd0a88d3142054abd391ec38a3a985cc1cb1212fdbb995",
+    "config/GR8E69/stl_80285a1c.json": "ef8d433bf49d7afc42fabdb1da0f71f7bbf36c749290c836f0f1733c1c9a4fd5",
+    "config/GR8E69/stl_80285c14.json": "f36e83f1a3c51b1fd42a2121da0ffc0900d725d742e4928fd51e97b2d3ce048b",
+    "config/GR8E69/stl_80285ec8.json": "6dbc98bb3ffb5d877f4edbc5e565a15002981242c469ac8edec4ae191add9c1a",
+    "config/GR8E69/stl_80285f20.json": "2717a688f25d3bf580acec33fb2ae80f9be000054f4b653adafcc43b9a60ace2",
+    "config/GR8E69/stl_80286074.json": "b330df43ae2f9d10206121add91bc55cf84b25887bd0a90297231400bf4fb748",
+    "config/GR8E69/stl_8028618c.json": "9ce3a3e83231cb22b679f13f94bdd08b4b8a61da8dc8e3ade189f80da19d1913",
+    "config/GR8E69/stl_802866cc.json": "8489e005ffa8f46226dac5259215649215f6c2f75db9b3e1895778beadff5a1d",
+    "config/GR8E69/stl_80286724.json": "7819f2a3ddd6d34a8962479e2975b6a40159dcc2b22278a9bd3503e9d2034c10",
+    "config/GR8E69/stl_80286858.json": "b2e72ddc9e22192771de68b73f22b37664971608f8bfdc4b9fd620a0b077c1bf",
     "config/GR8E69/stl_802871ac.json": "ada8695c4f1b400cbed475566a2a2cb0f513c61490c0cb508f66c7e83651fe31",
     "config/GR8E69/stl_80287330.json": "21ea9a862417987887a9316cb967fd0e2ad0be5dab65015ee143a14be466edad",
     "config/GR8E69/stl_802874e8.json": "4a3486b6b02f95bdba4c6707429f9e5924257aedb890e174d0355dba688af0b8",
@@ -311,6 +347,10 @@
     "config/GR8E69/stl_80287c2c.json": "040e84062de941d4155ab936565234a47491e7d431d631205d5502c327ca3380",
     "config/GR8E69/stl_80287de4.json": "a805e85a2acbf3c2a050d59595529a9e3820f6c0f8b69b168350dcf04e1bb0fb",
     "config/GR8E69/stl_8028833c.json": "608caded3f8ffd495e89c37c195c88028f7afcd24689a7bd2ce3aaea4312f566",
+    "config/GR8E69/stl_80288ee8.json": "2bb51dadfedb56500e4b418dbfd4f9f07c28cea06436c8b5a7a9d1dbf639f996",
+    "config/GR8E69/stl_80289014.json": "ae2eab6600cc81dd19963e07f0c92f746c0a98a8bee53c3aef335f13c3c6c47d",
+    "config/GR8E69/stl_8028912c.json": "243341fa33c08d15a9a4e0ecc908fbd9b9836b8a4238b54a19643831fb64ec43",
+    "config/GR8E69/stl_80289398.json": "e8fb230a5febaef0e2d32db7ce4fb5a321dd7573b4f3232e584ea81a6dd2a1d7",
     "config/GR8E69/stl_8028a120.json": "d3e3a58cd4d71e9405ead1536be86da1c92347923dff3681b2556338af5dea84",
     "config/GR8E69/stl_8028a178.json": "8a6f0e860b72b9b016002058e098676d882c055d5c36365e26dfc5dd7b4bced2",
     "config/GR8E69/stl_8028a29c.json": "4f7b83342a41a6f6a3b197cbb72d90e9f015a6688995a4304d26488d4dcccc30",
@@ -335,6 +375,11 @@
     "config/GR8E69/stl_8028d56c.json": "539fade7782ee37ab505d47ac134d3d15e7b5e8d1cad334b8256b8bc064d6a52",
     "config/GR8E69/stl_8028d6f0.json": "b8be7bbfc3d762632daba3e307e8305cc6cee736a9e4191f6b918efc86139d37",
     "config/GR8E69/stl_8028d8a8.json": "441ed434f8332c2fe38caac44ce901a440b4993cfb1e8cb03fa6698819e27cc6",
+    "config/GR8E69/stl_8028e20c.json": "134b7cf6439be8ca4143463e7001f20351051e74aa5ff686a9776b394f4a4253",
+    "config/GR8E69/stl_8028f940.json": "b22b8c5b77825759f87d9753d9d7a0eb6e35c2ff28445be9d859c2d48f34e4bb",
+    "config/GR8E69/stl_8028fb9c.json": "8b3a6af090fa8359ff40dae0ad0afaa6920f688960286058b730340a35bbbf6e",
+    "config/GR8E69/stl_8028fcb4.json": "b26cb9817e91069f5719b7c3bfbccf6a9c33c64190bb1f42f85c1fcef6fd813f",
+    "config/GR8E69/stl_8028ff20.json": "f12eb7b9d994a9add94459c450857f80eb5a8c5426eb3f51f2bcc1b36bdf1bee",
     "config/GR8E69/stl_8028fff4.json": "5955a2ec2c46e12ae196863507f99a975267b4dfbb251f337b1df287136b1297",
     "config/GR8E69/stl_80290190.json": "998b8144fb2f3fc7a7dbc407edd33733f8d5d39c1c7f63ed82d206db980ab9da",
     "config/GR8E69/stl_80290230.json": "4f809b9c90578a9b218af16015dbd01aab28f3b9151f90ceebc91ff9730cc16a",
@@ -355,7 +400,7 @@
     "config/GR8E69/stl_rebalance_for_erase.json": "16baeb4a296871c88d1582144f8445657bffd5ae1a2d5bf7ac9c35c295d79c08",
     "config/GR8E69/stl_rotate_left.json": "14daf40841170d521edd37a78531ce10667200dfcbc76eaf286ed49124bc1255",
     "config/GR8E69/stl_rotate_right.json": "895b2ae6eee255755cd10e083eae7fb1b490dcb36d758be10918b357bb82f212",
-    "config/GR8E69/stlport-source.json": "78f45740c0a1e002712ae7b31bf7fd9f943d50fb58bdfbcdd4347ba1bd2831d0",
+    "config/GR8E69/stlport-source.json": "bb9129add87a7e6ac492d92a133daf6994a76c54e351f8c73ec0afdd3996402a",
     "config/GR8E69/sys_memory_operators.json": "593181060ad84668f2fdb91654d17a410ae9aaaceec9493f698e682fe683b96b",
     "config/GR8E69/target.json": "48fb9548419f5549d49ebba1794d3193398e58c37c0d15569e6ed1810d8adb8f",
     "config/GR8E69/vi.json": "dd95046e01890cb33bdb0006c936ff713366f21401f267c9cf268a70ac8b8833",
@@ -518,6 +563,7 @@
     "include/dolphin-sdk/libc/wchar.h": "eb9359b3f8c80e980c291b31b08b913739a9fda753a2a5007f8bf2bf3c646439",
     "include/dolphin-sdk/macros.inc": "4e92f656bb511fbb45d66081291371c47ceba7bce9c55f86871116203cf38a46",
     "include/game/CMatrix.h": "cbcb1dacc9be379c643b0d10fcc958b657fdddbc16adcb11d3b433f11bf6c9e7",
+    "include/game-containers/ContainerTypes.h": "19425369e4b20868f5137590b90880fe9098e97132cbe551d0772ca848a028bb",
     "include/newlib/_ansi.h": "98221b391010195de4e2824879860b7fe98a8f6bc8ab2c5eaa2a3b029b4f1ad4",
     "include/newlib/_syslist.h": "546b13e022a2e53bfad0138e9294d92210773c9a7a61ee2d4ffb152ed4a6396a",
     "include/newlib/ar.h": "d7aad21a7db658f45925014ea2ffd6cb7ba3d40fad05c9a00e77bfe912577ae3",
@@ -593,6 +639,7 @@
     "include/stlport-containers/deque": "5c80e9b28307ba1ed4b5950954c22c9e92122815fc7cdb0eb66c14907ba77caa",
     "include/stlport-containers/exception": "24239681af3a75a9f1c25c3231643ce4e903d661726329c0f901359fe4f0bbca",
     "include/stlport-containers/iosfwd": "e294d510739a033a801afdbe771e9e9f2e797ffb470d2320150a456178cb162c",
+    "include/stlport-containers/list": "d5e9b90b7c0df63bac4675be24768312547180226d2d6df450dfd76e4d6a0d76",
     "include/stlport-containers/map": "62219999548901abc9af9e2c04815082490f5356113494cfb9853f81757b0970",
     "include/stlport-containers/memory": "127f125df959add3911c40e66b906a0c0a6ec0a057e7ffc70d64ac539ddbd715",
     "include/stlport-containers/new": "70484966eaa0644a8936eaa6a6b21c47fbc721161ca3b4425f21b3857734fa29",
@@ -610,10 +657,13 @@
     "include/stlport-containers/stl/_deque.c": "5877527ebac7d9dca543ab9b70a0284e5a9ed04e4c68365edd2d1d8e67e079fd",
     "include/stlport-containers/stl/_deque.h": "081e407df9c2e6bc61edd4a5a5efcf1941ecf36a947faca523fdd45eb280ec4a",
     "include/stlport-containers/stl/_epilog.h": "ed297b864038d25758715d5b5a53b782194618893b311004d79bad14b82bcb04",
+    "include/stlport-containers/stl/_function.h": "04bc20640953e11f064dbf6cda25dfc09db73b3425f5ad44fff82ca7e4da13db",
     "include/stlport-containers/stl/_function_base.h": "459a911033725fb0f7b2737c6ae00fb82f9810d4cb301d54fc120e46b5424003",
     "include/stlport-containers/stl/_hash_fun.h": "dc12901e5e86c59b81b54a92261e2d547a021bed7d0912d5ba5ddf03d5676536",
     "include/stlport-containers/stl/_iterator.h": "5c32732d8177aa76a4b3310912391062a7f6f81c91f5c8b4bc4e5c5c04626b2f",
     "include/stlport-containers/stl/_iterator_base.h": "d61032f9f00ca07b29617bda5bc541311f412a29f4b6f188cc74be8c5e972ede",
+    "include/stlport-containers/stl/_list.c": "43210fee6f1db33e44a3f336a6c649c9f1881d9b1f225653473247da07e400df",
+    "include/stlport-containers/stl/_list.h": "cdfa89dc46c6f38bfe35a80913abd82d7675978dfb68beec641946ba877ee6c5",
     "include/stlport-containers/stl/_map.h": "a02ec5023f4e53501ad3643d5bd191900a4caa7d04e17f031027d4b0ee808b23",
     "include/stlport-containers/stl/_pair.h": "4f9809a8e71134ff159b0da69d502d67b3f55f698589f468bad060b4f19f3a8e",
     "include/stlport-containers/stl/_prolog.h": "8abf1ddcb3a23632972ab4de4d044ff1accb341d75d3b434547f59161c14b94c",
@@ -952,6 +1002,7 @@
     "src/newlib/string/strpbrk.c": "ff1c75e57e95c5cbb7b97b7e6f7a4ab1c9c8259b351fafdf06355a0f2bdf457f",
     "src/newlib/string/strrchr.c": "402a6ca9631680b81811553ad4a60b85271b90f7cce71b898872c845b1931ff9",
     "src/newlib/string/strstr.c": "09437b966be6a045479e511b84d9ef0156823a5c9ccd29dc4c93d0f7c53998e7",
+    "src/pathfinding/PathFindingNetwork.cpp": "babf331f9fbf19dbc75fdda20d7a1011f6cf9f465f02285a89b6b572098e6b95",
     "src/stlport/CONTAINERS_NOTICE": "7c59267a930cdf87e1af44873547a8275a61b1329833c74ae5f821a5e507a22e",
     "src/stlport/COPYING.GCC": "dcc100d4161cc0b7177545ab6e47216f84857cda3843847c792a25289852dcaa",
     "src/stlport/containers/stl_80278d64.cpp": "e75a070f28a3c316c4e6064da2c7c710838c54dd1b2297c5d808bb5037c33590",
@@ -962,10 +1013,32 @@
     "src/stlport/containers/stl_80279e58.cpp": "3b24b87b928c07a232dda9501597008e03c311413e9c7d4c456b5dd236ddfff1",
     "src/stlport/containers/stl_80279f70.cpp": "c9fc1f4c2445e7e5c68b3e03740b084a5e83fb7b43592dbfa00aca6f84c74aca",
     "src/stlport/containers/stl_8027a234.cpp": "723ace5df58f95bf611eb24b0c33f9c0bbf59e1bfc125f71f93a8fb7a60e158e",
+    "src/stlport/containers/stl_8027a290.cpp": "68c88cffd670571da2f8f1bdb924615c3d7e077753afe6771a479a4bc7366e83",
+    "src/stlport/containers/stl_8027a438.cpp": "19e64b2b7e502d3c7be60a023b1f44d8e5fb9adcf4528f0543fc3cab0f5feed0",
+    "src/stlport/containers/stl_8027a56c.cpp": "b6373cd6c9b5ccaea79d8209064944631e75819132836879ba2505c3d9648447",
+    "src/stlport/containers/stl_8027a684.cpp": "0f6511d46649dba62f87239051d4e68164913321478b94bb84c38e6887649755",
     "src/stlport/containers/stl_8027a8ec.cpp": "550d810f80498c76b37df1336a46a8c94438d68f9401ad07272296c2f5f44e67",
     "src/stlport/containers/stl_8027ab0c.cpp": "713f9f8f443c097c4fec135e620d95341678b9a2d6d0cf7aad13d3fe7c695a60",
+    "src/stlport/containers/stl_8027ab64.cpp": "a48dea309553c633f784d006e01a5104deaa09c39df1b6c21d5e484c091f01b6",
     "src/stlport/containers/stl_8027aca4.cpp": "041772ca6551bcb6eb9c0418ddcc3f69595856c4769f60c617b19f5f08783fd2",
     "src/stlport/containers/stl_8027aefc.cpp": "6c9c482c2f011f36ee8c03b573b4231e3a7810a30b919f4ba3d813e90feff55c",
+    "src/stlport/containers/stl_8027b294.cpp": "a2f29880bd9f4ef633f68f65a0069c9120d9eb8ec7bd315bdbb884868a4a7bb9",
+    "src/stlport/containers/stl_8027d258.cpp": "76c5d101bc2e922a6d7343c0749bb309d2237338e7808a3486d29e256ae0f602",
+    "src/stlport/containers/stl_8027d2b0.cpp": "bddd9e5a79f677101b016ed0483645903cf6f6275c14f780189d3bfbdb1c0a98",
+    "src/stlport/containers/stl_8027d308.cpp": "82174be5dbb247b1608e53decff28fe1fc3aae7d1db05c46bf6a55f57f058c51",
+    "src/stlport/containers/stl_8027d460.cpp": "7b4f55cbfe786d6ad201b5c21a2c4cb42a118fc34fef9c0254d90d5183debbc5",
+    "src/stlport/containers/stl_8027d574.cpp": "e2fc3f1f810a3f7d583c27a65eb01677e7fff531ad5942194d83e628511766af",
+    "src/stlport/containers/stl_8027d80c.cpp": "ba738fea1057e3f8b1f41894460535fb3d557ef870ef63068ced863fbd56c1ee",
+    "src/stlport/containers/stl_8027d980.cpp": "50817de1a66a86f889d0e1c0355615b0ce4b3a2cf88fb8bb2583a8fca3dca5e2",
+    "src/stlport/containers/stl_8027da98.cpp": "187452585c359d2b469a76822ee688eaf86931f0251ff202722f4329f6f3a448",
+    "src/stlport/containers/stl_8027dd88.cpp": "304f8d02f31908899811c1652a6d67acc6924faa4124368a9737a8bcb59abc65",
+    "src/stlport/containers/stl_8027ddf0.cpp": "c0d295e6ad256265bf83af28d88bf10d79daee9463afdeedcfda8a412f63f569",
+    "src/stlport/containers/stl_8027e3c0.cpp": "b55881f38a7bcf671d94d1fa8dd64ea3e9f376dcfef01238d868fc8252ac413f",
+    "src/stlport/containers/stl_8027e554.cpp": "32e7fad08105349a8f685196d949d66d267ad700342f356be3fecbf54a2ae03e",
+    "src/stlport/containers/stl_8027e70c.cpp": "5a6fab70f82a626b58aea70ed8558cb497fbdc2a8baed8686f0da34cfda698b2",
+    "src/stlport/containers/stl_8027ec64.cpp": "87b432ece0bbf199461603b432480b23f056efab4c9657957553dd4708bd9b01",
+    "src/stlport/containers/stl_8027ede8.cpp": "b5af96fe1711e1b0e2f88a739eefadf0dcd03e4a0da4be872c8c78ce05237deb",
+    "src/stlport/containers/stl_8027efa0.cpp": "8582137e9e8a859bb64cb5b07a9d719979ce61ba0784e8be3140da5ee36b12c5",
     "src/stlport/containers/stl_8027f89c.cpp": "81428f89938ec538972e6ddaa26a89a2882a780c23cd2c39e3e6b5d3a4192494",
     "src/stlport/containers/stl_8027f984.cpp": "e73253f137ebbcc9522f879f8d4d413a49ec8a635702e87eb8cc4c3682d4846a",
     "src/stlport/containers/stl_8027f9ec.cpp": "a9f765764fd90a2256486864486ee8b686678161657cdb3bd7d0714b8e39268e",
@@ -994,6 +1067,19 @@
     "src/stlport/containers/stl_80285020.cpp": "18d0ceca788c9bd09c6e5d409687506de3963ec7b52e853585a5538ac9c131b6",
     "src/stlport/containers/stl_80285138.cpp": "e3f806a602c88bf40e4fb8cf75e7b0707c4239eaa02836d242672a9c225fec5b",
     "src/stlport/containers/stl_802853a4.cpp": "dbfbb85db09cd847f8805bd412c9380d34bfff168a0572c8e8fe8ae76a2bd04b",
+    "src/stlport/containers/stl_80285510.cpp": "514c1a4cc2206d27975175ea82558418a081f659d5cdedb64a66d28e618447c2",
+    "src/stlport/containers/stl_80285578.cpp": "325100116ecd8e37c34d4ce9ed493560e821438e2cc146e4db3427ff426b7000",
+    "src/stlport/containers/stl_802856a4.cpp": "3ba77467781fac311b4bc37e74b725e64ca4dc84a70a246006d060f45bd2ceb1",
+    "src/stlport/containers/stl_802857bc.cpp": "953015740990429d081aca689fcccc27dd83baf7bb275da09626832ddcc04825",
+    "src/stlport/containers/stl_80285a1c.cpp": "2434c77be2f195045492364355238b0ffd89ba47e7e777d2f30372b4724fabc6",
+    "src/stlport/containers/stl_80285c14.cpp": "986a096f7d20b394a0e93937ec6f7bf082cfcec72d737bbde7d74a6b6fa327c2",
+    "src/stlport/containers/stl_80285ec8.cpp": "26a00e23b83389812ccf55f0801c8640a3f5178e3c77e5ff60e94898823c1dae",
+    "src/stlport/containers/stl_80285f20.cpp": "4ec86bd15fa37e4f7d219708e2b26c8f8db44ad42789f4af0561235f6db3e339",
+    "src/stlport/containers/stl_80286074.cpp": "44b49e534552e40a63be54419f4684f0df2c56c99d0e35c6577a063f3bdd3c6b",
+    "src/stlport/containers/stl_8028618c.cpp": "a3905d7e755981797c3fb5c2f62e797964e40510e6bf87bc99b991b4428473ce",
+    "src/stlport/containers/stl_802866cc.cpp": "dc57c6ccbb5931b2fd015567b835f2846e9e980185404223f953c7e5b80fb0cc",
+    "src/stlport/containers/stl_80286724.cpp": "b9728893adc866d7918d5b83a2a0ef44509eb08704976e86016b7682d0daf3c9",
+    "src/stlport/containers/stl_80286858.cpp": "af2c7be4cc9d8cf3f3838cfc9f3bdedf58b143002b3687409c59b3bf26bb2c71",
     "src/stlport/containers/stl_802871ac.cpp": "e9f79580a5466043e7681b97dc7f6d40f3c845e68a5e8e703b18f27d23e965e7",
     "src/stlport/containers/stl_80287330.cpp": "37f49e3033be0cddac0f6d62b6fdeec371bdcc2035e70dd6d155e752feef85df",
     "src/stlport/containers/stl_802874e8.cpp": "5336f8cc3ca79253483a6f37a7ab44a7873204ea7d6d941e9adb2869333aed89",
@@ -1002,6 +1088,10 @@
     "src/stlport/containers/stl_80287c2c.cpp": "df21404155f7e09e9113ec7a4bd3c2989f448f9d5ef6efe63a320cca629b558c",
     "src/stlport/containers/stl_80287de4.cpp": "3d072052bc5e148b32f0d4ae6282d8084b9c521e081bf518525ea03fa7199e29",
     "src/stlport/containers/stl_8028833c.cpp": "acaabcbd1a8902408a563efb90af06819c32dfe9783ad59335989666cf655fa7",
+    "src/stlport/containers/stl_80288ee8.cpp": "180ceb6096024d2b137a237f50dab4c43c3f280f9ad639bcb7fba82bd344148f",
+    "src/stlport/containers/stl_80289014.cpp": "d6485b908e9b184fd1a6a379eb5ad28510e48d7a58cb2370e9e7c505bf13f7a0",
+    "src/stlport/containers/stl_8028912c.cpp": "7045ee8ee78fd770a357a7a07e22b0b2c465285b5b132605a59e970fc6ce9ca4",
+    "src/stlport/containers/stl_80289398.cpp": "94b6cb238592e8261d05c85df985cafc75b6fe0d3ffe961aac9a4ac6ce583718",
     "src/stlport/containers/stl_8028a120.cpp": "0c0031062d8bc54900bf344e2043bf48eb0192df534115a3acdec0c079575a83",
     "src/stlport/containers/stl_8028a178.cpp": "901515e515ee184177ba4a64187a612f8a2672970076cdd08e7ba0846159290d",
     "src/stlport/containers/stl_8028a29c.cpp": "f1d4f0e6697c3d985d1706f0cf5627376567daec9fd8ba30552913f41f1cfdc8",
@@ -1026,6 +1116,11 @@
     "src/stlport/containers/stl_8028d56c.cpp": "230cdad25e81fca093e40d4037e6e263688a2f811597426a1559d755188f5647",
     "src/stlport/containers/stl_8028d6f0.cpp": "220c81bbf37997b398c7f2522142baea90dab4da3a3fe8205ec7a48c7522601a",
     "src/stlport/containers/stl_8028d8a8.cpp": "fcbda2553ede1e5d122716db5c58e911e83c934db135ae7457329f4cb0ffa20c",
+    "src/stlport/containers/stl_8028e20c.cpp": "aead3b0e52c1e09c93faad95a824c3158edc32d7aa046f4e3e475554f8abd78e",
+    "src/stlport/containers/stl_8028f940.cpp": "f7d46c5a96e0dacfca781806b5be7a3d538e82a84c3edac90b1937f42b485b54",
+    "src/stlport/containers/stl_8028fb9c.cpp": "b50469e4458675e53b7ab523e3fb058061eb33eca030c280de06435e9e24e102",
+    "src/stlport/containers/stl_8028fcb4.cpp": "2e5dc695a75a13042106e44f7384665151ababb2a1e18708dd755351af39826a",
+    "src/stlport/containers/stl_8028ff20.cpp": "4e7d4f0812604617541fae93ac5ffba345d760883b7e8850d12c18767b62b323",
     "src/stlport/containers/stl_8028fff4.cpp": "cec877a73d036d958725ba12693c7a5fdb26b31971a116892b532148fc0ac74f",
     "src/stlport/containers/stl_80290190.cpp": "a95e4ea764cbcfcee7a46167539458d610cbf5473d67e8cd9876504cc198363d",
     "src/stlport/containers/stl_80290230.cpp": "7fdf6ad305823002405f4661cf64fb216a59b4f7a94f90a3564ad36f1da28c6a",
@@ -10579,6 +10674,816 @@
       ],
       "object_sha256": "2092941415e6779333d22bf03f09399f1b1e7749f3db75278474022782ccb397",
       "linked_sha256": "c4122ffe8bffd96fcf167f2f79929ac0c05c9e970cc8e7267372b8e87b325fb6"
+    },
+    {
+      "id": "stl_8027a290",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 320,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "11051f96746f829af909d5580db3bc1b191d02658f4277f5fbced26befe57a72",
+      "linked_sha256": "756219c79722f83a8b882142cbe3596b449f0bd7933e358bc84977b0524d7658"
+    },
+    {
+      "id": "stl_8027a684",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 616,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "a48d21a145931f4f1155b39db7528d2bbbde5e6f070ad2676a007e11b4d3eaf3",
+      "linked_sha256": "0f1b84b81d041ec19ebcdf66aa54862dcd408bec843b7812bbe8d15d25d4f27c"
+    },
+    {
+      "id": "stl_8027a438",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 308,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "4b7e483efaf81f836823a1644c28fdcb0e274bc576046973f15069bf61dbe547",
+      "linked_sha256": "c1d3430e83da2c89bc44d46abcee8329f7c32742aa22c35d8aa16240994edd3a"
+    },
+    {
+      "id": "stl_8027a56c",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 280,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "2df9532cc56c328354f9d04de562f5634e674295b6264e44b1bcf6b1bf70f865",
+      "linked_sha256": "d5651022ad667303a6be44041f607f9ca14de270f44dc2aa30504bb58b674bde"
+    },
+    {
+      "id": "stl_8027ab64",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 320,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "6193be6c89e0a8eb19d206d34973c1f1a8ae4096cb00b9c3199a9fffd923d3b1",
+      "linked_sha256": "3311458a6c33d8507445e2b31d45341b800831daab959fcca64c8589285fa68e"
+    },
+    {
+      "id": "stl_8027b294",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 304,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "e24b44f8c57f8199938783f1cb4a2769e0c6cfc1c18d1fa6650bbf9b4f82d959",
+      "linked_sha256": "8e7d08790f678d4b0451f5e71f8df726b0f9e009ea4bef462bf35671a6d2f8c7"
+    },
+    {
+      "id": "stl_8027d574",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 664,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "be517df9765797a4068ee1fc22e2104ff2103bb55f66ebe22cf5d1791bf779a1",
+      "linked_sha256": "a9a0c464fcab287c10793ba2b8daff8ec3e628c7b639e5379499eb5693b16ed4"
+    },
+    {
+      "id": "stl_8027d2b0",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 88,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "fd7e1de1402824f7ccb11cea501cef3dbf7c9f24d04a7184e90fd064cf7400ed",
+      "linked_sha256": "718908b29cf63c5ec547b173cd4ac01a1fb8272a86ad31d586e2843b502ea8e1"
+    },
+    {
+      "id": "stl_8027d258",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 88,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "205895b377782f72aa3272e19d37e372ab92186013e06e45e8a16f4fc5da151b",
+      "linked_sha256": "4a539ba4b855bd6c4046ccc5387e8edc8f98beb4c8651c88507ffafea7206829"
+    },
+    {
+      "id": "stl_8027da98",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 620,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "a8e2fbf50626b2f9e041f38c8e8e98f3b042f370ed749b7c68dbe2f4c84a94a3",
+      "linked_sha256": "1c1d9dbbdad5e7880db6a3ffc72ca90cb65f1efb880db7d61562792ca2970cd9"
+    },
+    {
+      "id": "stl_8027d308",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 344,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "aa2cb06786fe63a46e9855cf4548936e5499f62d2a60765dc08115560ca5272b",
+      "linked_sha256": "61c9b82fb9300c58cf996a1bfb9a19cf2572acdfcffee6967d714bc5090c346b"
+    },
+    {
+      "id": "stl_8027d460",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 276,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b083a24ed61a5c3a593b8669ce4543e99e88e3bc12cefd347f233b6e6d9e4083",
+      "linked_sha256": "4736e8530ac46316965e162f44450ec004fca83284d8a1d009d0290a20ef48c2"
+    },
+    {
+      "id": "stl_8027d80c",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 372,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c9385be41a5370ce5630b2229eead9042a21a0b59d13805d6b988d174d47ad72",
+      "linked_sha256": "fe203cb23e5e33cab15637f772394dcef1861853e1cb2b9bed0f0c5e179ff1c1"
+    },
+    {
+      "id": "stl_8027d980",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 280,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "1f05e89d8ee2ec392e420eed83d1804d0c156e2a7df981d68f2297a647a11cb8",
+      "linked_sha256": "7762989057fcb2b5cb3dee90382c07e3a59b140f012a029b8ae29f7a845d9a86"
+    },
+    {
+      "id": "stl_8027ddf0",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 104,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "27876c84491685ce569e3ffa1ef24e845f06d98cf3298cecd512ad7976fa2e30",
+      "linked_sha256": "b6d89d9219dc669a2e886e5e13819b4e0f99b506fd174db0b0ee0d71d3c964b2"
+    },
+    {
+      "id": "stl_8027dd88",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 104,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "1c9594dfa236e1863701bc0474d45eb5d6c5a8a806ff3067b817215ebe8dd32f",
+      "linked_sha256": "91639bba7d81cf9069b3384908e0471a566e86b703db79a3e3c276bfad2fedca"
+    },
+    {
+      "id": "stl_8027e70c",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 1368,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "199d29a800733a59d992f9a3c251d5019f4d845afbf0c7718c4dadffff89b75b",
+      "linked_sha256": "3840026c60efa53a9dfc986c8e4c797900645488020770f5dd74f31588a19278"
+    },
+    {
+      "id": "stl_8027efa0",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 1368,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f608bc14324b1d331cb2c59bb5a4620d58c525017bd4d0df722e66e7acc6e72c",
+      "linked_sha256": "c1af634fbcf768527d6bac42c98dfc8ab5b7b4dc4082a2804534709cc8179b1d"
+    },
+    {
+      "id": "stl_8027e3c0",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 404,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "e6c7d66b3dd6884f5196fee3e7d50ca6b7827fef6acc8403bff71811e089bab3",
+      "linked_sha256": "47f74c49767fdd2e4477b1b3e0fe63381924f369910ec5f7601921313e455013"
+    },
+    {
+      "id": "stl_8027e554",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 440,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "cb5cb03866fbb2ffdd190384928d1c78a4280535ebaf37c8c6a004d98d86538d",
+      "linked_sha256": "ab3c5955ef2b7a511b8c1f4eb5c40b679145d3b9b3183fc1b80c03b486d873da"
+    },
+    {
+      "id": "stl_8027ec64",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 388,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "0df873eba9f276a3aa96c3b175b6551d3d66f0f1226db5df453c774724b2c883",
+      "linked_sha256": "343ea21b2e94568e5fe004b6fe2a0ea34ee18e0f284fae4fbe9ad18679cd0f65"
+    },
+    {
+      "id": "stl_8027ede8",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 440,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "790736ccd6867f45a03752a5fb5985418a4256187313989f4703316e59524632",
+      "linked_sha256": "913aab71bdf108f33503ec494cfc15893b0ef31df2c4cd141e53d56589474766"
+    },
+    {
+      "id": "stl_802857bc",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 608,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "cadedd55041efb9f36fbfbbac3c91295bfb747be00431ad5f69acc42488a7af8",
+      "linked_sha256": "354520f8c1cdcc637bada1829bf51a7491bd9a6473d60e62f4fc9eeaa34810de"
+    },
+    {
+      "id": "stl_80285c14",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 116,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "a5809a7dd8a47bb1d64d5fcafabfabd9f3bfedce3508a6cc4429ea7c9af3f2ca",
+      "linked_sha256": "e2722bd77f10532af18ae470f1e07356c6c5949b4df8ab8ea0122f2ad45e61de"
+    },
+    {
+      "id": "stl_80285578",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 300,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "2f3c0334faf0014c30c3d386b09761ba4ef98a2e0ce71cbbfa218b4270187860",
+      "linked_sha256": "cbf17f98d65dc111edab4397dada4a636b0a5ccc84cb3e231a1fa44317705504"
+    },
+    {
+      "id": "stl_802856a4",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 280,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "55e6888a6dbd2064f6404eb38f3ed72bf9c58a2e826bcc293ca9fcd47f06e0f0",
+      "linked_sha256": "c75028b9125fe67d6d208eba1cb18f141337cdb81caebb36534a77102952aa8a"
+    },
+    {
+      "id": "stl_80285ec8",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 88,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "96ca902325a8cf299d79fb1aeba50bb0cc206c5d74133a2b558744e602198953",
+      "linked_sha256": "b192d68a6af7348a2c7c5c09a1b24f1b09c1415a8614f9ada30517e948696bef"
+    },
+    {
+      "id": "stl_8028618c",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 616,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "437459a42fa7bf95b6f296b1fdb0554d79950ae740b9d0a326529572638068c9",
+      "linked_sha256": "03a22b174387ca84b1cc5b3e2dd0a4a8a5e002bc1ee1127f6f7a7f32d060a70b"
+    },
+    {
+      "id": "stl_80285f20",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 340,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "d53e9c248852f631232e289012fe5c31685c0f588615d872f76cbb2062a6acae",
+      "linked_sha256": "644f6e8b8248317cf9bcc737e96e0f74fc43739ce602e8c2b1422d3904d324a3"
+    },
+    {
+      "id": "stl_80286074",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 280,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "02efbe4e3c38f5c8ee09b2b2077e6966961164d0b6a5833dae94ddc532486c3c",
+      "linked_sha256": "46faaf80ce254fd1345878d6bed82cae90b56a5dd7b483c107d7d0f56006d5fe"
+    },
+    {
+      "id": "stl_802866cc",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 88,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "5401b04f0bd799ad2fb8d567b4408559fd310b675746bbb4a1aa4954fb1b0ba9",
+      "linked_sha256": "a05f47709a86146f3ba1b8f36122f817c12bc96b2edca86a2b980383d712c82b"
+    },
+    {
+      "id": "stl_80286858",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 116,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "febd66d4ac975bbdb56d51ceb4d9a3a00280b06149d5f81221ee6d19ede36ba9",
+      "linked_sha256": "023c6f91d61bd1a56f6f5b79fa9cf33d75606b482b5aefeee44ed2e5d8d8be92"
+    },
+    {
+      "id": "stl_80286724",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 308,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "390bdf34a2b8e4bc74a606d8001ef0be2c398f4aec193512ecf178228861abca",
+      "linked_sha256": "92dcde6734209c4b341c2dfa22f7f08a94ca601d30727f272084517703536014"
+    },
+    {
+      "id": "stl_8028912c",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 620,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "300a7e2640ba9f46d70b07fb80b3b482d6436f07dd5d76365e254d74d71792db",
+      "linked_sha256": "1b488478fbe69c6f3ff81cdd8f5b57c6cb0e9e9b88fe7eebd5f5d7accf4dc346"
+    },
+    {
+      "id": "stl_80289398",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 100,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "8b87588286517d648b535bf983272ac19b491b6ab17080d5cdd71bf7519bf047",
+      "linked_sha256": "581deefebd186f5ea5e5b05f9c4a71a6b1aea0dd86756fd0b9b425083c5e8169"
+    },
+    {
+      "id": "stl_80288ee8",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 300,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "0c894c0a79c38213e425620e5f950bc0fc940ec7be97aa71520c1a35cd8ff780",
+      "linked_sha256": "63a38953f03e08712bb90e0f739353aa98ca386d0d19dca8e4a21b632e81f137"
+    },
+    {
+      "id": "stl_80289014",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 280,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "2dae210296ed36e20e3df0425eb66dd914d9bb3d5062c4402ee5d329d9b62254",
+      "linked_sha256": "a01576e2f1d9c8103e643aa88486d09b734d2776c7dbd52b7fca8598101f2cd9"
+    },
+    {
+      "id": "stl_8028e20c",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 380,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c8b86e51078af64d7743aa47bcb2b1f4ed0d27719397451b16f9dd1d2120ee70",
+      "linked_sha256": "9353ceb510d7114625ea9dbd74ff92330265c104e39160c32f982e4cc302e8a9"
+    },
+    {
+      "id": "stl_8028fcb4",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 620,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b7d8cccb64c6e635f3fa949038d74acb20bd7f75a24ad785a1bee05f967d6463",
+      "linked_sha256": "d67117aa6bb0c154c9e4b5b133dc4937a8285ab146c8fa911a83fd09c19f06fd"
+    },
+    {
+      "id": "stl_8028ff20",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 164,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "34d606d5f8f0a4bded74b3b2eb6fb9f7451328a33ca5af8a5c8693a69a96fe0f",
+      "linked_sha256": "6d1d10fdda7003a12a0b4a0695b7bc56076bdfd6bc661c325c30c0dd9c7d4fc4"
+    },
+    {
+      "id": "stl_8028f940",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 604,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "96576b13809a779a8870ab324693e8b96d1dbe217d779558c227bb4ec9cf71c8",
+      "linked_sha256": "68b0e9cb66f5d8aef71f3f59f28b68ab99049c9fde75cbdfbf7400768dd33fa9"
+    },
+    {
+      "id": "stl_8028fb9c",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 280,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "ba74450463e3fcb7faa581bf92d87c7650493d30e4adb344b3615127893738e6",
+      "linked_sha256": "0f79f6a1ac1286d24f0b03789f6646772eb1b504c949fb427b50011e93a8a2c2"
+    },
+    {
+      "id": "PathFindingNetworkCopy",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 256,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "bcb23c3840221f5de1ce551f5bc428713f33119b8cc78ead19a3478a14036c66",
+      "linked_sha256": "bcee9514629fca85e3b73c2ee7917824797201d7b196a7b40c1a0dc491890ba5"
+    },
+    {
+      "id": "stl_80285510",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 104,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "15a19ec6da985a559c09b2ed3cd319deef445965be6782403ba5f05da9d84060",
+      "linked_sha256": "890cd49eb36d0e7630ca7d1f925c3cb982f6249e252e1a8bf35a2cc3fe35422c"
+    },
+    {
+      "id": "stl_80285a1c",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 504,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "bd44ded0cbdaed205498000f29601e9917edb5e0bb69ee804dbebd678798ad54",
+      "linked_sha256": "f04f7f4f97f9e5596f73e8261a3ef0642cc02a14a2bd200563ba3ec996a877f6"
     }
   ],
   "code_map": {
@@ -73556,40 +74461,17 @@
             "kind": "function",
             "name": "SetTMLocalToWorld__16IMovingSceneNodeRC7CMatrix",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027a290",
-            "size": 320,
-            "kind": "function",
-            "name": "reserve__Q24_STLt6vector2ZQ25CFont7FontRefZQ24_STLt9allocator1ZQ25CFont7FontRefUi",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 8027a3d0",
+        "ranges": [
           {
             "address": "0x8027a3d0",
             "size": 104,
             "kind": "function",
             "name": "clear__Q24_STLt10_List_base2Z5DecalZQ24_STLt9allocator1Z5Decal",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027a438",
-            "size": 308,
-            "kind": "function",
-            "name": "_M_insert__Q24_STLt8_Rb_tree5ZiZQ24_STLt4pair2ZCiZQ29AnimShape10InitParamsZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCiZQ29AnimShape10InitParamsZQ24_STLt4less1ZiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCiZQ29AnimShape10InitParamsPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCiZQ29AnimShape10InitParamsT1",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027a56c",
-            "size": 280,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZiZQ24_STLt4pair2ZCiZQ29AnimShape10InitParamsZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCiZQ29AnimShape10InitParamsZQ24_STLt4less1ZiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCiZQ29AnimShape10InitParamsRCQ24_STLt4pair2ZCiZQ29AnimShape10InitParams",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027a684",
-            "size": 616,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZiZQ24_STLt4pair2ZCiZQ29AnimShape10InitParamsZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCiZQ29AnimShape10InitParamsZQ24_STLt4less1ZiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCiZQ29AnimShape10InitParamsGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCiZQ29AnimShape10InitParamsZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCiZQ29AnimShape10InitParamsRCQ24_STLt4pair2ZCiZQ29AnimShape10InitParams",
             "evidence": "unknown-file"
           }
         ]
@@ -73621,18 +74503,6 @@
         ]
       },
       {
-        "name": "Unknown file/.text @ 8027ab64",
-        "ranges": [
-          {
-            "address": "0x8027ab64",
-            "size": 320,
-            "kind": "function",
-            "name": "reserve__Q24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeUi",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
         "name": "Unknown file/.text @ 8027ad8c",
         "ranges": [
           {
@@ -73653,14 +74523,12 @@
             "kind": "function",
             "name": "GetVariableFromSymbolLookup__H1ZPv_12CCompartmentRX01PCcT2i_v",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027b294",
-            "size": 304,
-            "kind": "function",
-            "name": "reserve__Q24_STLt6vector2ZQ212CCompartment14CInstanceModelZQ24_STLt9allocator1ZQ212CCompartment14CInstanceModelUi",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 8027b3c4",
+        "ranges": [
           {
             "address": "0x8027b3c4",
             "size": 52,
@@ -73968,82 +74836,17 @@
             "kind": "function",
             "name": "insert_unique__Q24_STLt8_Rb_tree5ZPCQ44EALA9Character8Skeleton9PartitionZQ24_STLt4pair2ZCPCQ44EALA9Character8Skeleton9PartitionZQ44EALA9Character13Choreographer7ContextZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCPCQ44EALA9Character8Skeleton9PartitionZQ44EALA9Character13Choreographer7ContextZQ44EALA9Character13Choreographer16PartitionCompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCPCQ44EALA9Character8Skeleton9PartitionZQ44EALA9Character13Choreographer7ContextGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCPCQ44EALA9Character8Skeleton9PartitionZQ44EALA9Character13Choreographer7ContextZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCPCQ44EALA9Character8Skeleton9PartitionZQ44EALA9Character13Choreographer7ContextRCQ24_STLt4pair2ZCPCQ44EALA9Character8Skeleton9PartitionZQ44EALA9Character13Choreographer7Context",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027d258",
-            "size": 88,
-            "kind": "function",
-            "name": "_M_erase__Q24_STLt8_Rb_tree5ZP5SHAPEZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListZQ24_STLt4less1ZP5SHAPEZQ24_STLt9allocator1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListPQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARList",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027d2b0",
-            "size": 88,
-            "kind": "function",
-            "name": "_M_erase__Q24_STLt8_Rb_tree5ZPCcZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ44EALA9Character4Mesh13StringCompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryPQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8Geometry",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027d308",
-            "size": 344,
-            "kind": "function",
-            "name": "_M_insert__Q24_STLt8_Rb_tree5ZPCcZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ44EALA9Character4Mesh13StringCompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryT1",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027d460",
-            "size": 276,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZPCcZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ44EALA9Character4Mesh13StringCompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryRCQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8Geometry",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027d574",
-            "size": 664,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZPCcZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ44EALA9Character4Mesh13StringCompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryRCQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8Geometry",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027d80c",
-            "size": 372,
-            "kind": "function",
-            "name": "_M_insert__Q24_STLt8_Rb_tree5ZP5SHAPEZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListZQ24_STLt4less1ZP5SHAPEZQ24_STLt9allocator1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListT1",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027d980",
-            "size": 280,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZP5SHAPEZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListZQ24_STLt4less1ZP5SHAPEZQ24_STLt9allocator1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListRCQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARList",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027da98",
-            "size": 620,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZP5SHAPEZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListZQ24_STLt4less1ZP5SHAPEZQ24_STLt9allocator1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListRCQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARList",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 8027dd04",
+        "ranges": [
           {
             "address": "0x8027dd04",
             "size": 132,
             "kind": "function",
             "name": "_._Q44EALA9Character8Skeleton9Partition",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027dd88",
-            "size": 104,
-            "kind": "function",
-            "name": "_M_erase__Q24_STLt8_Rb_tree5ZQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointZQ44EALA9Character12SkeletonData7CompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointPQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPoint",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027ddf0",
-            "size": 104,
-            "kind": "function",
-            "name": "_M_erase__Q24_STLt8_Rb_tree5ZQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiZQ44EALA9Character12SkeletonData7CompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiPQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZi",
             "evidence": "unknown-file"
           }
         ]
@@ -74078,49 +74881,12 @@
             "kind": "function",
             "name": "__Q24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcRCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1Zc",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027e3c0",
-            "size": 404,
-            "kind": "function",
-            "name": "_M_insert__Q24_STLt8_Rb_tree5ZQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointZQ44EALA9Character12SkeletonData7CompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointT1",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027e554",
-            "size": 440,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointZQ44EALA9Character12SkeletonData7CompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointRCQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPoint",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027e70c",
-            "size": 1368,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointZQ44EALA9Character12SkeletonData7CompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPointRCQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ44EALA9Character12SkeletonData11AttachPoint",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027ec64",
-            "size": 388,
-            "kind": "function",
-            "name": "_M_insert__Q24_STLt8_Rb_tree5ZQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiZQ44EALA9Character12SkeletonData7CompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiT1",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027ede8",
-            "size": 440,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiZQ44EALA9Character12SkeletonData7CompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiRCQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZi",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027efa0",
-            "size": 1368,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiZQ44EALA9Character12SkeletonData7CompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZiRCQ24_STLt4pair2ZCQ24_STLt12basic_string3ZcZQ24_STLt11char_traits1ZcZQ24_STLt9allocator1ZcZi",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 8027f4f8",
+        "ranges": [
           {
             "address": "0x8027f4f8",
             "size": 104,
@@ -74933,49 +75699,12 @@
             "kind": "function",
             "name": "offsetPtr__H1Z23BPDPathFindingBSPBranch_RPX01i_v",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80285510",
-            "size": 104,
-            "kind": "function",
-            "name": "clear__Q24_STLt10_List_base2Z22PathFindingNetworkLinkZQ24_STLt9allocator1Z22PathFindingNetworkLink",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80285578",
-            "size": 300,
-            "kind": "function",
-            "name": "_M_insert__Q24_STLt8_Rb_tree5ZUcZQ24_STLt4pair2ZCUcZ18PathFindingNetworkZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUcZ18PathFindingNetworkZQ24_STLt4less1ZUcZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUcZ18PathFindingNetworkPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCUcZ18PathFindingNetworkT1",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802856a4",
-            "size": 280,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZUcZQ24_STLt4pair2ZCUcZ18PathFindingNetworkZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUcZ18PathFindingNetworkZQ24_STLt4less1ZUcZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUcZ18PathFindingNetworkRCQ24_STLt4pair2ZCUcZ18PathFindingNetwork",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802857bc",
-            "size": 608,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZUcZQ24_STLt4pair2ZCUcZ18PathFindingNetworkZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUcZ18PathFindingNetworkZQ24_STLt4less1ZUcZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUcZ18PathFindingNetworkGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCUcZ18PathFindingNetworkZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCUcZ18PathFindingNetworkRCQ24_STLt4pair2ZCUcZ18PathFindingNetwork",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80285a1c",
-            "size": 504,
-            "kind": "function",
-            "name": "__as__Q24_STLt4list2Z22PathFindingNetworkLinkZQ24_STLt9allocator1Z22PathFindingNetworkLinkRCQ24_STLt4list2Z22PathFindingNetworkLinkZQ24_STLt9allocator1Z22PathFindingNetworkLink",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80285c14",
-            "size": 116,
-            "kind": "function",
-            "name": "_M_erase__Q24_STLt8_Rb_tree5ZUcZQ24_STLt4pair2ZCUcZ18PathFindingNetworkZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUcZ18PathFindingNetworkZQ24_STLt4less1ZUcZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUcZ18PathFindingNetworkPQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCUcZ18PathFindingNetwork",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 80285c88",
+        "ranges": [
           {
             "address": "0x80285c88",
             "size": 104,
@@ -74996,42 +75725,12 @@
             "kind": "function",
             "name": "_._18CAIAreaPathFinding",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80285dc8",
-            "size": 256,
-            "kind": "function",
-            "name": "__18PathFindingNetworkRC18PathFindingNetwork",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80285ec8",
-            "size": 88,
-            "kind": "function",
-            "name": "_M_erase__Q24_STLt8_Rb_tree5ZiZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt4less1ZiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoPQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfo",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80285f20",
-            "size": 340,
-            "kind": "function",
-            "name": "_M_insert__Q24_STLt8_Rb_tree5ZiZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt4less1ZiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCiZ19_LocationTargetInfoT1",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80286074",
-            "size": 280,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZiZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt4less1ZiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoRCQ24_STLt4pair2ZCiZ19_LocationTargetInfo",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8028618c",
-            "size": 616,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZiZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt4less1ZiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoRCQ24_STLt4pair2ZCiZ19_LocationTargetInfo",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 802863f4",
+        "ranges": [
           {
             "address": "0x802863f4",
             "size": 52,
@@ -75122,28 +75821,12 @@
             "kind": "function",
             "name": "_._t7WeakPtr2Z10BSGO_Basici8",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802866cc",
-            "size": 88,
-            "kind": "function",
-            "name": "_M_erase__Q24_STLt8_Rb_tree5ZUsZQ24_STLt4pair2ZCUsZ22BSMessageToEventRecordZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUsZ22BSMessageToEventRecordZQ24_STLt4less1ZUsZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUsZ22BSMessageToEventRecordPQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCUsZ22BSMessageToEventRecord",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80286724",
-            "size": 308,
-            "kind": "function",
-            "name": "_M_insert__Q24_STLt8_Rb_tree5ZUsZQ24_STLt4pair2ZCUsZ22BSMessageToEventRecordZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUsZ22BSMessageToEventRecordZQ24_STLt4less1ZUsZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUsZ22BSMessageToEventRecordPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCUsZ22BSMessageToEventRecordT1",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80286858",
-            "size": 116,
-            "kind": "function",
-            "name": "insert_equal__Q24_STLt8_Rb_tree5ZUsZQ24_STLt4pair2ZCUsZ22BSMessageToEventRecordZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUsZ22BSMessageToEventRecordZQ24_STLt4less1ZUsZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUsZ22BSMessageToEventRecordRCQ24_STLt4pair2ZCUsZ22BSMessageToEventRecord",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 802868cc",
+        "ranges": [
           {
             "address": "0x802868cc",
             "size": 44,
@@ -75463,35 +76146,12 @@
             "kind": "function",
             "name": "Visit__12CDestroyByIDR10ISceneNode",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80288ee8",
-            "size": 300,
-            "kind": "function",
-            "name": "_M_insert__Q24_STLt8_Rb_tree5ZUiZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefZQ24_STLt4less1ZUiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCUiZ19CProjectorSystemDefT1",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80289014",
-            "size": 280,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZUiZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefZQ24_STLt4less1ZUiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefRCQ24_STLt4pair2ZCUiZ19CProjectorSystemDef",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8028912c",
-            "size": 620,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZUiZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefZQ24_STLt4less1ZUiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefRCQ24_STLt4pair2ZCUiZ19CProjectorSystemDef",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80289398",
-            "size": 100,
-            "kind": "function",
-            "name": "_M_erase__Q24_STLt8_Rb_tree5ZUiZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefZQ24_STLt4less1ZUiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCUiZ19CProjectorSystemDefPQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCUiZ19CProjectorSystemDef",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 802893fc",
+        "ranges": [
           {
             "address": "0x802893fc",
             "size": 728,
@@ -76078,14 +76738,12 @@
             "kind": "function",
             "name": "_._23HandlerPausePreferences",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8028e20c",
-            "size": 380,
-            "kind": "function",
-            "name": "reserve__Q24_STLt6vector2ZQ218HandlerLeaderboard6PlayerZQ24_STLt9allocator1ZQ218HandlerLeaderboard6PlayerUi",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 8028e388",
+        "ranges": [
           {
             "address": "0x8028e388",
             "size": 940,
@@ -76232,35 +76890,12 @@
             "kind": "function",
             "name": "_._27HandlerOnlineNetConfWarning",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8028f940",
-            "size": 604,
-            "kind": "function",
-            "name": "_M_insert__Q24_STLt8_Rb_tree5ZP10StaticMeshZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeZQ24_STLt4less1ZP10StaticMeshZQ24_STLt9allocator1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapePQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeT1",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8028fb9c",
-            "size": 280,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZP10StaticMeshZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeZQ24_STLt4less1ZP10StaticMeshZQ24_STLt9allocator1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeRCQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShape",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8028fcb4",
-            "size": 620,
-            "kind": "function",
-            "name": "insert_unique__Q24_STLt8_Rb_tree5ZP10StaticMeshZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeZQ24_STLt4less1ZP10StaticMeshZQ24_STLt9allocator1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeRCQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShape",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8028ff20",
-            "size": 164,
-            "kind": "function",
-            "name": "_M_erase__Q24_STLt8_Rb_tree5ZP10StaticMeshZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeZQ24_STLt4less1ZP10StaticMeshZQ24_STLt9allocator1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapePQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShape",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 8028ffc4",
+        "ranges": [
           {
             "address": "0x8028ffc4",
             "size": 28,

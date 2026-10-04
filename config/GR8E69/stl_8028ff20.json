@@ -1,0 +1,41 @@
+{
+  "id": "stl_8028ff20",
+  "source": "src/stlport/containers/stl_8028ff20.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8028ff20",
+      "size": 164
+    }
+  ],
+  "functions": [
+    {
+      "name": "_M_erase__Q24_STLt8_Rb_tree5ZP10StaticMeshZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapeZQ24_STLt4less1ZP10StaticMeshZQ24_STLt9allocator1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShapePQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCP10StaticMeshZQ24_STLt6vector2Z9AnimShapeZQ24_STLt9allocator1Z9AnimShape",
+      "address": "0x8028ff20",
+      "size": 164,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_._9AnimShape": "0x8006a79c",
+    "__builtin_delete": "0x801a8990"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

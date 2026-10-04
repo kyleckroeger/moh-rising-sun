@@ -1,0 +1,41 @@
+{
+  "id": "stl_80286074",
+  "source": "src/stlport/containers/stl_80286074.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80286074",
+      "size": 280
+    }
+  ],
+  "functions": [
+    {
+      "name": "insert_unique__Q24_STLt8_Rb_tree5ZiZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt4less1ZiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoRCQ24_STLt4pair2ZCiZ19_LocationTargetInfo",
+      "address": "0x80286074",
+      "size": 280,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_M_insert__Q24_STLt8_Rb_tree5ZiZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoZQ24_STLt4less1ZiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCiZ19_LocationTargetInfoPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCiZ19_LocationTargetInfoT1": "0x80285f20",
+    "_M_decrement__Q24_STLt10_Rb_global1ZbPQ24_STL18_Rb_tree_node_base": "0x80279de8"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

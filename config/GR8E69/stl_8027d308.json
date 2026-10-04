@@ -1,0 +1,42 @@
+{
+  "id": "stl_8027d308",
+  "source": "src/stlport/containers/stl_8027d308.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8027d308",
+      "size": 344
+    }
+  ],
+  "functions": [
+    {
+      "name": "_M_insert__Q24_STLt8_Rb_tree5ZPCcZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ44EALA9Character4Mesh13StringCompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryT1",
+      "address": "0x8027d308",
+      "size": 344,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "strcasecmp": "0x8026680c",
+    "__builtin_new": "0x801a8910",
+    "_Rebalance__Q24_STLt10_Rb_global1ZbPQ24_STL18_Rb_tree_node_baseRPQ24_STL18_Rb_tree_node_base": "0x80279b5c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

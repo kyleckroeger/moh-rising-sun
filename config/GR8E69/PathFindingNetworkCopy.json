@@ -1,0 +1,40 @@
+{
+  "id": "PathFindingNetworkCopy",
+  "source": "src/pathfinding/PathFindingNetwork.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80285dc8",
+      "size": 256
+    }
+  ],
+  "functions": [
+    {
+      "name": "__18PathFindingNetworkRC18PathFindingNetwork",
+      "address": "0x80285dc8",
+      "size": 256,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__builtin_new": "0x801a8910"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

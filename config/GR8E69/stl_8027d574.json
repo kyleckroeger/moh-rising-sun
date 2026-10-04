@@ -1,0 +1,44 @@
+{
+  "id": "stl_8027d574",
+  "source": "src/stlport/containers/stl_8027d574.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8027d574",
+      "size": 664
+    }
+  ],
+  "functions": [
+    {
+      "name": "insert_unique__Q24_STLt8_Rb_tree5ZPCcZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ44EALA9Character4Mesh13StringCompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryRCQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8Geometry",
+      "address": "0x8027d574",
+      "size": 664,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "insert_unique__Q24_STLt8_Rb_tree5ZPCcZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ44EALA9Character4Mesh13StringCompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryRCQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8Geometry": "0x8027d460",
+    "strcasecmp": "0x8026680c",
+    "_M_increment__Q24_STLt10_Rb_global1ZbPQ24_STL18_Rb_tree_node_base": "0x8027a1dc",
+    "_M_insert__Q24_STLt8_Rb_tree5ZPCcZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryZQ44EALA9Character4Mesh13StringCompareZQ24_STLt9allocator1ZQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryPQ24_STL18_Rb_tree_node_baseT1RCQ24_STLt4pair2ZCPCcZQ44EALA9Character4Mesh8GeometryT1": "0x8027d308",
+    "_M_decrement__Q24_STLt10_Rb_global1ZbPQ24_STL18_Rb_tree_node_base": "0x80279de8"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

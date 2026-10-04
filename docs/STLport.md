@@ -1,8 +1,8 @@
 # STLport: verified tree helpers and container instantiations
 
-**92 functions compile to 33,576 matching code bytes**: six
-`_STL::_Rb_global<bool>` helpers (1,764 bytes) and 86 container instantiations
-(31,812 bytes). The helpers provide shared red-black-tree rotation, rebalancing
+**136 functions compile to 50,168 matching code bytes**: six
+`_STL::_Rb_global<bool>` helpers (1,764 bytes) and 130 container instantiations
+(48,404 bytes). The helpers provide shared red-black-tree rotation, rebalancing
 and iterator traversal.
 This establishes a compatible STLport implementation for this subset, not the
 exact historical release or compatibility of every container. AI assistance was
@@ -58,7 +58,7 @@ will match automatically.
 
 ## Container instantiations
 
-The accepted container profile adds the following complete function bodies:
+The initial container profile added the following complete function bodies:
 
 | Family | Functions | Code bytes |
 | --- | ---: | ---: |
@@ -73,16 +73,16 @@ source paths. The corresponding manifest records its complete mangled type,
 original address, binding, size, generated sections and external references.
 Class typedefs are local readability aliases and do not change mangling.
 
-The selected instances use builtin types, STLport strings/pairs, and pointers to
+Those first 86 instances use builtin types, STLport strings/pairs, and pointers to
 game objects. All game pointees are forward-declared. No game class is sized,
 constructed, copied by value or given speculative fields. The upstream container,
 allocator, node and string declarations supply library layouts; matches across
 insertion, erasure, allocation, copies and traversal independently test their
-observed use. Custom comparators and unknown game value layouts remain outside
-this subset.
+observed use. Custom comparators and unknown game value layouts were outside
+that initial subset. The scoped extension below adds reviewed game storage models.
 
-`include/stlport-containers/` contains 63 **unmodified** upstream files selected
-by compiler dependency scans across all 86 instantiations. Their individual
+`include/stlport-containers/` now contains 67 **unmodified** upstream files selected
+by compiler dependency scans across the accepted instantiations. Their individual
 hashes are recorded in `stlport-source.json`, along with the existing archive
 hash. Copyright/permission notices remain in every file. Unused declarations and
 other build configurations in these headers are not independently verified.
@@ -115,16 +115,27 @@ masked comparison is involved. New/delete calls resolve to the previously
 verified game allocation operators; other dependencies resolve to original
 symbols and may still be original context.
 
+### Scoped game-container extension
+
+A further 44 functions add 16,592 bytes using recovered comparator behavior and
+observed game-value storage bounds. These include tree maps, vector reserve and
+pathfinding-link list operations. Unknown ranges remain unsigned-byte storage;
+nontrivial game copy/destructor calls remain original context. The separate
+256-byte pathfinding copy constructor is counted as reconstructed game code.
+See [GameContainers.md](GameContainers.md) for per-family counts, original
+instruction evidence, scoped declarations and limits. These storage models are
+not complete gameplay class definitions.
+
 ### Validation and next work
 
 The ordinary source build checks every compiled symbol and byte, then includes
 all verified source intervals in the complete-image comparison. Existing input
-fingerprints cover the configuration, native declarations, 63 upstream files and
+fingerprints cover the configuration, native declarations, upstream files and
 all instantiations. A future template that needs unavailable exception support
 must not be treated as supported by these results.
 
-Remaining STL-named symbols include custom game comparators, by-value game
-objects, algorithms over game structures and some string support. Those require
-independent type/behavior evidence. A symbol mentioning STL is not automatically
+Remaining STL-named symbols include other custom comparators, by-value game
+objects, algorithms over game structures and some string support. Each still
+requires independent type/behavior evidence beyond the scoped models now accepted. A symbol mentioning STL is not automatically
 reusable library code. Continue with complete generated-output comparisons and
 retain unresolved candidates under `scratch/`.

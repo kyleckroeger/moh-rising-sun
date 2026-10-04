@@ -1,0 +1,40 @@
+{
+  "id": "stl_8027d258",
+  "source": "src/stlport/containers/stl_8027d258.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8027d258",
+      "size": 88
+    }
+  ],
+  "functions": [
+    {
+      "name": "_M_erase__Q24_STLt8_Rb_tree5ZP5SHAPEZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListZQ24_STLt4less1ZP5SHAPEZQ24_STLt9allocator1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARListPQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCP5SHAPEZQ34EAGL5Model7TARList",
+      "address": "0x8027d258",
+      "size": 88,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__builtin_delete": "0x801a8990"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}
