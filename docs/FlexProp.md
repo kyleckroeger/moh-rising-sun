@@ -1,6 +1,6 @@
 # FlexProp and string CRC evidence
 
-[kyleckroeger’s research offer in issue #4](https://github.com/lifewillbeokay/moh-rising-sun/issues/4) highlighted CRC-derived FlexProp setting names. That useful lead prompted this reconstruction of the GameCube lookup path. The contributor’s detailed notes and 241-name list had not yet been shared; no name from that list or PS2 layout is claimed here. These bodies and scoped storage views were independently reconstructed from the pinned GR8E69 executable with Codex assistance.
+[kyleckroeger’s research offer in issue #4](https://github.com/lifewillbeokay/moh-rising-sun/issues/4) highlighted CRC-derived FlexProp setting names. That useful lead prompted this reconstruction of the GameCube lookup path. The detailed notes and 241-name list were shared after these fragments were reconstructed and are now available in the [PS2 FlexProp research](research/ps2/flexprop-crc-names.md). These bodies and scoped storage views were independently reconstructed from the pinned GR8E69 executable with Codex assistance; no name from that list or PS2 layout is claimed as evidence for the accepted source here.
 
 ## Accepted lookup path
 
@@ -26,4 +26,4 @@ The original private `crcTable` is a 256-word read-only object at `0x802b7fc0`, 
 
 ProDG 3.8.1 with `-O2 -G0 -fno-exceptions -fno-implicit-templates` reproduces every accepted function, diagnostic string and generated constant. No byte patches, inline assembly implementations, discarded functions, clipped sections or fuzzy matches are used. The private comparator and dependencies retain their original symbol binding/file scope. Whole-image verification and the public snapshot checks remain required; runtime behavior has not been emulator-tested.
 
-These declarations and the recipe evidence in [ParticleRecipes.md](ParticleRecipes.md) provide a starting point for applying the offered PS2 research. Script/opcode, `.bpd` and music-rule work remains separate and unverified in this batch.
+These declarations and the recipe evidence in [ParticleRecipes.md](ParticleRecipes.md) provide a starting point for applying the [contributed PS2 research](research/README.md). The script/opcode, `.bpd` and music-rule notes record their own GameCube comparisons; they do not add reconstructed source in this batch.

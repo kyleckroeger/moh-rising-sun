@@ -35,6 +35,14 @@ Bring your own game copy for local verification. This repository contains source
 configuration and tooling; please do not upload game images, executable binaries,
 assets, compiler binaries or complete debug dumps to commits, issues or PRs.
 
+## Research notes
+
+The [research notes index](docs/research/README.md) collects contributor investigations
+and their GameCube comparisons. Thanks to kyleckroeger for sharing PS2 research on
+FlexProp names, particle recipes, script instructions, class descriptions, gameplay
+data and interactive music. These notes provide leads for reconstruction; each topic
+separates its evidence and open questions from verified matching source.
+
 ## Progress integration
 
 Explore the [live decomp.dev map](https://decomp.dev/lifewillbeokay/moh-rising-sun)

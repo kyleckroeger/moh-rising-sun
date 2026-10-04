@@ -144,9 +144,13 @@ inferred only from use.
   builds a 16-byte-per-function run-time table [notes].
 - **GameCube** [GC], confidence **high**: GR8E69 has the same table in `.data` at
   `0x802c3528`. It holds 583 pairs of (big-endian CRC, function address), with **the
-  same CRCs in the same order** as the PS2 `bsbifunc.dat`. 582 targets are `BIFunc_*`
-  symbols. One target address carries only a `gcc2_compiled.` marker in the symbol table;
-  it was not investigated. `BSInitBIFuncs` (`0x800f8dac`) and `BSBifuncInvalid`
+  same CRCs in the same order** as the PS2 `bsbifunc.dat`, as reported by the contributor.
+  A maintainer cross-check (2026-10-04, Codex-assisted) confirms that all **583** GameCube
+  targets have matching `BIFunc_*` function symbols and upper-case name CRCs. The entry
+  originally left unidentified is index 409 (zero-based), CRC `0xdb912483`, targeting
+  `BIFunc_RegisterAlarm__FPPiPv` at `0x800d7a94`. That address also has a
+  `gcc2_compiled.` marker; the marker does not replace the function symbol.
+  `BSInitBIFuncs` (`0x800f8dac`) and `BSBifuncInvalid`
   (`0x800f9604`) exist. Their roles as the start-up matcher and the fallback for
   unmatched CRCs are plausible but **unverified**.
 
@@ -157,4 +161,3 @@ inferred only from use.
 - The first word of each `bsbifunc.dat` entry.
 - The GameCube `.cbs` and `bsbifunc.dat` files, which were not examined, including
   their byte order.
-- The table entry whose target has only the `gcc2_compiled.` marker.

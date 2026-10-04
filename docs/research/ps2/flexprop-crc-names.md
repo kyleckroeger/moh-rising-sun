@@ -110,21 +110,30 @@ names came from words in GR8E69 symbol names. Chance matches were removed by han
 they were obviously not names. The per-name origin was not recorded, so it can't be
 given below.
 
-- **Confirmed spelling** (42 names): the exact name exists as a whole, zero-terminated
+- **Confirmed spelling** (40 names): the exact name exists as a whole, zero-terminated
   string in the PS2 and/or GR8E69 `MOH3RDVD.ELF` **and** its CRC is in the level data.
   A random string's chance of hitting one of 384 keys is about 384 / 2³² ≈ 1 in 11
   million. So even across all strings in a program, a chance spelling match is very
   unlikely (rough estimate, not measured). This confirms the spelling only; it does not
-  establish what the setting means. Short generic strings (`ID`, `Dump`, `Hide`, `size`)
+  establish what the setting means. Short generic strings (`ID`, `Dump`, `Hide`)
   could be present for unrelated reasons, but the exact-case CRC match is still required.
-- **Candidate** (199 names): CRC match only. With a large guess space, a few chance
+- **Candidate** (201 names): CRC match without independently corroborated whole-string
+  evidence. With a large guess space, a few chance
   matches are expected, so treat these as leads to confirm, for example from GameCube
   strings, debug output, or how a script uses the value.
 
-GameCube status of the names: the 42 strings were searched for in the GR8E69
-`MOH3RDVD.ELF`. 40 occur in both executables, `Particles` and `size` occur only in
-GR8E69, and none occur only on PS2. Whether GameCube level data uses the same keys and
-layouts is **unverified**.
+Maintainer cross-check (2026-10-04, Codex-assisted): all 241 listed CRCs and signed
+values recompute correctly, and 40 names have independent whole-string evidence in
+the pinned GR8E69 executable. Of those, the contributor reports 39 also on PS2 and
+`Particles` only on GameCube; PS2 string evidence was not independently reproduced.
+
+The original note counted `size` and `Sound` as confirmed. In GR8E69, `size` was found
+only as a suffix of longer symbol strings, and `Sound` as a suffix of longer strings,
+including `Chase- Heard Sound`. Those hits do not establish standalone names.
+`Sound` was also reported on PS2, but that whole-string evidence remains to be
+independently checked. Both names remain useful CRC candidates and are conservatively
+listed that way here. This does not disprove either spelling. Whether GameCube level
+data uses the same keys and layouts is **unverified**.
 
 To check a name: `zlib.crc32(name.encode("ascii"))`, then compare the result as a signed
 or unsigned 32-bit value, matching how the field array is read.
@@ -140,7 +149,8 @@ or unsigned 32-bit value, matching how the field array is read.
 ## Setting names (241)
 
 Sorted alphabetically (ignoring case). "Exact string found in" lists the executables
-where the name occurs as a whole zero-terminated string.
+where the name occurs as a whole zero-terminated string. GC entries were independently
+corroborated; PS2 entries retain the contributor's reported provenance.
 
 | Name (exact spelling) | CRC-32 | As signed int32 | Status | Exact string found in |
 |---|---|---|---|---|
@@ -350,10 +360,10 @@ where the name occurs as a whole zero-terminated string.
 | `ShakeSound2` | `0x116ad767` | 292214631 | candidate | — |
 | `ShakeType` | `0xbd50b5ed` | -1118784019 | candidate | — |
 | `ShowPrompt` | `0xa297e29e` | -1567104354 | candidate | — |
-| `size` | `0xf7c0246a` | -138402710 | confirmed spelling | GC |
+| `size` | `0xf7c0246a` | -138402710 | candidate | — |
 | `SmokeParticles` | `0x755eafe7` | 1969139687 | candidate | — |
 | `SoftSave` | `0xc59af7f4` | -979699724 | candidate | — |
-| `Sound` | `0x394fec80` | 961539200 | confirmed spelling | PS2 + GC |
+| `Sound` | `0x394fec80` | 961539200 | candidate | — |
 | `Sound1` | `0x6e5d237b` | 1851597691 | candidate | — |
 | `Sound2` | `0xf75472c1` | -145460543 | candidate | — |
 | `SoundTimer` | `0xf31cf84b` | -216205237 | candidate | — |

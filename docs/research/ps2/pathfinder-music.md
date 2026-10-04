@@ -23,9 +23,9 @@ source or earns progress credit.
 - **Sources:** **[notes]** are the contributor's earlier research notes (2026-10-04).
   **[re-check]** means re-done for this document with read-only scripts. **[GC]** means
   read from GR8E69 for this document.
-- **External reference:** the field layout follows the public vgmstream reader for this
-  format, version 3.2 (`src/meta/ea_schl_map_mpf_mus.c`). It was used only as a guide;
-  no code was copied.
+- **External reference:** the field layout follows the public [vgmstream reader for
+  this format](https://github.com/vgmstream/vgmstream/blob/314a0ccae14a1b63f52f422799ead622183d9106/src/meta/ea_schl_map_mpf_mus.c),
+  version 3.2. It was used only as a guide; no code was copied.
 - **Confidence:** **high** means checked in the bytes, **medium** means consistent with
   the files but not fully traced, and **low** means an interpretation.
 
@@ -60,8 +60,12 @@ nodes and routers are [notes], confidence **medium**.
 | `0x00` | magic `xDFP` (`PFDx` stored backwards) | ✓ | ✓ |
 | `0x04`, `0x05` | version, sub-version | 3, 2 | 3, 2 |
 | `0x0D`–`0x11` (bytes) | tracks, sections, events, routers, variables | 1, 1, 6, 6, 0 | 1, 1, 6, 6, 0 |
-| `0x12` (byte) | node count (music steps) | 15 | 13 |
+| `0x12`–`0x13` (16-bit, little-endian) | node count (music steps) | 15 | 13 |
 | `0x24` | node offsets: 16-bit, multiplied by 4 | 68, 84, 100, … | 64, 76, 92, … |
+
+Maintainer cross-check (2026-10-04, Codex-assisted): the referenced reader uses a
+16-bit read at `0x12` for the node count. This corrects the original note's byte-width
+label; the reported PS2 values have not been independently reproduced here.
 
 - **Nodes**, confidence **medium**: 12 bytes plus their links. Byte 11 is the link count.
   A link word `0x00NN7F00` means "go on to node NN", probably at volume `0x7F`. The first
