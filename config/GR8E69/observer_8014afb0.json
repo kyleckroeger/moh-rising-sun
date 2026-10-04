@@ -1,0 +1,48 @@
+{
+  "id": "observer_8014afb0",
+  "source": "src/observers/observer_8014afb0.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8014afb0",
+      "size": 372
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a89c0",
+      "size": 72
+    }
+  ],
+  "functions": [
+    {
+      "name": "Add__16CDestructorQueueR13IDestructiblei",
+      "address": "0x8014afb0",
+      "size": 372,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_16CDestructorQueue.sm_pSingleton": "0x802c4d58",
+    "DebugMsg__FPCce": "0x80279094",
+    "insert_unique__Q24_STLt8_Rb_tree5ZP13IDestructibleZQ24_STLt4pair2ZCP13IDestructibleZiZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCP13IDestructibleZiZQ24_STLt4less1ZP13IDestructibleZQ24_STLt9allocator1ZQ24_STLt4pair2ZCP13IDestructibleZiGQ24_STLt17_Rb_tree_iterator2ZQ24_STLt4pair2ZCP13IDestructibleZiZQ24_STLt16_Nonconst_traits1ZQ24_STLt4pair2ZCP13IDestructibleZiRCQ24_STLt4pair2ZCP13IDestructibleZi": "0x8028a3b4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

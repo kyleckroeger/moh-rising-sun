@@ -67,7 +67,8 @@ public:
 class HandlerLeaderboard {
 public:
     struct Player {
-        unsigned char unresolved_00[32] __attribute__((aligned(4)));
+        unsigned char unresolved_00[12] __attribute__((aligned(4)));
+        int field_0c, field_10, field_14, field_18, field_1c;
     };
 };
 

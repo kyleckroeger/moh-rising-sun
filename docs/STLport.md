@@ -1,8 +1,8 @@
 # STLport: verified tree helpers and container instantiations
 
-**136 functions compile to 50,168 matching code bytes**: six
-`_STL::_Rb_global<bool>` helpers (1,764 bytes) and 130 container instantiations
-(48,404 bytes). The helpers provide shared red-black-tree rotation, rebalancing
+**192 functions compile to 71,452 matching code bytes**: six
+`_STL::_Rb_global<bool>` helpers (1,764 bytes) and 186 container/algorithm instantiations
+(69,688 bytes). The helpers provide shared red-black-tree rotation, rebalancing
 and iterator traversal.
 This establishes a compatible STLport implementation for this subset, not the
 exact historical release or compatibility of every container. AI assistance was
@@ -81,7 +81,7 @@ insertion, erasure, allocation, copies and traversal independently test their
 observed use. Custom comparators and unknown game value layouts were outside
 that initial subset. The scoped extension below adds reviewed game storage models.
 
-`include/stlport-containers/` now contains 67 **unmodified** upstream files selected
+`include/stlport-containers/` now contains 72 **unmodified** upstream files selected
 by compiler dependency scans across the accepted instantiations. Their individual
 hashes are recorded in `stlport-source.json`, along with the existing archive
 hash. Copyright/permission notices remain in every file. Unused declarations and
@@ -125,6 +125,15 @@ nontrivial game copy/destructor calls remain original context. The separate
 See [GameContainers.md](GameContainers.md) for per-family counts, original
 instruction evidence, scoped declarations and limits. These storage models are
 not complete gameplay class definitions.
+
+### Sorting, heap, and resource extension
+
+A further 56 functions add 21,284 bytes across scoreboard/leaderboard sorting,
+render-command heaps, target selection, managed resources, and pointer helpers.
+Target sorting requires a verified fast-math profile and nine complete constant
+pools. Its nine weak-pointer event handlers are counted separately as game code.
+See [GameAlgorithms.md](GameAlgorithms.md) for declarations, evidence, compiler
+settings and per-family counts.
 
 ### Validation and next work
 

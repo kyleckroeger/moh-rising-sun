@@ -13,11 +13,18 @@
     "Explicit-instantiation translation units are project integration files, not recovered original file boundaries.",
     "The first 86 container fragments use only builtin, STLport and pointer types; game pointees are forward declarations.",
     "Native new keeps bad_alloc::what as a declaration, without its unused inline body/string; no retained instantiation calls it. This is an integration boundary, not recovered original header text.",
-    "All container-generated allocated output is text, checked completely. No unused generated data is dropped.",
+    "All generated allocated output is compared completely, including target-sorting constant pools. No unused generated data is dropped.",
     "The selected profile disables exceptions, iostreams, wide-character facilities and threading; it uses new/delete allocation and the _STL namespace. Other profiles remain unverified.",
-    "A further 44 container fragments use scoped game storage declarations and two recovered comparator behaviors; see docs/GameContainers.md for exact evidence, unknowns and restrictions. The separate PathFindingNetwork copy constructor is reconstructed game code."
+    "A further 44 container fragments use scoped game storage declarations and two recovered comparator behaviors; see docs/GameContainers.md for exact evidence, unknowns and restrictions. The separate PathFindingNetwork copy constructor is reconstructed game code.",
+    "Sorting, heap and resource-container extensions use scoped game-operation models; target sorting has a verified -ffast-math profile. Weak-pointer event handlers are reconstructed game code. See docs/GameAlgorithms.md."
   ],
   "container_headers": [
+    {
+      "path": "include/stlport-containers/algorithm",
+      "upstream_path": "stlport/algorithm",
+      "upstream_sha256": "07a5b559e5b417babd079fa0a304c11f9596efa8fcbd9d5cfbe6fd1de62b602a",
+      "modified": false
+    },
     {
       "path": "include/stlport-containers/cctype",
       "upstream_path": "stlport/cctype",
@@ -121,6 +128,18 @@
       "modified": false
     },
     {
+      "path": "include/stlport-containers/stl/_algo.c",
+      "upstream_path": "stlport/stl/_algo.c",
+      "upstream_sha256": "6e0874434787682934eae053292e775950faf9715f3c22050c9ba4bffc2d4204",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_algo.h",
+      "upstream_path": "stlport/stl/_algo.h",
+      "upstream_sha256": "86cb9c61d7b55c5c78b4981170d4290b966f2f6952b5a4409aff9a719feef890",
+      "modified": false
+    },
+    {
       "path": "include/stlport-containers/stl/_algobase.c",
       "upstream_path": "stlport/stl/_algobase.c",
       "upstream_sha256": "b23e8258a33985b1427e57226b17737cc3c8b72129c6e237ffb848d28a64604b",
@@ -220,6 +239,18 @@
       "path": "include/stlport-containers/stl/_hash_fun.h",
       "upstream_path": "stlport/stl/_hash_fun.h",
       "upstream_sha256": "dc12901e5e86c59b81b54a92261e2d547a021bed7d0912d5ba5ddf03d5676536",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_heap.c",
+      "upstream_path": "stlport/stl/_heap.c",
+      "upstream_sha256": "127f463e076419e136845dc1c4e338dfe4db4848c8836db3097f45c10859757e",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_heap.h",
+      "upstream_path": "stlport/stl/_heap.h",
+      "upstream_sha256": "87ac0cf165ae3223d8954a4e2968bb049597b0aa2dececc642e62298d6fca472",
       "modified": false
     },
     {

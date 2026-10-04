@@ -1,0 +1,39 @@
+{
+  "id": "string_80277f18",
+  "source": "src/game/string_80277f18.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80277f18",
+      "size": 60
+    }
+  ],
+  "functions": [
+    {
+      "name": "CopyString__H1Zs_PsPCX01_v",
+      "address": "0x80277f18",
+      "size": 60,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -1,6 +1,6 @@
 # Dolphin SDK matching evidence
 
-The accepted SDK contribution is **166,200 code bytes in 686 functions across 89 source units/fragments**. Together with the other accepted game and library fragments, the complete build verifies **356,988 / 2,492,032 executable bytes (14.325177%)**, across 1,355 functions. SDK code is reported as `restored_library`, separately from reconstructed game code. The coverage includes runtime libraries, not just gameplay logic.
+The accepted SDK contribution is **166,200 code bytes in 686 functions across 89 source units/fragments**. Current combined coverage is recorded in the [verified snapshot](../progress/GR8E69.snapshot.json) and [live progress map](https://decomp.dev/lifewillbeokay/moh-rising-sun). SDK code is reported as `restored_library`, separately from reconstructed game code. The coverage includes runtime libraries, not just gameplay logic.
 
 The twenty additional [network-library fragments](Network.md), totaling 43,500 code
 bytes, are tracked separately from the 89 SDK units below.

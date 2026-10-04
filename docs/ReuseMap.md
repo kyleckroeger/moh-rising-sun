@@ -13,15 +13,17 @@ code/data and full-image verification establish accepted source coverage.
 | Newlib | [Newlib 1.8.2](https://www.sourceware.org/ftp/newlib/newlib-1.8.2.tar.gz) | 37,496 | Correct FILE and varargs declarations unlock many libc routines. |
 | SN library adaptations | [RE4 formatter and math support](https://github.com/adonis-singh/re4/tree/9b76ff003081d6ece8b838453fb8310743a972c7/src/game) plus Newlib | 16,396 | Rising Sun's bounded string writes and grouping flag distinguish its formatter. |
 | GCC runtime | [GCC 2.95.2](https://github.com/gcc-mirror/gcc/tree/releases/gcc-2.95.2/gcc) | 5,532 | Target ABI, configuration and private tables matter as much as function names. |
-| STLport | [STLport 4.5.3](https://sourceforge.net/projects/stlport/files/STLport%20archive/STLport%204/) | 50,168 | Six tree helpers and 130 container instances match using one reviewed profile; the game-value extension uses explicitly scoped storage models. The exact historical release remains unconfirmed. |
+| STLport | [STLport 4.5.3](https://sourceforge.net/projects/stlport/files/STLport%20archive/STLport%204/) | 71,452 | Six tree helpers and 186 container/algorithm instances match; scoped game-operation models support sorting, heaps and resource containers. The exact historical release remains unconfirmed. |
 | Network helpers and RSA MD5 | [SocketLibrary](https://github.com/Cuyler36/dolsocketlibrary/tree/e02356692695e64429dd70dc421a4a71a493e9c8), [NetworkBasePackage](https://github.com/Cuyler36/dolnetbp/tree/ba3846a83bf86505fe60e07aefe89e3e0ffc0e34) | 43,500 | Older transport, TCP output/timers, ICMP and PPP control join routing and diagnostics; unverified stack and driver code remains. The digest source is the RSA Data Security, Inc. MD5 Message-Digest Algorithm. |
 
 These are separate, already accepted byte totals, not estimates of future gains.
 See the individual library evidence documents for exact scopes, provenance and licenses.
-The current verified coverage is 373,836 / 2,492,032 executable bytes
-(15.001252%), reaching the 15% milestone. The latest batch adds 16,592 library
-bytes and a 256-byte game copy constructor. See [game-container evidence](GameContainers.md)
-for storage bounds, comparator behavior, original lifecycle calls and unknowns.
+Current combined coverage is recorded in the [verified snapshot](../progress/GR8E69.snapshot.json).
+The latest extension adds 21,284 library bytes and 3,668 game bytes across
+[sorting/resource containers](GameAlgorithms.md), [observers and the destruction
+queue](Observers.md), and [matrix routines](Matrix.md). The earlier
+[game-container extension](GameContainers.md) established the storage models
+used by part of this work.
 Runtime remains untested.
 
 ## Ranked research queue
@@ -30,8 +32,8 @@ This is a qualitative work order, not a prediction of hours or a promise of matc
 
 | Priority | Candidate | Evidence / size | Next useful step |
 | --- | --- | --- | --- |
-| 1 | Remaining STL instances | 78 remaining symbols mention `_STL`, spanning 27,076 declared function bytes | Builtin/pointer containers and the reviewed game-storage subset now match. Recover the remaining custom comparators and value representations before extending coverage. This includes game routines, not just reusable library code. |
-| 2 | `powf` | 1,780 bytes; the research candidate differs in three indexed-load operand encodings | Investigate front-end/source address-expression ordering; do not patch instructions. |
+| 1 | Remaining STL instances | Remaining custom values, anonymous-namespace containers and string support | Builtin/pointer containers and the reviewed game-storage subset now match. Recover the remaining custom comparators and value representations before extending coverage. This includes game routines, not just reusable library code. |
+| 2 | `powf` | 1,780 bytes; the research candidate differs in three indexed-load operand encodings | Further source/flag probes leave the same difference. A compiler word-size address-canonicalization difference is a research lead, not yet a proven cause; do not patch instructions. |
 | 3 | SN `add_separators` | 392 bytes; its ABI and formatter callers now match | Finish the helper's C reconstruction and register allocation; it remains context. |
 | 4 | Older network stack | Twenty accepted fragments establish older transport and PPP layouts; the Ethernet driver and unretained stack routines still differ | Compare protocol structures and behavior with original call sites, keeping retained code and storage complete. |
 | 5 | Shared game math, strings and allocation | `MathFun.cpp` has 1,268 unmatched bytes; string/allocation groups are also mapped | Recover common types, allocator contracts and constant ownership, then work through callers. |
@@ -47,7 +49,7 @@ reference; shared EA game/engine source compatibility has not been established h
 The direct-call portion of item 2 is now implemented by `tools/dependencies.py`.
 Its [ranked work packets](Dependencies.md) selected CMatrix for shared game-type
 work: initialization had 173 distinct unfinished callers. Initialization,
-assignment, multiplication and 13 related functions now match using one shared
+assignment, multiplication and 17 related functions now match using one shared
 header. CVector3 remains opaque pending evidence of its complete layout.
 Vtable/data references and broader type recovery remain future work.
 

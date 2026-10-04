@@ -1,0 +1,41 @@
+{
+  "id": "stl_8028082c",
+  "source": "src/stlport/containers/stl_8028082c.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8028082c",
+      "size": 400
+    }
+  ],
+  "functions": [
+    {
+      "name": "reserve__Q24_STLt6vector2ZQ44EALA9Character11MatrixBlend11SubTaskInfoZQ24_STLt9allocator1ZQ44EALA9Character11MatrixBlend11SubTaskInfoUi",
+      "address": "0x8028082c",
+      "size": 400,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__builtin_new": "0x801a8910",
+    "__builtin_delete": "0x801a8990"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "observer_8014add4",
+  "source": "src/observers/observer_8014add4.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8014add4",
+      "size": 112
+    }
+  ],
+  "functions": [
+    {
+      "name": "NotifyObservers__8ISubject13ESubjectEvent",
+      "address": "0x8014add4",
+      "size": 112,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

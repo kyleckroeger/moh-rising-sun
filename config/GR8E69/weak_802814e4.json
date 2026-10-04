@@ -1,0 +1,39 @@
+{
+  "id": "weak_802814e4",
+  "source": "src/observers/weak_802814e4.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802814e4",
+      "size": 72
+    }
+  ],
+  "functions": [
+    {
+      "name": "HandleEvent__t7WeakPtr2Z14CSoldierObjecti8P8ISubject13ESubjectEvent",
+      "address": "0x802814e4",
+      "size": 72,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

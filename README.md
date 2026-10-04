@@ -84,7 +84,8 @@ Run the scripts from any directory; all outputs remain inside this checkout. `ba
 | `build/audit/dependencies.json` | Local direct-branch dependency graph and research ranking (`python3 tools/dependencies.py`) |
 | `src/matrix/`, `include/game/CMatrix.h` | Reconstructed matrix functions and a shared layout with explicit vector-type limits |
 | `src/sys_memory.cpp` | Four game allocation operators; original heap routines remain external |
-| `src/stlport/` | Tree/container functions using an attributed STLport 4.5.3 subset |
+| `src/stlport/` | Tree, container, sorting and heap functions using an attributed STLport 4.5.3 subset |
+| `src/observers/` | Reconstructed observers, weak pointers and destruction queue; [evidence](docs/Observers.md) |
 | `src/MathFun.cpp` | Reconstructed functions from the original MathFun unit |
 | `src/lua/` | Restored Lua 4.0.1 source units, headers and copyright notice |
 | `src/dolphin/`, `include/dolphin-sdk/` | Accepted SDK source units, reference headers and attribution |

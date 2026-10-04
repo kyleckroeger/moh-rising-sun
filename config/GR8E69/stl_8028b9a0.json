@@ -1,0 +1,38 @@
+{
+  "id": "stl_8028b9a0",
+  "source": "src/stlport/containers/stl_8028b9a0.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8028b9a0",
+      "size": 488
+    }
+  ],
+  "functions": [
+    {
+      "name": "__adjust_heap__H4ZP9ScoreInfoZiZ9ScoreInfoZQ24_STLt4less1Z9ScoreInfo_4_STLX01X11X11X21X31_v",
+      "address": "0x8028b9a0",
+      "size": 488,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

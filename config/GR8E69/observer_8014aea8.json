@@ -1,0 +1,41 @@
+{
+  "id": "observer_8014aea8",
+  "source": "src/observers/observer_8014aea8.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8014aea8",
+      "size": 92
+    }
+  ],
+  "functions": [
+    {
+      "name": "__16CDestructorQueue",
+      "address": "0x8014aea8",
+      "size": 92,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__builtin_new": "0x801a8910"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

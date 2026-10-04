@@ -1,0 +1,46 @@
+{
+  "id": "matrix_8007b0b4",
+  "source": "src/matrix/matrix_8007b0b4.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8007b0b4",
+      "size": 176
+    },
+    {
+      "name": ".rodata",
+      "address": "0x8029afc0",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "Orthographic__7CMatrixffff",
+      "address": "0x8007b0b4",
+      "size": 176,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetSlot__7CMatrixUi": "0x802790e0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

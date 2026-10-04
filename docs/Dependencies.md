@@ -19,7 +19,7 @@ row but overlap across rows; they are not a prediction of matching coverage.
 
 ## Useful next work packets
 
-Counts below follow the container, Lua and network-helper additions in this revision. They will change as
+Counts below are the earlier checkpoint following the container, Lua and network-helper additions. They will change as
 manifests grow; regenerate the report for current counts. A small function with many callers is a type/contract research lead,
 not necessarily the easiest source match.
 
@@ -30,7 +30,7 @@ not necessarily the easiest source match.
 | `DWI_free` | `0x801a8894` | 64 | 75 | Recover `freeSmall`'s result contract and the fallback to `MEM_free`. |
 | `GetStringCRC` | `0x801acb98` | 80 | 60 | Identify the CRC table/algorithm and signedness before selecting a public implementation. |
 
-The first CMatrix work packet is now accepted: 16 functions and a shared
+The CMatrix work packet now has 20 accepted functions and a shared
 64-byte matrix representation, including initialization, assignment and
 multiplication. See [the layout evidence and remaining vector questions](Matrix.md).
 Their earlier unfinished-caller counts were 173, 127 and 75; these overlapping

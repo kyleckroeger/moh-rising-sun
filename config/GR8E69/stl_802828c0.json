@@ -1,0 +1,49 @@
+{
+  "id": "stl_802828c0",
+  "source": "src/stlport/containers/stl_802828c0.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802828c0",
+      "size": 664
+    },
+    {
+      "name": ".rodata",
+      "address": "0x8029f534",
+      "size": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "__unguarded_partition__H3ZP10TargetInfoZ10TargetInfoZQ24_STLt4less1Z10TargetInfo_4_STLX01X01X11X21_X01",
+      "address": "0x802828c0",
+      "size": 664,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_vt.9IObserver": "0x802e9aa0",
+    "_vt.t7WeakPtr2Z10ISceneNodei8": "0x802e48b0",
+    "AddObserver__8ISubjectP9IObserver": "0x8014ae44",
+    "_._9IObserver": "0x8014ad64"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

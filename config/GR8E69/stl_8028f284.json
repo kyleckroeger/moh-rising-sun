@@ -1,0 +1,38 @@
+{
+  "id": "stl_8028f284",
+  "source": "src/stlport/containers/stl_8028f284.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8028f284",
+      "size": 340
+    }
+  ],
+  "functions": [
+    {
+      "name": "__unguarded_linear_insert__H3ZPQ218HandlerLeaderboard6PlayerZQ218HandlerLeaderboard6PlayerZ18SortByTeamAndScore_4_STLX01X11X21_v",
+      "address": "0x8028f284",
+      "size": 340,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

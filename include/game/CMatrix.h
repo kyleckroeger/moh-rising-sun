@@ -19,6 +19,10 @@ public:
 
     CMatrix& operator=(const CMatrix& other);
     void GetSlot(unsigned int slot);
+    void BuildRot(const CVector3& axis, float angle);
+    void Perspective(float x, float y, float near, float far);
+    void Orthographic(float x, float y, float near, float far);
+    void Inverse(const CMatrix& in);
     void Multiply(const CMatrix& a, const CMatrix& b);
     void BuildRotX(float angle);
     void BuildRotY(float angle);

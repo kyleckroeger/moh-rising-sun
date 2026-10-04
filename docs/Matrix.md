@@ -1,9 +1,9 @@
 # CMatrix reconstruction evidence
 
-Sixteen game-specific functions now compile to **2,120 matching code bytes**,
-with **20 generated read-only data bytes**, in five accepted fragments. They use
-ProDG 3.8.1 with `-O2 -G0`, the same working profile as MathFun and the allocation
-operators. This does not identify the original compiler release. Reconstruction
+Twenty game-specific functions now compile to **3,556 matching code bytes**,
+with **64 generated read-only data bytes**, in nine accepted fragments. They use
+ProDG 3.8.1 with `-O2 -G0`; the general inverse additionally requires
+`-ffast-math`. This does not identify the original compiler release. Reconstruction
 and verification used AI assistance; these functions were reconstructed from the
 pinned executable rather than imported from another decompilation.
 
@@ -49,6 +49,10 @@ construct, copy or take the size of a complete vector object.
 | `matrix_translation` | `0x8007ade8` | 7 | 376 | None |
 | `matrix_getslot` | `0x802790e0` | 1 | 92 | 8 bytes at `0x80299754` |
 | `matrix_multiply` | `0x802794b8` | 1 | 836 | None |
+| `matrix_8007ab7c` | `0x8007ab7c` | 1 | 260 | 12 bytes at `0x8029af9c` |
+| `matrix_8007afe0` | `0x8007afe0` | 1 | 212 | 12 bytes at `0x8029afb4` |
+| `matrix_8007b0b4` | `0x8007b0b4` | 1 | 176 | 8 bytes at `0x8029afc0` |
+| `matrix_8007b290` | `0x8007b290` | 1 | 788 | 12 bytes at `0x8029afd0` |
 
 The core fragment contains `InitClass`, assignment and both `BuildScale`
 overloads. Translation contains `BuildTrans`, the four named setters,
@@ -60,7 +64,7 @@ The three earlier fragments lie in the interval from the `matrix.cpp` compiler
 marker at `0x8007a9b4` to the next file's marker at `0x8007be5c`. This is the
 existing code map's inferred file-ownership evidence. The later `GetSlot` and
 `Multiply` bodies have insufficient original-file evidence; their manifests
-intentionally do not assign an original source file. The five new source files
+intentionally do not assign an original source file. The source files
 are reconstruction fragments, not a claim about original translation-unit splits.
 
 ## Behavior, constants and original context
@@ -96,6 +100,37 @@ has the same result as computing through an independent temporary. `PreTranslate
 adds a basis-weighted offset, whereas `Translate` adds components directly.
 Both leave the other matrix components untouched.
 
+## General rotation, projections and inverse
+
+`BuildRot` uses the observed three-float axis prefix and the same angular scale
+and `MathSinCos` boundary as the axis-specific rotations. It constructs the
+three-by-three rotation using cached axis components, writes zero to the other
+homogeneous components, and writes one at offset sixty. It does not normalize the
+axis. The original source's expression spelling and parameter preconditions are
+unknown; no full CVector3 construction is introduced.
+
+`Perspective` and `Orthographic` call `GetSlot(0)` before replacing their observed
+projection entries. The parameter names describe their formulas, not recovered
+historical names. In particular, the retained orthographic routine writes zero
+to offset sixty, as the original does; it is not replaced with a conventional
+projection formula. The constants 1, -2 and 0 are compared at the addresses
+referenced by the original functions.
+
+`Inverse` separately accumulates positive and negative determinant terms. It
+returns without writing the destination when the determinant is zero or its
+observed relative-magnitude check falls below the single-precision constant
+`1.0e-15f` (`0x26901d7d`). Otherwise it writes the inverse three-by-three entries
+and translated position directly, with homogeneous zeroes and a final one.
+Expression and write order are retained; in-place aliasing must not be assumed
+safe. This range requires `-ffast-math` to reproduce its original comparison and
+arithmetic instructions, so the high-level code is not a promise of IEEE NaN
+behavior under different compiler settings.
+
+These four routines add 1,436 game-code bytes and 44 read-only data bytes. They
+lie within the original `matrix.cpp` marker interval, but their separate source
+files are project build fragments. They reuse the existing matrix storage and
+opaque-vector prefix view; no additional complete game type was invented.
+
 ## Verification and next work
 
 All generated allocated sections, function boundaries, external dependencies and
@@ -107,13 +142,13 @@ separate earlier result; emulator and on-disc loading behavior remain untested.
 The dependency scan originally ranked initialization, assignment and
 multiplication at 173, 127 and 75 distinct unfinished callers respectively.
 Those numbers overlap and are prioritization evidence, not newly reconstructed
-caller code. The reusable declaration is the main benefit beyond these 2,120
-bytes: future transform-related functions can now use an independently checked
+caller code. The reusable declaration is the main benefit beyond these verified
+functions: future transform-related functions can now use an independently checked
 matrix representation.
 
 Useful next work is to recover enough `CVector3` layout/constructor evidence to
-support value parameters and local vectors, then extend `BuildRot`, `Rotate`,
-`FastInverse` and the remaining matrix functions. A research `TibToMOHFL`
+support value parameters and local vectors, then extend `Rotate`, `FastInverse`, `Orthonormalize` and the remaining matrix
+functions. A research `TibToMOHFL`
 implementation has the expected 88-byte size but still differs in instruction
 scheduling/register allocation; it earns no credit. Do not extend the opaque
 vector declaration simply to make an isolated candidate compile.

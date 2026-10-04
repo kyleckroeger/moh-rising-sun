@@ -1,0 +1,42 @@
+{
+  "id": "stl_8028e984",
+  "source": "src/stlport/containers/stl_8028e984.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8028e984",
+      "size": 608
+    }
+  ],
+  "functions": [
+    {
+      "name": "__partial_sort__H3ZPQ218HandlerLeaderboard6PlayerZQ218HandlerLeaderboard6PlayerZ18SortByTeamAndScore_4_STLX01X01X01PX11X21_v",
+      "address": "0x8028e984",
+      "size": 608,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "make_heap__H2ZPQ218HandlerLeaderboard6PlayerZ18SortByTeamAndScore_4_STLX01X01X11_v": "0x8028e734",
+    "__adjust_heap__H4ZPQ218HandlerLeaderboard6PlayerZiZQ218HandlerLeaderboard6PlayerZ18SortByTeamAndScore_4_STLX01X11X11X21X31_v": "0x8028e388",
+    "pop_heap__H2ZPQ218HandlerLeaderboard6PlayerZ18SortByTeamAndScore_4_STLX01X01X11_v": "0x8028e828"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}
