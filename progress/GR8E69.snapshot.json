@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 276480,
+    "matching_code_bytes": 278600,
     "total_executable_code_bytes": 2492032,
-    "percent": 11.094560583491704,
+    "percent": 11.179631722225075,
     "categories": {
-      "reconstructed_game": 528,
+      "reconstructed_game": 2648,
       "restored_library": 275952
     },
-    "matching_functions": 1122
+    "matching_functions": 1138
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -133,6 +133,11 @@
     "config/GR8E69/ltm.json": "001dc4c2add11b1bfe6f5d952acb119d4a912d61d7f630c9ac48379f711f39ad",
     "config/GR8E69/lvm.json": "2a9cc1435ec6bac77253f0b89a8fc9980fdef901fc701b3cda691817cc4e93e8",
     "config/GR8E69/lzio.json": "fd6b343d8b40cee7692844cb7688dcbe058747c304066035668babf64217001b",
+    "config/GR8E69/matrix_core.json": "f072a560d12dce247a1728095680aca97767286d6e588bb82cd178ff330f6d3d",
+    "config/GR8E69/matrix_getslot.json": "d07d5d0d67c6a1b90a32de95b38943229a69a8ef541cb215876a812287f63851",
+    "config/GR8E69/matrix_multiply.json": "64d9a2f6ff2c6b85fe51ce1d07d79c21d706733dbd641bf74cad4cf295e1075e",
+    "config/GR8E69/matrix_rotations.json": "d9316a52cb8420ec64a5caec9440f9717316a194bcecb7988afc6ef310f6676d",
+    "config/GR8E69/matrix_translation.json": "622a8647279665d8f4caeb887a2966a8719838335416b658bdcb872ddba78fd5",
     "config/GR8E69/mtx44.json": "84de9c6118b6daea26b557ecdd7359bff811fed286a625edf04cff45c24da5c3",
     "config/GR8E69/newlib-source.json": "e576a198dc1b37da204e4e141c2f21b1a9e1c88c1a709105cc6e2737018e78c6",
     "config/GR8E69/newlib__tolower.json": "35084196609b4abe76e7981924b6dd63422f61e1d52314c374074af3f2357d58",
@@ -234,7 +239,7 @@
     "config/GR8E69/newlib_wctomb_r.json": "fc59b588e63f3a1f302300e1257e93abec1acb4041e2ef289f02d12774f5ae70",
     "config/GR8E69/newlib_writer.json": "cf7eab1eebe3bf4b04912e61b9ce9a2c7c4191ebecc610aa267f69bdabe6512f",
     "config/GR8E69/newlib_wsetup.json": "61dd8c7f513073a2f4c355ee89bdcf2d300345cd74c632de1997cba9f3e84020",
-    "config/GR8E69/project.json": "08ef60a1c8abcca19164a49393b490c44e88048bac83ad1cfa80f8bdb12277b3",
+    "config/GR8E69/project.json": "ed18acd218d3055f78ae328b95e9d8edecfd79c18d003f2ac16a0b4037d0fb93",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/stl_m_decrement.json": "e3855c5b823ba74eb15d6f6eb1835bfbb233625de7a5d5c200f0b164d0af365b",
     "config/GR8E69/stl_m_increment.json": "22bffec841fa9246035f9c7eb878af24bf2d2ca9cff5d75bee14b74995b8c0e7",
@@ -372,6 +377,7 @@
     "include/dolphin-sdk/libc/string.h": "32c15447719e8675170844ae143c87bbee0646207012c59ffc7352b50c561956",
     "include/dolphin-sdk/libc/wchar.h": "eb9359b3f8c80e980c291b31b08b913739a9fda753a2a5007f8bf2bf3c646439",
     "include/dolphin-sdk/macros.inc": "4e92f656bb511fbb45d66081291371c47ceba7bce9c55f86871116203cf38a46",
+    "include/game/CMatrix.h": "cbcb1dacc9be379c643b0d10fcc958b657fdddbc16adcb11d3b433f11bf6c9e7",
     "include/newlib/_ansi.h": "98221b391010195de4e2824879860b7fe98a8f6bc8ab2c5eaa2a3b029b4f1ad4",
     "include/newlib/_syslist.h": "546b13e022a2e53bfad0138e9294d92210773c9a7a61ee2d4ffb152ed4a6396a",
     "include/newlib/ar.h": "d7aad21a7db658f45925014ea2ffd6cb7ba3d40fad05c9a00e77bfe912577ae3",
@@ -595,6 +601,11 @@
     "src/lua/lvm.h": "6aaeffc3d2e5e52ee2146a95278ec5a15cad147bde4f486291f648fac5896e21",
     "src/lua/lzio.c": "015c1f2b6f46a536f3b911e4ae1156e1f0fa21367a63d053675fed1551a8bf16",
     "src/lua/lzio.h": "be259449bd1fb99b1cb9b5dbfcc5a0f6afbf27e22836e76429f4aa8cd4c29e07",
+    "src/matrix/core.cpp": "db206300806ab7891b16ab595cf6d41f4d94b51b0fdfa9f9f0255061e7f7a1d8",
+    "src/matrix/getslot.cpp": "e69b27cf7cd77fb0933f4359ea9dd13846a58553543bb56e551ed76780155d01",
+    "src/matrix/multiply.cpp": "83d29636e8cacd79a0c4666bec21713fbb8f8dfbc81fee54cf24b819806a3db3",
+    "src/matrix/rotations.cpp": "dd3271983b5ae5487680c727a03888eb321b4fa1fa595c45c4300f89c018686d",
+    "src/matrix/translation.cpp": "6da9546bc9ea8c3135552f2a4e8ebdec0d66c977aece73c5335857ceb64728ed",
     "src/newlib/COPYING.NEWLIB": "926114809b158088f2672ad7d05c60e72b3217edadbfd55ad3c1ba319b84f852",
     "src/newlib/NOTICE": "03cf2a4fe95fd7219fc9bf1e9967b9f29dceb614612006c4f7797c6b6889504c",
     "src/newlib/NOTICE.SN": "a3da43a64bc3abf524de4040183830a89bed291689a0a77dbe0cfaae247a45f8",
@@ -7738,6 +7749,86 @@
       "discarded_functions": [],
       "object_sha256": "c9f39fcb2a099192b8e1be2854688be777a7b0f2ee4024075e33f68416ec433d",
       "linked_sha256": "51518a1f32dada29adb45917c57d5000ddf3d355a0568a5154b81295239d92fa"
+    },
+    {
+      "id": "matrix_core",
+      "category": "reconstructed_game",
+      "functions": 4,
+      "code_bytes": 456,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "991104d87968c41d8558e3c5619c75b5c3833a52414dc6745e5b7e103b07d216",
+      "linked_sha256": "11ed17590bfec3e4a186775205353126e041bebea626b389e5f89cfd5a0a0bb5"
+    },
+    {
+      "id": "matrix_translation",
+      "category": "reconstructed_game",
+      "functions": 7,
+      "code_bytes": 376,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f580526530ec6f347fad6adb7d440904dd5323b764a7b11b1481a402ebccba02",
+      "linked_sha256": "3fa71d1a768a486dda8fc8033f165203016531b4d86d2cd011ea94c7fdae4519"
+    },
+    {
+      "id": "matrix_multiply",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 836,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "1175d666112d83d34b3cd0ec22fad2ae80e889c7f820eff87f5111576bb35bd2",
+      "linked_sha256": "129dd4ac7df9448bd9642de5c880bd53858f2f08acc45d20382ec57fcac8c531"
+    },
+    {
+      "id": "matrix_getslot",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 92,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "4ed0b2b90c7770b9f1f99d45f9916c48695eb03051e9a386629d5d6e3a304a22",
+      "linked_sha256": "4630e05cc4e1166d233d25d85947473f1e7a9a0a0b98abc713a1e17aa5bfcefb"
+    },
+    {
+      "id": "matrix_rotations",
+      "category": "reconstructed_game",
+      "functions": 3,
+      "code_bytes": 360,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "1d5e1a36802fdcbb9158a221820347211a13cb5a7cfb8848292565de9f8e3e03",
+      "linked_sha256": "659dd9ebeb88feaa5347028fc60dbf8cdbd843d1fdf8c32f0e5cb425b0f82a5e"
     }
   ],
   "code_map": {
@@ -15050,113 +15141,20 @@
         ]
       },
       {
-        "name": "Unknown file/.text @ 8007a9b4",
+        "name": "Unknown file/.text @ 8007ab7c",
         "ranges": [
-          {
-            "address": "0x8007a9b4",
-            "size": 132,
-            "kind": "function",
-            "name": "InitClass__7CMatrix",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007aa38",
-            "size": 176,
-            "kind": "function",
-            "name": "__as__7CMatrixRC7CMatrix",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007aae8",
-            "size": 72,
-            "kind": "function",
-            "name": "BuildScale__7CMatrixf",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007ab30",
-            "size": 76,
-            "kind": "function",
-            "name": "BuildScale__7CMatrixRC8CVector3",
-            "evidence": "unknown-file"
-          },
           {
             "address": "0x8007ab7c",
             "size": 260,
             "kind": "function",
             "name": "BuildRot__7CMatrixRC8CVector3f",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007ac80",
-            "size": 120,
-            "kind": "function",
-            "name": "BuildRotX__7CMatrixf",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007acf8",
-            "size": 120,
-            "kind": "function",
-            "name": "BuildRotY__7CMatrixf",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007ad70",
-            "size": 120,
-            "kind": "function",
-            "name": "BuildRotZ__7CMatrixf",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007ade8",
-            "size": 64,
-            "kind": "function",
-            "name": "BuildTrans__7CMatrixRC8CVector3",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007ae28",
-            "size": 28,
-            "kind": "function",
-            "name": "SetRight__7CMatrixRC8CVector3",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007ae44",
-            "size": 28,
-            "kind": "function",
-            "name": "SetFront__7CMatrixRC8CVector3",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007ae60",
-            "size": 28,
-            "kind": "function",
-            "name": "SetUp__7CMatrixRC8CVector3",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007ae7c",
-            "size": 28,
-            "kind": "function",
-            "name": "SetPos__7CMatrixRC8CVector3",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007ae98",
-            "size": 148,
-            "kind": "function",
-            "name": "PreTranslate__7CMatrixRC8CVector3",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8007af2c",
-            "size": 52,
-            "kind": "function",
-            "name": "Translate__7CMatrixRC8CVector3",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 8007af60",
+        "ranges": [
           {
             "address": "0x8007af60",
             "size": 128,
@@ -71117,14 +71115,12 @@
             "kind": "function",
             "name": "DebugMsg__FPCce",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802790e0",
-            "size": 92,
-            "kind": "function",
-            "name": "GetSlot__7CMatrixUi",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 8027913c",
+        "ranges": [
           {
             "address": "0x8027913c",
             "size": 48,
@@ -71607,14 +71603,12 @@
             "kind": "function",
             "name": "Dot__C8CVector3RC8CVector3",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802794b8",
-            "size": 836,
-            "kind": "function",
-            "name": "Multiply__7CMatrixRC7CMatrixT1",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 802797fc",
+        "ranges": [
           {
             "address": "0x802797fc",
             "size": 4,

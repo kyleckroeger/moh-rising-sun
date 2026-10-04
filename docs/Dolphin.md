@@ -1,6 +1,6 @@
 # Dolphin SDK matching evidence
 
-The accepted SDK contribution is **166,200 code bytes in 686 functions across 89 source units/fragments**. Together with the other accepted game and library fragments, the complete build verifies **276,480 / 2,492,032 executable bytes (11.094561%)**, across 1,122 functions. SDK code is reported as `restored_library`, separately from reconstructed game code. The coverage includes runtime libraries, not just gameplay logic.
+The accepted SDK contribution is **166,200 code bytes in 686 functions across 89 source units/fragments**. Together with the other accepted game and library fragments, the complete build verifies **278,600 / 2,492,032 executable bytes (11.179632%)**, across 1,138 functions. SDK code is reported as `restored_library`, separately from reconstructed game code. The coverage includes runtime libraries, not just gameplay logic.
 
 ## Source and attribution
 

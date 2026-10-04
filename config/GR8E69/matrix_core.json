@@ -1,0 +1,60 @@
+{
+  "id": "matrix_core",
+  "source": "src/matrix/core.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0"
+  ],
+  "include_dirs": [
+    "include"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8007a9b4",
+      "size": 456
+    }
+  ],
+  "functions": [
+    {
+      "name": "InitClass__7CMatrix",
+      "address": "0x8007a9b4",
+      "size": 132,
+      "binding": 1
+    },
+    {
+      "name": "__as__7CMatrixRC7CMatrix",
+      "address": "0x8007aa38",
+      "size": 176,
+      "binding": 1
+    },
+    {
+      "name": "BuildScale__7CMatrixf",
+      "address": "0x8007aae8",
+      "size": 72,
+      "binding": 1
+    },
+    {
+      "name": "BuildScale__7CMatrixRC8CVector3",
+      "address": "0x8007ab30",
+      "size": 76,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_Mat_Unit": "0x802fbf40",
+    "_Mat_Data": "0x802c2104",
+    "_7CMatrix.s_ClassInit": "0x802c2100",
+    "GetSlot__7CMatrixUi": "0x802790e0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "matrix.cpp",
+  "local_externals": [
+    "_Mat_Data",
+    "_Mat_Unit"
+  ]
+}

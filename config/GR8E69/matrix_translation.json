@@ -1,0 +1,71 @@
+{
+  "id": "matrix_translation",
+  "source": "src/matrix/translation.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0"
+  ],
+  "include_dirs": [
+    "include"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8007ade8",
+      "size": 376
+    }
+  ],
+  "functions": [
+    {
+      "name": "BuildTrans__7CMatrixRC8CVector3",
+      "address": "0x8007ade8",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "SetPos__7CMatrixRC8CVector3",
+      "address": "0x8007ae7c",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "SetRight__7CMatrixRC8CVector3",
+      "address": "0x8007ae28",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "SetFront__7CMatrixRC8CVector3",
+      "address": "0x8007ae44",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "SetUp__7CMatrixRC8CVector3",
+      "address": "0x8007ae60",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "PreTranslate__7CMatrixRC8CVector3",
+      "address": "0x8007ae98",
+      "size": 148,
+      "binding": 1
+    },
+    {
+      "name": "Translate__7CMatrixRC8CVector3",
+      "address": "0x8007af2c",
+      "size": 52,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetSlot__7CMatrixUi": "0x802790e0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "matrix.cpp"
+}

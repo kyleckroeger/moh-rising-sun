@@ -20,7 +20,9 @@ See the individual library evidence documents for exact scopes, provenance and l
 The 25,296-byte increase from 10.000995% to 11.016070% combines three Lua units and the
 SN library adaptations. It does not represent an equivalent amount of gameplay logic.
 The next pass adds 1,764 STL helper bytes and 192 game allocation-operator bytes,
-bringing coverage to 11.094561%. See [STLport](STLport.md), [allocation contracts](Memory.md)
+bringing coverage to 11.094561%. The following CMatrix pass adds 2,120 game-code
+bytes across 16 functions, bringing coverage to 11.179632%; see [matrix layout
+and verification evidence](Matrix.md). See [STLport](STLport.md), [allocation contracts](Memory.md)
 and the new [direct dependency map](Dependencies.md).
 
 ## Ranked research queue
@@ -45,9 +47,11 @@ reference; shared EA game/engine source compatibility has not been established h
 ## Mapping work with the highest payoff
 
 The direct-call portion of item 2 is now implemented by `tools/dependencies.py`.
-Its [ranked work packets](Dependencies.md) put the CMatrix family first for shared
-game-type work: initialization has 173 distinct unfinished callers. Vtable/data
-references and type recovery remain future work.
+Its [ranked work packets](Dependencies.md) selected CMatrix for shared game-type
+work: initialization had 173 distinct unfinished callers. Initialization,
+assignment, multiplication and 13 related functions now match using one shared
+header. CVector3 remains opaque pending evidence of its complete layout.
+Vtable/data references and broader type recovery remain future work.
 
 1. **Reference/version inventory.** For each family, record source URL and pinned commit,
    license, symbol/constant evidence, compiler profile, compared ranges, and unresolved

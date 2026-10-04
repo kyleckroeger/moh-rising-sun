@@ -222,7 +222,12 @@
     "stl_rebalance_for_erase.json",
     "stl_m_increment.json",
     "stl_m_decrement.json",
-    "sys_memory_operators.json"
+    "sys_memory_operators.json",
+    "matrix_core.json",
+    "matrix_translation.json",
+    "matrix_multiply.json",
+    "matrix_getslot.json",
+    "matrix_rotations.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

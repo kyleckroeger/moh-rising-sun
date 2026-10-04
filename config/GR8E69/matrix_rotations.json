@@ -1,0 +1,53 @@
+{
+  "id": "matrix_rotations",
+  "source": "src/matrix/rotations.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0"
+  ],
+  "include_dirs": [
+    "include"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8007ac80",
+      "size": 360
+    },
+    {
+      "name": ".rodata",
+      "address": "0x8029afa8",
+      "size": 12
+    }
+  ],
+  "functions": [
+    {
+      "name": "BuildRotX__7CMatrixf",
+      "address": "0x8007ac80",
+      "size": 120,
+      "binding": 1
+    },
+    {
+      "name": "BuildRotY__7CMatrixf",
+      "address": "0x8007acf8",
+      "size": 120,
+      "binding": 1
+    },
+    {
+      "name": "BuildRotZ__7CMatrixf",
+      "address": "0x8007ad70",
+      "size": 120,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "MathSinCos__FiPfT1": "0x8007cc4c",
+    "GetSlot__7CMatrixUi": "0x802790e0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "matrix.cpp"
+}

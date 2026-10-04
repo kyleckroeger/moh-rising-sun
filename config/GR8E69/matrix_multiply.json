@@ -1,0 +1,32 @@
+{
+  "id": "matrix_multiply",
+  "source": "src/matrix/multiply.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0"
+  ],
+  "include_dirs": [
+    "include"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802794b8",
+      "size": 836
+    }
+  ],
+  "functions": [
+    {
+      "name": "Multiply__7CMatrixRC7CMatrixT1",
+      "address": "0x802794b8",
+      "size": 836,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

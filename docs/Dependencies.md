@@ -19,24 +19,26 @@ row but overlap across rows; they are not a prediction of matching coverage.
 
 ## Useful next work packets
 
-Counts below follow the STL helpers and allocation-operator additions in this
-revision. They will change as manifests grow; regenerate the report for current
-counts. A small function with many callers is a type/contract research lead,
+Counts below follow the CMatrix additions in this revision. They will change as
+manifests grow; regenerate the report for current counts. A small function with many callers is a type/contract research lead,
 not necessarily the easiest source match.
 
 | Target | Address | Code bytes | Unfinished callers | Work to unlock |
 | --- | --- | ---: | ---: | --- |
-| `CMatrix::InitClass` | `0x8007a9b4` | 132 | 173 | Recover the matrix field layout and initialization values, then check assignment and multiplication against the same declaration. Do not assume a conventional 4x4 layout. |
 | `DWI_alloc` | `0x801a8670` | 212 | 143 | Follow the small-allocation path and main heap call; establish flag and failure behavior. Allocation operators now provide a verified caller. |
-| `CMatrix::operator=` | `0x8007aa38` | 176 | 127 | Recover member-copy semantics and metadata alongside initialization; preserve the original return convention. |
 | `FEHashUpper` | `0x800499a4` | 100 | 116 | Establish exact character conversion, signedness and hash recurrence; find callers' string ownership without replacing the algorithm with a generic hash. |
 | `DWI_free` | `0x801a8894` | 64 | 75 | Recover `freeSmall`'s result contract and the fallback to `MEM_free`. |
-| `CMatrix::Multiply` | `0x802794b8` | 836 | 75 | Reuse the matrix declaration once independently supported; investigate aliasing and floating-point/compiler settings. |
 | `GetStringCRC` | `0x801acb98` | 80 | 60 | Identify the CRC table/algorithm and signedness before selecting a public implementation. |
 
-The first priority for shared game-type work is the **CMatrix family**. The
-larger library path remains [STLport container instantiations](STLport.md), with
-the pointer-vector data-ownership blocker documented there. These are independent
+The first CMatrix work packet is now accepted: 16 functions and a shared
+64-byte matrix representation, including initialization, assignment and
+multiplication. See [the layout evidence and remaining vector questions](Matrix.md).
+Their earlier unfinished-caller counts were 173, 127 and 75; these overlapping
+counts do not represent newly reconstructed callers. Further matrix work should
+resolve vector construction/layout before adding functions that need local or
+by-value vectors. The small string and allocation helpers above remain useful
+independent work packets. The larger library path remains
+[STLport container instantiations](STLport.md), with the pointer-vector data-ownership blocker documented there. These are independent
 research tracks; no game layout needs to be invented to finish the vector work.
 
 ## Evidence and limitations

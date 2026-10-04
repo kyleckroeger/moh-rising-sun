@@ -1,0 +1,37 @@
+{
+  "id": "matrix_getslot",
+  "source": "src/matrix/getslot.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0"
+  ],
+  "include_dirs": [
+    "include"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802790e0",
+      "size": 92
+    },
+    {
+      "name": ".rodata",
+      "address": "0x80299754",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetSlot__7CMatrixUi",
+      "address": "0x802790e0",
+      "size": 92,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}
