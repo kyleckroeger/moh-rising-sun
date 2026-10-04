@@ -1,0 +1,87 @@
+{
+  "id": "TCPTimer",
+  "source": "src/dolphin/ip/TCPTimer.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-network-2003",
+    "include/dolphin-network",
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8024e888",
+      "size": 844,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "TCPRxmitTimeOut",
+      "address": "0x8024e888",
+      "size": 520,
+      "binding": 0
+    },
+    {
+      "name": "TCPStartRxmitTimer",
+      "address": "0x8024ea90",
+      "size": 264,
+      "binding": 1
+    },
+    {
+      "name": "TCPCancelRxmitTimer",
+      "address": "0x8024eb98",
+      "size": 60,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "TCPStat": "0x80442db0",
+    "IPRecoverGateway": "0x8024c660",
+    "OSGetTime": "0x8025af7c",
+    "TCPAbort": "0x8024ec70",
+    "TCPOutput": "0x8024e470",
+    "OSSetAlarm": "0x80253d0c",
+    "OSCancelAlarm": "0x80253df0"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "IPTcpTimer.c",
+  "discarded_local_functions": [],
+  "sda_externals": [],
+  "upstream": {
+    "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+    "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+    "path": "src/ip/IPTcpTimer.c"
+  }
+}

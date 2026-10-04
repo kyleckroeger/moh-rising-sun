@@ -1,7 +1,7 @@
 # Network-library reconstruction evidence
 
-Sixteen library fragments restore **32,296 code bytes in 86 functions**, plus
-**2,542 initialized data bytes** and **15,874 BSS bytes**. Only the manifest-listed
+Twenty library fragments restore **43,500 code bytes in 110 functions**, plus
+**3,122 initialized data bytes** and **15,874 BSS bytes**. Only the manifest-listed
 retained functions are verified. This is a compatible subset of public library
 reconstructions, not a recovered complete network stack or an identification
 of the game's exact SDK release. Integration used AI assistance.
@@ -42,6 +42,10 @@ is asserted. See [NETWORK_NOTICE](../src/dolphin/NETWORK_NOTICE).
 | `TCPTransport` | `0x8024d9d4` | 8 TCP packet/ring operations | 1,664 | None |
 | `TCPUser` | `0x8024ebd4` | 19 TCP API operations and callbacks | 5,340 | 90 initialized bytes, 8 BSS bytes |
 | `SocketAPI` | `0x80249aa8` | 8 socket operations and callbacks | 3,404 | 356 initialized bytes, 14,424 BSS bytes |
+| `ICMP` | `0x8024b024` | 3 echo/error/message operations | 1,692 | 52 initialized bytes |
+| `TCPOutput` | `0x8024e054` | 4 sizing/output operations and callback | 2,100 | None |
+| `TCPTimer` | `0x8024e888` | 3 retransmission timer operations | 844 | None |
+| `PPP` | `0x8025133c` | 14 negotiation/control operations | 6,568 | 528 initialized bytes |
 
 Every allocated generated section is placed from original named storage,
 instruction references or unique complete-data evidence and checked in full.
@@ -113,8 +117,10 @@ instructions, not the reference's later offsets:
 | `IPInterface` | Output, cancel, allocation and free function pointers at `0x60`, `0x64`, `0x68`, `0x6c`. This is a prefix declaration; no full interface size or trailing-field layout is asserted. |
 | `TCPInfo` | State/flags at `0x8c`/`0x90`, send callback at `0x180`, receive callback at `0x1b4`, urgent callback at `0x1d0`, retransmission alarm at `0x1f8`, linger alarm at `0x280`. Socket cleanup independently reads `node` at `0x2c8` and frees 720 bytes. The `0x2a8..0x2c7` interval remains unresolved. |
 
-The later SACK scoreboard, acknowledged-receive-sequence field and delayed-ACK
-alarm are absent from this older TCP declaration. Matching the retained uses
+The later SACK scoreboard and delayed-ACK alarm are absent from this older TCP
+declaration. The output reconstruction below identifies `recvAcked` at `0x1b0`;
+the earlier provisional `dupAcks` name at that offset was not used by the five
+transport fragments and has been corrected. Matching the retained uses
 does not establish meanings for unused fields or validate unrelated APIs from
 the reference headers. Unknown intervals are byte storage with no invented
 semantic field names. These declarations and the verified call signatures are
@@ -147,6 +153,60 @@ The original resolver object is outside this fragment and earns no source credit
 The original panic filename and line are `IPSocket.c:494`; the stripped address-
 formatting helper preserves the original shared format string. No copied original
 code, relocation masking or instruction patch is used.
+
+## TCP output, timers, ICMP and PPP control
+
+These four fragments add 11,204 whole-function code bytes and 580 initialized
+bytes from the same pinned SocketLibrary reference. They use the older header
+profile; `IPPPP.h` adds a third scoped header. No new BSS ownership is claimed.
+
+`TCPOutput` reconstructs the older combined sizing/vector preparation routine,
+MSS-only SYN option, receive-window update, and send-busy retry behavior. The
+later SACK and delayed-ACK paths are absent. Packet ACK writes and comparisons
+independently establish `TCPInfo.recvAcked` at `0x1b0`. The option helper is
+compiled inline and its stripped standalone copy earns no separate credit.
+
+`TCPTimer` restores exponential backoff when starting the alarm, capped at 240
+seconds, instead of doubling the stored timeout in the callback. The original
+third-retry gateway recovery, fourth-retry fragmentation/MSS change and single-MSS
+congestion window match. All three timer functions and their call targets are
+checked in full.
+
+`ICMP` restores the older per-message length checks and error dispatch, echo
+datagram initialization, and single-MSS congestion response. Its helper boundaries
+are reconstruction choices supported by the generated callers, not a claim of
+the original source spelling. The complete three retained functions and 52-byte
+dispatch table match; stripped helpers and later reference validation paths
+are not counted.
+
+`PPP` restores the older control state machine, callback/state-update order,
+restart counts and alarm cancellation. The control output uses the first PPP
+configuration's MRU; it does not use the later interface-MTU path. The retained
+functions access these observed `PPPConf` offsets:
+
+| Fields | Offsets |
+| --- | --- |
+| Protocol, state, identifiers and retry counters | `0x00..0x1b` |
+| Negotiation data and length | `0x21c` and `0x230` |
+| Alarm and interface pointer | `0x238` and `0x260` |
+| Four configuration receive callbacks | `0x264..0x270` |
+| Up, down, started and finished callbacks | `0x274..0x280` |
+| MRU | `0x288` |
+
+The intervals `0x1c..0x21b` and `0x284..0x287` remain unnamed byte storage.
+The declaration asserts neither their meaning nor the complete control-object
+size. Original callback loads, packet lengths and alarm-address arithmetic
+support the bounds. The wider reference's chained-layer propagation and
+PAP/CHAP dispatch are not part of this retained older subset.
+
+`ControlIn` and `PPPTimeout` have original file-local binding. The PPP manifest
+requests native linker retention of its declared function symbols, preserving
+the private entry point whose callers remain outside the fragment. Using a
+global undefined-symbol root for a local function would leave a false unresolved
+dependency; the verifier rejects that result. All 14 original names, bindings,
+ranges and complete generated code plus 528 bytes of dispatch tables are checked.
+The test suite also rejects a missing private function symbol even when code
+bytes remain intact. Other units keep their existing stripping behavior.
 
 ## Compiler, stripping and limits
 

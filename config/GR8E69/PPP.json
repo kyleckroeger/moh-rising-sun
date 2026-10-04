@@ -1,0 +1,188 @@
+{
+  "id": "PPP",
+  "source": "src/dolphin/ip/PPP.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-network-2003",
+    "include/dolphin-network",
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8025133c",
+      "size": 6568,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802ddbb8",
+      "size": 528,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "LCPOut",
+      "address": "0x8025133c",
+      "size": 336,
+      "binding": 0
+    },
+    {
+      "name": "PPPTimeout",
+      "address": "0x80252a84",
+      "size": 608,
+      "binding": 0
+    },
+    {
+      "name": "ReceiveConfigureRequest",
+      "address": "0x8025148c",
+      "size": 1432,
+      "binding": 0
+    },
+    {
+      "name": "ReceiveConfigureAck",
+      "address": "0x80251a24",
+      "size": 380,
+      "binding": 0
+    },
+    {
+      "name": "ReceiveConfigureNak",
+      "address": "0x80251ba0",
+      "size": 460,
+      "binding": 0
+    },
+    {
+      "name": "ReceiveConfigureReject",
+      "address": "0x80251d6c",
+      "size": 460,
+      "binding": 0
+    },
+    {
+      "name": "ReceiveTerminateRequest",
+      "address": "0x80251f38",
+      "size": 372,
+      "binding": 0
+    },
+    {
+      "name": "ReceiveTerminateAck",
+      "address": "0x802520ac",
+      "size": 252,
+      "binding": 0
+    },
+    {
+      "name": "ReceiveUnknownCode",
+      "address": "0x802521a8",
+      "size": 320,
+      "binding": 0
+    },
+    {
+      "name": "ReceiveCodeReject",
+      "address": "0x802522e8",
+      "size": 384,
+      "binding": 0
+    },
+    {
+      "name": "ReceiveProtocolReject",
+      "address": "0x80252468",
+      "size": 384,
+      "binding": 0
+    },
+    {
+      "name": "ControlIn",
+      "address": "0x802525e8",
+      "size": 416,
+      "binding": 0
+    },
+    {
+      "name": "PPPDown",
+      "address": "0x80252788",
+      "size": 208,
+      "binding": 1
+    },
+    {
+      "name": "PPPClose",
+      "address": "0x80252858",
+      "size": 556,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "OSCancelAlarm": "0x80253df0",
+    "OSDisableInterrupts": "0x80257798",
+    "OSSetAlarm": "0x80253d0c",
+    "memmove": "0x8026668c",
+    "OSRestoreInterrupts": "0x802577c0"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "SendConfigureRequest",
+    "SendConfigureAck",
+    "SendConfigureNak",
+    "SendConfigureReject",
+    "SendTerminateRequest",
+    "SendTerminateAck",
+    "SendCodeReject",
+    "SendProtocolReject",
+    "SendEchoReply",
+    "ReceiveEchoRequest",
+    "PPPLayerUp",
+    "PPPLayerDown",
+    "PPPLayerStarted",
+    "PPPLayerFinished",
+    "PPPInitializeRestartCount",
+    "PPPZeroRestartCount",
+    "PPPSetState",
+    "PPPGetState"
+  ],
+  "original_file": "IPPPP.c",
+  "discarded_local_functions": [
+    "SendConfigureRequest",
+    "SendConfigureAck",
+    "SendConfigureNak",
+    "SendConfigureReject",
+    "SendTerminateRequest",
+    "SendTerminateAck",
+    "SendCodeReject",
+    "SendProtocolReject",
+    "SendEchoReply",
+    "ReceiveEchoRequest"
+  ],
+  "sda_externals": [],
+  "upstream": {
+    "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+    "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+    "path": "src/ip/IPPPP.c"
+  },
+  "retain_function_symbols": true
+}

@@ -33,11 +33,19 @@ class SourceVerification(unittest.TestCase):
         for unit in self.units:
             verify_unit(self.original, Elf32(self.linked(unit['id'])), unit)
         result = progress(self.original, self.units, self.project)
-        self.assertEqual(result['matching_code_bytes'], 345784)
+        self.assertEqual(result['matching_code_bytes'], 356988)
         self.assertEqual(result['total_executable_code_bytes'], 2492032)
-        self.assertGreaterEqual(result['percent'], 13)
+        self.assertGreaterEqual(result['percent'], 14)
         self.assertEqual(result['categories']['reconstructed_game'], 2648)
-        self.assertEqual(result['categories']['restored_library'], 343136)
+        self.assertEqual(result['categories']['restored_library'], 354340)
+
+    def test_private_ppp_entry_point_requires_its_function_symbol(self):
+        damaged = bytearray(self.linked('PPP'))
+        offset = self.symbol_offset(damaged, 'ControlIn')
+        # Keep the generated code intact, but erase the local function's type.
+        damaged[offset + 12] = 0
+        with self.assertRaisesRegex(ValueError, 'Linked source functions differ'):
+            verify_unit(self.original, Elf32(damaged), self.by_name['PPP'])
 
     def test_sn_bss_records_require_size_name_and_file_identity(self):
         unit = self.by_name['newlib_vfprintf']

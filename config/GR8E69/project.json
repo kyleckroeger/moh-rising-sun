@@ -330,7 +330,11 @@
     "UDPTransport.json",
     "TCPTransport.json",
     "TCPUser.json",
-    "SocketAPI.json"
+    "SocketAPI.json",
+    "TCPTimer.json",
+    "TCPOutput.json",
+    "ICMP.json",
+    "PPP.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

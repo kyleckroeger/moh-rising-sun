@@ -14,21 +14,14 @@ code/data and full-image verification establish accepted source coverage.
 | SN library adaptations | [RE4 formatter and math support](https://github.com/adonis-singh/re4/tree/9b76ff003081d6ece8b838453fb8310743a972c7/src/game) plus Newlib | 16,396 | Rising Sun's bounded string writes and grouping flag distinguish its formatter. |
 | GCC runtime | [GCC 2.95.2](https://github.com/gcc-mirror/gcc/tree/releases/gcc-2.95.2/gcc) | 5,532 | Target ABI, configuration and private tables matter as much as function names. |
 | STLport | [STLport 4.5.3](https://sourceforge.net/projects/stlport/files/STLport%20archive/STLport%204/) | 33,576 | Six tree helpers and 86 container instances match using one reviewed profile; custom game value types and the exact historical release remain unconfirmed. |
-| Network helpers and RSA MD5 | [SocketLibrary](https://github.com/Cuyler36/dolsocketlibrary/tree/e02356692695e64429dd70dc421a4a71a493e9c8), [NetworkBasePackage](https://github.com/Cuyler36/dolnetbp/tree/ba3846a83bf86505fe60e07aefe89e3e0ffc0e34) | 32,296 | Older IP, UDP, TCP and socket API subsets join routing and diagnostics; unverified stack and driver code remains. The digest source is the RSA Data Security, Inc. MD5 Message-Digest Algorithm. |
+| Network helpers and RSA MD5 | [SocketLibrary](https://github.com/Cuyler36/dolsocketlibrary/tree/e02356692695e64429dd70dc421a4a71a493e9c8), [NetworkBasePackage](https://github.com/Cuyler36/dolnetbp/tree/ba3846a83bf86505fe60e07aefe89e3e0ffc0e34) | 43,500 | Older transport, TCP output/timers, ICMP and PPP control join routing and diagnostics; unverified stack and driver code remains. The digest source is the RSA Data Security, Inc. MD5 Message-Digest Algorithm. |
 
 These are separate, already accepted byte totals, not estimates of future gains.
 See the individual library evidence documents for exact scopes, provenance and licenses.
-The 25,296-byte increase from 10.000995% to 11.016070% combines three Lua units and the
-SN library adaptations. It does not represent an equivalent amount of gameplay logic.
-The next pass adds 1,764 STL helper bytes and 192 game allocation-operator bytes,
-bringing coverage to 11.094561%. The following CMatrix pass adds 2,120 game-code
-bytes across 16 functions, bringing coverage to 11.179632%; see [matrix layout
-and verification evidence](Matrix.md). See [STLport](STLport.md), [allocation contracts](Memory.md)
-and the [direct dependency map](Dependencies.md). The current pass adds 40,720
-bytes from the remaining Lua loader, network helpers and container instances,
-reaching 12.813640%. The older network-library pass adds another 10,616 bytes,
-reaching 13.875584%. The active target is 15%; at least 43,872 more matching bytes
-are needed. This is a checkpoint, not completion of that target.
+The current verified coverage is 356,988 / 2,492,032 executable bytes
+(14.325177%). This batch adds 11,204 bytes in 24 network-control functions;
+see [Network.md](Network.md) for recovered layouts and behavior. The active target
+is 15%, requiring at least 16,820 more matching bytes. Runtime remains untested.
 
 ## Ranked research queue
 
@@ -39,7 +32,7 @@ This is a qualitative work order, not a prediction of hours or a promise of matc
 | 1 | Remaining STL instances | 122 remaining symbols mention `_STL`, spanning 43,668 declared function bytes | The builtin/pointer container subset now matches. Recover custom comparators and by-value game structures before instantiating further types. This includes game routines, not just reusable library code. |
 | 2 | `powf` | 1,780 bytes; the research candidate differs in three indexed-load operand encodings | Investigate front-end/source address-expression ordering; do not patch instructions. |
 | 3 | SN `add_separators` | 392 bytes; its ABI and formatter callers now match | Finish the helper's C reconstruction and register allocation; it remains context. |
-| 4 | Older network stack | The six accepted helper units establish a useful reference, but larger TCP/UDP/PPP and Ethernet routines differ | Compare protocol structures and behavior with original call sites, keeping retained code and storage complete. |
+| 4 | Older network stack | Twenty accepted fragments establish older transport and PPP layouts; the Ethernet driver and unretained stack routines still differ | Compare protocol structures and behavior with original call sites, keeping retained code and storage complete. |
 | 5 | Shared game math, strings and allocation | `MathFun.cpp` has 1,268 unmatched bytes; string/allocation groups are also mapped | Recover common types, allocator contracts and constant ownership, then work through callers. |
 
 The verified STL container profile now covers builtin, string and pointer

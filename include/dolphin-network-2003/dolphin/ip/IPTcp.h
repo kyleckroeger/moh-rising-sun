@@ -128,7 +128,7 @@ struct TCPInfo {
     s32 recvBuff;
     s32 recvUser;
     u8* recvPtr;
-    s32 dupAcks;
+    s32 recvAcked; // Last acknowledged receive sequence at 0x1b0.
     TCPCallback recvCallback;
     s32* recvResult;
     u8* userData;

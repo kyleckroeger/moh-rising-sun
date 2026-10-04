@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 345784,
+    "matching_code_bytes": 356988,
     "total_executable_code_bytes": 2492032,
-    "percent": 13.875584262160357,
+    "percent": 14.325177204787098,
     "categories": {
       "reconstructed_game": 2648,
-      "restored_library": 343136
+      "restored_library": 354340
     },
-    "matching_functions": 1331
+    "matching_functions": 1355
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -65,6 +65,7 @@
     "config/GR8E69/GXPixel.json": "0a151c00fd497d4c01ee612778b1bd6670c15ce9593bbf686799acf86e720330",
     "config/GR8E69/GXTev.json": "160fe30ffef9823bfc4706c663d6e8c8f49099cdbb593a7bcc5c12e3e6c60670",
     "config/GR8E69/GXTexture.json": "c622bcb9d345d3f792c5de531161c9c40a84c265bbede6e8e19392fbf81902bb",
+    "config/GR8E69/ICMP.json": "a66541b8ecabf606ccf72e9d9e1ae8335eecfa7f197d568979d77e4f622bddcc",
     "config/GR8E69/IFFifo.json": "8934ff84f3bfbeed0b9f53a01b4051bb8b233c9365d6e9d4d0c0bbe3e1444aaf",
     "config/GR8E69/IFRing.json": "dfd3f2db5b9e62b8d72d730959338cc4814c655b1a564fba33ffbafd17b9480a",
     "config/GR8E69/IPCore.json": "49004882f98339bc72bb22527b7405aee848a3e70cf5029f99e84c6847db9883",
@@ -95,11 +96,14 @@
     "config/GR8E69/OSSync.json": "5a700744cda37f1be46d8f1369d7f4acd3510e79eee71c1fac8efe428d8ef24e",
     "config/GR8E69/OSThread.json": "7247fafd85e72447325aae72d28a8436e988132c9c53c06f6b257734fc00df1b",
     "config/GR8E69/OSTime.json": "9d0f3c31ee59aca3b7562c37e17516fd955d09d5dab2f68dbe5dc1eb8d2fa795",
+    "config/GR8E69/PPP.json": "cd7b2aae1d107a9a3f4d9eb3f33f295b613156740f421bdbd6559fc8490b9dd4",
     "config/GR8E69/Pad.json": "d3a33fb4a73c88e7fb5f39734aec8ef4cbd45b6cbaa56823bce13b8a6146f6e6",
     "config/GR8E69/Padclamp.json": "5997107cb29ce7a712556571acac3dcb64731a599cb5336e623ba3f3d309317a",
     "config/GR8E69/SIBios.json": "8ca7ce9de6c9151af924fc0bfd8dab7f75f282ba6287ea302f56fc4d240f0732",
     "config/GR8E69/SISamplingRate.json": "0ab6d8244a3907d59dfcc33be57c140b59fbbee9440129b55fc8be80adbc2dd1",
     "config/GR8E69/SocketAPI.json": "a349662c6cc8b00ea898c6ce6124664d8dc2afd4766e91cc9f731bb473afd94e",
+    "config/GR8E69/TCPOutput.json": "04596ad9b1cfb32cebbb0d9bead398ac5feb6ba581edd14ac99e1a1870013395",
+    "config/GR8E69/TCPTimer.json": "74d4f4891926577766817bd656914e5f126f71dda14c7afe65835eab2168e48c",
     "config/GR8E69/TCPTransport.json": "914ea84646db4c4e89ba25e141530951212f2e1ea01cbc7d8811225603af0166",
     "config/GR8E69/TCPUser.json": "aa0a4446ec56243061f0ffc64225cf58dd06106ce25d02dbb4a60f850990a132",
     "config/GR8E69/UDPTransport.json": "2c2b2e2ed43cd5a432f9ba61b70b14c627ec3416e9a439b78e980b9aeb584f5c",
@@ -109,7 +113,7 @@
     "config/GR8E69/arq.json": "b79b6daec16d9806b4df0388a3f927cb06d48ce10fdb9fa35772dcecce291de7",
     "config/GR8E69/base64.json": "e88ebd5740a86b7f43b5b6812b6c4e81114d43dfae07a3e7429abb7c6a1bfec7",
     "config/GR8E69/baseline.json": "9ebff32fd809e72fdf889ab49760be2aa1172768f855af86d0251c1fc4da2ef7",
-    "config/GR8E69/dolphin-network-source.json": "e4fec6a26d62cf5cfb620d454ac6c3f868fbf35d20990bd7c5908f816d3323c0",
+    "config/GR8E69/dolphin-network-source.json": "6b039c8ef3fc502a7441ab8f55160567fd2facec6c12d818739c3bc7fd741b82",
     "config/GR8E69/dolphin-source.json": "00e4890e3bb570018abbacc62a7beee8052c2ef4f115363b1716785b62884cf1",
     "config/GR8E69/dsp.json": "bcc4a05a8ec25869e7675234c297eb8243e9a2e03983f64bf5e7040c7a897cd7",
     "config/GR8E69/dsp_debug.json": "2c0310fa0176274558e8b7835044c6eb9dc060213f74257a1f46cb54d1746654",
@@ -257,7 +261,7 @@
     "config/GR8E69/newlib_wctomb_r.json": "fc59b588e63f3a1f302300e1257e93abec1acb4041e2ef289f02d12774f5ae70",
     "config/GR8E69/newlib_writer.json": "cf7eab1eebe3bf4b04912e61b9ce9a2c7c4191ebecc610aa267f69bdabe6512f",
     "config/GR8E69/newlib_wsetup.json": "61dd8c7f513073a2f4c355ee89bdcf2d300345cd74c632de1997cba9f3e84020",
-    "config/GR8E69/project.json": "ef98cd329aa8bf15ea10d662150c0d082ea1995764fa6bd0634416859e56ce2d",
+    "config/GR8E69/project.json": "9d64963400d8543e168d4d193040268d55192093fb0b35e1231aeb68f023db68",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/stl_80278d64.json": "04dc314cda8644a93aa797638a2f5a3e946a7bc954506e9bb2be731800b7646a",
     "config/GR8E69/stl_80278ea0.json": "784844808dbfcbe4c0b2a360cdd8a5cd6c1115260192d1fa5e52d4a7ae8c4ebf",
@@ -386,7 +390,8 @@
     "include/dolphin-network/dolphin/private/ip.h": "1622b54cd024406b7315977f3b47128907c85228f56641a13afaf44f68a4d867",
     "include/dolphin-network/dolphin/private/sdk.h": "e3cfbd8cf9e11458d30df56cb4fc6ec76d8c359a86656e1f04ca05a3b8c10d48",
     "include/dolphin-network-2003/dolphin/ip/IP.h": "306af9d590237966439f13bbec061d89935bf3e20260cfb57cc06592f7113996",
-    "include/dolphin-network-2003/dolphin/ip/IPTcp.h": "278fbf18e676218649e45b0170f8d0c4282f711057186fbdb1b591023e0115b2",
+    "include/dolphin-network-2003/dolphin/ip/IPPPP.h": "6efd3b7b3d67b318948af18e6d65765e82416e57e20dc101985cfa67df4434d8",
+    "include/dolphin-network-2003/dolphin/ip/IPTcp.h": "6e52f4954a849a0b4ae6cba465f383f70a206c06b6cf19f9b2e0abd9046aefb0",
     "include/dolphin-sdk/charPipeline/fileCache.h": "9fc5bbfba874376ec1d239271cda99d84c256b2bd07f884d1177bee6b705b985",
     "include/dolphin-sdk/charPipeline/structures/HTable.h": "e1e36439d044200512635bc37470f318258d75767fad9ec2d9c407f9c0ee1af8",
     "include/dolphin-sdk/charPipeline/structures/List.h": "5646f12d28166b80aa7ad18711a2a01b1b1e836f4f509c25a03b2220adcc3c58",
@@ -726,6 +731,7 @@
     "src/dolphin/gx/GXTexture.c": "6a4338c827df7f3eaf9a80f7d1ed1719f9467eb2efd3e7cd425e08e47ce19148",
     "src/dolphin/gx/__gx.h": "3eaf8e0fac674b708f1c6d05e4a04299c73b289b772ee83654e065ef6396a5ee",
     "src/dolphin/ip/DHCPDump.c": "497c14e8e67e4da6ff79d59666cacd3c93f07441aa6366a8702271967db17977",
+    "src/dolphin/ip/ICMP.c": "79656afdb473baa0411556d364fea48048fd13122d7262f29b70c03bb33d9080",
     "src/dolphin/ip/IFFifo.c": "680d4950dd89befbeff3dc21362d11af5f9cc37d95931321262caede9a35b456",
     "src/dolphin/ip/IFRing.c": "358f03ca6759bbb393210fa5d201e48cb9a294078fdf48e0e80ea21a710fb79f",
     "src/dolphin/ip/IPCore.c": "05adafd75c4f7d44b14b368388d3a5ee00897d67ea3fe1b6e1a4818df0271236",
@@ -734,7 +740,10 @@
     "src/dolphin/ip/IPOpt.c": "9b7d5a85b9516eab8e3f31dc35751f2785e7d178880154b9428a7b1f5855db52",
     "src/dolphin/ip/IPRoute.c": "6152d89fe1572084180844950d26b47f01d3b3448de916bb2bf82b4abd378886",
     "src/dolphin/ip/IPTcpTimeWait.c": "c6d8523182cedfe48527a9b64a8004e118c2c5b75f8f97484564dcc02e24f3a7",
+    "src/dolphin/ip/PPP.c": "401c44f8d3ce83ed1fe8457591397623391f5e878227b46147644d179a225d1a",
     "src/dolphin/ip/SocketAPI.c": "9894aa99000e0c7a81f3f42c16cd285d46acc6ab1d93024a5e1b9f933ff0d1b5",
+    "src/dolphin/ip/TCPOutput.c": "97eeabce33a85bcf77eed23a501c49c1de522fc579c8193d7b41bb150ca5940a",
+    "src/dolphin/ip/TCPTimer.c": "61977ed41774a2ad5a94b8e662d9bd927b49611ac46e7e796657c6249525632c",
     "src/dolphin/ip/TCPTransport.c": "81b566ef3453567feb05d82fef724f9b418db6931b28ca215de6fcb40b9aa616",
     "src/dolphin/ip/TCPUser.c": "56ac1f304f2b050e7beb15f2d6238cb27cfc7158b07a06ed0f44263035c71b23",
     "src/dolphin/ip/UDPTransport.c": "072293a2c4773c4e7eec45a7500bb8545b41678c6f2be0224000d0c16f81f625",
@@ -1049,7 +1058,7 @@
     "tools/formats.py": "3124d742d0518c913dfc575602bba63befbd9e0e78220e5a85059cda277f8f81",
     "tools/import_disc.py": "c4adacc1b86bf05f5fed84a3101c04a6815c5cba449883a9b555114b140b541c",
     "tools/progress_report.py": "ad145493ae9def5a34cc29839db219d885e2c3922e3434a71909ea208ac554c4",
-    "tools/project_build.py": "9a07cc85cdbea99c76e545642e833b45042dbbb208878263daab99c6da44c20d",
+    "tools/project_build.py": "bced183375a8823f494cb968739eddf9ee1b7a529ed287489d4d92cf61e86f30",
     "tools/reconstruct.py": "ae713fceeb3eef9f113af483ad5e3d5d6f1123fc424d0595099247e3e07a4cf2",
     "tools/sdk_build.py": "8d2dce457fa5de303d9e46e0c4821094065e9814ef3a1e3723d0c0bb618dbce1",
     "tools/setup.py": "2c60adbeb6ef1717971d1aab37afbb9885a2c0842b0b3eea5a4e81eeaabf36fa",
@@ -10305,8 +10314,8 @@
       "discarded_functions": [
         "Rotate"
       ],
-      "object_sha256": "0818b1335158bb8ab68ae297a489e3b29d5195b9d41602797611353212256831",
-      "linked_sha256": "343df7bc8085670fb1dfc9a70af0a90cba7b3b178f553debb2e3ca6f7b6ad2a7"
+      "object_sha256": "d1c3588358c5df03638ddecf7f542e27c871978f8d411e3d2ca33ba048c17154",
+      "linked_sha256": "ef38122762dd6646bfb0a2fc931c1fa89eb2a26743af0514287f9a2ab868c5fc"
     },
     {
       "id": "TCPUser",
@@ -10345,8 +10354,8 @@
       "discarded_functions": [
         "Send"
       ],
-      "object_sha256": "c49d564e6e68514a871c0671e81711426f4cd8c721d5830b8de6431f9dc3fbb6",
-      "linked_sha256": "0fc56b3145f5f9b7117a46326b68eb7dd18eaafd71c07dc87fc827a8ddedcfed"
+      "object_sha256": "c48856f3ae8a8ef26470642824544faa83c2c910ec7a8bb1eb2248bec849f493",
+      "linked_sha256": "e40cf36653a55aeee15f3008358807d87d2f839e06328f729eddeeaacffbddad"
     },
     {
       "id": "SocketAPI",
@@ -10386,8 +10395,190 @@
         "SOFree",
         "SOInetNtoP"
       ],
-      "object_sha256": "3d556f3460e251c978f1f850a2c2ae636ddefb99ce52e5aa2648698ff7a2c6fe",
-      "linked_sha256": "6b896b7d388451e9cc150fb50f4e4b2bf5ac9996bca5cc3590a0a06c63b8297e"
+      "object_sha256": "6d1bee1a757ff2e204b765d3f795511193180e269a82418e26beb2d9db4c8170",
+      "linked_sha256": "9e2c46110e86ff66574b322921bb7ef0fc23a6cd98da094d5543c6266f4c7443"
+    },
+    {
+      "id": "TCPTimer",
+      "category": "restored_library",
+      "functions": 3,
+      "code_bytes": 844,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [],
+      "object_sha256": "40f88b284973e8d22d3fdbc7d8717df08b0c7ca62df7bd9ae8b967f7a953ec38",
+      "linked_sha256": "32ff95cd3c97e6339aff99888636454d21a4aa1b8f70da716e8834614992d2f8"
+    },
+    {
+      "id": "TCPOutput",
+      "category": "restored_library",
+      "functions": 4,
+      "code_bytes": 2100,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "TCPMakeOption"
+      ],
+      "object_sha256": "9358daee6e7e00fc10867778ac035a7229e36facacff67f6468dd444a47e2307",
+      "linked_sha256": "337426f3edfd7a9832b0793c34b32843578a5508bed1e95bd378e94d48855292"
+    },
+    {
+      "id": "ICMP",
+      "category": "restored_library",
+      "functions": 3,
+      "code_bytes": 1692,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "DoNotify",
+        "ICMPIsErrorMessage",
+        "ICMPCheckSum",
+        "ReduceMtu",
+        "DoRedirect",
+        "DoSourceQuench",
+        "DoTimeExceeded",
+        "DoParameterProblem"
+      ],
+      "object_sha256": "9da0c07c1566be971c668d3d30fb55d94e9a5890c108d18a68938b377596faa3",
+      "linked_sha256": "82329b0e0d34ab4359320512ce821eeabd9b2d1f2e16578c9f87430c2149c35a"
+    },
+    {
+      "id": "PPP",
+      "category": "restored_library",
+      "functions": 14,
+      "code_bytes": 6568,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "SendConfigureRequest",
+        "SendConfigureAck",
+        "SendConfigureNak",
+        "SendConfigureReject",
+        "SendTerminateRequest",
+        "SendTerminateAck",
+        "SendCodeReject",
+        "SendProtocolReject",
+        "SendEchoReply",
+        "ReceiveEchoRequest",
+        "PPPLayerUp",
+        "PPPLayerDown",
+        "PPPLayerStarted",
+        "PPPLayerFinished",
+        "PPPInitializeRestartCount",
+        "PPPZeroRestartCount",
+        "PPPSetState",
+        "PPPGetState"
+      ],
+      "object_sha256": "2092941415e6779333d22bf03f09399f1b1e7749f3db75278474022782ccb397",
+      "linked_sha256": "c4122ffe8bffd96fcf167f2f79929ac0c05c9e970cc8e7267372b8e87b325fb6"
     }
   ],
   "code_map": {
@@ -70022,39 +70213,6 @@
         ]
       },
       {
-        "name": "Unmatched files/IPIcmp.c [local symbols only]",
-        "file_record": 746,
-        "file_name": "IPIcmp.c",
-        "ranges": [
-          {
-            "address": "0x8024b024",
-            "size": 596,
-            "kind": "function",
-            "name": "DoEchoRequest",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8024b278",
-            "size": 468,
-            "kind": "function",
-            "name": "DoUnreachable",
-            "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024b44c",
-        "ranges": [
-          {
-            "address": "0x8024b44c",
-            "size": 628,
-            "kind": "function",
-            "name": "ICMPIn",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
         "name": "Unmatched files/IPEther.c [local symbols only]",
         "file_record": 750,
         "file_name": "IPEther.c",
@@ -70069,79 +70227,6 @@
         ]
       },
       {
-        "name": "Unmatched files/IPTcpOutput.c [local symbols only]",
-        "file_record": 754,
-        "file_name": "IPTcpOutput.c",
-        "ranges": [
-          {
-            "address": "0x8024e054",
-            "size": 720,
-            "kind": "function",
-            "name": "TCPCalcSendSize",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8024e324",
-            "size": 276,
-            "kind": "function",
-            "name": "DoSwsAvoidance",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8024e438",
-            "size": 56,
-            "kind": "function",
-            "name": "TCPOutputCallback",
-            "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024e470",
-        "ranges": [
-          {
-            "address": "0x8024e470",
-            "size": 1048,
-            "kind": "function",
-            "name": "TCPOutput",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unmatched files/IPTcpTimer.c [local symbols only]",
-        "file_record": 755,
-        "file_name": "IPTcpTimer.c",
-        "ranges": [
-          {
-            "address": "0x8024e888",
-            "size": 520,
-            "kind": "function",
-            "name": "TCPRxmitTimeOut",
-            "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024ea90",
-        "ranges": [
-          {
-            "address": "0x8024ea90",
-            "size": 264,
-            "kind": "function",
-            "name": "TCPStartRxmitTimer",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024eb98",
-            "size": 60,
-            "kind": "function",
-            "name": "TCPCancelRxmitTimer",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
         "name": "Unmatched files/IPDhcp.c [local symbols only]",
         "file_record": 759,
         "file_name": "IPDhcp.c",
@@ -70152,116 +70237,6 @@
             "kind": "function",
             "name": "ProcessOptions",
             "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unmatched files/IPPPP.c [local symbols only]",
-        "file_record": 762,
-        "file_name": "IPPPP.c",
-        "ranges": [
-          {
-            "address": "0x8025133c",
-            "size": 336,
-            "kind": "function",
-            "name": "LCPOut",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8025148c",
-            "size": 1432,
-            "kind": "function",
-            "name": "ReceiveConfigureRequest",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80251a24",
-            "size": 380,
-            "kind": "function",
-            "name": "ReceiveConfigureAck",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80251ba0",
-            "size": 460,
-            "kind": "function",
-            "name": "ReceiveConfigureNak",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80251d6c",
-            "size": 460,
-            "kind": "function",
-            "name": "ReceiveConfigureReject",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80251f38",
-            "size": 372,
-            "kind": "function",
-            "name": "ReceiveTerminateRequest",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x802520ac",
-            "size": 252,
-            "kind": "function",
-            "name": "ReceiveTerminateAck",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x802521a8",
-            "size": 320,
-            "kind": "function",
-            "name": "ReceiveUnknownCode",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x802522e8",
-            "size": 384,
-            "kind": "function",
-            "name": "ReceiveCodeReject",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80252468",
-            "size": 384,
-            "kind": "function",
-            "name": "ReceiveProtocolReject",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x802525e8",
-            "size": 416,
-            "kind": "function",
-            "name": "ControlIn",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80252a84",
-            "size": 608,
-            "kind": "function",
-            "name": "PPPTimeout",
-            "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 80252788",
-        "ranges": [
-          {
-            "address": "0x80252788",
-            "size": 208,
-            "kind": "function",
-            "name": "PPPDown",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80252858",
-            "size": 556,
-            "kind": "function",
-            "name": "PPPClose",
-            "evidence": "unknown-file"
           }
         ]
       },

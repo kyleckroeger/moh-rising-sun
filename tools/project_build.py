@@ -67,6 +67,9 @@ def validate_units(original, units):
                 raise ValueError("Original source-file record differs")
         if unit["category"] not in ("reconstructed_game", "restored_library"):
             raise ValueError("Unknown source category")
+        retain_functions = unit.get("retain_function_symbols", False)
+        if not isinstance(retain_functions, bool) or (retain_functions and not unit["strip_unused"]):
+            raise ValueError("Function-symbol retention requires native unused-code stripping")
         if not set(unit.get("sda_externals", [])) <= set(unit["externals"]):
             raise ValueError("Small-data external lacks an original definition")
         local_externals = set(unit.get("local_externals", []))
@@ -353,6 +356,11 @@ def build_project():
         (work / "source.ld").write_text(script)
         strip_args = ["--strip-unused"] + [arg for f in unit["functions"] if f["binding"]
                                             for arg in ("--undefined", f["name"])] if unit["strip_unused"] else []
+        if unit.get("retain_function_symbols", False):
+            # Preserve local entry points and their verification symbols without
+            # creating unresolved global symbols through --undefined.
+            (work / "functions.keep").write_text("".join(f["name"] + "\n" for f in unit["functions"]))
+            strip_args += ["--retain-symbols-file", "functions.keep"]
         execute("link", wrapper, linker / "ngcld.exe", *strip_args,
                 *(["--fix-sda"] if use_small_data else []), "-T", "source.ld",
                 "-o", "compiled.elf", *([] if use_small_data else ["compiled.o"]))

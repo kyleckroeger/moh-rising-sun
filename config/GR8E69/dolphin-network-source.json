@@ -376,6 +376,46 @@
       "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
       "upstream_sha256": "5689da69e4d6736bd53b96b6037bbd5278435b092c0b8cd91af52a6233630e34",
       "modified": true
+    },
+    {
+      "path": "include/dolphin-network-2003/dolphin/ip/IPPPP.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPPPP.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "76cfcf48dc58afba73388d01f0c8bde304a556a2e03e3420bcf04e55e6965e49",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ip/TCPTimer.c",
+      "upstream_path": "src/ip/IPTcpTimer.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "f8d28900d5b11f01d645d91b927c6525cb7f4c039ea828923c3d5be45695c699",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ip/TCPOutput.c",
+      "upstream_path": "src/ip/IPTcpOutput.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "4deeb2f401194cc962df11f07daee528b44587981ec30b6e3a01a3f93a00f2fd",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ip/ICMP.c",
+      "upstream_path": "src/ip/IPIcmp.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "c23e653d024b0b4a5928ecf85a723cb190e24fc817b272869af2c9317669d5df",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ip/PPP.c",
+      "upstream_path": "src/ip/IPPPP.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "f7a938f8c44143dd73661bbf0501c6e2753bcab43e6535385db79ca1309c9b63",
+      "modified": true
     }
   ]
 }

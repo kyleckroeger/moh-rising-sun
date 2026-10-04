@@ -1,0 +1,93 @@
+{
+  "id": "TCPOutput",
+  "source": "src/dolphin/ip/TCPOutput.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-network-2003",
+    "include/dolphin-network",
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8024e054",
+      "size": 2100,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "TCPCalcSendSize",
+      "address": "0x8024e054",
+      "size": 720,
+      "binding": 0
+    },
+    {
+      "name": "DoSwsAvoidance",
+      "address": "0x8024e324",
+      "size": 276,
+      "binding": 0
+    },
+    {
+      "name": "TCPOutputCallback",
+      "address": "0x8024e438",
+      "size": 56,
+      "binding": 0
+    },
+    {
+      "name": "TCPOutput",
+      "address": "0x8024e470",
+      "size": 1048,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "IFRingGet": "0x8024d960",
+    "TCPStat": "0x80442db0",
+    "TCPStartRxmitTimer": "0x8024ea90",
+    "OSGetTime": "0x8025af7c",
+    "IPOut": "0x8024ade8"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "TCPMakeOption"
+  ],
+  "original_file": "IPTcpOutput.c",
+  "discarded_local_functions": [],
+  "sda_externals": [],
+  "upstream": {
+    "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+    "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+    "path": "src/ip/IPTcpOutput.c"
+  }
+}

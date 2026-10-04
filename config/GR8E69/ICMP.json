@@ -1,0 +1,116 @@
+{
+  "id": "ICMP",
+  "source": "src/dolphin/ip/ICMP.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-network-2003",
+    "include/dolphin-network",
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8024b024",
+      "size": 1692,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802dd3d0",
+      "size": 52,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "DoEchoRequest",
+      "address": "0x8024b024",
+      "size": 596,
+      "binding": 0
+    },
+    {
+      "name": "DoUnreachable",
+      "address": "0x8024b278",
+      "size": 468,
+      "binding": 0
+    },
+    {
+      "name": "ICMPIn",
+      "address": "0x8024b44c",
+      "size": 628,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "UDPNotify": "0x8024d520",
+    "TCPNotify": "0x8024dfac",
+    "IPIsBroadcastAddr": "0x8024b6c0",
+    "memmove": "0x8026668c",
+    "IPUpdateRecordRoute": "0x80251220",
+    "IPReverseSourceRoute": "0x80251070",
+    "IPOut": "0x8024ade8",
+    "TCPInfoQueue": "0x804522e8",
+    "IPRedirect": "0x8024bff0",
+    "TCPSourceQuench": "0x8024e004"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "DoNotify",
+    "ICMPIsErrorMessage",
+    "ICMPCheckSum",
+    "ReduceMtu",
+    "DoRedirect",
+    "DoSourceQuench",
+    "DoTimeExceeded",
+    "DoParameterProblem"
+  ],
+  "original_file": "IPIcmp.c",
+  "discarded_local_functions": [
+    "DoNotify",
+    "ICMPIsErrorMessage",
+    "ICMPCheckSum",
+    "ReduceMtu",
+    "DoRedirect",
+    "DoSourceQuench",
+    "DoTimeExceeded",
+    "DoParameterProblem"
+  ],
+  "sda_externals": [
+    "TCPInfoQueue"
+  ],
+  "upstream": {
+    "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+    "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+    "path": "src/ip/IPIcmp.c"
+  }
+}
