@@ -1,0 +1,78 @@
+{
+  "id": "script_calls",
+  "source": "src/script/calls.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f64e0",
+      "size": 368
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSOpCodeFunc_FNCALL__Fv",
+      "address": "0x800f64e0",
+      "size": 100,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_BIFNCALL__Fv",
+      "address": "0x800f6544",
+      "size": 108,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_RETURN__Fv",
+      "address": "0x800f65b0",
+      "size": 100,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_BREAK__Fv",
+      "address": "0x800f6614",
+      "size": 40,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_TRACE__Fv",
+      "address": "0x800f663c",
+      "size": 20,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_piStackTop": "0x8031d074",
+    "g_piIP": "0x8031d104",
+    "g_piFrame": "0x8031d108",
+    "g_piCodeBase": "0x8031d110",
+    "g_pBuiltInFunctions": "0x8032638c",
+    "g_pObj": "0x8031d120",
+    "g_iCurrentBIFIndex": "0x803263e4",
+    "g_iStopThread": "0x8031d10c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmachin.cpp",
+  "original_file_index": 1101,
+  "local_externals": [
+    "g_iStopThread",
+    "g_pObj",
+    "g_piCodeBase",
+    "g_piFrame",
+    "g_piIP"
+  ]
+}

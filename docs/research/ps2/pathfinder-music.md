@@ -50,6 +50,11 @@ and `MUSIC_SetVolume`. Its strings include the file paths
 `data\%d\%d_%d\sound\%d_%dM.mpf` and `data\%d\%d_%d\sound\main.mus`, so the GameCube
 version loads one rules file and one music file per level under the same names.
 
+Subsequent [matching GameCube reconstruction](../../Script.md) includes the complete
+`PathfinderSetLevel`, `PathfinderEvent` and `PathfinderSetLatency` built-in wrappers,
+including argument access and stack adjustment. The underlying music routines and
+`PathfinderFadeVolume` remain original context.
+
 ## File layout
 
 [notes] [re-check] for the header and piece table, which are confidence **high**. The

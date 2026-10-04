@@ -30,6 +30,11 @@ start reconstructing the script interpreter and small wrappers. The `.sin` and
 routines. FlexProp and particle research can extend the already matching
 [lookup path](../FlexProp.md) and [recipe accessors](../ParticleRecipes.md).
 
+The first source contribution based on these notes now reconstructs [16 script
+handlers, event lookup and three music built-ins](../Script.md), with each accepted
+body checked independently against GameCube. That evidence is separate from the
+broader PS2 interpretations in the research documents.
+
 PS2 offsets, endianness and file contents do not automatically establish GameCube
 layouts. A CRC match is a naming lead, and a shared symbol or call is evidence for
 an interface, not a complete implementation. Check each proposed GameCube function

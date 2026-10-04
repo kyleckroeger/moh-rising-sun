@@ -1,0 +1,50 @@
+{
+  "id": "script_branches",
+  "source": "src/script/branches.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f5388",
+      "size": 108
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSOpCodeFunc_BNE__Fv",
+      "address": "0x800f5388",
+      "size": 80,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_JMP__Fv",
+      "address": "0x800f53d8",
+      "size": 28,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_piStackTop": "0x8031d074",
+    "g_piIP": "0x8031d104"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmachin.cpp",
+  "original_file_index": 1101,
+  "local_externals": [
+    "g_piIP"
+  ]
+}

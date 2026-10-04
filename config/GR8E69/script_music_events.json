@@ -1,0 +1,49 @@
+{
+  "id": "script_music_events",
+  "source": "src/script/music_events.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8010848c",
+      "size": 248
+    }
+  ],
+  "functions": [
+    {
+      "name": "BIFunc_PathfinderSetLevel__FPPiPv",
+      "address": "0x8010848c",
+      "size": 124,
+      "binding": 1
+    },
+    {
+      "name": "BIFunc_PathfinderEvent__FPPiPv",
+      "address": "0x80108508",
+      "size": 124,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_iCurrentBIFIndex": "0x803263e4",
+    "g_pBuiltInFunctions": "0x8032638c",
+    "MUSIC_SetLevel__Fi": "0x801590d4",
+    "MUSIC_SendEvent__Fi": "0x801591f0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsbifunc.cpp",
+  "original_file_index": 1146
+}

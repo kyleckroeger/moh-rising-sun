@@ -97,6 +97,7 @@ Run the scripts from any directory; all outputs remain inside this checkout. `ba
 | `src/eagl_anim/` | Reconstructed animation decoders, channels and support interfaces; [reference and evidence](docs/Animation.md) |
 | `src/eagl_loading/` | Reconstructed EAGL symbol pools and dynamic-loader fragments; [reference and evidence](docs/Loading.md) |
 | `src/particles/`, `src/flexprop/`, `src/string_crc.cpp` | Reconstructed [particle recipes, state and clock helpers](docs/ParticleRecipes.md), [FlexProp lookup and string CRC](docs/FlexProp.md) |
+| `src/script/` | Reconstructed [script handlers, event lookup and music built-ins](docs/Script.md), guided by contributed PS2 research |
 | `src/observers/` | Reconstructed observers, weak pointers and destruction queue; [evidence](docs/Observers.md) |
 | `src/MathFun.cpp` | Reconstructed functions from the original MathFun unit |
 | `src/lua/` | Restored Lua 4.0.1 source units, headers and copyright notice |

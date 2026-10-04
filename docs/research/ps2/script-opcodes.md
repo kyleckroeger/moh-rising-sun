@@ -66,9 +66,11 @@ handlers are registered at `0x1F9850` into a table at `0x3E96D0` [notes]. The ea
 notes matched names to PS2 numbers by handler order; the GC trace now confirms each
 number directly.
 
-Meanings come from the PS2 handlers and script use [notes], confidence **medium** unless
-marked. GameCube status of the **meanings**: **unverified**. Only the numbering and
-names were checked.
+Meanings in the table come from the PS2 handlers and script use [notes], confidence
+**medium** unless marked. The initial research checked only GameCube numbering and
+names. Subsequent [matching GameCube reconstruction](../../Script.md) establishes the
+behaviour of 16 handlers; meanings of the remaining handlers are still **unverified**
+on GameCube.
 
 | Op | Name (GR8E69 symbol) | Meaning | PS2 handler | GR8E69 handler |
 |---|---|---|---|---|
@@ -156,7 +158,10 @@ inferred only from use.
 
 ## Open questions
 
-- The exact semantics of each instruction on GameCube (only the numbering is checked).
+- The exact semantics of the remaining GameCube instructions. Subsequent
+  [matching GameCube reconstruction](../../Script.md) establishes 16 handlers,
+  including stack operations, branches, calls and return. Notably, `BREAK` also
+  advances by the signed argument; `TRACE` advances one word.
 - GP (`1D`), which is unused in the examined levels.
 - The first word of each `bsbifunc.dat` entry.
 - The GameCube `.cbs` and `bsbifunc.dat` files, which were not examined, including

@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 584856,
+    "matching_code_bytes": 586416,
     "total_executable_code_bytes": 2492032,
-    "percent": 23.469040525964353,
+    "percent": 23.531640043145515,
     "categories": {
-      "reconstructed_game": 192640,
+      "reconstructed_game": 194200,
       "restored_library": 392216
     },
-    "matching_functions": 1919
+    "matching_functions": 1939
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -496,7 +496,14 @@
     "config/GR8E69/particle_size.json": "2f5fccaf2b032dce1d59c0bcca32201ee9b378e62dceee6cbc34eddddf2d9a30",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "403bc157b7d30a69415afcaf9e2ecf9d7288778d97a3a27c91e6859668a54325",
+    "config/GR8E69/project.json": "aa2b1bdf04155de08efc2cce921318dd74bde4b80ae2bda7e26a5f863f508e24",
+    "config/GR8E69/script_branches.json": "209d4398e60e12c468ee23309425e02c9b6a3499cc7142a760dc7d091966f9cf",
+    "config/GR8E69/script_calls.json": "d90a224edc65cbc37ed65123ea3af9d39f2ba2a5219234f0182695270ad382e9",
+    "config/GR8E69/script_event_lookup.json": "7234777fa0122f399f555d815b0592ea55386fd02987114a89562544c44a17ac",
+    "config/GR8E69/script_music_events.json": "032e4da800a8301374dba45800c9d07d35796bef894a4737e895d33d2ccc5ce0",
+    "config/GR8E69/script_music_latency.json": "392d7540ba409317bc4270e164b52fdbdb20deb594c9654d9ed350bac7a53a17",
+    "config/GR8E69/script_not.json": "864f341f64d73eeaed296bf207ac76177825c30a4bc9329a875e1945ae486afb",
+    "config/GR8E69/script_stack.json": "f0d5863f009af26290cdba1740940649ba9811b4456d1321ffbafc4af92bbdd3",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/stl_80278d64.json": "04dc314cda8644a93aa797638a2f5a3e946a7bc954506e9bb2be731800b7646a",
     "config/GR8E69/stl_80278ea0.json": "784844808dbfcbe4c0b2a360cdd8a5cd6c1115260192d1fa5e52d4a7ae8c4ebf",
@@ -911,6 +918,8 @@
     "include/game/ObserverTypes.h": "687dfc07deb4adc23a1d0247270d6ab04c34b758bd88846bf5e4b6ef33e7cc1f",
     "include/game/ParticleClock.h": "28f3badf71350136523be63cd81fe70e6af6977dca794be22c84784ee720cf68",
     "include/game/ParticleRecipe.h": "a12cd591add8b54e4a4fa23067ddef52772ceaebed6d3b2bec5caf62598f0186",
+    "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
+    "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
     "include/game/StringCRC.h": "3940d0af2ade9e671b10c5bb1ef12705a7322101b231aae92cfd2aab4a07fa31",
     "include/game/TARExtension.h": "cf1f48aa0be63a29babdba7f53c58439facb94141d7e04d0d32fcc878bad2cb3",
     "include/game/TevStage.h": "47aaf3de5425dace0c30e2852896a9494f78ab4a4dcaad6be03d4aa4204d7466",
@@ -1611,6 +1620,13 @@
     "src/particles/ParticleTMLocalToWorld.cpp": "e5f25d9f281602761bd4d9b439b705a625e0ea2512b9cdbb5259e7a91b98a9f1",
     "src/particles/ParticleVelocity.cpp": "ea620216e51ba6219de1500b4a0f6db91dee7a87a57af227afba091f8f8b910c",
     "src/pathfinding/PathFindingNetwork.cpp": "babf331f9fbf19dbc75fdda20d7a1011f6cf9f465f02285a89b6b572098e6b95",
+    "src/script/branches.cpp": "2823173b8e93bc80ac850752dad341621bbe5cb271c32dc243b0163512164347",
+    "src/script/calls.cpp": "65f5b68d6ed9083b98d13095286dafe776b321d6da2b7e8b8524770f7c48e303",
+    "src/script/event_lookup.cpp": "87860680e1bd7a97ec40a9790eadc267d816e34b40934b468a72dc633507322c",
+    "src/script/music_events.cpp": "998748dd2ede9e53d607e41683fdaf5c081b2be02f990ae035135ff4d41b009d",
+    "src/script/music_latency.cpp": "da0497d8536cec4aa50005a2f44ec6d949c49a2206c279feb746d6b7a4ea052b",
+    "src/script/not.cpp": "6a042ba188f55af543191aecccbb4496d1aa55eef9a44bd4b87f0931d69ce977",
+    "src/script/stack.cpp": "b98bb8bfcda3985b4e4e1a757b27db6342f5142af06c629e63e219ce8f324a29",
     "src/stlport/CONTAINERS_NOTICE": "7c59267a930cdf87e1af44873547a8275a61b1329833c74ae5f821a5e507a22e",
     "src/stlport/COPYING.GCC": "dcc100d4161cc0b7177545ab6e47216f84857cda3843847c792a25289852dcaa",
     "src/stlport/containers/stl_80278d64.cpp": "e75a070f28a3c316c4e6064da2c7c710838c54dd1b2297c5d808bb5037c33590",
@@ -17592,6 +17608,132 @@
       "discarded_functions": [],
       "object_sha256": "22fea331f7700287959cff5f2e5c98a3cd6af8d11cb48ffb1be89a759b7bcd1e",
       "linked_sha256": "14225a89004ad10df5d7247005825dc004d4d3c26a9c89737d5304f020866b03"
+    },
+    {
+      "id": "script_branches",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 108,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "88bca8a417c9159e79dff04ddddc8b6b9a92d63ae0f5c72b90c5f5da88fac746",
+      "linked_sha256": "0fb4f85646084e440343353ffc34552e1b8ef8ee6c6e4de330e24afea4a377d2"
+    },
+    {
+      "id": "script_not",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 44,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "55c927fc94c6939f49963e9428d4710fb11876b0b4887249b2e22c09bc6401f5",
+      "linked_sha256": "bf0ab367e2feeba714df8cc94c1002ad1f4ff705fd596e0072e98d311969cd64"
+    },
+    {
+      "id": "script_stack",
+      "category": "reconstructed_game",
+      "functions": 8,
+      "code_bytes": 448,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "8aee62ed0905b9d8cd1dfa2306001e4eadbfa82505026d65cba589b117f2dfc7",
+      "linked_sha256": "538dc9abf75cd7910778581185cf67adfcbeb6a71dcc8198a1213999b81039da"
+    },
+    {
+      "id": "script_calls",
+      "category": "reconstructed_game",
+      "functions": 5,
+      "code_bytes": 368,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "aaaa94826513d6b67dee78d3ed48159940fbbbdf800b46057390aa2794036d18",
+      "linked_sha256": "452a9d8ab6035aca00841f02844b87a90d941b79251115848c0a577d6c947975"
+    },
+    {
+      "id": "script_event_lookup",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 220,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "bf8b3eccb627917dfb24fa78503e790f558ca0f6df64ffad4db2aaa282aab311",
+      "linked_sha256": "b40e4541f5ebb2fb9a6f6852aa162fc03015cf7c6e53ce2ec71541d3410a6655"
+    },
+    {
+      "id": "script_music_events",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 248,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c5835fe0dc315c193e09fa96d4e53ba6442d648aada9518afe13230d43738de3",
+      "linked_sha256": "6b17a7b32ccfa5bd64a2fc556daf6b1f761a067fd8d4f8961156c3a320a2d639"
+    },
+    {
+      "id": "script_music_latency",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 124,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "3aadf0368efac5c2660fec87dfe8b6df9c4b87e96250b956fff6ff2e20a28a51",
+      "linked_sha256": "83b67a62bb0218f9c55e76c085afe469339e21b0d98bf613f4f06a330c82439d"
     }
   ],
   "code_map": {
@@ -40627,13 +40769,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800f460c",
-            "size": 220,
-            "kind": "function",
-            "name": "BSFindAnyEventHandler__FUsP14BSClass_struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800f46e8",
             "size": 1700,
             "kind": "function",
@@ -40694,20 +40829,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800f5388",
-            "size": 80,
-            "kind": "function",
-            "name": "BSOpCodeFunc_BNE__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f53d8",
-            "size": 28,
-            "kind": "function",
-            "name": "BSOpCodeFunc_JMP__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800f53f4",
             "size": 320,
             "kind": "function",
@@ -40754,13 +40875,6 @@
             "size": 80,
             "kind": "function",
             "name": "BSOpCodeFunc_OR__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f5a10",
-            "size": 44,
-            "kind": "function",
-            "name": "BSOpCodeFunc_NOT__Fv",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -40813,62 +40927,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800f6254",
-            "size": 44,
-            "kind": "function",
-            "name": "BSOpCodeFunc_POP__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f6280",
-            "size": 48,
-            "kind": "function",
-            "name": "BSOpCodeFunc_PUSH__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f62b0",
-            "size": 60,
-            "kind": "function",
-            "name": "BSOpCodeFunc_SW__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f62ec",
-            "size": 64,
-            "kind": "function",
-            "name": "BSOpCodeFunc_LW__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f632c",
-            "size": 60,
-            "kind": "function",
-            "name": "BSOpCodeFunc_SG__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f6368",
-            "size": 64,
-            "kind": "function",
-            "name": "BSOpCodeFunc_LG__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f63a8",
-            "size": 56,
-            "kind": "function",
-            "name": "BSOpCodeFunc_SM__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f63e0",
-            "size": 52,
-            "kind": "function",
-            "name": "BSOpCodeFunc_LM__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800f6414",
             "size": 72,
             "kind": "function",
@@ -40880,41 +40938,6 @@
             "size": 132,
             "kind": "function",
             "name": "BSOpCodeFunc_GP__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f64e0",
-            "size": 100,
-            "kind": "function",
-            "name": "BSOpCodeFunc_FNCALL__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f6544",
-            "size": 108,
-            "kind": "function",
-            "name": "BSOpCodeFunc_BIFNCALL__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f65b0",
-            "size": 100,
-            "kind": "function",
-            "name": "BSOpCodeFunc_RETURN__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f6614",
-            "size": 40,
-            "kind": "function",
-            "name": "BSOpCodeFunc_BREAK__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f663c",
-            "size": 20,
-            "kind": "function",
-            "name": "BSOpCodeFunc_TRACE__Fv",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -43307,31 +43330,10 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8010848c",
-            "size": 124,
-            "kind": "function",
-            "name": "BIFunc_PathfinderSetLevel__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80108508",
-            "size": 124,
-            "kind": "function",
-            "name": "BIFunc_PathfinderEvent__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80108584",
             "size": 180,
             "kind": "function",
             "name": "BIFunc_PathfinderFadeVolume__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80108638",
-            "size": 124,
-            "kind": "function",
-            "name": "BIFunc_PathfinderSetLatency__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

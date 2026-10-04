@@ -680,7 +680,14 @@
     "particle_flags.json",
     "particle_local_to_world.json",
     "particle_orthonormalize.json",
-    "particle_tm_local_to_world.json"
+    "particle_tm_local_to_world.json",
+    "script_branches.json",
+    "script_not.json",
+    "script_stack.json",
+    "script_calls.json",
+    "script_event_lookup.json",
+    "script_music_events.json",
+    "script_music_latency.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

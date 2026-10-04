@@ -1,0 +1,90 @@
+{
+  "id": "script_stack",
+  "source": "src/script/stack.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f6254",
+      "size": 448
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSOpCodeFunc_POP__Fv",
+      "address": "0x800f6254",
+      "size": 44,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_PUSH__Fv",
+      "address": "0x800f6280",
+      "size": 48,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_SW__Fv",
+      "address": "0x800f62b0",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_LW__Fv",
+      "address": "0x800f62ec",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_SG__Fv",
+      "address": "0x800f632c",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_LG__Fv",
+      "address": "0x800f6368",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_SM__Fv",
+      "address": "0x800f63a8",
+      "size": 56,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_LM__Fv",
+      "address": "0x800f63e0",
+      "size": 52,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_piIP": "0x8031d104",
+    "g_piStackTop": "0x8031d074",
+    "g_piFrame": "0x8031d108",
+    "g_piGlobals": "0x8031d114"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmachin.cpp",
+  "original_file_index": 1101,
+  "local_externals": [
+    "g_piFrame",
+    "g_piGlobals",
+    "g_piIP"
+  ]
+}

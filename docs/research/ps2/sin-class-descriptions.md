@@ -62,6 +62,10 @@ following:
 Those are the PS2 offsets. That the GameCube **file** bytes match was not examined; the
 GameCube `.sin` files have not been checked.
 
+Subsequent [matching GameCube reconstruction](../../Script.md) now includes the
+complete `BSFindAnyEventHandler` body and independently corroborates these runtime
+accesses. It does not establish the on-disc layout.
+
 ## Handler entries
 
 Fields are described as bytes and halfwords, which is the reading that agrees with both
