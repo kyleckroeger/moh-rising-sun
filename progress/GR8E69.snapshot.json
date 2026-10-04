@@ -1737,7 +1737,7 @@
     "tools/audit.py": "42f9dd301ef76d300f0cad2f791ddbcac862418b6532e252fc38c02d1a222245",
     "tools/baseline.py": "9705053a0b99d969062f336b609a5ea4e0e5bc354d5619ecb9be6698530b314c",
     "tools/code_map.py": "1bb7545aef44792f54bfe21539f3e1ca2a61f14c57b8ddb81c342cf44a525901",
-    "tools/compilers.json": "56f64efa79ad41c9417dc84360c7a65dffaf8d1af82b3ccbd64114e0bcb9b5a6",
+    "tools/compilers.json": "a7d66ea0a76c35649ab1313e5c6d8257cbee1f2790e230fafbbfb47fd6fa0367",
     "tools/dependencies.py": "88aacbfc314a897debda7ce707bb3e447d4deb83f26b00d11558f0e04fd2528e",
     "tools/formats.py": "3124d742d0518c913dfc575602bba63befbd9e0e78220e5a85059cda277f8f81",
     "tools/import_disc.py": "c4adacc1b86bf05f5fed84a3101c04a6815c5cba449883a9b555114b140b541c",
@@ -1745,10 +1745,10 @@
     "tools/project_build.py": "374c5b4b8e8a25c24ce096893b55c656754da137361ba1d4de5d852b36801bf5",
     "tools/reconstruct.py": "ae713fceeb3eef9f113af483ad5e3d5d6f1123fc424d0595099247e3e07a4cf2",
     "tools/sdk_build.py": "8d2dce457fa5de303d9e46e0c4821094065e9814ef3a1e3723d0c0bb618dbce1",
-    "tools/setup.py": "2c60adbeb6ef1717971d1aab37afbb9885a2c0842b0b3eea5a4e81eeaabf36fa",
-    "tools/setup_compiler.py": "63283cad361a6d3ad1a5bc1274afd27a07caea831abd4a038e141bd67f8b177d",
+    "tools/setup.py": "18c3852095003a94fdd8c9b154e933fee8c62cb444751900775b4bd4709347f9",
+    "tools/setup_compiler.py": "4da101de7e8e2faf67f3130038312fdfa8152a6391d6b16ece437d22a93bd512",
     "tools/tool_runner.py": "bbbfef4ab75b86d03beea250ceeb3aafed4609bb2f0258d3db6c2ad1be9953f7",
-    "tools/toolchain.json": "48a32c94b2beae13a997aefcd84be50e4effd0d4cdc21fc3ab64a362de0777cb"
+    "tools/toolchain.json": "1b0f0c99f6d0dde8d74b58432e49a87cd14c20c408d3b36d95bdaab8c88d7314"
   },
   "units": [
     {

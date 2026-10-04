@@ -2,11 +2,10 @@
 """Prepare pinned compiler candidates; choosing a version does not prove provenance."""
 import argparse
 import json
-import platform
 import zipfile
 from pathlib import Path
 
-from setup import ROOT, fetch
+from setup import ROOT, fetch, platform_spec
 
 DEST = ROOT / "build/compiler"
 
@@ -14,13 +13,11 @@ DEST = ROOT / "build/compiler"
 def setup_compiler(version, family="ProDG"):
     if family not in ("ProDG", "GC"):
         raise ValueError("Unknown compiler family")
-    if (platform.system(), platform.machine()) != ("Darwin", "arm64"):
-        raise RuntimeError("Initial compiler wrapper supports macOS ARM64 with existing Rosetta")
     lock = json.loads((ROOT / "tools/compilers.json").read_text())
     archive = DEST / "compilers.zip"
     fetch(lock["archive"], archive)
     wrapper = DEST / "wibo"
-    fetch(lock["wibo"], wrapper)
+    fetch(platform_spec(lock["wibo"]), wrapper)  # macOS ARM64 runs it under Rosetta
     wrapper.chmod(0o755)
     with zipfile.ZipFile(archive) as package:
         versions = sorted({n.split("/")[1] for n in package.namelist() if n.startswith(f"{family}/") and n.count("/") >= 2})

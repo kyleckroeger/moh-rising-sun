@@ -5,7 +5,15 @@
   },
   "wibo": {
     "version": "1.0.3",
-    "url": "https://github.com/decompals/wibo/releases/download/1.0.3/wibo-macos",
-    "sha256": "bfb53e13706506fef31c331a1b4312af84a5c71af451f0cafe42c5511b2acbe4"
+    "platforms": {
+      "Darwin-arm64": {
+        "url": "https://github.com/decompals/wibo/releases/download/1.0.3/wibo-macos",
+        "sha256": "bfb53e13706506fef31c331a1b4312af84a5c71af451f0cafe42c5511b2acbe4"
+      },
+      "Linux-x86_64": {
+        "url": "https://github.com/decompals/wibo/releases/download/1.0.3/wibo-x86_64",
+        "sha256": "7fdf620b151744296b9bb93318d8c4009d3d3e98e23718a6eda9fbec4cefbb2a"
+      }
+    }
   }
 }
