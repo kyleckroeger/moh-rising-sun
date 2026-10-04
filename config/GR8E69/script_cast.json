@@ -1,0 +1,49 @@
+{
+  "id": "script_cast",
+  "source": "src/script/cast.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f61c4",
+      "size": 144
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a50c0",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSOpCodeFunc_CAST__Fv",
+      "address": "0x800f61c4",
+      "size": 144,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_piIP": "0x8031d104",
+    "g_piStackTop": "0x8031d074"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmachin.cpp",
+  "original_file_index": 1101,
+  "local_externals": [
+    "g_piIP"
+  ]
+}

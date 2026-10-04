@@ -691,7 +691,10 @@
     "bpd_endian.json",
     "endian_scalar.json",
     "endian_short.json",
-    "bpd_light_volume.json"
+    "bpd_light_volume.json",
+    "script_negate.json",
+    "script_cast.json",
+    "script_comparisons.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

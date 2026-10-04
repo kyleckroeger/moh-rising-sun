@@ -1,0 +1,44 @@
+{
+  "id": "script_negate",
+  "source": "src/script/negate.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f58f4",
+      "size": 124
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSOpCodeFunc_NEG__Fv",
+      "address": "0x800f58f4",
+      "size": 124,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_piIP": "0x8031d104",
+    "g_piStackTop": "0x8031d074"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmachin.cpp",
+  "original_file_index": 1101,
+  "local_externals": [
+    "g_piIP"
+  ]
+}

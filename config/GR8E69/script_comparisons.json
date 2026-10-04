@@ -1,0 +1,79 @@
+{
+  "id": "script_comparisons",
+  "source": "src/script/comparisons.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f5a3c",
+      "size": 1928
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a5090",
+      "size": 48
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSOpCodeFunc_GT__Fv",
+      "address": "0x800f5a3c",
+      "size": 316,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_GTE__Fv",
+      "address": "0x800f5b78",
+      "size": 328,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_LT__Fv",
+      "address": "0x800f5cc0",
+      "size": 316,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_LTE__Fv",
+      "address": "0x800f5dfc",
+      "size": 328,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_EQ__Fv",
+      "address": "0x800f5f44",
+      "size": 312,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_NE__Fv",
+      "address": "0x800f607c",
+      "size": 328,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_piIP": "0x8031d104",
+    "g_piStackTop": "0x8031d074"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmachin.cpp",
+  "original_file_index": 1101,
+  "local_externals": [
+    "g_piIP"
+  ]
+}
