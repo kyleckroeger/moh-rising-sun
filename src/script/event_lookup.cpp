@@ -1,30 +1,4 @@
-// Scoped GameCube storage views for event lookup. Only array strides and fields
-// accessed here are established; do not allocate complete classes from these views.
-struct BSEventView {
-    unsigned int unknown00;
-    unsigned short eventNumber;
-    unsigned char unknown06[2];
-};
-
-struct BSStateView {
-    unsigned int unknown00;
-    BSEventView *events;
-    unsigned char unknown08[8];
-    unsigned char eventCount;
-};
-
-struct BSLevelView {
-    unsigned char unknown00[8];
-    BSStateView **states;
-    unsigned short stateCount;
-    unsigned char unknown0e[14];
-};
-
-struct BSClass_struct {
-    BSLevelView *levels;
-    unsigned char unknown04[84];
-    unsigned short levelCount;
-};
+#include "ScriptRuntime.h"
 
 int BSFindAnyEventHandler(unsigned short event, BSClass_struct *scriptClass) {
     for (int level = 0; level < scriptClass->levelCount; ++level) {

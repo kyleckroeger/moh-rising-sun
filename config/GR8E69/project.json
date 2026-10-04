@@ -695,7 +695,10 @@
     "script_negate.json",
     "script_cast.json",
     "script_comparisons.json",
-    "script_arithmetic.json"
+    "script_arithmetic.json",
+    "script_logical.json",
+    "script_objects.json",
+    "script_nextstate.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

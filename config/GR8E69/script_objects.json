@@ -1,0 +1,54 @@
+{
+  "id": "script_objects",
+  "source": "src/script/objects.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f6414",
+      "size": 204
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSOpCodeFunc_LS__Fv",
+      "address": "0x800f6414",
+      "size": 72,
+      "binding": 1
+    },
+    {
+      "name": "BSOpCodeFunc_GP__Fv",
+      "address": "0x800f645c",
+      "size": 132,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_pBSObject": "0x8031d100",
+    "g_piIP": "0x8031d104",
+    "g_piStackTop": "0x8031d074",
+    "g_piFrame": "0x8031d108",
+    "GetLegacyField__C13TriggerObjecti": "0x801230f4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmachin.cpp",
+  "original_file_index": 1101,
+  "local_externals": [
+    "g_piFrame",
+    "g_piIP"
+  ]
+}

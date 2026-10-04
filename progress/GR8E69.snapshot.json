@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 591272,
+    "matching_code_bytes": 592424,
     "total_executable_code_bytes": 2492032,
-    "percent": 23.726501104319688,
+    "percent": 23.772728440084236,
     "categories": {
-      "reconstructed_game": 199056,
+      "reconstructed_game": 200208,
       "restored_library": 392216
     },
-    "matching_functions": 1964
+    "matching_functions": 1969
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -500,17 +500,20 @@
     "config/GR8E69/particle_size.json": "2f5fccaf2b032dce1d59c0bcca32201ee9b378e62dceee6cbc34eddddf2d9a30",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "f54366c0001ef686b08747ab4e9a5d0bb568d2585fb8ad760f7197593c414af8",
+    "config/GR8E69/project.json": "108f57160552334ee11df616896b74d6c222f0102189dea8b9d5b14c541211c0",
     "config/GR8E69/script_arithmetic.json": "ec74fa88f8d6807fd445cbf66b4d4a7daaa273a339154b38c9710de23f8fdec0",
     "config/GR8E69/script_branches.json": "e7d49ea1a1b684c7bda78aa8a954777dc51bf3e78b2050dfb9abc2b3e0160e5b",
     "config/GR8E69/script_calls.json": "b25ba9582ac33d62abdb90b39671c9230d1aed2c6d35190b8899108c0e80621b",
     "config/GR8E69/script_cast.json": "7c615bfe0ee451f5a1c5c24d177e70f1240a882f1a4e786cc687fd359c560af8",
     "config/GR8E69/script_comparisons.json": "5db5d6f47ef9bc166fc3221fdc7e6be0b84cbd18ef252eda38ed520ef4a8a5eb",
     "config/GR8E69/script_event_lookup.json": "7234777fa0122f399f555d815b0592ea55386fd02987114a89562544c44a17ac",
+    "config/GR8E69/script_logical.json": "4e73622d7fe058bcfd24bf34589cb5121beae452aa4ab7af9369674d143225a8",
     "config/GR8E69/script_music_events.json": "032e4da800a8301374dba45800c9d07d35796bef894a4737e895d33d2ccc5ce0",
     "config/GR8E69/script_music_latency.json": "392d7540ba409317bc4270e164b52fdbdb20deb594c9654d9ed350bac7a53a17",
     "config/GR8E69/script_negate.json": "3d8e298c5786753cc413da81cceb6cfeba6c9193b63cb037990198e2095a2b7e",
+    "config/GR8E69/script_nextstate.json": "3cb66f1f8c7df768fa9f377bee6f3fc91e710a8ebdae6c25df52b9481cc55c14",
     "config/GR8E69/script_not.json": "47c7af683c943669b447f0a28b5b1ba781fee3a38dd73461947134b0d81c4f62",
+    "config/GR8E69/script_objects.json": "731e28925a29c66bd054763627b50c1d8ceb91d30a0fdc11d15f9faae2b604a4",
     "config/GR8E69/script_stack.json": "51d1c716e65edd95a6791e3b11f40a0e01a53b10fa4dc25075e48e1e6769e373",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/stl_80278d64.json": "04dc314cda8644a93aa797638a2f5a3e946a7bc954506e9bb2be731800b7646a",
@@ -930,6 +933,7 @@
     "include/game/ParticleRecipe.h": "a12cd591add8b54e4a4fa23067ddef52772ceaebed6d3b2bec5caf62598f0186",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
+    "include/game/ScriptRuntime.h": "144c3a8ca311d8cee185f6a7d5503e90c7941a7d518683f728a59b8c92c842fb",
     "include/game/StringCRC.h": "3940d0af2ade9e671b10c5bb1ef12705a7322101b231aae92cfd2aab4a07fa31",
     "include/game/TARExtension.h": "cf1f48aa0be63a29babdba7f53c58439facb94141d7e04d0d32fcc878bad2cb3",
     "include/game/TevStage.h": "47aaf3de5425dace0c30e2852896a9494f78ab4a4dcaad6be03d4aa4204d7466",
@@ -1639,11 +1643,14 @@
     "src/script/calls.cpp": "65f5b68d6ed9083b98d13095286dafe776b321d6da2b7e8b8524770f7c48e303",
     "src/script/cast.cpp": "827312cf42f3834dc3358de5a74cbb80e0353428ae59af99cde862358b005f31",
     "src/script/comparisons.cpp": "7e7e808c7c41dd90eef83478889a045891078853a4979bdbf95abd9841f3747b",
-    "src/script/event_lookup.cpp": "87860680e1bd7a97ec40a9790eadc267d816e34b40934b468a72dc633507322c",
+    "src/script/event_lookup.cpp": "e6444d247f01879da2f3d82c61c512a1cdec053754a160b056d68296bac6ef8f",
+    "src/script/logical.cpp": "4cbcca143b9b639fafd8723a2169aae6bf3ceb7c51c4c2198ddd3b4efb3ec939",
     "src/script/music_events.cpp": "998748dd2ede9e53d607e41683fdaf5c081b2be02f990ae035135ff4d41b009d",
     "src/script/music_latency.cpp": "da0497d8536cec4aa50005a2f44ec6d949c49a2206c279feb746d6b7a4ea052b",
     "src/script/negate.cpp": "f6a920b97c8c4df32b02d9c8754c3f0dc6d69d34d8c56a1f3f48b57b1d211e88",
+    "src/script/nextstate.cpp": "3d03451278563dbffef29e20da6b33890c4e4ff891c28b53c9ce3c403ea211e0",
     "src/script/not.cpp": "6a042ba188f55af543191aecccbb4496d1aa55eef9a44bd4b87f0931d69ce977",
+    "src/script/objects.cpp": "e26862f9ca86884fde70db5ba230bdd70f92dc031b4633cc0db8a4e83687446e",
     "src/script/stack.cpp": "b98bb8bfcda3985b4e4e1a757b27db6342f5142af06c629e63e219ce8f324a29",
     "src/stlport/CONTAINERS_NOTICE": "7c59267a930cdf87e1af44873547a8275a61b1329833c74ae5f821a5e507a22e",
     "src/stlport/COPYING.GCC": "dcc100d4161cc0b7177545ab6e47216f84857cda3843847c792a25289852dcaa",
@@ -17896,6 +17903,60 @@
       "discarded_functions": [],
       "object_sha256": "d801e6428c307d6b9f58e660ba648fcde4cd6e819d253b79b9ee0b5e7c9246b1",
       "linked_sha256": "09778357c6947919a0e7b06963858b325ea6fea4d29095dd22030abdb742facb"
+    },
+    {
+      "id": "script_logical",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 160,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b75a1cdbfadd891a44388b099a3992b305b0ab1e0da47bef8b5772b5cfd16728",
+      "linked_sha256": "288a4825e01da50fad54098bb98bfeeea342b5a19cd54c6a90474546766a4046"
+    },
+    {
+      "id": "script_objects",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 204,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "bae798c668b32473ead02b90369de6be0c62acda6d8c3557ea6f1db88fbb6775",
+      "linked_sha256": "8d2d81a14ae51ab5062eeed201edec0cf1f94763fa9f5ab0f730f84ca186d298"
+    },
+    {
+      "id": "script_nextstate",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 788,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "871bcd36e13f74ecec49d192cded3a338d0c2e0f65e8a7085bcae59da65b20f2",
+      "linked_sha256": "d204a49fbe1d86c905f427695472743a2579e40578149980b7bb2259a4d7f823"
     }
   ],
   "code_map": {
@@ -40967,41 +41028,6 @@
             "size": 452,
             "kind": "function",
             "name": "BSExecuteThread__FP8BSObjectP22BSMachineThread_struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f5970",
-            "size": 80,
-            "kind": "function",
-            "name": "BSOpCodeFunc_AND__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f59c0",
-            "size": 80,
-            "kind": "function",
-            "name": "BSOpCodeFunc_OR__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f6414",
-            "size": 72,
-            "kind": "function",
-            "name": "BSOpCodeFunc_LS__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f645c",
-            "size": 132,
-            "kind": "function",
-            "name": "BSOpCodeFunc_GP__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f6650",
-            "size": 788,
-            "kind": "function",
-            "name": "BSOpCodeFunc_NEXTSTATE__Fv",
             "evidence": "adjacent-compiler-markers"
           },
           {

@@ -63,8 +63,13 @@ Those are the PS2 offsets. That the GameCube **file** bytes match was not examin
 GameCube `.sin` files have not been checked.
 
 Subsequent [matching GameCube reconstruction](../../Script.md) now includes the
-complete `BSFindAnyEventHandler` body and independently corroborates these runtime
-accesses. It does not establish the on-disc layout.
+complete `BSFindAnyEventHandler` and `NEXTSTATE` bodies. The latter independently
+confirms the state code at `+0`, message pointer at `+8`, parent halfword at `+0x0c`,
+message count at `+0x0f`, and twelve-byte message-entry stride. The byte at `+0x0e`
+acts as state depth in parent traversal and message-registration cleanup. Event 1
+with bit 0 of its `+7` flags set is selected for the exit phase; its code word is
+then used to transfer execution. Other flag meanings remain unknown. These matches
+do not establish the on-disc layout.
 
 ## Handler entries
 
@@ -79,11 +84,12 @@ notes read them as whole words, such as `0x0301xxxx`.)
 | `+0` | 32 bits | code position of the handler |
 | `+4` | 16 bits | **event number** (GR8E69 compares this halfword) |
 | `+6` | byte | unknown |
-| `+7` | byte | unknown |
+| `+7` | byte | flags; GameCube `NEXTSTATE` tests bit 0 for an enabled exit event 1 |
 
 The observed (`+6`, `+7`) pairs over 2,213 entries [re-check] are: (1, 3) 1,223; (1, 1)
 817; (3, 1) 66; (0, 3) 35; (0, 1) 27; (0, 6) 18; (0, 2) 13; (4, 1) 10; (2, 1) 4. Their
-meaning is **not decoded**.
+broader meaning remains **not decoded**; the subsequent GameCube reconstruction
+establishes only the bit-0 use described above.
 
 **Message handler** (12 bytes) [notes] [re-check]:
 
@@ -153,8 +159,10 @@ objective; 126 plane shot down; 127 destroyed/killed; 326 / 327 sound on / off; 
 
 ## Open questions
 
-- The meaning of the event-entry bytes `+6`/`+7` and of the minority message-entry forms.
-- The unnamed byte at state `+0x0E`.
+- The meaning of event-entry byte `+6`, the remaining `+7` flag bits, and the minority
+  message-entry forms. Bit 0 at `+7` now has a verified GameCube exit-event use.
+- The on-disc generation of the state-depth byte at `+0x0E`; its GameCube runtime
+  use is now established by the matching transition handler.
 - The GameCube `.sin` file bytes, including their byte order.
 - The GameCube enum names for events and messages, if any survive (none were searched for).
 - The NPC message codes.

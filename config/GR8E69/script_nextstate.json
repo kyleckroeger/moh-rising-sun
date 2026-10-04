@@ -1,0 +1,57 @@
+{
+  "id": "script_nextstate",
+  "source": "src/script/nextstate.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f6650",
+      "size": 788
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSOpCodeFunc_NEXTSTATE__Fv",
+      "address": "0x800f6650",
+      "size": 788,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_pbmtThread": "0x8031d11c",
+    "g_piStackTop": "0x8031d074",
+    "g_ppsteStateEntries": "0x8031d118",
+    "g_MessageListHead": "0x8031d128",
+    "BSMessageRemoveHandler__FP28BSMessageRegistration_struct": "0x800f7ab0",
+    "g_pBSObject": "0x8031d100",
+    "BSRegisterMessage__FP33BSCode_MessageHandlerEntry_structP8BSObjectUsP22BSMachineThread_structPP28BSMessageRegistration_struct": "0x800f73a8",
+    "BSMachineGetFreeMessageList__Fv": "0x800f69ec",
+    "g_piCodeBase": "0x8031d110",
+    "g_piFrame": "0x8031d108",
+    "g_piIP": "0x8031d104"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmachin.cpp",
+  "original_file_index": 1101,
+  "local_externals": [
+    "g_MessageListHead",
+    "g_piCodeBase",
+    "g_piFrame",
+    "g_piIP",
+    "g_ppsteStateEntries"
+  ]
+}

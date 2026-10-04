@@ -69,8 +69,9 @@ number directly.
 Meanings in the table come from the PS2 handlers and script use [notes], confidence
 **medium** unless marked. The initial research checked only GameCube numbering and
 names. Subsequent [matching GameCube reconstruction](../../Script.md) establishes the
-behaviour of 28 handlers; meanings of the remaining handlers are still **unverified**
-on GameCube.
+behaviour of all **33 opcode handlers** on GameCube, including the corrections and
+precise transition behaviour documented there. This does not verify the PS2 bodies
+or establish GameCube file layouts.
 
 | Op | Name (GR8E69 symbol) | Meaning | PS2 handler | GR8E69 handler |
 |---|---|---|---|---|
@@ -92,7 +93,7 @@ on GameCube.
 | `18` / `19` | LG / SG | push / store the object's variable N ("global" in the GR8E69 names) | `0x1FAC48` / `0x1FAC00` | `0x800f6368` / `0x800f632c` |
 | `1A` | BIFNCALL | call built-in function N (index into `bsbifunc.dat`) | `0x1FAE58` | `0x800f6544` |
 | `1B` / `1C` | LM / SM | get / set field N of the object reference on the stack ("member") | `0x1FACD8` / `0x1FAC90` | `0x800f63e0` / `0x800f63a8` |
-| `1D` | GP | push the engine-side object of this object, or of a local. Not used in the examined levels, so the meaning comes from the handler alone (confidence **low**) | `0x1FAD60` | `0x800f645c` |
+| `1D` | GP | GC: push the selected native receiver's `GetLegacyField` result; instruction byte 1 is the field index and byte 0 selects frame slot 3 versus the current object. This corrects the earlier broad interpretation as merely pushing an engine object; PS2 behaviour remains attributed to the original notes | `0x1FAD60` | `0x800f645c` |
 | `1F` | TRACE | does nothing (a debugging marker) | `0x1FAF48` | `0x800f663c` |
 | `20` | LS | push the class's shared value N | `0x1FAD10` | `0x800f6414` |
 
@@ -158,14 +159,12 @@ inferred only from use.
 
 ## Open questions
 
-- The exact semantics of the remaining GameCube instructions. Subsequent
-  [matching GameCube reconstruction](../../Script.md) establishes 28 handlers,
-  including stack operations, branches, calls, return, all four binary arithmetic
-  operations, negation, casts and all six numeric comparisons. Binary numeric type
-  selectors encode right then left operand types; mixed operations round the integer
-  operand to single precision. `BREAK` also advances by the signed argument;
-  `TRACE` advances one word.
-- GP (`1D`), which is unused in the examined levels.
+- The GameCube opcode bodies are now all reconstructed; interpreter startup, thread
+  management and message-dispatch dependencies still need work. See the
+  [verified handler behaviour](../../Script.md) for mixed numeric conversions,
+  `BREAK`/`TRACE` instruction movement and the two `NEXTSTATE` paths.
+- Native legacy-field meanings and PS2 GP (`1D`) behaviour, which was not exercised
+  by the examined levels. The GameCube call to `GetLegacyField` is now verified.
 - The first word of each `bsbifunc.dat` entry.
 - The GameCube `.cbs` and `bsbifunc.dat` files, which were not examined, including
   their byte order.
