@@ -17,3 +17,5 @@ Read docs/ParticleRecipes.md and docs/FlexProp.md before extending particle reci
 Check the repository-local commit identity before committing; never inherit a personal identity without authorization. Preserve contributors' pseudonymity and upstream attribution. Follow docs/Progress.md when changing source, headers, configuration or tools: regenerate the public snapshot only after complete local verification. CI validates a snapshot and must not be described as rebuilding the game.
 
 Read docs/Script.md before extending the behaviour-script interpreter, class/state views or built-in function interface. Its runtime storage views do not establish complete class allocations or on-disc formats; check PS2 research claims independently against GR8E69.
+
+Read docs/BPD.md before extending BPD/property-record conversion, endian helpers or light-volume interfaces. Preserve conversion order and unknown fields; the prefix views do not establish complete object allocations or GameCube file layouts.

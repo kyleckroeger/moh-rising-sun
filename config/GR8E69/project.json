@@ -687,7 +687,11 @@
     "script_calls.json",
     "script_event_lookup.json",
     "script_music_events.json",
-    "script_music_latency.json"
+    "script_music_latency.json",
+    "bpd_endian.json",
+    "endian_scalar.json",
+    "endian_short.json",
+    "bpd_light_volume.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

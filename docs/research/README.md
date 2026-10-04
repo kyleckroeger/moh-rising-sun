@@ -35,6 +35,11 @@ handlers, event lookup and three music built-ins](../Script.md), with each accep
 body checked independently against GameCube. That evidence is separate from the
 broader PS2 interpretations in the research documents.
 
+The [BPD reconstruction](../BPD.md) also includes matching conversion routines for
+the header, property records, animated lights and light volumes, plus a lighting-volume
+point test and scalar conversion wrappers. Its scoped views preserve unknown fields
+and do not establish complete GameCube file formats.
+
 PS2 offsets, endianness and file contents do not automatically establish GameCube
 layouts. A CRC match is a naming lead, and a shared symbol or call is evidence for
 an interface, not a complete implementation. Check each proposed GameCube function

@@ -1,0 +1,104 @@
+{
+  "id": "bpd_endian",
+  "source": "src/bpd/endian.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80123538",
+      "size": 1168
+    }
+  ],
+  "functions": [
+    {
+      "name": "EndianSwap__FR9BPDHeader",
+      "address": "0x80123538",
+      "size": 272,
+      "binding": 1
+    },
+    {
+      "name": "EndianSwap__FR18xyzProperty_Struct",
+      "address": "0x80123648",
+      "size": 124,
+      "binding": 1
+    },
+    {
+      "name": "EndianSwap__FR15MOH_core_Struct",
+      "address": "0x801236c4",
+      "size": 192,
+      "binding": 1
+    },
+    {
+      "name": "EndianSwap__FR19MOH_mechanic_Struct",
+      "address": "0x80123784",
+      "size": 52,
+      "binding": 1
+    },
+    {
+      "name": "EndianSwap__FR16MOH_enemy_Struct",
+      "address": "0x801237b8",
+      "size": 180,
+      "binding": 1
+    },
+    {
+      "name": "EndianSwap__FR25MOH_mechanicEnvMod_Struct",
+      "address": "0x8012386c",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "EndianSwap__FR24MOH_animatedLight_Struct",
+      "address": "0x801238a8",
+      "size": 68,
+      "binding": 1
+    },
+    {
+      "name": "EndianSwap__FR14BPDLightVolume",
+      "address": "0x801238ec",
+      "size": 128,
+      "binding": 1
+    },
+    {
+      "name": "EndianSwapList__FPUl",
+      "address": "0x8012396c",
+      "size": 92,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "ChangeEndian__FRi": "0x8005861c",
+    "ChangeEndian__H1ZP8PropVec3_RX01_v": "0x8028389c",
+    "ChangeEndian__H1ZPv_RX01_v": "0x80286a20",
+    "ChangeEndian__H1ZP14BPDLightVolume_RX01_v": "0x80286f9c",
+    "ChangeEndian__H1ZP18BPDPathFindingArea_RX01_v": "0x80286fc8",
+    "ChangeEndian__H1ZP17BPDPathFindingBSP_RX01_v": "0x80286ff4",
+    "ChangeEndian__H1ZP18BPDPathFindingNode_RX01_v": "0x80287020",
+    "ChangeEndian__H1ZP11BPDPolyPath_RX01_v": "0x8028704c",
+    "ChangeEndian__H1ZPPv_RX01_v": "0x80287078",
+    "ChangeEndian__H1ZUl_RX01_v": "0x802870a4",
+    "ChangeEndian__FRf": "0x800585fc",
+    "ChangeEndian__FRs": "0x80058660",
+    "ChangeEndian__H1ZPc_RX01_v": "0x802865b4",
+    "ChangeEndian__H1ZPUl_RX01_v": "0x802870d0",
+    "ChangeEndian__H1ZPf_RX01_v": "0x802870fc",
+    "ChangeEndian__H1ZP10PropPlane4_RX01_v": "0x80287128",
+    "ChangeEndian__H1ZP8BPDLight_RX01_v": "0x80287154"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "propdat.cpp",
+  "original_file_index": 1204
+}

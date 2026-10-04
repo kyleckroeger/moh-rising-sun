@@ -13,6 +13,11 @@ were written with AI assistance (Claude), and were re-checked on 2026-10-04 as d
 below. No game files or bulk dumps are included; a few short example values are quoted.
 Nothing here is reconstructed source or earns progress credit.
 
+Subsequent [matching GameCube reconstruction](../../BPD.md) now includes the header
+and light-volume conversions, related property conversions, and the light-volume
+point test. It corroborates specific types and accesses while retaining unknown
+fields and unverified cross-platform interpretations.
+
 ## Build, files and labels
 
 - **PS2 release:** SLUS-20753, with the program `MOH3RDVD.ELF` (SHA-1

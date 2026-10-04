@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 586416,
+    "matching_code_bytes": 587796,
     "total_executable_code_bytes": 2492032,
-    "percent": 23.531640043145515,
+    "percent": 23.587016539113463,
     "categories": {
-      "reconstructed_game": 194200,
+      "reconstructed_game": 195580,
       "restored_library": 392216
     },
-    "matching_functions": 1939
+    "matching_functions": 1952
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -114,6 +114,8 @@
     "config/GR8E69/arq.json": "b79b6daec16d9806b4df0388a3f927cb06d48ce10fdb9fa35772dcecce291de7",
     "config/GR8E69/base64.json": "e88ebd5740a86b7f43b5b6812b6c4e81114d43dfae07a3e7429abb7c6a1bfec7",
     "config/GR8E69/baseline.json": "9ebff32fd809e72fdf889ab49760be2aa1172768f855af86d0251c1fc4da2ef7",
+    "config/GR8E69/bpd_endian.json": "3aadb304ad55ca0cf66faa09c34e66abb388542cbec23719edc23a4a11d1bf4d",
+    "config/GR8E69/bpd_light_volume.json": "e3931cdecf07dcd381e5058696fdf773127383abb36af8f4f317095e70d4849c",
     "config/GR8E69/dolphin-network-source.json": "6b039c8ef3fc502a7441ab8f55160567fd2facec6c12d818739c3bc7fd741b82",
     "config/GR8E69/dolphin-source.json": "00e4890e3bb570018abbacc62a7beee8052c2ef4f115363b1716785b62884cf1",
     "config/GR8E69/dsp.json": "bcc4a05a8ec25869e7675234c297eb8243e9a2e03983f64bf5e7040c7a897cd7",
@@ -307,6 +309,8 @@
     "config/GR8E69/eagl_transform_scale.json": "b34e2fe34dbaae639aa8140d8a1635085494e2cd029ff3f514c821c973ca1693",
     "config/GR8E69/eagl_transform_selftranspose.json": "181dd5a7887cb03827884b18c0517c5001b2f80e15aab48215a745069e27e673",
     "config/GR8E69/eagl_transform_transpose.json": "7356398a9efed7ee37f2444f8d5a0efc54fea20110ac266bbe8ea3d2c0addaf4",
+    "config/GR8E69/endian_scalar.json": "b06b899196751f86468ed6219d7354e925563bb4d924c4bde79681dbca388e37",
+    "config/GR8E69/endian_short.json": "46ae80cd39c500fc5811695c39a6554a21972ed5948c58969a359a404c747428",
     "config/GR8E69/ethsec.json": "5305737979b5e234b337720f07434e602f0d0ab8df682c5287ba2349d6438f69",
     "config/GR8E69/flex_bool.json": "e4b08a7acb491ffeb9919c749c2264a405093a44c83c65ec145e746cabe143f2",
     "config/GR8E69/flex_data.json": "0ba46b6e0b3c72424ca594a68c4dba4dc4ca0a458c33be7dbe949faad124347c",
@@ -496,7 +500,7 @@
     "config/GR8E69/particle_size.json": "2f5fccaf2b032dce1d59c0bcca32201ee9b378e62dceee6cbc34eddddf2d9a30",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "aa2b1bdf04155de08efc2cce921318dd74bde4b80ae2bda7e26a5f863f508e24",
+    "config/GR8E69/project.json": "3d4a0132635b4d1627e2e02798a8de774c5457e73ce36ee1873b6222ba899dbc",
     "config/GR8E69/script_branches.json": "209d4398e60e12c468ee23309425e02c9b6a3499cc7142a760dc7d091966f9cf",
     "config/GR8E69/script_calls.json": "d90a224edc65cbc37ed65123ea3af9d39f2ba2a5219234f0182695270ad382e9",
     "config/GR8E69/script_event_lookup.json": "7234777fa0122f399f555d815b0592ea55386fd02987114a89562544c44a17ac",
@@ -871,6 +875,7 @@
     "include/dolphin-sdk/libc/wchar.h": "eb9359b3f8c80e980c291b31b08b913739a9fda753a2a5007f8bf2bf3c646439",
     "include/dolphin-sdk/macros.inc": "4e92f656bb511fbb45d66081291371c47ceba7bce9c55f86871116203cf38a46",
     "include/dolphin-sn/dolphin/types.h": "ca31e0bbb97e93ca4713654367df29578f6392f3acaf40ca68bc1de1c913af93",
+    "include/game/BPD.h": "0b35cb4e9be9dbf3be60fb20019f0500b0667671505801d6afd698573bf0f111",
     "include/game/CMatrix.h": "ace2b9373e5a9e3d4bfd296fa864e7af1d289192dd4d9105a44df3cd6aee60be",
     "include/game/DestructorQueue.h": "434ec17ba96007c8368db0dc62c9454d1650bc2c4d5615a13aad40969412bda8",
     "include/game/EAGLAnim/AnimAllocation.h": "8e2480f7003eca4c8a99d7bc1189b4f00ee9e31bacd9192d6b1bb0bfbc2b38f8",
@@ -913,6 +918,7 @@
     "include/game/EAGLMemory.h": "fdcff73217acecdec07803345a7061df61db8cc6c38544980856ef539ddc7bbf",
     "include/game/EAGLPropertyParser.h": "71dc0d4dda9bf9df333fbd5172293805881c33b453b5de6f4e89e8f9b623c5b6",
     "include/game/EAGLTransform.h": "c8b8d8e4397d16d893d6b080bfa5a7a1a9e4fd35bd0d98096d75f3d00e64d433",
+    "include/game/Endian.h": "6f3a06aca2ed749c09949cedff932c6e9a8db1272b5393bdc9a46185a384387b",
     "include/game/FlexProp.h": "807c25fb67a35d5d67dcc94bfd4d496a9344d2a3b1109f01b875ef869bc69b29",
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
     "include/game/ObserverTypes.h": "687dfc07deb4adc23a1d0247270d6ab04c34b758bd88846bf5e4b6ef33e7cc1f",
@@ -1071,6 +1077,8 @@
     "include/target/stdlib.h": "74302825988fd3229c983eb14e318b3ac7b461b757bba166c734743e0a073de0",
     "include/target/string.h": "b73138d3d89c4db3ea017939b94e7a8ed7b59d4f090f7e4df068a1fe854d0297",
     "src/MathFun.cpp": "62fdc1c10ab2ff80ae713d40d1fa1efc22748836588999759447f0350ca8bc91",
+    "src/bpd/endian.cpp": "319fe162774583e7968ef97f898b64e6f7cc49d0263c5173dbde60878dc7459b",
+    "src/bpd/light_volume.cpp": "c22922ba3e285d879080bb5c45ebb5030b1db234219d2f12b920c79b8aaaf1bd",
     "src/dolphin/LICENSE.PrimeDecomp": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
     "src/dolphin/LICENSE.bfbb": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
     "src/dolphin/NETWORK_NOTICE": "bb4c39371835c344ec608a98b06c3c44d39b0df7060c37ae1c200a4d48471b16",
@@ -1384,6 +1392,8 @@
     "src/eagl_loading/SymbolPoolInsertRemove.cpp": "5ef1a227de7c3a60467c8a183f8ae65ca21541b3c4d0b9cd521d53ab89183fbf",
     "src/eagl_loading/SymbolPoolLifetime.cpp": "61de87b8cb1d6af3ea46e3b6fa3f65f9f989b46099529880c41659c3a664d1c3",
     "src/eagl_loading/dlsym.cpp": "9cec232bcbba73d0c2109f30be340b337b39788c9be69369e21fd9823cffd1c9",
+    "src/endian/scalar.cpp": "090834c02299042f5884d0302baa71af4a07fa67443cfe933d3fdd7405fdc146",
+    "src/endian/short.cpp": "27ea58209e70d97588b380691fc1e414b1deb8259ec7b245c46d6af57df08fb9",
     "src/flexprop/FlexBool.cpp": "6babfd7c08477b15b2c42789d36dc38e62854c608a9506406b67baeb70463aef",
     "src/flexprop/FlexData.cpp": "08a09e331252f5bc0ac53e50e369b6418db8281bbbe2971e43584a1545f924d1",
     "src/flexprop/FlexEnum.cpp": "f827207fe659b1bee64ab28d285b1319b945005d9918d66aa83c8118f08a8cdb",
@@ -17734,6 +17744,78 @@
       "discarded_functions": [],
       "object_sha256": "3aadf0368efac5c2660fec87dfe8b6df9c4b87e96250b956fff6ff2e20a28a51",
       "linked_sha256": "83b67a62bb0218f9c55e76c085afe469339e21b0d98bf613f4f06a330c82439d"
+    },
+    {
+      "id": "bpd_endian",
+      "category": "reconstructed_game",
+      "functions": 9,
+      "code_bytes": 1168,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "9fc1aa7d45f583fad1b891f19ee5ee6e5bf5cb1d2f36c735e1a0d40d458e496f",
+      "linked_sha256": "00741e9afa788e3a5f0ce3226b4ed936ba144389cdc943c51c768587c66ffb70"
+    },
+    {
+      "id": "endian_scalar",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 64,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "205a2706fadd61b03c148fd99b7cc751a22fec82c4fe6d9b7d7465a1f042125f",
+      "linked_sha256": "7d5c2d92dc78f893c50378728253c03eeff615b06981297cfe55d03b360eafda"
+    },
+    {
+      "id": "endian_short",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 32,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "867c6356d1f518bf13f464f9adca6d9a454a89cfa867d63fa8e1e6bdad2d4b8b",
+      "linked_sha256": "b8b05b4f660240a8189c59fd4e0c0d69ae3aa1a7d739560173f59f1cc6d4c50b"
+    },
+    {
+      "id": "bpd_light_volume",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 116,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c31d0d274f024582ceec08afba4097622f6abea95ffd6f53b2584add11af5211",
+      "linked_sha256": "0cae415c80003e97f303251b3e9e0931f2908c0ed8357ece4b04c30512f8148f"
     }
   ],
   "code_map": {
@@ -20767,31 +20849,10 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800585fc",
-            "size": 32,
-            "kind": "function",
-            "name": "ChangeEndian__FRf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8005861c",
-            "size": 32,
-            "kind": "function",
-            "name": "ChangeEndian__FRi",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8005863c",
             "size": 36,
             "kind": "function",
             "name": "ChangeEndian__FRUs",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80058660",
-            "size": 32,
-            "kind": "function",
-            "name": "ChangeEndian__FRs",
             "evidence": "adjacent-compiler-markers"
           }
         ],
@@ -46634,69 +46695,6 @@
             "kind": "function",
             "name": "FindBotRespawn__FP10CBotObjectR7CMatrix",
             "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80123538",
-            "size": 272,
-            "kind": "function",
-            "name": "EndianSwap__FR9BPDHeader",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80123648",
-            "size": 124,
-            "kind": "function",
-            "name": "EndianSwap__FR18xyzProperty_Struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801236c4",
-            "size": 192,
-            "kind": "function",
-            "name": "EndianSwap__FR15MOH_core_Struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80123784",
-            "size": 52,
-            "kind": "function",
-            "name": "EndianSwap__FR19MOH_mechanic_Struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801237b8",
-            "size": 180,
-            "kind": "function",
-            "name": "EndianSwap__FR16MOH_enemy_Struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012386c",
-            "size": 60,
-            "kind": "function",
-            "name": "EndianSwap__FR25MOH_mechanicEnvMod_Struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801238a8",
-            "size": 68,
-            "kind": "function",
-            "name": "EndianSwap__FR24MOH_animatedLight_Struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801238ec",
-            "size": 128,
-            "kind": "function",
-            "name": "EndianSwap__FR14BPDLightVolume",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012396c",
-            "size": 92,
-            "kind": "function",
-            "name": "EndianSwapList__FPUl",
-            "evidence": "adjacent-compiler-markers"
           }
         ],
         "marker_interval": [
@@ -46805,13 +46803,6 @@
             "size": 1304,
             "kind": "function",
             "name": "IsPointInFlexTrigger__FRC8CVector3P8FlexProp",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801252dc",
-            "size": 116,
-            "kind": "function",
-            "name": "IsPointInLightVolume__FRC8CVector3PC14BPDLightVolume",
             "evidence": "adjacent-compiler-markers"
           },
           {
