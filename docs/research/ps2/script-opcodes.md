@@ -69,7 +69,7 @@ number directly.
 Meanings in the table come from the PS2 handlers and script use [notes], confidence
 **medium** unless marked. The initial research checked only GameCube numbering and
 names. Subsequent [matching GameCube reconstruction](../../Script.md) establishes the
-behaviour of 24 handlers; meanings of the remaining handlers are still **unverified**
+behaviour of 28 handlers; meanings of the remaining handlers are still **unverified**
 on GameCube.
 
 | Op | Name (GR8E69 symbol) | Meaning | PS2 handler | GR8E69 handler |
@@ -159,11 +159,12 @@ inferred only from use.
 ## Open questions
 
 - The exact semantics of the remaining GameCube instructions. Subsequent
-  [matching GameCube reconstruction](../../Script.md) establishes 24 handlers,
-  including stack operations, branches, calls, return, negation, casts and all six
-  numeric comparisons. The comparison type selector encodes right then left operand
-  types; mixed comparisons round the integer operand to single precision. `BREAK`
-  also advances by the signed argument; `TRACE` advances one word.
+  [matching GameCube reconstruction](../../Script.md) establishes 28 handlers,
+  including stack operations, branches, calls, return, all four binary arithmetic
+  operations, negation, casts and all six numeric comparisons. Binary numeric type
+  selectors encode right then left operand types; mixed operations round the integer
+  operand to single precision. `BREAK` also advances by the signed argument;
+  `TRACE` advances one word.
 - GP (`1D`), which is unused in the examined levels.
 - The first word of each `bsbifunc.dat` entry.
 - The GameCube `.cbs` and `bsbifunc.dat` files, which were not examined, including

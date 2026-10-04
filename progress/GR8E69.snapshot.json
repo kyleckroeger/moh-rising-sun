@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 589992,
+    "matching_code_bytes": 591272,
     "total_executable_code_bytes": 2492032,
-    "percent": 23.675137397914632,
+    "percent": 23.726501104319688,
     "categories": {
-      "reconstructed_game": 197776,
+      "reconstructed_game": 199056,
       "restored_library": 392216
     },
-    "matching_functions": 1960
+    "matching_functions": 1964
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -500,17 +500,18 @@
     "config/GR8E69/particle_size.json": "2f5fccaf2b032dce1d59c0bcca32201ee9b378e62dceee6cbc34eddddf2d9a30",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "202fb3a8094064290ffd48df296840da0a4922bd64f95aa49b6b544f00a2c338",
-    "config/GR8E69/script_branches.json": "209d4398e60e12c468ee23309425e02c9b6a3499cc7142a760dc7d091966f9cf",
-    "config/GR8E69/script_calls.json": "d90a224edc65cbc37ed65123ea3af9d39f2ba2a5219234f0182695270ad382e9",
-    "config/GR8E69/script_cast.json": "7554cd82ff6e014bfb8c7cb283690c18c854fb315b1c6d297d62d65258a3041f",
-    "config/GR8E69/script_comparisons.json": "f0e981187996f694e1f8db27dbb152ca02f55733393c0aa4606da899085519b5",
+    "config/GR8E69/project.json": "f54366c0001ef686b08747ab4e9a5d0bb568d2585fb8ad760f7197593c414af8",
+    "config/GR8E69/script_arithmetic.json": "ec74fa88f8d6807fd445cbf66b4d4a7daaa273a339154b38c9710de23f8fdec0",
+    "config/GR8E69/script_branches.json": "e7d49ea1a1b684c7bda78aa8a954777dc51bf3e78b2050dfb9abc2b3e0160e5b",
+    "config/GR8E69/script_calls.json": "b25ba9582ac33d62abdb90b39671c9230d1aed2c6d35190b8899108c0e80621b",
+    "config/GR8E69/script_cast.json": "7c615bfe0ee451f5a1c5c24d177e70f1240a882f1a4e786cc687fd359c560af8",
+    "config/GR8E69/script_comparisons.json": "5db5d6f47ef9bc166fc3221fdc7e6be0b84cbd18ef252eda38ed520ef4a8a5eb",
     "config/GR8E69/script_event_lookup.json": "7234777fa0122f399f555d815b0592ea55386fd02987114a89562544c44a17ac",
     "config/GR8E69/script_music_events.json": "032e4da800a8301374dba45800c9d07d35796bef894a4737e895d33d2ccc5ce0",
     "config/GR8E69/script_music_latency.json": "392d7540ba409317bc4270e164b52fdbdb20deb594c9654d9ed350bac7a53a17",
-    "config/GR8E69/script_negate.json": "8035a076c445cf94968694cb5f7c841f4043405b6c7930424d3878d0b6008391",
-    "config/GR8E69/script_not.json": "864f341f64d73eeaed296bf207ac76177825c30a4bc9329a875e1945ae486afb",
-    "config/GR8E69/script_stack.json": "f0d5863f009af26290cdba1740940649ba9811b4456d1321ffbafc4af92bbdd3",
+    "config/GR8E69/script_negate.json": "3d8e298c5786753cc413da81cceb6cfeba6c9193b63cb037990198e2095a2b7e",
+    "config/GR8E69/script_not.json": "47c7af683c943669b447f0a28b5b1ba781fee3a38dd73461947134b0d81c4f62",
+    "config/GR8E69/script_stack.json": "51d1c716e65edd95a6791e3b11f40a0e01a53b10fa4dc25075e48e1e6769e373",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/stl_80278d64.json": "04dc314cda8644a93aa797638a2f5a3e946a7bc954506e9bb2be731800b7646a",
     "config/GR8E69/stl_80278ea0.json": "784844808dbfcbe4c0b2a360cdd8a5cd6c1115260192d1fa5e52d4a7ae8c4ebf",
@@ -1633,6 +1634,7 @@
     "src/particles/ParticleTMLocalToWorld.cpp": "e5f25d9f281602761bd4d9b439b705a625e0ea2512b9cdbb5259e7a91b98a9f1",
     "src/particles/ParticleVelocity.cpp": "ea620216e51ba6219de1500b4a0f6db91dee7a87a57af227afba091f8f8b910c",
     "src/pathfinding/PathFindingNetwork.cpp": "babf331f9fbf19dbc75fdda20d7a1011f6cf9f465f02285a89b6b572098e6b95",
+    "src/script/arithmetic.cpp": "1349ad72134e4fa92c7d4aaa50b69e95cd4cf0c7b974f2c8eca3a53c358aa480",
     "src/script/branches.cpp": "2823173b8e93bc80ac850752dad341621bbe5cb271c32dc243b0163512164347",
     "src/script/calls.cpp": "65f5b68d6ed9083b98d13095286dafe776b321d6da2b7e8b8524770f7c48e303",
     "src/script/cast.cpp": "827312cf42f3834dc3358de5a74cbb80e0353428ae59af99cde862358b005f31",
@@ -17631,7 +17633,7 @@
       "functions": 2,
       "code_bytes": 108,
       "compiler_family": "ProDG",
-      "compiler_version": "3.8.1",
+      "compiler_version": "3.9.3",
       "compiler_flags": [
         "-O2",
         "-G0",
@@ -17649,7 +17651,7 @@
       "functions": 1,
       "code_bytes": 44,
       "compiler_family": "ProDG",
-      "compiler_version": "3.8.1",
+      "compiler_version": "3.9.3",
       "compiler_flags": [
         "-O2",
         "-G0",
@@ -17667,7 +17669,7 @@
       "functions": 8,
       "code_bytes": 448,
       "compiler_family": "ProDG",
-      "compiler_version": "3.8.1",
+      "compiler_version": "3.9.3",
       "compiler_flags": [
         "-O2",
         "-G0",
@@ -17685,7 +17687,7 @@
       "functions": 5,
       "code_bytes": 368,
       "compiler_family": "ProDG",
-      "compiler_version": "3.8.1",
+      "compiler_version": "3.9.3",
       "compiler_flags": [
         "-O2",
         "-G0",
@@ -17829,7 +17831,7 @@
       "functions": 1,
       "code_bytes": 124,
       "compiler_family": "ProDG",
-      "compiler_version": "3.8.1",
+      "compiler_version": "3.9.3",
       "compiler_flags": [
         "-O2",
         "-G0",
@@ -17847,7 +17849,7 @@
       "functions": 1,
       "code_bytes": 144,
       "compiler_family": "ProDG",
-      "compiler_version": "3.8.1",
+      "compiler_version": "3.9.3",
       "compiler_flags": [
         "-O2",
         "-G0",
@@ -17865,7 +17867,7 @@
       "functions": 6,
       "code_bytes": 1928,
       "compiler_family": "ProDG",
-      "compiler_version": "3.8.1",
+      "compiler_version": "3.9.3",
       "compiler_flags": [
         "-O2",
         "-G0",
@@ -17876,6 +17878,24 @@
       "discarded_functions": [],
       "object_sha256": "14dda4d6af6dd67f3606a8d0fd6a718e8d85d77473b9bd8dcd829d97af21006b",
       "linked_sha256": "25a48f88dd956b633bda0052f43234fc7cc69fa4d2000121e754edbfdc28f64c"
+    },
+    {
+      "id": "script_arithmetic",
+      "category": "reconstructed_game",
+      "functions": 4,
+      "code_bytes": 1280,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "d801e6428c307d6b9f58e660ba648fcde4cd6e819d253b79b9ee0b5e7c9246b1",
+      "linked_sha256": "09778357c6947919a0e7b06963858b325ea6fea4d29095dd22030abdb742facb"
     }
   ],
   "code_map": {
@@ -40947,34 +40967,6 @@
             "size": 452,
             "kind": "function",
             "name": "BSExecuteThread__FP8BSObjectP22BSMachineThread_struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f53f4",
-            "size": 320,
-            "kind": "function",
-            "name": "BSOpCodeFunc_ADD__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f5534",
-            "size": 320,
-            "kind": "function",
-            "name": "BSOpCodeFunc_SUB__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f5674",
-            "size": 320,
-            "kind": "function",
-            "name": "BSOpCodeFunc_DIV__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f57b4",
-            "size": 320,
-            "kind": "function",
-            "name": "BSOpCodeFunc_MULT__Fv",
             "evidence": "adjacent-compiler-markers"
           },
           {

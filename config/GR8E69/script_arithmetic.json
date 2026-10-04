@@ -1,6 +1,6 @@
 {
-  "id": "script_comparisons",
-  "source": "src/script/comparisons.cpp",
+  "id": "script_arithmetic",
+  "source": "src/script/arithmetic.cpp",
   "category": "reconstructed_game",
   "compiler_version": "3.9.3",
   "compiler_flags": [
@@ -18,50 +18,44 @@
   "sections": [
     {
       "name": ".text",
-      "address": "0x800f5a3c",
-      "size": 1928
+      "address": "0x800f53f4",
+      "size": 1280
     },
     {
       "name": ".rodata",
-      "address": "0x802a5090",
-      "size": 48
+      "address": "0x802a5058",
+      "size": 56
+    },
+    {
+      "name": ".rodata.add_initial",
+      "address": "0x802a5054",
+      "size": 4,
+      "target_name": ".rodata"
     }
   ],
   "functions": [
     {
-      "name": "BSOpCodeFunc_GT__Fv",
-      "address": "0x800f5a3c",
-      "size": 316,
+      "name": "BSOpCodeFunc_ADD__Fv",
+      "address": "0x800f53f4",
+      "size": 320,
       "binding": 1
     },
     {
-      "name": "BSOpCodeFunc_GTE__Fv",
-      "address": "0x800f5b78",
-      "size": 328,
+      "name": "BSOpCodeFunc_SUB__Fv",
+      "address": "0x800f5534",
+      "size": 320,
       "binding": 1
     },
     {
-      "name": "BSOpCodeFunc_LT__Fv",
-      "address": "0x800f5cc0",
-      "size": 316,
+      "name": "BSOpCodeFunc_DIV__Fv",
+      "address": "0x800f5674",
+      "size": 320,
       "binding": 1
     },
     {
-      "name": "BSOpCodeFunc_LTE__Fv",
-      "address": "0x800f5dfc",
-      "size": 328,
-      "binding": 1
-    },
-    {
-      "name": "BSOpCodeFunc_EQ__Fv",
-      "address": "0x800f5f44",
-      "size": 312,
-      "binding": 1
-    },
-    {
-      "name": "BSOpCodeFunc_NE__Fv",
-      "address": "0x800f607c",
-      "size": 328,
+      "name": "BSOpCodeFunc_MULT__Fv",
+      "address": "0x800f57b4",
+      "size": 320,
       "binding": 1
     }
   ],

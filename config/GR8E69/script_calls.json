@@ -2,7 +2,7 @@
   "id": "script_calls",
   "source": "src/script/calls.cpp",
   "category": "reconstructed_game",
-  "compiler_version": "3.8.1",
+  "compiler_version": "3.9.3",
   "compiler_flags": [
     "-O2",
     "-G0",

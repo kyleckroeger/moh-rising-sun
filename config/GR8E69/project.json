@@ -694,7 +694,8 @@
     "bpd_light_volume.json",
     "script_negate.json",
     "script_cast.json",
-    "script_comparisons.json"
+    "script_comparisons.json",
+    "script_arithmetic.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
