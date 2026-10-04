@@ -1,0 +1,45 @@
+{
+  "id": "eagl_anim_scratch_buffer",
+  "source": "src/eagl_anim/ScratchBuffer.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ecfb4",
+      "size": 120
+    }
+  ],
+  "functions": [
+    {
+      "name": "FreeBuffer__Q28EAGLAnim13ScratchBuffer",
+      "address": "0x801ecfb4",
+      "size": 100,
+      "binding": 1
+    },
+    {
+      "name": "GetScratchBuffer__Q28EAGLAnim13ScratchBufferi",
+      "address": "0x801ed018",
+      "size": 20,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c",
+    "_Q28EAGLAnim19ScratchBufferHelper.mScratchBuffers": "0x803ff3f4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

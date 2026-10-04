@@ -1,0 +1,44 @@
+{
+  "id": "eagl_anim_raw_pose_quat_interp",
+  "source": "src/eagl_anim/RawPoseQuatInterp.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80293b78",
+      "size": 484
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bef5c",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "QuatF4Interp__8EAGLAnimfRPfT2Pf",
+      "address": "0x80293b78",
+      "size": 484,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_8EAGLAnim.qt0": "0x803ff420",
+    "sqrtf": "0x80270538"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

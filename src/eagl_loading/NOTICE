@@ -1,0 +1,13 @@
+EAGL loader reconstruction
+
+These source fragments and include/game/EAGLLoading.h and EAGLDynamicLoader.h
+adapt the public NFS Most Wanted reconstruction by dbalatoni13/nfsmw,
+licensed under CC0 1.0 Universal. The license is preserved in LICENSE.nfsmw.
+Reference revision: 1f2cdd7996791c81a580b3f7b36b44d4f9f6719c
+Reference: https://github.com/dbalatoni13/nfsmw/tree/1f2cdd7996791c81a580b3f7b36b44d4f9f6719c/src/Speed/Indep/Src/EAGL4Anim
+
+Reference files: eagl4supportdlopen.cpp/.h, eagl4supportsympool.cpp/.h,
+and eagl4supportconspool.cpp/.h. Original Rising Sun symbols and instructions
+control the accepted interfaces, layouts and behavior. Field names remain
+attributed descriptive names. The adaptation used Codex assistance.
+See docs/Loading.md for evidence and verification limits.

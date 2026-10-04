@@ -1,0 +1,82 @@
+{
+  "id": "eagl_loading_dynamic_loader_lifecycle",
+  "source": "src/eagl_loading/DynamicLoaderLifecycle.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801eaba4",
+      "size": 740
+    }
+  ],
+  "functions": [
+    {
+      "name": "__Q24EAGL13DynamicLoaderPvUiT1bPFPCcRb_Pv",
+      "address": "0x801eaba4",
+      "size": 132,
+      "binding": 1
+    },
+    {
+      "name": "DoVersionCheck__Q24EAGL13DynamicLoader",
+      "address": "0x801eac28",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "_._Q24EAGL13DynamicLoader",
+      "address": "0x801eac30",
+      "size": 128,
+      "binding": 1
+    },
+    {
+      "name": "Release__Q24EAGL13DynamicLoader",
+      "address": "0x801eacb0",
+      "size": 220,
+      "binding": 1
+    },
+    {
+      "name": "RunDestructors__Q24EAGL13DynamicLoader",
+      "address": "0x801ead8c",
+      "size": 216,
+      "binding": 1
+    },
+    {
+      "name": "GetCount__CQ24EAGL13DynamicLoader",
+      "address": "0x801eae64",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "GetElfData__CQ24EAGL13DynamicLoader",
+      "address": "0x801eae80",
+      "size": 8,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "Initialize__Q24EAGL13DynamicLoaderPFPCcRb_Pv": "0x801e9bb0",
+    "Resolve__Q24EAGL13DynamicLoader": "0x801e9534",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c",
+    "_4EAGL.hashhead": "0x802d2e1c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "local_externals": [
+    "_4EAGL.hashhead"
+  ],
+  "original_file": "dlopen.cpp",
+  "original_file_index": 2682
+}

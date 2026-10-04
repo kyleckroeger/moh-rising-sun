@@ -1,0 +1,41 @@
+{
+  "id": "eagl_anim_fn_cycle_s_q_t",
+  "source": "src/eagl_anim/FnCycleSQT.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80292e5c",
+      "size": 248
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802beb88",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "EvalSQT__Q28EAGLAnim7FnCyclefPfPCQ28EAGLAnim8BoneMask",
+      "address": "0x80292e5c",
+      "size": 248,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

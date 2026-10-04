@@ -1,0 +1,41 @@
+{
+  "id": "eagl_anim_fn_cycle_event",
+  "source": "src/eagl_anim/FnCycleEvent.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80292cac",
+      "size": 432
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802beb80",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "EvalEvent__Q28EAGLAnim7FnCycleffPPQ28EAGLAnim12EventHandlerPv",
+      "address": "0x80292cac",
+      "size": 432,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

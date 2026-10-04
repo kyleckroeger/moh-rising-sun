@@ -1,0 +1,46 @@
+{
+  "id": "eagl_anim_raw_pose_eul_interp",
+  "source": "src/eagl_anim/RawPoseEulInterp.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8029382c",
+      "size": 844
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bef4c",
+      "size": 16
+    }
+  ],
+  "functions": [
+    {
+      "name": "EulF3Interp__8EAGLAnimfRPfT2Pf",
+      "address": "0x8029382c",
+      "size": 844,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_8EAGLAnim.qt0": "0x803ff420",
+    "cosf": "0x80270840",
+    "sinf": "0x80270a08",
+    "sqrtf": "0x80270538"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

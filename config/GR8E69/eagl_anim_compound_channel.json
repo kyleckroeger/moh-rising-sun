@@ -1,0 +1,156 @@
+{
+  "id": "eagl_anim_compound_channel",
+  "source": "src/eagl_anim/CompoundChannel.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ee238",
+      "size": 4604
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802beba0",
+      "size": 80
+    }
+  ],
+  "functions": [
+    {
+      "name": "EvalEvent__Q28EAGLAnim17FnCompoundChannelffPPQ28EAGLAnim12EventHandlerPv",
+      "address": "0x801ee238",
+      "size": 400,
+      "binding": 1
+    },
+    {
+      "name": "EvalSQT__Q28EAGLAnim17FnCompoundChannelfPfPCQ28EAGLAnim8BoneMask",
+      "address": "0x801ee3c8",
+      "size": 380,
+      "binding": 1
+    },
+    {
+      "name": "EvalPose__Q28EAGLAnim17FnCompoundChannelfPCQ28EAGLAnim15PosePaletteBankPf",
+      "address": "0x801ee544",
+      "size": 380,
+      "binding": 1
+    },
+    {
+      "name": "EvalWeights__Q28EAGLAnim17FnCompoundChannelfPf",
+      "address": "0x801ee6c0",
+      "size": 372,
+      "binding": 1
+    },
+    {
+      "name": "EvalVel2D__Q28EAGLAnim17FnCompoundChannelfPf",
+      "address": "0x801ee834",
+      "size": 372,
+      "binding": 1
+    },
+    {
+      "name": "EvalState__Q28EAGLAnim17FnCompoundChannelfPQ28EAGLAnim5State",
+      "address": "0x801ee9a8",
+      "size": 372,
+      "binding": 1
+    },
+    {
+      "name": "GetPhaseChan__Q28EAGLAnim17FnCompoundChannel",
+      "address": "0x801eeb1c",
+      "size": 260,
+      "binding": 1
+    },
+    {
+      "name": "GetAnimatedBonesAux__Q28EAGLAnim17FnCompoundChannelPQ28EAGLAnim8BoneMaskRiN22",
+      "address": "0x801eec20",
+      "size": 324,
+      "binding": 1
+    },
+    {
+      "name": "GetTargetCheckSum__CQ28EAGLAnim17FnCompoundChannel",
+      "address": "0x801eed64",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "GetLength__CQ28EAGLAnim17FnCompoundChannelRf",
+      "address": "0x801eed70",
+      "size": 104,
+      "binding": 1
+    },
+    {
+      "name": "_._Q28EAGLAnim17FnCompoundChannel",
+      "address": "0x801eedd8",
+      "size": 220,
+      "binding": 1
+    },
+    {
+      "name": "SetAnimMemoryMap__Q28EAGLAnim17FnCompoundChannelPQ28EAGLAnim13AnimMemoryMap",
+      "address": "0x801eeeb4",
+      "size": 168,
+      "binding": 1
+    },
+    {
+      "name": "GetAttributes__CQ28EAGLAnim17FnCompoundChannel",
+      "address": "0x801eef5c",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "Eval__Q28EAGLAnim17FnCompoundChannelffPf",
+      "address": "0x801eef68",
+      "size": 348,
+      "binding": 1
+    },
+    {
+      "name": "FindTime__Q28EAGLAnim17FnCompoundChannelRCQ28EAGLAnim9StateTestfRf",
+      "address": "0x801ef0c4",
+      "size": 284,
+      "binding": 1
+    },
+    {
+      "name": "EvalPhase__Q28EAGLAnim17FnCompoundChannelfRQ28EAGLAnim10PhaseValue",
+      "address": "0x801ef1e0",
+      "size": 228,
+      "binding": 1
+    },
+    {
+      "name": "InitAnimMemoryMap__Q28EAGLAnim15CompoundChannelPQ28EAGLAnim13AnimMemoryMap",
+      "address": "0x801ef2c4",
+      "size": 108,
+      "binding": 1
+    },
+    {
+      "name": "UseFPS__Q28EAGLAnim17FnCompoundChannelb",
+      "address": "0x801ef330",
+      "size": 144,
+      "binding": 1
+    },
+    {
+      "name": "GetAnimatedBones__Q28EAGLAnim17FnCompoundChannelPQ28EAGLAnim8BoneMaskRiN22",
+      "address": "0x801ef3c0",
+      "size": 116,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryManager": "0x802d2e5c",
+    "_vt.Q28EAGLAnim17FnCompoundChannel": "0x802ec890",
+    "_._Q28EAGLAnim15FnAnimMemoryMap": "0x801ee1e0",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c",
+    "GetAttribute__CQ28EAGLAnim14AttributeBlockGQ28EAGLAnim11AttributeIdRPv": "0x80203d04",
+    "SetAll__Q28EAGLAnim8BoneMaskb": "0x801ede24"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

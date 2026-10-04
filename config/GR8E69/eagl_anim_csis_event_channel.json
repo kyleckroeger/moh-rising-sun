@@ -1,0 +1,47 @@
+{
+  "id": "eagl_anim_csis_event_channel",
+  "source": "src/eagl_anim/CsisEventChannel.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80200584",
+      "size": 884
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802befd4",
+      "size": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "HandleEvents__Q28EAGLAnim16CsisEventChannelfPPQ28EAGLAnim12EventHandlerPvRQ28EAGLAnim9CsisEvent",
+      "address": "0x80200584",
+      "size": 392,
+      "binding": 1
+    },
+    {
+      "name": "Eval__Q28EAGLAnim16CsisEventChannelffRiRfPPQ28EAGLAnim12EventHandlerPv",
+      "address": "0x8020070c",
+      "size": 492,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

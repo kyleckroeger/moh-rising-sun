@@ -1,0 +1,38 @@
+{
+  "id": "eagl_anim_memory_pool_map_factory",
+  "source": "src/eagl_anim/MemoryPoolMapFactory.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ed410",
+      "size": 184
+    }
+  ],
+  "functions": [
+    {
+      "name": "NewFnAnimAux__Q28EAGLAnim17MemoryPoolManagerPQ28EAGLAnim13AnimMemoryMap",
+      "address": "0x801ed410",
+      "size": 184,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryManager": "0x802d2e5c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

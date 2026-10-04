@@ -1,0 +1,50 @@
+{
+  "id": "eagl_anim_fn_run_eval",
+  "source": "src/eagl_anim/FnRunEval.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80200e1c",
+      "size": 592
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bf020",
+      "size": 16
+    }
+  ],
+  "functions": [
+    {
+      "name": "EvalSQT__Q28EAGLAnim12FnRunBlenderfPfPCQ28EAGLAnim8BoneMask",
+      "address": "0x80200e1c",
+      "size": 592,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "SetWeight__Q28EAGLAnim12FnRunBlenderf": "0x8020106c",
+    "ComputeCycleIdx__CQ28EAGLAnim12FnRunBlenderfff": "0x8020282c",
+    "CycleTime__CQ28EAGLAnim12FnRunBlenderfff": "0x80202774",
+    "GetStillPose__CQ28EAGLAnim8SkeletonPfPCQ28EAGLAnim8BoneMask": "0x801ec810",
+    "GetScratchBuffer__Q28EAGLAnim13ScratchBufferi": "0x801ed018",
+    "Blend__Q28EAGLAnim13FnPoseBlenderifPCfT3PfPCQ28EAGLAnim8BoneMask": "0x801fec94",
+    "AlignCycleBeginEnd__Q28EAGLAnim12FnRunBlenderi": "0x80201b9c",
+    "AlignRootQ__CQ28EAGLAnim12FnRunBlenderPf": "0x80202890"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

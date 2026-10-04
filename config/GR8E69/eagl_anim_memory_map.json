@@ -1,0 +1,70 @@
+{
+  "id": "eagl_anim_memory_map",
+  "source": "src/eagl_anim/FnAnimMemoryMap.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ee1c0",
+      "size": 120
+    }
+  ],
+  "functions": [
+    {
+      "name": "__Q28EAGLAnim15FnAnimMemoryMap",
+      "address": "0x801ee1c0",
+      "size": 32,
+      "binding": 1
+    },
+    {
+      "name": "_._Q28EAGLAnim15FnAnimMemoryMap",
+      "address": "0x801ee1e0",
+      "size": 52,
+      "binding": 1
+    },
+    {
+      "name": "SetAnimMemoryMap__Q28EAGLAnim15FnAnimMemoryMapPQ28EAGLAnim13AnimMemoryMap",
+      "address": "0x801ee214",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetAnimMemoryMap__Q28EAGLAnim15FnAnimMemoryMap",
+      "address": "0x801ee21c",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetAnimMemoryMap__CQ28EAGLAnim15FnAnimMemoryMap",
+      "address": "0x801ee224",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetTargetCheckSum__CQ28EAGLAnim15FnAnimMemoryMap",
+      "address": "0x801ee22c",
+      "size": 12,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_vt.Q28EAGLAnim15FnAnimMemoryMap": "0x802ec7d8",
+    "_vt.Q28EAGLAnim11FnAnimSuper": "0x802ec708",
+    "__builtin_delete": "0x801a8990"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

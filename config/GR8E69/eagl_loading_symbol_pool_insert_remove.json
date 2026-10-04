@@ -1,0 +1,53 @@
+{
+  "id": "eagl_loading_symbol_pool_insert_remove",
+  "source": "src/eagl_loading/SymbolPoolInsertRemove.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801eb0e8",
+      "size": 816
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802be9b8",
+      "size": 32
+    }
+  ],
+  "functions": [
+    {
+      "name": "Insert__Q24EAGL10SymbolPoolPCcPv",
+      "address": "0x801eb0e8",
+      "size": 528,
+      "binding": 1
+    },
+    {
+      "name": "RemoveSymbol__Q24EAGL10SymbolPoolPCc",
+      "address": "0x801eb2f8",
+      "size": 288,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_4EAGL.INIT_TABLE_SIZE": "0x802d2e20",
+    "_12EAGLInternal.EAGLMalloc": "0x802d2e08",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c",
+    "strcmp": "0x802669b4",
+    "strlen": "0x80266b70"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

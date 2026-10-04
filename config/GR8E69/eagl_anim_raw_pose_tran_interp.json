@@ -1,0 +1,38 @@
+{
+  "id": "eagl_anim_raw_pose_tran_interp",
+  "source": "src/eagl_anim/RawPoseTranInterp.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80293d5c",
+      "size": 184
+    }
+  ],
+  "functions": [
+    {
+      "name": "TranF3Interp__8EAGLAnimfRPfT2Pf",
+      "address": "0x80293d5c",
+      "size": 184,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_8EAGLAnim.qt0": "0x803ff420"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

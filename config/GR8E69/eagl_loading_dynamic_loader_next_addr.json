@@ -1,0 +1,39 @@
+{
+  "id": "eagl_loading_dynamic_loader_next_addr",
+  "source": "src/eagl_loading/DynamicLoaderNextAddr.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801eaf48",
+      "size": 232
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetNextAddr__CQ24EAGL13DynamicLoaderPCcRiRPv",
+      "address": "0x801eaf48",
+      "size": 232,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetSymbol__CQ24EAGL13DynamicLoaderi": "0x801ea84c",
+    "strcmp": "0x802669b4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

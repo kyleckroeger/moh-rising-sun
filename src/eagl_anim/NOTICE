@@ -1,6 +1,8 @@
 EAGL animation reconstruction
 
-FnDeltaF1.cpp, FnDeltaF3.cpp and their supporting headers adapt the public NFS Most Wanted
+The scalar/vector and quaternion delta decoders, compressed channels,
+compound/event channels, animation bank, skeleton poses, run/pose blending,
+raw/cycle channels and allocator/scratch support and associated headers adapt the public NFS Most Wanted
 reconstruction by dbalatoni13/nfsmw, licensed under CC0 1.0 Universal.
 Reference revision: 1f2cdd7996791c81a580b3f7b36b44d4f9f6719c
 Reference: https://github.com/dbalatoni13/nfsmw/tree/1f2cdd7996791c81a580b3f7b36b44d4f9f6719c/src/Speed/Indep/Src/EAGL4Anim
@@ -10,3 +12,13 @@ The Rising Sun adaptation used AI assistance from Codex and Claude Code.
 Original target symbols/instructions determine accepted signatures, layouts and
 behavior. Reference member names remain attributed reconstruction names.
 See docs/Animation.md for verification and remaining uncertainties.
+
+Skeleton pose methods, BoneMask, base default methods, stateless control methods and target-only channel
+bodies are reconstructed from original instructions, using attributed reference
+interface names where available. Empty reference methods are not treated as
+implementations. Later animation extensions used Codex assistance; Claude Code
+assisted the initial scalar/vector delta decoders.
+
+The private matrix callback adapts this project's independently reconstructed
+matrix multiplication expression sequence and retains its original temporary-copy
+behavior and argument order.
