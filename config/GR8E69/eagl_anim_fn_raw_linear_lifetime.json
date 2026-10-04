@@ -1,0 +1,40 @@
+{
+  "id": "eagl_anim_fn_raw_linear_lifetime",
+  "source": "src/eagl_anim/FnRawLinearLifetime.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802925e4",
+      "size": 84
+    }
+  ],
+  "functions": [
+    {
+      "name": "_._Q28EAGLAnim18FnRawLinearChannel",
+      "address": "0x802925e4",
+      "size": 84,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_vt.Q28EAGLAnim18FnRawLinearChannel": "0x802ec460",
+    "_._Q28EAGLAnim15FnAnimMemoryMap": "0x801ee1e0",
+    "__dl__Q28EAGLAnim18FnRawLinearChannelPvUi": "0x802930d8"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

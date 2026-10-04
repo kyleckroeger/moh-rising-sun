@@ -1,0 +1,55 @@
+{
+  "id": "eagl_anim_memory_pool_usage",
+  "source": "src/eagl_anim/MemoryPoolUsage.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ed564",
+      "size": 164
+    }
+  ],
+  "functions": [
+    {
+      "name": "_._Q28EAGLAnim17MemoryPoolManager",
+      "address": "0x801ed564",
+      "size": 68,
+      "binding": 1
+    },
+    {
+      "name": "GetMemoryPoolUsageAux__Q28EAGLAnim17MemoryPoolManager",
+      "address": "0x801ed5a8",
+      "size": 24,
+      "binding": 1
+    },
+    {
+      "name": "GetFreePoolSizeAux__Q28EAGLAnim17MemoryPoolManager",
+      "address": "0x801ed5c0",
+      "size": 72,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_vt.Q28EAGLAnim17MemoryPoolManager": "0x802ec688",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c",
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryPoolFree": "0x802d2e98",
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryPool": "0x802d2e94",
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryManager": "0x802d2e5c",
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryPoolSize": "0x802d2e9c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

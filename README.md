@@ -86,7 +86,8 @@ Run the scripts from any directory; all outputs remain inside this checkout. `ba
 | `src/sys_memory.cpp` | Four game allocation operators; original heap routines remain external |
 | `src/stlport/` | Tree, container, sorting and heap functions using an attributed STLport 4.5.3 subset |
 | `src/eagl/` | Reconstructed rendering state and material drawing fragments; [evidence and remaining work](docs/Rendering.md) |
-| `src/eagl_anim/` | Reconstructed scalar/vector delta animation decoders; [reference and evidence](docs/Animation.md) |
+| `src/eagl_anim/` | Reconstructed animation decoders, channels and support interfaces; [reference and evidence](docs/Animation.md) |
+| `src/eagl_loading/` | Reconstructed EAGL symbol pools and dynamic-loader fragments; [reference and evidence](docs/Loading.md) |
 | `src/observers/` | Reconstructed observers, weak pointers and destruction queue; [evidence](docs/Observers.md) |
 | `src/MathFun.cpp` | Reconstructed functions from the original MathFun unit |
 | `src/lua/` | Restored Lua 4.0.1 source units, headers and copyright notice |

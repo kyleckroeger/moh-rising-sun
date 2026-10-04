@@ -1,0 +1,38 @@
+{
+  "id": "eagl_anim_fn_csis_event_channel_delete",
+  "source": "src/eagl_anim/FnCsisEventChannelDelete.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802930ac",
+      "size": 44
+    }
+  ],
+  "functions": [
+    {
+      "name": "__dl__Q28EAGLAnim18FnCsisEventChannelPvUi",
+      "address": "0x802930ac",
+      "size": 44,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "eagl_anim_fn_run_align_root",
+  "source": "src/eagl_anim/FnRunAlignRoot.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80202890",
+      "size": 252
+    }
+  ],
+  "functions": [
+    {
+      "name": "AlignRootQ__CQ28EAGLAnim12FnRunBlenderPf",
+      "address": "0x80202890",
+      "size": 252,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

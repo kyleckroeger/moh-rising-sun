@@ -1,0 +1,49 @@
+{
+  "id": "eagl_anim_raw_pose_init",
+  "source": "src/eagl_anim/RawPoseInit.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801fe618",
+      "size": 392
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bef18",
+      "size": 28
+    }
+  ],
+  "functions": [
+    {
+      "name": "InitAnimMemoryMap__Q28EAGLAnim14RawPoseChannelPQ28EAGLAnim13AnimMemoryMap",
+      "address": "0x801fe618",
+      "size": 392,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "EulF3__8EAGLAnimRPfPf": "0x80293668",
+    "QuatF4__8EAGLAnimRPfPf": "0x802937ac",
+    "TranF3__8EAGLAnimRPfPf": "0x802937f4",
+    "printf": "0x8026374c",
+    "EulF3Interp__8EAGLAnimfRPfT2Pf": "0x8029382c",
+    "QuatF4Interp__8EAGLAnimfRPfT2Pf": "0x80293b78",
+    "TranF3Interp__8EAGLAnimfRPfT2Pf": "0x80293d5c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

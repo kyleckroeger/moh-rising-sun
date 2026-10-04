@@ -1,0 +1,40 @@
+{
+  "id": "eagl_anim_raw_pose_frame",
+  "source": "src/eagl_anim/RawPoseFrame.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801fea20",
+      "size": 416
+    }
+  ],
+  "functions": [
+    {
+      "name": "EvalFrame__Q28EAGLAnim14RawPoseChanneliPfPCQ28EAGLAnim8BoneMask",
+      "address": "0x801fea20",
+      "size": 416,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "EulF3__8EAGLAnimRPfPf": "0x80293668",
+    "TranF3__8EAGLAnimRPfPf": "0x802937f4",
+    "QuatF4__8EAGLAnimRPfPf": "0x802937ac"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": "eagl_anim_fn_run_destructor",
+  "source": "src/eagl_anim/FnRunDestructor.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80200c3c",
+      "size": 480
+    }
+  ],
+  "functions": [
+    {
+      "name": "_._Q28EAGLAnim12FnRunBlender",
+      "address": "0x80200c3c",
+      "size": 480,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_vt.Q28EAGLAnim12FnRunBlender": "0x802ed3f0",
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryManager": "0x802d2e5c",
+    "GetScratchBuffer__Q28EAGLAnim13ScratchBufferi": "0x801ed018",
+    "FreeBuffer__Q28EAGLAnim13ScratchBuffer": "0x801ecfb4",
+    "_vt.Q28EAGLAnim11FnAnimSuper": "0x802ec708",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

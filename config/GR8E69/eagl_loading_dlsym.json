@@ -1,0 +1,46 @@
+{
+  "id": "eagl_loading_dlsym",
+  "source": "src/eagl_loading/dlsym.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ea9c0",
+      "size": 312
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802be950",
+      "size": 56
+    }
+  ],
+  "functions": [
+    {
+      "name": "dlsym__FPvPCc",
+      "address": "0x801ea9c0",
+      "size": 312,
+      "binding": 0
+    }
+  ],
+  "externals": {
+    "PrintMessage__4EAGLiPCce": "0x801e8890",
+    "strcmp": "0x802669b4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "dlopen.cpp",
+  "original_file_index": 2682
+}

@@ -1,0 +1,48 @@
+{
+  "id": "eagl_loading_dynamic_loader_construct",
+  "source": "src/eagl_loading/DynamicLoaderConstruct.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e93ec",
+      "size": 328
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802be2b4",
+      "size": 32
+    }
+  ],
+  "functions": [
+    {
+      "name": "RunConstructors__Q24EAGL13DynamicLoader",
+      "address": "0x801e93ec",
+      "size": 328,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetCount__CQ24EAGL13DynamicLoader": "0x801eae64",
+    "_Q24EAGL13DynamicLoader.gConsPool": "0x803ff3a4",
+    "GetSymbol__CQ24EAGL13DynamicLoaderi": "0x801ea84c",
+    "FindConstructor__Q24EAGL15ConstructorPoolPCc": "0x801e8664",
+    "_12EAGLInternal.EAGLMalloc": "0x802d2e08",
+    "FindDestructor__Q24EAGL15ConstructorPoolPCc": "0x801e8698"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

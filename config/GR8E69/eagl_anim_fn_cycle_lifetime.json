@@ -1,0 +1,39 @@
+{
+  "id": "eagl_anim_fn_cycle_lifetime",
+  "source": "src/eagl_anim/FnCycleLifetime.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80292ac4",
+      "size": 56
+    }
+  ],
+  "functions": [
+    {
+      "name": "_._Q28EAGLAnim7FnCycle",
+      "address": "0x80292ac4",
+      "size": 56,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_vt.Q28EAGLAnim11FnAnimSuper": "0x802ec708",
+    "__dl__Q28EAGLAnim7FnCyclePvUi": "0x8029315c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

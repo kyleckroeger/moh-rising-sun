@@ -1,0 +1,41 @@
+{
+  "id": "eagl_anim_fn_cycle_phase",
+  "source": "src/eagl_anim/FnCyclePhase.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80292f54",
+      "size": 248
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802beb90",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "EvalPhase__Q28EAGLAnim7FnCyclefRQ28EAGLAnim10PhaseValue",
+      "address": "0x80292f54",
+      "size": 248,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

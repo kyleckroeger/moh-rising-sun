@@ -1,0 +1,44 @@
+{
+  "id": "eagl_anim_bone_mask_constructors",
+  "source": "src/eagl_anim/BoneMaskConstructors.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801edd98",
+      "size": 140
+    }
+  ],
+  "functions": [
+    {
+      "name": "__Q28EAGLAnim8BoneMaskb",
+      "address": "0x801edd98",
+      "size": 48,
+      "binding": 1
+    },
+    {
+      "name": "__Q28EAGLAnim8BoneMaskRCQ28EAGLAnim8BoneMask",
+      "address": "0x801eddc8",
+      "size": 92,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "SetAll__Q28EAGLAnim8BoneMaskb": "0x801ede24"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

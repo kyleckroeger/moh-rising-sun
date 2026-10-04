@@ -1,0 +1,109 @@
+{
+  "id": "eagl_loading_constructor_pool",
+  "source": "src/eagl_loading/ConstructorPool.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e8578",
+      "size": 792
+    }
+  ],
+  "functions": [
+    {
+      "name": "_._Q24EAGL15ConstructorPool",
+      "address": "0x801e8578",
+      "size": 108,
+      "binding": 1
+    },
+    {
+      "name": "RemoveType__Q24EAGL15ConstructorPoolPCc",
+      "address": "0x801e85e4",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "AddType__Q24EAGL15ConstructorPoolPCcPFPvPQ24EAGL13DynamicLoaderPCc_vPFPv_v",
+      "address": "0x801e8620",
+      "size": 68,
+      "binding": 1
+    },
+    {
+      "name": "FindConstructor__Q24EAGL15ConstructorPoolPCc",
+      "address": "0x801e8664",
+      "size": 52,
+      "binding": 1
+    },
+    {
+      "name": "FindDestructor__Q24EAGL15ConstructorPoolPCc",
+      "address": "0x801e8698",
+      "size": 56,
+      "binding": 1
+    },
+    {
+      "name": "_._Q24EAGL27RuntimeAllocConstructorPool",
+      "address": "0x801e86d0",
+      "size": 108,
+      "binding": 1
+    },
+    {
+      "name": "RemoveType__Q24EAGL27RuntimeAllocConstructorPoolPCc",
+      "address": "0x801e873c",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "AddType__Q24EAGL27RuntimeAllocConstructorPoolPCcPFPCcPQ24EAGL13DynamicLoaderRiRbPCc_PvPFPvi_v",
+      "address": "0x801e8778",
+      "size": 68,
+      "binding": 1
+    },
+    {
+      "name": "FindConstructor__Q24EAGL27RuntimeAllocConstructorPoolPCc",
+      "address": "0x801e87bc",
+      "size": 52,
+      "binding": 1
+    },
+    {
+      "name": "FindDestructor__Q24EAGL27RuntimeAllocConstructorPoolPCc",
+      "address": "0x801e87f0",
+      "size": 56,
+      "binding": 1
+    },
+    {
+      "name": "FreeMemory__Q24EAGL27RuntimeAllocConstructorPool",
+      "address": "0x801e8828",
+      "size": 52,
+      "binding": 1
+    },
+    {
+      "name": "FreeMemory__Q24EAGL15ConstructorPool",
+      "address": "0x801e885c",
+      "size": 52,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_._Q24EAGL10SymbolPool": "0x801eb5ac",
+    "__builtin_delete": "0x801a8990",
+    "RemoveSymbol__Q24EAGL10SymbolPoolPCc": "0x801eb2f8",
+    "AddSymbol__Q24EAGL10SymbolPoolPCcPv": "0x801eb628",
+    "Search__Q24EAGL10SymbolPoolPCcRb": "0x801eb418",
+    "FreeMemory__Q24EAGL10SymbolPool": "0x801eb554"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

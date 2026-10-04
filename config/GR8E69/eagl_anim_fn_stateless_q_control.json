@@ -1,0 +1,120 @@
+{
+  "id": "eagl_anim_fn_stateless_q_control",
+  "source": "src/eagl_anim/FnStatelessQControl.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802046d8",
+      "size": 896
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bf240",
+      "size": 8
+    },
+    {
+      "name": ".gnu.linkonce.d._vt.Q28EAGLAnim12FnStatelessQ",
+      "address": "0x802ed530",
+      "size": 184,
+      "target_name": ".data"
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetTargetCheckSum__CQ28EAGLAnim12FnStatelessQ",
+      "address": "0x802046d8",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "__Q28EAGLAnim12FnStatelessQ",
+      "address": "0x802046e4",
+      "size": 76,
+      "binding": 1
+    },
+    {
+      "name": "_._Q28EAGLAnim12FnStatelessQ",
+      "address": "0x80204730",
+      "size": 96,
+      "binding": 1
+    },
+    {
+      "name": "SetAnimMemoryMap__Q28EAGLAnim12FnStatelessQPQ28EAGLAnim13AnimMemoryMap",
+      "address": "0x80204790",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetLength__CQ28EAGLAnim12FnStatelessQRf",
+      "address": "0x80204798",
+      "size": 100,
+      "binding": 1
+    },
+    {
+      "name": "GetAttributes__CQ28EAGLAnim12FnStatelessQ",
+      "address": "0x802047fc",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "Eval__Q28EAGLAnim12FnStatelessQffPf",
+      "address": "0x80204808",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "UseFPS__Q28EAGLAnim12FnStatelessQb",
+      "address": "0x80204844",
+      "size": 152,
+      "binding": 1
+    },
+    {
+      "name": "GetAnimatedBones__Q28EAGLAnim12FnStatelessQPQ28EAGLAnim8BoneMaskRiN22",
+      "address": "0x802048dc",
+      "size": 116,
+      "binding": 1
+    },
+    {
+      "name": "GetAnimatedBonesAux__Q28EAGLAnim12FnStatelessQPQ28EAGLAnim8BoneMaskRiN22",
+      "address": "0x80204950",
+      "size": 264,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "FindMatchTime__CQ28EAGLAnim6FnAnimRCQ28EAGLAnim15MatchPhaseInputRf": "0x801ee158",
+    "EvalSQT__Q28EAGLAnim12FnStatelessQfPfPCQ28EAGLAnim8BoneMask": "0x80203d8c",
+    "EvalPhase__Q28EAGLAnim6FnAnimfRQ28EAGLAnim10PhaseValue": "0x801ee168",
+    "EvalVel2D__Q28EAGLAnim6FnAnimfPf": "0x801ee170",
+    "EvalEvent__Q28EAGLAnim6FnAnimffPPQ28EAGLAnim12EventHandlerPv": "0x801ee178",
+    "EvalWeights__Q28EAGLAnim6FnAnimfPf": "0x801ee180",
+    "EvalState__Q28EAGLAnim6FnAnimfPQ28EAGLAnim5State": "0x801ee188",
+    "EvalPose__Q28EAGLAnim6FnAnimfPCQ28EAGLAnim15PosePaletteBankPf": "0x801ee190",
+    "FindTime__Q28EAGLAnim6FnAnimRCQ28EAGLAnim9StateTestfRf": "0x801ee198",
+    "GetPhaseChan__Q28EAGLAnim6FnAnim": "0x801ee1a0",
+    "GetAnimMemoryMap__Q28EAGLAnim15FnAnimMemoryMap": "0x801ee21c",
+    "GetAnimMemoryMap__CQ28EAGLAnim15FnAnimMemoryMap": "0x801ee224",
+    "__Q28EAGLAnim15FnAnimMemoryMap": "0x801ee1c0",
+    "_._Q28EAGLAnim15FnAnimMemoryMap": "0x801ee1e0",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c",
+    "GetAttribute__CQ28EAGLAnim14AttributeBlockGQ28EAGLAnim11AttributeIdRPv": "0x80203d04",
+    "SetAll__Q28EAGLAnim8BoneMaskb": "0x801ede24",
+    "SetBone__Q28EAGLAnim8BoneMaskib": "0x801ede64"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

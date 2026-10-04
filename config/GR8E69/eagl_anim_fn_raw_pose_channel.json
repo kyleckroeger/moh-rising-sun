@@ -1,0 +1,70 @@
+{
+  "id": "eagl_anim_fn_raw_pose_channel",
+  "source": "src/eagl_anim/FnRawPoseChannel.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801fe4f8",
+      "size": 288
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bef10",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "_._Q28EAGLAnim16FnRawPoseChannel",
+      "address": "0x801fe4f8",
+      "size": 84,
+      "binding": 1
+    },
+    {
+      "name": "__dl__Q28EAGLAnim16FnRawPoseChannelPvUi",
+      "address": "0x801fe54c",
+      "size": 44,
+      "binding": 1
+    },
+    {
+      "name": "GetLength__CQ28EAGLAnim16FnRawPoseChannelRf",
+      "address": "0x801fe578",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "Eval__Q28EAGLAnim16FnRawPoseChannelffPf",
+      "address": "0x801fe5b8",
+      "size": 48,
+      "binding": 1
+    },
+    {
+      "name": "EvalSQT__Q28EAGLAnim16FnRawPoseChannelfPfPCQ28EAGLAnim8BoneMask",
+      "address": "0x801fe5e8",
+      "size": 48,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_vt.Q28EAGLAnim16FnRawPoseChannel": "0x802ed1e0",
+    "_._Q28EAGLAnim15FnAnimMemoryMap": "0x801ee1e0",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c",
+    "Eval__Q28EAGLAnim14RawPoseChannelfPfbPCQ28EAGLAnim8BoneMask": "0x801fe7a0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

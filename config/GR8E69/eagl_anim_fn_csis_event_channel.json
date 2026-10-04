@@ -1,0 +1,64 @@
+{
+  "id": "eagl_anim_fn_csis_event_channel",
+  "source": "src/eagl_anim/FnCsisEventChannel.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80292500",
+      "size": 228
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802beb58",
+      "size": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "_._Q28EAGLAnim18FnCsisEventChannel",
+      "address": "0x80292500",
+      "size": 84,
+      "binding": 1
+    },
+    {
+      "name": "SetAnimMemoryMap__Q28EAGLAnim18FnCsisEventChannelPQ28EAGLAnim13AnimMemoryMap",
+      "address": "0x80292554",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "EvalEvent__Q28EAGLAnim18FnCsisEventChannelffPPQ28EAGLAnim12EventHandlerPv",
+      "address": "0x80292570",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "Eval__Q28EAGLAnim18FnCsisEventChannelffPf",
+      "address": "0x802925ac",
+      "size": 56,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_vt.Q28EAGLAnim18FnCsisEventChannel": "0x802ec518",
+    "_._Q28EAGLAnim15FnAnimMemoryMap": "0x801ee1e0",
+    "__dl__Q28EAGLAnim18FnCsisEventChannelPvUi": "0x802930ac",
+    "Eval__Q28EAGLAnim16CsisEventChannelffRiRfPPQ28EAGLAnim12EventHandlerPv": "0x8020070c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

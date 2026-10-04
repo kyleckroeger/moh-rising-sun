@@ -1,0 +1,43 @@
+{
+  "id": "eagl_anim_fn_run_weight",
+  "source": "src/eagl_anim/FnRunWeight.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8020106c",
+      "size": 1360
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bf030",
+      "size": 32
+    }
+  ],
+  "functions": [
+    {
+      "name": "SetWeight__Q28EAGLAnim12FnRunBlenderf",
+      "address": "0x8020106c",
+      "size": 1360,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryManager": "0x802d2e5c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

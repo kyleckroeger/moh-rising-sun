@@ -1,0 +1,61 @@
+{
+  "id": "eagl_anim_delta_compressed_data",
+  "source": "src/eagl_anim/DeltaCompressedData.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801fd528",
+      "size": 3592
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802beef0",
+      "size": 32
+    }
+  ],
+  "functions": [
+    {
+      "name": "DecompressValues__CQ28EAGLAnim19DeltaCompressedDataiiiiPCfPf",
+      "address": "0x801fd528",
+      "size": 1244,
+      "binding": 1
+    },
+    {
+      "name": "DecompressValuesIndexed__CQ28EAGLAnim19DeltaCompressedDataiiiiPCfPfiPUsf",
+      "address": "0x801fda04",
+      "size": 948,
+      "binding": 1
+    },
+    {
+      "name": "DecompressValues__CQ28EAGLAnim19DeltaCompressedDataiiiPCfPfiPCUs",
+      "address": "0x801fddb8",
+      "size": 664,
+      "binding": 1
+    },
+    {
+      "name": "DecompressValuesIndexed__CQ28EAGLAnim19DeltaCompressedDataiiPCfPfiPUsfiPCUs",
+      "address": "0x801fe050",
+      "size": 736,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "memcpy": "0x802665e8"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

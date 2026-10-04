@@ -1,0 +1,45 @@
+{
+  "id": "eagl_anim_fn_run_root",
+  "source": "src/eagl_anim/FnRunRoot.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80202478",
+      "size": 584
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bf0c0",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "ComputeRootQ__CQ28EAGLAnim12FnRunBlenderffR6COORD4",
+      "address": "0x80202478",
+      "size": 584,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetScratchBuffer__Q28EAGLAnim13ScratchBufferi": "0x801ed018",
+    "GetStillPose__CQ28EAGLAnim8SkeletonPfPCQ28EAGLAnim8BoneMask": "0x801ec810",
+    "sqrtf": "0x80270538"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

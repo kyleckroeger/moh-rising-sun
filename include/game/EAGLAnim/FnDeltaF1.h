@@ -20,6 +20,7 @@ namespace EAGLAnim {
 
 class FnDeltaF1 : public FnAnimMemoryMap {
   public:
+#include "AnimAllocation.h"
     FnDeltaF1() : mNextKey(-1), mNextValues(0), mPrevKey(-1), mPrevVBlock(0), mPrevValues(0), mNextVBlock(0) {
         mType = AnimTypeId::ANIM_DELTAF1;
     }

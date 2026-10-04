@@ -1,0 +1,53 @@
+{
+  "id": "eagl_loading_dynamic_loader_registered",
+  "source": "src/eagl_loading/DynamicLoaderRegistered.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801eb030",
+      "size": 140
+    }
+  ],
+  "functions": [
+    {
+      "name": "RegisterVar__Q24EAGL13DynamicLoaderPCcPv",
+      "address": "0x801eb030",
+      "size": 48,
+      "binding": 1
+    },
+    {
+      "name": "UnRegisterVar__Q24EAGL13DynamicLoaderPCc",
+      "address": "0x801eb060",
+      "size": 44,
+      "binding": 1
+    },
+    {
+      "name": "GetRegisteredVar__Q24EAGL13DynamicLoaderPCcRb",
+      "address": "0x801eb08c",
+      "size": 48,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_Q24EAGL13DynamicLoader.gSymbolPool": "0x803ff390",
+    "AddSymbol__Q24EAGL10SymbolPoolPCcPv": "0x801eb628",
+    "RemoveSymbol__Q24EAGL10SymbolPoolPCc": "0x801eb2f8",
+    "Search__Q24EAGL10SymbolPoolPCcRb": "0x801eb418"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

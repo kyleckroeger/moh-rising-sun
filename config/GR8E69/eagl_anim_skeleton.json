@@ -1,0 +1,75 @@
+{
+  "id": "eagl_anim_skeleton",
+  "source": "src/eagl_anim/Skeleton.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ebc98",
+      "size": 3916
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802beb08",
+      "size": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "MirrorPose__Q28EAGLAnim8SkeletonPfT1bPCQ28EAGLAnim8BoneMask",
+      "address": "0x801ebc98",
+      "size": 1064,
+      "binding": 1
+    },
+    {
+      "name": "PoseSQTToLocal__Q28EAGLAnim8SkeletonPfPQ24EAGL9TransformPQ28EAGLAnim8BoneMask",
+      "address": "0x801ec0c0",
+      "size": 384,
+      "binding": 1
+    },
+    {
+      "name": "PoseLocalToGlobal__Q28EAGLAnim8SkeletonPQ24EAGL9TransformT1PQ28EAGLAnim8BoneMask",
+      "address": "0x801ec240",
+      "size": 992,
+      "binding": 1
+    },
+    {
+      "name": "PoseSQTToGlobal__Q28EAGLAnim8SkeletonPfPQ24EAGL9TransformPQ28EAGLAnim8BoneMask",
+      "address": "0x801ec620",
+      "size": 496,
+      "binding": 1
+    },
+    {
+      "name": "GetStillPose__CQ28EAGLAnim8SkeletonPfPCQ28EAGLAnim8BoneMask",
+      "address": "0x801ec810",
+      "size": 716,
+      "binding": 1
+    },
+    {
+      "name": "PoseGlobalToSkin__Q28EAGLAnim8SkeletonPQ24EAGL9TransformT1PQ28EAGLAnim8BoneMask",
+      "address": "0x801ecadc",
+      "size": 264,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "BuildSQT__Q24EAGL9Transformffffffffff": "0x801e265c",
+    "_8EAGLAnim.MatrixMultiply": "0x802d2e54",
+    "Transpose__Q24EAGL9Transform": "0x801e2244"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

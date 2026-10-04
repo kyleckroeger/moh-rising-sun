@@ -1,0 +1,43 @@
+{
+  "id": "eagl_anim_matrix_callback",
+  "source": "src/eagl_anim/MtxMult.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ecbe4",
+      "size": 708
+    },
+    {
+      "name": ".data",
+      "address": "0x802d2e54",
+      "size": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "MtxMult__FPQ24EAGL9TransformPCQ24EAGL9TransformT1",
+      "address": "0x801ecbe4",
+      "size": 708,
+      "binding": 0
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "System.cpp",
+  "original_file_index": 2703
+}

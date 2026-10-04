@@ -1,0 +1,132 @@
+{
+  "id": "eagl_anim_base",
+  "source": "src/eagl_anim/FnAnim.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ee140",
+      "size": 128
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetTargetCheckSum__CQ28EAGLAnim6FnAnim",
+      "address": "0x801ee140",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "UseFPS__Q28EAGLAnim6FnAnimb",
+      "address": "0x801ee148",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Eval__Q28EAGLAnim6FnAnimffPf",
+      "address": "0x801ee14c",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "GetLength__CQ28EAGLAnim6FnAnimRf",
+      "address": "0x801ee150",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "FindMatchTime__CQ28EAGLAnim6FnAnimRCQ28EAGLAnim15MatchPhaseInputRf",
+      "address": "0x801ee158",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "EvalSQT__Q28EAGLAnim6FnAnimfPfPCQ28EAGLAnim8BoneMask",
+      "address": "0x801ee160",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "EvalPhase__Q28EAGLAnim6FnAnimfRQ28EAGLAnim10PhaseValue",
+      "address": "0x801ee168",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "EvalVel2D__Q28EAGLAnim6FnAnimfPf",
+      "address": "0x801ee170",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "EvalEvent__Q28EAGLAnim6FnAnimffPPQ28EAGLAnim12EventHandlerPv",
+      "address": "0x801ee178",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "EvalWeights__Q28EAGLAnim6FnAnimfPf",
+      "address": "0x801ee180",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "EvalState__Q28EAGLAnim6FnAnimfPQ28EAGLAnim5State",
+      "address": "0x801ee188",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "EvalPose__Q28EAGLAnim6FnAnimfPCQ28EAGLAnim15PosePaletteBankPf",
+      "address": "0x801ee190",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "FindTime__Q28EAGLAnim6FnAnimRCQ28EAGLAnim9StateTestfRf",
+      "address": "0x801ee198",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetPhaseChan__Q28EAGLAnim6FnAnim",
+      "address": "0x801ee1a0",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetAnimatedBones__Q28EAGLAnim6FnAnimPQ28EAGLAnim8BoneMaskRiN22",
+      "address": "0x801ee1a8",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetAnimatedBonesAux__Q28EAGLAnim6FnAnimPQ28EAGLAnim8BoneMaskRiN22",
+      "address": "0x801ee1b0",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetAttributes__CQ28EAGLAnim6FnAnim",
+      "address": "0x801ee1b8",
+      "size": 8,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

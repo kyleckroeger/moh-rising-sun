@@ -1,0 +1,72 @@
+{
+  "id": "eagl_loading_symbol_pool_lifetime",
+  "source": "src/eagl_loading/SymbolPoolLifetime.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801eb530",
+      "size": 604
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802be9d8",
+      "size": 20
+    }
+  ],
+  "functions": [
+    {
+      "name": "__Q24EAGL10SymbolPool",
+      "address": "0x801eb530",
+      "size": 36,
+      "binding": 1
+    },
+    {
+      "name": "FreeMemory__Q24EAGL10SymbolPool",
+      "address": "0x801eb554",
+      "size": 88,
+      "binding": 1
+    },
+    {
+      "name": "_._Q24EAGL10SymbolPool",
+      "address": "0x801eb5ac",
+      "size": 124,
+      "binding": 1
+    },
+    {
+      "name": "AddSymbol__Q24EAGL10SymbolPoolPCcPv",
+      "address": "0x801eb628",
+      "size": 128,
+      "binding": 1
+    },
+    {
+      "name": "Empty__Q24EAGL10SymbolPool",
+      "address": "0x801eb6a8",
+      "size": 228,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_4EAGL.INIT_TABLE_SIZE": "0x802d2e20",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c",
+    "strlen": "0x80266b70",
+    "_12EAGLInternal.EAGLMalloc": "0x802d2e08",
+    "strcpy": "0x80266a7c",
+    "Insert__Q24EAGL10SymbolPoolPCcPv": "0x801eb0e8"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

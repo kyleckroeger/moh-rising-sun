@@ -1,0 +1,38 @@
+{
+  "id": "eagl_anim_fn_raw_event_channel_delete",
+  "source": "src/eagl_anim/FnRawEventChannelDelete.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80293080",
+      "size": 44
+    }
+  ],
+  "functions": [
+    {
+      "name": "__dl__Q28EAGLAnim17FnRawEventChannelPvUi",
+      "address": "0x80293080",
+      "size": 44,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -1,6 +1,7 @@
 #ifndef GAME_EAGL_TAR_H
 #define GAME_EAGL_TAR_H
 #include "EAGLMemory.h"
+#include "EAGLDynamicLoader.h"
 #include <dolphin/gx/GXTexture.h>
 class SHAPE;
 // The first 16 bytes are a header view, not the full variable-sized SHAPE.
@@ -81,16 +82,6 @@ class TAR {
     bool SetFilterMode(FilterMode);
     bool SetMIPMAPLODBias(float);
     bool SetMIPMAPMode(MIPMAPMode);
-};
-class SymbolPool {
-  public:
-    void *Search(const char *, bool &);
-};
-class DynamicLoader {
-  public:
-    void GetAddr(const char *, const char *, void *&) const;
-    static SymbolPool gSymbolPool;
-    static const char ShapeType[6];
 };
 int PrintMessage(int, const char *, ...);
 } // namespace EAGL

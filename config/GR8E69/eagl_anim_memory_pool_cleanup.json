@@ -1,0 +1,81 @@
+{
+  "id": "eagl_anim_memory_pool_cleanup",
+  "source": "src/eagl_anim/MemoryPoolCleanup.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ed6bc",
+      "size": 476
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802beb38",
+      "size": 24
+    }
+  ],
+  "functions": [
+    {
+      "name": "ResetPoolAux__Q28EAGLAnim17MemoryPoolManager",
+      "address": "0x801ed6bc",
+      "size": 92,
+      "binding": 1
+    },
+    {
+      "name": "InitAux__Q28EAGLAnim17MemoryPoolManagerUi",
+      "address": "0x801ed718",
+      "size": 128,
+      "binding": 1
+    },
+    {
+      "name": "CleanupAux__Q28EAGLAnim17MemoryPoolManager",
+      "address": "0x801ed798",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "DeleteBlockByIdxAux__Q28EAGLAnim17MemoryPoolManagerUsPv",
+      "address": "0x801ed7d4",
+      "size": 28,
+      "binding": 1
+    },
+    {
+      "name": "DeleteBlockAux__Q28EAGLAnim17MemoryPoolManagerPv",
+      "address": "0x801ed7f0",
+      "size": 32,
+      "binding": 1
+    },
+    {
+      "name": "DeleteFnAnimAux__Q28EAGLAnim17MemoryPoolManagerPQ28EAGLAnim6FnAnim",
+      "address": "0x801ed810",
+      "size": 136,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryPool": "0x802d2e94",
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryPoolFree": "0x802d2e98",
+    "_Q28EAGLAnim17MemoryPoolManager.gSizeFreeList": "0x802d2f0c",
+    "_Q28EAGLAnim17MemoryPoolManager.gFreeList": "0x802d2ea4",
+    "_12EAGLInternal.EAGLMalloc": "0x802d2e08",
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryPoolSize": "0x802d2e9c",
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryManager": "0x802d2e5c",
+    "_Q28EAGLAnim17MemoryPoolManager.gMaxIdx": "0x802d2ea0",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}
