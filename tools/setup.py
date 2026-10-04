@@ -25,14 +25,26 @@ def fetch(spec, output):
     temporary.replace(output)
 
 
+def host_platform():
+    """The pinned-tool key for this machine, e.g. "Darwin-arm64" or "Linux-x86_64"."""
+    machine = platform.machine()
+    return f"{platform.system()}-{'x86_64' if machine == 'AMD64' else machine}"
+
+
+def platform_spec(tool):
+    """The download (url, sha256) of a pinned tool for this machine."""
+    key = host_platform()
+    if key not in tool["platforms"]:
+        raise RuntimeError(f"No pinned tools for {key}; supported: {', '.join(sorted(tool['platforms']))}")
+    return tool["platforms"][key]
+
+
 def setup():
-    if (platform.system(), platform.machine()) != ("Darwin", "arm64"):
-        raise RuntimeError("Initial tool lock supports macOS ARM64 only")
     lock = json.loads((ROOT / "tools/toolchain.json").read_text())
-    fetch(lock["dtk"], DEST / "dtk")
+    fetch(platform_spec(lock["dtk"]), DEST / "dtk")
     (DEST / "dtk").chmod(0o755)
     archive = DEST / "binutils.zip"
-    fetch(lock["binutils"], archive)
+    fetch(platform_spec(lock["binutils"]), archive)
     with zipfile.ZipFile(archive) as package:
         for name in ("powerpc-eabi-as", "powerpc-eabi-ld", "powerpc-eabi-objdump", "powerpc-eabi-readelf", "powerpc-eabi-objcopy", "powerpc-eabi-nm"):
             path = DEST / name
