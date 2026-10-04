@@ -1,0 +1,58 @@
+{
+  "id": "eagl_draw_particle",
+  "source": "src/eagl/eagl_draw_particle.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801d8df4",
+      "size": 1716
+    }
+  ],
+  "functions": [
+    {
+      "name": "CompBlock000Particle__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
+      "address": "0x801d8df4",
+      "size": 1716,
+      "binding": 0
+    }
+  ],
+  "externals": {
+    "Transpose__Q24EAGL9TransformRCQ24EAGL9TransformRQ24EAGL9Transform": "0x801e22a8",
+    "GXLoadPosMtxImm": "0x80248b30",
+    "GXSetCurrentMtx": "0x80248bd0",
+    "GXSetChanCtrl": "0x802464f4",
+    "GXSetNumChans": "0x802464b8",
+    "SetPS2StyleOverBright__Q24EAGL8TevStagebT1": "0x801e1690",
+    "Use__CQ24EAGL21GeoPrimStateExtension": "0x801dea70",
+    "SetCurrentVertex__Q24EAGL21GeoPrimStateExtensionUiUi": "0x801dee90",
+    "Use__Q24EAGL3TAR": "0x801e0b38",
+    "SetHardware__Q24EAGL8TevStage": "0x801e1044",
+    "GXCallDisplayList": "0x80248990",
+    "GetPrimitiveType__CQ24EAGL12GeoPrimStateRQ24EAGL13PrimitiveType": "0x801df1c8",
+    "gpDisplayList": "0x802d2df8",
+    "gDisplayListSize": "0x802d2dfc",
+    "DCStoreRange": "0x80254604",
+    "IncrementArrays__Q24EAGL12RenderMethodi": "0x801dd658",
+    "GXBegin": "0x8024504c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file_index": 2593,
+  "original_file": "Particle.cpp"
+}

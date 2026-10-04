@@ -1,0 +1,41 @@
+{
+  "id": "eagl_transform_postmult",
+  "source": "src/eagl/eagl_transform_postmult.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e20fc",
+      "size": 64
+    }
+  ],
+  "functions": [
+    {
+      "name": "PostMult__Q24EAGL9TransformRCQ24EAGL9Transform",
+      "address": "0x801e20fc",
+      "size": 64,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "MultMatrix__FPC7MATRIX4T0P7MATRIX4": "0x801e1db8",
+    "MEM_copy": "0x802187b0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

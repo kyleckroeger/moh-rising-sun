@@ -85,6 +85,7 @@ Run the scripts from any directory; all outputs remain inside this checkout. `ba
 | `src/matrix/`, `include/game/CMatrix.h` | Reconstructed matrix functions and a shared layout with explicit vector-type limits |
 | `src/sys_memory.cpp` | Four game allocation operators; original heap routines remain external |
 | `src/stlport/` | Tree, container, sorting and heap functions using an attributed STLport 4.5.3 subset |
+| `src/eagl/` | Reconstructed rendering state and material drawing fragments; [evidence and remaining work](docs/Rendering.md) |
 | `src/observers/` | Reconstructed observers, weak pointers and destruction queue; [evidence](docs/Observers.md) |
 | `src/MathFun.cpp` | Reconstructed functions from the original MathFun unit |
 | `src/lua/` | Restored Lua 4.0.1 source units, headers and copyright notice |
@@ -103,7 +104,7 @@ The automatic dtk ELF split export emits warnings for this executable's symbol o
 
 ## Next work
 
-1. Extend the [verified CMatrix family](docs/Matrix.md) using its shared layout; establish CVector3 construction and full storage before adding functions that need local vectors. The [dependency ranking](docs/Dependencies.md) also identifies small string and allocation helpers. Extend the verified STL container profile only after resolving custom comparator and by-value game-type layouts. The remaining MathFun functions need floating-point constant/layout evidence.
+1. Extend the [rendering reconstruction](docs/Rendering.md) through its remaining lighting blocks, startup registration and PCode interpreter. The [reuse index](docs/ReuseMap.md) ranks other candidates, including matrix, container, string and allocation helpers. Preserve the documented limits of shared storage views; establish missing types and constant ownership before adding callers that depend on them.
 2. Distinguish the original compiler release using larger functions. Five tested SN/ProDG versions match the accepted fragment, so its byte match alone cannot identify the original release. Nintendo libraries may use different compilers.
 3. Extend the network-library subset by recovering the older target's behavior and storage; the remaining TCP, UDP, PPP and Ethernet reference routines differ. Continue shared game-code reconstruction alongside library restoration. Only compiled source bytes that pass complete-image verification count toward progress.
 4. Inspect Disc 2 and test the game's executable-loading path before claiming complete game coverage or a runnable replacement disc.

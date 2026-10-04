@@ -1,0 +1,66 @@
+{
+  "id": "eagl_cpt_color",
+  "source": "src/eagl/eagl_cpt_color.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801b57e0",
+      "size": 1828
+    }
+  ],
+  "functions": [
+    {
+      "name": "CompBlock003Moh3_Cpt_Color__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
+      "address": "0x801b57e0",
+      "size": 1828,
+      "binding": 0
+    }
+  ],
+  "externals": {
+    "BuildIdentity__Q24EAGL9Transform": "0x801e2188",
+    "AppendTranslate__Q24EAGL9Transformfff": "0x801e23ac",
+    "PostMult__Q24EAGL9TransformRCQ24EAGL9Transform": "0x801e20fc",
+    "Transpose__Q24EAGL9TransformRCQ24EAGL9TransformRQ24EAGL9Transform": "0x801e22a8",
+    "GXLoadPosMtxImm": "0x80248b30",
+    "GXSetCurrentMtx": "0x80248bd0",
+    "SetNumTexGens__Q24EAGL12TARExtensioni": "0x801e0ecc",
+    "__Q24EAGL8TevStage": "0x801e149c",
+    "SetTextureMapAndUVs__Q24EAGL8TevStage11_GXTexMapID13_GXTexCoordID": "0x801e15d0",
+    "SetColourIn__Q24EAGL8TevStage14_GXTevColorArgN31": "0x801e1578",
+    "SetAlphaIn__Q24EAGL8TevStage14_GXTevAlphaArgN31": "0x801e1534",
+    "Use__CQ24EAGL8TevStageUi": "0x801e15fc",
+    "GXSetChanCtrl": "0x802464f4",
+    "GXSetNumChans": "0x802464b8",
+    "SetPS2StyleOverBright__Q24EAGL8TevStagebT1": "0x801e1690",
+    "Use__CQ24EAGL21GeoPrimStateExtension": "0x801dea70",
+    "SetCurrentVertex__Q24EAGL21GeoPrimStateExtensionUiUi": "0x801dee90",
+    "SetHardware__Q24EAGL8TevStage": "0x801e1044",
+    "GXCallDisplayList": "0x80248990",
+    "GetPrimitiveType__CQ24EAGL12GeoPrimStateRQ24EAGL13PrimitiveType": "0x801df1c8",
+    "gpDisplayList": "0x802d2df8",
+    "gDisplayListSize": "0x802d2dfc",
+    "DCStoreRange": "0x80254604",
+    "IncrementArrays__Q24EAGL12RenderMethodi": "0x801dd658",
+    "GXBegin": "0x8024504c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file_index": 2357,
+  "original_file": "Moh3_Cpt_Color.cpp"
+}

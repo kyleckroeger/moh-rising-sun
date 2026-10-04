@@ -1,0 +1,191 @@
+# EAGL rendering reconstruction
+
+The rendering reconstruction covers 89 functions and 99,780 executable bytes
+across 69 accepted fragments. All code was reconstructed from the pinned target;
+generated data is checked separately and earns no code credit.
+
+The first unit reconstructs `EAGL::TevStage`: 15 functions and
+1,744 executable bytes, plus 1,488 initialized data bytes and a four-byte
+constructor-table entry. Its unit manifest is
+[`eagl_tevstage.json`](../config/GR8E69/eagl_tevstage.json). Data earns no code credit.
+The work used AI assistance to reconstruct C++ from the pinned GR8E69 executable.
+It imports no EA rendering implementation from another project.
+
+## Evidence and scope
+
+The original `tevstage.cpp` file record scopes its two compiler-generated local
+initialization functions. Exported method and static-object names are preserved.
+Member names and the present header organization are descriptive reconstructions;
+original spelling, visibility and exact historical compiler release are unknown.
+
+The setters, constructor and `SetHardware` independently agree on the following
+92-byte storage layout. `Use` copies 92 bytes, material callers index stages in
+92-byte increments, and the original 1,472-byte array holds 16 stages.
+
+| Offset | Observed storage and use |
+| --- | --- |
+| `0x00`–`0x0c` | Four alpha inputs consumed by `GXSetTevAlphaIn` |
+| `0x10`–`0x1c` | Four color inputs consumed by `GXSetTevColorIn` |
+| `0x20`, `0x24`, `0x28`, `0x2c`, `0x30` | Alpha operation, bias, scale, byte clamp and output register |
+| `0x34`, `0x38`, `0x3c`, `0x40`, `0x44` | Color operation, bias, scale, byte clamp and output register |
+| `0x48`, `0x4c`, `0x50` | Texture map, texture coordinate and color channel |
+| `0x54`, `0x58` | Constant color and alpha selectors |
+
+The clamp bytes have ordinary three-byte alignment padding. The compiler copies
+that padding in aggregate assignment, as the original does; no arbitrary padding
+contents are assumed. Setter symbols preserve the GX enum parameter types.
+The byte active-stage count and three four-byte booleans agree with both original
+object sizes and their load/store instructions. Initial data sets the count and
+dirty flag to one and both overbright flags to zero.
+
+`SetHardware` uploads dirty state, masking the texture map's top bit. The last
+active stage optionally increases one-times scaling to two-times and two-times
+to four-times for color and alpha separately, without changing stored scales.
+`ResetToDefault` constructs a default stage, copies it to all 16 slots, adjusts
+stages 1–15 to pass through the configured constant inputs, and activates one
+stage. No bounds checks have been added to the original indexed interface.
+
+## Compilation and generated storage
+
+ProDG 3.8.1 with `-O2 -G0 -fno-exceptions -fno-implicit-templates` reproduces this
+unit. GNU interface/implementation pragmas retain the out-of-line inline-method
+copies and allow constructor/reset inlining. The compiler generates both static
+initialization functions and the constructor-table pointer; none is hand-written
+assembly. The named stage array is explicitly placed in `.data`, matching its
+original section, address and size. Its 1,472 initial zero bytes and subsequent
+constructor loop are both compared, together with every other generated section.
+
+The GX enum and function declarations come from the already attributed
+[dolsdk2004 headers](Dolphin.md). `include/dolphin-sn/dolphin/types.h` is their
+unchanged scalar typedef subset, excluding CodeWarrior libc includes so SN game
+code can use the SDK interface. Its attribution remains
+[`src/dolphin/NOTICE`](../src/dolphin/NOTICE); it grants no additional license.
+No SDK implementation or new library-byte credit is introduced here.
+
+Strict unit checks verify complete allocated sections, function symbols and
+external dependencies. Complete-image verification and snapshot capture remain
+required before publication. Runtime rendering has not been tested. This unit
+establishes no broader `GeoPrim`, material, render-context or PCodeData layout.
+
+## Material drawing fragments and supporting views
+
+Twenty `CompBlock003` fragments add 49,044 matching code bytes. They cover the
+mesh and CPT Color, Texture1, Texture1Lightmap, Texture2, Texture2Lightmap,
+Falloff_Texture1 and Falloff_Texture2 variants; both
+Texture1Envmap and Texture2Envmap variants; and both Falloff_Texture1Envmap
+variants. Names describe the original entry points, not a promise that every
+variant's rendering path is complete. Four Falloff_Texture1/Texture2 `CompBlock004` variants add 11,704 bytes.
+Their behavior matches the corresponding block 3 routines, verified independently
+at each original address. Other block 4 functions and startup routines remain context.
+Twenty outer mesh/CPT `Render` fragments add another 20,280 bytes. Each retained local function is
+scoped to its original file record and binding. Each generated constant pool is
+compared in full; no pool is counted twice.
+
+Three texture-coordinate cache functions add 228 bytes. Their setters and reset
+loop establish eight texture generators, with type/source/matrix arrays at
+`0x00`, `0x20` and `0x40`, eight normalization bytes at `0x60`, and post-matrix
+indices at `0x68`. The original named cache is 136 bytes. The cache and generator
+count remain external original data; the `TARExtension` instance layout is not
+claimed. Calls to a TAR's extension use its independently observed four-byte
+offset without asserting its complete inheritance or storage.
+
+Seventeen transform and matrix functions add 3,488 bytes, including both transpose
+overloads, matrix multiplication, point transforms, identity/scale construction,
+quaternion/translation and scale/quaternion/translation construction, matrix
+composition and orthogonal inversion. Static transpose handles aliasing through
+a local 64-byte matrix. The point-transform overloads use separate 12-byte and
+16-byte temporaries when their input and output references coincide. Their
+aggregate copies and component accesses support the `COORD3` and `COORD4` storage
+views; these types are distinct from the still-opaque game `CVector3`.
+`MATRIX4` and `Transform` agree on sixteen floats and 64-byte copies. Field names,
+helper names and header organization remain descriptive. Arithmetic expression
+order, including fused operations, is preserved and all generated constants are
+checked. `BuildQuatTrans` and `ExtractQuatTrans` remain original context;
+`PrependQuatTrans` calls the former through its observed interface.
+
+`EAGLMaterial.h` deliberately supplies storage views rather than complete game
+classes. The PCode interpreter independently establishes eight-byte parameter
+slots and their value pointers at offset four. Material functions use those
+slots for transforms, textures, state and scalar inputs; unused slot words retain
+an unknown label. The 192-byte `PCodeData` storage is independently bounded by twenty callers:
+each reserves a record from stack offsets `0x08` through `0xc7`, followed by a
+separate color temporary. `ProcessPCode` uses its final word at `0xbc`, initializes
+the execution flags, and clears the accessed scratch arrays. Render callers
+initialize its configuration pointers before passing it to that interpreter.
+The twenty named private `staticdata` objects independently have 116-byte sizes.
+The declarations now cover those storage extents, retaining unused regions as
+unknown bytes; original constructors, field names and unused field types are
+unconfirmed. `GeoPrim` remains opaque. The render-context extension is accessed
+through its observed `0x10` offset, without inventing a complete context class.
+
+The drawing code preserves the original batch rounding, triangle-strip overlap,
+byte and halfword indices, cache flush, and FIFO padding. SN's native `address`
+attribute maps a volatile graphics-FIFO union to `0xcc008000`; it reserves no RAM
+and inserts no hand-written instruction bodies. Original instructions and the
+existing SDK FIFO declaration independently support this address and port widths.
+
+Implementation inline bodies for the TevStage unit are separated from its
+material-facing declarations to retain the original callers' out-of-line calls.
+These are GNU/SN compilation fragments verified with this toolchain, not an
+established portable C++ whole-source build. The original header organization,
+source spelling and visibility remain unknown. All class storage declarations
+are shared; no alternate TevStage layout is used by material callers.
+
+## Render dispatch and state caching
+
+The outer fragments initialize PCode configuration, reset graphics state when
+requested, update cached vertex index widths, configure position/color/normal/UV
+formats, bind arrays, dispatch blocks 3 and 4, and undo variation-pointer offsets.
+Their compact six-byte variation records retain the observed unaligned word read
+at offset two. The no-work dispatch cases use an inline empty helper to preserve
+the compiler's switch lowering; the helper name and source grouping are
+reconstruction choices, and earn no code credit. CPT also spells out the observed
+no-work case 5. The comparison verifies every branch, including default behavior.
+
+Private state is referenced through native symbol-name declarations such as
+`__asm__("staticdata.1302")`. These name external objects; they contain no assembly
+instructions or data definitions. Manifests bind each private state and drawing
+callee to its original file record. Original state storage and the class's global
+configuration variables remain uncredited binary context.
+
+The falloff fragments configure a second color channel and light 7 at the origin,
+then use that channel in extra alpha-combining stages. Their shared white-color
+helper is descriptive source, not an imported EA implementation. Lightmap mode
+selection preserves the original float-to-integer conversion before comparing
+against six. No rendering behavior has been tested in an emulator.
+
+The CPT Texture1Envmap block configures three TEV stages, clamps and filters its
+texture, and builds the normal-based texture matrix from the transposed model
+matrix plus scale and translation matrices. `CLAMP_MODE_0` and `FILTER_MODE_2`
+record observed numeric arguments; the original enum member names are unknown.
+The CPT Texture2Envmap block uses the existing texture stages and loads two TARs.
+
+## Single-draw, particle and skin dispatch
+
+Three additional drawing blocks add 5,324 bytes: `SingleDrawGouraud`,
+`SingleDrawTexture` and `Particle`. Their state setup runs only when the PCode
+reset flag is set. The single-draw variants disable enabled fog; the particle
+block retains the existing fog state. Texture use remains conditional on its
+dirty flag. Their display-list and array paths retain the same verified batching
+and FIFO behavior as the material family.
+
+Five outer render functions add 3,872 bytes: those three variants plus
+`Moh3_Skin_LitTextureObjectFog` and `Moh3_PlayerSkin_LitTextureObjectFog`.
+They call block 0 directly. The skin variants additionally enable direct position
+matrix indices. Their lighting block bodies remain original context.
+The single-draw functions bind arrays through original `gVolatileData` pointer
+arrays, whose two/three-element declarations agree with their 8/12-byte symbols.
+Their default PCode arrays and last-source arrays are likewise bounded by the
+original named objects. These external objects earn no source credit.
+
+## State-name lookup
+
+`StringToPlatformStateEnum` and `StringToCommonStateEnum` add 4,096 code bytes
+and 2,760 checked string-table bytes. They first classify each name by its prefix,
+then compare full strings and return the observed numeric value. The original
+strings include aliases, negative primitive-type values, and the error messages;
+invalid values retain the original diagnostic call and zero result. The two
+functions cover 79 platform names and 47 common names. The declared integer
+return represents the observed ABI; the original return-type spelling is unknown.
+Neither the strings nor the reconstructed lookup tables establish complete
+historical enum declarations.

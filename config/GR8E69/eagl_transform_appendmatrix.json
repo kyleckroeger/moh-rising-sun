@@ -1,0 +1,41 @@
+{
+  "id": "eagl_transform_appendmatrix",
+  "source": "src/eagl/eagl_transform_appendmatrix.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e2444",
+      "size": 184
+    }
+  ],
+  "functions": [
+    {
+      "name": "AppendMatrix__Q24EAGL9TransformPC7MATRIX4",
+      "address": "0x801e2444",
+      "size": 184,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "MultMatrix__FPC7MATRIX4T0P7MATRIX4": "0x801e1db8",
+    "MEM_copy": "0x802187b0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -1,0 +1,69 @@
+{
+  "id": "eagl_cpt_color_render",
+  "source": "src/eagl/eagl_cpt_color_render.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801b6858",
+      "size": 712
+    }
+  ],
+  "functions": [
+    {
+      "name": "RenderMoh3_Cpt_Color__FPQ24EAGL7GeoPrim",
+      "address": "0x801b6858",
+      "size": 712,
+      "binding": 0
+    }
+  ],
+  "externals": {
+    "_22GeoPrim_Moh3_Cpt_Color.gNumVolatiles": "0x802cc39c",
+    "_22GeoPrim_Moh3_Cpt_Color.gIdentifier": "0x8045259c",
+    "_22GeoPrim_Moh3_Cpt_Color.gDefaultPCode": "0x802cc3a0",
+    "_22GeoPrim_Moh3_Cpt_Color.gLastVolatileSource": "0x804525a0",
+    "_22GeoPrim_Moh3_Cpt_Color.gVolatileData": "0x804525a4",
+    "_22GeoPrim_Moh3_Cpt_Color.gNoUploadsConstantSize": "0x804525a8",
+    "_22GeoPrim_Moh3_Cpt_Color.gNoUploadsVariableSize": "0x804525ac",
+    "ProcessPCode__12EAGLInternalRQ212EAGLInternal9PCodeDataPQ24EAGL7GeoPrimi": "0x801e5ae8",
+    "GXSetChanAmbColor": "0x802462d8",
+    "GXSetChanMatColor": "0x802463c8",
+    "ResetToDefault__Q24EAGL8TevStage": "0x801e11bc",
+    "ResetTexCoordGens__Q24EAGL12TARExtension": "0x801e0f60",
+    "staticdata.1242": "0x802cc3a4",
+    "GXClearVtxDesc": "0x80243bf8",
+    "GXSetVtxDesc": "0x80243370",
+    "SetAttributeFormat__Q24EAGL21GeoPrimStateExtensioni7_GXAttr10_GXCompCnt11_GXCompTypeUc": "0x801df348",
+    "SetNumTexGens__Q24EAGL12TARExtensioni": "0x801e0ecc",
+    "GXSetNumChans": "0x802464b8",
+    "SetCurrentVertex__Q24EAGL21GeoPrimStateExtensionUiUi": "0x801dee90",
+    "SetArray__Q24EAGL12RenderMethod7_GXAttrPvUc": "0x801dd938",
+    "CompBlock003Moh3_Cpt_Color__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData": "0x801b57e0",
+    "CompBlock004Moh3_Cpt_Color__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData": "0x801b5f04",
+    "_12EAGLInternal.CurrentVariation": "0x802cdae0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file_index": 2357,
+  "original_file": "Moh3_Cpt_Color.cpp",
+  "local_externals": [
+    "staticdata.1242",
+    "CompBlock003Moh3_Cpt_Color__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
+    "CompBlock004Moh3_Cpt_Color__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData"
+  ]
+}

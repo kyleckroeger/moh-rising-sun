@@ -1,0 +1,47 @@
+{
+  "id": "eagl_common_state_strings",
+  "source": "src/eagl/eagl_common_state_strings.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e8964",
+      "size": 1632
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bdd10",
+      "size": 1048
+    }
+  ],
+  "functions": [
+    {
+      "name": "StringToCommonStateEnum__12EAGLInternalPCc",
+      "address": "0x801e8964",
+      "size": 1632,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "strncmp": "0x80266cf4",
+    "strcmp": "0x802669b4",
+    "PrintMessage__4EAGLiPCce": "0x801e8890"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

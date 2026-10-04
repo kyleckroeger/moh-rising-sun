@@ -1,0 +1,93 @@
+{
+  "id": "eagl_cpt_falloff_texture1",
+  "source": "src/eagl/eagl_cpt_falloff_texture1.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801c0d08",
+      "size": 5456
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802b99c8",
+      "size": 16
+    }
+  ],
+  "functions": [
+    {
+      "name": "CompBlock003Moh3_Cpt_Falloff_Texture1__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
+      "address": "0x801c0d08",
+      "size": 2728,
+      "binding": 0
+    },
+    {
+      "name": "CompBlock004Moh3_Cpt_Falloff_Texture1__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
+      "address": "0x801c17b0",
+      "size": 2728,
+      "binding": 0
+    }
+  ],
+  "externals": {
+    "Get__Q24EAGL6Device": "0x801db480",
+    "GetCurrentRenderContext__CQ24EAGL6Device": "0x801db43c",
+    "GetFogEnable__CQ24EAGL26RenderContextExtensionBaseRb": "0x801dd020",
+    "SetFogEnable__Q24EAGL26RenderContextExtensionBaseb": "0x801dcffc",
+    "SetNumTexGens__Q24EAGL12TARExtensioni": "0x801e0ecc",
+    "SetNumActiveStages__Q24EAGL8TevStageUc": "0x801e16d0",
+    "_Q24EAGL9TevStages.gTevStages": "0x802d2470",
+    "SetTextureMapAndUVs__Q24EAGL8TevStage11_GXTexMapID13_GXTexCoordID": "0x801e15d0",
+    "SetColourSource__Q24EAGL8TevStage12_GXChannelID": "0x801e15e8",
+    "SetColourOp__Q24EAGL8TevStage8_GXTevOp10_GXTevBias11_GXTevScaleUc11_GXTevRegID": "0x801e1598",
+    "SetColourIn__Q24EAGL8TevStage14_GXTevColorArgN31": "0x801e1578",
+    "SetAlphaOp__Q24EAGL8TevStage8_GXTevOp10_GXTevBias11_GXTevScaleUc11_GXTevRegID": "0x801e1554",
+    "SetAlphaIn__Q24EAGL8TevStage14_GXTevAlphaArgN31": "0x801e1534",
+    "BuildIdentity__Q24EAGL9Transform": "0x801e2188",
+    "AppendTranslate__Q24EAGL9Transformfff": "0x801e23ac",
+    "PostMult__Q24EAGL9TransformRCQ24EAGL9Transform": "0x801e20fc",
+    "Transpose__Q24EAGL9TransformRCQ24EAGL9TransformRQ24EAGL9Transform": "0x801e22a8",
+    "GXLoadPosMtxImm": "0x80248b30",
+    "GXSetCurrentMtx": "0x80248bd0",
+    "GXLoadNrmMtxImm": "0x80248b80",
+    "GXSetChanCtrl": "0x802464f4",
+    "GXSetNumChans": "0x802464b8",
+    "GXSetChanMatColor": "0x802463c8",
+    "GXSetChanAmbColor": "0x802462d8",
+    "GXInitLightColor": "0x80246250",
+    "GXInitLightPos": "0x80246224",
+    "GXLoadLightObjImm": "0x8024625c",
+    "SetPS2StyleOverBright__Q24EAGL8TevStagebT1": "0x801e1690",
+    "Use__CQ24EAGL21GeoPrimStateExtension": "0x801dea70",
+    "SetCurrentVertex__Q24EAGL21GeoPrimStateExtensionUiUi": "0x801dee90",
+    "Use__Q24EAGL3TAR": "0x801e0b38",
+    "GXLoadTexMtxImm": "0x80248c04",
+    "SetTexCoordGen__Q24EAGL12TARExtension13_GXTexCoordID13_GXTexGenType12_GXTexGenSrcUiUcUi": "0x801e0ef8",
+    "SetHardware__Q24EAGL8TevStage": "0x801e1044",
+    "GXCallDisplayList": "0x80248990",
+    "GetPrimitiveType__CQ24EAGL12GeoPrimStateRQ24EAGL13PrimitiveType": "0x801df1c8",
+    "gpDisplayList": "0x802d2df8",
+    "gDisplayListSize": "0x802d2dfc",
+    "DCStoreRange": "0x80254604",
+    "IncrementArrays__Q24EAGL12RenderMethodi": "0x801dd658",
+    "GXBegin": "0x8024504c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file_index": 2427,
+  "original_file": "Moh3_Cpt_Falloff_Texture1.cpp"
+}

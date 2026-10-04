@@ -1,0 +1,55 @@
+{
+  "id": "eagl_tar",
+  "source": "src/eagl/eagl_tar.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e0ecc",
+      "size": 228
+    }
+  ],
+  "functions": [
+    {
+      "name": "SetNumTexGens__Q24EAGL12TARExtensioni",
+      "address": "0x801e0ecc",
+      "size": 44,
+      "binding": 1
+    },
+    {
+      "name": "SetTexCoordGen__Q24EAGL12TARExtension13_GXTexCoordID13_GXTexGenType12_GXTexGenSrcUiUcUi",
+      "address": "0x801e0ef8",
+      "size": 104,
+      "binding": 1
+    },
+    {
+      "name": "ResetTexCoordGens__Q24EAGL12TARExtension",
+      "address": "0x801e0f60",
+      "size": 80,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_Q24EAGL12TARExtension.gNumTexGens": "0x802ce340",
+    "GXSetNumTexGens": "0x80244744",
+    "_Q24EAGL12TARExtension.gTexGens": "0x802d23b0",
+    "GXSetTexCoordGen2": "0x802444c4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

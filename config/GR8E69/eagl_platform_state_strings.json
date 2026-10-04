@@ -1,0 +1,47 @@
+{
+  "id": "eagl_platform_state_strings",
+  "source": "src/eagl/eagl_platform_state_strings.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ddffc",
+      "size": 2464
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bcdc8",
+      "size": 1712
+    }
+  ],
+  "functions": [
+    {
+      "name": "StringToPlatformStateEnum__12EAGLInternalPCc",
+      "address": "0x801ddffc",
+      "size": 2464,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "strncmp": "0x80266cf4",
+    "strcmp": "0x802669b4",
+    "PrintMessage__4EAGLiPCce": "0x801e8890"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

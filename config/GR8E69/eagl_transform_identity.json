@@ -1,0 +1,43 @@
+{
+  "id": "eagl_transform_identity",
+  "source": "src/eagl/eagl_transform_identity.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e2188",
+      "size": 84
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bd7dc",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "BuildIdentity__Q24EAGL9Transform",
+      "address": "0x801e2188",
+      "size": 84,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

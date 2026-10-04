@@ -24,6 +24,10 @@ The latest extension adds 21,284 library bytes and 3,668 game bytes across
 queue](Observers.md), and [matrix routines](Matrix.md). The earlier
 [game-container extension](GameContainers.md) established the storage models
 used by part of this work.
+The [rendering reconstruction](Rendering.md) adds a shared TevStage layout,
+texture-coordinate cache interfaces, transform helpers, material and particle
+drawing paths, render dispatch and state-name lookup. Their common parameter-slot
+and FIFO models now support further work on lighting and startup routines.
 Runtime remains untested.
 
 ## Ranked research queue
@@ -32,11 +36,12 @@ This is a qualitative work order, not a prediction of hours or a promise of matc
 
 | Priority | Candidate | Evidence / size | Next useful step |
 | --- | --- | --- | --- |
-| 1 | Remaining STL instances | Remaining custom values, anonymous-namespace containers and string support | Builtin/pointer containers and the reviewed game-storage subset now match. Recover the remaining custom comparators and value representations before extending coverage. This includes game routines, not just reusable library code. |
-| 2 | `powf` | 1,780 bytes; the research candidate differs in three indexed-load operand encodings | Further source/flag probes leave the same difference. A compiler word-size address-canonicalization difference is a research lead, not yet a proven cause; do not patch instructions. |
-| 3 | SN `add_separators` | 392 bytes; its ABI and formatter callers now match | Finish the helper's C reconstruction and register allocation; it remains context. |
-| 4 | Older network stack | Twenty accepted fragments establish older transport and PPP layouts; the Ethernet driver and unretained stack routines still differ | Compare protocol structures and behavior with original call sites, keeping retained code and storage complete. |
-| 5 | Shared game math, strings and allocation | `MathFun.cpp` has 1,268 unmatched bytes; string/allocation groups are also mapped | Recover common types, allocator contracts and constant ownership, then work through callers. |
+| 1 | EAGL material families | Unlit mesh/CPT blocks, falloff blocks and outer render functions now match | Extend the remaining lighting blocks, startup registration and PCode interpreter using the established interfaces. See [rendering evidence](Rendering.md). |
+| 2 | Remaining STL instances | Remaining custom values, anonymous-namespace containers and string support | Builtin/pointer containers and the reviewed game-storage subset now match. Recover the remaining custom comparators and value representations before extending coverage. This includes game routines, not just reusable library code. |
+| 3 | `powf` | 1,780 bytes; the research candidate differs in three indexed-load operand encodings | Further source/flag probes leave the same difference. A compiler word-size address-canonicalization difference is a research lead, not yet a proven cause; do not patch instructions. |
+| 4 | SN `add_separators` | 392 bytes; its ABI and formatter callers now match | Finish the helper's C reconstruction and register allocation; it remains context. |
+| 5 | Older network stack | Twenty accepted fragments establish older transport and PPP layouts; the Ethernet driver and unretained stack routines still differ | Compare protocol structures and behavior with original call sites, keeping retained code and storage complete. |
+| 6 | Shared game math, strings and allocation | `MathFun.cpp` has 1,268 unmatched bytes; string/allocation groups are also mapped | Recover common types, allocator contracts and constant ownership, then work through callers. |
 
 The verified STL container profile now covers builtin, string, pointer and
 [scoped game-storage instances](GameContainers.md). The exact original release and broader configurations remain

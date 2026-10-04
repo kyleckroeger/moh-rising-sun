@@ -1,0 +1,43 @@
+{
+  "id": "eagl_transform_scale",
+  "source": "src/eagl/eagl_transform_scale.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801e213c",
+      "size": 76
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bd7d0",
+      "size": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "BuildScale__Q24EAGL9Transformffff",
+      "address": "0x801e213c",
+      "size": 76,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

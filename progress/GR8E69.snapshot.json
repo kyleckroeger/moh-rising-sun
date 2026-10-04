@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 398788,
+    "matching_code_bytes": 498568,
     "total_executable_code_bytes": 2492032,
-    "percent": 16.00252324207715,
+    "percent": 20.006484667933638,
     "categories": {
-      "reconstructed_game": 6572,
+      "reconstructed_game": 106352,
       "restored_library": 392216
     },
-    "matching_functions": 1483
+    "matching_functions": 1572
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -125,6 +125,75 @@
     "config/GR8E69/dvdidutils.json": "146c4fe18f3d3e8eef2b1cd674155ffd5696c80b23ada1f47cbf175b43d2e1ea",
     "config/GR8E69/dvdlow.json": "e7c3f8c921d458b9f0a4c9c1b60d76522a25bbcc6eff2994cf01b304525c2630",
     "config/GR8E69/dvdqueue.json": "50714e893a617523e6e28eff930b1d91d1a5eaa8a00c9cce217acf50c4337821",
+    "config/GR8E69/eagl_common_state_strings.json": "ae2aac74db88bdc618d70af2e13f31f846f50a21c8b5011cf98f17ab995913de",
+    "config/GR8E69/eagl_cpt_color.json": "c99160f1fd53fcfff76bcacc5902225202bd74fbb9606344599c129917645222",
+    "config/GR8E69/eagl_cpt_color_render.json": "a98acf9d2b0250b28b711ed70cb11cd6e2c5938831982e2974b00272349c00cd",
+    "config/GR8E69/eagl_cpt_falloff_texture1.json": "f3056d42e2b6c264a61826ace46df6ede121e9d367bedac2567ce084069fbfb4",
+    "config/GR8E69/eagl_cpt_falloff_texture1_env.json": "0831c4ca6e95aec3c18e1bb688654778a0c3f166bb9984683a084f72247f318a",
+    "config/GR8E69/eagl_cpt_falloff_texture1_render.json": "8c7a7d25ad43e785b8b34a7e75029947c3fad4bfa9d3f7b1cd228be6cfedbefd",
+    "config/GR8E69/eagl_cpt_falloff_texture1envmap_render.json": "260bf98b3608adef3795569e799ef86fc487cae0964e974a18280c554b309648",
+    "config/GR8E69/eagl_cpt_falloff_texture2.json": "f807b1735e8dbc230e12efe346948a2584e386582d99c06868eb810c142d9482",
+    "config/GR8E69/eagl_cpt_falloff_texture2_render.json": "8a1560cd852d4f0dc321e06ae9810d6245d1c664b528da33cfc31b2ff2771233",
+    "config/GR8E69/eagl_cpt_texture1.json": "bd066bf476f68ce3bddc214cc6a9929cc409346af4dc590bd1e17b8a0f9160d6",
+    "config/GR8E69/eagl_cpt_texture1_env.json": "db4e7eb74c91f3251e94972c745e168078090edbfee8fe6a7fefb2f60c87e117",
+    "config/GR8E69/eagl_cpt_texture1_lightmap.json": "fe497785f0bf2396accba855baa714e81cb93aae035aa80a443554868ee06561",
+    "config/GR8E69/eagl_cpt_texture1_render.json": "a9628741b95fe77bd8c5fee05a9efc284428d8cbb07c6cde13c06bb9934db922",
+    "config/GR8E69/eagl_cpt_texture1envmap_render.json": "5d4d0165dd9f393226f043c98bd02bebdd27d6f6614e6acfe6e22537a27c3857",
+    "config/GR8E69/eagl_cpt_texture1lightmap_render.json": "4793c2df75adffc92b12449ef81562c8cfa8670c9fec9e3de4eeec74fc75d855",
+    "config/GR8E69/eagl_cpt_texture2.json": "9042ca730bc78d3aef48df8b1c0a45d4e25f94f1648ed1b3af64c7cbf0f69983",
+    "config/GR8E69/eagl_cpt_texture2_env.json": "edcb13ea3b994f85f4835b2f43316d8f48d1177189c50bdaadec47ba8b4aa0de",
+    "config/GR8E69/eagl_cpt_texture2_lightmap.json": "0ed1f4cf1219ca90941271581e49093e8129fa930a3bee0d12b00b7ce18bc30d",
+    "config/GR8E69/eagl_cpt_texture2_render.json": "37c491f3bfe07e173153e331e50e98055f498e98263b2b0fb58cbd8348e796fc",
+    "config/GR8E69/eagl_cpt_texture2envmap_render.json": "ee55e4a7fc47ca1c4f3a4ce67d81128f6b1c224c83ea1587aed9d43844d0f9d2",
+    "config/GR8E69/eagl_cpt_texture2lightmap_render.json": "75176b9115616902181b8ea586dc093ab46d39c866bb0e0a44db5f9b2c01567f",
+    "config/GR8E69/eagl_draw_gouraud.json": "d6d6134f6e6e05988743cf3739cc5f652889575c8ca08f37f772d6bbbb717ca6",
+    "config/GR8E69/eagl_draw_gouraud_render.json": "922e8eacb178a31045b16b85af803637ece90ff364be92b4feb05a23569a85cb",
+    "config/GR8E69/eagl_draw_particle.json": "4d42a77e18547da4b068aec7bd705acb3ee1782058679fced67c573f78c96396",
+    "config/GR8E69/eagl_draw_particle_render.json": "17876c04eab624a7f0a1a1e9bdadb98b6c286d6394bbfccdac9472744b72af64",
+    "config/GR8E69/eagl_draw_texture.json": "8242eb7a2d47e386cddf1d54aa36079a65a49561297a2b06f70248b47e16e63d",
+    "config/GR8E69/eagl_draw_texture_render.json": "59cf851bfa65caced68c8124d5d89e2f233e35e6b96c6b69f711ec99e1c382b3",
+    "config/GR8E69/eagl_matrix4_mult.json": "1f31a2ef814622cc647344339fa01fa2aaabfd996ae6ed7166a553ff49c69e4b",
+    "config/GR8E69/eagl_msh_color_render.json": "499d155f9ed9320affe8715417e80fe74d96935818224a819687c0eda7efd438",
+    "config/GR8E69/eagl_msh_color_slots.json": "eb988343209aa0847a49594ba9091bdf4bd3a1679b133c67fb1c86c01bca7f8c",
+    "config/GR8E69/eagl_msh_falloff_texture1.json": "19e518805d7e2f51c20b1b2f5d0ef3e6ef24a7ebd459f167a1e13a30996dbb46",
+    "config/GR8E69/eagl_msh_falloff_texture1_env.json": "9c455ce220a7a988f63f4daf981c753e3983ebf03f7bb4527d00ac335ba05004",
+    "config/GR8E69/eagl_msh_falloff_texture1_render.json": "02bcb72318a22ceaa922ba15042d0dfc1b18e0f13ddbf54e0fd1708edab82aeb",
+    "config/GR8E69/eagl_msh_falloff_texture1envmap_render.json": "30e1d695774603f94ced99dfc6866b9961a9228e3f1dc572a1cf549de629a350",
+    "config/GR8E69/eagl_msh_falloff_texture2.json": "bf241d8a9709e2148d75771fb9c8b4c1238a1c78c647e2e8fc58428d30490e2c",
+    "config/GR8E69/eagl_msh_falloff_texture2_render.json": "2e9eef1023a9df94785725a45c0dfaf347602a182df8a73e87932963a4d72ed6",
+    "config/GR8E69/eagl_msh_texture1.json": "78385f7514c494ea029048fee67f75bde74da9d326455f825fc4828fd20f3f02",
+    "config/GR8E69/eagl_msh_texture1_env.json": "4487f9773c99dbf891f2278fc2e679dc31beb2e0355b8b450380007b675e7d75",
+    "config/GR8E69/eagl_msh_texture1_lightmap.json": "2261571740f6757abff598bac1982946b92c382ec5b8c8ba5733a743e9d94815",
+    "config/GR8E69/eagl_msh_texture1_render.json": "61db94dca62c842c75a66df23dd1b3ccfe73d1df8435ebee7a4bbadf5db6651a",
+    "config/GR8E69/eagl_msh_texture1envmap_render.json": "b9a55ace36b9b1b8c4260ea7ac2bc0d8a76afa21cb508c95bf03b5909b901baf",
+    "config/GR8E69/eagl_msh_texture1lightmap_render.json": "60ace83bcfa03090789093ed34e4ed0bc1c5c13e1e01b3e66afea959c63ae35d",
+    "config/GR8E69/eagl_msh_texture2.json": "62fea9f55b2c10f794f63e4aaed789362004c6ed965146d1cd5ef98093e3869d",
+    "config/GR8E69/eagl_msh_texture2_env.json": "2c9baeb406d7a6c7510add16ff4f2d7012d05fa35f3730fd4158029fad6a2c5b",
+    "config/GR8E69/eagl_msh_texture2_lightmap.json": "26da289668be174a36f6349d476eeaf39edefa4230ff214ece518ce382b0fb6a",
+    "config/GR8E69/eagl_msh_texture2_render.json": "e536abe68d5d94f2ffc9e57d5599ebfab2ada2421c8a648b78c2b05006a074d8",
+    "config/GR8E69/eagl_msh_texture2envmap_render.json": "7a7231f71a5b05a6742ec1e9a6dc650f105ee4d1706d2937ecc74b1378804b20",
+    "config/GR8E69/eagl_msh_texture2lightmap_render.json": "bf7e70150ee985917bf546dcbb2745890019cd900602ef3c50fac67575791319",
+    "config/GR8E69/eagl_platform_state_strings.json": "4f747362478495c0f08845d7ae27d8c2bbed3ead1c5e4b69ff59d01c4bd60330",
+    "config/GR8E69/eagl_playerskin_render.json": "ad8dab9c4f182dfe5dfba43e8bacbd76cd0ce322830b7041d7c142db4b2d0637",
+    "config/GR8E69/eagl_skin_render.json": "432aea647778628105ab21a4ea8a204d5f0885738adbe40583b9d607a27402ab",
+    "config/GR8E69/eagl_tar.json": "9fd9df1223c8d9469b47ecf22485ba69fa4501eb9dfffe7e7663f624a44b3209",
+    "config/GR8E69/eagl_tevstage.json": "a74c5e045b9d6ba43fd2f567626f3f1d504ea60daa384a0befc3fcfcdfd55c01",
+    "config/GR8E69/eagl_transform_appendmatrix.json": "9dfcd431cdee96bb464f24aa4584d67e8032b9c162951cd377cc486fe049962e",
+    "config/GR8E69/eagl_transform_appendtranslate.json": "9c3d3d33bc88235a97306f178f58aefdb710d565e9eb702b05e03aec12a3cead",
+    "config/GR8E69/eagl_transform_buildmatrix.json": "4cc8f5b6f988ea74602abd9834df238e5b1bc125ae5935cbb064d7c8bfa62d6f",
+    "config/GR8E69/eagl_transform_buildqt.json": "6a58214d7430403ef73a8df64f35b67f85beffe22038d910c046e270ddb60979",
+    "config/GR8E69/eagl_transform_buildsqt.json": "86486ef5ab532e35976b38e5cc7ad84e5260d45445cd4d92152135fb1f803299",
+    "config/GR8E69/eagl_transform_identity.json": "24c46f75eb51b25c78143cffb6faaaf67f1b40a5457fc538f30cb2de49e6ba30",
+    "config/GR8E69/eagl_transform_orthoinverse.json": "2547a003cba6774ac801aa1f65e533a373a49fdf0507d1f95228e01e529dfe1d",
+    "config/GR8E69/eagl_transform_point3.json": "188d2104a77b1bae61954dfab443394ce91ecd8e0c0f9567b26381c41f8ef315",
+    "config/GR8E69/eagl_transform_point4.json": "10092c17e0154c9255eed9e09f7ec49179fe761d8ecd81af6a50dcfb77e39400",
+    "config/GR8E69/eagl_transform_postmult.json": "388703d959468a8379389be03fc20ec9c3e7a4a0578f5fa314ef885152808ae4",
+    "config/GR8E69/eagl_transform_premult.json": "01a10ceca072ed86de4e3adf844e726d71952bb60332194cc4b90fa317379cd2",
+    "config/GR8E69/eagl_transform_prependmatrix.json": "ef1055cb4afffe72787450d7c31cbb8b56e3643cfebc5405cf3902a0ef3e3107",
+    "config/GR8E69/eagl_transform_prependquat.json": "dd53511f6b58fac89b86ff6264c7c1c5a1121bc0b734119a3fc7e0004708e244",
+    "config/GR8E69/eagl_transform_scale.json": "b34e2fe34dbaae639aa8140d8a1635085494e2cd029ff3f514c821c973ca1693",
+    "config/GR8E69/eagl_transform_selftranspose.json": "181dd5a7887cb03827884b18c0517c5001b2f80e15aab48215a745069e27e673",
+    "config/GR8E69/eagl_transform_transpose.json": "7356398a9efed7ee37f2444f8d5a0efc54fea20110ac266bbe8ea3d2c0addaf4",
     "config/GR8E69/ethsec.json": "5305737979b5e234b337720f07434e602f0d0ab8df682c5287ba2349d6438f69",
     "config/GR8E69/fstload.json": "d49e84fe0d1e9af1dd569811065db3c015f596b540ac5988c5078fa2f9c5dd5e",
     "config/GR8E69/lapi.json": "d4d026e1a8397f43593a65d06dadf3a619f11d021cbfd8a7759fec9804f0da35",
@@ -279,7 +348,7 @@
     "config/GR8E69/observer_8014afb0.json": "f9b26abe9fb6748a379448a6a235c2f6e29ef048697fbb0521fb30b035776b24",
     "config/GR8E69/observer_8014b124.json": "9c088a3e0a8ff00a51d6d51784cb141f386531efd850cbb495df626a0bb4e1c6",
     "config/GR8E69/observer_8014b2f4.json": "82a6011424c448bde835aaa75a4dc7d8f172fd166aa92c9dad07b9b0f1a44689",
-    "config/GR8E69/project.json": "cb4e6a048549436405aa39de33331a021cb9768f05666a2c9dcd96fef8a6114a",
+    "config/GR8E69/project.json": "714915418b09124448fe9045232ef255aeb811e7825ebad8fe7e7da073cde000",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/stl_80278d64.json": "04dc314cda8644a93aa797638a2f5a3e946a7bc954506e9bb2be731800b7646a",
     "config/GR8E69/stl_80278ea0.json": "784844808dbfcbe4c0b2a360cdd8a5cd6c1115260192d1fa5e52d4a7ae8c4ebf",
@@ -645,10 +714,16 @@
     "include/dolphin-sdk/libc/string.h": "32c15447719e8675170844ae143c87bbee0646207012c59ffc7352b50c561956",
     "include/dolphin-sdk/libc/wchar.h": "eb9359b3f8c80e980c291b31b08b913739a9fda753a2a5007f8bf2bf3c646439",
     "include/dolphin-sdk/macros.inc": "4e92f656bb511fbb45d66081291371c47ceba7bce9c55f86871116203cf38a46",
+    "include/dolphin-sn/dolphin/types.h": "ca31e0bbb97e93ca4713654367df29578f6392f3acaf40ca68bc1de1c913af93",
     "include/game/CMatrix.h": "607fc3ef6d990ad80e58e68c22e49716dba718837b419444bbe2bef41aedb6ec",
     "include/game/DestructorQueue.h": "434ec17ba96007c8368db0dc62c9454d1650bc2c4d5615a13aad40969412bda8",
+    "include/game/EAGLMaterial.h": "a31ab96ff981e99e263c92a83f6e47d5cad90368c18bcbfdc644b4c0200f3484",
+    "include/game/EAGLTransform.h": "c8b8d8e4397d16d893d6b080bfa5a7a1a9e4fd35bd0d98096d75f3d00e64d433",
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
     "include/game/ObserverTypes.h": "687dfc07deb4adc23a1d0247270d6ab04c34b758bd88846bf5e4b6ef33e7cc1f",
+    "include/game/TARExtension.h": "55579984e5156447af01f5186c2d8eac88852c835990d9342b98bdbfdc5df333",
+    "include/game/TevStage.h": "47aaf3de5425dace0c30e2852896a9494f78ab4a4dcaad6be03d4aa4204d7466",
+    "include/game/TevStageInlines.h": "03b19716c4d88b4eb2f3c74cdf2040ca0bb6c43e842d1eefc2c8bd148a278645",
     "include/game-containers/AlgorithmTypes.h": "a4959e24b9ab8edd66054b63ed6d53516aebc500f71f821e27babbf931b8d51a",
     "include/game-containers/ContainerTypes.h": "9a676b3cfa6794b828f4916a9ce252e00ac4913c5379a1c37bd5e5f1db7c2a2b",
     "include/game-containers/ResourceTypes.h": "6f63038334ba47ea545e0994a455fbd01b1fdb6aa3b6bf155de630e9ede05c68",
@@ -923,6 +998,75 @@
     "src/dolphin/syn/__syn.h": "08b05a8b8e04e272305efa50936912ac395d76d937bd73a403065601e469f8ee",
     "src/dolphin/vi/__vi.h": "22201b234d317ca8d2724210a124ac6ceb9708df13c1b73eae87afab8e625b7b",
     "src/dolphin/vi/vi.c": "a39c975336daa3c42a5a186d68d0c9c39e91aa0df0003b1b052eb767cdf4beed",
+    "src/eagl/eagl_common_state_strings.cpp": "72918d3e2421bd8b7ac96a26c7b966a9c04634744e752c95f5ab92a9d0ce8c33",
+    "src/eagl/eagl_cpt_color.cpp": "aa4f541f224ab98ddd4e58dbe1134876cbad6a34b5bc8b6797d39bf7b666ce7f",
+    "src/eagl/eagl_cpt_color_render.cpp": "f21039dd78d676b5b944e7a8dbb866c233d07091d662e300e3f8dd927bdcc404",
+    "src/eagl/eagl_cpt_falloff_texture1.cpp": "adee81054c8027504712e0d161b895cb4a8eaa60a986e14cbd1d493fea2a003e",
+    "src/eagl/eagl_cpt_falloff_texture1_env.cpp": "c43edb197c60ed7a882d2417af367e0e5800acf93912dfd1c2bb8483c2394f00",
+    "src/eagl/eagl_cpt_falloff_texture1_render.cpp": "b8772f414725c1000ff1f190f5ed7f368bd90cb9cc3c17f3ec34c5e59e8d9602",
+    "src/eagl/eagl_cpt_falloff_texture1envmap_render.cpp": "cea175aee530c38ab12e750aa3479c760983857602ede9cafdc228d6c59433c4",
+    "src/eagl/eagl_cpt_falloff_texture2.cpp": "ade3bbc85b3517f0a5adac562c1903cfffd6aad36e0b7259801fcb556c5cd53e",
+    "src/eagl/eagl_cpt_falloff_texture2_render.cpp": "6428cda15b86f4c650318d2c762a6ede16a62efa167273ce7f0d052927c2347e",
+    "src/eagl/eagl_cpt_texture1.cpp": "0395ab03cd8b119bb9b7642cc79d8f3770315fbd9e38fedc5dacb7018005a42c",
+    "src/eagl/eagl_cpt_texture1_env.cpp": "94fbd23f9353e455cb3914f21a5bbf68b6ecfe124d4c4142d80d5686da54b470",
+    "src/eagl/eagl_cpt_texture1_lightmap.cpp": "7689a4c40106f9d08c3b2d883e77e6fe1cc3ec548f548af5f89d78226a9f13e2",
+    "src/eagl/eagl_cpt_texture1_render.cpp": "3e80c547a8e77cdb73e4336f2383078d22686d9f1754c571b677d1b351469f28",
+    "src/eagl/eagl_cpt_texture1envmap_render.cpp": "65e44902dd59caa803c26ebe3a06101d415b1b9ca600334e437271db446bda83",
+    "src/eagl/eagl_cpt_texture1lightmap_render.cpp": "4e9aab2ffbb9763f2887b229ef585f2b0a645593396d4a1a7f83791fe38d9832",
+    "src/eagl/eagl_cpt_texture2.cpp": "248c5fe87b777797f6f664150a49ce1baabbdf13cc69a8b6385d66851e8063be",
+    "src/eagl/eagl_cpt_texture2_env.cpp": "49b0beb0bbd4424d2b73824acf2df91ddfa145dadd3c39563ee3f7093933e8d7",
+    "src/eagl/eagl_cpt_texture2_lightmap.cpp": "01b813b3dc7bb932f8138872997bec6941e7ff2b31ef64b456c0067194e076e6",
+    "src/eagl/eagl_cpt_texture2_render.cpp": "7f7b4f2e7dfeb0639e10872050420a53f2b827a3b3327dd76fe0d6320270028c",
+    "src/eagl/eagl_cpt_texture2envmap_render.cpp": "5c405595071e1bfa96697c4ec16b3d5ee1ff4d7f9d86aabe6a48959f51600f68",
+    "src/eagl/eagl_cpt_texture2lightmap_render.cpp": "3a07ae59cd0c487300c190157f5c9cac0ebcf02a28eca3158c4b7df05f3eba3c",
+    "src/eagl/eagl_draw_gouraud.cpp": "8e1b93f01602aa697a27e473fc5d456474e4a3e9a25335b2e9d073b2bc09eff0",
+    "src/eagl/eagl_draw_gouraud_render.cpp": "cad62dcc0e4d27903165b03d828ffd9efe37701daba3a4133fe7b184b8011a44",
+    "src/eagl/eagl_draw_particle.cpp": "6b4d5f18b3e12d0c6af89e4d765213a45246032bdaa752236716cf866f3b207d",
+    "src/eagl/eagl_draw_particle_render.cpp": "b93f18368bf6776d45c8818166bc886b780813b7b5a0e14a969b93ae5bebc71c",
+    "src/eagl/eagl_draw_texture.cpp": "b2bf52f9327db0b86a9c5ec5592e5a0d2b00ec2c23280b55cd2d7eae4444c654",
+    "src/eagl/eagl_draw_texture_render.cpp": "a700a497e12be9913f493cb25c300d249341b9e267116e59c3b223597cbcaf8e",
+    "src/eagl/eagl_matrix4_mult.cpp": "fece47ce7b702ed67790a0656edfaa7eaef818703ca93b20f7ae018765959c98",
+    "src/eagl/eagl_msh_color_render.cpp": "5e16f52a8ac7ae53df01763a263e95f48019f01473073f985c8de89787c6dd5e",
+    "src/eagl/eagl_msh_color_slots.cpp": "813df0f596179768a38fbbcd7c698839477f99b2b6b3b60ff133ea9a292ef9a0",
+    "src/eagl/eagl_msh_falloff_texture1.cpp": "32bb799f874d936c169a3f020f27f635557b38b91f806c188ccabc12c1086a19",
+    "src/eagl/eagl_msh_falloff_texture1_env.cpp": "d65003d99f4eadf7e76e897b8c12707fbc8135eab11af4655f8aac2a0d0acd41",
+    "src/eagl/eagl_msh_falloff_texture1_render.cpp": "0cac41e8247a1d76121134e155daca08770df16f83a44a8066bf8c32683636f7",
+    "src/eagl/eagl_msh_falloff_texture1envmap_render.cpp": "77443b2d8a67dba026bb5068e6a4020bf994eac197ebffe75a80f689f21e7131",
+    "src/eagl/eagl_msh_falloff_texture2.cpp": "4046b9407242c35d62e903acb9e723d75bbf718ce7609c622e80f6b39477b3cd",
+    "src/eagl/eagl_msh_falloff_texture2_render.cpp": "e1fe4b5e0ec4f1c7467be0e51c28148a4eeb4dc9ed0a77dd91f05e7fee01fd23",
+    "src/eagl/eagl_msh_texture1.cpp": "482bb6c4b6a09775e205c780b4ea50c3eec734401380d402c5fd063b4bde6de2",
+    "src/eagl/eagl_msh_texture1_env.cpp": "bca43f5979a9e507a4b5ab6279a4cbd18a760077ff64c9e4a54255b92f13fa4b",
+    "src/eagl/eagl_msh_texture1_lightmap.cpp": "caaa22908291621cf8bcef06839349db80520c53bc093e411c0723de21b41281",
+    "src/eagl/eagl_msh_texture1_render.cpp": "c9bda8b71ea1d95c24a9f78a7be13b1fa702717c79127be6725378b48a7c5c04",
+    "src/eagl/eagl_msh_texture1envmap_render.cpp": "af42950398931a24e540d353c0bdd736557310db468c59bf07d54ced8418f2b6",
+    "src/eagl/eagl_msh_texture1lightmap_render.cpp": "58f8ca291ec2e8fd9c2c7febc3e9d6f6d4512a186d585b6c0d73c553488c60e4",
+    "src/eagl/eagl_msh_texture2.cpp": "3470a5a86cf2c622f76b597a16b3c1756a56e0e81db708bb62760e659725fe8a",
+    "src/eagl/eagl_msh_texture2_env.cpp": "bdb4e6b8eff3c9b3340f1cbe0ab021c9e8fce859df7d229ea2f94a2aa13ba5d2",
+    "src/eagl/eagl_msh_texture2_lightmap.cpp": "d5089715f07f529cc9be3f1dba980cc9347e952482ebbe79a5ed5974a9555a09",
+    "src/eagl/eagl_msh_texture2_render.cpp": "ade1c5c060bdb863bf7dab9d56994b85b3f1fcdb03b730d175018485f21dead6",
+    "src/eagl/eagl_msh_texture2envmap_render.cpp": "60bc40eee92801beb621eb2720f808a23ad6a48348d2a3dd4c10db3ad27b10f7",
+    "src/eagl/eagl_msh_texture2lightmap_render.cpp": "aaa92f4029afeb7ac480e60cd84af22cebfb6d0f9d8a1a0985a3ba8c4f2461e0",
+    "src/eagl/eagl_platform_state_strings.cpp": "968c7b054441dea63a97b29d5526a27e2bc0d580ffc51412dadf5e435e915621",
+    "src/eagl/eagl_playerskin_render.cpp": "f36850f9ffaaa19daca4e5d0749e0a66c2d207181b4cafa4abc3f614ccb6ad93",
+    "src/eagl/eagl_skin_render.cpp": "56a61b4fbaa01877123d67ed6d532383cfcdf115d459e208909a949ae0d03003",
+    "src/eagl/eagl_tar.cpp": "806d3163662894c3e220a6d94c7a2a4963d69170c49e09389fde0374a5298ee9",
+    "src/eagl/eagl_transform_appendmatrix.cpp": "86fd468618de9ac98a941d9136f6eb5a612b31c24e6b9c0a852e68ff82658e33",
+    "src/eagl/eagl_transform_appendtranslate.cpp": "21ec2ec9e8f9ecd4bea0f3b8543c71a5f489e10038e74bca782f9b12b26ffefd",
+    "src/eagl/eagl_transform_buildmatrix.cpp": "521ce728bce2f2cc0a468ec5ebe82138ac131b8e10fdc6ebb7fbb4f50cc27c91",
+    "src/eagl/eagl_transform_buildqt.cpp": "a1a7f17cc3191ff467f62e06bf7da8d8a0b4cc422a69fb6b5a76c7446f57c410",
+    "src/eagl/eagl_transform_buildsqt.cpp": "53d3c689b3fa8f9877d4fe92f62da8ed171bde097745e0b715c5efe280680696",
+    "src/eagl/eagl_transform_identity.cpp": "8175112acc6293a4a6ef896f910ce6dc24fc377e6903a186c354258368e80039",
+    "src/eagl/eagl_transform_orthoinverse.cpp": "ddeb95f1eb300243c263e2e2fb6a39f1cd2f5e49963341f71e1630b7f92f7836",
+    "src/eagl/eagl_transform_point3.cpp": "f96dfbb752ff75f03a7e4843c7cb72a5fdcb4a57278591c7f3a5bb6da054dea1",
+    "src/eagl/eagl_transform_point4.cpp": "5ecb7f6f27b6d9cd0e5087289c888cf50d3bb12a475f3e65038c0329a93b0719",
+    "src/eagl/eagl_transform_postmult.cpp": "2adfdab36b90963bc62f6261ec31c11a6065eaeeb42fde22255fb94b376e1381",
+    "src/eagl/eagl_transform_premult.cpp": "3e28ff779ac96058fbcffb7e8c9ab611efb896bb0c1ba230ec1f5dde8bf9a87b",
+    "src/eagl/eagl_transform_prependmatrix.cpp": "a95b89578fff9403d07d710872f52aff1705f4f0a4cf8346c2cc67fa3ff75bf1",
+    "src/eagl/eagl_transform_prependquat.cpp": "1bd74c96bdf9454e12e3a593def7201ba2c2e6a5fa3dd497ae92c00cb0ce4e5d",
+    "src/eagl/eagl_transform_scale.cpp": "688749284596a538c7f03f78e31e03336203ec00abe08316a7d5a4586826e56e",
+    "src/eagl/eagl_transform_selftranspose.cpp": "d0aa21616ebce15b9b8ae08886d6079abe13b0deff02bff53b2dc5e443aaedf9",
+    "src/eagl/eagl_transform_transpose.cpp": "bbc27b256292455e31ba9a412985faa7af1d7abe26061bfaf1c6e80949506ae3",
+    "src/eagl/tevstage.cpp": "be6a22657597c84c148c7e39de71003fa36d9ba3549ab7370106c8f86e9e51c8",
     "src/game/string_80277f18.cpp": "b6c79191f3a19d54855216cdbc6cf512f4fa474cc60d95837b45a4acec64016c",
     "src/libgcc/COPYING": "dcc100d4161cc0b7177545ab6e47216f84857cda3843847c792a25289852dcaa",
     "src/libgcc/NOTICE": "716534e14c0b03a99df81151630430eb7611a3be6c7aef72d163d7755b25e328",
@@ -13178,6 +13322,1248 @@
       "discarded_functions": [],
       "object_sha256": "8ad501c4c18ad6aa49afcbcda5cfa4116d8845e5f8979a0753b6514af069d58b",
       "linked_sha256": "d2778e173ad998570dc65ce85b2efe563765b6b0a140c657b43c9ee6104ed348"
+    },
+    {
+      "id": "eagl_tevstage",
+      "category": "reconstructed_game",
+      "functions": 15,
+      "code_bytes": 1744,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "5c23661e9f9ab4c34ba2ac1a6fd3dbee9d0c416c53f71c95006f9ca9ca857f7c",
+      "linked_sha256": "896e271ae61f75a5f8aae3f43591a15a424e83fe847ac69acbc9b8bfc799edbe"
+    },
+    {
+      "id": "eagl_msh_color_slots",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1776,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c009ab1a5b00e8d7cccb0d0d0c6d8816f609b5fb1185a8b76a144674e2932f90",
+      "linked_sha256": "b8d1e6809bbed9293332117b65066630b794b1b4d0755c0bd4ba93c80bd739e9"
+    },
+    {
+      "id": "eagl_cpt_color",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1828,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "7220c89c1c16d45295a16a3e5e6fd89e3dc7ee9b00508a5332ae6c94ab93f1dd",
+      "linked_sha256": "be86299a9954c2e815f938f9ee3ff7b371806171b887611934725c772f064d10"
+    },
+    {
+      "id": "eagl_msh_texture1",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2016,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "5fa068ecdd6955cab140ee8128e20206be0b05407f6f1d890594f7f5ddda48bc",
+      "linked_sha256": "d22536fa2d9ee3e086d167bd4af698228d3abc77196361f9cf46105c8af37e42"
+    },
+    {
+      "id": "eagl_cpt_texture1",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2068,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "541f7699339ef331fec851b97ec9da30bf6845a71e775bedf5a902d5c78f27cc",
+      "linked_sha256": "4fb0f2d290391078be9cd099693124ca0f46d5032946c4d2d99f01efb16c2134"
+    },
+    {
+      "id": "eagl_msh_texture1_env",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2016,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "a57cdd1809146ad6e84ec994d4ba7dc01d6872bf25e6fe73b9eaf2f1247450a0",
+      "linked_sha256": "392b7c61cffe530a7612e119b18de659cfe749fbfa8a592864cf0d79b96cee3b"
+    },
+    {
+      "id": "eagl_msh_texture2_env",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2016,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "02b3a93b095a9bbfe3b3c41cc6f601c910c3383fd24ce698711ac3b9622ff6fa",
+      "linked_sha256": "595ee42e767751c81ade7fe80a18ee925dc1e192f0fb2c00a50d7f9e53b4965e"
+    },
+    {
+      "id": "eagl_msh_falloff_texture1_env",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2016,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "0899d3249137d87224b7845d2d84d877400b6515cf24baa3eff749559f99f31c",
+      "linked_sha256": "6e75d51779fd3b93388ff57e479f0069ea2d471fccca8c2a20e262c1570471f0"
+    },
+    {
+      "id": "eagl_cpt_falloff_texture1_env",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2068,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "de94c860c81aba86d384f934213a1d04a83c7fd1d0d1686180dfaaca7a085093",
+      "linked_sha256": "88b80c61945ca3a04e6b0d21fdf60c1078ec2ad267d0646236399fc7c18017f3"
+    },
+    {
+      "id": "eagl_msh_texture1_lightmap",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2488,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f70ce7e6bcb153683e07f06ba4099de030e657de6100b9c44bd8cf3c38e069b2",
+      "linked_sha256": "35ccbc7586e9a810e0491d318aa7b35ed50daae5fd9d0784238bbf7e7d359884"
+    },
+    {
+      "id": "eagl_cpt_texture1_lightmap",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2540,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "59d65f133e541fd05f6f7058962e7ca0e869e7a68678255d31bf24612ebc7471",
+      "linked_sha256": "95092b71a17e08f1afeaa6e99be6ec413cbb3fb21b217df546b81f939ffe8da9"
+    },
+    {
+      "id": "eagl_msh_texture2",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2488,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "8c167395c15a10c66a300a716cc76b03320716d93f89c1c0eaae77de419f4986",
+      "linked_sha256": "c99a32fa7c03adc88afb7f653eda569afb1f880e73d7b0a1d5fdc25bd75248f4"
+    },
+    {
+      "id": "eagl_cpt_texture2",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2540,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "d626f5b6c56801959c7fc4510dc9d1f1b659ba8c37e1c8a91d397ee74b9adab6",
+      "linked_sha256": "121ad0407a4aac1bdc814f0321e5772b814f3f8f7297df96b4b6bc9490f8dcfb"
+    },
+    {
+      "id": "eagl_tar",
+      "category": "reconstructed_game",
+      "functions": 3,
+      "code_bytes": 228,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "2802a3e1635cbc747dbb91cc1dd2a5dace439674388274eb20ca3706998ffc20",
+      "linked_sha256": "94bf8544de83e3b813da21793889735bb61ee99075e39cec0c1a0c879ead1d73"
+    },
+    {
+      "id": "eagl_transform_transpose",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 260,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "67960976aea80cda70374661219183a5bde27ce6cc950e90ba1b79e7dc975e91",
+      "linked_sha256": "c5a6ec11e624b7b417dcd5f0e98a0b3a871610654094ffd940a00a304eb0621f"
+    },
+    {
+      "id": "eagl_msh_texture2_lightmap",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 3244,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "6460bbbb72f0485392c19da7628c5c2545948e7260cb4b7b3906214d09168a76",
+      "linked_sha256": "361ec836e16fadabf7b434c9e0e50fddffa4fe865be0214eebe4f6326ca1ac83"
+    },
+    {
+      "id": "eagl_cpt_texture2_lightmap",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 3296,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c7d17b0bccf416efd757c7edac56f47268344230304b80ff1324f0c316be653e",
+      "linked_sha256": "267f560602a4f9754a1af29f299041bda752e5343746089a5c8aa31d01e69892"
+    },
+    {
+      "id": "eagl_msh_falloff_texture1",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 5352,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "37bcfad316c9632a8bc2021b79934d0b4ebc718f0cc8e24f09efa9600c0f215d",
+      "linked_sha256": "d7058c3a8a0fc3de67ab637fc4dad48c9b8dd52a2636cf1486e0edd0bbabb5f4"
+    },
+    {
+      "id": "eagl_cpt_falloff_texture1",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 5456,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "7d96c0d69ab55b7effd9b13aeba7b6e18ba6a65f3e3d7062063d2d11f0cbe50f",
+      "linked_sha256": "d1714c8f58427342ba96deb9d62c5e776c417a384c2442036eb5f33d0c7e0ecb"
+    },
+    {
+      "id": "eagl_msh_falloff_texture2",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 6248,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "fc67c74916375b6b736d3ead44411e29d7ba200919b783df656eed097716ac7c",
+      "linked_sha256": "6ed9b1850961da882c7015bc32f63f8cddb06d882d10e604be7b8a7d811d4e5f"
+    },
+    {
+      "id": "eagl_cpt_falloff_texture2",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 6352,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "32494341fad64043315942e2772bbcffc6c9050ac542bf8ca6a7864ba8d4b563",
+      "linked_sha256": "3ec603322bcde2f73f5f71364dc6260b23f6493e2b57668fff12a021dc03ca88"
+    },
+    {
+      "id": "eagl_cpt_color_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 712,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "5f92b0908236e8d59b153a41dc88161a395f90ca73554c04a37643836ba95f10",
+      "linked_sha256": "d4a67315d0fa5a3f699d5df041f9a6e3e8702c6d9f7002708e374cb97df84871"
+    },
+    {
+      "id": "eagl_cpt_texture1_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 956,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "90e07ffdc4e2eecc88986f1b749de8e3f7fb6349a5b3aeadd180f85e3d0089eb",
+      "linked_sha256": "b073171b257b15910fdc789d5c072e1b9caa4118d35a3ac5f5a6ee5dc64e002c"
+    },
+    {
+      "id": "eagl_cpt_texture1lightmap_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1100,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "faee1f8f04d55111991ec83c3c3baa0ff8f72b55f86bdf7e76d4e65e4d303fec",
+      "linked_sha256": "6d91b8c9ad47b7ac01655d7fdf6f262f329167a5c863d3fa4beef21fae33852f"
+    },
+    {
+      "id": "eagl_cpt_texture1envmap_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 956,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "de15da46261ecb2fd42bba817cd30a3e1db16c089fb9f08739705082a5422b89",
+      "linked_sha256": "d04f35ef507a23ca6966c555c77e14a1824972e071192be231b25e559198c104"
+    },
+    {
+      "id": "eagl_cpt_texture2_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1100,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "126d505f5df213665cdccc93cf5399646acdce6dfa9dff82526522edf2b667d5",
+      "linked_sha256": "78a4ae8d6fa5fc03c364138e8a63af05c4c77520016643043ab5468dbd178a85"
+    },
+    {
+      "id": "eagl_cpt_texture2lightmap_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1236,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "d3c0a6be9566c42aae7557dbcf79945e1a7e8501747c7dc42baa4e11f214579c",
+      "linked_sha256": "e77a1d5ca030561da4852bd8357dd12ba0a743a369b27f559ecd2e4ba845f82f"
+    },
+    {
+      "id": "eagl_cpt_texture2envmap_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1100,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "48108a28cab6a03dd701cd6279400bf3940a21f700c5a6de5ad1ee9953dbca8a",
+      "linked_sha256": "a3cd5528682798b75c752dfb111b2c8351087bc964e5557156318564eaae6c7d"
+    },
+    {
+      "id": "eagl_cpt_falloff_texture1_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 956,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "814edc1dd8fbe0f5dc6b64e04f2f760e0cf34bee894480c48453572623241b81",
+      "linked_sha256": "b722853fe073352d86890c8dd8087d07ab59db19640fd585e8fe9b5100e50035"
+    },
+    {
+      "id": "eagl_cpt_falloff_texture2_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1100,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "e96cef5aea203dbc46ac08c5af0f6d2102aa55ef303fb5715b1e4bfb93ead587",
+      "linked_sha256": "35b1804e9e77332c037e6fb9001943a3c5a8a0d6372c2b8977fb19b381bb5349"
+    },
+    {
+      "id": "eagl_cpt_falloff_texture1envmap_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 956,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "1c0d91fe72f25df2e95f1d86369eb317f55968134b4a74b08803c64cc2ba1124",
+      "linked_sha256": "64170ab43abb219a6f6924473ceb8b321ae602c0033945fb4252d3e6104d93b7"
+    },
+    {
+      "id": "eagl_msh_color_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 720,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "01e460887182a579037de453c585bd80f8495d6d76a81ef8caec84e47a30f66b",
+      "linked_sha256": "54225f8832741d2880cdc385a9010c59abc254b9d78468ef870c4acdb2dd0c6f"
+    },
+    {
+      "id": "eagl_msh_texture1_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 964,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "331e48d20fde9212a3e96cc3d2b7e3e47c8a4c4f0a78234a0e04adcde9aaa5f6",
+      "linked_sha256": "7e31f014bb237bc4573327baaac43c607b0cbf20faee30cf583caecd780aa08c"
+    },
+    {
+      "id": "eagl_msh_texture1lightmap_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1108,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "8443c486a555cea1828bcb86b67dede94ac01c28b14b829ad0cb4fddce9b8b9b",
+      "linked_sha256": "fdd2fdb3c309884eb8ae9beffe90954678e7764c87476342feb6017c84c9997d"
+    },
+    {
+      "id": "eagl_msh_texture2_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1108,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b5a71ce4b6a681f4b2955062edcb941b2a4f7e512ae1122a6b6039cc826fafe9",
+      "linked_sha256": "e969ea81a6506953dd07b43ab8a038af68ece1806f2e258fb05b05c6d61c7e96"
+    },
+    {
+      "id": "eagl_msh_texture2lightmap_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1244,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "88be9e9af512a91065531e0541d64edc058d7f9320db1b8d52864c03434d1d93",
+      "linked_sha256": "c6791eac21d55584e5563a0f114c56c326d14e8d8c7eabd9c9ef684eac72f44c"
+    },
+    {
+      "id": "eagl_msh_texture1envmap_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 964,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "2987204e58d1b11d7cdb9dec6519254181cf35b0fe2a4aa9833a3a3d583bb74a",
+      "linked_sha256": "bfc039a0df1722ca2b30c53d6b5ad2a8f4cebdd77ae908c500ef6ef0fae7ab0d"
+    },
+    {
+      "id": "eagl_msh_texture2envmap_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 964,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "26fbbd42d7f72c7d94ac380a04a994a84563014253843ab459e269dd815df407",
+      "linked_sha256": "538c46b3ada8e4a70691d49d6a3ec7947ff4df354fb26826ce0cbe8503a4f961"
+    },
+    {
+      "id": "eagl_msh_falloff_texture1_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 964,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "27720d41c53ef4de1ac2f477faf2a60c834eb356aab22d66b4dd497b776d50a0",
+      "linked_sha256": "8bb52319f49d7c27b670132cf3d32f3b9fa467afd9ba60417ac440ccca809ff9"
+    },
+    {
+      "id": "eagl_msh_falloff_texture2_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1108,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "dc0a947cf595268dc649218b277e6fdcf18db681ff0fa6f7a8914c0a2331f743",
+      "linked_sha256": "02ac04222296081447905c6f12ef53e9447b2955c6cbed5d5292f2a7c0b84677"
+    },
+    {
+      "id": "eagl_msh_falloff_texture1envmap_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 964,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "647b77dde5c2c94e5f23c1b52a6c07d7a9970429b0cf484b003fd6234f3506a5",
+      "linked_sha256": "4c5197ad5cec3909dcc34f402e4facb048c802a8f61c5a8329d0bdf979b552bb"
+    },
+    {
+      "id": "eagl_cpt_texture1_env",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2668,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "dc11e4e930510a8ee47fd6ffe81f43f04fdcdddb5bc4a9ccf7b0ac2d3bb25047",
+      "linked_sha256": "51384ba7dcb8a2275a23264bf8f7eca50c1db486343e90ef9e811a3cf6863382"
+    },
+    {
+      "id": "eagl_cpt_texture2_env",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2272,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "ce94caa445aa8ea9d544cabeb5efa038da949ad9c2e05f400dcfcc364d50e975",
+      "linked_sha256": "4f4f7959fe6517396a24ddbc0d41511ea4519a3d007f2457db110c0b9265162d"
+    },
+    {
+      "id": "eagl_platform_state_strings",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 2464,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "7f773452824372b754d96b18505ff5284a71eba880ae07bebe01505066f8fc03",
+      "linked_sha256": "df00ee2b62a64e90ae13340a536850cd3459217ddca0fa83dda87aaf25360fb2"
+    },
+    {
+      "id": "eagl_common_state_strings",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1632,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "0417aefe6f1d1ddf0d225e89dd67ea5a230cda275f70142f935218d4b172b1f6",
+      "linked_sha256": "eaa2fecdfe7d720a0aca2dfbdc072f5aa01fe52a8a722d9763874d73f4e46178"
+    },
+    {
+      "id": "eagl_transform_identity",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 84,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "3f2649da067fcb96a5f8c6bb69bae648ccb9bdb877e53f055cdfe69c54d1d947",
+      "linked_sha256": "e927177a33401fe4e94043e46290c92e9277810478419b6460093968cf6e9ee8"
+    },
+    {
+      "id": "eagl_transform_scale",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 76,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "345611036589ecdcd72729a32893ea88246f3866b94c23b74e228a78da11dfeb",
+      "linked_sha256": "400a3edc0bf06666ec7ef16f4e582f7f98cda4248fcca6b9da7f05efebb7bf28"
+    },
+    {
+      "id": "eagl_matrix4_mult",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 836,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "5911008cfb98871badd8e51307765847a163d461eaa089dd5af66225eb7ca64f",
+      "linked_sha256": "16ca82c9ce8abaed615af5dc829fea796fef70a61a4b39ad262e4e62674023d2"
+    },
+    {
+      "id": "eagl_transform_postmult",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 64,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "3ee432d9261b08d29165fd873b57a7af2d80da25f4325ad75312968124e04307",
+      "linked_sha256": "5d5b0b1f5596fc269c8fdacb9833d8a7c733a23e91bc9f73490abe48db8259a7"
+    },
+    {
+      "id": "eagl_transform_premult",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 72,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b8f05117f454ec3a4a940c8f2a652b0d32582ec2f6c60d5d17578496b45a0bba",
+      "linked_sha256": "cc6e6855bf0077944b355ac887ee2b20d9297fabb7d11b953ab08a923e6bb394"
+    },
+    {
+      "id": "eagl_transform_buildmatrix",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 104,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "ea7c90a9be1ba81c5b5a7656d56b30c6a3331741fb06d8240008bef086bf9071",
+      "linked_sha256": "e7d509a7da2b1678081aca359016f8153474affaa1ccdcf3f44c647f5dc90969"
+    },
+    {
+      "id": "eagl_transform_prependmatrix",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 144,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "e2f4e578a7dbf6210a3020bcdd80b9d640118b0e43a93ec5cb2ed337c94ba1de",
+      "linked_sha256": "1f5bc7a0d637d17b71031aa2a6cfdc3ba61f70615556c9fb920a4c373b8790ee"
+    },
+    {
+      "id": "eagl_transform_point3",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 316,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "68a192681c6a1467cdfc459d8c0648dd4b6a4edfa2b300621fbfad8ef6cb0d4e",
+      "linked_sha256": "6c44ff3b174ef26cf90119898670fb40d85d333a4919fe2f45e638f5348875b3"
+    },
+    {
+      "id": "eagl_transform_point4",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 428,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "7df4165e15b7d8be6ffcda1a65177536f349b9327de7bcbe4b1299f0d6eb2381",
+      "linked_sha256": "1e1286c1461f35a72b58ee848adf86a9bbccdfe9b4aca5d166887f114717c9c6"
+    },
+    {
+      "id": "eagl_transform_appendmatrix",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 184,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "8aa31b7d0ab2cf45a58293be6cdd2c19a7e622c3c38cad92a355cb19231d2027",
+      "linked_sha256": "c7417e3c97538c253b6bacf376c83aec9b06ba97dc0489de85730a65a11cb2c3"
+    },
+    {
+      "id": "eagl_transform_appendtranslate",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 152,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "6a2e19a9973d6a1cc8ab5464dd333dff5036f91930087c1931d4b289f1e42632",
+      "linked_sha256": "05d38fd18ac489d09c2b665ae579477239a9439e05bc418ff86e1251bf508457"
+    },
+    {
+      "id": "eagl_transform_orthoinverse",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 148,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "4175c7a0f705452ed9f1995d41c07ba7ce4b5ae8ccef80ded57d307e50b4757c",
+      "linked_sha256": "37f485ef3d5129e4f96118e435ec6e427a47cb5d82174b60a6f85848892f9378"
+    },
+    {
+      "id": "eagl_draw_gouraud",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1840,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "1d5f2163e9c6b81f1a093c98f6e34afbd6e5199025cda2533581a564dd7e87fa",
+      "linked_sha256": "2ea90ad3a9c8ba8d3a0be7468a25133d53a4ec14c659f0d425ea11e5eae53621"
+    },
+    {
+      "id": "eagl_draw_texture",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1768,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c1ae7de40f1a009b1f3e1dc1af6cbeda0277aabca2e4968746f57f39b055468c",
+      "linked_sha256": "784d4ee06db72fe743ac631dd3f655c71dfb64a7a467fda4a4b5f02ed5455c2e"
+    },
+    {
+      "id": "eagl_draw_particle",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 1716,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "e83434cf0397521b8d3924a5bc739d5c0e0c217b1654339549b407a4ea9adf89",
+      "linked_sha256": "9656a258780e07a96d915487b7fd0bf1d941885d9f0aeacabaed50edd452b870"
+    },
+    {
+      "id": "eagl_draw_gouraud_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 664,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "d731bbe8789d35547cc8022b65083e95df06fe8c4ae73d6701fee3e09a47590d",
+      "linked_sha256": "5a644d2c7f0aec8191bb4c32da8bb47da258f9b2c3633375aab45fce1e24dd9f"
+    },
+    {
+      "id": "eagl_draw_texture_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 796,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f62e25ffd19cedb1eff5e13e6fb59b64ebf2d06e504253984ca1d5a9ae4e4f61",
+      "linked_sha256": "c690687ebda772990490963f58e34ee10de1589e83d561b4e40dd8b17e924e3e"
+    },
+    {
+      "id": "eagl_draw_particle_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 796,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "41f60f9c1561bb2631b87af8fdbed4842202b9563078bba9c8827fd769846dba",
+      "linked_sha256": "f672499c36cb3ae777deedabd110bd3093908c1f191efef10610cf0e5649d367"
+    },
+    {
+      "id": "eagl_skin_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 808,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "47e88dfb48c3104c35d01c6c82197d957f7c99ff0d37f53c502fa6b374934b32",
+      "linked_sha256": "6c4384d89b8e268aa100c6da0693eb69143db5e228055ec370e981132e26ba80"
+    },
+    {
+      "id": "eagl_playerskin_render",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 808,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "dbf9fa50f0f291b70eabeea8f3be6120f8a8d8d3a0400a6657824df058a85abc",
+      "linked_sha256": "094998bd84e791e259a9a3631aa6e3e7adc64a64259af50477cdbf5898b49ad6"
+    },
+    {
+      "id": "eagl_transform_selftranspose",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 100,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "cc029a2e636c6431d064060a73132dfbb94cfd72b1ec6b3cfc4c20cdf3e5b258",
+      "linked_sha256": "f740cf178281fc4aa45bc84b5e66f3772ee4ada820d6178227af87d32f4d9817"
+    },
+    {
+      "id": "eagl_transform_buildqt",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 196,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "33a1a4bba0f6935eb4c1e523757b7ca4575a1341c65e9d6c6b8a0139e0ec5bd6",
+      "linked_sha256": "b101a538ebe901c0860b2df981b4246f513b8199ae2d95951d672951ea615cc1"
+    },
+    {
+      "id": "eagl_transform_buildsqt",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 264,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "54fc575a9f45ae4afb066fb29cc26b4645815d4b9ddbc5e599e2e2e9db95b812",
+      "linked_sha256": "7cd91935dfc65a0431270c4255c83f6e3b56eeb613f8df675f10bd998c7362f2"
+    },
+    {
+      "id": "eagl_transform_prependquat",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 60,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "241d31d0519a2ebed6bbb55baf8b5ea218f461b63e985b265c7a2b4dfcd15a41",
+      "linked_sha256": "8ce7f7bdeaf74aea3859aec001d7393edc8c41cef02acc8ebf485f1fc97a384e"
     }
   ],
   "code_map": {
@@ -59084,24 +60470,10 @@
         "file_name": "Moh3_Cpt_Color.cpp",
         "ranges": [
           {
-            "address": "0x801b57e0",
-            "size": 1828,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Cpt_Color__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801b5f04",
             "size": 2388,
             "kind": "function",
             "name": "CompBlock004Moh3_Cpt_Color__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801b6858",
-            "size": 712,
-            "kind": "function",
-            "name": "RenderMoh3_Cpt_Color__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59130,24 +60502,10 @@
         "file_name": "Moh3_Cpt_Texture1.cpp",
         "ranges": [
           {
-            "address": "0x801b6bac",
-            "size": 2068,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Cpt_Texture1__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801b73c0",
             "size": 2612,
             "kind": "function",
             "name": "CompBlock004Moh3_Cpt_Texture1__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801b7df4",
-            "size": 956,
-            "kind": "function",
-            "name": "RenderMoh3_Cpt_Texture1__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59176,24 +60534,10 @@
         "file_name": "Moh3_Cpt_Texture1Lightmap.cpp",
         "ranges": [
           {
-            "address": "0x801b823c",
-            "size": 2540,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Cpt_Texture1Lightmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801b8c28",
             "size": 3084,
             "kind": "function",
             "name": "CompBlock004Moh3_Cpt_Texture1Lightmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801b9834",
-            "size": 1100,
-            "kind": "function",
-            "name": "RenderMoh3_Cpt_Texture1Lightmap__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59222,24 +60566,10 @@
         "file_name": "Moh3_Cpt_Texture1Envmap.cpp",
         "ranges": [
           {
-            "address": "0x801b9d0c",
-            "size": 2668,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Cpt_Texture1Envmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801ba778",
             "size": 3200,
             "kind": "function",
             "name": "CompBlock004Moh3_Cpt_Texture1Envmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801bb3f8",
-            "size": 956,
-            "kind": "function",
-            "name": "RenderMoh3_Cpt_Texture1Envmap__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59268,24 +60598,10 @@
         "file_name": "Moh3_Cpt_Texture2.cpp",
         "ranges": [
           {
-            "address": "0x801bb840",
-            "size": 2540,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Cpt_Texture2__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801bc22c",
             "size": 3084,
             "kind": "function",
             "name": "CompBlock004Moh3_Cpt_Texture2__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801bce38",
-            "size": 1100,
-            "kind": "function",
-            "name": "RenderMoh3_Cpt_Texture2__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59314,24 +60630,10 @@
         "file_name": "Moh3_Cpt_Texture2Lightmap.cpp",
         "ranges": [
           {
-            "address": "0x801bd310",
-            "size": 3296,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Cpt_Texture2Lightmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801bdff0",
             "size": 3840,
             "kind": "function",
             "name": "CompBlock004Moh3_Cpt_Texture2Lightmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801beef0",
-            "size": 1236,
-            "kind": "function",
-            "name": "RenderMoh3_Cpt_Texture2Lightmap__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59360,24 +60662,10 @@
         "file_name": "Moh3_Cpt_Texture2Envmap.cpp",
         "ranges": [
           {
-            "address": "0x801bf450",
-            "size": 2272,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Cpt_Texture2Envmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801bfd30",
             "size": 2816,
             "kind": "function",
             "name": "CompBlock004Moh3_Cpt_Texture2Envmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801c0830",
-            "size": 1100,
-            "kind": "function",
-            "name": "RenderMoh3_Cpt_Texture2Envmap__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59406,27 +60694,6 @@
         "file_name": "Moh3_Cpt_Falloff_Texture1.cpp",
         "ranges": [
           {
-            "address": "0x801c0d08",
-            "size": 2728,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Cpt_Falloff_Texture1__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801c17b0",
-            "size": 2728,
-            "kind": "function",
-            "name": "CompBlock004Moh3_Cpt_Falloff_Texture1__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801c2258",
-            "size": 956,
-            "kind": "function",
-            "name": "RenderMoh3_Cpt_Falloff_Texture1__FPQ24EAGL7GeoPrim",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801c2614",
             "size": 96,
             "kind": "function",
@@ -59451,27 +60718,6 @@
         "file_record": 374,
         "file_name": "Moh3_Cpt_Falloff_Texture2.cpp",
         "ranges": [
-          {
-            "address": "0x801c26a0",
-            "size": 3176,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Cpt_Falloff_Texture2__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801c3308",
-            "size": 3176,
-            "kind": "function",
-            "name": "CompBlock004Moh3_Cpt_Falloff_Texture2__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801c3f70",
-            "size": 1100,
-            "kind": "function",
-            "name": "RenderMoh3_Cpt_Falloff_Texture2__FPQ24EAGL7GeoPrim",
-            "evidence": "local-file-symbol"
-          },
           {
             "address": "0x801c43bc",
             "size": 96,
@@ -59498,24 +60744,10 @@
         "file_name": "Moh3_Cpt_Falloff_Texture1Envmap.cpp",
         "ranges": [
           {
-            "address": "0x801c4448",
-            "size": 2068,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Cpt_Falloff_Texture1Envmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801c4c5c",
             "size": 2612,
             "kind": "function",
             "name": "CompBlock004Moh3_Cpt_Falloff_Texture1Envmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801c5690",
-            "size": 956,
-            "kind": "function",
-            "name": "RenderMoh3_Cpt_Falloff_Texture1Envmap__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59544,24 +60776,10 @@
         "file_name": "Moh3_Msh_Color.cpp",
         "ranges": [
           {
-            "address": "0x801c5ad8",
-            "size": 1776,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Msh_Color__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801c61c8",
             "size": 2944,
             "kind": "function",
             "name": "CompBlock004Moh3_Msh_Color__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801c6d48",
-            "size": 720,
-            "kind": "function",
-            "name": "RenderMoh3_Msh_Color__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59590,24 +60808,10 @@
         "file_name": "Moh3_Msh_Texture1.cpp",
         "ranges": [
           {
-            "address": "0x801c70a4",
-            "size": 2016,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Msh_Texture1__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801c7884",
             "size": 3164,
             "kind": "function",
             "name": "CompBlock004Moh3_Msh_Texture1__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801c84e0",
-            "size": 964,
-            "kind": "function",
-            "name": "RenderMoh3_Msh_Texture1__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59636,24 +60840,10 @@
         "file_name": "Moh3_Msh_Texture1Lightmap.cpp",
         "ranges": [
           {
-            "address": "0x801c8930",
-            "size": 2488,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Msh_Texture1Lightmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801c92e8",
             "size": 3636,
             "kind": "function",
             "name": "CompBlock004Moh3_Msh_Texture1Lightmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801ca11c",
-            "size": 1108,
-            "kind": "function",
-            "name": "RenderMoh3_Msh_Texture1Lightmap__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59682,24 +60872,10 @@
         "file_name": "Moh3_Msh_Texture2.cpp",
         "ranges": [
           {
-            "address": "0x801ca5fc",
-            "size": 2488,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Msh_Texture2__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801cafb4",
             "size": 3636,
             "kind": "function",
             "name": "CompBlock004Moh3_Msh_Texture2__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801cbde8",
-            "size": 1108,
-            "kind": "function",
-            "name": "RenderMoh3_Msh_Texture2__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59728,24 +60904,10 @@
         "file_name": "Moh3_Msh_Texture2Lightmap.cpp",
         "ranges": [
           {
-            "address": "0x801cc2c8",
-            "size": 3244,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Msh_Texture2Lightmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801ccf74",
             "size": 4392,
             "kind": "function",
             "name": "CompBlock004Moh3_Msh_Texture2Lightmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801ce09c",
-            "size": 1244,
-            "kind": "function",
-            "name": "RenderMoh3_Msh_Texture2Lightmap__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59774,24 +60936,10 @@
         "file_name": "Moh3_Msh_Texture1Envmap.cpp",
         "ranges": [
           {
-            "address": "0x801ce604",
-            "size": 2016,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Msh_Texture1Envmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801cede4",
             "size": 3164,
             "kind": "function",
             "name": "CompBlock004Moh3_Msh_Texture1Envmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801cfa40",
-            "size": 964,
-            "kind": "function",
-            "name": "RenderMoh3_Msh_Texture1Envmap__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59820,24 +60968,10 @@
         "file_name": "Moh3_Msh_Texture2Envmap.cpp",
         "ranges": [
           {
-            "address": "0x801cfe90",
-            "size": 2016,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Msh_Texture2Envmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801d0670",
             "size": 3164,
             "kind": "function",
             "name": "CompBlock004Moh3_Msh_Texture2Envmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801d12cc",
-            "size": 964,
-            "kind": "function",
-            "name": "RenderMoh3_Msh_Texture2Envmap__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -59866,27 +61000,6 @@
         "file_name": "Moh3_Msh_Falloff_Texture1.cpp",
         "ranges": [
           {
-            "address": "0x801d171c",
-            "size": 2676,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Msh_Falloff_Texture1__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801d2190",
-            "size": 2676,
-            "kind": "function",
-            "name": "CompBlock004Moh3_Msh_Falloff_Texture1__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801d2c04",
-            "size": 964,
-            "kind": "function",
-            "name": "RenderMoh3_Msh_Falloff_Texture1__FPQ24EAGL7GeoPrim",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801d2fc8",
             "size": 96,
             "kind": "function",
@@ -59911,27 +61024,6 @@
         "file_record": 384,
         "file_name": "Moh3_Msh_Falloff_Texture2.cpp",
         "ranges": [
-          {
-            "address": "0x801d3054",
-            "size": 3124,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Msh_Falloff_Texture2__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801d3c88",
-            "size": 3124,
-            "kind": "function",
-            "name": "CompBlock004Moh3_Msh_Falloff_Texture2__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801d48bc",
-            "size": 1108,
-            "kind": "function",
-            "name": "RenderMoh3_Msh_Falloff_Texture2__FPQ24EAGL7GeoPrim",
-            "evidence": "local-file-symbol"
-          },
           {
             "address": "0x801d4d10",
             "size": 96,
@@ -59958,24 +61050,10 @@
         "file_name": "Moh3_Msh_Falloff_Texture1Envmap.cpp",
         "ranges": [
           {
-            "address": "0x801d4d9c",
-            "size": 2016,
-            "kind": "function",
-            "name": "CompBlock003Moh3_Msh_Falloff_Texture1Envmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801d557c",
             "size": 3164,
             "kind": "function",
             "name": "CompBlock004Moh3_Msh_Falloff_Texture1Envmap__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801d61d8",
-            "size": 964,
-            "kind": "function",
-            "name": "RenderMoh3_Msh_Falloff_Texture1Envmap__FPQ24EAGL7GeoPrim",
             "evidence": "local-file-symbol"
           },
           {
@@ -60011,13 +61089,6 @@
             "evidence": "local-file-symbol"
           },
           {
-            "address": "0x801d6be8",
-            "size": 808,
-            "kind": "function",
-            "name": "RenderMoh3_Skin_LitTextureObjectFog__FPQ24EAGL7GeoPrim",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801d6f10",
             "size": 96,
             "kind": "function",
@@ -60050,13 +61121,6 @@
             "evidence": "local-file-symbol"
           },
           {
-            "address": "0x801d755c",
-            "size": 808,
-            "kind": "function",
-            "name": "RenderMoh3_PlayerSkin_LitTextureObjectFog__FPQ24EAGL7GeoPrim",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801d7884",
             "size": 96,
             "kind": "function",
@@ -60081,20 +61145,6 @@
         "file_record": 388,
         "file_name": "SingleDrawGouraud.cpp",
         "ranges": [
-          {
-            "address": "0x801d7910",
-            "size": 1840,
-            "kind": "function",
-            "name": "CompBlock000SingleDrawGouraud__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801d8040",
-            "size": 664,
-            "kind": "function",
-            "name": "RenderSingleDrawGouraud__FPQ24EAGL7GeoPrim",
-            "evidence": "local-file-symbol"
-          },
           {
             "address": "0x801d82d8",
             "size": 96,
@@ -60121,20 +61171,6 @@
         "file_name": "SingleDrawTexture.cpp",
         "ranges": [
           {
-            "address": "0x801d8364",
-            "size": 1768,
-            "kind": "function",
-            "name": "CompBlock000SingleDrawTexture__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801d8a4c",
-            "size": 796,
-            "kind": "function",
-            "name": "RenderSingleDrawTexture__FPQ24EAGL7GeoPrim",
-            "evidence": "local-file-symbol"
-          },
-          {
             "address": "0x801d8d68",
             "size": 96,
             "kind": "function",
@@ -60159,20 +61195,6 @@
         "file_record": 390,
         "file_name": "Particle.cpp",
         "ranges": [
-          {
-            "address": "0x801d8df4",
-            "size": 1716,
-            "kind": "function",
-            "name": "CompBlock000Particle__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801d94a8",
-            "size": 796,
-            "kind": "function",
-            "name": "RenderParticle__FPQ24EAGL7GeoPrim",
-            "evidence": "local-file-symbol"
-          },
           {
             "address": "0x801d97c4",
             "size": 96,
@@ -61095,13 +62117,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x801ddffc",
-            "size": 2464,
-            "kind": "function",
-            "name": "StringToPlatformStateEnum__12EAGLInternalPCc",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x801de99c",
             "size": 212,
             "kind": "function",
@@ -61484,27 +62499,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x801e0ecc",
-            "size": 44,
-            "kind": "function",
-            "name": "SetNumTexGens__Q24EAGL12TARExtensioni",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e0ef8",
-            "size": 104,
-            "kind": "function",
-            "name": "SetTexCoordGen__Q24EAGL12TARExtension13_GXTexCoordID13_GXTexGenType12_GXTexGenSrcUiUcUi",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e0f60",
-            "size": 80,
-            "kind": "function",
-            "name": "ResetTexCoordGens__Q24EAGL12TARExtension",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x801e0fb0",
             "size": 64,
             "kind": "function",
@@ -61532,122 +62526,6 @@
         ]
       },
       {
-        "name": "Unmatched files/tevstage.cpp [inferred file group]",
-        "file_record": 401,
-        "file_name": "tevstage.cpp",
-        "ranges": [
-          {
-            "address": "0x801e1044",
-            "size": 376,
-            "kind": "function",
-            "name": "SetHardware__Q24EAGL8TevStage",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e11bc",
-            "size": 540,
-            "kind": "function",
-            "name": "ResetToDefault__Q24EAGL8TevStage",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e13d8",
-            "size": 196,
-            "kind": "function",
-            "name": "__static_initialization_and_destruction_0",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x801e149c",
-            "size": 152,
-            "kind": "function",
-            "name": "__Q24EAGL8TevStage",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e1534",
-            "size": 32,
-            "kind": "function",
-            "name": "SetAlphaIn__Q24EAGL8TevStage14_GXTevAlphaArgN31",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e1554",
-            "size": 36,
-            "kind": "function",
-            "name": "SetAlphaOp__Q24EAGL8TevStage8_GXTevOp10_GXTevBias11_GXTevScaleUc11_GXTevRegID",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e1578",
-            "size": 32,
-            "kind": "function",
-            "name": "SetColourIn__Q24EAGL8TevStage14_GXTevColorArgN31",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e1598",
-            "size": 36,
-            "kind": "function",
-            "name": "SetColourOp__Q24EAGL8TevStage8_GXTevOp10_GXTevBias11_GXTevScaleUc11_GXTevRegID",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e15bc",
-            "size": 20,
-            "kind": "function",
-            "name": "SetKAlphaSel__Q24EAGL8TevStage15_GXTevKAlphaSel",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e15d0",
-            "size": 24,
-            "kind": "function",
-            "name": "SetTextureMapAndUVs__Q24EAGL8TevStage11_GXTexMapID13_GXTexCoordID",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e15e8",
-            "size": 20,
-            "kind": "function",
-            "name": "SetColourSource__Q24EAGL8TevStage12_GXChannelID",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e15fc",
-            "size": 148,
-            "kind": "function",
-            "name": "Use__CQ24EAGL8TevStageUi",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e1690",
-            "size": 64,
-            "kind": "function",
-            "name": "SetPS2StyleOverBright__Q24EAGL8TevStagebT1",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e16d0",
-            "size": 24,
-            "kind": "function",
-            "name": "SetNumActiveStages__Q24EAGL8TevStageUc",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e16e8",
-            "size": 44,
-            "kind": "function",
-            "name": "_GLOBAL_.I._Q24EAGL8TevStage.gNumActiveStages",
-            "evidence": "local-file-symbol"
-          }
-        ],
-        "marker_interval": [
-          "0x801e1044",
-          "0x801e1714"
-        ]
-      },
-      {
         "name": "Unmatched files/transform.cpp [inferred file group]",
         "file_record": 402,
         "file_name": "transform.cpp",
@@ -61664,125 +62542,6 @@
             "size": 692,
             "kind": "function",
             "name": "ExtractQuatTrans__CQ24EAGL9TransformP6COORD4T1",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e1ad0",
-            "size": 316,
-            "kind": "function",
-            "name": "TransformPoint__CQ24EAGL9TransformRC6COORD3R6COORD3",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e1c0c",
-            "size": 428,
-            "kind": "function",
-            "name": "TransformPoint__CQ24EAGL9TransformRC6COORD4R6COORD4",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e1db8",
-            "size": 836,
-            "kind": "function",
-            "name": "MultMatrix__FPC7MATRIX4T0P7MATRIX4",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e20fc",
-            "size": 64,
-            "kind": "function",
-            "name": "PostMult__Q24EAGL9TransformRCQ24EAGL9Transform",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e213c",
-            "size": 76,
-            "kind": "function",
-            "name": "BuildScale__Q24EAGL9Transformffff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e2188",
-            "size": 84,
-            "kind": "function",
-            "name": "BuildIdentity__Q24EAGL9Transform",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e21dc",
-            "size": 104,
-            "kind": "function",
-            "name": "BuildMatrix__Q24EAGL9TransformPC7MATRIX4",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e2244",
-            "size": 100,
-            "kind": "function",
-            "name": "Transpose__Q24EAGL9Transform",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e22a8",
-            "size": 260,
-            "kind": "function",
-            "name": "Transpose__Q24EAGL9TransformRCQ24EAGL9TransformRQ24EAGL9Transform",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e23ac",
-            "size": 152,
-            "kind": "function",
-            "name": "AppendTranslate__Q24EAGL9Transformfff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e2444",
-            "size": 184,
-            "kind": "function",
-            "name": "AppendMatrix__Q24EAGL9TransformPC7MATRIX4",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e24fc",
-            "size": 144,
-            "kind": "function",
-            "name": "PrependMatrix__Q24EAGL9TransformPC7MATRIX4",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e258c",
-            "size": 60,
-            "kind": "function",
-            "name": "PrependQuatTrans__Q24EAGL9TransformPC6COORD4T1",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e25c8",
-            "size": 148,
-            "kind": "function",
-            "name": "OrthoInverse__Q24EAGL9Transform",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e265c",
-            "size": 264,
-            "kind": "function",
-            "name": "BuildSQT__Q24EAGL9Transformffffffffff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e2764",
-            "size": 196,
-            "kind": "function",
-            "name": "BuildQT__Q24EAGL9Transformfffffff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801e2828",
-            "size": 72,
-            "kind": "function",
-            "name": "PreMult__Q24EAGL9TransformRCQ24EAGL9Transform",
             "evidence": "adjacent-compiler-markers"
           }
         ],
@@ -62520,13 +63279,6 @@
         "file_record": 414,
         "file_name": "cmnstateprop.cpp",
         "ranges": [
-          {
-            "address": "0x801e8964",
-            "size": 1632,
-            "kind": "function",
-            "name": "StringToCommonStateEnum__12EAGLInternalPCc",
-            "evidence": "adjacent-compiler-markers"
-          },
           {
             "address": "0x801e8fc4",
             "size": 1064,

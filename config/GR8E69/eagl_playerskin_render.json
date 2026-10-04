@@ -1,0 +1,68 @@
+{
+  "id": "eagl_playerskin_render",
+  "source": "src/eagl/eagl_playerskin_render.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/dolphin-sn",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/dolphin-sdk"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801d755c",
+      "size": 808
+    }
+  ],
+  "functions": [
+    {
+      "name": "RenderMoh3_PlayerSkin_LitTextureObjectFog__FPQ24EAGL7GeoPrim",
+      "address": "0x801d755c",
+      "size": 808,
+      "binding": 0
+    }
+  ],
+  "externals": {
+    "_43GeoPrim_Moh3_PlayerSkin_LitTextureObjectFog.gNumVolatiles": "0x802cd824",
+    "_43GeoPrim_Moh3_PlayerSkin_LitTextureObjectFog.gIdentifier": "0x80452740",
+    "_43GeoPrim_Moh3_PlayerSkin_LitTextureObjectFog.gDefaultPCode": "0x802cd828",
+    "_43GeoPrim_Moh3_PlayerSkin_LitTextureObjectFog.gLastVolatileSource": "0x80452744",
+    "_43GeoPrim_Moh3_PlayerSkin_LitTextureObjectFog.gVolatileData": "0x80452748",
+    "_43GeoPrim_Moh3_PlayerSkin_LitTextureObjectFog.gNoUploadsConstantSize": "0x8045274c",
+    "_43GeoPrim_Moh3_PlayerSkin_LitTextureObjectFog.gNoUploadsVariableSize": "0x80452750",
+    "ProcessPCode__12EAGLInternalRQ212EAGLInternal9PCodeDataPQ24EAGL7GeoPrimi": "0x801e5ae8",
+    "GXSetChanAmbColor": "0x802462d8",
+    "GXSetChanMatColor": "0x802463c8",
+    "ResetToDefault__Q24EAGL8TevStage": "0x801e11bc",
+    "ResetTexCoordGens__Q24EAGL12TARExtension": "0x801e0f60",
+    "staticdata.1290": "0x802cd834",
+    "GXClearVtxDesc": "0x80243bf8",
+    "GXSetVtxDesc": "0x80243370",
+    "SetAttributeFormat__Q24EAGL21GeoPrimStateExtensioni7_GXAttr10_GXCompCnt11_GXCompTypeUc": "0x801df348",
+    "SetTexCoordGen__Q24EAGL12TARExtension13_GXTexCoordID13_GXTexGenType12_GXTexGenSrcUiUcUi": "0x801e0ef8",
+    "SetNumTexGens__Q24EAGL12TARExtensioni": "0x801e0ecc",
+    "GXSetNumChans": "0x802464b8",
+    "SetCurrentVertex__Q24EAGL21GeoPrimStateExtensionUiUi": "0x801dee90",
+    "SetArray__Q24EAGL12RenderMethod7_GXAttrPvUc": "0x801dd938",
+    "CompBlock000Moh3_PlayerSkin_LitTextureObjectFog__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData": "0x801d6f9c",
+    "_12EAGLInternal.CurrentVariation": "0x802cdae0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file_index": 2566,
+  "original_file": "Moh3_PlayerSkin_LitTextureObjectFog.cpp",
+  "local_externals": [
+    "staticdata.1290",
+    "CompBlock000Moh3_PlayerSkin_LitTextureObjectFog__FRQ212EAGLInternal9PCodeDataRQ212EAGLInternal10StaticData"
+  ]
+}
