@@ -1,0 +1,38 @@
+{
+  "id": "particle_tm_local_to_world",
+  "source": "src/particles/ParticleTMLocalToWorld.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80062084",
+      "size": 44
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetTMLocalToWorld__C15CParticleSystemR7CMatrix",
+      "address": "0x80062084",
+      "size": 44,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__as__7CMatrixRC7CMatrix": "0x8007aa38"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

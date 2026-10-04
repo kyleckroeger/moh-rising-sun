@@ -1,0 +1,38 @@
+{
+  "id": "particle_deactivate",
+  "source": "src/particles/ParticleDeactivate.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8005e9f4",
+      "size": 60
+    }
+  ],
+  "functions": [
+    {
+      "name": "DeActivate__15CParticleSystem",
+      "address": "0x8005e9f4",
+      "size": 60,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetCurrentTicks__10CPSManager": "0x80066a64"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

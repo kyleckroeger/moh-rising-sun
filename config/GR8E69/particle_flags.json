@@ -1,0 +1,96 @@
+{
+  "id": "particle_flags",
+  "source": "src/particles/ParticleFlags.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80064344",
+      "size": 140
+    }
+  ],
+  "functions": [
+    {
+      "name": "Start__15CParticleSystem",
+      "address": "0x80064344",
+      "size": 16,
+      "binding": 1
+    },
+    {
+      "name": "IsEternal__C15CParticleSystem",
+      "address": "0x80064354",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "IsActive__C15CParticleSystem",
+      "address": "0x80064360",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "IsDying__C15CParticleSystem",
+      "address": "0x8006436c",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "IsMoving__C15CParticleSystem",
+      "address": "0x80064378",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "IsRotating__C15CParticleSystem",
+      "address": "0x80064384",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "IsDestroyable__C15CParticleSystem",
+      "address": "0x80064390",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "UseFade__C15CParticleSystem",
+      "address": "0x8006439c",
+      "size": 12,
+      "binding": 1
+    },
+    {
+      "name": "SetDestroyable__15CParticleSystemb",
+      "address": "0x800643a8",
+      "size": 16,
+      "binding": 1
+    },
+    {
+      "name": "GetDef__C15CParticleSystem",
+      "address": "0x800643b8",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "Profile__15CParticleSystemb",
+      "address": "0x800643c0",
+      "size": 16,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

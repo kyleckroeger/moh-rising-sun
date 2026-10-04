@@ -1,0 +1,36 @@
+{
+  "id": "particle_color",
+  "source": "src/particles/ParticleColor.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800612e8",
+      "size": 280
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetParticleColor__C15CParticleSystemR6CColorN31",
+      "address": "0x800612e8",
+      "size": 280,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

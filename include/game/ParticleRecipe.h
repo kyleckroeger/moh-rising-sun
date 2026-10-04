@@ -30,13 +30,53 @@ class CProcParticleDef {
     void SetVelMin(float, float, float);
     void SetVelMax(float, float, float);
 };
-// Only accesses at +0x140 and +0x160 are modeled; inherited state stays unknown.
+// Bit positions are established by the matching accessors; names are descriptive.
+// This view relies on the target compiler's big-endian bitfield layout.
+struct ParticleFlags {
+    unsigned int unknown_31 : 1;
+    unsigned int active : 1;
+    unsigned int unknown_29 : 1;
+    unsigned int moving : 1;
+    unsigned int rotating : 1;
+    unsigned int destroyable : 1;
+    unsigned int dying : 1;
+    unsigned int fade : 1;
+    unsigned int eternal : 1;
+    unsigned int profile : 1;
+    unsigned int unknown_low22 : 22;
+};
+// Only a packed four-byte color prefix is accessed; full CColor remains opaque.
+class CColor;
+// Scoped prefix through the flag word; inherited state and full size stay unknown.
 class CParticleSystem {
   public:
-    unsigned char unknown_0[0x140];
+    unsigned char unknown_0[0x90];
+    CMatrix localToWorld;
+    unsigned char unknown_d0[0x70];
     CProcParticleDef *definition;
-    unsigned char unknown_144[0x1c];
+    unsigned char unknown_144[12];
+    float deactivationTicks;
+    unsigned char unknown_154[12];
     unsigned int seed;
+    unsigned char unknown_164[12];
+    ParticleFlags flags;
+    void Start();
+    void DeActivate();
+    unsigned int IsEternal() const;
+    unsigned int IsActive() const;
+    unsigned int IsDying() const;
+    unsigned int IsMoving() const;
+    unsigned int IsRotating() const;
+    unsigned int IsDestroyable() const;
+    unsigned int UseFade() const;
+    void SetDestroyable(bool);
+    CProcParticleDef *GetDef() const;
+    void Profile(bool);
+    void GetLocalToWorld(CMatrix &) const;
+    void GetTMLocalToWorld(CMatrix &) const;
+    void Orthonormalize();
+    void GetParticleAlpha(float &, float &, float &) const;
+    void GetParticleColor(CColor &, CColor &, CColor &, CColor &) const;
     unsigned int GetSeed() const;
     void SetSeed(unsigned int);
     int GetRenderType() const;

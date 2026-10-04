@@ -146,6 +146,11 @@ caller code. The reusable declaration is the main benefit beyond these verified
 functions: future transform-related functions can now use an independently checked
 matrix representation.
 
+The [particle fragments](ParticleRecipes.md) now use this declaration for their
+two matrix-copy getters and an `Orthonormalize` wrapper. Only the wrapper is
+reconstructed; `CMatrix::Orthonormalize` is declared as an original external
+dependency and receives no new matrix-source credit.
+
 Useful next work is to recover enough `CVector3` layout/constructor evidence to
 support value parameters and local vectors, then extend `Rotate`, `FastInverse`, `Orthonormalize` and the remaining matrix
 functions. A research `TibToMOHFL`

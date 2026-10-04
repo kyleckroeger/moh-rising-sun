@@ -672,7 +672,15 @@
     "particle_seed_set.json",
     "particle_size.json",
     "particle_velocity.json",
-    "string_crc.json"
+    "string_crc.json",
+    "particle_alpha.json",
+    "particle_clock.json",
+    "particle_color.json",
+    "particle_deactivate.json",
+    "particle_flags.json",
+    "particle_local_to_world.json",
+    "particle_orthonormalize.json",
+    "particle_tm_local_to_world.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

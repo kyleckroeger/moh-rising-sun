@@ -1,0 +1,49 @@
+{
+  "id": "particle_clock",
+  "source": "src/particles/ParticleClock.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80066a50",
+      "size": 32
+    }
+  ],
+  "functions": [
+    {
+      "name": "Update__10CPSManagerf",
+      "address": "0x80066a50",
+      "size": 20,
+      "binding": 1
+    },
+    {
+      "name": "GetCurrentTicks__10CPSManager",
+      "address": "0x80066a64",
+      "size": 12,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_numCurrentTicks": "0x802c1c44"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "particlesystemmanager.cpp",
+  "original_file_index": 448,
+  "local_externals": [
+    "g_numCurrentTicks"
+  ]
+}
