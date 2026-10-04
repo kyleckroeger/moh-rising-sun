@@ -1,0 +1,41 @@
+{
+  "id": "particle_def_lifetime",
+  "source": "src/particles/ParticleDefLifetime.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8006b5a8",
+      "size": 44
+    },
+    {
+      "name": ".rodata",
+      "address": "0x8029a690",
+      "size": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "SetPartLifetime__16CProcParticleDeff",
+      "address": "0x8006b5a8",
+      "size": 44,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

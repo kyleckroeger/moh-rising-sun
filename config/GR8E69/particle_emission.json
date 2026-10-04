@@ -1,0 +1,48 @@
+{
+  "id": "particle_emission",
+  "source": "src/particles/ParticleEmission.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8006b550",
+      "size": 88
+    }
+  ],
+  "functions": [
+    {
+      "name": "IsValid__16CProcParticleDef",
+      "address": "0x8006b550",
+      "size": 24,
+      "binding": 1
+    },
+    {
+      "name": "SetEmitDelay__16CProcParticleDefi",
+      "address": "0x8006b568",
+      "size": 32,
+      "binding": 1
+    },
+    {
+      "name": "SetEmitRate__16CProcParticleDefi",
+      "address": "0x8006b588",
+      "size": 32,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

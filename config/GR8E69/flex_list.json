@@ -1,0 +1,50 @@
+{
+  "id": "flex_list",
+  "source": "src/flexprop/FlexList.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80126690",
+      "size": 88
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a6dd0",
+      "size": 48
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetList__C8FlexPropi",
+      "address": "0x80126690",
+      "size": 88,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetDataPtr__C8FlexPropi": "0x80126248",
+    "DebugMsg__FPCce": "0x80279094",
+    "empty.1110": "0x802c4ad8"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "flexprop.cpp",
+  "original_file_index": 1232,
+  "local_externals": [
+    "empty.1110"
+  ]
+}

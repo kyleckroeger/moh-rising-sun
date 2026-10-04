@@ -1,0 +1,38 @@
+{
+  "id": "particle_lifetime",
+  "source": "src/particles/ParticleLifetime.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800615b0",
+      "size": 36
+    }
+  ],
+  "functions": [
+    {
+      "name": "SetParticleLifetime__15CParticleSystemf",
+      "address": "0x800615b0",
+      "size": 36,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "SetPartLifetime__16CProcParticleDeff": "0x8006b5a8"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

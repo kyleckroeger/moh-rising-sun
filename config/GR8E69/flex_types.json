@@ -1,0 +1,51 @@
+{
+  "id": "flex_types",
+  "source": "src/flexprop/FlexTypes.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80126804",
+      "size": 132
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetFieldType__C8FlexPropPCc",
+      "address": "0x80126804",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "GetFieldType__C8FlexPropi",
+      "address": "0x80126840",
+      "size": 56,
+      "binding": 1
+    },
+    {
+      "name": "GetClassName__C8FlexProp",
+      "address": "0x80126878",
+      "size": 16,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetStringCRC__FPCc": "0x801acb98",
+    "GetField__14FlexPropFormati": "0x801261e4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

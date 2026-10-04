@@ -1,0 +1,38 @@
+{
+  "id": "flex_valid",
+  "source": "src/flexprop/FlexValid.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80126480",
+      "size": 52
+    }
+  ],
+  "functions": [
+    {
+      "name": "IsFieldValid__C8FlexPropi",
+      "address": "0x80126480",
+      "size": 52,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetField__14FlexPropFormati": "0x801261e4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -1,0 +1,50 @@
+{
+  "id": "flex_data",
+  "source": "src/flexprop/FlexData.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80126248",
+      "size": 148
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetDataPtr__C8FlexPropi",
+      "address": "0x80126248",
+      "size": 76,
+      "binding": 1
+    },
+    {
+      "name": "GetFieldOffset__C8FlexPropi",
+      "address": "0x80126294",
+      "size": 56,
+      "binding": 1
+    },
+    {
+      "name": "GetData__C8FlexPropi",
+      "address": "0x801262cc",
+      "size": 16,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetField__14FlexPropFormati": "0x801261e4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": "string_crc",
+  "source": "src/string_crc.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801acb98",
+      "size": 80
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetStringCRC__FPCc",
+      "address": "0x801acb98",
+      "size": 80,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "crcTable": "0x802b7fc0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "crc.cpp",
+  "original_file_index": 2249,
+  "local_externals": [
+    "crcTable"
+  ]
+}

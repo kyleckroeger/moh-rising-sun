@@ -1,0 +1,46 @@
+{
+  "id": "flex_field",
+  "source": "src/flexprop/FlexField.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801261c4",
+      "size": 132
+    }
+  ],
+  "functions": [
+    {
+      "name": "field_key_compare__FPCvT0",
+      "address": "0x801261c4",
+      "size": 32,
+      "binding": 0
+    },
+    {
+      "name": "GetField__14FlexPropFormati",
+      "address": "0x801261e4",
+      "size": 100,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "bsearch": "0x80264f3c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "flexprop.cpp",
+  "original_file_index": 1232
+}

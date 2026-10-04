@@ -1,0 +1,42 @@
+{
+  "id": "flex_position",
+  "source": "src/flexprop/FlexPosition.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801267d8",
+      "size": 44
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetPosition__C8FlexPropR8CVector3",
+      "address": "0x801267d8",
+      "size": 32,
+      "binding": 1
+    },
+    {
+      "name": "SetPositionZ__8FlexPropf",
+      "address": "0x801267f8",
+      "size": 12,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

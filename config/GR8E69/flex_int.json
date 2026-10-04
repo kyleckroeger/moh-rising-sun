@@ -1,0 +1,44 @@
+{
+  "id": "flex_int",
+  "source": "src/flexprop/FlexInt.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801264b4",
+      "size": 84
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a6cd4",
+      "size": 48
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetInt__C8FlexPropi",
+      "address": "0x801264b4",
+      "size": 84,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetDataPtr__C8FlexPropi": "0x80126248",
+    "DebugMsg__FPCce": "0x80279094"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

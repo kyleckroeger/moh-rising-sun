@@ -33,10 +33,10 @@ class SourceVerification(unittest.TestCase):
         for unit in self.units:
             verify_unit(self.original, Elf32(self.linked(unit['id'])), unit)
         result = progress(self.original, self.units, self.project)
-        self.assertEqual(result['matching_code_bytes'], 581124)
+        self.assertEqual(result['matching_code_bytes'], 584036)
         self.assertEqual(result['total_executable_code_bytes'], 2492032)
         self.assertGreaterEqual(result['percent'], 23)
-        self.assertEqual(result['categories']['reconstructed_game'], 188908)
+        self.assertEqual(result['categories']['reconstructed_game'], 191820)
         self.assertEqual(result['categories']['restored_library'], 392216)
 
     def test_private_ppp_entry_point_requires_its_function_symbol(self):

@@ -1,0 +1,36 @@
+{
+  "id": "particle_position",
+  "source": "src/particles/ParticlePosition.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80061474",
+      "size": 100
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetParticlePosition__C15CParticleSystemR8CVector3T1",
+      "address": "0x80061474",
+      "size": 100,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

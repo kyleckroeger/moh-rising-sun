@@ -1,0 +1,66 @@
+{
+  "id": "particle_scalars",
+  "source": "src/particles/ParticleScalars.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80061150",
+      "size": 172
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetRenderType__C15CParticleSystem",
+      "address": "0x80061150",
+      "size": 24,
+      "binding": 1
+    },
+    {
+      "name": "GetEmmisionRate__C15CParticleSystem",
+      "address": "0x80061168",
+      "size": 24,
+      "binding": 1
+    },
+    {
+      "name": "GetEmmisionDelay__C15CParticleSystem",
+      "address": "0x80061180",
+      "size": 24,
+      "binding": 1
+    },
+    {
+      "name": "GetSystemLifetime__C15CParticleSystem",
+      "address": "0x80061198",
+      "size": 24,
+      "binding": 1
+    },
+    {
+      "name": "GetParticleLifetime__C15CParticleSystem",
+      "address": "0x800611b0",
+      "size": 24,
+      "binding": 1
+    },
+    {
+      "name": "GetParticleRotation__C15CParticleSystemRfT1",
+      "address": "0x800611c8",
+      "size": 52,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

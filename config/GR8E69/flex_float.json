@@ -1,0 +1,44 @@
+{
+  "id": "flex_float",
+  "source": "src/flexprop/FlexFloat.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8012655c",
+      "size": 88
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a6d34",
+      "size": 52
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetFloat__C8FlexPropi",
+      "address": "0x8012655c",
+      "size": 88,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetDataPtr__C8FlexPropi": "0x80126248",
+    "DebugMsg__FPCce": "0x80279094"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

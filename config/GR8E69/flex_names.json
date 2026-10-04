@@ -1,0 +1,81 @@
+{
+  "id": "flex_names",
+  "source": "src/flexprop/FlexNames.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801262dc",
+      "size": 420
+    }
+  ],
+  "functions": [
+    {
+      "name": "IsFieldValid__C8FlexPropPCc",
+      "address": "0x801262dc",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "GetInt__C8FlexPropPCc",
+      "address": "0x80126318",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "GetEnum__C8FlexPropPCc",
+      "address": "0x80126354",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "GetFloat__C8FlexPropPCc",
+      "address": "0x80126390",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "GetString__C8FlexPropPCc",
+      "address": "0x801263cc",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "GetBool__C8FlexPropPCc",
+      "address": "0x80126408",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "GetList__C8FlexPropPCc",
+      "address": "0x80126444",
+      "size": 60,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetStringCRC__FPCc": "0x801acb98",
+    "IsFieldValid__C8FlexPropi": "0x80126480",
+    "GetInt__C8FlexPropi": "0x801264b4",
+    "GetEnum__C8FlexPropi": "0x80126508",
+    "GetFloat__C8FlexPropi": "0x8012655c",
+    "GetString__C8FlexPropi": "0x801265b4",
+    "GetBool__C8FlexPropi": "0x8012662c",
+    "GetList__C8FlexPropi": "0x80126690"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}
