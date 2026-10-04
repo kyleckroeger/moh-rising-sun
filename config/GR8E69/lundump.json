@@ -1,0 +1,188 @@
+{
+  "id": "lundump",
+  "source": "src/lua/lundump.c",
+  "category": "restored_library",
+  "compiler_family": "ProDG",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-ffast-math"
+  ],
+  "include_dirs": [
+    "include/target",
+    "include/newlib-compiler",
+    "include/newlib",
+    "src/lua"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80042a90",
+      "size": 3076,
+      "type": 1
+    },
+    {
+      "name": ".rodata",
+      "address": "0x80296dd8",
+      "size": 56,
+      "type": 1
+    },
+    {
+      "name": ".rodata.prefix",
+      "address": "0x80296c14",
+      "size": 448,
+      "type": 1,
+      "target_name": ".rodata"
+    }
+  ],
+  "functions": [
+    {
+      "name": "ZNAME",
+      "address": "0x80042a90",
+      "size": 24,
+      "binding": 0
+    },
+    {
+      "name": "unexpectedEOZ",
+      "address": "0x80042aa8",
+      "size": 72,
+      "binding": 0
+    },
+    {
+      "name": "ezgetc",
+      "address": "0x80042af0",
+      "size": 132,
+      "binding": 0
+    },
+    {
+      "name": "ezread",
+      "address": "0x80042b74",
+      "size": 80,
+      "binding": 0
+    },
+    {
+      "name": "LoadBlock",
+      "address": "0x80042bc4",
+      "size": 136,
+      "binding": 0
+    },
+    {
+      "name": "LoadVector",
+      "address": "0x80042c4c",
+      "size": 172,
+      "binding": 0
+    },
+    {
+      "name": "LoadInt",
+      "address": "0x80042cf8",
+      "size": 52,
+      "binding": 0
+    },
+    {
+      "name": "LoadSize",
+      "address": "0x80042d2c",
+      "size": 52,
+      "binding": 0
+    },
+    {
+      "name": "LoadNumber",
+      "address": "0x80042d60",
+      "size": 52,
+      "binding": 0
+    },
+    {
+      "name": "LoadString",
+      "address": "0x80042d94",
+      "size": 116,
+      "binding": 0
+    },
+    {
+      "name": "LoadCode",
+      "address": "0x80042e08",
+      "size": 192,
+      "binding": 0
+    },
+    {
+      "name": "LoadLocals",
+      "address": "0x80042ec8",
+      "size": 204,
+      "binding": 0
+    },
+    {
+      "name": "LoadLines",
+      "address": "0x80042f94",
+      "size": 124,
+      "binding": 0
+    },
+    {
+      "name": "LoadConstants",
+      "address": "0x80043010",
+      "size": 324,
+      "binding": 0
+    },
+    {
+      "name": "LoadFunction",
+      "address": "0x80043154",
+      "size": 236,
+      "binding": 0
+    },
+    {
+      "name": "LoadSignature",
+      "address": "0x80043240",
+      "size": 140,
+      "binding": 0
+    },
+    {
+      "name": "TestSize",
+      "address": "0x800432cc",
+      "size": 116,
+      "binding": 0
+    },
+    {
+      "name": "LoadHeader",
+      "address": "0x80043340",
+      "size": 544,
+      "binding": 0
+    },
+    {
+      "name": "LoadChunk",
+      "address": "0x80043560",
+      "size": 64,
+      "binding": 0
+    },
+    {
+      "name": "luaU_undump",
+      "address": "0x800435a0",
+      "size": 236,
+      "binding": 1
+    },
+    {
+      "name": "luaU_endianess",
+      "address": "0x8004368c",
+      "size": 8,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "luaO_verror": "0x8003eecc",
+    "luaZ_read": "0x800453e4",
+    "luaO_openspace": "0x8003edd0",
+    "luaS_newlstr": "0x80041c04",
+    "DWI_alloc": "0x801a8670",
+    "luaF_protook": "0x8003bdb0",
+    "luaF_newproto": "0x8003bccc"
+  },
+  "undefined_in_discarded_code": [],
+  "original_file": "lundump.c",
+  "discarded_functions": [],
+  "discarded_local_functions": [],
+  "sda_externals": [],
+  "upstream": {
+    "archive": "https://www.lua.org/ftp/lua-4.0.1.tar.gz",
+    "sha256": "df746e149cf6939e90009d2e540eee918d585b4d1bc6d68b19316a050d484d2a",
+    "path": "src/lundump.c",
+    "modified": true
+  }
+}

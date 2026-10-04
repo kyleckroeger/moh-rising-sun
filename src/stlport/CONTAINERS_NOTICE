@@ -1,0 +1,21 @@
+STLport container integration
+
+include/stlport-containers/ contains the unmodified STLport 4.5.3 headers
+selected by compiler dependency scans of the accepted instantiations.
+Copyright/permission notices remain in each file. The archive and every
+selected file are pinned in config/GR8E69/stlport-source.json.
+
+include/stlport-runtime/ supplies this project's configuration and the native
+new/exception declarations from GCC 2.95.2 (Free Software Foundation copyright).
+The new header leaves bad_alloc::what declared out of line instead of defining
+its unused inline body. No accepted object instantiates or references it.
+The exception header is unchanged. GNU GPL v2 is supplied as COPYING.GCC;
+no additional header-specific licensing exception is asserted.
+
+src/stlport/containers/ contains project-written explicit instantiations using
+original symbol types. Game pointees stay forward-declared. These files do not
+claim original source-file boundaries, game layouts or the original compiler
+and library releases. All retained algorithm bodies come from STLport.
+
+AI assisted the symbol inventory, instantiation selection, configuration,
+integration and byte verification. See docs/STLport.md.

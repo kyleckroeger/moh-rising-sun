@@ -4,9 +4,9 @@ An early matching decompilation of **Medal of Honor: Rising Sun** for GameCube, 
 
 [![Verified progress snapshot](https://github.com/lifewillbeokay/moh-rising-sun/actions/workflows/progress.yml/badge.svg)](https://github.com/lifewillbeokay/moh-rising-sun/actions/workflows/progress.yml)
 
-**Matching source coverage is 11.179632%: 278,600 of 2,492,032 executable code bytes, across 1,138 functions.** This comprises 2,648 bytes of reconstructed game-specific C++, 48,564 bytes restored from Lua 4.0.1, 166,200 bytes restored from public Dolphin SDK reconstructions, 53,892 bytes restored from Newlib, 5,532 bytes restored from GCC runtime helpers, and 1,764 bytes restored from STLport tree helpers. The complete rebuilt analysis image is verified; the remainder stays original binary context. AI-assisted contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
+**Matching source coverage is 12.813640%: 319,320 of 2,492,032 executable code bytes, across 1,260 functions.** This comprises 2,648 bytes of reconstructed game-specific C++, 51,640 bytes restored from Lua 4.0.1, 166,200 bytes restored from public Dolphin SDK reconstructions, 53,892 bytes restored from Newlib, 5,532 bytes restored from GCC runtime helpers, 33,576 bytes restored from STLport helpers and container instances, and 5,832 bytes restored from network-library helpers and the RSA Data Security, Inc. MD5 Message-Digest Algorithm. The complete rebuilt analysis image is verified; the remainder stays original binary context. AI-assisted contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Progress uses all bytes in the original allocated executable sections (`.init` and `.text`) as its denominator. It counts verified, nonoverlapping source-built function bytes only. The 27,870 source-built data bytes and 114,864 source-owned BSS bytes, stripped library functions, original context and debug metadata earn no code-progress credit. See [Lua evidence and attribution](docs/Lua.md) and [MathFun evidence](docs/MathFun.md), and [Dolphin SDK evidence and attribution](docs/Dolphin.md), [Newlib evidence and attribution](docs/Newlib.md), [GCC runtime evidence](docs/Libgcc.md), [STLport evidence](docs/STLport.md), [allocation-operator evidence](docs/Memory.md), and [matrix layout evidence](docs/Matrix.md).
+Progress uses all bytes in the original allocated executable sections (`.init` and `.text`) as its denominator. It counts verified, nonoverlapping source-built function bytes only. The 28,786 source-built data bytes and 114,884 source-owned BSS bytes, stripped library functions, original context and debug metadata earn no code-progress credit. See [Lua evidence and attribution](docs/Lua.md) and [MathFun evidence](docs/MathFun.md), and [Dolphin SDK evidence and attribution](docs/Dolphin.md), [Newlib evidence and attribution](docs/Newlib.md), [GCC runtime evidence](docs/Libgcc.md), [STLport evidence](docs/STLport.md), [allocation-operator evidence](docs/Memory.md), and [matrix layout evidence](docs/Matrix.md), and [network-library evidence](docs/Network.md).
 
 ## Verified starting point
 
@@ -14,7 +14,7 @@ Progress uses all bytes in the original allocated executable sections (`.init` a
 - 15,507 symbol entries, including 9,883 function entries and 954 source-file entries. Entries are not necessarily unique functions or complete original source units.
 - Preserved DWARF 1 information covers seven Nintendo GBA-library compilation units. It is not full game-wide type information.
 - The original-object relink matches the complete 2,860,576-byte DOL derived from the ELF, including its header. Every original allocated ELF file byte, entry point, and BSS extent is checked separately.
-- The source build passes that same complete-image comparison with six MathFun functions, four allocation operators, 16 CMatrix functions, 18 Lua units, 89 Dolphin SDK units, 99 Newlib units/fragments, eight GCC runtime variants and six STLport helpers compiled from source. Code and generated data are both checked; coverage is reported by category.
+- The source build passes that same complete-image comparison with six MathFun functions, four allocation operators, 16 CMatrix functions, 19 Lua units, 89 Dolphin SDK units plus six network-library fragments, 99 Newlib units/fragments, eight GCC runtime variants and 92 STLport helpers/container instances compiled from source. Code and generated data are both checked; coverage is reported by category.
 
 This comparison is against a derived analysis image. It does **not** mean the original ELF's debug/symbol tables have been reproduced, the on-disc boot DOL has been replaced, or the game has been tested in an emulator. The boot DOL is a separate 206,016-byte program containing references to the game ELFs.
 
@@ -38,7 +38,7 @@ assets, compiler binaries or complete debug dumps to commits, issues or PRs.
 ## Progress integration
 
 Explore the [live decomp.dev map](https://decomp.dev/lifewillbeokay/moh-rising-sun)
-to find unfinished functions. The remaining code is divided into 722 grey boxes:
+to find unfinished functions. The remaining code is divided into 734 grey boxes:
 named file groups where supported by symbols, unknown-file groups, shared entry
 points and unidentified bytes. Inferred ownership is labeled and earns no matching
 credit. See [code-map evidence and starting points](docs/CodeMap.md) and the
@@ -84,9 +84,9 @@ Run the scripts from any directory; all outputs remain inside this checkout. `ba
 | `build/audit/dependencies.json` | Local direct-branch dependency graph and research ranking (`python3 tools/dependencies.py`) |
 | `src/matrix/`, `include/game/CMatrix.h` | 16 reconstructed matrix functions and a shared layout with explicit vector-type limits |
 | `src/sys_memory.cpp` | Four game allocation operators; original heap routines remain external |
-| `src/stlport/` | Six shared tree helpers from an attributed STLport 4.5.3 subset |
+| `src/stlport/` | 92 tree/container functions using an attributed STLport 4.5.3 subset |
 | `src/MathFun.cpp` | Six reconstructed functions from the original MathFun unit |
-| `src/lua/` | 18 restored Lua 4.0.1 source units, headers and copyright notice |
+| `src/lua/` | 19 restored Lua 4.0.1 source units, headers and copyright notice |
 | `src/dolphin/`, `include/dolphin-sdk/` | 89 accepted SDK source units, reference headers and attribution |
 | `src/newlib/`, `include/newlib/` | 99 accepted Newlib units, supporting headers and attribution |
 | `src/libgcc/` | Eight verified GCC 2.95.2 runtime variants, shared source, target configuration and notices |
@@ -102,9 +102,9 @@ The automatic dtk ELF split export emits warnings for this executable's symbol o
 
 ## Next work
 
-1. Extend the [verified CMatrix family](docs/Matrix.md) using its shared layout; establish CVector3 construction and full storage before adding functions that need local vectors. The [dependency ranking](docs/Dependencies.md) also identifies small string and allocation helpers. Resolve the STL pointer-vector candidate's generated constant ownership before accepting it. The remaining MathFun functions need floating-point constant/layout evidence.
+1. Extend the [verified CMatrix family](docs/Matrix.md) using its shared layout; establish CVector3 construction and full storage before adding functions that need local vectors. The [dependency ranking](docs/Dependencies.md) also identifies small string and allocation helpers. Extend the verified STL container profile only after resolving custom comparator and by-value game-type layouts. The remaining MathFun functions need floating-point constant/layout evidence.
 2. Distinguish the original compiler release using larger functions. Five tested SN/ProDG versions match the accepted fragment, so its byte match alone cannot identify the original release. Nintendo libraries may use different compilers.
-3. Resolve the remaining Lua units' constant alignment and game integration while extending game-specific source coverage. Only compiled source bytes that pass complete-image verification count toward progress.
+3. Extend the network-library subset by recovering the older target's behavior and storage; the remaining TCP, UDP, PPP and Ethernet reference routines differ. Continue shared game-code reconstruction alongside library restoration. Only compiled source bytes that pass complete-image verification count toward progress.
 4. Inspect Disc 2 and test the game's executable-loading path before claiming complete game coverage or a runnable replacement disc.
 
 See [the initial audit](docs/initial-audit.md) for evidence and limitations.

@@ -1,0 +1,41 @@
+{
+  "id": "stl_8027a8ec",
+  "source": "src/stlport/containers/stl_8027a8ec.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8027a8ec",
+      "size": 324
+    }
+  ],
+  "functions": [
+    {
+      "name": "__as__Q24_STLt6vector2ZPQ24EAGL3TARZQ24_STLt9allocator1ZPQ24EAGL3TARRCQ24_STLt6vector2ZPQ24EAGL3TARZQ24_STLt9allocator1ZPQ24EAGL3TAR",
+      "address": "0x8027a8ec",
+      "size": 324,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__builtin_new": "0x801a8910",
+    "memmove": "0x8026668c",
+    "__builtin_delete": "0x801a8990"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -1,0 +1,90 @@
+{
+  "id": "IPTcpTimeWait",
+  "source": "src/dolphin/ip/IPTcpTimeWait.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-network",
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802500b0",
+      "size": 376,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x80442dc8",
+      "size": 20,
+      "type": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "TCPLookupTimeWaitInfo",
+      "address": "0x802500b0",
+      "size": 376,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__OSGetSystemTime": "0x8025af9c",
+    "__div2i": "0x801afea0",
+    "memmove": "0x8026668c",
+    "TCPRespond": "0x8024db9c",
+    "TCPCancelRxmitTimer": "0x8024eb98",
+    "TCPAbort": "0x8024ec70"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [
+    "CreateTimeWaitInfo",
+    "DiscardExpiredTimeWaitInfo",
+    "LookupTimeWaitInfo",
+    "TCPSetTimeWaitBuffer",
+    "TCPTestTimeWait",
+    "TCPStartTimeWait"
+  ],
+  "original_file": "IPTcpTimeWait.c",
+  "discarded_local_functions": [
+    "CreateTimeWaitInfo",
+    "DiscardExpiredTimeWaitInfo",
+    "LookupTimeWaitInfo"
+  ],
+  "sda_externals": [],
+  "upstream": {
+    "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+    "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+    "path": "src/ip/IPTcpTimeWait.c"
+  }
+}

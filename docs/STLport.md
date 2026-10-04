@@ -1,7 +1,9 @@
-# STLport: verified tree helpers and container research
+# STLport: verified tree helpers and container instantiations
 
-Six `_STL::_Rb_global<bool>` helpers now compile to **1,764 matching code bytes**.
-They provide shared red-black-tree rotation, rebalancing and iterator traversal.
+**92 functions compile to 33,576 matching code bytes**: six
+`_STL::_Rb_global<bool>` helpers (1,764 bytes) and 86 container instantiations
+(31,812 bytes). The helpers provide shared red-black-tree rotation, rebalancing
+and iterator traversal.
 This establishes a compatible STLport implementation for this subset, not the
 exact historical release or compatibility of every container. AI assistance was
 used for source integration, compiler experiments and verification.
@@ -49,39 +51,80 @@ template argument `bool`, method names and argument encodings are present in the
 original mangled symbols; return types and layout are supported by the reference
 and instruction comparison.
 
-The [dependency scan](Dependencies.md) finds **137 distinct unfinished caller
+The initial [dependency scan](Dependencies.md) found **137 distinct unfinished caller
 ranges** across these six helpers, counted once across the set. This measures
 research reach, not additional reconstructed code or a claim that those callers
 will match automatically.
 
-## Next container work packet
+## Container instantiations
 
-`_STL::vector<void*, allocator<void*> >::reserve(unsigned int)` at `0x8027aefc`
-has **232 matching code bytes in a research build**, but is **not accepted**.
-Its complete object emits an additional 12-byte `.rodata` block containing
-`bad_alloc` and padding. Placement/ownership of that block has not been established.
-The original contains many copies; choosing an arbitrary matching copy would not
-prove ownership. Keep this candidate outside the source manifests until the
-complete generated output is accounted for.
+The accepted container profile adds the following complete function bodies:
 
-Reproduction ingredients:
+| Family | Functions | Code bytes |
+| --- | ---: | ---: |
+| Tree maps and sets | 76 | 29,736 |
+| Deque helpers | 6 | 1,056 |
+| Vector reserve/assignment | 4 | 1,020 |
+| Total added | 86 | 31,812 |
 
-- Unmodified STLport 4.5.3 `<vector>` and its dependencies.
-- The project's Newlib and compiler C headers, plus GCC 2.95.2's
-  [`new`](https://github.com/gcc-mirror/gcc/blob/releases/gcc-2.95.2/gcc/cp/inc/new)
-  and [`exception`](https://github.com/gcc-mirror/gcc/blob/releases/gcc-2.95.2/gcc/cp/inc/exception)
-  runtime headers. These are research references, not vendored accepted files.
-- `_STLP_NO_IOSTREAMS=1`, `_STLP_USE_NEWALLOC=1`, `_STLP_NO_THREADS=1`; route native
-  C includes to the project C headers and native runtime includes to those GCC
-  headers; use the C-header wrapper mode rather than native C++ C headers.
-- ProDG 3.8.1: `-O2 -G0 -fno-exceptions -fno-implicit-templates` and an explicit
-  instantiation of that `reserve` method.
-- Resolve `__builtin_new`, `__builtin_delete` and `memmove` to their original
-  symbols. The first two are now reconstructed in [sys_memory.cpp](Memory.md).
+Each file in `src/stlport/containers/` explicitly instantiates one original
+symbol. Address-based filenames are project identifiers, not recovered original
+source paths. The corresponding manifest records its complete mangled type,
+original address, binding, size, generated sections and external references.
+Class typedefs are local readability aliases and do not change mangling.
 
-This result supports the pointer-container path and allocator configuration for
-the candidate. It does not validate other containers, exception behavior, or
-game-specific value types. Preserve unknown class layouts for by-value elements.
+The selected instances use builtin types, STLport strings/pairs, and pointers to
+game objects. All game pointees are forward-declared. No game class is sized,
+constructed, copied by value or given speculative fields. The upstream container,
+allocator, node and string declarations supply library layouts; matches across
+insertion, erasure, allocation, copies and traversal independently test their
+observed use. Custom comparators and unknown game value layouts remain outside
+this subset.
 
-Run `python3 tools/reconstruct.py` and the validation suite before accepting any
-extension. The live progress includes only the six verified helpers above.
+`include/stlport-containers/` contains 63 **unmodified** upstream files selected
+by compiler dependency scans across all 86 instantiations. Their individual
+hashes are recorded in `stlport-source.json`, along with the existing archive
+hash. Copyright/permission notices remain in every file. Unused declarations and
+other build configurations in these headers are not independently verified.
+
+The project profile uses `_STL`, new/delete allocation, no exceptions, no
+threading, no iostreams and no wide-character facilities. Native C includes use
+the existing target Newlib headers. Compilation uses ProDG 3.8.1 with
+`-O2 -G0 -fno-exceptions -fno-implicit-templates`. These are supported settings for
+the retained subset, not proof of the historical command line or full C++ runtime.
+
+### Native allocation declarations and the earlier string blocker
+
+The earlier `vector<void*>::reserve` experiment produced 232 matching code bytes
+plus an unplaced `bad_alloc` string from the GCC native `new` header's unused
+inline `bad_alloc::what` definition. That generated object remains unaccepted;
+no arbitrary original string copy was chosen and no generated bytes were cut out.
+
+The integration header now keeps `what` as an **out-of-line declaration**, while
+retaining the class shape, virtual declaration and allocation signatures. No
+accepted instantiation calls or constructs this exception. This is a deliberately
+narrow declaration boundary for unused runtime support, not a claim to have
+recovered the game's native `new` header. The GCC 2.95.2 `exception` header is
+unchanged; copyrights, source hashes and URLs are preserved, and GNU GPL v2 is
+included as `COPYING.GCC`. See [CONTAINERS_NOTICE](../src/stlport/CONTAINERS_NOTICE).
+
+All 86 resulting objects contain exactly their one expected text function and
+**no generated allocated data**. The original pointer-vector routine is now
+accepted in that profile. No linker discard, byte patch, assembly replacement or
+masked comparison is involved. New/delete calls resolve to the previously
+verified game allocation operators; other dependencies resolve to original
+symbols and may still be original context.
+
+### Validation and next work
+
+The ordinary source build checks every compiled symbol and byte, then includes
+all verified source intervals in the complete-image comparison. Existing input
+fingerprints cover the configuration, native declarations, 63 upstream files and
+all instantiations. A future template that needs unavailable exception support
+must not be treated as supported by these results.
+
+Remaining STL-named symbols include custom game comparators, by-value game
+objects, algorithms over game structures and some string support. Those require
+independent type/behavior evidence. A symbol mentioning STL is not automatically
+reusable library code. Continue with complete generated-output comparisons and
+retain unresolved candidates under `scratch/`.

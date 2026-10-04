@@ -1,0 +1,39 @@
+{
+  "id": "stl_802915f4",
+  "source": "src/stlport/containers/stl_802915f4.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802915f4",
+      "size": 88
+    }
+  ],
+  "functions": [
+    {
+      "name": "_M_erase__Q24_STLt8_Rb_tree5ZiZQ24_STLt4pair2ZCiZP21IRegisterSerializableZQ24_STLt10_Select1st1ZQ24_STLt4pair2ZCiZP21IRegisterSerializableZQ24_STLt4less1ZiZQ24_STLt9allocator1ZQ24_STLt4pair2ZCiZP21IRegisterSerializablePQ24_STLt13_Rb_tree_node1ZQ24_STLt4pair2ZCiZP21IRegisterSerializable",
+      "address": "0x802915f4",
+      "size": 88,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__builtin_delete": "0x801a8990"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

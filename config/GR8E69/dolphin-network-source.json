@@ -1,0 +1,253 @@
+{
+  "description": "Public Dolphin network library reconstructions; reviewed retained subset only. No repository-wide license grant asserted.",
+  "files": [
+    {
+      "path": "include/dolphin-network/dolphin/dvdeth.h",
+      "upstream_path": "dolphin/include/dolphin/dvdeth.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "f33fcac5f22934677eded27a67f972b89fb69a3e66857d04b0df5778fd7d88bd",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/eth.h",
+      "upstream_path": "dolphin/include/dolphin/eth.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "8a9d5b12a531745e9a118c8d8410b40a67d23e142d1667233a770b90e0932f03",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IFFifo.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IFFifo.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "4e01cc4b2e87e1f865754d1c41cace45ca3fe408058d412fff540bfd6163ba68",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IFQueue.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IFQueue.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "0edc525f28fc6e22022ad9e1184ac0738ab23c834fb0eef1c434613ca4565433",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IP.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IP.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "7f2d6180d3a595d20139f8ae01f21c08d8fb16484c1240c3b65ac5e6ff4e6cc6",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPArp.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPArp.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "a36f29ee9292ba80b240ad82703caeb509ebeafed910419abcba4a0a55b7183c",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPDhcp.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPDhcp.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "d93515e8c2cd777e155499d8205ec0901bb658de20a6f26a2e102775d6586aa2",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPDns.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPDns.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "cc140ccef6c3d90bbf9a5295240100fbda99cc9691be5f71a72f8ce482f8a3aa",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPEther.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPEther.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "a2fcc454b834341b32e68b41142d76e2416ffd093d83d9684e012423f18bda46",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPFrag.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPFrag.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "2cbe157abe00576ab788bd76675c00cc95f7cd53f7f1ba8823870cb0b8d5cb3e",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPIcmp.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPIcmp.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "f6d1a473c5b50411707c61c5853fc33a21b17c8cc0554b61a32099ff28fb894b",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPIgmp.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPIgmp.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "5fd1bc19ca33e4a3c781c4fc04d797e1822cc79db93e968fcbff820737c511d0",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPOpt.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPOpt.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "c6864be7d9197f4e172844d8d9d581ff50f81ce264bbdd722caf3d1668f6639f",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPPPPoE.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPPPPoE.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "aaf51f2d262e7a98fd39be8f5429c7d055ae77bff4f8e8b1796eb693942bc9fe",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPPpp.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPPpp.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "76cfcf48dc58afba73388d01f0c8bde304a556a2e03e3420bcf04e55e6965e49",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPRoute.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPRoute.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "5c34dbd0e0e296135609c0602b63f032a02c2ff5e60001c2caabe26001256fc4",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPSocket.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPSocket.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "15955669a6ae57d7e9fdbb2f3a8027457a647cb217e99ab0278b1c9abd96253c",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPTcp.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPTcp.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "5301226f015327ba52b2b89eb12195e34cd581f62f00d336d2ee46dd889c1000",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPTcpTimeWait.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPTcpTimeWait.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "db4388ffd08689e06e8ee876d444d6f2e3bd93ace89f91956a4fb647bbca3b85",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPUdp.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPUdp.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "f8df8a73a90ea9df1adf8e1d333189b538a6083666e9301e96f3bb2b4270fcf2",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip/IPUuid.h",
+      "upstream_path": "dolphin/include/dolphin/ip/IPUuid.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "d7a0f0f0db4dc279c61f8b701abf70f55f2238b880300dae8c52e7e098090107",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/ip.h",
+      "upstream_path": "dolphin/include/dolphin/ip.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "568ce8d71690d8c13865694aab075927605f15e4893a6c22f9f037edad633e9c",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/md5.h",
+      "upstream_path": "dolphin/include/dolphin/md5.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "e550087c26b2bc319fde5ad67acbd8986fcaf94b2a721f4d3d067ae612d13c01",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/private/ip.h",
+      "upstream_path": "dolphin/include/dolphin/private/ip.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "1622b54cd024406b7315977f3b47128907c85228f56641a13afaf44f68a4d867",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-network/dolphin/private/sdk.h",
+      "upstream_path": "dolphin/include/dolphin/private/sdk.h",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "e3cfbd8cf9e11458d30df56cb4fc6ec76d8c359a86656e1f04ca05a3b8c10d48",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ip/IFFifo.c",
+      "upstream_path": "src/ip/IFFifo.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "680d4950dd89befbeff3dc21362d11af5f9cc37d95931321262caede9a35b456",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ip/IFRing.c",
+      "upstream_path": "src/ip/IFRing.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "358f03ca6759bbb393210fa5d201e48cb9a294078fdf48e0e80ea21a710fb79f",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ip/IPLcp.c",
+      "upstream_path": "src/ip/IPLcp.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "96ffc2208848f5c1419367fba13ac141101afd2ef4c9c447e5f3fafdc80e6512",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ip/IPOpt.c",
+      "upstream_path": "src/ip/IPOpt.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "9b7d5a85b9516eab8e3f31dc35751f2785e7d178880154b9428a7b1f5855db52",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ip/IPTcpTimeWait.c",
+      "upstream_path": "src/ip/IPTcpTimeWait.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "c6d8523182cedfe48527a9b64a8004e118c2c5b75f8f97484564dcc02e24f3a7",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/eth/md5.c",
+      "upstream_path": "build/src/eth/md5.c",
+      "repository": "https://github.com/Cuyler36/dolnetbp",
+      "commit": "ba3846a83bf86505fe60e07aefe89e3e0ffc0e34",
+      "upstream_sha256": "c2c735c768c2145be464170fb3aae755b38fc6b289316884656c80e154ed174e",
+      "modified": false
+    }
+  ]
+}

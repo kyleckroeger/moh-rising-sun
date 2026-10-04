@@ -1,0 +1,111 @@
+{
+  "id": "IPLcp",
+  "source": "src/dolphin/ip/IPLcp.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-network",
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8024a7f4",
+      "size": 336,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802dd288",
+      "size": 308,
+      "type": 1
+    },
+    {
+      "name": ".sdata2",
+      "address": "0x804528f8",
+      "size": 10,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "PPPDumpLCP",
+      "address": "0x8024a7f4",
+      "size": 336,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "OSReport": "0x80255298",
+    "memcmp": "0x80266558",
+    "memset": "0x80266778",
+    "OSCreateAlarm": "0x80253aac"
+  },
+  "undefined_in_discarded_code": [
+    "PPPDeleteOpt",
+    "PPPInsertOpt",
+    "PPPAuthConf",
+    "PAPInit",
+    "CHAPInit",
+    "PPPOpen",
+    "PPPoEOpen",
+    "PPPoETerminate"
+  ],
+  "discarded_functions": [
+    "ReceiveConfigureRequest",
+    "ReceiveConfigureAck",
+    "ReceiveConfigureNak",
+    "ReceiveConfigureReject",
+    "Up",
+    "Down",
+    "Started",
+    "Finished",
+    "PPPInitLCP"
+  ],
+  "original_file": "IPLcp.c",
+  "discarded_local_functions": [
+    "ReceiveConfigureRequest",
+    "ReceiveConfigureAck",
+    "ReceiveConfigureNak",
+    "ReceiveConfigureReject",
+    "Up",
+    "Down",
+    "Started",
+    "Finished"
+  ],
+  "sda_externals": [],
+  "upstream": {
+    "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+    "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+    "path": "src/ip/IPLcp.c"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "stl_80290190",
+  "source": "src/stlport/containers/stl_80290190.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80290190",
+      "size": 160
+    }
+  ],
+  "functions": [
+    {
+      "name": "_M_push_back_aux_v__Q24_STLt5deque2ZP9ThreadJobZQ24_STLt9allocator1ZP9ThreadJobRCP9ThreadJob",
+      "address": "0x80290190",
+      "size": 160,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_M_reallocate_map__Q24_STLt5deque2ZP9ThreadJobZQ24_STLt9allocator1ZP9ThreadJobUib": "0x8028fff4",
+    "__builtin_new": "0x801a8910"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

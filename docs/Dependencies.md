@@ -19,13 +19,13 @@ row but overlap across rows; they are not a prediction of matching coverage.
 
 ## Useful next work packets
 
-Counts below follow the CMatrix additions in this revision. They will change as
+Counts below follow the container, Lua and network-helper additions in this revision. They will change as
 manifests grow; regenerate the report for current counts. A small function with many callers is a type/contract research lead,
 not necessarily the easiest source match.
 
 | Target | Address | Code bytes | Unfinished callers | Work to unlock |
 | --- | --- | ---: | ---: | --- |
-| `DWI_alloc` | `0x801a8670` | 212 | 143 | Follow the small-allocation path and main heap call; establish flag and failure behavior. Allocation operators now provide a verified caller. |
+| `DWI_alloc` | `0x801a8670` | 212 | 139 | Follow the small-allocation path and main heap call; establish flag and failure behavior. Allocation operators now provide a verified caller. |
 | `FEHashUpper` | `0x800499a4` | 100 | 116 | Establish exact character conversion, signedness and hash recurrence; find callers' string ownership without replacing the algorithm with a generic hash. |
 | `DWI_free` | `0x801a8894` | 64 | 75 | Recover `freeSmall`'s result contract and the fallback to `MEM_free`. |
 | `GetStringCRC` | `0x801acb98` | 80 | 60 | Identify the CRC table/algorithm and signedness before selecting a public implementation. |
@@ -38,8 +38,10 @@ counts do not represent newly reconstructed callers. Further matrix work should
 resolve vector construction/layout before adding functions that need local or
 by-value vectors. The small string and allocation helpers above remain useful
 independent work packets. The larger library path remains
-[STLport container instantiations](STLport.md), with the pointer-vector data-ownership blocker documented there. These are independent
-research tracks; no game layout needs to be invented to finish the vector work.
+[STLport container instantiations](STLport.md). The builtin/pointer subset is
+now accepted; remaining custom comparators and game value types require further
+evidence. These are independent research tracks; a pointer-container match
+does not establish the pointed-to game class layout.
 
 ## Evidence and limitations
 

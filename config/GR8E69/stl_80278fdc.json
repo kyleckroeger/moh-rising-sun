@@ -1,0 +1,39 @@
+{
+  "id": "stl_80278fdc",
+  "source": "src/stlport/containers/stl_80278fdc.cpp",
+  "category": "restored_library",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80278fdc",
+      "size": 80
+    }
+  ],
+  "functions": [
+    {
+      "name": "_M_destroy_nodes__Q24_STLt11_Deque_base2ZP9ThreadJobZQ24_STLt9allocator1ZP9ThreadJobPPP9ThreadJobT1",
+      "address": "0x80278fdc",
+      "size": 80,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__builtin_delete": "0x801a8990"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

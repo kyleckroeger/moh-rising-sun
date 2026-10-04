@@ -10,6 +10,404 @@
     "Compatible subset; the original STLport release is not uniquely identified.",
     "Vendored excerpts preserve node/member declarations, swap and six Rb_global algorithm bodies.",
     "Configuration macros are expanded for the supported namespace/calling convention; unrelated declarations are omitted.",
-    "Explicit-instantiation translation units are project integration files, not recovered original file boundaries."
+    "Explicit-instantiation translation units are project integration files, not recovered original file boundaries.",
+    "The 86 container fragments use only builtin, STLport and pointer types; game pointees are forward declarations.",
+    "Native new keeps bad_alloc::what as a declaration, without its unused inline body/string; no retained instantiation calls it. This is an integration boundary, not recovered original header text.",
+    "All container-generated allocated output is text, checked completely. No unused generated data is dropped.",
+    "The selected profile disables exceptions, iostreams, wide-character facilities and threading; it uses new/delete allocation and the _STL namespace. Other profiles remain unverified."
+  ],
+  "container_headers": [
+    {
+      "path": "include/stlport-containers/cctype",
+      "upstream_path": "stlport/cctype",
+      "upstream_sha256": "f3ed0f46957a69294bc022b4d36070b495b0e9cb94f66b6530619fbfbe523439",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/climits",
+      "upstream_path": "stlport/climits",
+      "upstream_sha256": "c8d9733952dbf91d2bbbb67697c7dbe2227e10e361fc9045814158519ac218a6",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/config/stl_confix.h",
+      "upstream_path": "stlport/config/stl_confix.h",
+      "upstream_sha256": "0ae8eb1ac3fba9f27b274a6a9e7ed153c99754ffade71b134891c9a2a5f0b048",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/config/stl_gcc.h",
+      "upstream_path": "stlport/config/stl_gcc.h",
+      "upstream_sha256": "6f4d2dd7a06c33971779e130d4526f4312d6c782c5ead7f2ee39d3ef5227e857",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/config/stlcomp.h",
+      "upstream_path": "stlport/config/stlcomp.h",
+      "upstream_sha256": "ee6ab101eaf8b4e859612359d74299505d196cf1e1e54d03e7de54eab325ff58",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/cstddef",
+      "upstream_path": "stlport/cstddef",
+      "upstream_sha256": "798d58aa1d369789689f19fe3e4976ec66ed3a15e32aaf9bd931ac6a67627cb2",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/cstdio",
+      "upstream_path": "stlport/cstdio",
+      "upstream_sha256": "22f5614606509d59dfc16b686e4d8bcc31b3c8436dad8db90d9d00849cbf83c2",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/cstdlib",
+      "upstream_path": "stlport/cstdlib",
+      "upstream_sha256": "0185f277af520d975bbffc37bee0d741e269af7c2a90816776259820ed94d8fa",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/cstring",
+      "upstream_path": "stlport/cstring",
+      "upstream_sha256": "4152f75af2829dec2c32e62da7aacbea2b4bea8bdfc252597810b7996c73a43d",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/cwchar",
+      "upstream_path": "stlport/cwchar",
+      "upstream_sha256": "86210bba7457c6baa74ea592ec9c4693ede2cd136415688694f7ada2b391fe09",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/deque",
+      "upstream_path": "stlport/deque",
+      "upstream_sha256": "5c80e9b28307ba1ed4b5950954c22c9e92122815fc7cdb0eb66c14907ba77caa",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/exception",
+      "upstream_path": "stlport/exception",
+      "upstream_sha256": "24239681af3a75a9f1c25c3231643ce4e903d661726329c0f901359fe4f0bbca",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/iosfwd",
+      "upstream_path": "stlport/iosfwd",
+      "upstream_sha256": "e294d510739a033a801afdbe771e9e9f2e797ffb470d2320150a456178cb162c",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/map",
+      "upstream_path": "stlport/map",
+      "upstream_sha256": "62219999548901abc9af9e2c04815082490f5356113494cfb9853f81757b0970",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/memory",
+      "upstream_path": "stlport/memory",
+      "upstream_sha256": "127f125df959add3911c40e66b906a0c0a6ec0a057e7ffc70d64ac539ddbd715",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/new",
+      "upstream_path": "stlport/new",
+      "upstream_sha256": "70484966eaa0644a8936eaa6a6b21c47fbc721161ca3b4425f21b3857734fa29",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_algobase.c",
+      "upstream_path": "stlport/stl/_algobase.c",
+      "upstream_sha256": "b23e8258a33985b1427e57226b17737cc3c8b72129c6e237ffb848d28a64604b",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_algobase.h",
+      "upstream_path": "stlport/stl/_algobase.h",
+      "upstream_sha256": "d7c27c097c4848e7b766121f396b5fbddf92e5212a79ca1b77e65c0879137839",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_alloc.c",
+      "upstream_path": "stlport/stl/_alloc.c",
+      "upstream_sha256": "fd900564ebd886716b9678d2ee5201465c8cadbff1a140b6d555e97c467af78d",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_alloc.h",
+      "upstream_path": "stlport/stl/_alloc.h",
+      "upstream_sha256": "533ebb2f36190d0d1ca76ba74e26e4c6f573c70b896dc92db5efcbd7c944cf97",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_auto_ptr.h",
+      "upstream_path": "stlport/stl/_auto_ptr.h",
+      "upstream_sha256": "910f83b28570ff55ea51a918b8dcbf574a28654545b051aefb9cf54a2ab6fd43",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_bvector.h",
+      "upstream_path": "stlport/stl/_bvector.h",
+      "upstream_sha256": "0c339c65b9994b04e969691306e517a3091126e286883a9bee070fb5807c05e1",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_config.h",
+      "upstream_path": "stlport/stl/_config.h",
+      "upstream_sha256": "05d1cad97eccb486874525dd01356674949cf26336ca01528d626bd53da1e911",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_config_compat.h",
+      "upstream_path": "stlport/stl/_config_compat.h",
+      "upstream_sha256": "7f44612f97d5e27edd54f8f70987590d9e45be2f102567e7902ca233a5b5f405",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_config_compat_post.h",
+      "upstream_path": "stlport/stl/_config_compat_post.h",
+      "upstream_sha256": "bc54db4e95cef8bf8ba80b053bce3cabbd261dfc82882fd8bdd2a6e39197de4d",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_construct.h",
+      "upstream_path": "stlport/stl/_construct.h",
+      "upstream_sha256": "c58c7b11f363ef6bf94d52b4a404a20c0f3bc2640f39c7733f3186c871db7679",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_ctraits_fns.h",
+      "upstream_path": "stlport/stl/_ctraits_fns.h",
+      "upstream_sha256": "94fb460e1b8cc0d8cb14165a223e194da751c68881c843edea69d5c6fb95d5f5",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_deque.c",
+      "upstream_path": "stlport/stl/_deque.c",
+      "upstream_sha256": "5877527ebac7d9dca543ab9b70a0284e5a9ed04e4c68365edd2d1d8e67e079fd",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_deque.h",
+      "upstream_path": "stlport/stl/_deque.h",
+      "upstream_sha256": "081e407df9c2e6bc61edd4a5a5efcf1941ecf36a947faca523fdd45eb280ec4a",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_epilog.h",
+      "upstream_path": "stlport/stl/_epilog.h",
+      "upstream_sha256": "ed297b864038d25758715d5b5a53b782194618893b311004d79bad14b82bcb04",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_function_base.h",
+      "upstream_path": "stlport/stl/_function_base.h",
+      "upstream_sha256": "459a911033725fb0f7b2737c6ae00fb82f9810d4cb301d54fc120e46b5424003",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_hash_fun.h",
+      "upstream_path": "stlport/stl/_hash_fun.h",
+      "upstream_sha256": "dc12901e5e86c59b81b54a92261e2d547a021bed7d0912d5ba5ddf03d5676536",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_iterator.h",
+      "upstream_path": "stlport/stl/_iterator.h",
+      "upstream_sha256": "5c32732d8177aa76a4b3310912391062a7f6f81c91f5c8b4bc4e5c5c04626b2f",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_iterator_base.h",
+      "upstream_path": "stlport/stl/_iterator_base.h",
+      "upstream_sha256": "d61032f9f00ca07b29617bda5bc541311f412a29f4b6f188cc74be8c5e972ede",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_map.h",
+      "upstream_path": "stlport/stl/_map.h",
+      "upstream_sha256": "a02ec5023f4e53501ad3643d5bd191900a4caa7d04e17f031027d4b0ee808b23",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_pair.h",
+      "upstream_path": "stlport/stl/_pair.h",
+      "upstream_sha256": "4f9809a8e71134ff159b0da69d502d67b3f55f698589f468bad060b4f19f3a8e",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_prolog.h",
+      "upstream_path": "stlport/stl/_prolog.h",
+      "upstream_sha256": "8abf1ddcb3a23632972ab4de4d044ff1accb341d75d3b434547f59161c14b94c",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_range_errors.h",
+      "upstream_path": "stlport/stl/_range_errors.h",
+      "upstream_sha256": "4649f4db46ca2bbec5261d04aaf8f90f86de11daad23e3b9058662604dfdc1ce",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_raw_storage_iter.h",
+      "upstream_path": "stlport/stl/_raw_storage_iter.h",
+      "upstream_sha256": "774e858e2bcf5d288d5a9c2e318b29a532447ae4daf72a751513f6cde28848b6",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_relops_cont.h",
+      "upstream_path": "stlport/stl/_relops_cont.h",
+      "upstream_sha256": "c9b11d657653b9a6551522090095d59f20817d714502a90cef0629d42085955f",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_site_config.h",
+      "upstream_path": "stlport/stl/_site_config.h",
+      "upstream_sha256": "ff1c5db9f71ee1230eea43510e26f765af9637fc4cbf0cb71de039aa7a24a6e4",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_string.c",
+      "upstream_path": "stlport/stl/_string.c",
+      "upstream_sha256": "43c920610d924017439d3563e06c6d0bd3c57e822887fdbea3962beaa6000404",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_string.h",
+      "upstream_path": "stlport/stl/_string.h",
+      "upstream_sha256": "058d5f9fb3574c571d0b86bcc3d0ed9cd866d6e8c79688e744cec66925508b3f",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_string_fwd.c",
+      "upstream_path": "stlport/stl/_string_fwd.c",
+      "upstream_sha256": "3c16662ff440bc43c18d49aaa004ef7e1b5882d2fb274debc573dded1bbda214",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_string_fwd.h",
+      "upstream_path": "stlport/stl/_string_fwd.h",
+      "upstream_sha256": "4ffe5e061e12ccd9ee7456ccf213dc4c244ce4074cb81b6d57f0d78949a7ca32",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_string_hash.h",
+      "upstream_path": "stlport/stl/_string_hash.h",
+      "upstream_sha256": "2e6b77c9e3cca0d1dd9146a936457aaa874b4dac39241c2daa0f415851c62d97",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_string_io.c",
+      "upstream_path": "stlport/stl/_string_io.c",
+      "upstream_sha256": "eab2338e46744256d6ecd50dfff31d62ce03b741b1792f6d54912c7b5edca54c",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_string_io.h",
+      "upstream_path": "stlport/stl/_string_io.h",
+      "upstream_sha256": "bc91272e64757d230d72719d672873442548b645db03b65c98a70a79afbd068e",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_tempbuf.c",
+      "upstream_path": "stlport/stl/_tempbuf.c",
+      "upstream_sha256": "d443a603c2511ce6ce47e007e41697cb315c9c086b9256aebe2ae11b247ba2d7",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_tempbuf.h",
+      "upstream_path": "stlport/stl/_tempbuf.h",
+      "upstream_sha256": "a769930ad68f274c949e22172dd2d6dcccc297a161dca97d2324e3c6e9ff1cb2",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_threads.c",
+      "upstream_path": "stlport/stl/_threads.c",
+      "upstream_sha256": "bf4ee55d1a690992b697e980cb136c97d1b0417c25c2a72da2472139ac4b192c",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_threads.h",
+      "upstream_path": "stlport/stl/_threads.h",
+      "upstream_sha256": "c2af83c7807ec31f7a2389ef948b46dbccb506ed580483d56c2d5814341530f3",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_tree.c",
+      "upstream_path": "stlport/stl/_tree.c",
+      "upstream_sha256": "15aa05c9bfc92f0e33814960403c11de7b8abcd2711097aa18b5e4f31ab428d0",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_tree.h",
+      "upstream_path": "stlport/stl/_tree.h",
+      "upstream_sha256": "e089aeafbb05c48df495ccbaf89a3b68cf8d5a7226241d0f59605a8c18f30559",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_uninitialized.h",
+      "upstream_path": "stlport/stl/_uninitialized.h",
+      "upstream_sha256": "3de9425ee18154569d6a004b364017aa5593913b4122d93e9e9a169fe4e41b3c",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_vector.c",
+      "upstream_path": "stlport/stl/_vector.c",
+      "upstream_sha256": "0332ecf0443095e97e41985aaa288918b921f7c7e46a3523024448b240191d53",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/_vector.h",
+      "upstream_path": "stlport/stl/_vector.h",
+      "upstream_sha256": "1cb0be1afd4a24ded96d0cfb012c04d1fbb818f86b009ffef352f081f4ca7fcf",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/char_traits.h",
+      "upstream_path": "stlport/stl/char_traits.h",
+      "upstream_sha256": "b33b53f7434adf444f34c890067956c6675945c6a39c431c6352c6c96b6d3aa8",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl/type_traits.h",
+      "upstream_path": "stlport/stl/type_traits.h",
+      "upstream_sha256": "033aba0d783060cd9c3b7d3dded980ef6a397501846786a0f0d109880de2f40e",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/stl_user_config.h",
+      "upstream_path": "stlport/stl_user_config.h",
+      "upstream_sha256": "bcf037b9c3ca8544ae958f7245d277168ba34727d45c44a8fee938143fe4fcf1",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/string",
+      "upstream_path": "stlport/string",
+      "upstream_sha256": "be51a69db5829066c9d6216dcd0cb5da1de9dfea3291199b3b278553a637dd1e",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/using/cstring",
+      "upstream_path": "stlport/using/cstring",
+      "upstream_sha256": "bedaa9a2b060b05f202dad660e584b43171735e2e492d606599b8fd72b746a65",
+      "modified": false
+    },
+    {
+      "path": "include/stlport-containers/vector",
+      "upstream_path": "stlport/vector",
+      "upstream_sha256": "f70baf4026f13f6914d35e55e9fa183cbcebaab89c9952c5a1023ce2c1398cba",
+      "modified": false
+    }
+  ],
+  "runtime_declarations": [
+    {
+      "path": "include/stlport-runtime/native/new",
+      "upstream_url": "https://github.com/gcc-mirror/gcc/blob/releases/gcc-2.95.2/gcc/cp/inc/new",
+      "upstream_sha256": "07412b2ff8c6818fcad2186c06c15bda88e0d8f4f2f0faf660981e48c603b3b1",
+      "modified": true
+    },
+    {
+      "path": "include/stlport-runtime/native/exception",
+      "upstream_url": "https://github.com/gcc-mirror/gcc/blob/releases/gcc-2.95.2/gcc/cp/inc/exception",
+      "upstream_sha256": "6956b782485f45fe3dbc00caf8311e85df005e097d0d4d43ee511231e0d22232",
+      "modified": false
+    }
   ]
 }
