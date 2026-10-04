@@ -5,7 +5,7 @@
 
 // Scoped GR8E69 runtime views. Names for fields and View types are descriptive.
 // Only the documented accesses/strides are established; these are not complete
-// allocation types or on-disc formats. Do not allocate native objects from them.
+// native object types or on-disc formats. Use only the established extents.
 
 // Method-only interface: the native TriggerObject layout remains unknown.
 class TriggerObject {
@@ -13,14 +13,24 @@ public:
     int GetLegacyField(int) const;
 };
 
-// NEXTSTATE establishes this array stride, but does not inspect its fields.
+// Twelve-byte runtime message entry; match fields retain descriptive names.
 struct BSCode_MessageHandlerEntry_struct {
-    unsigned char unknown00[12];
+    unsigned int code;
+    unsigned int matchValue;
+    unsigned short messageId;
+    unsigned char matchKind;
+    unsigned char flags;
 };
 
 struct BSMessageRegistration_struct {
-    unsigned char unknown00[13];
+    short objectIndex;
+    short nextIndex;
+    short previousIndex;
+    unsigned short stateId;
+    BSCode_MessageHandlerEntry_struct *message;
+    unsigned char threadIndex;
     unsigned char flags; // +0x0d
+    unsigned char unknown0e[2];
 };
 
 struct BSEventView {
@@ -56,9 +66,11 @@ struct BSClass_struct {
     int *sharedValues; // +0x60
 };
 
+struct BSMachineThread_struct;
+
 struct BSObject {
     BSClass_struct *scriptClass;
-    unsigned char unknown04[4];
+    BSMachineThread_struct *threads;
     TriggerObject *nativeObject;
 };
 
@@ -89,5 +101,21 @@ extern BSMessageRegistration_struct *BSRegisterMessage(
     BSCode_MessageHandlerEntry_struct *, BSObject *, unsigned short,
     BSMachineThread_struct *, BSMessageRegistration_struct **);
 extern void BSMessageRemoveHandler(BSMessageRegistration_struct *);
+
+extern BSMessageRegistration_struct **g_MessageRegistrationArray;
+extern BSMessageRegistration_struct *g_MessageRegistrationFreeList;
+extern BSMessageRegistration_struct *g_MessageRegistrationFreeListHead;
+extern int g_iBSMessageRegistrationListSize;
+extern BSMessageListView *g_MessageList;
+extern unsigned char *g_pBSMachineMemory;
+extern int g_pBSMachineMemoryOffset;
+
+extern BSMessageRegistration_struct *BSMessageGetFreeRegistration();
+extern BSMessageRegistration_struct *BSGetMessageHandlerByIndex(short);
+extern short BSGetMessageHandlerIndex(BSMessageRegistration_struct *);
+extern unsigned char BSGetThreadIndex(BSMachineThread_struct *, BSObject *);
+extern BSMachineThread_struct *BSGetThreadByIndex(unsigned char, BSObject *);
+extern BSObject *BSGetObjectByIndex(short);
+extern short BSGetIndexByObject(BSObject *);
 
 #endif

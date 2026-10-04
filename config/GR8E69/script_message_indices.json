@@ -1,0 +1,49 @@
+{
+  "id": "script_message_indices",
+  "source": "src/script/message_indices.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f8224",
+      "size": 76
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSGetMessageHandlerByIndex__Fs",
+      "address": "0x800f8224",
+      "size": 36,
+      "binding": 1
+    },
+    {
+      "name": "BSGetMessageHandlerIndex__FP28BSMessageRegistration_struct",
+      "address": "0x800f8248",
+      "size": 40,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_MessageRegistrationFreeList": "0x80326168"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmessage.cpp",
+  "original_file_index": 1124,
+  "local_externals": [
+    "g_MessageRegistrationFreeList"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "script_message_remove",
+  "source": "src/script/message_remove.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f7ab0",
+      "size": 160
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSMessageRemoveHandler__FP28BSMessageRegistration_struct",
+      "address": "0x800f7ab0",
+      "size": 160,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "BSGetMessageHandlerByIndex__Fs": "0x800f8224",
+    "g_MessageRegistrationArray": "0x80326164",
+    "g_MessageRegistrationFreeListHead": "0x8032616c",
+    "BSGetMessageHandlerIndex__FP28BSMessageRegistration_struct": "0x800f8248"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmessage.cpp",
+  "original_file_index": 1124,
+  "local_externals": [
+    "g_MessageRegistrationArray",
+    "g_MessageRegistrationFreeListHead"
+  ]
+}

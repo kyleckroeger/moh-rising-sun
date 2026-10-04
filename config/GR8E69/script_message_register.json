@@ -1,0 +1,50 @@
+{
+  "id": "script_message_register",
+  "source": "src/script/message_register.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f73a8",
+      "size": 404
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSRegisterMessage__FP33BSCode_MessageHandlerEntry_structP8BSObjectUsP22BSMachineThread_structPP28BSMessageRegistration_struct",
+      "address": "0x800f73a8",
+      "size": 404,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_MessageRegistrationArray": "0x80326164",
+    "BSGetObjectByIndex__Fs": "0x800f6fa0",
+    "BSGetThreadByIndex__FUcP8BSObject": "0x800f6a48",
+    "BSGetMessageHandlerByIndex__Fs": "0x800f8224",
+    "BSMessageGetFreeRegistration__Fv": "0x800f7cac",
+    "BSGetIndexByObject__FP8BSObject": "0x800f7008",
+    "BSGetThreadIndex__FP22BSMachineThread_structP8BSObject": "0x800f6a08",
+    "BSGetMessageHandlerIndex__FP28BSMessageRegistration_struct": "0x800f8248"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmessage.cpp",
+  "original_file_index": 1124,
+  "local_externals": [
+    "g_MessageRegistrationArray"
+  ]
+}

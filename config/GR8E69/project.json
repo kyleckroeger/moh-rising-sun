@@ -698,7 +698,14 @@
     "script_arithmetic.json",
     "script_logical.json",
     "script_objects.json",
-    "script_nextstate.json"
+    "script_nextstate.json",
+    "script_message_indices.json",
+    "script_thread_indices.json",
+    "script_message_free.json",
+    "script_message_remove.json",
+    "script_message_register.json",
+    "script_message_list.json",
+    "script_message_memory.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

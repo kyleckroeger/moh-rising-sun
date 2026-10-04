@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 592424,
+    "matching_code_bytes": 593388,
     "total_executable_code_bytes": 2492032,
-    "percent": 23.772728440084236,
+    "percent": 23.811411731470542,
     "categories": {
-      "reconstructed_game": 200208,
+      "reconstructed_game": 201172,
       "restored_library": 392216
     },
-    "matching_functions": 1969
+    "matching_functions": 1979
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -500,7 +500,7 @@
     "config/GR8E69/particle_size.json": "2f5fccaf2b032dce1d59c0bcca32201ee9b378e62dceee6cbc34eddddf2d9a30",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "108f57160552334ee11df616896b74d6c222f0102189dea8b9d5b14c541211c0",
+    "config/GR8E69/project.json": "6dbb414fc31a3212be898e51032940d88b720b987aea4bb305d3c73b7d5309eb",
     "config/GR8E69/script_arithmetic.json": "ec74fa88f8d6807fd445cbf66b4d4a7daaa273a339154b38c9710de23f8fdec0",
     "config/GR8E69/script_branches.json": "e7d49ea1a1b684c7bda78aa8a954777dc51bf3e78b2050dfb9abc2b3e0160e5b",
     "config/GR8E69/script_calls.json": "b25ba9582ac33d62abdb90b39671c9230d1aed2c6d35190b8899108c0e80621b",
@@ -508,6 +508,12 @@
     "config/GR8E69/script_comparisons.json": "5db5d6f47ef9bc166fc3221fdc7e6be0b84cbd18ef252eda38ed520ef4a8a5eb",
     "config/GR8E69/script_event_lookup.json": "7234777fa0122f399f555d815b0592ea55386fd02987114a89562544c44a17ac",
     "config/GR8E69/script_logical.json": "4e73622d7fe058bcfd24bf34589cb5121beae452aa4ab7af9369674d143225a8",
+    "config/GR8E69/script_message_free.json": "27e8f6af068a253106c1213b29dfe58887f18d2e5043ff7a6099eb1be2256ae0",
+    "config/GR8E69/script_message_indices.json": "4a6982a7440db7c59eb397e8887ccb3e4c6188060aad00384f5038d870b3574e",
+    "config/GR8E69/script_message_list.json": "3c18d19bb85148321ba82ee0ac238a6fc866774bfc3e98799a4ba1076bcc7139",
+    "config/GR8E69/script_message_memory.json": "e7de31fa5e69050fbabeaa70c9ae2ae5927c902a71c19b39c420268db48c2c67",
+    "config/GR8E69/script_message_register.json": "759343678fafffb9b04c179de9c5247b3e89b278d1de3e5699d59ea3a6c18da7",
+    "config/GR8E69/script_message_remove.json": "5bfe377a63951d0864552b2eb7e65ad705c68c2c5116e8e88ecc44fd7f80c290",
     "config/GR8E69/script_music_events.json": "032e4da800a8301374dba45800c9d07d35796bef894a4737e895d33d2ccc5ce0",
     "config/GR8E69/script_music_latency.json": "392d7540ba409317bc4270e164b52fdbdb20deb594c9654d9ed350bac7a53a17",
     "config/GR8E69/script_negate.json": "3d8e298c5786753cc413da81cceb6cfeba6c9193b63cb037990198e2095a2b7e",
@@ -515,6 +521,7 @@
     "config/GR8E69/script_not.json": "47c7af683c943669b447f0a28b5b1ba781fee3a38dd73461947134b0d81c4f62",
     "config/GR8E69/script_objects.json": "731e28925a29c66bd054763627b50c1d8ceb91d30a0fdc11d15f9faae2b604a4",
     "config/GR8E69/script_stack.json": "51d1c716e65edd95a6791e3b11f40a0e01a53b10fa4dc25075e48e1e6769e373",
+    "config/GR8E69/script_thread_indices.json": "71054aa7e78f4fae9424102a54fcc76682ff71799b60986981e2502ad0d3d9fa",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/stl_80278d64.json": "04dc314cda8644a93aa797638a2f5a3e946a7bc954506e9bb2be731800b7646a",
     "config/GR8E69/stl_80278ea0.json": "784844808dbfcbe4c0b2a360cdd8a5cd6c1115260192d1fa5e52d4a7ae8c4ebf",
@@ -933,7 +940,7 @@
     "include/game/ParticleRecipe.h": "a12cd591add8b54e4a4fa23067ddef52772ceaebed6d3b2bec5caf62598f0186",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
-    "include/game/ScriptRuntime.h": "144c3a8ca311d8cee185f6a7d5503e90c7941a7d518683f728a59b8c92c842fb",
+    "include/game/ScriptRuntime.h": "bd38aa4c474ed5fee2eb3f002c60a5cea3033bc403fc196cfb4f6c84f72f4c28",
     "include/game/StringCRC.h": "3940d0af2ade9e671b10c5bb1ef12705a7322101b231aae92cfd2aab4a07fa31",
     "include/game/TARExtension.h": "cf1f48aa0be63a29babdba7f53c58439facb94141d7e04d0d32fcc878bad2cb3",
     "include/game/TevStage.h": "47aaf3de5425dace0c30e2852896a9494f78ab4a4dcaad6be03d4aa4204d7466",
@@ -1645,6 +1652,12 @@
     "src/script/comparisons.cpp": "7e7e808c7c41dd90eef83478889a045891078853a4979bdbf95abd9841f3747b",
     "src/script/event_lookup.cpp": "e6444d247f01879da2f3d82c61c512a1cdec053754a160b056d68296bac6ef8f",
     "src/script/logical.cpp": "4cbcca143b9b639fafd8723a2169aae6bf3ceb7c51c4c2198ddd3b4efb3ec939",
+    "src/script/message_free.cpp": "1cbe70d67f7188ca2af359b98253c61f7703ec5407c37678d17155abbe0e5b0d",
+    "src/script/message_indices.cpp": "5b2e0dfc31706b1ae70bd08fe36ec6107f03541bb15e851c0013ff2c9ef14829",
+    "src/script/message_list.cpp": "e37dcf02d28aa5414e5b25c0cb3ef8bc9dc674a5a6c30c2be550229ca149e046",
+    "src/script/message_memory.cpp": "d10f0808d0fb912cca025a057083d2b3d8e1a34df702dca718c2f9f5d473eb37",
+    "src/script/message_register.cpp": "fcaab46386450b3b19d0a216222a0cd7a4ae8ed1136e59958fea071722c0f55c",
+    "src/script/message_remove.cpp": "c8fa9b7631942071ad6d83b9cac603c34ec0e56571e3f8f788b802c6d9d05df3",
     "src/script/music_events.cpp": "998748dd2ede9e53d607e41683fdaf5c081b2be02f990ae035135ff4d41b009d",
     "src/script/music_latency.cpp": "da0497d8536cec4aa50005a2f44ec6d949c49a2206c279feb746d6b7a4ea052b",
     "src/script/negate.cpp": "f6a920b97c8c4df32b02d9c8754c3f0dc6d69d34d8c56a1f3f48b57b1d211e88",
@@ -1652,6 +1665,7 @@
     "src/script/not.cpp": "6a042ba188f55af543191aecccbb4496d1aa55eef9a44bd4b87f0931d69ce977",
     "src/script/objects.cpp": "e26862f9ca86884fde70db5ba230bdd70f92dc031b4633cc0db8a4e83687446e",
     "src/script/stack.cpp": "b98bb8bfcda3985b4e4e1a757b27db6342f5142af06c629e63e219ce8f324a29",
+    "src/script/thread_indices.cpp": "40ec45e14b723eddf0a7b2e805ac8dbbe6f06bfe5eae56c5a02569f243794c2e",
     "src/stlport/CONTAINERS_NOTICE": "7c59267a930cdf87e1af44873547a8275a61b1329833c74ae5f821a5e507a22e",
     "src/stlport/COPYING.GCC": "dcc100d4161cc0b7177545ab6e47216f84857cda3843847c792a25289852dcaa",
     "src/stlport/containers/stl_80278d64.cpp": "e75a070f28a3c316c4e6064da2c7c710838c54dd1b2297c5d808bb5037c33590",
@@ -17957,6 +17971,132 @@
       "discarded_functions": [],
       "object_sha256": "871bcd36e13f74ecec49d192cded3a338d0c2e0f65e8a7085bcae59da65b20f2",
       "linked_sha256": "d204a49fbe1d86c905f427695472743a2579e40578149980b7bb2259a4d7f823"
+    },
+    {
+      "id": "script_message_indices",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 76,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "55a7cfc234c0e288a034a77195f4f1b0ca31369a3252316ee2680f14f304262f",
+      "linked_sha256": "e504c7997079f007b9f16ee710105a5bd54cad954cabfa4635aec842a370c739"
+    },
+    {
+      "id": "script_thread_indices",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 80,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "fb4f6d1af688f048db0533726319e1112958dd627deb5d893afad417f293691e",
+      "linked_sha256": "42ee20a236d5e5167dcbdcbfec1d4b8c52051258cecc308113c0ed9ef3b68257"
+    },
+    {
+      "id": "script_message_free",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 60,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "860f88855617b3915653689e3be497a514ce71cf09896ce658172c2425107f35",
+      "linked_sha256": "3f994a708b1a1daa76a1c1b21469d5c4af1d629fa981ff710e770e17db0e079f"
+    },
+    {
+      "id": "script_message_remove",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 160,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "ceba6ba14ce9244a62a6cb835803865523ea0e4cfeeadfa4662430ad6e3e72ee",
+      "linked_sha256": "afe98a53fab6454a6b523bf728d271c73eccf3b527fc14a1857e1d08c5ac8d3b"
+    },
+    {
+      "id": "script_message_register",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 404,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b71b38c401e59d8809f41122f1b607ac8656ba4a45f3d7eda100887107299b4d",
+      "linked_sha256": "cc01de3e49b93c4c002aeeae8ba57aec4d242d6667c8fe123a201dd872e68141"
+    },
+    {
+      "id": "script_message_list",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 164,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "306c782a2075bf89c5d337dda89f72d06cdef0d1fdb74fa4a12828d3b7cbe93b",
+      "linked_sha256": "b7ee70021eeac93bdb30318f82f8af064345c6db9609feed40501f12b48bf480"
+    },
+    {
+      "id": "script_message_memory",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 20,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f7212a5cc26f535f0e325b1844eb59e067f68ee0ecf72146a3a847e490a4c2ac",
+      "linked_sha256": "4646f05a4c01753be7ebaf64f094cec95b319610a2a555e5ff59db6f42f5a85a"
     }
   ],
   "code_map": {
@@ -41029,34 +41169,6 @@
             "kind": "function",
             "name": "BSExecuteThread__FP8BSObjectP22BSMachineThread_struct",
             "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f6964",
-            "size": 136,
-            "kind": "function",
-            "name": "BSInitMessageFreeList__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f69ec",
-            "size": 28,
-            "kind": "function",
-            "name": "BSMachineGetFreeMessageList__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f6a08",
-            "size": 64,
-            "kind": "function",
-            "name": "BSGetThreadIndex__FP22BSMachineThread_structP8BSObject",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f6a48",
-            "size": 16,
-            "kind": "function",
-            "name": "BSGetThreadByIndex__FUcP8BSObject",
-            "evidence": "adjacent-compiler-markers"
           }
         ],
         "marker_interval": [
@@ -41186,13 +41298,6 @@
         "file_name": "bsmessage.cpp",
         "ranges": [
           {
-            "address": "0x800f7274",
-            "size": 20,
-            "kind": "function",
-            "name": "BSMessageGetMemoryRequirements__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800f7288",
             "size": 160,
             "kind": "function",
@@ -41204,13 +41309,6 @@
             "size": 128,
             "kind": "function",
             "name": "BSEndMessage__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f73a8",
-            "size": 404,
-            "kind": "function",
-            "name": "BSRegisterMessage__FP33BSCode_MessageHandlerEntry_structP8BSObjectUsP22BSMachineThread_structPP28BSMessageRegistration_struct",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -41235,13 +41333,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800f7ab0",
-            "size": 160,
-            "kind": "function",
-            "name": "BSMessageRemoveHandler__FP28BSMessageRegistration_struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800f7b50",
             "size": 132,
             "kind": "function",
@@ -41260,13 +41351,6 @@
             "size": 144,
             "kind": "function",
             "name": "BSInitMessageRegistrationFreeList__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f7cac",
-            "size": 60,
-            "kind": "function",
-            "name": "BSMessageGetFreeRegistration__Fv",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -41316,20 +41400,6 @@
             "size": 108,
             "kind": "function",
             "name": "FindCurrentMessageListEntry__FP22BSMachineThread_structP33BSCode_MessageHandlerEntry_struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f8224",
-            "size": 36,
-            "kind": "function",
-            "name": "BSGetMessageHandlerByIndex__Fs",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f8248",
-            "size": 40,
-            "kind": "function",
-            "name": "BSGetMessageHandlerIndex__FP28BSMessageRegistration_struct",
             "evidence": "adjacent-compiler-markers"
           },
           {

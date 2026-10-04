@@ -1,0 +1,56 @@
+{
+  "id": "script_message_list",
+  "source": "src/script/message_list.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f6964",
+      "size": 164
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSInitMessageFreeList__Fv",
+      "address": "0x800f6964",
+      "size": 136,
+      "binding": 1
+    },
+    {
+      "name": "BSMachineGetFreeMessageList__Fv",
+      "address": "0x800f69ec",
+      "size": 28,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_iBSMessageRegistrationListSize": "0x8031d160",
+    "g_pBSMachineMemoryOffset": "0x8031d130",
+    "g_pBSMachineMemory": "0x8031d12c",
+    "g_MessageList": "0x8031d124",
+    "g_MessageListHead": "0x8031d128"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmachin.cpp",
+  "original_file_index": 1101,
+  "local_externals": [
+    "g_MessageList",
+    "g_MessageListHead",
+    "g_pBSMachineMemory",
+    "g_pBSMachineMemoryOffset"
+  ]
+}

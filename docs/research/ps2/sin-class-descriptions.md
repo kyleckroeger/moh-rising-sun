@@ -103,10 +103,15 @@ establishes only the bit-0 use described above.
 
 Interpretation [notes], confidence **medium** for the dominant form only: entries with
 `+4` = 1 and `+10` = `0x0303` mean "message code *N*, arriving through an event ID of
-kind *K*". The other forms are **not decoded**. GameCube status: **unverified**. GR8E69
-has `BSRegisterMessage`, `BSRegisterMessageToEvent(unsigned short, unsigned short,
-BSObject*)` and `BSSendMessage(unsigned short, …)`. Those signatures are consistent with
-16-bit message codes and event IDs, but the bodies were not traced.
+kind *K*". The other forms are **not decoded**. The PS2 halfword interpretations
+remain **unverified** on GameCube. Subsequent [matching GameCube registration
+reconstruction](../../Script.md#message-registrations-and-index-helpers) establishes
+a message ID at `+8`, a comparison word at `+4`, a comparison byte at `+0x0a`, and
+flags at `+0x0b`. Flag bit 0 controls insertion into the message-ID registration
+table. Registration compares the whole word at `+4`; it does not independently
+establish the proposed halfword meanings at `+4` and `+6`. Its code-word comparison
+distinguishes an existing registration from a replacing handler. No GameCube
+`.sin` file serialization or broader enum meaning is established by these bodies.
 
 ## What the numbers mean (PS2 script use)
 

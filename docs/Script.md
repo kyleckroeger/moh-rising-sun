@@ -8,13 +8,15 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-Fourteen fragments in `src/script/` reconstruct **37 functions and 6,188 executable
-bytes**: all **33 opcode handlers** (5,596 bytes), event lookup (220 bytes), and three
-music built-ins (372 bytes). Their exact symbols, ranges and dependencies are in
+Twenty-one fragments in `src/script/` reconstruct **47 functions and 7,152 executable
+bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
+helpers (964 bytes), event lookup (220 bytes), and three music built-ins (372 bytes).
+Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json`. Original file markers support the `bsmachin.cpp`,
-`bsfile.cpp` and `bsbifunc.cpp` groupings; these fragments are not complete original
-translation units. Private interpreter globals retain the `bsmachin.cpp` file-record
-scope in their manifests and remain original storage, with no source/data credit.
+`bsmessage.cpp`, `bsfile.cpp` and `bsbifunc.cpp` groupings; these fragments are not
+complete original translation units. Private globals retain their original
+file-record scope in the manifests and remain original storage, with no source/data
+credit.
 
 ## Verified instruction behaviour
 
@@ -81,8 +83,8 @@ zero. No overflow handling or divide-by-zero guard is present in these handlers.
 
 In mixed comparisons, large integers can therefore lose precision before equality
 or ordering is decided. Float comparisons use the original unordered comparison
-instructions: NaN makes `NE` true
-and the other five comparisons false; positive and negative zero compare equal.
+instructions: NaN makes `NE` true and the other five comparisons false; positive
+and negative zero compare equal.
 `NEG` uses the target's float sign-negation instruction for float values.
 
 `CAST` uses the target's truncation-toward-zero instruction for float-to-integer
@@ -123,7 +125,7 @@ retained where required by external function signatures.
 | --- | --- |
 | State entry | Entry code at `+0`, events at `+4`, messages at `+8`, parent ID at `+0x0c`, depth at `+0x0e`, message count at `+0x0f`, event count at `+0x10`. |
 | Event entry | Eight-byte stride; code at `+0`, event number at `+4`, flags at `+7`. Bit 0 enables event 1 for the exit phase. Other flag bits and byte `+6` remain unknown. |
-| Message entry | Twelve-byte stride passed to `BSRegisterMessage`; the handler does not inspect the entry fields. |
+| Message entry | Twelve-byte stride passed to `BSRegisterMessage`; `NEXTSTATE` does not inspect the entry fields. Registration accesses are described below. |
 | Interpreter thread | Current state pointer at `+0x10`, level pointer at `+0x14`, registration-list head at `+0x18`, state ID at `+0x1c`, flags at `+0x1e`. |
 | Registration-list node | Handler pointer at `+0`, associated registration at `+4`, next node at `+8`, depth at `+0x0c`, state ID at `+0x0e`. |
 | Associated registration | Bit 1 of the flags byte at `+0x0d` is cleared when the node is removed. Other fields remain opaque. |
@@ -154,12 +156,68 @@ The transition follows these paths:
    a deeper state keeps existing nodes and registers the target state's messages.
 4. When the state ID changes, bind the target state and register messages when needed
    through `BSRegisterMessage` and `BSMachineGetFreeMessageList`. Jump to the state's
-   entry code and reset the stack top to one slot below the frame. If the state ID was already current, skip
-   registration changes and still take this entry-code path.
+   entry code and reset the stack top to one slot below the frame. If the state ID
+   was already current, skip registration changes and still take this entry-code path.
 
 Both code transfers use the high byte as a code-base index and the low 24 bits as a
-word offset. Message registration/removal, free-list allocation and native field
-lookup remain original dependencies; this change claims no source credit for them.
+word offset. Message registration/removal and free-list allocation now have matching
+source as described below. Native field lookup remains original code.
+
+## Message registrations and index helpers
+
+The following complete bodies are reconstructed. They extend the registration path
+used by `NEXTSTATE`; message delivery and interpreter execution remain separate work.
+
+| Functions | Executable bytes | Verified behaviour |
+| --- | ---: | --- |
+| `BSRegisterMessage` | 404 | Finds a compatible registration, reuses it or marks it as associated, and creates a new registration when needed. |
+| `BSMessageRemoveHandler` | 160 | Unlinks a table-linked registration and pushes it onto the registration free list. |
+| `BSMessageGetFreeRegistration` | 60 | Pops the registration free list through its signed next index. |
+| `BSGetMessageHandlerByIndex` / `BSGetMessageHandlerIndex` | 76 | Converts signed indices and pointers using a 16-byte registration stride; `-1` and null are the sentinel pair. |
+| `BSGetThreadIndex` / `BSGetThreadByIndex` | 80 | Searches an object's thread array or directly indexes it using a 32-byte stride. |
+| `BSInitMessageFreeList` / `BSMachineGetFreeMessageList` | 164 | Reserves and links 16-byte state-registration list nodes in the interpreter arena, then pops nodes from that list. |
+| `BSMessageGetMemoryRequirements` | 20 | Returns `16 * g_iBSMessageRegistrationListSize + 1776`. The constant is preserved without inferring an allocation breakdown. |
+
+The shared runtime header now establishes these additional accesses:
+
+| View | Established fields and extents |
+| --- | --- |
+| Message entry | Code word at `+0`; a 32-bit comparison value at `+4`; message ID at `+8`; a comparison byte at `+0x0a`; flags at `+0x0b`. The descriptive names `matchValue` and `matchKind` do not establish the underlying enum or split the comparison word into PS2 halfword meanings. |
+| Registration | Signed object index at `+0`, next index at `+2`, previous index at `+4`, state ID at `+6`, message pointer at `+8`, thread index at `+0x0c`, and flags at `+0x0d`. The stride is 16 bytes; the final two bytes remain opaque. |
+| Script object | Thread-array pointer at `+4`. The class level count bounds the linear thread search. |
+
+When message flag bit 0 is set, registration searches the head indexed by message
+ID. It compares the resolved thread, the word at message `+4`, and byte `+0x0a`.
+If the code word also matches, it returns the existing registration without updating
+its state ID. Otherwise it sets bit 1 of that registration's flags, returns it through
+the associated-registration output, and allocates a new registration. The search
+stops at this first compatible entry. The output is initialized to null on all paths.
+The original `BSSendMessage` body tests this registration bit at `0x800f7838` and skips
+the entry when set; that dispatch body is inspected evidence, not accepted source.
+`NEXTSTATE` clears the bit when it removes the replacing state's list node.
+
+A new registration stores the object index, thread index, state ID and message
+pointer, and starts with zero flags. With message flag bit 0 set, it is inserted at
+the message-ID list head and repairs the former head's previous index. Otherwise
+both indices become `-1` and it is not inserted into that table. Removal repairs
+both neighbours or the head as applicable, then links the entry into the free list;
+it does not clear the remaining fields.
+
+The two free lists are distinct: `BSMessageListView` nodes belong to interpreter
+states, while `BSMessageRegistration_struct` entries belong to the message system.
+The state-node initializer advances the arena offset by `16 * count`, writes the
+next links, terminates the final node and returns zero. It requires a positive count
+and sufficient arena space. Its pop helper returns null for an empty list; the
+registration pop helper dereferences its head without an empty-list guard. These
+original preconditions are preserved, even though `BSRegisterMessage` subsequently
+checks the allocator's return value.
+
+Thread lookup returns zero both for the first thread and for no match. Direct
+thread lookup has no range check. Registration index conversion recognizes only
+the `-1`/null sentinel and adds no validation for other out-of-range indices or
+unrelated pointers. Object-index conversion remains original code. These are
+32-bit GameCube runtime views and contracts, not portable containers or recovered
+GameCube file layouts.
 
 ## Event lookup and music interfaces
 
@@ -188,9 +246,10 @@ by this reconstruction.
 
 ## Verification and next work
 
-All eleven accepted `bsmachin.cpp` fragments use ProDG **3.9.3** with
+All thirteen accepted `bsmachin.cpp` fragments and the five `bsmessage.cpp` fragments
+use ProDG **3.9.3** with
 `-O2 -G0 -fno-exceptions -fno-implicit-templates`. This profile reproduces all 33
-interpreter handlers and their generated constants. Event lookup and music
+interpreter handlers, the ten helpers above and the generated constants. Event lookup and music
 built-ins retain their verified ProDG 3.8.1 profile.
 
 The arithmetic work distinguishes these working profiles for the tested source:
