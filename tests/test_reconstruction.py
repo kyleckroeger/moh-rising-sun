@@ -33,11 +33,11 @@ class SourceVerification(unittest.TestCase):
         for unit in self.units:
             verify_unit(self.original, Elf32(self.linked(unit['id'])), unit)
         result = progress(self.original, self.units, self.project)
-        self.assertEqual(result['matching_code_bytes'], 319320)
+        self.assertEqual(result['matching_code_bytes'], 329936)
         self.assertEqual(result['total_executable_code_bytes'], 2492032)
-        self.assertGreaterEqual(result['percent'], 11)
+        self.assertGreaterEqual(result['percent'], 13)
         self.assertEqual(result['categories']['reconstructed_game'], 2648)
-        self.assertEqual(result['categories']['restored_library'], 316672)
+        self.assertEqual(result['categories']['restored_library'], 327288)
 
     def test_sn_bss_records_require_size_name_and_file_identity(self):
         unit = self.by_name['newlib_vfprintf']

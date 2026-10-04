@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 319320,
+    "matching_code_bytes": 329936,
     "total_executable_code_bytes": 2492032,
-    "percent": 12.813639632235862,
+    "percent": 13.23963737223278,
     "categories": {
       "reconstructed_game": 2648,
-      "restored_library": 316672
+      "restored_library": 327288
     },
-    "matching_functions": 1260
+    "matching_functions": 1277
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -42,6 +42,7 @@
     "config/GR8E69/CARDStatEx.json": "09aa01ca0f9aca3fb92d09450bcfa6abe896675cbe3eae5fbe581e3cbaf9feaf",
     "config/GR8E69/CARDUnlock.json": "d3021b64674347c8a86fa48e084d9d57dae887ebedb3a933ce3cb7d56d7b3c8f",
     "config/GR8E69/CARDWrite.json": "e4e6e33292f31c14507d4d2254f0430dcea697f977172b21b939519b37ba93a8",
+    "config/GR8E69/DHCPDump.json": "f3bfd021d2701b67bc9833d9299c7ba69039bb53ae37c80a0d29cdc28e3afeae",
     "config/GR8E69/EXIBios.json": "07758e121d33c226aa4820183a2a3d9ffb2880e797e2be05fb409ae85d3954c6",
     "config/GR8E69/EXIUart.json": "c46d4ac5e5e05e6cb3356f33aa5de8433f97eba48b70217f21128818b134617c",
     "config/GR8E69/GBA.json": "118c216d7f9c6cb1cbf1a6bbe3eef642c01880e9265c4e8e038c70f5f44edd08",
@@ -66,8 +67,10 @@
     "config/GR8E69/GXTexture.json": "c622bcb9d345d3f792c5de531161c9c40a84c265bbede6e8e19392fbf81902bb",
     "config/GR8E69/IFFifo.json": "8934ff84f3bfbeed0b9f53a01b4051bb8b233c9365d6e9d4d0c0bbe3e1444aaf",
     "config/GR8E69/IFRing.json": "dfd3f2db5b9e62b8d72d730959338cc4814c655b1a564fba33ffbafd17b9480a",
+    "config/GR8E69/IPDnsDiagnostic.json": "9582e8a480d6f7222dd8eae7e4918c0f066d268ef9e0660ca0c329f5ca2ea42a",
     "config/GR8E69/IPLcp.json": "515d85eb4eed3f5e6265f41d375a17bef8bb3f36c5d0af81e75af1ff66d22af1",
     "config/GR8E69/IPOpt.json": "fd1ff1570368d7039d91cd5fc7ee83ae94c8905cac819bd76ce4a68f64ddb9c6",
+    "config/GR8E69/IPRoute.json": "4372f7c324f8915eb3d0394a0378f18d77cba7cf7a604598f30f941399718c40",
     "config/GR8E69/IPTcpTimeWait.json": "a730730f7a8a1f893805c375b404dd9059275b419507742603ad0c970c7aa651",
     "config/GR8E69/MathFun.json": "9e80137f858f9ae8b3f5196bbc775dee869a2b074b454634dcbea1d35733488a",
     "config/GR8E69/OS.json": "e28cc0ba227f81bf79b3192c8acf2c4df2549d6e46fba930b6b23bde56c6e8f8",
@@ -99,8 +102,9 @@
     "config/GR8E69/ai_src.json": "136c56ec3f12ec8b879525cc1d5766e8b42c5f266a23e090ce86f5fae181bf66",
     "config/GR8E69/ar.json": "d8da1ec6cb2ac6c8f83ac2a4b995898cbb723d38d41c84a1d25a8d7a863b1908",
     "config/GR8E69/arq.json": "b79b6daec16d9806b4df0388a3f927cb06d48ce10fdb9fa35772dcecce291de7",
+    "config/GR8E69/base64.json": "e88ebd5740a86b7f43b5b6812b6c4e81114d43dfae07a3e7429abb7c6a1bfec7",
     "config/GR8E69/baseline.json": "9ebff32fd809e72fdf889ab49760be2aa1172768f855af86d0251c1fc4da2ef7",
-    "config/GR8E69/dolphin-network-source.json": "c4616b335fadcd2f77820f927a596f671c57887fa0478799f8fe6bced4f89cad",
+    "config/GR8E69/dolphin-network-source.json": "e97b9a4c5a7ddc73015864061533e6e379c45d825edff5f5758edcb1ea46f628",
     "config/GR8E69/dolphin-source.json": "00e4890e3bb570018abbacc62a7beee8052c2ef4f115363b1716785b62884cf1",
     "config/GR8E69/dsp.json": "bcc4a05a8ec25869e7675234c297eb8243e9a2e03983f64bf5e7040c7a897cd7",
     "config/GR8E69/dsp_debug.json": "2c0310fa0176274558e8b7835044c6eb9dc060213f74257a1f46cb54d1746654",
@@ -111,6 +115,7 @@
     "config/GR8E69/dvdidutils.json": "146c4fe18f3d3e8eef2b1cd674155ffd5696c80b23ada1f47cbf175b43d2e1ea",
     "config/GR8E69/dvdlow.json": "e7c3f8c921d458b9f0a4c9c1b60d76522a25bbcc6eff2994cf01b304525c2630",
     "config/GR8E69/dvdqueue.json": "50714e893a617523e6e28eff930b1d91d1a5eaa8a00c9cce217acf50c4337821",
+    "config/GR8E69/ethsec.json": "5305737979b5e234b337720f07434e602f0d0ab8df682c5287ba2349d6438f69",
     "config/GR8E69/fstload.json": "d49e84fe0d1e9af1dd569811065db3c015f596b540ac5988c5078fa2f9c5dd5e",
     "config/GR8E69/lapi.json": "d4d026e1a8397f43593a65d06dadf3a619f11d021cbfd8a7759fec9804f0da35",
     "config/GR8E69/lauxlib.json": "954c02e3cf91c26a7e1cd13537a99e479d8113b8b3cecb4e214332cc4e315d1b",
@@ -247,7 +252,7 @@
     "config/GR8E69/newlib_wctomb_r.json": "fc59b588e63f3a1f302300e1257e93abec1acb4041e2ef289f02d12774f5ae70",
     "config/GR8E69/newlib_writer.json": "cf7eab1eebe3bf4b04912e61b9ce9a2c7c4191ebecc610aa267f69bdabe6512f",
     "config/GR8E69/newlib_wsetup.json": "61dd8c7f513073a2f4c355ee89bdcf2d300345cd74c632de1997cba9f3e84020",
-    "config/GR8E69/project.json": "5c0a25263b7e7e5381b5375bef0be6639210d9d0aad80b04519b7efd996923b8",
+    "config/GR8E69/project.json": "8e4c1f2002b1222cd541e4910b6dd363d4be8f02b3c66cf3f8fa119f39cc0ad4",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/stl_80278d64.json": "04dc314cda8644a93aa797638a2f5a3e946a7bc954506e9bb2be731800b7646a",
     "config/GR8E69/stl_80278ea0.json": "784844808dbfcbe4c0b2a360cdd8a5cd6c1115260192d1fa5e52d4a7ae8c4ebf",
@@ -346,6 +351,10 @@
     "config/GR8E69/target.json": "48fb9548419f5549d49ebba1794d3193398e58c37c0d15569e6ed1810d8adb8f",
     "config/GR8E69/vi.json": "dd95046e01890cb33bdb0006c936ff713366f21401f267c9cf268a70ac8b8833",
     "include/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "include/dolphin-ethernet/dolphin/eth/eth.h": "2bbc2d1a029b6bb132891614bf09c6784a631ec88517a01042b3b7e429a237a2",
+    "include/dolphin-ethernet/dolphin/ip/ip.h": "f49d83c28e326b38553842714af58460a4aacb113c70809653dbd85750907685",
+    "include/dolphin-ethernet/dolphin/md5.h": "e550087c26b2bc319fde5ad67acbd8986fcaf94b2a721f4d3d067ae612d13c01",
+    "include/dolphin-ethernet/dolphin/tcp/tcp.h": "9cdbfc680bac3e78d199fa3fc736f8c2d4557cde96379aa70bcd86326f232cbe",
     "include/dolphin-network/dolphin/dvdeth.h": "f33fcac5f22934677eded27a67f972b89fb69a3e66857d04b0df5778fd7d88bd",
     "include/dolphin-network/dolphin/eth.h": "8a9d5b12a531745e9a118c8d8410b40a67d23e142d1667233a770b90e0932f03",
     "include/dolphin-network/dolphin/ip/IFFifo.h": "4e01cc4b2e87e1f865754d1c41cace45ca3fe408058d412fff540bfd6163ba68",
@@ -632,7 +641,8 @@
     "include/target/string.h": "b73138d3d89c4db3ea017939b94e7a8ed7b59d4f090f7e4df068a1fe854d0297",
     "src/MathFun.cpp": "62fdc1c10ab2ff80ae713d40d1fa1efc22748836588999759447f0350ca8bc91",
     "src/dolphin/LICENSE.PrimeDecomp": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
-    "src/dolphin/NETWORK_NOTICE": "7fe45e7c46d0067f919013faf1b440df4ffc29a0e02d7a7dce6db9d5861db405",
+    "src/dolphin/LICENSE.bfbb": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+    "src/dolphin/NETWORK_NOTICE": "bb4c39371835c344ec608a98b06c3c44d39b0df7060c37ae1c200a4d48471b16",
     "src/dolphin/NOTICE": "0d179cb87cd8a7bfb706069a1d5e618f425bbe25885b61fc4d5223e724fddad3",
     "src/dolphin/ai/ai.c": "e491df5610ef1f48b432dfed87993a98d4265ddd169da880449aad4845e1a3c2",
     "src/dolphin/ai/ai_src.c": "8172e0fb8f2e5e2396a537286911aa6dcbbd5d5a19925c13d917d161a64f4684",
@@ -682,6 +692,8 @@
     "src/dolphin/dvd/dvdlow.c": "c064dd1a2a8969650016cf742c7009ac20aadcec5a6ae990b864feab04ea5686",
     "src/dolphin/dvd/dvdqueue.c": "838c3e925ca42504770c215d0c84971680a2d38c5d04bcd40f9e92a8fef3e1fa",
     "src/dolphin/dvd/fstload.c": "d90c3493b439305f26170362d1eff37da7678f42b6cdfcf77f1445a63ed5334a",
+    "src/dolphin/eth/base64.c": "718a42fed1e99d5d30c32f31b2ce542d44ceebd374477978f466168843061e27",
+    "src/dolphin/eth/ethsec.c": "df746823b967810cb058acd94eaf8c386c527f4212af45407811e317f6c716ce",
     "src/dolphin/eth/md5.c": "c2c735c768c2145be464170fb3aae755b38fc6b289316884656c80e154ed174e",
     "src/dolphin/exi/EXIBios.c": "df6807f819abd481f6cdd7608a5f372e8f4394e43e9e568b2c1f2bdbdaed849f",
     "src/dolphin/exi/EXIUart.c": "7194b31708079415f7fbe89a723cd419abeea3839c4d4e1ce1e0ede89a98f20e",
@@ -706,10 +718,13 @@
     "src/dolphin/gx/GXTev.c": "d9f0f81ab5ffdfe7ab831dcc6107f961012ed94c353d289ddffff77da8e42180",
     "src/dolphin/gx/GXTexture.c": "6a4338c827df7f3eaf9a80f7d1ed1719f9467eb2efd3e7cd425e08e47ce19148",
     "src/dolphin/gx/__gx.h": "3eaf8e0fac674b708f1c6d05e4a04299c73b289b772ee83654e065ef6396a5ee",
+    "src/dolphin/ip/DHCPDump.c": "497c14e8e67e4da6ff79d59666cacd3c93f07441aa6366a8702271967db17977",
     "src/dolphin/ip/IFFifo.c": "680d4950dd89befbeff3dc21362d11af5f9cc37d95931321262caede9a35b456",
     "src/dolphin/ip/IFRing.c": "358f03ca6759bbb393210fa5d201e48cb9a294078fdf48e0e80ea21a710fb79f",
+    "src/dolphin/ip/IPDnsDiagnostic.c": "54ba1c69db73c68aa6f4f8f83014a7f4855f5c2b83f712ea93b172af4bfd0691",
     "src/dolphin/ip/IPLcp.c": "96ffc2208848f5c1419367fba13ac141101afd2ef4c9c447e5f3fafdc80e6512",
     "src/dolphin/ip/IPOpt.c": "9b7d5a85b9516eab8e3f31dc35751f2785e7d178880154b9428a7b1f5855db52",
+    "src/dolphin/ip/IPRoute.c": "6152d89fe1572084180844950d26b47f01d3b3448de916bb2bf82b4abd378886",
     "src/dolphin/ip/IPTcpTimeWait.c": "c6d8523182cedfe48527a9b64a8004e118c2c5b75f8f97484564dcc02e24f3a7",
     "src/dolphin/mtx/mtx44.c": "7e0525518b6d66fb81116b920c97b3dd1d888c2dbbce844f520606cbc140ee34",
     "src/dolphin/os/OS.c": "bef87476a6b40543ba86c2b96ceeac7905236169c14d16b401c4e2f0bfccda0f",
@@ -9931,6 +9946,233 @@
       "discarded_functions": [],
       "object_sha256": "1e3454cfbda9897065eb6fe70751dbd7c49847c829cb60202b2db59d6ca98f74",
       "linked_sha256": "210df8514ee3f97b5dc02dedbe9f86595bd7db4e574f57aa7923aeb16785f47f"
+    },
+    {
+      "id": "IPRoute",
+      "category": "restored_library",
+      "functions": 7,
+      "code_bytes": 4452,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "CountBits",
+        "Hit",
+        "IPGetMacAddr",
+        "IPGetBroadcastAddr",
+        "IPGetNetmask",
+        "IPGetAddr",
+        "IPGetGateway",
+        "IPGetAlias",
+        "IPGetMtu",
+        "IPGetLinkState",
+        "IPGetInterfaceStat",
+        "IPClearInterfaceStat",
+        "IPSetBroadcastAddr",
+        "IPSetNetmask",
+        "IPSetAddr",
+        "IPSetGateway",
+        "IPSetAlias",
+        "IPSetMtu",
+        "IPPrintRoutingTable",
+        "IPIsLoopbackAddr",
+        "IPAddRoute",
+        "IPRemoveRoute",
+        "IPInitRoute",
+        "IPRefreshRoute",
+        "IPGetConfigError",
+        "IPSetConfigError",
+        "IPClearConfigError"
+      ],
+      "object_sha256": "16aa2a7d594209605c31dd230fdd88b80d3d80d0c670aa62900b4056cc0f2f39",
+      "linked_sha256": "b37f4e59903edfff3b8ff2ecb5133095862038643dfbc1b3f37eee34c05798dc"
+    },
+    {
+      "id": "base64",
+      "category": "restored_library",
+      "functions": 2,
+      "code_bytes": 780,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [],
+      "object_sha256": "3dc846dc2b994ec9f39f9557a1cb6e55d7272546276b5a078142c0ba9d2c2a85",
+      "linked_sha256": "c314456d2e22312201f5f7a3832d2f18087af214aa461be727e1387b755f13ce"
+    },
+    {
+      "id": "ethsec",
+      "category": "restored_library",
+      "functions": 4,
+      "code_bytes": 2692,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "AT_IP4_IsMyAddrMask",
+        "GetTcpSegLen",
+        "VerifyPacket",
+        "CalcDigest"
+      ],
+      "object_sha256": "f3a2ed45fdbd351054d42da1274f64cbaaec16b8a37138f152a9bd54cf0e6e2a",
+      "linked_sha256": "c48cf5eb9e5115335ba6879464a6002c1b2359ca9df0d67b5293fceaf5a5ec27"
+    },
+    {
+      "id": "DHCPDump",
+      "category": "restored_library",
+      "functions": 1,
+      "code_bytes": 952,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [],
+      "object_sha256": "2b5209ecf18bd7a1150e6012442642c3b5927dc34c92c209f5a91b7ef772d6a7",
+      "linked_sha256": "2cdfea322364dfac9490744211ea7cf9d6f81c63cf3cdc72a36844bd7a2db54f"
+    },
+    {
+      "id": "IPDnsDiagnostic",
+      "category": "restored_library",
+      "functions": 3,
+      "code_bytes": 1740,
+      "compiler_family": "GC",
+      "compiler_version": "1.2.5n",
+      "compiler_flags": [
+        "-char",
+        "signed",
+        "-O4,p",
+        "-inline",
+        "auto",
+        "-sym",
+        "on",
+        "-nodefaults",
+        "-proc",
+        "gekko",
+        "-fp",
+        "hard",
+        "-Cpp_exceptions",
+        "off",
+        "-enum",
+        "int",
+        "-warn",
+        "pragmas",
+        "-requireprotos",
+        "-pragma",
+        "cats off",
+        "-D__GEKKO__",
+        "-DSDK_REVISION=1",
+        "-DRELEASE"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "DumpQuestion",
+        "SkipName",
+        "DNSDumpPacket"
+      ],
+      "object_sha256": "a114e7613bacb2e89f3c3e3c33d977edbbbb0a9f9807340d80eeb8e214085ff2",
+      "linked_sha256": "4ca17229139b3fcd8bf4b65c6e70c7196ce091735e516a2fec9d7fd45aef17de"
     }
   ],
   "code_map": {
@@ -69709,72 +69951,6 @@
             "kind": "function",
             "name": "ICMPIn",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024b6c0",
-            "size": 308,
-            "kind": "function",
-            "name": "IPIsBroadcastAddr",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024b7f4",
-            "size": 188,
-            "kind": "function",
-            "name": "IPIsLocalAddr",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8024b8b0",
-            "size": 348,
-            "kind": "function",
-            "name": "IPGetRoute",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unmatched files/IPRoute.c [local symbols only]",
-        "file_record": 747,
-        "file_name": "IPRoute.c",
-        "ranges": [
-          {
-            "address": "0x8024ba0c",
-            "size": 1508,
-            "kind": "function",
-            "name": "AddRoute",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8024c3d8",
-            "size": 648,
-            "kind": "function",
-            "name": "DecayRoute",
-            "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024bff0",
-        "ranges": [
-          {
-            "address": "0x8024bff0",
-            "size": 1000,
-            "kind": "function",
-            "name": "IPRedirect",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8024c660",
-        "ranges": [
-          {
-            "address": "0x8024c660",
-            "size": 452,
-            "kind": "function",
-            "name": "IPRecoverGateway",
-            "evidence": "unknown-file"
           }
         ]
       },
@@ -70185,46 +70361,6 @@
             "size": 216,
             "kind": "function",
             "name": "TCPOnReset",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unmatched files/IPDns.c [local symbols only]",
-        "file_record": 758,
-        "file_name": "IPDns.c",
-        "ranges": [
-          {
-            "address": "0x80250228",
-            "size": 208,
-            "kind": "function",
-            "name": "DumpName",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x802502f8",
-            "size": 548,
-            "kind": "function",
-            "name": "DumpResource",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x8025051c",
-            "size": 984,
-            "kind": "function",
-            "name": "CheckResource",
-            "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 802508f4",
-        "ranges": [
-          {
-            "address": "0x802508f4",
-            "size": 952,
-            "kind": "function",
-            "name": "DHCPDump",
             "evidence": "unknown-file"
           }
         ]
@@ -72509,62 +72645,8 @@
         ]
       },
       {
-        "name": "Unmatched files/ethsec.c [local symbols only]",
-        "file_record": 951,
-        "file_name": "ethsec.c",
+        "name": "Unknown file/.text @ 80277ee4",
         "ranges": [
-          {
-            "address": "0x802762e8",
-            "size": 168,
-            "kind": "function",
-            "name": "CalcIpCheckSum",
-            "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80276390",
-            "size": 244,
-            "kind": "function",
-            "name": "CalcTcpCheckSum",
-            "evidence": "local-file-symbol"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 80276484",
-        "ranges": [
-          {
-            "address": "0x80276484",
-            "size": 1348,
-            "kind": "function",
-            "name": "__ETHFilter",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802769c8",
-            "size": 932,
-            "kind": "function",
-            "name": "__ETHPostSend",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 80277bd8",
-        "ranges": [
-          {
-            "address": "0x80277bd8",
-            "size": 552,
-            "kind": "function",
-            "name": "__IPEncodeToBase64",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80277e00",
-            "size": 228,
-            "kind": "function",
-            "name": "__IPDecodeFromBase64",
-            "evidence": "unknown-file"
-          },
           {
             "address": "0x80277ee4",
             "size": 52,

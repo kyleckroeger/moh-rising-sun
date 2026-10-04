@@ -36,7 +36,6 @@ Lua 4.0 was also investigated. Its `lparser.c` lacks the semicolon check in `ret
 | `lapi.c` | `0x80038af4–0x80039080` | 17 | 1,420 | `0x80295c7c`, 12 bytes; `0x80295c88`, 128 bytes |
 | `lcode.c` | `0x8003930c–0x8003a6d8` | 33 | 5,068 | `0x80295dbc`, 88 bytes; `0x80295e18`, 304 bytes |
 | `ltable.c` | `0x80041d80–0x800426ec` | 16 | 2,412 | `0x8029693c`, 44 bytes; `0x80296968`, 40 bytes |
-
 | `lundump.c` | `0x80042a90–0x80043694` | 21 | 3,076 | `0x80296c14`, 448 bytes; `0x80296dd8`, 56 bytes |
 
 The original file symbols and `gcc2_compiled.` markers support these text-unit boundaries. Each manifest in `config/GR8E69/` enumerates the original function names, binding, addresses, lengths, external references and generated section placement. The build checks these against the pinned executable on every run. Read-only data addresses were derived from original references and then verified by linking and comparing the complete generated sections, including strings, constants and pointer tables.

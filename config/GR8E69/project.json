@@ -320,7 +320,12 @@
     "stl_8029114c.json",
     "stl_80291270.json",
     "stl_8029164c.json",
-    "stl_80291770.json"
+    "stl_80291770.json",
+    "IPRoute.json",
+    "base64.json",
+    "ethsec.json",
+    "DHCPDump.json",
+    "IPDnsDiagnostic.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

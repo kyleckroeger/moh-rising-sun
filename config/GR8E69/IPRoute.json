@@ -1,0 +1,181 @@
+{
+  "id": "IPRoute",
+  "source": "src/dolphin/ip/IPRoute.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-network",
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8024b6c0",
+      "size": 4452,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802dd408",
+      "size": 142,
+      "type": 1
+    },
+    {
+      "name": ".bss",
+      "address": "0x8043db50",
+      "size": 1280,
+      "type": 8
+    },
+    {
+      "name": ".sdata",
+      "address": "0x804514b8",
+      "size": 14,
+      "type": 1
+    },
+    {
+      "name": ".sbss",
+      "address": "0x804522a8",
+      "size": 20,
+      "type": 8
+    },
+    {
+      "name": ".sdata2",
+      "address": "0x80452918",
+      "size": 16,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "AddRoute",
+      "address": "0x8024ba0c",
+      "size": 1508,
+      "binding": 0
+    },
+    {
+      "name": "DecayRoute",
+      "address": "0x8024c3d8",
+      "size": 648,
+      "binding": 0
+    },
+    {
+      "name": "IPIsBroadcastAddr",
+      "address": "0x8024b6c0",
+      "size": 308,
+      "binding": 1
+    },
+    {
+      "name": "IPIsLocalAddr",
+      "address": "0x8024b7f4",
+      "size": 188,
+      "binding": 1
+    },
+    {
+      "name": "IPGetRoute",
+      "address": "0x8024b8b0",
+      "size": 348,
+      "binding": 1
+    },
+    {
+      "name": "IPRedirect",
+      "address": "0x8024bff0",
+      "size": 1000,
+      "binding": 1
+    },
+    {
+      "name": "IPRecoverGateway",
+      "address": "0x8024c660",
+      "size": 452,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__IFDefault": "0x80442d20",
+    "OSDisableInterrupts": "0x80257798",
+    "memcpy": "0x802665e8",
+    "OSRestoreInterrupts": "0x802577c0",
+    "memmove": "0x8026668c",
+    "memset": "0x80266778",
+    "IPLimited": "0x80452910",
+    "IPAddrAny": "0x80452908",
+    "OSReport": "0x80255298",
+    "__OSGetSystemTime": "0x8025af9c",
+    "IPLoopbackAddr": "0x8045290c"
+  },
+  "undefined_in_discarded_code": [
+    "ARPGratuitous"
+  ],
+  "discarded_functions": [
+    "CountBits",
+    "Hit",
+    "IPGetMacAddr",
+    "IPGetBroadcastAddr",
+    "IPGetNetmask",
+    "IPGetAddr",
+    "IPGetGateway",
+    "IPGetAlias",
+    "IPGetMtu",
+    "IPGetLinkState",
+    "IPGetInterfaceStat",
+    "IPClearInterfaceStat",
+    "IPSetBroadcastAddr",
+    "IPSetNetmask",
+    "IPSetAddr",
+    "IPSetGateway",
+    "IPSetAlias",
+    "IPSetMtu",
+    "IPPrintRoutingTable",
+    "IPIsLoopbackAddr",
+    "IPAddRoute",
+    "IPRemoveRoute",
+    "IPInitRoute",
+    "IPRefreshRoute",
+    "IPGetConfigError",
+    "IPSetConfigError",
+    "IPClearConfigError"
+  ],
+  "original_file": "IPRoute.c",
+  "discarded_local_functions": [
+    "CountBits",
+    "Hit"
+  ],
+  "sda_externals": [
+    "IPAddrAny",
+    "IPLimited",
+    "IPLoopbackAddr"
+  ],
+  "upstream": {
+    "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+    "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+    "path": "src/ip/IPRoute.c"
+  }
+}

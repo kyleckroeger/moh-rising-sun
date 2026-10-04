@@ -248,6 +248,78 @@
       "commit": "ba3846a83bf86505fe60e07aefe89e3e0ffc0e34",
       "upstream_sha256": "c2c735c768c2145be464170fb3aae755b38fc6b289316884656c80e154ed174e",
       "modified": false
+    },
+    {
+      "path": "include/dolphin-ethernet/dolphin/eth/eth.h",
+      "upstream_path": "src/dolphin/include/dolphin/eth/eth.h",
+      "repository": "https://github.com/bfbbdecomp/bfbb",
+      "commit": "8fb1c232addcacf44932c10c4cede41b43f98f40",
+      "upstream_sha256": "ee8716a6fa8efef244ebfa1c801107140e6020f803ca4aaa5932eb64da3e4493",
+      "modified": true
+    },
+    {
+      "path": "include/dolphin-ethernet/dolphin/ip/ip.h",
+      "upstream_path": "src/dolphin/include/dolphin/ip/ip.h",
+      "repository": "https://github.com/bfbbdecomp/bfbb",
+      "commit": "8fb1c232addcacf44932c10c4cede41b43f98f40",
+      "upstream_sha256": "f49d83c28e326b38553842714af58460a4aacb113c70809653dbd85750907685",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-ethernet/dolphin/tcp/tcp.h",
+      "upstream_path": "src/dolphin/include/dolphin/tcp/tcp.h",
+      "repository": "https://github.com/bfbbdecomp/bfbb",
+      "commit": "8fb1c232addcacf44932c10c4cede41b43f98f40",
+      "upstream_sha256": "9cdbfc680bac3e78d199fa3fc736f8c2d4557cde96379aa70bcd86326f232cbe",
+      "modified": false
+    },
+    {
+      "path": "include/dolphin-ethernet/dolphin/md5.h",
+      "upstream_path": "src/dolphin/include/dolphin/md5.h",
+      "repository": "https://github.com/bfbbdecomp/bfbb",
+      "commit": "8fb1c232addcacf44932c10c4cede41b43f98f40",
+      "upstream_sha256": "e550087c26b2bc319fde5ad67acbd8986fcaf94b2a721f4d3d067ae612d13c01",
+      "modified": false
+    },
+    {
+      "path": "src/dolphin/ip/IPRoute.c",
+      "upstream_path": "src/ip/IPRoute.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "98c3a40d564b1e50ab934597ada15b114a23f189d7a25663654715c7b3732ce1",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/eth/base64.c",
+      "upstream_path": "src/dolphin/src/eth/base64.c",
+      "repository": "https://github.com/bfbbdecomp/bfbb",
+      "commit": "8fb1c232addcacf44932c10c4cede41b43f98f40",
+      "upstream_sha256": "eec2ff55d9f205a98e2b53ddce783b5d8e10a788d0b8dd451d7e77972f7a82fd",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/eth/ethsec.c",
+      "upstream_path": "src/dolphin/src/eth/ethsec.c",
+      "repository": "https://github.com/bfbbdecomp/bfbb",
+      "commit": "8fb1c232addcacf44932c10c4cede41b43f98f40",
+      "upstream_sha256": "429e0eeaf93181da37ee0df4d7a2dbdc06c044915b0680bc924d79cb4b18647b",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ip/DHCPDump.c",
+      "upstream_path": "src/ip/IPDhcp.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "85a20b88f89fa54c242d82db142e691aa86a913e41e794b61071a6746bcfcf7a",
+      "modified": true
+    },
+    {
+      "path": "src/dolphin/ip/IPDnsDiagnostic.c",
+      "upstream_path": "src/ip/IPDns.c",
+      "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+      "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+      "upstream_sha256": "98bdcbed28a29e7e42e2189deeb47bc62b83abadb9ed7f7fdba099afd2d402f0",
+      "modified": true
     }
   ]
 }

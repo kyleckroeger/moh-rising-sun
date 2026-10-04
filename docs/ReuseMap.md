@@ -14,8 +14,7 @@ code/data and full-image verification establish accepted source coverage.
 | SN library adaptations | [RE4 formatter and math support](https://github.com/adonis-singh/re4/tree/9b76ff003081d6ece8b838453fb8310743a972c7/src/game) plus Newlib | 16,396 | Rising Sun's bounded string writes and grouping flag distinguish its formatter. |
 | GCC runtime | [GCC 2.95.2](https://github.com/gcc-mirror/gcc/tree/releases/gcc-2.95.2/gcc) | 5,532 | Target ABI, configuration and private tables matter as much as function names. |
 | STLport | [STLport 4.5.3](https://sourceforge.net/projects/stlport/files/STLport%20archive/STLport%204/) | 33,576 | Six tree helpers and 86 container instances match using one reviewed profile; custom game value types and the exact historical release remain unconfirmed. |
-
-| Network helpers and RSA MD5 | [SocketLibrary](https://github.com/Cuyler36/dolsocketlibrary/tree/e02356692695e64429dd70dc421a4a71a493e9c8), [NetworkBasePackage](https://github.com/Cuyler36/dolnetbp/tree/ba3846a83bf86505fe60e07aefe89e3e0ffc0e34) | 5,832 | Complete retained helper groups match; broader stack versions differ. The digest source is the RSA Data Security, Inc. MD5 Message-Digest Algorithm. |
+| Network helpers and RSA MD5 | [SocketLibrary](https://github.com/Cuyler36/dolsocketlibrary/tree/e02356692695e64429dd70dc421a4a71a493e9c8), [NetworkBasePackage](https://github.com/Cuyler36/dolnetbp/tree/ba3846a83bf86505fe60e07aefe89e3e0ffc0e34) | 16,448 | Routing, DNS/DHCP diagnostics and packet handling now join the retained helpers; broader stack versions differ. The digest source is the RSA Data Security, Inc. MD5 Message-Digest Algorithm. |
 
 These are separate, already accepted byte totals, not estimates of future gains.
 See the individual library evidence documents for exact scopes, provenance and licenses.
@@ -27,7 +26,8 @@ bytes across 16 functions, bringing coverage to 11.179632%; see [matrix layout
 and verification evidence](Matrix.md). See [STLport](STLport.md), [allocation contracts](Memory.md)
 and the [direct dependency map](Dependencies.md). The current pass adds 40,720
 bytes from the remaining Lua loader, network helpers and container instances,
-reaching 12.813640%. The active target is 15%; at least 54,488 more matching bytes
+reaching 12.813640%. The older network-library pass adds another 10,616 bytes,
+reaching 13.239637%. The active target is 15%; at least 43,872 more matching bytes
 are needed. This is a checkpoint, not completion of that target.
 
 ## Ranked research queue

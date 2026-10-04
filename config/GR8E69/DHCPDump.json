@@ -1,0 +1,80 @@
+{
+  "id": "DHCPDump",
+  "source": "src/dolphin/ip/DHCPDump.c",
+  "category": "restored_library",
+  "compiler_family": "GC",
+  "compiler_version": "1.2.5n",
+  "compiler_flags": [
+    "-char",
+    "signed",
+    "-O4,p",
+    "-inline",
+    "auto",
+    "-sym",
+    "on",
+    "-nodefaults",
+    "-proc",
+    "gekko",
+    "-fp",
+    "hard",
+    "-Cpp_exceptions",
+    "off",
+    "-enum",
+    "int",
+    "-warn",
+    "pragmas",
+    "-requireprotos",
+    "-pragma",
+    "cats off",
+    "-D__GEKKO__",
+    "-DSDK_REVISION=1",
+    "-DRELEASE"
+  ],
+  "include_dirs": [
+    "include/dolphin-network",
+    "include/dolphin-sdk",
+    "include/dolphin-sdk/libc"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802508f4",
+      "size": 952,
+      "type": 1
+    },
+    {
+      "name": ".data",
+      "address": "0x802dd780",
+      "size": 836,
+      "type": 1
+    },
+    {
+      "name": ".sdata",
+      "address": "0x80451618",
+      "size": 52,
+      "type": 1
+    }
+  ],
+  "functions": [
+    {
+      "name": "DHCPDump",
+      "address": "0x802508f4",
+      "size": 952,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "OSReport": "0x80255298"
+  },
+  "undefined_in_discarded_code": [],
+  "discarded_functions": [],
+  "original_file": "IPDhcp.c",
+  "discarded_local_functions": [],
+  "sda_externals": [],
+  "upstream": {
+    "repository": "https://github.com/Cuyler36/dolsocketlibrary",
+    "commit": "e02356692695e64429dd70dc421a4a71a493e9c8",
+    "path": "src/ip/IPDhcp.c"
+  }
+}
