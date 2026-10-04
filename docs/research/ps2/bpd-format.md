@@ -5,7 +5,8 @@ Research notes from the PlayStation 2 release, the fifth topic offered in
 `<level>_P.bpd` holds its gameplay objects (NPCs, triggers, effects, scripted steps,
 moving props), with the class layouts, lighting zones, animated lights and AI navigation
 data. This note covers the header, the sections, lighting and the object records.
-Setting-name CRCs and the AI navigation sections are separate notes.
+Setting-name CRCs are a separate note; the AI navigation sections (paths, walkable areas,
+BSP tree) are not covered here. (EA's "Pathfinder" is the unrelated music system.)
 
 These notes come from kyleckroeger's own investigation for a separate remake project,
 were written with AI assistance (Claude), and were re-checked on 2026-10-04 as described
@@ -42,7 +43,7 @@ GameCube types in the table below come from its `ChangeEndian<T*>` calls.
 | `0x04` | file size + 2 | file size + 2 | int | about the file size (the same +2 in both levels) |
 | `0x08` | 101 | 101 | int | **unknown**. The earlier notes read this as the plane count, which is **wrong**: see "Planes and lighting zones" |
 | `0x0C` | 0 | 0 | int | — |
-| `0x10` | `0x51F8`, 24 | `0xC10`, 11 | `BPDPolyPath*` | NPC paths (Pathfinder note) |
+| `0x10` | `0x51F8`, 24 | `0xC10`, 11 | `BPDPolyPath*` | NPC paths (AI navigation; not covered here) |
 | `0x18` | 0, 0 | 0, 0 | `BPDPathFindingNode*` | empty in both PS2 levels |
 | `0x20` | 0, 0 | 0, 0 | `void**` | empty in both PS2 levels |
 | `0x28` | `0x47B4`, 7 | `0xAA4`, 1 | `void*` | placed animated lights |
@@ -51,9 +52,9 @@ GameCube types in the table below come from its `ChangeEndian<T*>` calls.
 | `0x40` | `0x26E58`, 92 | `0x29B80`, 54 | `void*` | class layouts |
 | `0x48` | `0x6ACC`, 1,096 | `0xE50`, 1,235 | `void*` | object records |
 | `0x50` | 1,524, `0x28CD8` | 1,575, `0x2AFB4` | int, then `void*` | string table: a count, then the offset |
-| `0x58` | `0x5C6C`, 42 | 0, 0 | `BPDPathFindingArea*` | walkable areas (Pathfinder note) |
-| `0x60` | `0x5774`, 106 | 0, 0 | `PropVec3*` | area corner points (Pathfinder note) |
-| `0x68` | `0x6AC0`, 1 | 0, 0 | `BPDPathFindingBSP*` | area BSP header (Pathfinder note) |
+| `0x58` | `0x5C6C`, 42 | 0, 0 | `BPDPathFindingArea*` | walkable areas (AI navigation; not covered here) |
+| `0x60` | `0x5774`, 106 | 0, 0 | `PropVec3*` | area corner points (AI navigation; not covered here) |
+| `0x68` | `0x6AC0`, 1 | 0, 0 | `BPDPathFindingBSP*` | area BSP header (AI navigation; not covered here) |
 
 The string-table offset is the `0x54` word. In `1_1` the table ends with the text
 `STRING TABLE END`, and searching for the table by its first string can hit a false match
