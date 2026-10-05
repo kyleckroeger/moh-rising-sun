@@ -1,0 +1,160 @@
+{
+  "id": "eagl_anim_fn_turn_blender",
+  "source": "src/eagl_anim/FnTurnBlender.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80202a48",
+      "size": 4612
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bf0f8",
+      "size": 288
+    },
+    {
+      "name": ".data",
+      "address": "0x802d3314",
+      "size": 4
+    },
+    {
+      "name": ".gnu.linkonce.d._vt.Q28EAGLAnim13FnTurnBlender",
+      "address": "0x802ed490",
+      "size": 160,
+      "target_name": ".data"
+    }
+  ],
+  "functions": [
+    {
+      "name": "EvalSQT__Q28EAGLAnim13FnTurnBlenderfPfPCQ28EAGLAnim8BoneMask",
+      "address": "0x80202a48",
+      "size": 448,
+      "binding": 1
+    },
+    {
+      "name": "SetWeight__Q28EAGLAnim13FnTurnBlenderf",
+      "address": "0x80202c08",
+      "size": 476,
+      "binding": 1
+    },
+    {
+      "name": "ComputeCycleIdx__CQ28EAGLAnim13FnTurnBlenderfff",
+      "address": "0x80203af4",
+      "size": 92,
+      "binding": 1
+    },
+    {
+      "name": "AlignCycleBeginEnd__Q28EAGLAnim13FnTurnBlenderi",
+      "address": "0x80203100",
+      "size": 668,
+      "binding": 1
+    },
+    {
+      "name": "AlignRootQ__CQ28EAGLAnim13FnTurnBlenderPf",
+      "address": "0x80203b50",
+      "size": 252,
+      "binding": 1
+    },
+    {
+      "name": "EvalVel2D__Q28EAGLAnim13FnTurnBlenderfPf",
+      "address": "0x80202de4",
+      "size": 404,
+      "binding": 1
+    },
+    {
+      "name": "BlendVel__CQ28EAGLAnim13FnTurnBlenderffPf",
+      "address": "0x80202f78",
+      "size": 392,
+      "binding": 1
+    },
+    {
+      "name": "AlignVel__CQ28EAGLAnim13FnTurnBlenderPf",
+      "address": "0x8020339c",
+      "size": 280,
+      "binding": 1
+    },
+    {
+      "name": "BlendBeginFacing__CQ28EAGLAnim13FnTurnBlenderPf",
+      "address": "0x802034b4",
+      "size": 632,
+      "binding": 1
+    },
+    {
+      "name": "BlendEndFacing__CQ28EAGLAnim13FnTurnBlenderPf",
+      "address": "0x8020372c",
+      "size": 632,
+      "binding": 1
+    },
+    {
+      "name": "__Q28EAGLAnim13FnTurnBlender",
+      "address": "0x802039a4",
+      "size": 100,
+      "binding": 1
+    },
+    {
+      "name": "_._Q28EAGLAnim13FnTurnBlender",
+      "address": "0x80203a08",
+      "size": 168,
+      "binding": 1
+    },
+    {
+      "name": "Eval__Q28EAGLAnim13FnTurnBlenderffPf",
+      "address": "0x80203ab0",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "EvalPhase__Q28EAGLAnim13FnTurnBlenderfRQ28EAGLAnim10PhaseValue",
+      "address": "0x80203aec",
+      "size": 8,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "CycleTime__CQ28EAGLAnim13FnTurnBlenderfff": "0x80203c4c",
+    "GetStillPose__CQ28EAGLAnim8SkeletonPfPCQ28EAGLAnim8BoneMask": "0x801ec810",
+    "GetScratchBuffer__Q28EAGLAnim13ScratchBufferi": "0x801ed018",
+    "Blend__Q28EAGLAnim13FnPoseBlenderifPCfT3PfPCQ28EAGLAnim8BoneMask": "0x801fec94",
+    "GetFrequency__CQ28EAGLAnim12FnRunBlender": "0x8020298c",
+    "printf": "0x8026374c",
+    "sqrtf": "0x80270538",
+    "ComputeBeginRootQ__CQ28EAGLAnim12FnRunBlenderR6COORD4": "0x80202994",
+    "ComputeEndRootQ__CQ28EAGLAnim12FnRunBlenderR6COORD4": "0x802029c0",
+    "FreeBuffer__Q28EAGLAnim13ScratchBuffer": "0x801ecfb4",
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryManager": "0x802d2e5c",
+    "_vt.Q28EAGLAnim11FnAnimSuper": "0x802ec708",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c",
+    "GetTargetCheckSum__CQ28EAGLAnim6FnAnim": "0x801ee140",
+    "UseFPS__Q28EAGLAnim6FnAnimb": "0x801ee148",
+    "GetLength__CQ28EAGLAnim6FnAnimRf": "0x801ee150",
+    "FindMatchTime__CQ28EAGLAnim6FnAnimRCQ28EAGLAnim15MatchPhaseInputRf": "0x801ee158",
+    "EvalEvent__Q28EAGLAnim6FnAnimffPPQ28EAGLAnim12EventHandlerPv": "0x801ee178",
+    "EvalWeights__Q28EAGLAnim6FnAnimfPf": "0x801ee180",
+    "EvalState__Q28EAGLAnim6FnAnimfPQ28EAGLAnim5State": "0x801ee188",
+    "EvalPose__Q28EAGLAnim6FnAnimfPCQ28EAGLAnim15PosePaletteBankPf": "0x801ee190",
+    "FindTime__Q28EAGLAnim6FnAnimRCQ28EAGLAnim9StateTestfRf": "0x801ee198",
+    "GetPhaseChan__Q28EAGLAnim6FnAnim": "0x801ee1a0",
+    "GetAttributes__CQ28EAGLAnim6FnAnim": "0x801ee1b8",
+    "GetAnimatedBones__Q28EAGLAnim6FnAnimPQ28EAGLAnim8BoneMaskRiN22": "0x801ee1a8",
+    "GetAnimatedBonesAux__Q28EAGLAnim6FnAnimPQ28EAGLAnim8BoneMaskRiN22": "0x801ee1b0"
+  },
+  "discarded_functions": [
+    "ComputeAlignQ__CQ28EAGLAnim13FnTurnBlenderPfT1R6COORD4"
+  ],
+  "undefined_in_discarded_code": [],
+  "original_file": "FnTurnBlender.cpp"
+}

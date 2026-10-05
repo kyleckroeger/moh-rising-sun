@@ -19,6 +19,7 @@ class FnRunBlender : public FnAnim {
     virtual bool EvalVel2D(float, float *);
     virtual bool FindMatchTime(const MatchPhaseInput &, float &) const;
     float GetFrequency() const;
+    float GetOffset() const { return mOffset; }
     void ComputeBeginRootQ(COORD4 &) const;
     void ComputeEndRootQ(COORD4 &) const;
 

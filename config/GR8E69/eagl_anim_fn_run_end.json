@@ -1,0 +1,43 @@
+{
+  "id": "eagl_anim_fn_run_end",
+  "source": "src/eagl_anim/FnRunEnd.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802029c0",
+      "size": 136
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bf0f0",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "ComputeEndRootQ__CQ28EAGLAnim12FnRunBlenderR6COORD4",
+      "address": "0x802029c0",
+      "size": 136,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "ComputeRootQ__CQ28EAGLAnim12FnRunBlenderffR6COORD4": "0x80202478"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

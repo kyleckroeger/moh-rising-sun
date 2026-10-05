@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 600388,
+    "matching_code_bytes": 606704,
     "total_executable_code_bytes": 2492032,
-    "percent": 24.092307000873184,
+    "percent": 24.345754789665623,
     "categories": {
-      "reconstructed_game": 208172,
+      "reconstructed_game": 214488,
       "restored_library": 392216
     },
-    "matching_functions": 2008
+    "matching_functions": 2032
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -159,13 +159,19 @@
     "config/GR8E69/eagl_anim_fn_raw_pose_channel.json": "f9759b39efe811d1c65a521b1a366985832895f24aa1499afd2db21d15db4e15",
     "config/GR8E69/eagl_anim_fn_run_align_root.json": "f22c8ad6655d2da55652c42938a3b6f6e87e9bdc64a5659da13df2ac7734d72a",
     "config/GR8E69/eagl_anim_fn_run_align_vel.json": "23f864f8cd12cfa695c19487bebe3a1f2359be6650020b85cdb7d22b96bdf0ee",
+    "config/GR8E69/eagl_anim_fn_run_begin.json": "0d99b2d83c7e7a23b98e50004dfe16c613a0123087d0204e7411a8b6da1e087c",
     "config/GR8E69/eagl_anim_fn_run_blend_vel.json": "98cd9c038de9535d9bf2b28a68a8250895516fd8fd9f0755de824c914bd6f659",
+    "config/GR8E69/eagl_anim_fn_run_control.json": "f0d19baabfc8e51071f0d7ce4c5422ed15adf9577c8a934844ee3e95cca35e5e",
     "config/GR8E69/eagl_anim_fn_run_destructor.json": "9a9fbf14c46907c296051e18784448ee48d7c5738d2dc9832c7aa994a2a214bc",
+    "config/GR8E69/eagl_anim_fn_run_end.json": "d37805ea47722453efc30a31bc5d16efa6b6822af9ff5c82381d0bec5a1182e3",
     "config/GR8E69/eagl_anim_fn_run_eval.json": "3db98d379a6d90f11f7e4e83b394496cf46efe45582cd4e3403af8e2587b7161",
+    "config/GR8E69/eagl_anim_fn_run_facing.json": "13820c2641f65bd64a2c04b5d57892eef4b5eefc34e53919c497a55c36f2eebf",
     "config/GR8E69/eagl_anim_fn_run_root.json": "0ecc01c34c9c0402b2a02d65af7d90a4ac419511e731e5ea59a05e3c6ee2988e",
     "config/GR8E69/eagl_anim_fn_run_weight.json": "71411e15da249587d4d14675ee7e748f9c2ecc13ec913966cbd4852895afb441",
     "config/GR8E69/eagl_anim_fn_stateless_f3_control.json": "6b11df09199333cae41cee15199e5914738f83c5ce72227ebbc5c10ad455a39a",
     "config/GR8E69/eagl_anim_fn_stateless_q_control.json": "274b41cd57ed0a94a175278ef879f26cc4e9202fdf0c01b64982726bf6ecd817",
+    "config/GR8E69/eagl_anim_fn_turn_blender.json": "6b748ec24e265b9085d64138593dfa62b4e74ab4386ef39b7d3e70a5e6468ed9",
+    "config/GR8E69/eagl_anim_fn_turn_cycle.json": "aa43b714ab79515ecd7a6cc4e9e3cb6d9a020a008792f565b5bf1e0d83caaded",
     "config/GR8E69/eagl_anim_matrix_callback.json": "5f61dcdef09dd6c47b9addab9437e47c82b98e3ce77fda9a1c002031328f3b9c",
     "config/GR8E69/eagl_anim_memory_map.json": "d8a2efb92068d94d80231139f79862e3306f6a52faf579c88fd8ce0ac3512189",
     "config/GR8E69/eagl_anim_memory_pool_cleanup.json": "bef111cde25e66ed9ce431c33105af82ee68a2ac1b9275ee68926d7fc38c7662",
@@ -506,7 +512,7 @@
     "config/GR8E69/particle_size.json": "2f5fccaf2b032dce1d59c0bcca32201ee9b378e62dceee6cbc34eddddf2d9a30",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "8956363bafa3a0d3372c5cf292e52ef4d6b25cf1c521727f79e89e1b497f2165",
+    "config/GR8E69/project.json": "c16b43d20067c3dba2e53b8072ff888e3d97f079701b9b12af4a1da11d519547",
     "config/GR8E69/script_arithmetic.json": "ec74fa88f8d6807fd445cbf66b4d4a7daaa273a339154b38c9710de23f8fdec0",
     "config/GR8E69/script_branches.json": "e7d49ea1a1b684c7bda78aa8a954777dc51bf3e78b2050dfb9abc2b3e0160e5b",
     "config/GR8E69/script_calls.json": "b25ba9582ac33d62abdb90b39671c9230d1aed2c6d35190b8899108c0e80621b",
@@ -930,9 +936,10 @@
     "include/game/EAGLAnim/FnDeltaSingleQ.h": "7242123982a66ffb59c23a9324719240bce4f8bf623f1d8b6102b7079f3f419d",
     "include/game/EAGLAnim/FnPoseBlender.h": "37a1c4031d62dc7216884fb2d0f761f5f0e09c6e10391e6439cfdad08aab0fde",
     "include/game/EAGLAnim/FnRawEventChannel.h": "f50ab90107338f0faac2acf6a1141c03ff63025be7d658b80172fda1c4b1b839",
-    "include/game/EAGLAnim/FnRunBlender.h": "498903cb2a567c386692c093b1c6ff217cb28d314abdca6ddf18ad3fd7f855c3",
+    "include/game/EAGLAnim/FnRunBlender.h": "6e25b2d0a04266101ac5aa1089d3681818e94587df39d0580a9178bf8f577d6a",
     "include/game/EAGLAnim/FnStatelessF3.h": "305a18715b69bd93446d7ede4345ec61711f7b9178c543cc8a705e4a6e8f449b",
     "include/game/EAGLAnim/FnStatelessQ.h": "23b7ed76effed5d7640533b327982153b20304c05ec2b38b819a716bf321c7a2",
+    "include/game/EAGLAnim/FnTurnBlender.h": "b3d2a9ee529f7b2602705700f4cb83ade466ea9b5f7afb255ce1f802780714a5",
     "include/game/EAGLAnim/PhaseChan.h": "92aa77f176a5be8ce19a89ecdaeed35a27684c533c7db63575273e798beaf156",
     "include/game/EAGLAnim/RawEventChannel.h": "3cf85304f04cee0f31879aa6d5ee52eed776442fd7bde15e0de00cca246112b7",
     "include/game/EAGLAnim/RawLinearChannel.h": "0a7bfb0f873f331be2a62e67dbb65c8a1881d589936c2ea2c16b0533ebaf785a",
@@ -1394,13 +1401,19 @@
     "src/eagl_anim/FnRawStateControl.cpp": "70bb867427468b1036b1eccfa0968fe222249925d61b1b9880caaa64585ed0c8",
     "src/eagl_anim/FnRunAlignRoot.cpp": "c7c55173d0c3245de4cdf86609f14ba6b2790c23984d41d733fec29e70b0cbc2",
     "src/eagl_anim/FnRunAlignVel.cpp": "c3f4e68f88e4a37b1a180a88fc49ed164a81b9426483d676feeeb69806634065",
+    "src/eagl_anim/FnRunBegin.cpp": "fdcbee83e6b296c8d8655f9f67d6b5aab2688e0e1c33a3feb8f7b81771d27886",
     "src/eagl_anim/FnRunBlendVel.cpp": "0107e19b149c20b3de451d01c6f6a6a9c533649f15c97963b97b1ec6823622ae",
+    "src/eagl_anim/FnRunControl.cpp": "70024251b704ed46b6fcad6aa1d525f4320879fec4ef9e52b59908430ffc20b5",
     "src/eagl_anim/FnRunDestructor.cpp": "ef34250dae897dfcd40d363d2c1f1db6ef05095b1457e722e96f0e1d8b3a5a40",
+    "src/eagl_anim/FnRunEnd.cpp": "4aa34f8eb3b1a946dfe7c9e7adbe93e7e74b44b4bcb0e7c26d055722b2ffab49",
     "src/eagl_anim/FnRunEval.cpp": "1716cbddf09c903ea8086d7b17120b88e3e48ee71cb9fb28a7241fd3a4773ffc",
+    "src/eagl_anim/FnRunFacing.cpp": "4905601383f5ee3f4c457963639b8e1dc0170f5deac57cb2572c1eda5a076fd0",
     "src/eagl_anim/FnRunRoot.cpp": "c853a8bd15ddf13185512bd19665cb46c169186c29d2d64d420df6de5c06a2f9",
     "src/eagl_anim/FnRunWeight.cpp": "2c4b1b365be90e6a6043d41c21119f4b5588141a1b377c99cb068e5a2d06612a",
     "src/eagl_anim/FnStatelessF3Control.cpp": "944e27ce1391fb90f8d5916a4ce0055acfb0e0dd03189aec5dee8dc253f2c5c1",
     "src/eagl_anim/FnStatelessQControl.cpp": "189d13e94fb0b382e2007f2cf110f4874de3b256b110c3302f37f8adcfa31673",
+    "src/eagl_anim/FnTurnBlender.cpp": "70c3e9eea5692f2f1a409654c1b59afb7e81445e4ae234d94d519048d913439d",
+    "src/eagl_anim/FnTurnCycle.cpp": "f0f0104a8054cd888a557a7cdca9f0ee24007a3aea38f75bdc8ec650d46e7f05",
     "src/eagl_anim/LICENSE.nfsmw": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
     "src/eagl_anim/MemoryPoolCleanup.cpp": "e9a428371e8ac5f9629a96b61470faded52c740652ce21b65f0f4afc922d8fd7",
     "src/eagl_anim/MemoryPoolMapFactory.cpp": "4c53e97fda28aa2211c2573b026d6423d54e24fa4ed70c285abddcdbd1a6f5e4",
@@ -18366,6 +18379,118 @@
       ],
       "object_sha256": "23505035be2d6398b484d78bcbd66c3e51bb8c100ce4e8dd77b9deeee7f4327b",
       "linked_sha256": "9a385f3a81b4d8f18bbc86fb04fa6b8dca057e29586f07c472c941a816b23496"
+    },
+    {
+      "id": "eagl_anim_fn_turn_blender",
+      "category": "reconstructed_game",
+      "functions": 14,
+      "code_bytes": 4612,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "ComputeAlignQ__CQ28EAGLAnim13FnTurnBlenderPfT1R6COORD4"
+      ],
+      "object_sha256": "a05acf41b8eddd1cfe8138f2834689677ad3ea23b80f0ea19955643cb388c535",
+      "linked_sha256": "086294691165db53c4253e4bf3b50360bf32afea87b43c44e5ce259bfc8998fb"
+    },
+    {
+      "id": "eagl_anim_fn_turn_cycle",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 184,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c109ee4ad23c8fe3348661686da7227be8ba599fb99b85ad70c68cb2316ce15a",
+      "linked_sha256": "9bd985d87d4b3c60ebf724a181bf553f7ca81c7c41fa6afb058f1f344d26e96c"
+    },
+    {
+      "id": "eagl_anim_fn_run_facing",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 868,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "6c52a6367a87f182007a5e7b6b52130eb919f1b388f1d15df024837276ca3f14",
+      "linked_sha256": "cd37d9e0cd5cbe42d252f402348f6bb36d7672e6f24cf247d58e13fd6e79aacc"
+    },
+    {
+      "id": "eagl_anim_fn_run_control",
+      "category": "reconstructed_game",
+      "functions": 5,
+      "code_bytes": 464,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "GetOffset__CQ28EAGLAnim12FnRunBlender"
+      ],
+      "object_sha256": "114d82f97e38410303d65c5d1e35c289e16fd5446752a8099d1e22e4aa005730",
+      "linked_sha256": "6964087ac835b8ab7d251fafb7c092e9faec253cf45d006e79bec698cd1d4e4b"
+    },
+    {
+      "id": "eagl_anim_fn_run_begin",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 52,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b020b18ae79f4a02efb138fe407d2d5de35888ad16c72445dd6476c4dd3b7f92",
+      "linked_sha256": "e397e40ac0eaf1482a0eaf4c64fd6d3adf6f1a30d6caabcbfbc5f7c2fabfadcb"
+    },
+    {
+      "id": "eagl_anim_fn_run_end",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 136,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "3ed80d1aea1f9eab187cd90f7071f2002abe4bb216d45ac9a6090784f4d7102e",
+      "linked_sha256": "cae837b8c2baab9f8c737d5ec1d219bb2dce356a16e3a9c920ce2bb3e321a00a"
     }
   ],
   "code_map": {
@@ -66168,69 +66293,6 @@
             "kind": "function",
             "name": "AlignCycleBeginEnd__Q28EAGLAnim12FnRunBlenderi",
             "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80202114",
-            "size": 868,
-            "kind": "function",
-            "name": "BlendFacing__CQ28EAGLAnim12FnRunBlenderffPf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x802026c0",
-            "size": 120,
-            "kind": "function",
-            "name": "__Q28EAGLAnim12FnRunBlender",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80202738",
-            "size": 60,
-            "kind": "function",
-            "name": "Eval__Q28EAGLAnim12FnRunBlenderffPf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80202774",
-            "size": 184,
-            "kind": "function",
-            "name": "CycleTime__CQ28EAGLAnim12FnRunBlenderfff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8020282c",
-            "size": 92,
-            "kind": "function",
-            "name": "ComputeCycleIdx__CQ28EAGLAnim12FnRunBlenderfff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80202888",
-            "size": 8,
-            "kind": "function",
-            "name": "EvalPhase__Q28EAGLAnim12FnRunBlenderfRQ28EAGLAnim10PhaseValue",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8020298c",
-            "size": 8,
-            "kind": "function",
-            "name": "GetFrequency__CQ28EAGLAnim12FnRunBlender",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80202994",
-            "size": 44,
-            "kind": "function",
-            "name": "ComputeBeginRootQ__CQ28EAGLAnim12FnRunBlenderR6COORD4",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x802029c0",
-            "size": 136,
-            "kind": "function",
-            "name": "ComputeEndRootQ__CQ28EAGLAnim12FnRunBlenderR6COORD4",
-            "evidence": "adjacent-compiler-markers"
           }
         ],
         "marker_interval": [
@@ -66239,113 +66301,8 @@
         ]
       },
       {
-        "name": "Unknown file/.text @ 80202a48",
+        "name": "Unknown file/.text @ 80203d04",
         "ranges": [
-          {
-            "address": "0x80202a48",
-            "size": 448,
-            "kind": "function",
-            "name": "EvalSQT__Q28EAGLAnim13FnTurnBlenderfPfPCQ28EAGLAnim8BoneMask",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80202c08",
-            "size": 476,
-            "kind": "function",
-            "name": "SetWeight__Q28EAGLAnim13FnTurnBlenderf",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80202de4",
-            "size": 404,
-            "kind": "function",
-            "name": "EvalVel2D__Q28EAGLAnim13FnTurnBlenderfPf",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80202f78",
-            "size": 392,
-            "kind": "function",
-            "name": "BlendVel__CQ28EAGLAnim13FnTurnBlenderffPf",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80203100",
-            "size": 668,
-            "kind": "function",
-            "name": "AlignCycleBeginEnd__Q28EAGLAnim13FnTurnBlenderi",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8020339c",
-            "size": 280,
-            "kind": "function",
-            "name": "AlignVel__CQ28EAGLAnim13FnTurnBlenderPf",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802034b4",
-            "size": 632,
-            "kind": "function",
-            "name": "BlendBeginFacing__CQ28EAGLAnim13FnTurnBlenderPf",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8020372c",
-            "size": 632,
-            "kind": "function",
-            "name": "BlendEndFacing__CQ28EAGLAnim13FnTurnBlenderPf",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802039a4",
-            "size": 100,
-            "kind": "function",
-            "name": "__Q28EAGLAnim13FnTurnBlender",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80203a08",
-            "size": 168,
-            "kind": "function",
-            "name": "_._Q28EAGLAnim13FnTurnBlender",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80203ab0",
-            "size": 60,
-            "kind": "function",
-            "name": "Eval__Q28EAGLAnim13FnTurnBlenderffPf",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80203aec",
-            "size": 8,
-            "kind": "function",
-            "name": "EvalPhase__Q28EAGLAnim13FnTurnBlenderfRQ28EAGLAnim10PhaseValue",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80203af4",
-            "size": 92,
-            "kind": "function",
-            "name": "ComputeCycleIdx__CQ28EAGLAnim13FnTurnBlenderfff",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80203b50",
-            "size": 252,
-            "kind": "function",
-            "name": "AlignRootQ__CQ28EAGLAnim13FnTurnBlenderPf",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80203c4c",
-            "size": 184,
-            "kind": "function",
-            "name": "CycleTime__CQ28EAGLAnim13FnTurnBlenderfff",
-            "evidence": "unknown-file"
-          },
           {
             "address": "0x80203d04",
             "size": 136,

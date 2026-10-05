@@ -423,3 +423,83 @@ The quaternion blending helper retains CC0 `AnimUtil.h` attribution. The origina
 run/pose implementation bodies are not supplied by that reference; target
 instructions establish the reconstructed control flow and pointer behavior.
 All these fragments require complete-image verification and remain runtime untested.
+
+## Turn blending and additional run controls
+
+The turn-blender fragments reconstruct all fifteen `FnTurnBlender` methods
+identified by the original symbols, totaling **4,796 code bytes**. The main
+fragment spans `0x80202a48` through `0x80203c4b`; the separate cycle-time helper
+occupies 184 bytes at `0x80203c4c`. Their complete constant pools are 288 bytes at
+`0x802bf0f8` and eight at `0x802bf218`. The main fragment also reproduces the
+160-byte native virtual table at `0x802ed490` and the four-byte initialized
+function-static diagnostic counter at `0x802d3314`. The counter's source identifier,
+local binding, address and size agree with the original `i.1497` object in the
+`FnTurnBlender.cpp` symbol scope; the compiler's numeric suffix is not a recovered
+source name. None of this generated data earns code credit.
+
+The constructor, deleting destructor and repeated accesses establish a 92-byte
+function object. It contains an owned animation-pointer array at `+0x0c`, two
+borrowed child pointers at `+0x10`, weight at `+0x18`, count/index at `+0x1c/+0x20`,
+skeleton at `+0x24`, paired cycle lengths and offsets at `+0x28/+0x30`, frequency
+at `+0x38`, previous time and time offset at `+0x3c/+0x40`, cycle index at `+0x44`,
+alignment quaternion at `+0x48`, and the target compiler's four-byte boolean at
+`+0x58`. Type value nine is stored by construction. Destruction releases scratch
+buffer one when the animation count is nonzero, frees the pointer-array allocation
+when present, and leaves the borrowed children alone. Constructor-uninitialized
+fields and valid-animation/count preconditions remain unchanged.
+
+Weight changes choose adjacent animations, reuse an existing child pointer when
+moving to a neighboring pair, and update frequency while maintaining the time
+offset. They clamp the pair index, without additionally clamping the fractional
+weight. Calls and accesses independently identify run-blender children where their
+frequency, time offset and endpoint root quaternions are used. The new
+`FnRunBlender::GetOffset` inline accessor reads the already established `+0x50`
+field; its name follows the reference header. This does not make every arbitrary
+`FnAnim` child a valid run blender.
+
+Pose evaluation uses scratch buffer one and passes null masks to both children,
+including when its own caller supplied a mask. Velocity blending preserves the
+weighted vector length after directional interpolation. Both evaluations map
+through twice each child cycle length, subtract the child offsets and apply cycle
+alignment. Facing blends use quaternion sign selection and normalization, rotate
+the original `(0, 1, 0, 1)` vector, and return its x/z components. The first alignment
+call initializes an identity quaternion and cycle index minus one; later changes
+compose the begin/end-facing rotation, reversing its y component for an adjacent
+backward step. No extra clamping, normalization or zero-length checks are added.
+
+The cycle helpers preserve signed truncation, the original nonnegative result for
+below-start cycle-index requests, and the distinction between the `< start` and
+`>= end` branches. Their shared delta and integer temporaries express the target's
+calculation order. `EvalPhase` returns false in the original; it is not a temporary
+stub. Original velocity, facing and alignment diagnostic prints, formatting,
+argument order and the incrementing counter are retained.
+
+The main turn fragment natively strips only the separately emitted inline
+`ComputeAlignQ` helper, which is used in its accepted cycle-alignment method and
+has no original standalone function symbol. All constants emitted for that helper
+remain in the fully compared pool. No mismatching target method is compiled then
+stripped, and no data or padding is clipped. The helper's historical inline boundary
+is unproven; it is a descriptive reconstruction supported by the reference interface
+and observed calculations.
+
+Four additional run-blender fragments add nine functions and **1,520 code bytes**:
+constructor, generic evaluation wrapper, both cycle helpers, the original false
+phase result, frequency lookup, begin/end root-quaternion wrappers, and facing
+blending. They verify complete pools of 16 bytes at `0x802bf0c8`, four at
+`0x802bf0ec`, eight at `0x802bf0f0`, and 24 at `0x802bf09c`, plus the complete
+160-byte run-blender virtual table at `0x802ed3f0`. The control fragment natively
+strips only the separately emitted `GetOffset` inline accessor used by turn
+blending; it adds no data. The constructor confirms type eight and the existing
+128-byte layout. Endpoint wrappers sample zero or each phase map's final frame.
+Facing evaluation retains its scratch-buffer-zero use, separate pose copies and
+original failure returns. Run-blender phase search, cycle alignment and velocity
+evaluation remain original context; matching research fragments do not give those
+methods source credit.
+
+These bodies were reconstructed from the pinned GR8E69 target with Codex
+assistance. The pinned CC0 nfsmw headers supply attributed interface/member names,
+but their relevant implementation bodies are empty. Quaternion blend math retains
+its existing `AnimUtil.h` attribution; rotation expressions reuse this project's
+checked transform reconstruction with target operand order. ProDG 3.8.1 and the
+normal animation flags match every accepted generated allocated byte. Complete
+local image verification is required before publication; runtime remains untested.

@@ -1,0 +1,45 @@
+{
+  "id": "eagl_anim_fn_run_facing",
+  "source": "src/eagl_anim/FnRunFacing.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80202114",
+      "size": 868
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bf09c",
+      "size": 24
+    }
+  ],
+  "functions": [
+    {
+      "name": "BlendFacing__CQ28EAGLAnim12FnRunBlenderffPf",
+      "address": "0x80202114",
+      "size": 868,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetScratchBuffer__Q28EAGLAnim13ScratchBufferi": "0x801ed018",
+    "GetStillPose__CQ28EAGLAnim8SkeletonPfPCQ28EAGLAnim8BoneMask": "0x801ec810",
+    "sqrtf": "0x80270538"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

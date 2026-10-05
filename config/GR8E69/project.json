@@ -718,7 +718,13 @@
     "eagl_anim_delta_q_fast_masked.json",
     "eagl_anim_delta_q_control.json",
     "eagl_anim_raw_state_decode.json",
-    "eagl_anim_raw_state_control.json"
+    "eagl_anim_raw_state_control.json",
+    "eagl_anim_fn_turn_blender.json",
+    "eagl_anim_fn_turn_cycle.json",
+    "eagl_anim_fn_run_facing.json",
+    "eagl_anim_fn_run_control.json",
+    "eagl_anim_fn_run_begin.json",
+    "eagl_anim_fn_run_end.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
