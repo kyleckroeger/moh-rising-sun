@@ -1,0 +1,54 @@
+{
+  "id": "script_timer_update",
+  "source": "src/script/timer_update.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8011dee8",
+      "size": 332
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a6238",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSUpdateTimer__Ff",
+      "address": "0x8011dee8",
+      "size": 332,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_CurrentTime": "0x80326d58",
+    "g_LastHashIndex": "0x80326d54",
+    "g_pTimerHashTable": "0x80326d48",
+    "BSObjectTriggerEvent__FP8BSObjectUsPvT0b": "0x800f6d90",
+    "BSTimerRemoveTimerEvent__FP19BSTimerEvent_structPP19BSTimerEvent_struct": "0x8011e20c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bstimer.cpp",
+  "original_file_index": 1189,
+  "local_externals": [
+    "g_CurrentTime",
+    "g_LastHashIndex",
+    "g_pTimerHashTable"
+  ]
+}

@@ -724,7 +724,19 @@
     "eagl_anim_fn_run_facing.json",
     "eagl_anim_fn_run_control.json",
     "eagl_anim_fn_run_begin.json",
-    "eagl_anim_fn_run_end.json"
+    "eagl_anim_fn_run_end.json",
+    "script_timer_memory.json",
+    "script_timer_init.json",
+    "script_timer_end.json",
+    "script_timer_update.json",
+    "script_timer_register.json",
+    "script_timer_unregister.json",
+    "script_timer_free.json",
+    "script_timer_remove.json",
+    "script_timer_duplicates.json",
+    "script_timer_latter.json",
+    "script_timer_instances.json",
+    "script_timer_cancel.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

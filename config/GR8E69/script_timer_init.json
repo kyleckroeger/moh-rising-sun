@@ -1,0 +1,62 @@
+{
+  "id": "script_timer_init",
+  "source": "src/script/timer_init.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8011dde8",
+      "size": 224
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a6234",
+      "size": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSInitTimer__Fv",
+      "address": "0x8011dde8",
+      "size": 224,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "BSTimerGetMemoryRequirements__Fv": "0x8011dde0",
+    "g_pBSTimerMemory": "0x80326d5c",
+    "BSUtilGetMemory__Fii": "0x800f8a90",
+    "g_pBSTimerMemoryOffset": "0x80326d60",
+    "g_pTimerHashTable": "0x80326d48",
+    "g_pTimerEventArray": "0x80326d4c",
+    "g_pFreeTimerEventHead": "0x80326d50",
+    "g_LastHashIndex": "0x80326d54",
+    "g_CurrentTime": "0x80326d58"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bstimer.cpp",
+  "original_file_index": 1189,
+  "local_externals": [
+    "g_pBSTimerMemory",
+    "g_pBSTimerMemoryOffset",
+    "g_pTimerHashTable",
+    "g_pTimerEventArray",
+    "g_pFreeTimerEventHead",
+    "g_LastHashIndex",
+    "g_CurrentTime"
+  ]
+}

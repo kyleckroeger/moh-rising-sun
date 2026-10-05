@@ -1,0 +1,47 @@
+{
+  "id": "script_timer_end",
+  "source": "src/script/timer_end.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8011dec8",
+      "size": 32
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSEndTimer__Fv",
+      "address": "0x8011dec8",
+      "size": 32,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_pTimerHashTable": "0x80326d48",
+    "g_pTimerEventArray": "0x80326d4c",
+    "g_pFreeTimerEventHead": "0x80326d50"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bstimer.cpp",
+  "original_file_index": 1189,
+  "local_externals": [
+    "g_pTimerHashTable",
+    "g_pTimerEventArray",
+    "g_pFreeTimerEventHead"
+  ]
+}

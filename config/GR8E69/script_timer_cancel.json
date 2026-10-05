@@ -1,0 +1,41 @@
+{
+  "id": "script_timer_cancel",
+  "source": "src/script/timer_cancel.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8011e558",
+      "size": 48
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSCancelTimerEvent__FUsP8BSObject",
+      "address": "0x8011e558",
+      "size": 48,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "BSTimerRemoveDuplicateTimerInstances__FP8BSObjectUsi": "0x8011e264"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bstimer.cpp",
+  "original_file_index": 1189,
+  "local_externals": []
+}

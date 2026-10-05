@@ -1,0 +1,48 @@
+{
+  "id": "script_timer_duplicates",
+  "source": "src/script/timer_duplicates.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8011e264",
+      "size": 228
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSTimerRemoveDuplicateTimerInstances__FP8BSObjectUsi",
+      "address": "0x8011e264",
+      "size": 228,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_CurrentTime": "0x80326d58",
+    "g_LastHashIndex": "0x80326d54",
+    "g_pTimerHashTable": "0x80326d48",
+    "BSTimerRemoveTimerEvent__FP19BSTimerEvent_structPP19BSTimerEvent_struct": "0x8011e20c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bstimer.cpp",
+  "original_file_index": 1189,
+  "local_externals": [
+    "g_CurrentTime",
+    "g_LastHashIndex",
+    "g_pTimerHashTable"
+  ]
+}

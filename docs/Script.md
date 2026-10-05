@@ -8,13 +8,14 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-Twenty-eight fragments in `src/script/` reconstruct **56 functions and 8,852 executable
+Forty fragments in `src/script/` reconstruct **68 functions and 10,812 executable
 bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
-bytes), event lookup (220 bytes), and three music built-ins (372 bytes).
+bytes), event lookup (220 bytes), three music built-ins (372 bytes), and all twelve named
+timer routines (1,960 bytes).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json`. Original file markers support the `bsmachin.cpp`,
-`bsmessage.cpp`, `bsfile.cpp` and `bsbifunc.cpp` groupings; these fragments are not
+`bsmessage.cpp`, `bsfile.cpp`, `bsbifunc.cpp` and `bstimer.cpp` groupings; these fragments are not
 complete original translation units. Private globals retain their original
 file-record scope in the manifests and remain original storage, with no source/data
 credit.
@@ -281,6 +282,77 @@ arguments are nonnull. Negative counts naturally produce no iterations. The
 shared `"Group"` literal and its alignment occupy eight fully compared read-only
 bytes at `0x802a5274`; those bytes receive no code credit.
 
+## Script timers
+
+Twelve fragments reconstruct all twelve named routines in the original
+`bstimer.cpp` code range, `0x8011dde0`–`0x8011e587`. The fragments use the same
+ProDG 3.9.3 profile as the interpreter. Their complete code and 28 generated
+read-only bytes match; no data, functions or padding are discarded. This is a
+reconstruction of the named timer routines, not a claim to recover the original
+translation unit, global definitions or historical source spelling.
+
+| Functions | Executable bytes | Verified behaviour |
+| --- | ---: | --- |
+| `BSTimerGetMemoryRequirements`, `BSInitTimer`, `BSEndTimer` | 264 | Reserve a 7,104-byte arena, initialize 120 timer buckets and 256 event records, then later clear the three active table/pool pointers. |
+| `BSUpdateTimer` | 332 | Advance the floating-point clock, visit crossed integer ticks, dispatch eligible events and recycle their records. |
+| `BSRegisterTimerEvent` | 420 | Apply the replacement mode, handle event-memory references, and append a record to its time bucket. |
+| `BSUnregisterTimerEvents`, `BSCancelTimerEvent` | 80 | Forward object-wide or object/event cancellation to the removal helpers. |
+| `BSGetFreeTimerEvent`, `BSTimerRemoveTimerEvent` | 108 | Pop a free record or unlink a live record and push it back onto the free list. |
+| `BSTimerRemoveDuplicateTimerInstances`, `BSTimerRemoveLatterTimerInstances`, `BSTimerRemoveTimerInstances` | 756 | Traverse buckets to remove matching records, optionally retaining earlier or equal timers. |
+
+`ScriptTimers.h` records the independently checked GameCube storage. The original
+`BSTimerEvent_struct` tag is present in exported signatures. Each record has a
+24-byte stride: signed integer time at `+0`, event number at `+4`, object pointer
+at `+8`, context pointer at `+0x0c`, a four-byte event-memory flag at `+0x10`, and
+next pointer at `+0x14`. The two bytes at `+6` remain unknown. Each eight-byte bucket
+contains head and tail pointers. Initialization independently confirms both strides
+and both array lengths. Field names and the bucket-view name are descriptive;
+these are runtime records, not recovered disc-file formats.
+
+The original `ETimerReplaceMethod` tag is also preserved. Its descriptive enumerators
+represent modes observed at direct callers and in the registration body:
+
+- Mode 0 removes matching object/event records before insertion. The removal
+  function's final integer argument is unused, including the `-1` supplied by
+  cancellation.
+- Mode 1 removes later matching records, and rejects the new timer if an earlier or
+  equal matching record was found.
+- Mode 2 appends without either replacement pass. A direct caller loads 2 at
+  `0x80100778` before calling registration at `0x80100798`; callers also establish
+  modes 0 and 1. Other values take the same no-replacement path in the observed body.
+
+Registration computes the stored time by adding the integer delay to the float
+clock and truncating to an integer, then selects the bucket with signed remainder
+modulo 120. It preserves the `0xffffffff` object-identity rejection. The method-only
+`BSUtilObjectInstanceMemoryAllocator` declaration supplies its original
+`DoWeOwnThisMemory` call; it does not establish an allocator layout or permit local
+allocation of that class. The original object named `g_pMemBlockAllocator`, timer
+globals, arena allocator, event reference-count functions and event dispatcher
+remain external storage/code and earn no credit from these fragments.
+
+Several surprising original behaviours are retained. Removal scans use an inclusive
+range of 121 ticks for a 120-bucket table, revisiting the first bucket. When mode 1
+keeps an earlier/equal match, that branch sets its result to zero without advancing
+the predecessor link or remembered tail. The reconstruction does not repair that
+behaviour. `BSUpdateTimer` retains a record only when its integer time converted to
+float is greater than the current clock; the dispatch condition is expressed as
+`!(event->time > g_CurrentTime)` to preserve the original unordered-comparison
+branch as well. Clock-to-integer conversions retain the original representability
+preconditions; this is not a claim about useful behaviour for a NaN clock.
+
+Rejected mode-1 registration checks event-memory ownership and decrements an owned
+context without first incrementing it. Accepted registration increments an owned
+context before testing the invalid object identity, then decrements it on that
+rejection path. Removal decrements owned context memory before unlinking. These
+orders are preserved. The free-list pop has no exhaustion check, and registration
+adds no null-object, negative-delay or out-of-range-time guards. Shutdown clears the
+three pointers without freeing the shared arena or resetting its clock/offset.
+
+The generated pool contains the four-byte zero at `0x802a6234` and three eight-byte
+integer-conversion constants at `0x802a6238`, `0x802a6240` and `0x802a6248`. All 28
+bytes are compared and receive no executable-progress credit. Timer globals keep
+the original private `bstimer.cpp` file-record scope in each manifest.
+
 ## Event lookup and music interfaces
 
 `BSFindAnyEventHandler` searches every class level and present state, returning one
@@ -308,10 +380,11 @@ by this reconstruction.
 
 ## Verification and next work
 
-All fifteen accepted `bsmachin.cpp` fragments and the ten `bsmessage.cpp` fragments
-use ProDG **3.9.3** with
+All fifteen accepted `bsmachin.cpp` fragments, ten `bsmessage.cpp` fragments and
+twelve `bstimer.cpp` fragments use ProDG **3.9.3** with
 `-O2 -G0 -fno-exceptions -fno-implicit-templates`. This profile reproduces all 33
-interpreter handlers, the nineteen helpers above and the generated constants. Event lookup and music
+interpreter handlers, the nineteen thread/message/group helpers, all twelve timer
+routines and the generated constants. Event lookup and music
 built-ins retain their verified ProDG 3.8.1 profile.
 
 The arithmetic work distinguishes these working profiles for the tested source:
@@ -323,7 +396,7 @@ their compiler profile earns no new source credit. These comparisons establish a
 working profile, not the historical compiler release or original source spelling.
 
 No instructions are patched, no assembly bodies are substituted, and no functions
-or sections are discarded or clipped. These fragments generate code and the 124
+or sections are discarded or clipped. These fragments generate code and the 152
 read-only constant/string bytes described above. Generated data earns no executable credit,
 and all external storage remains original context.
 

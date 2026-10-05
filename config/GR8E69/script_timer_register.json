@@ -1,0 +1,57 @@
+{
+  "id": "script_timer_register",
+  "source": "src/script/timer_register.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8011e034",
+      "size": 420
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a6240",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSRegisterTimerEvent__FiUsP8BSObjectPv19ETimerReplaceMethod",
+      "address": "0x8011e034",
+      "size": 420,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "BSTimerRemoveLatterTimerInstances__FP8BSObjectUsi": "0x8011e348",
+    "g_pMemBlockAllocator": "0x80326d00",
+    "DoWeOwnThisMemory__35BSUtilObjectInstanceMemoryAllocatorPv": "0x800f84bc",
+    "BSTimerRemoveDuplicateTimerInstances__FP8BSObjectUsi": "0x8011e264",
+    "BSEventIncrimentReferenceCount__FPv": "0x8011d5e0",
+    "BSEventDecrimentReferenceCount__FPv": "0x8011d5f0",
+    "BSGetFreeTimerEvent__Fv": "0x8011e1f8",
+    "g_CurrentTime": "0x80326d58",
+    "g_pTimerHashTable": "0x80326d48"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bstimer.cpp",
+  "original_file_index": 1189,
+  "local_externals": [
+    "g_CurrentTime",
+    "g_pTimerHashTable"
+  ]
+}
