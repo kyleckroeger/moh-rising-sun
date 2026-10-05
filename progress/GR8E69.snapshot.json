@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 593388,
+    "matching_code_bytes": 595088,
     "total_executable_code_bytes": 2492032,
-    "percent": 23.811411731470542,
+    "percent": 23.879629154039755,
     "categories": {
-      "reconstructed_game": 201172,
+      "reconstructed_game": 202872,
       "restored_library": 392216
     },
-    "matching_functions": 1979
+    "matching_functions": 1988
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -500,7 +500,7 @@
     "config/GR8E69/particle_size.json": "2f5fccaf2b032dce1d59c0bcca32201ee9b378e62dceee6cbc34eddddf2d9a30",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "6dbb414fc31a3212be898e51032940d88b720b987aea4bb305d3c73b7d5309eb",
+    "config/GR8E69/project.json": "7c3c9f66fa2d6f87f241df612345008f6ee3db0fda9f62786f85a1b4caa60528",
     "config/GR8E69/script_arithmetic.json": "ec74fa88f8d6807fd445cbf66b4d4a7daaa273a339154b38c9710de23f8fdec0",
     "config/GR8E69/script_branches.json": "e7d49ea1a1b684c7bda78aa8a954777dc51bf3e78b2050dfb9abc2b3e0160e5b",
     "config/GR8E69/script_calls.json": "b25ba9582ac33d62abdb90b39671c9230d1aed2c6d35190b8899108c0e80621b",
@@ -508,10 +508,15 @@
     "config/GR8E69/script_comparisons.json": "5db5d6f47ef9bc166fc3221fdc7e6be0b84cbd18ef252eda38ed520ef4a8a5eb",
     "config/GR8E69/script_event_lookup.json": "7234777fa0122f399f555d815b0592ea55386fd02987114a89562544c44a17ac",
     "config/GR8E69/script_logical.json": "4e73622d7fe058bcfd24bf34589cb5121beae452aa4ab7af9369674d143225a8",
+    "config/GR8E69/script_message_execute.json": "c17ee027e36f6b99d88e225763116b5b9868df07da89cc0247b4ef5cff096c33",
+    "config/GR8E69/script_message_find.json": "cd58a1906500e5c9d81351cd0b33c0698a38aa8150bcf5b485dfdf46eef20f19",
     "config/GR8E69/script_message_free.json": "27e8f6af068a253106c1213b29dfe58887f18d2e5043ff7a6099eb1be2256ae0",
+    "config/GR8E69/script_message_groups.json": "c1b57b718ae28a0bb1beee5f4ef2f4b5cbb2cc89c4579cea766603e72323e95e",
     "config/GR8E69/script_message_indices.json": "4a6982a7440db7c59eb397e8887ccb3e4c6188060aad00384f5038d870b3574e",
     "config/GR8E69/script_message_list.json": "3c18d19bb85148321ba82ee0ac238a6fc866774bfc3e98799a4ba1076bcc7139",
     "config/GR8E69/script_message_memory.json": "e7de31fa5e69050fbabeaa70c9ae2ae5927c902a71c19b39c420268db48c2c67",
+    "config/GR8E69/script_message_process.json": "43430ba60f48ed76cfab2e04486c39cec5ef2f572eef42e2b6b44d237e344086",
+    "config/GR8E69/script_message_queue.json": "dee98c7f1aeeac561e79d375115b13275691842d8c1b1c90058095c8b3ee024d",
     "config/GR8E69/script_message_register.json": "759343678fafffb9b04c179de9c5247b3e89b278d1de3e5699d59ea3a6c18da7",
     "config/GR8E69/script_message_remove.json": "5bfe377a63951d0864552b2eb7e65ad705c68c2c5116e8e88ecc44fd7f80c290",
     "config/GR8E69/script_music_events.json": "032e4da800a8301374dba45800c9d07d35796bef894a4737e895d33d2ccc5ce0",
@@ -521,6 +526,8 @@
     "config/GR8E69/script_not.json": "47c7af683c943669b447f0a28b5b1ba781fee3a38dd73461947134b0d81c4f62",
     "config/GR8E69/script_objects.json": "731e28925a29c66bd054763627b50c1d8ceb91d30a0fdc11d15f9faae2b604a4",
     "config/GR8E69/script_stack.json": "51d1c716e65edd95a6791e3b11f40a0e01a53b10fa4dc25075e48e1e6769e373",
+    "config/GR8E69/script_thread_create.json": "f2bb988e8c870af989d091669b2cfc3432022b633ecf93008c11c087c30467f1",
+    "config/GR8E69/script_thread_destroy.json": "f813fe9420f1f613e2fe25d87ad40eb66d66e8def70935a84c7b3d1c4b3e21aa",
     "config/GR8E69/script_thread_indices.json": "71054aa7e78f4fae9424102a54fcc76682ff71799b60986981e2502ad0d3d9fa",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/stl_80278d64.json": "04dc314cda8644a93aa797638a2f5a3e946a7bc954506e9bb2be731800b7646a",
@@ -940,7 +947,7 @@
     "include/game/ParticleRecipe.h": "a12cd591add8b54e4a4fa23067ddef52772ceaebed6d3b2bec5caf62598f0186",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
-    "include/game/ScriptRuntime.h": "bd38aa4c474ed5fee2eb3f002c60a5cea3033bc403fc196cfb4f6c84f72f4c28",
+    "include/game/ScriptRuntime.h": "15aee0559d5ce4ea71a0302a203a8dbdc31b9833ab7196180ae69362ec2c1355",
     "include/game/StringCRC.h": "3940d0af2ade9e671b10c5bb1ef12705a7322101b231aae92cfd2aab4a07fa31",
     "include/game/TARExtension.h": "cf1f48aa0be63a29babdba7f53c58439facb94141d7e04d0d32fcc878bad2cb3",
     "include/game/TevStage.h": "47aaf3de5425dace0c30e2852896a9494f78ab4a4dcaad6be03d4aa4204d7466",
@@ -1652,10 +1659,15 @@
     "src/script/comparisons.cpp": "7e7e808c7c41dd90eef83478889a045891078853a4979bdbf95abd9841f3747b",
     "src/script/event_lookup.cpp": "e6444d247f01879da2f3d82c61c512a1cdec053754a160b056d68296bac6ef8f",
     "src/script/logical.cpp": "4cbcca143b9b639fafd8723a2169aae6bf3ceb7c51c4c2198ddd3b4efb3ec939",
+    "src/script/message_execute.cpp": "18bcf3d4239a6e473d0d92177dab062ade0b2824d2bd3f9b01276e4af3ff772f",
+    "src/script/message_find.cpp": "28cf27f2b0e4d32578b2c2af70380e3f264ee81c03b7b37301a663032bea882f",
     "src/script/message_free.cpp": "1cbe70d67f7188ca2af359b98253c61f7703ec5407c37678d17155abbe0e5b0d",
+    "src/script/message_groups.cpp": "afb72cdb05eef30e5e788c1f8aa84c1b16b6a6648edae47d0d23efcff8e0540c",
     "src/script/message_indices.cpp": "5b2e0dfc31706b1ae70bd08fe36ec6107f03541bb15e851c0013ff2c9ef14829",
     "src/script/message_list.cpp": "e37dcf02d28aa5414e5b25c0cb3ef8bc9dc674a5a6c30c2be550229ca149e046",
     "src/script/message_memory.cpp": "d10f0808d0fb912cca025a057083d2b3d8e1a34df702dca718c2f9f5d473eb37",
+    "src/script/message_process.cpp": "6c49a423ca17cd77a2a2040a854187ffc8d7b2010bcbec14c47c389db02604d9",
+    "src/script/message_queue.cpp": "2e6255c3aea4364bd2fdf75e50852da964a6f389cc6be86d96c0354db0e93420",
     "src/script/message_register.cpp": "fcaab46386450b3b19d0a216222a0cd7a4ae8ed1136e59958fea071722c0f55c",
     "src/script/message_remove.cpp": "c8fa9b7631942071ad6d83b9cac603c34ec0e56571e3f8f788b802c6d9d05df3",
     "src/script/music_events.cpp": "998748dd2ede9e53d607e41683fdaf5c081b2be02f990ae035135ff4d41b009d",
@@ -1665,6 +1677,8 @@
     "src/script/not.cpp": "6a042ba188f55af543191aecccbb4496d1aa55eef9a44bd4b87f0931d69ce977",
     "src/script/objects.cpp": "e26862f9ca86884fde70db5ba230bdd70f92dc031b4633cc0db8a4e83687446e",
     "src/script/stack.cpp": "b98bb8bfcda3985b4e4e1a757b27db6342f5142af06c629e63e219ce8f324a29",
+    "src/script/thread_create.cpp": "412707d927875d7fd3e858beaddf4ccfcb1dcfea9e11469519b74d827143c7c7",
+    "src/script/thread_destroy.cpp": "a2473723eddd9c51d87d29dc50fbc39c5ae76b365746d9ffba2582b4bfd3fa73",
     "src/script/thread_indices.cpp": "40ec45e14b723eddf0a7b2e805ac8dbbe6f06bfe5eae56c5a02569f243794c2e",
     "src/stlport/CONTAINERS_NOTICE": "7c59267a930cdf87e1af44873547a8275a61b1329833c74ae5f821a5e507a22e",
     "src/stlport/COPYING.GCC": "dcc100d4161cc0b7177545ab6e47216f84857cda3843847c792a25289852dcaa",
@@ -18097,6 +18111,132 @@
       "discarded_functions": [],
       "object_sha256": "f7212a5cc26f535f0e325b1844eb59e067f68ee0ecf72146a3a847e490a4c2ac",
       "linked_sha256": "4646f05a4c01753be7ebaf64f094cec95b319610a2a555e5ff59db6f42f5a85a"
+    },
+    {
+      "id": "script_thread_create",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 272,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "003b1170b2995a3d0adf5b5dc090a8b30beccfbcc1fdb206fb10b2c181a8147f",
+      "linked_sha256": "18ddfdd51b638a90192b2b81f249011eb0efd62ddb15e1a7388dd40e51ac2800"
+    },
+    {
+      "id": "script_thread_destroy",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 88,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "0c66c743de0429418b07f840fa6a0179fb4dc35dac91c6dd8115126de25da871",
+      "linked_sha256": "9b6f8c80390e805808478d26cdccd5a96bde029f38f4f3dab4f41682edb7cdca"
+    },
+    {
+      "id": "script_message_queue",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 248,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "daa11bf4db57a73ee2d86cc5d163b010ddec7cd036f5d09ce827c6d4fe09243f",
+      "linked_sha256": "faf280b35125e303f909f99c987bf2ae4395e6c2d5b5b9716396cc7fe7e86d6a"
+    },
+    {
+      "id": "script_message_process",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 200,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b484d5641f505be0a5ebdbe5aefe22469adb8e96ebfa3d3f78e5274dedc1cefa",
+      "linked_sha256": "a5dfd0186969a49d1a7a7068c5a84d6d1511b5c2b0a2ceb0b5b347c73d46251d"
+    },
+    {
+      "id": "script_message_execute",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 192,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "13f3ea6405c6ccbb359c6c2643330bd060c975b0cb338620370700609c4f2be2",
+      "linked_sha256": "3d2478ff4c6fff9fb7b77b518ae584f3dd0750eba57f666a008afc34ea6f5c7b"
+    },
+    {
+      "id": "script_message_groups",
+      "category": "reconstructed_game",
+      "functions": 3,
+      "code_bytes": 592,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "8343c29b1d89ed9f84594099fd31a956f6c2139893cc90758ef1dda4a4b88337",
+      "linked_sha256": "81a930bdf727dbd2cfc29a1a20391248bd1fbea729babd0284b34bdf5851ffc7"
+    },
+    {
+      "id": "script_message_find",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 108,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.9.3",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "6455244545652f493c4338e05d6f362b2a14d55b268b2476e6ce40f8f7b810fc",
+      "linked_sha256": "1056cd065021917bac843499382f8400e067968b5395a9b6a94a3ab8100b0f7f"
     }
   ],
   "code_map": {
@@ -41150,20 +41290,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800f505c",
-            "size": 272,
-            "kind": "function",
-            "name": "BSCreateThread__FP8BSObjectP13BSCode_structP22BSMachineThread_structPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f516c",
-            "size": 88,
-            "kind": "function",
-            "name": "BSDestroyThread__FP22BSMachineThread_struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800f51c4",
             "size": 452,
             "kind": "function",
@@ -41351,55 +41477,6 @@
             "size": 144,
             "kind": "function",
             "name": "BSInitMessageRegistrationFreeList__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f7ce8",
-            "size": 248,
-            "kind": "function",
-            "name": "BSMessageQueueMessage__FP8BSObjectT0P13TriggerObjectP28BSMessageRegistration_structPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f7de0",
-            "size": 200,
-            "kind": "function",
-            "name": "BSMessageProcessSingleMessageInQueue__Fv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f7ea8",
-            "size": 192,
-            "kind": "function",
-            "name": "BSMessageExecuteHandler__FP28BSMessageRegistration_structP8BSObjectT1P13TriggerObjectPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f7f68",
-            "size": 140,
-            "kind": "function",
-            "name": "BSMessageIsGroupMember__FP13TriggerObjectUi",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f7ff4",
-            "size": 212,
-            "kind": "function",
-            "name": "BSMessageAreInSameGroup__FP8BSObjectT0",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f80c8",
-            "size": 240,
-            "kind": "function",
-            "name": "BSMessageIsGroupCategoryMember__FP13TriggerObjectT0Ui",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800f81b8",
-            "size": 108,
-            "kind": "function",
-            "name": "FindCurrentMessageListEntry__FP22BSMachineThread_structP33BSCode_MessageHandlerEntry_struct",
             "evidence": "adjacent-compiler-markers"
           },
           {

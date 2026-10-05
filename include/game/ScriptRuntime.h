@@ -7,10 +7,16 @@
 // Only the documented accesses/strides are established; these are not complete
 // native object types or on-disc formats. Use only the established extents.
 
+struct FlexPropList {
+    int count;
+    int values[0]; // Variable tail, not a complete allocation.
+};
+
 // Method-only interface: the native TriggerObject layout remains unknown.
 class TriggerObject {
 public:
     int GetLegacyField(int) const;
+    FlexPropList *GetList(const char *) const;
 };
 
 // Twelve-byte runtime message entry; match fields retain descriptive names.
@@ -51,12 +57,17 @@ struct BSStateView {
 };
 
 // The 28-byte stride is independently used by BSFindAnyEventHandler.
-struct BSLevelView {
-    unsigned char unknown00[8];
+struct BSCode_struct {
+    int **codeBases;
+    unsigned char unknown04[4];
     BSStateView **states;
     unsigned short stateCount;
-    unsigned char unknown0e[14];
+    unsigned char unknown0e[8];
+    unsigned short initialState; // +0x16
+    unsigned char unknown18[4];
 };
+
+typedef BSCode_struct BSLevelView;
 
 struct BSClass_struct {
     BSLevelView *levels;
@@ -72,6 +83,8 @@ struct BSObject {
     BSClass_struct *scriptClass;
     BSMachineThread_struct *threads;
     TriggerObject *nativeObject;
+    unsigned char unknown0c[24];
+    unsigned int queueIdentity; // +0x24
 };
 
 struct BSMessageListView {
@@ -83,7 +96,10 @@ struct BSMessageListView {
 };
 
 struct BSMachineThread_struct {
-    unsigned char unknown00[16];
+    int *frame;
+    int *stackTop;
+    void *context;
+    int *instruction;
     BSStateView *state; // +0x10
     BSLevelView *level;
     BSMessageListView *messages;
@@ -118,4 +134,22 @@ extern BSMachineThread_struct *BSGetThreadByIndex(unsigned char, BSObject *);
 extern BSObject *BSGetObjectByIndex(short);
 extern short BSGetIndexByObject(BSObject *);
 
+struct BSMessageQueueEntryView {
+    BSObject *sender;
+    BSObject *target;
+    BSObject *receiver;
+    BSMachineThread_struct *thread;
+    TriggerObject *nativeObject;
+    void *context;
+    unsigned int receiverIdentity;
+    BSCode_MessageHandlerEntry_struct *message;
+    unsigned short stateId;
+    unsigned char unknown22[2];
+};
+extern int g_MessageQueueHead;
+extern int g_MessageQueueTail;
+extern BSMessageQueueEntryView g_MessageQueue[];
+extern void BSExecuteThread(BSObject *, BSMachineThread_struct *);
+extern BSMessageListView *FindCurrentMessageListEntry(BSMachineThread_struct *, BSCode_MessageHandlerEntry_struct *);
+extern void BSMessageExecuteHandler(BSMessageRegistration_struct *, BSObject *, BSObject *, TriggerObject *, void *);
 #endif

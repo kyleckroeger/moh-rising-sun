@@ -10,7 +10,9 @@
 
 `FlexPropFormat::GetField` searches each class’s sorted fields, then its parent if no field matches. Its twelve-byte search record initializes only the key, which is the only word the comparator reads. Comparisons use signed 32-bit ordering; CRC bit patterns must retain that ordering when interpreting these field arrays.
 
-`GetDataPtr` returns null for a missing field; otherwise it adds the field offset to the format’s `0x3c`-byte prefix. `GetFieldOffset` returns -1 for a missing field, and `GetData` adds an already supplied byte offset without validation. Integer, enum, float and boolean getters retain original diagnostics and zero/false fallback results. List lookup returns the original shared empty-list object when absent; the list’s full structure remains opaque. The private empty-list symbol is scoped to the original `flexprop.cpp` record and remains uncredited context.
+`GetDataPtr` returns null for a missing field; otherwise it adds the field offset to the format’s `0x3c`-byte prefix. `GetFieldOffset` returns -1 for a missing field, and `GetData` adds an already supplied byte offset without validation. Integer, enum, float and boolean getters retain original diagnostics and zero/false fallback results. List lookup returns the original shared empty-list object when absent; the script group filters now establish its signed count and variable tail of signed
+32-bit values; complete allocation and serialization remain unknown. See
+[the script evidence](Script.md#thread-lifecycle-queued-delivery-and-group-filters). The private empty-list symbol is scoped to the original `flexprop.cpp` record and remains uncredited context.
 
 Name-taking wrappers hash the exact input and call their integer-key overloads. The name-taking string getter is accepted, but its integer-key implementation and string-table virtual interface remain original context. `GetFieldType` returns zero for an absent field. `GetClassName` reads the first class name; `IsA` compares names with `strcmp` while following parents. Case folding is not added.
 

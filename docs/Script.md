@@ -8,9 +8,10 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-Twenty-one fragments in `src/script/` reconstruct **47 functions and 7,152 executable
+Twenty-eight fragments in `src/script/` reconstruct **56 functions and 8,852 executable
 bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
-helpers (964 bytes), event lookup (220 bytes), and three music built-ins (372 bytes).
+helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
+bytes), event lookup (220 bytes), and three music built-ins (372 bytes).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json`. Original file markers support the `bsmachin.cpp`,
 `bsmessage.cpp`, `bsfile.cpp` and `bsbifunc.cpp` groupings; these fragments are not
@@ -166,7 +167,7 @@ source as described below. Native field lookup remains original code.
 ## Message registrations and index helpers
 
 The following complete bodies are reconstructed. They extend the registration path
-used by `NEXTSTATE`; message delivery and interpreter execution remain separate work.
+used by `NEXTSTATE`; the subsequent thread and queue work is described below.
 
 | Functions | Executable bytes | Verified behaviour |
 | --- | ---: | --- |
@@ -219,6 +220,67 @@ unrelated pointers. Object-index conversion remains original code. These are
 32-bit GameCube runtime views and contracts, not portable containers or recovered
 GameCube file layouts.
 
+## Thread lifecycle, queued delivery and group filters
+
+Seven more fragments reconstruct nine complete functions:
+
+| Functions | Executable bytes | Verified behaviour |
+| --- | ---: | --- |
+| `BSCreateThread` / `BSDestroyThread` | 360 | Bind the initial state and its message registrations, execute the thread, and later return its registration nodes to the free list. |
+| `BSMessageQueueMessage` | 248 | Append a delivery record to the fixed ring, returning 12 when the next tail would equal the head, otherwise zero. |
+| `BSMessageProcessSingleMessageInQueue` | 200 | Consume one record, validate the receiver identity and current registration, and dispatch an eligible handler. |
+| `BSMessageExecuteHandler` | 192 | Prepare the handler's stack arguments and code address, then call the interpreter. |
+| `FindCurrentMessageListEntry` | 108 | Find a current registration with equal message ID, comparison word and comparison byte. |
+| Three `BSMessage*Group*` functions | 592 | Test group membership, any shared group, or a shared group within the requested category. |
+
+`BSCreateThread` confirms the original `BSCode_struct` tag from its exported
+signature; `BSLevelView` remains a descriptive alias for that 28-byte runtime view.
+The code-base table is at level `+0`, and the initial state ID is at `+0x16`.
+The thread's formerly opaque first sixteen bytes hold frame, stack-top, context
+and instruction pointers at `+0`, `+4`, `+8` and `+0x0c`. Creation sets the stack top
+to one word above the current interpreter top and the frame one word above that,
+registers each initial-state message, then calls `BSExecuteThread`. Destruction
+removes each handler and recycles each list node. It does not clear the thread's
+list pointer or restore the associated registration's flags; these differences
+from `NEXTSTATE` are preserved.
+
+The queue has 1,024 records with a verified 36-byte stride. Head and tail use the
+same wrap rule at 1,024; one slot is reserved to distinguish a full ring. The
+record holds sender and target script pointers at `+0`/`+4`, receiver and thread
+pointers at `+8`/`+0x0c`, native object and context at `+0x10`/`+0x14`, a copied
+receiver identity word at `+0x18`, a message pointer at `+0x1c`, and state ID at
+`+0x20`. Its final two bytes remain opaque. The identity word is read from script
+object `+0x24`; its wider lifecycle remains unestablished. These are descriptive
+field names, not recovered historical declarations.
+
+Consumption advances the head before checking that identity word. An unequal
+word discards the record. Lookup walks the thread's current message list and
+returns null immediately if a visited message has flag bit 2 set; this is not a
+skip-to-the-next-entry condition. Otherwise it returns the first entry matching
+the ID and both comparison fields. Delivery requires that entry and either an
+equal state ID or flag bit 1 in its current message. Processing assumes the queue
+is nonempty; no empty-ring guard is present in this function.
+
+Execution resolves the receiver and thread again from the registration indices,
+sets the thread frame and top to two words above the interpreter top, then writes
+context, sender, target and native-object arguments into four successive slots.
+The thread top advances to the fourth slot. The handler's code word selects a
+code-base entry with its high byte and a word offset with its low 24 bits, as in
+the accepted opcode handlers. `BSExecuteThread` itself remains original context.
+
+The group filters call the original `TriggerObject::GetList("Group")`. Their
+accesses establish a signed count followed by a variable tail of signed 32-bit
+values in `FlexPropList`; the view is not a complete allocation or serialized
+format. Membership compares each value's low byte against the unsigned high
+halfword of the supplied match word. The shared-group filter compares complete
+values. The category filter compares arithmetic-right-shifted value halves
+against the unsigned high halfword of the match word, then requires equal full
+values. Null script/native arguments and null lists follow the original checks;
+`BSMessageAreInSameGroup` requires valid native objects once its script-object
+arguments are nonnull. Negative counts naturally produce no iterations. The
+shared `"Group"` literal and its alignment occupy eight fully compared read-only
+bytes at `0x802a5274`; those bytes receive no code credit.
+
 ## Event lookup and music interfaces
 
 `BSFindAnyEventHandler` searches every class level and present state, returning one
@@ -246,10 +308,10 @@ by this reconstruction.
 
 ## Verification and next work
 
-All thirteen accepted `bsmachin.cpp` fragments and the five `bsmessage.cpp` fragments
+All fifteen accepted `bsmachin.cpp` fragments and the ten `bsmessage.cpp` fragments
 use ProDG **3.9.3** with
 `-O2 -G0 -fno-exceptions -fno-implicit-templates`. This profile reproduces all 33
-interpreter handlers, the ten helpers above and the generated constants. Event lookup and music
+interpreter handlers, the nineteen helpers above and the generated constants. Event lookup and music
 built-ins retain their verified ProDG 3.8.1 profile.
 
 The arithmetic work distinguishes these working profiles for the tested source:
@@ -261,16 +323,16 @@ their compiler profile earns no new source credit. These comparisons establish a
 working profile, not the historical compiler release or original source spelling.
 
 No instructions are patched, no assembly bodies are substituted, and no functions
-or sections are discarded or clipped. These fragments generate code and the 116
-read-only constant bytes described above. Generated data earns no executable credit,
+or sections are discarded or clipped. These fragments generate code and the 124
+read-only constant/string bytes described above. Generated data earns no executable credit,
 and all external storage remains original context.
 
 The complete rebuilt 2,860,576-byte analysis image also matches the original,
 including its header, allocated ELF bytes, entry point and BSS extent. Follow the
 [build, test and snapshot process](Progress.md) for future changes. Runtime and
 emulator behaviour remain untested. The opcode-handler set is complete, but the
-interpreter as a whole is not: initialization, thread management, class loading,
-event/message-dispatch internals and music internals remain future work. The
+interpreter as a whole is not: interpreter initialization/execution, class loading,
+event dispatch, message-send filtering and music internals remain future work. The
 [script](research/ps2/script-opcodes.md), [class-description](research/ps2/sin-class-descriptions.md)
 and [music](research/ps2/pathfinder-music.md) research retains broader hypotheses and
 cross-platform questions beyond the matched bodies here.

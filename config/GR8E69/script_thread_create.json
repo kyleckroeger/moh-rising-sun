@@ -1,0 +1,44 @@
+{
+  "id": "script_thread_create",
+  "source": "src/script/thread_create.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f505c",
+      "size": 272
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSCreateThread__FP8BSObjectP13BSCode_structP22BSMachineThread_structPv",
+      "address": "0x800f505c",
+      "size": 272,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_piStackTop": "0x8031d074",
+    "BSRegisterMessage__FP33BSCode_MessageHandlerEntry_structP8BSObjectUsP22BSMachineThread_structPP28BSMessageRegistration_struct": "0x800f73a8",
+    "BSMachineGetFreeMessageList__Fv": "0x800f69ec",
+    "BSExecuteThread__FP8BSObjectP22BSMachineThread_struct": "0x800f51c4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmachin.cpp",
+  "original_file_index": 1101,
+  "local_externals": []
+}

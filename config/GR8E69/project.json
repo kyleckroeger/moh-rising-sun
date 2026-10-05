@@ -705,7 +705,14 @@
     "script_message_remove.json",
     "script_message_register.json",
     "script_message_list.json",
-    "script_message_memory.json"
+    "script_message_memory.json",
+    "script_thread_create.json",
+    "script_thread_destroy.json",
+    "script_message_queue.json",
+    "script_message_process.json",
+    "script_message_execute.json",
+    "script_message_groups.json",
+    "script_message_find.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

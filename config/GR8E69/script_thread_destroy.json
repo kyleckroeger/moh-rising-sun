@@ -1,0 +1,44 @@
+{
+  "id": "script_thread_destroy",
+  "source": "src/script/thread_destroy.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f516c",
+      "size": 88
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSDestroyThread__FP22BSMachineThread_struct",
+      "address": "0x800f516c",
+      "size": 88,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_MessageListHead": "0x8031d128",
+    "BSMessageRemoveHandler__FP28BSMessageRegistration_struct": "0x800f7ab0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmachin.cpp",
+  "original_file_index": 1101,
+  "local_externals": [
+    "g_MessageListHead"
+  ]
+}

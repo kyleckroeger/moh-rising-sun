@@ -1,0 +1,58 @@
+{
+  "id": "script_message_groups",
+  "source": "src/script/message_groups.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.9.3",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800f7f68",
+      "size": 592
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a5274",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "BSMessageIsGroupMember__FP13TriggerObjectUi",
+      "address": "0x800f7f68",
+      "size": 140,
+      "binding": 1
+    },
+    {
+      "name": "BSMessageAreInSameGroup__FP8BSObjectT0",
+      "address": "0x800f7ff4",
+      "size": 212,
+      "binding": 1
+    },
+    {
+      "name": "BSMessageIsGroupCategoryMember__FP13TriggerObjectT0Ui",
+      "address": "0x800f80c8",
+      "size": 240,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetList__C13TriggerObjectPCc": "0x80122b90"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "bsmessage.cpp",
+  "original_file_index": 1124,
+  "local_externals": []
+}
