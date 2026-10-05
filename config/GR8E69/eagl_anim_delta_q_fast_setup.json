@@ -1,0 +1,45 @@
+{
+  "id": "eagl_anim_delta_q_fast_setup",
+  "source": "src/eagl_anim/FnDeltaQFastSetup.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ef434",
+      "size": 628
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bebf0",
+      "size": 24
+    }
+  ],
+  "functions": [
+    {
+      "name": "SetAnimMemoryMap__Q28EAGLAnim12FnDeltaQFastPQ28EAGLAnim13AnimMemoryMap",
+      "address": "0x801ef434",
+      "size": 628,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetConstBoneIdx__Q28EAGLAnim10DeltaQFast": "0x80293188",
+    "GetConstPhysical__Q28EAGLAnim10DeltaQFast": "0x802931f8",
+    "_Q28EAGLAnim17MemoryPoolManager.gMemoryManager": "0x802d2e5c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

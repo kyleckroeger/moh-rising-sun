@@ -1,0 +1,82 @@
+{
+  "id": "eagl_anim_raw_state_control",
+  "source": "src/eagl_anim/FnRawStateControl.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": true,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801edbd4",
+      "size": 212
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802beb98",
+      "size": 8
+    },
+    {
+      "name": ".gnu.linkonce.d._vt.Q28EAGLAnim14FnRawStateChan",
+      "address": "0x802ec720",
+      "size": 184,
+      "target_name": ".data"
+    }
+  ],
+  "functions": [
+    {
+      "name": "_._Q28EAGLAnim14FnRawStateChan",
+      "address": "0x801edbd4",
+      "size": 96,
+      "binding": 1
+    },
+    {
+      "name": "GetLength__CQ28EAGLAnim14FnRawStateChanRf",
+      "address": "0x801edc34",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "Eval__Q28EAGLAnim14FnRawStateChanffPf",
+      "address": "0x801edc70",
+      "size": 56,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetTargetCheckSum__CQ28EAGLAnim15FnAnimMemoryMap": "0x801ee22c",
+    "UseFPS__Q28EAGLAnim6FnAnimb": "0x801ee148",
+    "FindMatchTime__CQ28EAGLAnim6FnAnimRCQ28EAGLAnim15MatchPhaseInputRf": "0x801ee158",
+    "EvalSQT__Q28EAGLAnim6FnAnimfPfPCQ28EAGLAnim8BoneMask": "0x801ee160",
+    "EvalPhase__Q28EAGLAnim6FnAnimfRQ28EAGLAnim10PhaseValue": "0x801ee168",
+    "EvalVel2D__Q28EAGLAnim6FnAnimfPf": "0x801ee170",
+    "EvalEvent__Q28EAGLAnim6FnAnimffPPQ28EAGLAnim12EventHandlerPv": "0x801ee178",
+    "EvalWeights__Q28EAGLAnim6FnAnimfPf": "0x801ee180",
+    "EvalState__Q28EAGLAnim14FnRawStateChanfPQ28EAGLAnim5State": "0x801ed9f4",
+    "EvalPose__Q28EAGLAnim6FnAnimfPCQ28EAGLAnim15PosePaletteBankPf": "0x801ee190",
+    "FindTime__Q28EAGLAnim14FnRawStateChanRCQ28EAGLAnim9StateTestfRf": "0x801edca8",
+    "GetPhaseChan__Q28EAGLAnim6FnAnim": "0x801ee1a0",
+    "GetAttributes__CQ28EAGLAnim6FnAnim": "0x801ee1b8",
+    "GetAnimatedBones__Q28EAGLAnim6FnAnimPQ28EAGLAnim8BoneMaskRiN22": "0x801ee1a8",
+    "GetAnimatedBonesAux__Q28EAGLAnim6FnAnimPQ28EAGLAnim8BoneMaskRiN22": "0x801ee1b0",
+    "SetAnimMemoryMap__Q28EAGLAnim15FnAnimMemoryMapPQ28EAGLAnim13AnimMemoryMap": "0x801ee214",
+    "GetAnimMemoryMap__Q28EAGLAnim15FnAnimMemoryMap": "0x801ee21c",
+    "GetAnimMemoryMap__CQ28EAGLAnim15FnAnimMemoryMap": "0x801ee224",
+    "_._Q28EAGLAnim15FnAnimMemoryMap": "0x801ee1e0",
+    "_12EAGLInternal.EAGLFree": "0x802d2e0c"
+  },
+  "discarded_functions": [
+    "GetDecodeData__CQ28EAGLAnim12RawStateChaniRUcN22"
+  ],
+  "undefined_in_discarded_code": []
+}

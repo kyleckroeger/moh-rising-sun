@@ -1,0 +1,36 @@
+{
+  "id": "eagl_anim_raw_state_decode",
+  "source": "src/eagl_anim/RawStateDecode.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801ed898",
+      "size": 348
+    }
+  ],
+  "functions": [
+    {
+      "name": "Decode__CQ28EAGLAnim14FnRawStateChanPUcT1",
+      "address": "0x801ed898",
+      "size": 348,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

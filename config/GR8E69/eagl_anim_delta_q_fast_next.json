@@ -1,0 +1,41 @@
+{
+  "id": "eagl_anim_delta_q_fast_next",
+  "source": "src/eagl_anim/FnDeltaQFastNext.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801f012c",
+      "size": 832
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802bec28",
+      "size": 24
+    }
+  ],
+  "functions": [
+    {
+      "name": "UpdateNextQs__Q28EAGLAnim12FnDeltaQFastPQ28EAGLAnim10DeltaQFastiii",
+      "address": "0x801f012c",
+      "size": 832,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -268,6 +268,104 @@ decoder structure. Helper names describe their operations and do not claim origi
 inline boundaries. Every generated allocated byte is checked; runtime behavior in
 the game remains untested.
 
+## Quaternion support and control fragments
+
+Three `FnDeltaQFast` fragments add ten functions and **4,104 code bytes**:
+map binding and buffer initialization, unmasked next-key reconstruction, three
+masked delta/next-key helpers, construction/destruction, length lookup, the generic
+`Eval` wrapper and animated-bone enumeration. Their three complete constant pools
+occupy 24 bytes at `0x802bebf0`, 24 at `0x802bec28` and 80 at `0x802bec60`.
+The complete native virtual table occupies 184 bytes at `0x802ec948`.
+
+These are independent source fragments, not a completed decoder translation unit.
+The two main quaternion evaluators still have unresolved compiler differences and
+remain original context, with zero source credit. The masked/control fragment's
+native link discards the separately emitted inline `InitBuffers` body. That helper
+is used by the accepted map-binding fragment; its generated constant pool is fully
+retained and compared in the masked/control fragment. No mismatching target
+function is compiled and then stripped, and no pool or padding is clipped. Unused
+experimental accumulation helper bodies are not included in the accepted header.
+
+The `FnDeltaQFast` object has 64 bytes and type value 18, supported by constructor,
+deleting destructor and field accesses. It allocates one block containing a
+32-byte expanded range record and two 16-byte quaternion slots per animated bone.
+The recorded previous/next block pointers point inside this allocation. Destruction
+frees the range-block base once; it does not free those interior pointers.
+
+The encoded map's records begin at byte 18, independently of the C++ header's
+rounded size. Each encoded range record is sixteen bytes: four unsigned halfword
+minima and four ranges. Minima expand with `2/65535 * value - 1`, ranges with
+`2/65535 * value`. Six-byte physical samples hold four twelve-bit components: the
+first three occupy the upper twelve bits of successive halfwords, and w is
+assembled from their three low nibbles. Each component expands over [-1, 1].
+Three-byte delta samples use the upper six bits of each byte for x/y/z and combine
+the three low two-bit fields for w. Per-component deltas use the expanded minimum
+and range with a `1/63` factor. Bitfield declarations describe the verified SN
+compiler's target layout, not a portable serialization interface.
+
+Next-key reconstruction reloads a physical sample when crossing a bin boundary,
+otherwise adds one decoded delta to the previous quaternion. It updates the cached
+next key afterward. Masked variants update only selected bones while advancing the
+encoded sample position for every bone. Forward and reverse accumulation preserve
+the target's component order and frame/bone traversal. These support routines add
+no normalization or interpolation behavior beyond their matched instructions.
+
+A separate `FnDeltaQ` control fragment adds six functions and **636 bytes**, plus
+an eight-byte conversion pool at `0x802bed70` and the complete 192-byte virtual table
+at `0x802ecab8`. Construction and deletion establish its 48-byte extent and type
+value 17. Its encoded range/sample types remain opaque in the public interface;
+the two main evaluators and buffer initialization remain original context. The
+wrapper calls the protected virtual masked evaluator with a null mask, preserving
+the original call without asserting that this is a safe runtime entry point.
+Both decoder families enumerate animated bone indices and derive length from the
+key count or the final stored key time. Existing valid-map/count preconditions are
+preserved.
+
+The reference headers supply attributed names and interface leads, but their
+relevant implementation bodies are empty. These bodies were reconstructed from
+the pinned GameCube instructions with Codex assistance. Inline helper boundaries
+and historical member names remain unproven. The normal ProDG 3.8.1 animation
+profile matches every generated allocated byte; no new compiler options, register
+constraints, assembly bodies or instruction patches are used.
+
+## Raw state decoding
+
+Two fragments add four `FnRawStateChan` functions and **560 code bytes**: its
+packed-field decoder, deleting destructor, length lookup and generic `Eval`
+wrapper. The control fragment also verifies its eight-byte conversion pool at
+`0x802beb98` and complete 184-byte native virtual table at `0x802ec720`.
+The separately emitted inline metadata accessor is natively stripped; it generates
+no extra constant pool and is used in the accepted decoder. The main `EvalState`
+and `FindTime` implementations remain original code. In particular, the original
+backward-search path at `0x801edb4c` stores the key pointer to a stack slot and
+loads those bits as a float, rather than loading the pointed-to timestamp. That
+observation is an unresolved reconstruction lead, not accepted evaluator source
+or a proposed behavior correction.
+
+Deletion establishes a twenty-byte function object. Independent inspection of
+the original evaluator identifies the cached key index at `+0x10`. The map view records frame count at `+4`, field count at `+8`,
+and a variable array of halfword field descriptions beginning at `+0x0a`.
+The key-count and key-size fields follow the attributed reference and independent
+inspection of the original evaluator; they establish no complete allocation or
+portable file format. `State` and `StateTest` remain opaque.
+
+Each field description uses bits 15–13 as a stored-width exponent, bits 12–11
+plus one as the destination byte width, and its low byte as a destination offset.
+Bits 10–8 are not interpreted by this decoder. Exponents 0, 1 and 2 extract one,
+two or four bits from the current source byte, most-significant bits first. After
+eight consumed bits the source advances and the bit counter resets. Exponents
+3, 4 and 5 read one, two or four bytes directly. The decoder writes only destination
+widths one, two and four. Other exponents retain the previous decoded value;
+width three produces no write. It does not insert alignment fixes, clear the
+output record or add bounds checks. The original map and destination-storage
+preconditions remain the caller's responsibility.
+
+The generic wrapper forwards to the original virtual `EvalState`, and length
+lookup converts the unsigned frame count. The CC0 `RawStateChan.h` supplied
+interface names; its decoder/evaluator bodies were empty. Implementation and
+packed-field evidence come from the pinned target. Complete-image comparison is
+required, and runtime behavior remains untested.
+
 ## Raw-pose, cyclic and linear channels
 
 Six raw-pose transformation helpers and the frame evaluator add 2,380 code bytes.

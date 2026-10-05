@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 595088,
+    "matching_code_bytes": 600388,
     "total_executable_code_bytes": 2492032,
-    "percent": 23.879629154039755,
+    "percent": 24.092307000873184,
     "categories": {
-      "reconstructed_game": 202872,
+      "reconstructed_game": 208172,
       "restored_library": 392216
     },
-    "matching_functions": 1988
+    "matching_functions": 2008
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -137,6 +137,10 @@
     "config/GR8E69/eagl_anim_delta_compressed_data.json": "4e5153acc0632c58b6326cd0c69c02a6d8ed12995563feb21428953cfd9466a0",
     "config/GR8E69/eagl_anim_delta_f1.json": "9a9270df3b46b75d1368f313eb57f938d1d9533f88fe049234d8322eeebd2620",
     "config/GR8E69/eagl_anim_delta_f3.json": "16b2cd76e552f475cdc363a58463a57f6c8340778ea19d2795e24da8a16d9576",
+    "config/GR8E69/eagl_anim_delta_q_control.json": "2cba82ba4830efc32f33c3454699c7c20592b8d3f86d0dd944d2cb102edab764",
+    "config/GR8E69/eagl_anim_delta_q_fast_masked.json": "e81f99dfe3f6d28c4623962fe09408ced19e0526a56157d49d713775fa96f917",
+    "config/GR8E69/eagl_anim_delta_q_fast_next.json": "648b4e79128588836b951ea81860b3e1736cea28fe8ca1084e6a8e2a6efdf9be",
+    "config/GR8E69/eagl_anim_delta_q_fast_setup.json": "85642ee40da62d14ff72ca7c096de1938427592fb738ccdc84a01beb7c8e9181",
     "config/GR8E69/eagl_anim_delta_single_q.json": "9e45e8f1dd400df3678793fcf3bdc1470ae6f962decfa01f6fe3981f49c1e8f6",
     "config/GR8E69/eagl_anim_fn_csis_event_channel.json": "93f23e84caf738cf34fb9b3a5439e7bc23519dcf04e8f5c41a16b08b1885d9dc",
     "config/GR8E69/eagl_anim_fn_csis_event_channel_delete.json": "d58624f94054dcc074f16b8268dc34c99942b92171c9aca0b3881eac3643dac7",
@@ -176,6 +180,8 @@
     "config/GR8E69/eagl_anim_raw_pose_init.json": "4228d18f85e9579cee2d4c91ef28ee028c4f4336612cc65977d6657a2e7782b3",
     "config/GR8E69/eagl_anim_raw_pose_quat_interp.json": "c15bf6a6e342ac5b22a82e600525f451be6621cf244fc82e1f220ba71dce5b63",
     "config/GR8E69/eagl_anim_raw_pose_tran_interp.json": "d5cf5aa646ac66b5acbb5b9391ec133591091637b44d752d60ff9b330002bbd0",
+    "config/GR8E69/eagl_anim_raw_state_control.json": "08f87a735c574333cd70fd7d4f7904e61567553b3b4342d21f7fad297e16e42f",
+    "config/GR8E69/eagl_anim_raw_state_decode.json": "c72153c1b1b7120b79d1447d1f3f4522ad35d3be2e6793c503138a6bccd9ac1f",
     "config/GR8E69/eagl_anim_scratch_buffer.json": "618b2d9653f42ce9d20af79e92cb1b31a3ea64ab1163f71aea609541e289a2d2",
     "config/GR8E69/eagl_anim_skeleton.json": "34b65f4b436e892489e4c4555243b20bf66888463c6a5718752895666fa35c90",
     "config/GR8E69/eagl_common_state_strings.json": "c0d639a1019e6c77b97b2a95b1bc856e0faffb6f1463c5e202947ae9ad2c5294",
@@ -500,7 +506,7 @@
     "config/GR8E69/particle_size.json": "2f5fccaf2b032dce1d59c0bcca32201ee9b378e62dceee6cbc34eddddf2d9a30",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "7c3c9f66fa2d6f87f241df612345008f6ee3db0fda9f62786f85a1b4caa60528",
+    "config/GR8E69/project.json": "8956363bafa3a0d3372c5cf292e52ef4d6b25cf1c521727f79e89e1b497f2165",
     "config/GR8E69/script_arithmetic.json": "ec74fa88f8d6807fd445cbf66b4d4a7daaa273a339154b38c9710de23f8fdec0",
     "config/GR8E69/script_branches.json": "e7d49ea1a1b684c7bda78aa8a954777dc51bf3e78b2050dfb9abc2b3e0160e5b",
     "config/GR8E69/script_calls.json": "b25ba9582ac33d62abdb90b39671c9230d1aed2c6d35190b8899108c0e80621b",
@@ -910,6 +916,8 @@
     "include/game/EAGLAnim/DeltaCompressedData.h": "f892bdcc243aff91c25d61954f478579cf0b1ebd82c19d194132d1d09f8c91d7",
     "include/game/EAGLAnim/DeltaF1.h": "b45237d223bb7b3968faefe32e902d8cab5ccbeaa764b3b50fc66f5b58f89778",
     "include/game/EAGLAnim/DeltaF3.h": "72f83c4547bf9766cb00587e0ec5dccca457a3836dca218e030456d2c6ea8fb6",
+    "include/game/EAGLAnim/DeltaQ.h": "3c36de241f839158918c71c3d5648ba3018967d9de413b9506770ca63b7f7b72",
+    "include/game/EAGLAnim/DeltaQFast.h": "f434bb1b642257a8c880f76f0051b869160788de06eec329b8c4bd2289cf1124",
     "include/game/EAGLAnim/DeltaSingleQ.h": "abf693258a5c3b86a77e510d100482539121efee45813d8b2119bcdc7ef70f40",
     "include/game/EAGLAnim/Event.h": "b2fa70a2dbf758f121f917f8f4d8b1932e9416d5fdca3ddb8c6c5e5fc00ddfe0",
     "include/game/EAGLAnim/EventHandler.h": "838b3627c1413a845f2c6e0c106526f22df5048a43d2cb780fc578475cb4d8b7",
@@ -917,6 +925,8 @@
     "include/game/EAGLAnim/FnCycle.h": "02a63220af59dd78e1c53a40f9dc111e703674a7da311807df9fc9caade7ae80",
     "include/game/EAGLAnim/FnDeltaF1.h": "2378980e2f8b92ff662d96c2262c5603d9e9e73120b0afe688624e8f145fc929",
     "include/game/EAGLAnim/FnDeltaF3.h": "5855fe3ec9b793b8bd5d15f68824e51f86da7dcc2f2576d84f4aaa05fe02367a",
+    "include/game/EAGLAnim/FnDeltaQ.h": "02b851733b06786c50ad81947df54f51fdee4ab57ff7e6308ecc7c7bdc358afa",
+    "include/game/EAGLAnim/FnDeltaQFast.h": "810cd5f0137e1f9311409aad07b1dee366945a06271a672d5a2227cd6f73450d",
     "include/game/EAGLAnim/FnDeltaSingleQ.h": "7242123982a66ffb59c23a9324719240bce4f8bf623f1d8b6102b7079f3f419d",
     "include/game/EAGLAnim/FnPoseBlender.h": "37a1c4031d62dc7216884fb2d0f761f5f0e09c6e10391e6439cfdad08aab0fde",
     "include/game/EAGLAnim/FnRawEventChannel.h": "f50ab90107338f0faac2acf6a1141c03ff63025be7d658b80172fda1c4b1b839",
@@ -928,6 +938,7 @@
     "include/game/EAGLAnim/RawLinearChannel.h": "0a7bfb0f873f331be2a62e67dbb65c8a1881d589936c2ea2c16b0533ebaf785a",
     "include/game/EAGLAnim/RawPoseChannel.h": "2d12a9bf3dc32b024e010cb8d7c496efedb597544f342829df35f3f7c8409956",
     "include/game/EAGLAnim/RawPoseMath.h": "b3d6d3135848dc775b6188fb6bb0b46683e558de3f6b2fcc56bd42c990593e20",
+    "include/game/EAGLAnim/RawStateChan.h": "27ad3631f7a77a4bc767780e31c439bfd0813ae17d60328f1ab79a360e49fde5",
     "include/game/EAGLAnim/ScratchBuffer.h": "70a813997e1e6eb1177a70e2c9b87905a02e1d1ffb204355655bf53458c398ca",
     "include/game/EAGLAnim/Skeleton.h": "a73072e2401e9734284b148eaceca34f9aebd042c70e1418105fa43b3a9cf331",
     "include/game/EAGLAnim/StatelessF3.h": "c7ac057730a10534318b361af764ba4476dac16761a8ef97c84a4842316b8de9",
@@ -1368,6 +1379,10 @@
     "src/eagl_anim/FnCycleSQT.cpp": "ff7eb0bf985910d6905708fca0ec58a5af76aaa55751292f3d61a521a10b447a",
     "src/eagl_anim/FnDeltaF1.cpp": "ec222887f53b6296bdfaa0f28d90aeeb03084c06876d65a57e0820d13fc4ed6a",
     "src/eagl_anim/FnDeltaF3.cpp": "200b5e26fefe3d9b383c913d6278fb0faa0ac426bfa90cf55a48603570975035",
+    "src/eagl_anim/FnDeltaQControl.cpp": "761080bdc7f98db40891ffe1c28d913101661cb7d35d101fd87db6583739a808",
+    "src/eagl_anim/FnDeltaQFastMasked.cpp": "e30a07f2327a9b437bd141d21d1784a55b17b79195f315ec03d4db1fa9e7b599",
+    "src/eagl_anim/FnDeltaQFastNext.cpp": "6a3ccbf8292f0b67ff5d0d0a4371acb9ac382980b943666a54e366f35b463e25",
+    "src/eagl_anim/FnDeltaQFastSetup.cpp": "af25b1c08060e266543bd879549375f08329fe17be8231a1815091b22848acc6",
     "src/eagl_anim/FnDeltaSingleQ.cpp": "6366ae42593f4167a965f637df73e8631e6565636a73fe19392882f26c5a5f00",
     "src/eagl_anim/FnRawEventChannel.cpp": "4fd22a884d20b048a533204b89ff5bf87c580752c387976e1e26a95a9aa46db8",
     "src/eagl_anim/FnRawEventChannelDelete.cpp": "8e3bb3243d13a4896711b8d95907f6cacd37ffe1e2bebe324ef884dea82c040a",
@@ -1376,6 +1391,7 @@
     "src/eagl_anim/FnRawLinearLength.cpp": "d9f4512c4906cdd0b46a689105977211284789f3637f55272530e82dd08a9ee8",
     "src/eagl_anim/FnRawLinearLifetime.cpp": "96b786851466536c770379a886d3d59997674d1493f72d0e54d63828794b2a84",
     "src/eagl_anim/FnRawPoseChannel.cpp": "2e963d7c406a5b79e263f4652008243c4a3fac9fa51ac336605724d3164de12f",
+    "src/eagl_anim/FnRawStateControl.cpp": "70bb867427468b1036b1eccfa0968fe222249925d61b1b9880caaa64585ed0c8",
     "src/eagl_anim/FnRunAlignRoot.cpp": "c7c55173d0c3245de4cdf86609f14ba6b2790c23984d41d733fec29e70b0cbc2",
     "src/eagl_anim/FnRunAlignVel.cpp": "c3f4e68f88e4a37b1a180a88fc49ed164a81b9426483d676feeeb69806634065",
     "src/eagl_anim/FnRunBlendVel.cpp": "0107e19b149c20b3de451d01c6f6a6a9c533649f15c97963b97b1ec6823622ae",
@@ -1400,6 +1416,7 @@
     "src/eagl_anim/RawPoseInit.cpp": "202bfdd8f6266f9fe40a3d6f3955610ab57baaa4843d6ee51067e6b4fa0b363c",
     "src/eagl_anim/RawPoseQuatInterp.cpp": "489995e9e00e3f62fb191b2cd75bd4055b1da52f2ff2277ed4528ff6ead84b23",
     "src/eagl_anim/RawPoseTranInterp.cpp": "89daaf791e25b4f104247d89a8b7edcd24ce79e18e8e28717fc88860b4f434a5",
+    "src/eagl_anim/RawStateDecode.cpp": "72576a93eed77eda9184b474c9cc4f2e6157609e5e1370f4d8b71973dd996f62",
     "src/eagl_anim/ScratchBuffer.cpp": "9ba2c0580bbc6c335fbde1396d827452e60ba574940ceb9715014b4bbb8efabe",
     "src/eagl_anim/Skeleton.cpp": "9fbe1d6c1f54bcf07d3d8a0b771d29a18e806241d7dd04a1daf4375b453f6d5f",
     "src/eagl_loading/ConstructorPool.cpp": "c13e2745ce7310d31ded543ab769e7dec4db69fa97b684e4916d3ed0b63ad5f1",
@@ -18237,6 +18254,118 @@
       "discarded_functions": [],
       "object_sha256": "6455244545652f493c4338e05d6f362b2a14d55b268b2476e6ce40f8f7b810fc",
       "linked_sha256": "1056cd065021917bac843499382f8400e067968b5395a9b6a94a3ab8100b0f7f"
+    },
+    {
+      "id": "eagl_anim_delta_q_fast_setup",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 628,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "8199e26c7ce6862d2859140ba0c957b9d288004b979bf2e735bbd2b16c02b131",
+      "linked_sha256": "af9a206dddfd8cf39f1c3754dc22fb363b95851b3c261465597f41220fcfd94b"
+    },
+    {
+      "id": "eagl_anim_delta_q_fast_next",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 832,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "1c06f51ece95c983a085194ecd2b0eccb2fb879ff10fcba176f46f9968f1c676",
+      "linked_sha256": "3c1cd32d6ddb278808d0ed2972135a8fafdec9b82f0524a1d1cdbe6e8f2cc71d"
+    },
+    {
+      "id": "eagl_anim_delta_q_fast_masked",
+      "category": "reconstructed_game",
+      "functions": 8,
+      "code_bytes": 2644,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "InitBuffers__Q28EAGLAnim12FnDeltaQFastPQ28EAGLAnim10DeltaQFast"
+      ],
+      "object_sha256": "1a1dd29df67be5a18c86c6974dc66a4105c7d16bb63e445addf90b3b43a12c62",
+      "linked_sha256": "fe4dbc6bae37acb535f380e40eabc9f82e2ca771beec35f5b8f6fe18f598f7a7"
+    },
+    {
+      "id": "eagl_anim_delta_q_control",
+      "category": "reconstructed_game",
+      "functions": 6,
+      "code_bytes": 636,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "2c29b5c5a384d45313421532b2dd35c83bdcabfb2fc1aff3ae11efc37ff3faf5",
+      "linked_sha256": "fe27f54b9a470c2a92a35f0fa568888aa704397bfb60bb044cb69befb1fc4d44"
+    },
+    {
+      "id": "eagl_anim_raw_state_decode",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 348,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "bb12eaa1e3a653576b74521b471b0421fb2a704db34805cf8975a4f02a5afab4",
+      "linked_sha256": "3d5d74fe5f6f5ad46e461912435b56676575d880d36621542102126247450900"
+    },
+    {
+      "id": "eagl_anim_raw_state_control",
+      "category": "reconstructed_game",
+      "functions": 3,
+      "code_bytes": 212,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": true,
+      "discarded_functions": [
+        "GetDecodeData__CQ28EAGLAnim12RawStateChaniRUcN22"
+      ],
+      "object_sha256": "23505035be2d6398b484d78bcbd66c3e51bb8c100ce4e8dd77b9deeee7f4327b",
+      "linked_sha256": "9a385f3a81b4d8f18bbc86fb04fa6b8dca057e29586f07c472c941a816b23496"
     }
   ],
   "code_map": {
@@ -65798,38 +65927,10 @@
         "file_name": "RawStateChan.cpp",
         "ranges": [
           {
-            "address": "0x801ed898",
-            "size": 348,
-            "kind": "function",
-            "name": "Decode__CQ28EAGLAnim14FnRawStateChanPUcT1",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x801ed9f4",
             "size": 480,
             "kind": "function",
             "name": "EvalState__Q28EAGLAnim14FnRawStateChanfPQ28EAGLAnim5State",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801edbd4",
-            "size": 96,
-            "kind": "function",
-            "name": "_._Q28EAGLAnim14FnRawStateChan",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801edc34",
-            "size": 60,
-            "kind": "function",
-            "name": "GetLength__CQ28EAGLAnim14FnRawStateChanRf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801edc70",
-            "size": 56,
-            "kind": "function",
-            "name": "Eval__Q28EAGLAnim14FnRawStateChanffPf",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -65851,13 +65952,6 @@
         "file_name": "FnDeltaQFast.cpp",
         "ranges": [
           {
-            "address": "0x801ef434",
-            "size": 628,
-            "kind": "function",
-            "name": "SetAnimMemoryMap__Q28EAGLAnim12FnDeltaQFastPQ28EAGLAnim13AnimMemoryMap",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x801ef6a8",
             "size": 2692,
             "kind": "function",
@@ -65865,73 +65959,10 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x801f012c",
-            "size": 832,
-            "kind": "function",
-            "name": "UpdateNextQs__Q28EAGLAnim12FnDeltaQFastPQ28EAGLAnim10DeltaQFastiii",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x801f046c",
             "size": 2020,
             "kind": "function",
             "name": "EvalSQTMask__Q28EAGLAnim12FnDeltaQFastfPfPCQ28EAGLAnim8BoneMask",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f0c50",
-            "size": 536,
-            "kind": "function",
-            "name": "AddDeltaMask__Q28EAGLAnim12FnDeltaQFastPQ28EAGLAnim18DeltaQFastPhysicalPQ28EAGLAnim10DeltaQFastiiP6COORD4PCQ28EAGLAnim8BoneMask",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f0e68",
-            "size": 532,
-            "kind": "function",
-            "name": "SubDeltaMask__Q28EAGLAnim12FnDeltaQFastPQ28EAGLAnim18DeltaQFastPhysicalPQ28EAGLAnim10DeltaQFastiiP6COORD4PCQ28EAGLAnim8BoneMask",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f107c",
-            "size": 936,
-            "kind": "function",
-            "name": "UpdateNextQsMask__Q28EAGLAnim12FnDeltaQFastPQ28EAGLAnim10DeltaQFastiiiPCQ28EAGLAnim8BoneMask",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f1424",
-            "size": 124,
-            "kind": "function",
-            "name": "__Q28EAGLAnim12FnDeltaQFast",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f14a0",
-            "size": 148,
-            "kind": "function",
-            "name": "_._Q28EAGLAnim12FnDeltaQFast",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f1534",
-            "size": 100,
-            "kind": "function",
-            "name": "GetLength__CQ28EAGLAnim12FnDeltaQFastRf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f1598",
-            "size": 60,
-            "kind": "function",
-            "name": "Eval__Q28EAGLAnim12FnDeltaQFastffPf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f15d4",
-            "size": 208,
-            "kind": "function",
-            "name": "GetAnimatedBonesAux__Q28EAGLAnim12FnDeltaQFastPQ28EAGLAnim8BoneMaskRiN22",
             "evidence": "adjacent-compiler-markers"
           }
         ],
@@ -65957,48 +65988,6 @@
             "size": 5476,
             "kind": "function",
             "name": "EvalSQTMasked__Q28EAGLAnim8FnDeltaQfPCQ28EAGLAnim8BoneMaskPf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f6168",
-            "size": 108,
-            "kind": "function",
-            "name": "__Q28EAGLAnim8FnDeltaQ",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f61d4",
-            "size": 148,
-            "kind": "function",
-            "name": "_._Q28EAGLAnim8FnDeltaQ",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f6268",
-            "size": 8,
-            "kind": "function",
-            "name": "SetAnimMemoryMap__Q28EAGLAnim8FnDeltaQPQ28EAGLAnim13AnimMemoryMap",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f6270",
-            "size": 100,
-            "kind": "function",
-            "name": "GetLength__CQ28EAGLAnim8FnDeltaQRf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f62d4",
-            "size": 64,
-            "kind": "function",
-            "name": "Eval__Q28EAGLAnim8FnDeltaQffPf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801f6314",
-            "size": 208,
-            "kind": "function",
-            "name": "GetAnimatedBonesAux__Q28EAGLAnim8FnDeltaQPQ28EAGLAnim8BoneMaskRiN22",
             "evidence": "adjacent-compiler-markers"
           }
         ],

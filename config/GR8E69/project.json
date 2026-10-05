@@ -712,7 +712,13 @@
     "script_message_process.json",
     "script_message_execute.json",
     "script_message_groups.json",
-    "script_message_find.json"
+    "script_message_find.json",
+    "eagl_anim_delta_q_fast_setup.json",
+    "eagl_anim_delta_q_fast_next.json",
+    "eagl_anim_delta_q_fast_masked.json",
+    "eagl_anim_delta_q_control.json",
+    "eagl_anim_raw_state_decode.json",
+    "eagl_anim_raw_state_control.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
