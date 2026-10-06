@@ -1,0 +1,39 @@
+{
+  "id": "scene_node_destructor",
+  "source": "src/scene/SceneNodeDestructor.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8027913c",
+      "size": 48
+    }
+  ],
+  "functions": [
+    {
+      "name": "_._10ISceneNode",
+      "address": "0x8027913c",
+      "size": 48,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_vt.10ISceneNode": "0x802e1680",
+    "_._9IObserver": "0x8014ad64"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

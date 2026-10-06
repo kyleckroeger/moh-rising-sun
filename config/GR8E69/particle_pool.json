@@ -1,0 +1,44 @@
+{
+  "id": "particle_pool",
+  "source": "src/particles/ParticlePool.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80061704",
+      "size": 244
+    }
+  ],
+  "functions": [
+    {
+      "name": "AllocSystem__15CParticleSystemi",
+      "address": "0x80061704",
+      "size": 144,
+      "binding": 1
+    },
+    {
+      "name": "ReleaseSystem__15CParticleSystemP15CParticleSystem",
+      "address": "0x80061794",
+      "size": 100,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_particleSystemList": "0x802fae7c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

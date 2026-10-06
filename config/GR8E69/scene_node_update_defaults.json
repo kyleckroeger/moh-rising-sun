@@ -1,0 +1,122 @@
+{
+  "id": "scene_node_update_defaults",
+  "source": "src/scene/SceneNodeUpdateDefaults.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8027916c",
+      "size": 116
+    }
+  ],
+  "functions": [
+    {
+      "name": "BeginUpdate__10ISceneNodef",
+      "address": "0x8027916c",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "UpdateAI__10ISceneNodef",
+      "address": "0x80279170",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "CommitAI__10ISceneNode",
+      "address": "0x80279174",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "AttemptUpdate__10ISceneNodef",
+      "address": "0x80279178",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "UpdateCollisionVolumes__10ISceneNode",
+      "address": "0x8027917c",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "OnCollision__10ISceneNodeRC10CCollision",
+      "address": "0x80279180",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Constrain__10ISceneNodef",
+      "address": "0x80279184",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "CommitUpdate__10ISceneNode",
+      "address": "0x8027918c",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "PostUpdate__10ISceneNodef",
+      "address": "0x80279190",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Draw__10ISceneNodeR12CDrawContext",
+      "address": "0x80279194",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Attach__10ISceneNodeR10ISceneNodeP7CMatrixUi",
+      "address": "0x80279198",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "Detach__10ISceneNode",
+      "address": "0x802791a0",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetLocalBoundingVolume__C10ISceneNodeQ210ISceneNode11EVolumeType",
+      "address": "0x802791a8",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetWorldBoundingVolume__C10ISceneNodeQ210ISceneNode11EVolumeType",
+      "address": "0x802791b0",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetTMLocalToWorld__C10ISceneNodeR7CMatrix",
+      "address": "0x802791b8",
+      "size": 40,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetSlot__7CMatrixUi": "0x802790e0"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

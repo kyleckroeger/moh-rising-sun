@@ -1,0 +1,47 @@
+{
+  "id": "particle_destruction",
+  "source": "src/particles/ParticleDestruction.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80061888",
+      "size": 164
+    }
+  ],
+  "functions": [
+    {
+      "name": "MarkForDestruction__15CParticleSystemi",
+      "address": "0x80061888",
+      "size": 72,
+      "binding": 1
+    },
+    {
+      "name": "Destroy__15CParticleSystem",
+      "address": "0x800618d0",
+      "size": 92,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "MarkForDestruction__8ISubjecti": "0x8014ad2c",
+    "Remove__6CSceneR10ISceneNode": "0x80146e9c",
+    "g_scene": "0x803e6d90",
+    "ReleaseSystem__15CParticleSystemP15CParticleSystem": "0x80061794"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

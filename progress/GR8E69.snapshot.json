@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 608664,
+    "matching_code_bytes": 610084,
     "total_executable_code_bytes": 2492032,
-    "percent": 24.42440546509836,
+    "percent": 24.48138707689147,
     "categories": {
-      "reconstructed_game": 216448,
+      "reconstructed_game": 217868,
       "restored_library": 392216
     },
-    "matching_functions": 2044
+    "matching_functions": 2144
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -375,6 +375,10 @@
     "config/GR8E69/matrix_rotations.json": "d9316a52cb8420ec64a5caec9440f9717316a194bcecb7988afc6ef310f6676d",
     "config/GR8E69/matrix_translation.json": "622a8647279665d8f4caeb887a2966a8719838335416b658bdcb872ddba78fd5",
     "config/GR8E69/md5.json": "c8e6e2f4eb9c41f917626bf7924787fa4654c663dd466d4377f67313eee22506",
+    "config/GR8E69/mesh_particle_placement.json": "09675fa3d42007e283a71f282f3d3f2f890f1c087cb10c2c20f3a3231e955dc0",
+    "config/GR8E69/moving_node_light_defaults.json": "11326888dd025f649beae1650cf3b91bb0d5b68dccce9fd75c058f2ea24ca33f",
+    "config/GR8E69/moving_node_reset.json": "67a3713a8a1e1b7b5f0e00297a1a9e11dc4da80179665d43f5e0580a62913d96",
+    "config/GR8E69/moving_node_transform_defaults.json": "bf036bd61b867754c63869e74af221f9ffb6d0f51aa4cb01a2c4fbc2c685b122",
     "config/GR8E69/mtx44.json": "84de9c6118b6daea26b557ecdd7359bff811fed286a625edf04cff45c24da5c3",
     "config/GR8E69/newlib-source.json": "e576a198dc1b37da204e4e141c2f21b1a9e1c88c1a709105cc6e2737018e78c6",
     "config/GR8E69/newlib__tolower.json": "35084196609b4abe76e7981924b6dd63422f61e1d52314c374074af3f2357d58",
@@ -498,21 +502,34 @@
     "config/GR8E69/particle_def_loc_min.json": "1805aebb9a07a457c373f0941643e068868e64e1e450e91728186656fe5c1d75",
     "config/GR8E69/particle_def_vel_max.json": "bfc878c15bfc98c19663cc30f00a953f8c7bf6bb6e3ae50410d43434d79c4a3e",
     "config/GR8E69/particle_def_vel_min.json": "59c48834cae3759cb5398ce76183c19f035e1cd8534fdca92e62d99766d4bcab",
+    "config/GR8E69/particle_destruction.json": "894e4c20a3e2df0eaa9724543e217f287ba5c6b513367053ee7b369f5ee5a0e7",
     "config/GR8E69/particle_emission.json": "95c8bcd2792c8c1e9a4d1b8d7792b3b51b7fd0507b6407dcaae918acf2e6cbe7",
     "config/GR8E69/particle_fade.json": "7465f986eb6ac20ea61cba09d9d7c38ac17b357507fd3f5eb9f76748be3d7994",
     "config/GR8E69/particle_flags.json": "8e5c1196caa809c6cdea9a3e337c6c4fee9f16e8f37a0777fe4d7cbe76478ad1",
     "config/GR8E69/particle_fog.json": "b09d3bc6298ab189b72071eab62022e64adbee21152ad7a9130abefc87d22c6c",
+    "config/GR8E69/particle_increment_seed.json": "67e6c5603b54484774cf8676a341a57d0b83a1e580ebe0a87d8c2f9912ea306f",
     "config/GR8E69/particle_lifetime.json": "f8f13a5ce69203f31bd06176453d1fd4afdfe2cbc16456950aba97c54d5400fa",
     "config/GR8E69/particle_local_to_world.json": "e807bbf96f0896b43051fc37a234a09dfba9f1f6748e5c5f76289956b2b82b54",
     "config/GR8E69/particle_orthonormalize.json": "2738c2f824b828d05cc2abbedcf15d443d9cac1bbd7a7617a1fb11c163801abc",
+    "config/GR8E69/particle_placement.json": "a5f7aa083fd093a154a466b1884b1c4528883dc52d118da6023e84d1b3e9c30b",
+    "config/GR8E69/particle_pool.json": "7d9496174d8c32b2ee04f641d671f9ea3e5149dc84932c063cea14ad49e7cad6",
     "config/GR8E69/particle_position.json": "4c0edd0a1284a442f423277c4432ee2b9d86dc467828c86f32409976a1882712",
+    "config/GR8E69/particle_procedural_cast.json": "4383a6c34a0881cccb5e4cb444642821a7638317ae451817e8c2b92017a92ddb",
     "config/GR8E69/particle_scalars.json": "27946549d2ada759e0b8af82d5da59f7df45f08d80438bd0d69a1c2978da122b",
+    "config/GR8E69/particle_scene_overrides.json": "70fc7c93c64a4fff428cd4c5c6c86649f428132734bd41b5a4d904f5b9a87218",
     "config/GR8E69/particle_seed_get.json": "e7ee4d7c4c186246e6a91b600c0c051c3425336545c1e3c34ab3de8595716b70",
     "config/GR8E69/particle_seed_set.json": "859796f09d5bb423b3dd6f4bb42832310428f6f2cc1849fdf3b5df4a8e5e8110",
+    "config/GR8E69/particle_set_local_to_world.json": "9c5795134d72905ef6b108887eae105e3b13ea9b0b051da872c55676c94808a1",
     "config/GR8E69/particle_size.json": "2f5fccaf2b032dce1d59c0bcca32201ee9b378e62dceee6cbc34eddddf2d9a30",
+    "config/GR8E69/particle_stop.json": "b8def021a02d205adbe2ea9f2cf734b37698cc0ce5870135d65e30eb17e9a940",
+    "config/GR8E69/particle_terminate.json": "a86b85ccc5b1c04cc5f96524f3f4aee0e0605b48bdb06a2997185d7dad795f87",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "65bce5aa87aae59ca0d42b8a4ea668e4744be19457b8b719633446451c46e356",
+    "config/GR8E69/project.json": "f6f91c69b413808ff18713f5261dd6adbb05d9c8c1d9823bf0cf4994e4d7f11c",
+    "config/GR8E69/scene_node_centroid.json": "417789c5857125f62e4595e59f3e52ed74ac434de058b0123549164ceef3cd8b",
+    "config/GR8E69/scene_node_destructor.json": "2421437a4581f16904fb69d4f06b23754bc5d337e70bdec86806d8f9f3f370a5",
+    "config/GR8E69/scene_node_query_defaults.json": "49dcc91b41c1ead357a570e138a6aef5abc92e715734bea17b62f13ae24701fd",
+    "config/GR8E69/scene_node_update_defaults.json": "4729c9d7a5544381dce61e3c9d13eb325a9518aff6cae14ac7a11d879b867066",
     "config/GR8E69/script_arithmetic.json": "ec74fa88f8d6807fd445cbf66b4d4a7daaa273a339154b38c9710de23f8fdec0",
     "config/GR8E69/script_branches.json": "e7d49ea1a1b684c7bda78aa8a954777dc51bf3e78b2050dfb9abc2b3e0160e5b",
     "config/GR8E69/script_calls.json": "b25ba9582ac33d62abdb90b39671c9230d1aed2c6d35190b8899108c0e80621b",
@@ -974,7 +991,8 @@
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
     "include/game/ObserverTypes.h": "687dfc07deb4adc23a1d0247270d6ab04c34b758bd88846bf5e4b6ef33e7cc1f",
     "include/game/ParticleClock.h": "28f3badf71350136523be63cd81fe70e6af6977dca794be22c84784ee720cf68",
-    "include/game/ParticleRecipe.h": "a12cd591add8b54e4a4fa23067ddef52772ceaebed6d3b2bec5caf62598f0186",
+    "include/game/ParticleRecipe.h": "6d232e1e1851cee586297c288a54fafa7360b43804556643f879117e4c016327",
+    "include/game/SceneNode.h": "ba43ad58f2e5dcfec81ebf0ac0dd02914fe4247ef17505b130c2d65860e4b11e",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
     "include/game/ScriptRuntime.h": "15aee0559d5ce4ea71a0302a203a8dbdc31b9833ab7196180ae69362ec2c1355",
@@ -1671,6 +1689,7 @@
     "src/observers/weak_802883a4.cpp": "47ec9b6e9a4113eec1a9c997f373ba04b52c3d1bcc024266f6a25bae9cb7c305",
     "src/observers/weak_802883ec.cpp": "75b2c9de036d3ed80cf437a5a4d90f596271dbba9da0e36059d7b134aec2b8bc",
     "src/observers/weak_8028a620.cpp": "49f5e7792baf4629c4160612c78214041212c9eebca4bd5052b5ed16618ef6a1",
+    "src/particles/MeshParticlePlacement.cpp": "8e79fcb1edcfc8cdd45515e85117f0a2d4c5d0d357153480a6aecac7ee37e96e",
     "src/particles/ParticleAlpha.cpp": "a4c855c2d6f67fe294f2172f9c7441512b2ebe72bcc3b8003ef461b8d3957f1e",
     "src/particles/ParticleClock.cpp": "9fd93e2495a8c029e9fd492c396878e58202db86f65edbd5a71cc85bed6ce148",
     "src/particles/ParticleColor.cpp": "67d248be702bd8f37e95085aca9be90ed495072077bd061582efda51dc9af3e2",
@@ -1680,21 +1699,37 @@
     "src/particles/ParticleDefLocMin.cpp": "adac9ec9d152ba0b7807c1763441177e9c406ba361d39c990680e615007029fd",
     "src/particles/ParticleDefVelMax.cpp": "87ca8e540d377bd9ff9a893aa4f6e7f7aca2f1bee2350a15c21f1ca4e8e6d66d",
     "src/particles/ParticleDefVelMin.cpp": "e068302525d56307f26299869b7fc441fcf751b01dcd0c278b8e5a04df9181ad",
+    "src/particles/ParticleDestruction.cpp": "7a3f2c8925a78679ef466be02464d7ca66cc8cdf6ebb176d58f43280c4cfa3aa",
     "src/particles/ParticleEmission.cpp": "2738a0d4a91c6605c9ff9410de7b54313978802bc24ea29e33bf5ec5b25c4dcb",
     "src/particles/ParticleFade.cpp": "99013078201271f416fcdb5db3c01032231257d69eb84ded7e6a8ef8548644f8",
     "src/particles/ParticleFlags.cpp": "5793303ba4848b08601c1fe02248db29adafe12c1919e82137a33cbba508ce55",
     "src/particles/ParticleFog.cpp": "b98a803d6b20b75a689bb5379c3faf4f4ef01c2a14313fc256d23c67c4b6b5c5",
+    "src/particles/ParticleIncrementSeed.cpp": "89f97cd0ded268d72cc59650682da7663a4397a2ff44ec07b1dad5b317ec65f9",
     "src/particles/ParticleLifetime.cpp": "2e16b52ca9c0b4bce4977ce2da7ba6fa9986ffc9eb9e39245878609fd3177db0",
     "src/particles/ParticleLocalToWorld.cpp": "03450da0caf32d9f1566d756dfe10da3ac7ef1f8ce47b5e7dcadcb0f7f68a5dc",
     "src/particles/ParticleOrthonormalize.cpp": "45186138d60bb26dc8eff87ec6270e92c2381a3b781fcdbe2f53b2dd24bc9001",
+    "src/particles/ParticlePlacement.cpp": "2bd47f5775b7e0a66abe7b26eed4c379f085c86067fd9c8238b19ed877d3ad69",
+    "src/particles/ParticlePool.cpp": "f599df35273e92cde06329a3784f1f326e3b4f1103486ecaf9c3a7ddae40f0ca",
     "src/particles/ParticlePosition.cpp": "c3091322ee7a2f61f7feab9a5cb5ddae22058410e3c1c88eb3cc329e8e3c9a70",
+    "src/particles/ParticleProceduralCast.cpp": "6a726ad1dba3cc345ae1f772dc6f9eaca836561e4d0ddfb27f257c7f6a2ae9fe",
     "src/particles/ParticleScalars.cpp": "461e42debcff7da724db2a39c255291683f671ff7b16c899afaa0dc9317ea69e",
+    "src/particles/ParticleSceneOverrides.cpp": "55aa5152eb5097522bf2e6265397ea744e6dc8725637db16225e077fc048d0fa",
     "src/particles/ParticleSeedGet.cpp": "f7510a25b91acf81c369e85d434d95f9617bca176e6901008bb6201e088470b4",
     "src/particles/ParticleSeedSet.cpp": "e5b99d58e0f8edd651b7ee9345a25471a0be5404cf286692d8e8e96b7e31721c",
+    "src/particles/ParticleSetLocalToWorld.cpp": "2a12588b49df64e5aad50e626567a9736acbc70f2006f3771ba9e8842159c01c",
     "src/particles/ParticleSize.cpp": "0d59d12e96c80bf3b4289fa22dc0ed9ac35bb4e6435de2209df4a420ec3d5239",
+    "src/particles/ParticleStop.cpp": "72306ec5f6eb831112f924213d857a3b57cf608a1d14ed158b0a3096351d50b0",
     "src/particles/ParticleTMLocalToWorld.cpp": "e5f25d9f281602761bd4d9b439b705a625e0ea2512b9cdbb5259e7a91b98a9f1",
+    "src/particles/ParticleTerminate.cpp": "914c27ab4643765eb14a64408684a0cccd29b62d947e8746829c4f5077447da3",
     "src/particles/ParticleVelocity.cpp": "ea620216e51ba6219de1500b4a0f6db91dee7a87a57af227afba091f8f8b910c",
     "src/pathfinding/PathFindingNetwork.cpp": "babf331f9fbf19dbc75fdda20d7a1011f6cf9f465f02285a89b6b572098e6b95",
+    "src/scene/MovingNodeLightDefaults.cpp": "d865f9d5d5a5a9193a6b79954821ae5c73dd4161daef037e9d5fe56d20ddb9fd",
+    "src/scene/MovingNodeReset.cpp": "c2b3fc485ff5c1b562488b665e62ed8ec41130b5ac54daf2974e3835f16e9244",
+    "src/scene/MovingNodeTransformDefaults.cpp": "7e49f15e9c0263e1a12315dff548c7981996f00128da21a72fba8727db90bc15",
+    "src/scene/SceneNodeCentroid.cpp": "7899f0a92f618aa7efeb10ddc99112cdcd045c7bd512476fd59c316b3a449af7",
+    "src/scene/SceneNodeDestructor.cpp": "56a6495fa5fd7f8fa0e267ea0c7e314d8cafc24ab743c986bf6a6d00f27c9ffa",
+    "src/scene/SceneNodeQueryDefaults.cpp": "d2b51d21bab6829822aa425a70810aded301bdccd2cf66d25aa18c9dfff8d0fe",
+    "src/scene/SceneNodeUpdateDefaults.cpp": "dbc4517c08451859242aaec81c54d0980a5f2039682b77e90ca2ea83c51d202c",
     "src/script/arithmetic.cpp": "1349ad72134e4fa92c7d4aaa50b69e95cd4cf0c7b974f2c8eca3a53c358aa480",
     "src/script/branches.cpp": "2823173b8e93bc80ac850752dad341621bbe5cb271c32dc243b0163512164347",
     "src/script/calls.cpp": "65f5b68d6ed9083b98d13095286dafe776b321d6da2b7e8b8524770f7c48e303",
@@ -18732,6 +18767,312 @@
       "discarded_functions": [],
       "object_sha256": "ae44244aa6e0e7b1f0dbd2c81ea0b0f56a462a536db7b6c84ef5957072e531f8",
       "linked_sha256": "d621d14b60883499c30127b3273d2191621292702413b1741f3269a10c4e21fb"
+    },
+    {
+      "id": "particle_increment_seed",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 140,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "2e73cb2c913a828e21af3dde99539fbe31e8bd96dc458904ea428cdf95ce38c4",
+      "linked_sha256": "40354683eb62622dd214e1b92020c8e0ba2385870dc48ec2fefdae83dfce352c"
+    },
+    {
+      "id": "particle_placement",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 12,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "df0fb120435b0a00a629d2ae22de50e4fa2fc759ad9adffdb7851680fa120d71",
+      "linked_sha256": "8a0f37f0b091d3c1bd1ba9a21c1ddb15f204785048211a703c0ac00fc090188f"
+    },
+    {
+      "id": "particle_pool",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 244,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "13982972c47a5f79e281144db060a7b9cbb9463f0c6eb5f153ef07eb15a48205",
+      "linked_sha256": "420793e20452cbfaf0b0943da8b26a0c7c9bc2d25bc9b1d9f0b79ae17add46ea"
+    },
+    {
+      "id": "mesh_particle_placement",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 12,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "79c5c3fb3323baba6ae17a669a0971d151ea60c25b621e031cd2829f581d1abe",
+      "linked_sha256": "9ad480139fc3a75fd56e48c064862e2f3d98206a73a971bc0fd77a4202377090"
+    },
+    {
+      "id": "particle_terminate",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 80,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "7aa272fc2459a63aba0ffad16fe8d1ca70b8da7c853ad75de41d582168682eec",
+      "linked_sha256": "11bbaa566e9a2bcec1468741eaa690879687637017995976b3958d6ebf9e4a5b"
+    },
+    {
+      "id": "particle_destruction",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 164,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "2b246a6223be31380312433ebbe98ea73c7d14c2880ac9db038d73f15e6bab43",
+      "linked_sha256": "bd1dd75fc6ed44aea0c921fe95591b567b52e5876c0925987a3c47623db0915a"
+    },
+    {
+      "id": "particle_set_local_to_world",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 52,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f34eaaa9156337e622effc4c64fc32c3cc0652e3b4b6a2ec467bb93d7ae92cef",
+      "linked_sha256": "84632db68ba40566802e5fd9e6c041ad3b880deb97bd6b335e5b6f30fd83ba57"
+    },
+    {
+      "id": "particle_scene_overrides",
+      "category": "reconstructed_game",
+      "functions": 5,
+      "code_bytes": 24,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "9da59b2a6807b342ac79a8fd7e6a620de968c31b7ad7e31d6250fc24fbf7be9e",
+      "linked_sha256": "49d6eebd6de556a755033454e3136be3c0cae4ec29111c5692d1ec387087facb"
+    },
+    {
+      "id": "particle_stop",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 52,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "34ef8f6ce7632a4050a13deafbcf1747d2d9344de8342b5e4d640b42b71884c1",
+      "linked_sha256": "0d38735d6a60a3ada2f5644b224b533313c90bf42e60c2ef01909173678f3c7a"
+    },
+    {
+      "id": "particle_procedural_cast",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 8,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f56f437800aabddbd6f86a35bcc344e282c79542663f2772cd377d5a95f722cd",
+      "linked_sha256": "361cfa04239434e86fe6def525e1497c809a028da34962327b1ed9be637aa227"
+    },
+    {
+      "id": "scene_node_update_defaults",
+      "category": "reconstructed_game",
+      "functions": 15,
+      "code_bytes": 116,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f4a8c5db897fdea473a1de807aa9f02a8f32d35069d34a05f376116c430e566c",
+      "linked_sha256": "944e08cc9a4920b1af60ecfe5b570c6df12399ad6285c330c49ec6616e6af80d"
+    },
+    {
+      "id": "scene_node_centroid",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 52,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "e571e42f1ca647061f8db374d009ffdf7d1b0d52294e77e1bc455a0a353b7ad0",
+      "linked_sha256": "5d99e2c9b2d25dec6d54cc869d5debe765cf596641636d25b9800342177fbc03"
+    },
+    {
+      "id": "scene_node_query_defaults",
+      "category": "reconstructed_game",
+      "functions": 42,
+      "code_bytes": 312,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "42a473ec025a3f513e830493611103cdff97147b5d028f59cb13d547b2d8861a",
+      "linked_sha256": "e45df590c8ba2ba16fd7f116487c2d75e82bdf7dbdae01a2e91b6827a7cd7ea0"
+    },
+    {
+      "id": "moving_node_light_defaults",
+      "category": "reconstructed_game",
+      "functions": 8,
+      "code_bytes": 48,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "e3abf5ac203ee1ca7a42713933b236b668a877f85adac3e451a52f013610be94",
+      "linked_sha256": "bd668c43048c1ff11b45185ca8b3ddf869a4493545d6e000ef14cc1ee4434bf4"
+    },
+    {
+      "id": "moving_node_transform_defaults",
+      "category": "reconstructed_game",
+      "functions": 13,
+      "code_bytes": 52,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "ef263a726d54322bb6dca2572351e4dffda40550697955e0a9e7f8c7281ea757",
+      "linked_sha256": "88f2c3db912a788429a02b43ad522dd0f6da594cf86f6a37f563918fc33d0582"
+    },
+    {
+      "id": "scene_node_destructor",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 48,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "6b48bdf71ebcf5ee108f65a57940bc1fb323a23eff5be8ea24621a839a1d3bf5",
+      "linked_sha256": "71f5a409aa66320a3c96447df34b091af6a4404d8d16be04e270534a2ade4357"
+    },
+    {
+      "id": "moving_node_reset",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 4,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "7f674a786c422f53c710dcb13c59c440fcc9b03028917434883d78cc19d8c897",
+      "linked_sha256": "4c2e4f860cfb5ef8bfa87a729e7fa795dc32ee96faff1e4de19bbb415cc26d4c"
     }
   ],
   "code_map": {
@@ -22678,13 +23019,6 @@
         "file_name": "particlesystem.cpp",
         "ranges": [
           {
-            "address": "0x8005e6a4",
-            "size": 140,
-            "kind": "function",
-            "name": "IncrementSeed__FUii",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8005e730",
             "size": 144,
             "kind": "function",
@@ -22699,20 +23033,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8005e810",
-            "size": 8,
-            "kind": "function",
-            "name": "__nw__15CParticleSystemUiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8005e818",
-            "size": 4,
-            "kind": "function",
-            "name": "__dl__15CParticleSystemPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8005e81c",
             "size": 128,
             "kind": "function",
@@ -22724,13 +23044,6 @@
             "size": 344,
             "kind": "function",
             "name": "InitClass__15CParticleSystemP7CScreenP6CScene",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8005ea30",
-            "size": 80,
-            "kind": "function",
-            "name": "Terminate__15CParticleSystem",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -22776,13 +23089,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800615d4",
-            "size": 52,
-            "kind": "function",
-            "name": "SetLocalToWorld__15CParticleSystemRC7CMatrix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80061608",
             "size": 208,
             "kind": "function",
@@ -22797,38 +23103,10 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80061704",
-            "size": 144,
-            "kind": "function",
-            "name": "AllocSystem__15CParticleSystemi",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80061794",
-            "size": 100,
-            "kind": "function",
-            "name": "ReleaseSystem__15CParticleSystemP15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800617f8",
             "size": 144,
             "kind": "function",
             "name": "Create__15CParticleSystemP12CParticleDef",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80061888",
-            "size": 72,
-            "kind": "function",
-            "name": "MarkForDestruction__15CParticleSystemi",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800618d0",
-            "size": 92,
-            "kind": "function",
-            "name": "Destroy__15CParticleSystem",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -22899,41 +23177,6 @@
             "size": 848,
             "kind": "function",
             "name": "IsVisible__C15CParticleSystemR12CDrawContext",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80062540",
-            "size": 8,
-            "kind": "function",
-            "name": "IsDrawEnabled__C15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80062548",
-            "size": 4,
-            "kind": "function",
-            "name": "AsMovingNode__15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8006254c",
-            "size": 4,
-            "kind": "function",
-            "name": "AsMovingNode__C15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80062550",
-            "size": 4,
-            "kind": "function",
-            "name": "Reset__15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80062554",
-            "size": 4,
-            "kind": "function",
-            "name": "Halt__15CParticleSystem",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -23028,27 +23271,6 @@
             "evidence": "local-file-symbol"
           },
           {
-            "address": "0x80064310",
-            "size": 52,
-            "kind": "function",
-            "name": "Stop__15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800643d0",
-            "size": 4,
-            "kind": "function",
-            "name": "AsProceduralParticleSystem__15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800643d4",
-            "size": 4,
-            "kind": "function",
-            "name": "AsProceduralParticleSystem__C15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800643d8",
             "size": 44,
             "kind": "function",
@@ -23127,20 +23349,6 @@
             "size": 124,
             "kind": "function",
             "name": "_._18MeshParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80064938",
-            "size": 8,
-            "kind": "function",
-            "name": "__nw__18MeshParticleSystemUiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80064940",
-            "size": 4,
-            "kind": "function",
-            "name": "__dl__18MeshParticleSystemPv",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -76907,120 +77115,8 @@
         ]
       },
       {
-        "name": "Unknown file/.text @ 8027913c",
+        "name": "Unknown file/.text @ 802791e0",
         "ranges": [
-          {
-            "address": "0x8027913c",
-            "size": 48,
-            "kind": "function",
-            "name": "_._10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027916c",
-            "size": 4,
-            "kind": "function",
-            "name": "BeginUpdate__10ISceneNodef",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279170",
-            "size": 4,
-            "kind": "function",
-            "name": "UpdateAI__10ISceneNodef",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279174",
-            "size": 4,
-            "kind": "function",
-            "name": "CommitAI__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279178",
-            "size": 4,
-            "kind": "function",
-            "name": "AttemptUpdate__10ISceneNodef",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027917c",
-            "size": 4,
-            "kind": "function",
-            "name": "UpdateCollisionVolumes__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279180",
-            "size": 4,
-            "kind": "function",
-            "name": "OnCollision__10ISceneNodeRC10CCollision",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279184",
-            "size": 8,
-            "kind": "function",
-            "name": "Constrain__10ISceneNodef",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027918c",
-            "size": 4,
-            "kind": "function",
-            "name": "CommitUpdate__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279190",
-            "size": 4,
-            "kind": "function",
-            "name": "PostUpdate__10ISceneNodef",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279194",
-            "size": 4,
-            "kind": "function",
-            "name": "Draw__10ISceneNodeR12CDrawContext",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279198",
-            "size": 8,
-            "kind": "function",
-            "name": "Attach__10ISceneNodeR10ISceneNodeP7CMatrixUi",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802791a0",
-            "size": 8,
-            "kind": "function",
-            "name": "Detach__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802791a8",
-            "size": 8,
-            "kind": "function",
-            "name": "GetLocalBoundingVolume__C10ISceneNodeQ210ISceneNode11EVolumeType",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802791b0",
-            "size": 8,
-            "kind": "function",
-            "name": "GetWorldBoundingVolume__C10ISceneNodeQ210ISceneNode11EVolumeType",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802791b8",
-            "size": 40,
-            "kind": "function",
-            "name": "GetTMLocalToWorld__C10ISceneNodeR7CMatrix",
-            "evidence": "unknown-file"
-          },
           {
             "address": "0x802791e0",
             "size": 40,
@@ -77034,14 +77130,12 @@
             "kind": "function",
             "name": "GetPosition__C10ISceneNodeR8CVector3",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279220",
-            "size": 52,
-            "kind": "function",
-            "name": "GetCentroid__C10ISceneNodeR8CVector3",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 80279254",
+        "ranges": [
           {
             "address": "0x80279254",
             "size": 32,
@@ -77062,301 +77156,12 @@
             "kind": "function",
             "name": "GetUpward__C10ISceneNodeR8CVector3",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802792b4",
-            "size": 8,
-            "kind": "function",
-            "name": "IsVisible__C10ISceneNodeR12CDrawContext",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802792bc",
-            "size": 8,
-            "kind": "function",
-            "name": "IsDrawEnabled__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802792c4",
-            "size": 4,
-            "kind": "function",
-            "name": "SetDrawEnabled__10ISceneNodeb",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802792c8",
-            "size": 8,
-            "kind": "function",
-            "name": "GetCollisionId__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802792d0",
-            "size": 4,
-            "kind": "function",
-            "name": "SetCollisionId__10ISceneNode7EClsnId",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802792d4",
-            "size": 8,
-            "kind": "function",
-            "name": "GetScriptObject__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802792dc",
-            "size": 4,
-            "kind": "function",
-            "name": "TriggerScriptEvent__10ISceneNodeiPvb",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802792e0",
-            "size": 4,
-            "kind": "function",
-            "name": "HandleBulletCollision__10ISceneNodeP7CBulletRC10CCollision",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802792e4",
-            "size": 8,
-            "kind": "function",
-            "name": "AsMovingNode__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802792ec",
-            "size": 8,
-            "kind": "function",
-            "name": "AsMovingNode__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802792f4",
-            "size": 8,
-            "kind": "function",
-            "name": "AsStaticObject__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802792fc",
-            "size": 8,
-            "kind": "function",
-            "name": "AsStaticObject__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279304",
-            "size": 8,
-            "kind": "function",
-            "name": "AsHierObject__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027930c",
-            "size": 8,
-            "kind": "function",
-            "name": "AsHierObject__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279314",
-            "size": 8,
-            "kind": "function",
-            "name": "AsWorldObject__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027931c",
-            "size": 8,
-            "kind": "function",
-            "name": "AsWorldObject__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279324",
-            "size": 8,
-            "kind": "function",
-            "name": "AsAnimObject__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027932c",
-            "size": 8,
-            "kind": "function",
-            "name": "AsAnimObject__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279334",
-            "size": 8,
-            "kind": "function",
-            "name": "AsSoldierObject__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027933c",
-            "size": 8,
-            "kind": "function",
-            "name": "AsSoldierObject__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279344",
-            "size": 8,
-            "kind": "function",
-            "name": "AsPlayerObject__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027934c",
-            "size": 8,
-            "kind": "function",
-            "name": "AsPlayerObject__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279354",
-            "size": 8,
-            "kind": "function",
-            "name": "AsAnimatedPlayerObject__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027935c",
-            "size": 8,
-            "kind": "function",
-            "name": "AsAnimatedPlayerObject__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279364",
-            "size": 8,
-            "kind": "function",
-            "name": "AsPlayerWeaponObject__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027936c",
-            "size": 8,
-            "kind": "function",
-            "name": "AsPlayerWeaponObject__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279374",
-            "size": 8,
-            "kind": "function",
-            "name": "AsLight__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027937c",
-            "size": 8,
-            "kind": "function",
-            "name": "AsLight__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279384",
-            "size": 8,
-            "kind": "function",
-            "name": "AsProjector__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027938c",
-            "size": 8,
-            "kind": "function",
-            "name": "AsProjector__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279394",
-            "size": 8,
-            "kind": "function",
-            "name": "AsBullet__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027939c",
-            "size": 8,
-            "kind": "function",
-            "name": "AsBullet__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802793a4",
-            "size": 8,
-            "kind": "function",
-            "name": "AsCollisionVolume__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802793ac",
-            "size": 8,
-            "kind": "function",
-            "name": "AsCollisionVolume__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802793b4",
-            "size": 8,
-            "kind": "function",
-            "name": "AsBotObject__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802793bc",
-            "size": 8,
-            "kind": "function",
-            "name": "AsBotObject__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802793c4",
-            "size": 8,
-            "kind": "function",
-            "name": "GetAIDoodad__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802793cc",
-            "size": 8,
-            "kind": "function",
-            "name": "GetAIDoodad__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802793d4",
-            "size": 8,
-            "kind": "function",
-            "name": "GetAIObject__10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802793dc",
-            "size": 4,
-            "kind": "function",
-            "name": "SetAttachedLight__10ISceneNodeP6CLightRC8CVector3",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802793e0",
-            "size": 8,
-            "kind": "function",
-            "name": "GetAttachedLight__C10ISceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x802793e8",
-            "size": 4,
-            "kind": "function",
-            "name": "SerializeSaveData__10ISceneNode",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 802793ec",
+        "ranges": [
           {
             "address": "0x802793ec",
             "size": 4,
@@ -77395,64 +77200,8 @@
         ]
       },
       {
-        "name": "Unknown file/.text @ 802797fc",
+        "name": "Unknown file/.text @ 8027982c",
         "ranges": [
-          {
-            "address": "0x802797fc",
-            "size": 4,
-            "kind": "function",
-            "name": "ApplyForceTo__16IMovingSceneNodeRC8CVector3f",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279800",
-            "size": 4,
-            "kind": "function",
-            "name": "EnterLightVolume__16IMovingSceneNodeP14BPDLightVolume",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279804",
-            "size": 4,
-            "kind": "function",
-            "name": "ExitLightVolume__16IMovingSceneNodeP14BPDLightVolume",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279808",
-            "size": 8,
-            "kind": "function",
-            "name": "GetLightVolume__16IMovingSceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279810",
-            "size": 4,
-            "kind": "function",
-            "name": "SetLightVolumeTransitionDuration__16IMovingSceneNodef",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279814",
-            "size": 8,
-            "kind": "function",
-            "name": "GetName__16IMovingSceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027981c",
-            "size": 8,
-            "kind": "function",
-            "name": "GetTeam__16IMovingSceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279824",
-            "size": 8,
-            "kind": "function",
-            "name": "GetPlayerIndex__16IMovingSceneNode",
-            "evidence": "unknown-file"
-          },
           {
             "address": "0x8027982c",
             "size": 52,
@@ -77592,98 +77341,12 @@
             "kind": "function",
             "name": "clear__Q24_STLt10_List_base2Z12MeshParticleZQ24_STLt9allocator1Z12MeshParticle",
             "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279950",
-            "size": 4,
-            "kind": "function",
-            "name": "Halt__16IMovingSceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279954",
-            "size": 4,
-            "kind": "function",
-            "name": "PreTransform__16IMovingSceneNodeRC7CMatrix",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279958",
-            "size": 4,
-            "kind": "function",
-            "name": "Transform__16IMovingSceneNodeRC7CMatrix",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027995c",
-            "size": 4,
-            "kind": "function",
-            "name": "Move__16IMovingSceneNodeRC8CVector3",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279960",
-            "size": 4,
-            "kind": "function",
-            "name": "Rotate__16IMovingSceneNodeRC8CVector3f",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279964",
-            "size": 4,
-            "kind": "function",
-            "name": "Pitch__16IMovingSceneNodef",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279968",
-            "size": 4,
-            "kind": "function",
-            "name": "Roll__16IMovingSceneNodef",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027996c",
-            "size": 4,
-            "kind": "function",
-            "name": "Yaw__16IMovingSceneNodef",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279970",
-            "size": 4,
-            "kind": "function",
-            "name": "SetPosition__16IMovingSceneNodeRC8CVector3",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279974",
-            "size": 4,
-            "kind": "function",
-            "name": "SetBasis__16IMovingSceneNodeRC8CVector3N21",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279978",
-            "size": 4,
-            "kind": "function",
-            "name": "Orthonormalize__16IMovingSceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x8027997c",
-            "size": 4,
-            "kind": "function",
-            "name": "AsMovingNode__16IMovingSceneNode",
-            "evidence": "unknown-file"
-          },
-          {
-            "address": "0x80279980",
-            "size": 4,
-            "kind": "function",
-            "name": "AsMovingNode__C16IMovingSceneNode",
-            "evidence": "unknown-file"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Unknown file/.text @ 80279984",
+        "ranges": [
           {
             "address": "0x80279984",
             "size": 280,
@@ -77725,18 +77388,6 @@
             "size": 40,
             "kind": "function",
             "name": "MathFunClamp__H1Zf_X01X01X01_X01",
-            "evidence": "unknown-file"
-          }
-        ]
-      },
-      {
-        "name": "Unknown file/.text @ 8027ab08",
-        "ranges": [
-          {
-            "address": "0x8027ab08",
-            "size": 4,
-            "kind": "function",
-            "name": "Reset__16IMovingSceneNode",
             "evidence": "unknown-file"
           }
         ]

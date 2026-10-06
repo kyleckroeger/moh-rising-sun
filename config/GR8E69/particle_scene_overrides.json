@@ -1,0 +1,60 @@
+{
+  "id": "particle_scene_overrides",
+  "source": "src/particles/ParticleSceneOverrides.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80062540",
+      "size": 24
+    }
+  ],
+  "functions": [
+    {
+      "name": "IsDrawEnabled__C15CParticleSystem",
+      "address": "0x80062540",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsMovingNode__15CParticleSystem",
+      "address": "0x80062548",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "AsMovingNode__C15CParticleSystem",
+      "address": "0x8006254c",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Reset__15CParticleSystem",
+      "address": "0x80062550",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Halt__15CParticleSystem",
+      "address": "0x80062554",
+      "size": 4,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "moving_node_light_defaults",
+  "source": "src/scene/MovingNodeLightDefaults.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802797fc",
+      "size": 48
+    }
+  ],
+  "functions": [
+    {
+      "name": "ApplyForceTo__16IMovingSceneNodeRC8CVector3f",
+      "address": "0x802797fc",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "EnterLightVolume__16IMovingSceneNodeP14BPDLightVolume",
+      "address": "0x80279800",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "ExitLightVolume__16IMovingSceneNodeP14BPDLightVolume",
+      "address": "0x80279804",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "GetLightVolume__16IMovingSceneNode",
+      "address": "0x80279808",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "SetLightVolumeTransitionDuration__16IMovingSceneNodef",
+      "address": "0x80279810",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "GetName__16IMovingSceneNode",
+      "address": "0x80279814",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetTeam__16IMovingSceneNode",
+      "address": "0x8027981c",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetPlayerIndex__16IMovingSceneNode",
+      "address": "0x80279824",
+      "size": 8,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}
