@@ -1,0 +1,38 @@
+{
+  "id": "particle_increment_seed",
+  "source": "src/particles/ParticleIncrementSeed.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8005e6a4",
+      "size": 140
+    }
+  ],
+  "functions": [
+    {
+      "name": "IncrementSeed__FUii",
+      "address": "0x8005e6a4",
+      "size": 140,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_CurrentSeed": "0x802c1c00"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

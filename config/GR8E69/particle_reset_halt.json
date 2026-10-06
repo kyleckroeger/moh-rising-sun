@@ -1,0 +1,42 @@
+{
+  "id": "particle_reset_halt",
+  "source": "src/particles/ParticleResetHalt.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80062550",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "Reset__15CParticleSystem",
+      "address": "0x80062550",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Halt__15CParticleSystem",
+      "address": "0x80062554",
+      "size": 4,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -736,7 +736,13 @@
     "script_timer_duplicates.json",
     "script_timer_latter.json",
     "script_timer_instances.json",
-    "script_timer_cancel.json"
+    "script_timer_cancel.json",
+    "particle_increment_seed.json",
+    "particle_placement.json",
+    "particle_draw_enabled.json",
+    "particle_reset_halt.json",
+    "particle_pool.json",
+    "mesh_particle_placement.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

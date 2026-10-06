@@ -60,6 +60,12 @@ class CParticleSystem {
     unsigned int seed;
     unsigned char unknown_164[12];
     ParticleFlags flags;
+    unsigned char unknown_174[12];
+    CParticleSystem *next;
+    static CParticleSystem *AllocSystem(int);
+    static void ReleaseSystem(CParticleSystem *);
+    void *operator new(unsigned int, void *);
+    void operator delete(void *);
     void Start();
     void DeActivate();
     unsigned int IsEternal() const;
@@ -91,7 +97,28 @@ class CParticleSystem {
     void GetParticleSize(CVector3 &, CVector3 &, float &) const;
     int GetFogEnable() const;
     void SetParticleLifetime(float);
+    unsigned int IsDrawEnabled() const;
+    void Reset();
+    void Halt();
 };
+// Member-only view; MeshParticleSystem storage and inheritance remain unknown.
+class MeshParticleSystem {
+  public:
+    void *operator new(unsigned int, void *);
+    void operator delete(void *);
+};
+// The original 20-byte global particle-system pool: a storage block threaded
+// through the link at +0x180 into used and free lists. Member names are descriptive.
+struct ParticleSystemList {
+    CParticleSystem *storage;
+    CParticleSystem *active;
+    CParticleSystem *free;
+    int capacity;
+    int count;
+};
+extern ParticleSystemList g_particleSystemList;
+// Free function; the shared seed it advances is original external storage.
+unsigned int IncrementSeed(unsigned int, int);
 // Write only the independently established three-float CVector3 prefix.
 inline void SetVectorPrefix(CVector3 &result, float x, float y, float z) {
     float *p = reinterpret_cast<float *>(&result);
