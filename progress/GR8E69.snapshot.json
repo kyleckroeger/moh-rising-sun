@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 614748,
+    "matching_code_bytes": 615312,
     "total_executable_code_bytes": 2492032,
-    "percent": 24.668543582104885,
+    "percent": 24.691175715239613,
     "categories": {
-      "reconstructed_game": 222532,
+      "reconstructed_game": 223096,
       "restored_library": 392216
     },
-    "matching_functions": 2238
+    "matching_functions": 2247
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -122,6 +122,8 @@
     "config/GR8E69/bullet_defaults.json": "9afaed1670e7097d3e6ca0bdaeb6cb1f737a23e4bcead4d865fa070882d62d14",
     "config/GR8E69/camera_get_transform.json": "e718b74015c98fc9aa58fe5d2c6de29f40aac11d0ae8d291ca3afe1964bb03b4",
     "config/GR8E69/camera_projection.json": "40155878dbb04c59b1fe9f848d4f00f68d57b05e4d6d50c2213504b4358ab7be",
+    "config/GR8E69/camera_shake_evaluate.json": "6ddf6bb7a0dd3e9238029692d7e5fb10ab4ae446160eca63ce763f53719520c7",
+    "config/GR8E69/camera_shake_init.json": "81e1f9eeca8745cbd84ff8d58524fcc513b2bfbfdaf9383e0f051e7b421254e5",
     "config/GR8E69/camera_transforms.json": "565ea07c7752be54366701e13af7ee6bb4cd78c6cf7d4bd3c68f01b89bdbfe5d",
     "config/GR8E69/camera_update_projection.json": "775218cca1643d4a69f0fcc2512751434137da87c4c4079cf4bb361706150171",
     "config/GR8E69/dolphin-network-source.json": "6b039c8ef3fc502a7441ab8f55160567fd2facec6c12d818739c3bc7fd741b82",
@@ -537,7 +539,8 @@
     "config/GR8E69/particle_terminate.json": "a86b85ccc5b1c04cc5f96524f3f4aee0e0605b48bdb06a2997185d7dad795f87",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "8a46f7fee3742e055b70d6aae494aac7e561248eb43699b9c528984dcc396aa0",
+    "config/GR8E69/player_camera_shake.json": "e84e47bc3d83583f390ee37b3c7f560dc41557b2caf040164d989361cfe04d2c",
+    "config/GR8E69/project.json": "e09d1e20fbf58dbb7b0bd16cf41f858085e4cbbc747b984bbf8d89f304674df3",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -974,6 +977,7 @@
     "include/game/CMatrix.h": "59b6809fe696700ad004ac77d35676495ff649fb2d9bebfa4f9300ee9197014c",
     "include/game/CVector3.h": "6620724fd56e37259e31d274061127a79d1184446804c122f2d0a0542921cc52",
     "include/game/Camera.h": "226257f70f2360cef00394559a793815cdb4c93e419f6c4a21acfb08ae7379cb",
+    "include/game/CameraShake.h": "e046350a12377965ac2392f2cf1031cb95372524cd098c2a2ad4c77a490b6051",
     "include/game/DestructorQueue.h": "434ec17ba96007c8368db0dc62c9454d1650bc2c4d5615a13aad40969412bda8",
     "include/game/EAGLAnim/AnimAllocation.h": "8e2480f7003eca4c8a99d7bc1189b4f00ee9e31bacd9192d6b1bb0bfbc2b38f8",
     "include/game/EAGLAnim/AnimBank.h": "1909b5d1278c6dd4499ea046c279628048e486ca444f53ee161169cab63a8d1a",
@@ -1780,6 +1784,9 @@
     "src/particles/ParticleTerminate.cpp": "914c27ab4643765eb14a64408684a0cccd29b62d947e8746829c4f5077447da3",
     "src/particles/ParticleVelocity.cpp": "ea620216e51ba6219de1500b4a0f6db91dee7a87a57af227afba091f8f8b910c",
     "src/pathfinding/PathFindingNetwork.cpp": "babf331f9fbf19dbc75fdda20d7a1011f6cf9f465f02285a89b6b572098e6b95",
+    "src/player/CameraShakeEvaluate.cpp": "e95f72c0c199549a3107c5461b9e59473f3adbd524bd4921581d1603595eff1e",
+    "src/player/CameraShakeInit.cpp": "c9ad4b5454c6f8413d1736380841195c7059fe9a6704e86141493afc382b2fe9",
+    "src/player/PlayerCameraShake.cpp": "1e90a17ff0d32649637c1c582ae97fff2153c64a64ce706c2f3d674703fdd5ca",
     "src/scene/MovingNodeLightDefaults.cpp": "d865f9d5d5a5a9193a6b79954821ae5c73dd4161daef037e9d5fe56d20ddb9fd",
     "src/scene/MovingNodeReset.cpp": "c2b3fc485ff5c1b562488b665e62ed8ec41130b5ac54daf2974e3835f16e9244",
     "src/scene/MovingNodeTransformDefaults.cpp": "7e49f15e9c0263e1a12315dff548c7981996f00128da21a72fba8727db90bc15",
@@ -19718,6 +19725,60 @@
       "discarded_functions": [],
       "object_sha256": "d169b2bde5bec30763489b0626c7c704f07ccf401763bd0449090f2d851385cb",
       "linked_sha256": "fce327a770eee46231d282c297c5b1bacb1669df2318a1d55d8c3c1baa6d889f"
+    },
+    {
+      "id": "camera_shake_init",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 56,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b98f7e9326d03a28db359247b252ff9eb9b378d3cff3859fd44ebee515a787e6",
+      "linked_sha256": "f203716fb16f989c08daacfb0482032f503bb94d772909a5994c9cd3927f99fc"
+    },
+    {
+      "id": "camera_shake_evaluate",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 240,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "83f048112ce7662084e3387932e6cd833e95d5f86a434738e8e0f2aefa3b5301",
+      "linked_sha256": "878f09d26d239cc1b0d8cb94d95a2cdc9166154aad5b06931edc0c92a268879d"
+    },
+    {
+      "id": "player_camera_shake",
+      "category": "reconstructed_game",
+      "functions": 6,
+      "code_bytes": 268,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f90af7a4176a5d1eeed0cfafb93339182d2afabc2a0e0c57dedd6c9ff8227776",
+      "linked_sha256": "09faa73fe5bd507e195f6b1def543d563721b8fbaf53b397d001278776ee07d4"
     }
   ],
   "code_map": {
@@ -32868,48 +32929,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800b4364",
-            "size": 36,
-            "kind": "function",
-            "name": "SetCameraShake__13CPlayerObjectffff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800b4388",
-            "size": 36,
-            "kind": "function",
-            "name": "StartCameraShake__13CPlayerObjectff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800b43ac",
-            "size": 48,
-            "kind": "function",
-            "name": "StopCameraShake__13CPlayerObjectf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800b43dc",
-            "size": 36,
-            "kind": "function",
-            "name": "StartBackgroundCameraShake__13CPlayerObjectff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800b4400",
-            "size": 48,
-            "kind": "function",
-            "name": "StopBackgroundCameraShake__13CPlayerObjectf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800b4430",
-            "size": 64,
-            "kind": "function",
-            "name": "DoMotionShake__13CPlayerObjectff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800b4470",
             "size": 700,
             "kind": "function",
@@ -33197,31 +33216,10 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800b8c7c",
-            "size": 56,
-            "kind": "function",
-            "name": "__Q213CPlayerObject12CCameraShake",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800b8cb4",
             "size": 308,
             "kind": "function",
             "name": "SetShake__Q213CPlayerObject12CCameraShakeffff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800b8de8",
-            "size": 48,
-            "kind": "function",
-            "name": "SetShake__Q213CPlayerObject12CCameraShakeff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800b8e18",
-            "size": 192,
-            "kind": "function",
-            "name": "Evaluate__Q213CPlayerObject12CCameraShakeRfT1",
             "evidence": "adjacent-compiler-markers"
           },
           {
