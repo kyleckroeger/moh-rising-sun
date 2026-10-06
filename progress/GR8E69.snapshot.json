@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 615600,
+    "matching_code_bytes": 615652,
     "total_executable_code_bytes": 2492032,
-    "percent": 24.702732549180748,
+    "percent": 24.704819199753455,
     "categories": {
-      "reconstructed_game": 223384,
+      "reconstructed_game": 223436,
       "restored_library": 392216
     },
-    "matching_functions": 2220
+    "matching_functions": 2221
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -361,6 +361,7 @@
     "config/GR8E69/libgcc_udivdi3.json": "a67373f61aea37a44fab7a5c6e6e03a41c52c9a1eef5c14ffd64b915dc8c9584",
     "config/GR8E69/libgcc_umoddi3.json": "6018bb0d37e5c727f2054446947890087f6e55543c2f8c9533b2a56635c28264",
     "config/GR8E69/light_axes.json": "09cb4a96d55f3d67fba9b012bd203e87b5f530b688a423d468c43c38cb1a79cb",
+    "config/GR8E69/light_clamp.json": "1e84bf753b43a9966b439882bbe32df11635e002041a935e97a0a7877a1155a8",
     "config/GR8E69/light_default_volume.json": "435a9af079ebc1f1714321701d6f8915ce847834744931dbc8f4e57c892ebb96",
     "config/GR8E69/light_destroy.json": "d581d4a9ea6e83abc28e30fd69780b0e874ccaa3965e42f2647f924bbb7ec6cc",
     "config/GR8E69/light_ids.json": "d27f6f7edd683611127ca74f25ca1d7965cc569b4b1c95943621c77e21af33c6",
@@ -544,7 +545,7 @@
     "config/GR8E69/particle_terminate.json": "a86b85ccc5b1c04cc5f96524f3f4aee0e0605b48bdb06a2997185d7dad795f87",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "9253b4ae3e8a12d860180ffca02d5aecc3dadaa0135bd0384d80dce36c1950be",
+    "config/GR8E69/project.json": "026de967c8791234a792ada601d5f9199b542e94975859de46b496c7cdda5af5",
     "config/GR8E69/scene_node_axis_defaults.json": "092b0d540e402069c588985246b692817db1af99a9d9c2cde0f3b1bfac31d590",
     "config/GR8E69/scene_node_centroid.json": "417789c5857125f62e4595e59f3e52ed74ac434de058b0123549164ceef3cd8b",
     "config/GR8E69/scene_node_destructor.json": "2421437a4581f16904fb69d4f06b23754bc5d337e70bdec86806d8f9f3f370a5",
@@ -1534,6 +1535,7 @@
     "src/lighting/AnimLightPools.cpp": "b5913877a604f0043a5f8684267faab30f3a3ebc23f1f12b8a791db31da036b4",
     "src/lighting/InstancedAnimLight.cpp": "b751faa7c2ad99ca2291d3c349951ccfd902461c791f06feaa5a8f55b086e51a",
     "src/lighting/LightAxes.cpp": "307d4b43648d47b7347f6642992208540c85a61b4fa6b76665753204d860e6ff",
+    "src/lighting/LightClamp.cpp": "104c2aecf7dbceb3cdb5a497696bf72d221041f5e80e5214f8b5ac8cb713983c",
     "src/lighting/LightDefaultVolume.cpp": "de67ff35ad9d9c0d26756c3623c65794f46e0d25f63efee11d0549be2e381e88",
     "src/lighting/LightDestroy.cpp": "2bc0cfe25e1fe819f6a38b5d8b6dec09d221c0578221a5f0e1a0dd2f15566317",
     "src/lighting/LightIDs.cpp": "1718a611882b2970bf7f645185304160affb5623dc9e7498efe1cedec2326f5b",
@@ -19538,6 +19540,24 @@
       "discarded_functions": [],
       "object_sha256": "dbce71cf17e5a370c5e36bae0859a1d0aedba89b7ad1a8d2f775e023a7403f89",
       "linked_sha256": "871f4d726034c17462276dfe8d1e34cc18667f19d2811b08f90872b3ead8504f"
+    },
+    {
+      "id": "light_clamp",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 52,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "cc03208cc760251703e96ccc77a7d52a6059cfc209114a5966f1f2edc50a5c4d",
+      "linked_sha256": "849c6db32d30dea675b76fca69d9e6ca69915f05776320c5f51bb623f370338b"
     }
   ],
   "code_map": {
@@ -49037,13 +49057,6 @@
         "file_record": 208,
         "file_name": "light.cpp",
         "ranges": [
-          {
-            "address": "0x8012f6a8",
-            "size": 52,
-            "kind": "function",
-            "name": "Clamp0to1__FRCf",
-            "evidence": "local-file-symbol"
-          },
           {
             "address": "0x8012f6dc",
             "size": 1924,

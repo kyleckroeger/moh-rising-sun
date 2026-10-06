@@ -1,8 +1,8 @@
 # Light volumes and scene lights
 
 `src/lighting/` reconstructs seven `CLightVolumeManager` methods (752 executable
-bytes) and 31 `CLight`, `CPropertyAnimLight`, `CInstancedAnimLight` and
-`CAnimLightManager` functions (1,856 bytes) from the pinned GR8E69 executable. Claude Code assisted the analysis and
+bytes) and 32 `CLight`, `CPropertyAnimLight`, `CInstancedAnimLight`,
+`CAnimLightManager` and light helper functions (1,908 bytes) from the pinned GR8E69 executable. Claude Code assisted the analysis and
 verification. The [BPD evidence](BPD.md) supplies the light-volume prefix used here.
 
 ## Accepted fragments
@@ -75,6 +75,11 @@ Type values other than 1, the output volume's full layout and the default volume
 contents are not established here.
 
 ## `CLight::SetLightBlock` (not reconstructed)
+
+Its private helper `Clamp0to1` (`0x8012f6a8`, local to `light.cpp`) is accepted as
+the `light_clamp` fragment with its two constants at `0x802a7944`: values above
+1.0 become 1.0, values from 0.0 up are kept, and the rest become 0.0. The output
+block is the private 112-byte `g_MOHLightBlock`.
 
 `SetLightBlock(BPDLightVolume *, CDrawContext *, float)` is static. Its only
 callers are `CAnimObject::DrawMesh`, `CStaticMesh::DrawMesh` and

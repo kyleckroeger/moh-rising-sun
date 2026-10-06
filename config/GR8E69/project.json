@@ -776,7 +776,8 @@
     "instanced_anim_light.json",
     "light_ids.json",
     "light_mark_destruction.json",
-    "anim_light_pools.json"
+    "anim_light_pools.json",
+    "light_clamp.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
