@@ -40,8 +40,9 @@ assets, compiler binaries or complete debug dumps to commits, issues or PRs.
 The [research notes index](docs/research/README.md) collects contributor investigations
 and their GameCube comparisons. Thanks to kyleckroeger for sharing PS2 research on
 FlexProp names, particle recipes, script instructions, class descriptions, gameplay
-data and interactive music. These notes provide leads for reconstruction; each topic
-separates its evidence and open questions from verified matching source.
+data, interactive music, runtime timing and camera behavior. These notes provide
+leads for reconstruction; each topic separates its evidence and open questions
+from verified matching source.
 
 ## Progress integration
 
@@ -91,6 +92,7 @@ Run the scripts from any directory; all outputs remain inside this checkout. `ba
 | `build/baseline/relinked.dol` | Rebuilt analysis image |
 | `build/audit/dependencies.json` | Local direct-branch dependency graph and research ranking (`python3 tools/dependencies.py`) |
 | `src/matrix/`, `include/game/CMatrix.h` | Reconstructed matrix functions and a shared layout with explicit vector-type limits |
+| `src/camera/`, `include/game/Camera.h` | Reconstructed [camera projection and transform functions](docs/Camera.md), guided by contributed runtime research |
 | `src/sys_memory.cpp` | Four game allocation operators; original heap routines remain external |
 | `src/stlport/` | Tree, container, sorting and heap functions using an attributed STLport 4.5.3 subset |
 | `src/eagl/` | Reconstructed rendering state and material drawing fragments; [evidence and remaining work](docs/Rendering.md) |

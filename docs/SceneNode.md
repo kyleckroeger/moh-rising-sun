@@ -6,9 +6,10 @@ executable. Claude Code assisted the analysis and verification.
 
 ## Evidence
 
-The executable has no vtable symbols, but constructors store table addresses and
-each entry's function pointer resolves to a named original function. Entries are
-eight bytes: a signed 16-bit `this` adjustment followed by the function pointer.
+These scene-node tables have no vtable symbols, but constructors store their
+addresses and each entry's function pointer resolves to a named original function.
+Entries are eight bytes: a signed 16-bit `this` adjustment at offset 0, two unused
+bytes, then the function pointer at offset 4.
 Calls load the adjustment with `lha` and the target with `lwz` at the same slot.
 Slot 0 is zero in every table examined.
 
@@ -18,6 +19,7 @@ Slot 0 is zero in every table examined.
 | `ISceneNode` | `0x802e1680` | 1-67 | Slot 2 is `_._10ISceneNode`; the entry after slot 67 is zero |
 | `IParticleSystem` | `0x802e2048` | 1-107 | Stored by `__15IParticleSystem`; slot 2 is `_._15IParticleSystem` |
 | `CParticleSystem` | `0x802e18c8` | 1-108 | Stored by `__15CParticleSystem`; the entry after slot 108 is zero |
+| `CCamera` | `0x802e8410` | 1-88 | Stored by `__7CCameraRC7CCamera`; independently checked for the [camera reconstruction](Camera.md) |
 
 Slots 1-4 match the existing `IDestructible`, `ISubject` and `IObserver`
 declarations. `ISceneNode` introduces slots 5-67. `IMovingSceneNode` has no

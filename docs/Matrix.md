@@ -151,6 +151,12 @@ two matrix-copy getters and an `Orthonormalize` wrapper. Only the wrapper is
 reconstructed; `CMatrix::Orthonormalize` is declared as an original external
 dependency and receives no new matrix-source credit.
 
+The [camera fragments](Camera.md) reuse the same representation and declare the
+original shared `CMatrix::s_TempMat` (64 bytes at `0x802fbf00`) for pre- and
+post-transform operations. The header also exposes `Rotate(const CVector3 &,
+float)` as an external original method. Neither that method nor the temporary's
+storage earns new matrix-source credit. The camera wrappers keep vectors opaque.
+
 Useful next work is to recover enough `CVector3` layout/constructor evidence to
 support value parameters and local vectors, then extend `Rotate`, `FastInverse`, `Orthonormalize` and the remaining matrix
 functions. A research `TibToMOHFL`

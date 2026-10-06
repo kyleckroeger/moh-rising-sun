@@ -2,7 +2,7 @@
 
 Research contributions help identify formats, recover names and choose useful
 GameCube reconstruction targets. Thanks to [kyleckroeger](https://github.com/kyleckroeger)
-for sharing six investigations from a separate PS2 remake effort, following
+for sharing seven investigations from a separate PS2 remake effort, following
 [issue #4](https://github.com/lifewillbeokay/moh-rising-sun/issues/4).
 
 ## PS2 investigations and GameCube comparisons
@@ -21,6 +21,7 @@ the research.
 | [`.sin` class descriptions](ps2/sin-class-descriptions.md) | Script classes, states, events and variable records | [PR #8](https://github.com/lifewillbeokay/moh-rising-sun/pull/8) |
 | [`.bpd` gameplay data](ps2/bpd-format.md) | Header tables, light volumes, path finding and endian conversion | [PR #9](https://github.com/lifewillbeokay/moh-rising-sun/pull/9) |
 | [Pathfinder music rules](ps2/pathfinder-music.md) | Music events, `.MPF` rules and script-to-music calls | [PR #10](https://github.com/lifewillbeokay/moh-rising-sun/pull/10) |
+| [Update ticks and runtime rules](ps2/runtime-rules.md) | Motion timing, animated lights, particles, camera FOV and scene behavior | [PR #11](https://github.com/lifewillbeokay/moh-rising-sun/pull/11) |
 
 ## Applying the notes
 
@@ -39,6 +40,11 @@ The [BPD reconstruction](../BPD.md) also includes matching conversion routines f
 the header, property records, animated lights and light volumes, plus a lighting-volume
 point test and scalar conversion wrappers. Its scoped views preserve unknown fields
 and do not establish complete GameCube file formats.
+
+The [camera reconstruction](../Camera.md) applies the runtime notes' half-angle
+finding to matching projection setters, FOV getters, projection-matrix updates
+and transform wrappers. Each function and accessed field is checked against
+GameCube independently of the PS2 interpretation.
 
 PS2 offsets, endianness and file contents do not automatically establish GameCube
 layouts. A CRC match is a naming lead, and a shared symbol or call is evidence for

@@ -1,0 +1,90 @@
+{
+  "id": "camera_transforms",
+  "source": "src/camera/transforms.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8012bf40",
+      "size": 584
+    }
+  ],
+  "functions": [
+    {
+      "name": "PreTransform__7CCameraRC7CMatrix",
+      "address": "0x8012bf40",
+      "size": 92,
+      "binding": 1
+    },
+    {
+      "name": "Reset__7CCamera",
+      "address": "0x8012bf9c",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "Transform__7CCameraRC7CMatrix",
+      "address": "0x8012bfdc",
+      "size": 92,
+      "binding": 1
+    },
+    {
+      "name": "SetTMLocalToWorld__7CCameraRC7CMatrix",
+      "address": "0x8012c038",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "SetPosition__7CCameraRC8CVector3",
+      "address": "0x8012c074",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "SetBasis__7CCameraRC8CVector3N21",
+      "address": "0x8012c0b0",
+      "size": 96,
+      "binding": 1
+    },
+    {
+      "name": "Move__7CCameraRC8CVector3",
+      "address": "0x8012c110",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "Rotate__7CCameraRC8CVector3f",
+      "address": "0x8012c14c",
+      "size": 60,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "_7CMatrix.s_TempMat": "0x802fbf00",
+    "__as__7CMatrixRC7CMatrix": "0x8007aa38",
+    "Multiply__7CMatrixRC7CMatrixT1": "0x802794b8",
+    "GetSlot__7CMatrixUi": "0x802790e0",
+    "SetPos__7CMatrixRC8CVector3": "0x8007ae7c",
+    "SetRight__7CMatrixRC8CVector3": "0x8007ae28",
+    "SetFront__7CMatrixRC8CVector3": "0x8007ae44",
+    "SetUp__7CMatrixRC8CVector3": "0x8007ae60",
+    "Translate__7CMatrixRC8CVector3": "0x8007af2c",
+    "Rotate__7CMatrixRC8CVector3f": "0x8007af60"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "camera.cpp"
+}

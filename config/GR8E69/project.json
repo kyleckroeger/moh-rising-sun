@@ -753,7 +753,11 @@
     "moving_node_light_defaults.json",
     "moving_node_transform_defaults.json",
     "scene_node_destructor.json",
-    "moving_node_reset.json"
+    "moving_node_reset.json",
+    "camera_get_transform.json",
+    "camera_transforms.json",
+    "camera_projection.json",
+    "camera_update_projection.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

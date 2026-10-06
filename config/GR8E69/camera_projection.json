@@ -1,0 +1,65 @@
+{
+  "id": "camera_projection",
+  "source": "src/camera/projection.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8012c4a0",
+      "size": 272
+    }
+  ],
+  "functions": [
+    {
+      "name": "Orthonormalize__7CCamera",
+      "address": "0x8012c4a0",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "SetPerspective__7CCameraff",
+      "address": "0x8012c4dc",
+      "size": 96,
+      "binding": 1
+    },
+    {
+      "name": "SetOrthographic__7CCameraff",
+      "address": "0x8012c53c",
+      "size": 36,
+      "binding": 1
+    },
+    {
+      "name": "GetHFOV__C7CCamera",
+      "address": "0x8012c560",
+      "size": 40,
+      "binding": 1
+    },
+    {
+      "name": "GetVFOV__C7CCamera",
+      "address": "0x8012c588",
+      "size": 40,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "Orthonormalize__7CMatrix": "0x8007b5a4",
+    "tanf": "0x80270ae4",
+    "atanf": "0x80270630"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "camera.cpp"
+}

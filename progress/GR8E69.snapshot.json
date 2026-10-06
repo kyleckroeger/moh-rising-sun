@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 610084,
+    "matching_code_bytes": 611108,
     "total_executable_code_bytes": 2492032,
-    "percent": 24.48138707689147,
+    "percent": 24.52247804201551,
     "categories": {
-      "reconstructed_game": 217868,
+      "reconstructed_game": 218892,
       "restored_library": 392216
     },
-    "matching_functions": 2144
+    "matching_functions": 2159
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -116,6 +116,10 @@
     "config/GR8E69/baseline.json": "9ebff32fd809e72fdf889ab49760be2aa1172768f855af86d0251c1fc4da2ef7",
     "config/GR8E69/bpd_endian.json": "3aadb304ad55ca0cf66faa09c34e66abb388542cbec23719edc23a4a11d1bf4d",
     "config/GR8E69/bpd_light_volume.json": "e3931cdecf07dcd381e5058696fdf773127383abb36af8f4f317095e70d4849c",
+    "config/GR8E69/camera_get_transform.json": "e718b74015c98fc9aa58fe5d2c6de29f40aac11d0ae8d291ca3afe1964bb03b4",
+    "config/GR8E69/camera_projection.json": "40155878dbb04c59b1fe9f848d4f00f68d57b05e4d6d50c2213504b4358ab7be",
+    "config/GR8E69/camera_transforms.json": "565ea07c7752be54366701e13af7ee6bb4cd78c6cf7d4bd3c68f01b89bdbfe5d",
+    "config/GR8E69/camera_update_projection.json": "775218cca1643d4a69f0fcc2512751434137da87c4c4079cf4bb361706150171",
     "config/GR8E69/dolphin-network-source.json": "6b039c8ef3fc502a7441ab8f55160567fd2facec6c12d818739c3bc7fd741b82",
     "config/GR8E69/dolphin-source.json": "00e4890e3bb570018abbacc62a7beee8052c2ef4f115363b1716785b62884cf1",
     "config/GR8E69/dsp.json": "bcc4a05a8ec25869e7675234c297eb8243e9a2e03983f64bf5e7040c7a897cd7",
@@ -525,7 +529,7 @@
     "config/GR8E69/particle_terminate.json": "a86b85ccc5b1c04cc5f96524f3f4aee0e0605b48bdb06a2997185d7dad795f87",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "f6f91c69b413808ff18713f5261dd6adbb05d9c8c1d9823bf0cf4994e4d7f11c",
+    "config/GR8E69/project.json": "cf8cc53874b6e92e052566773ac794ef5bbcb33e6195f75b7aec9dd449b98031",
     "config/GR8E69/scene_node_centroid.json": "417789c5857125f62e4595e59f3e52ed74ac434de058b0123549164ceef3cd8b",
     "config/GR8E69/scene_node_destructor.json": "2421437a4581f16904fb69d4f06b23754bc5d337e70bdec86806d8f9f3f370a5",
     "config/GR8E69/scene_node_query_defaults.json": "49dcc91b41c1ead357a570e138a6aef5abc92e715734bea17b62f13ae24701fd",
@@ -938,7 +942,8 @@
     "include/dolphin-sdk/macros.inc": "4e92f656bb511fbb45d66081291371c47ceba7bce9c55f86871116203cf38a46",
     "include/dolphin-sn/dolphin/types.h": "ca31e0bbb97e93ca4713654367df29578f6392f3acaf40ca68bc1de1c913af93",
     "include/game/BPD.h": "0b35cb4e9be9dbf3be60fb20019f0500b0667671505801d6afd698573bf0f111",
-    "include/game/CMatrix.h": "ace2b9373e5a9e3d4bfd296fa864e7af1d289192dd4d9105a44df3cd6aee60be",
+    "include/game/CMatrix.h": "246133cf1a7abc7a29966661e579e3a8d124c43b46801025fe0208caf1ee73f4",
+    "include/game/Camera.h": "226257f70f2360cef00394559a793815cdb4c93e419f6c4a21acfb08ae7379cb",
     "include/game/DestructorQueue.h": "434ec17ba96007c8368db0dc62c9454d1650bc2c4d5615a13aad40969412bda8",
     "include/game/EAGLAnim/AnimAllocation.h": "8e2480f7003eca4c8a99d7bc1189b4f00ee9e31bacd9192d6b1bb0bfbc2b38f8",
     "include/game/EAGLAnim/AnimBank.h": "1909b5d1278c6dd4499ea046c279628048e486ca444f53ee161169cab63a8d1a",
@@ -1150,6 +1155,10 @@
     "src/MathFun.cpp": "62fdc1c10ab2ff80ae713d40d1fa1efc22748836588999759447f0350ca8bc91",
     "src/bpd/endian.cpp": "319fe162774583e7968ef97f898b64e6f7cc49d0263c5173dbde60878dc7459b",
     "src/bpd/light_volume.cpp": "c22922ba3e285d879080bb5c45ebb5030b1db234219d2f12b920c79b8aaaf1bd",
+    "src/camera/get_transform.cpp": "e3033e1c97452a331b5d46e6cdca18fba8f60ad43af2220d9cdc7bddbc12d468",
+    "src/camera/projection.cpp": "4ed326a09aac21ee19656d0c6538dbe65908d865e795f163ae092f67e9972767",
+    "src/camera/transforms.cpp": "4f1d6ff74f4f9d296d64a95495ab90f53f98010031fde9b051b8a5be89c7278a",
+    "src/camera/update_projection.cpp": "fd6857c4d808bd67914b5c1041d239ff9219b03f7d8a7bbe579e7d846583f4f7",
     "src/dolphin/LICENSE.PrimeDecomp": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
     "src/dolphin/LICENSE.bfbb": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
     "src/dolphin/NETWORK_NOTICE": "bb4c39371835c344ec608a98b06c3c44d39b0df7060c37ae1c200a4d48471b16",
@@ -19073,6 +19082,78 @@
       "discarded_functions": [],
       "object_sha256": "7f674a786c422f53c710dcb13c59c440fcc9b03028917434883d78cc19d8c897",
       "linked_sha256": "4c2e4f860cfb5ef8bfa87a729e7fa795dc32ee96faff1e4de19bbb415cc26d4c"
+    },
+    {
+      "id": "camera_get_transform",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 44,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "1cb131c858d13dad7df8b4f5c10cbff5414f5ba75eda692dc02ba33780e1673d",
+      "linked_sha256": "3ad5cd91cbe3ce2da17aa0f047baebf24471941928f130451fe88904bb8ffe88"
+    },
+    {
+      "id": "camera_transforms",
+      "category": "reconstructed_game",
+      "functions": 8,
+      "code_bytes": 584,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b3180a3fb2a2ba31e92baef8f4bcb9b058845009b47a5d8ce20df9070a63c78a",
+      "linked_sha256": "214c6cc0c4125109fe9c2d609eb0a5186027ff2a317b7a5a52a0bfc789825782"
+    },
+    {
+      "id": "camera_projection",
+      "category": "reconstructed_game",
+      "functions": 5,
+      "code_bytes": 272,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "5ef07876318c598a32b405bc329825616a37a1d45a181a75c13d9944f672c1a0",
+      "linked_sha256": "7761af02777c1bb525c34bda20d400ae6f60f07428006a14ed0df6467fc58b2d"
+    },
+    {
+      "id": "camera_update_projection",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 124,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "78cab01e0093c62d7f1e2155d3b0f967bdb52cea65e7c56ccbdc548b544827dd",
+      "linked_sha256": "6090ff21bb0b88384ed7e304e5ba788ba6ffbddb55a146fcf53aa992ee861385"
     }
   ],
   "code_map": {
@@ -48365,13 +48446,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8012bdc4",
-            "size": 44,
-            "kind": "function",
-            "name": "GetTMLocalToWorld__C7CCameraR7CMatrix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8012bdf0",
             "size": 80,
             "kind": "function",
@@ -48414,62 +48488,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8012bf40",
-            "size": 92,
-            "kind": "function",
-            "name": "PreTransform__7CCameraRC7CMatrix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012bf9c",
-            "size": 64,
-            "kind": "function",
-            "name": "Reset__7CCamera",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012bfdc",
-            "size": 92,
-            "kind": "function",
-            "name": "Transform__7CCameraRC7CMatrix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012c038",
-            "size": 60,
-            "kind": "function",
-            "name": "SetTMLocalToWorld__7CCameraRC7CMatrix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012c074",
-            "size": 60,
-            "kind": "function",
-            "name": "SetPosition__7CCameraRC8CVector3",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012c0b0",
-            "size": 96,
-            "kind": "function",
-            "name": "SetBasis__7CCameraRC8CVector3N21",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012c110",
-            "size": 60,
-            "kind": "function",
-            "name": "Move__7CCameraRC8CVector3",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012c14c",
-            "size": 60,
-            "kind": "function",
-            "name": "Rotate__7CCameraRC8CVector3f",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8012c188",
             "size": 264,
             "kind": "function",
@@ -48491,41 +48509,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8012c4a0",
-            "size": 60,
-            "kind": "function",
-            "name": "Orthonormalize__7CCamera",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012c4dc",
-            "size": 96,
-            "kind": "function",
-            "name": "SetPerspective__7CCameraff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012c53c",
-            "size": 36,
-            "kind": "function",
-            "name": "SetOrthographic__7CCameraff",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012c560",
-            "size": 40,
-            "kind": "function",
-            "name": "GetHFOV__C7CCamera",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012c588",
-            "size": 40,
-            "kind": "function",
-            "name": "GetVFOV__C7CCamera",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8012c5b0",
             "size": 440,
             "kind": "function",
@@ -48537,13 +48520,6 @@
             "size": 424,
             "kind": "function",
             "name": "UpdateWorldToCamera__7CCamera",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012c910",
-            "size": 124,
-            "kind": "function",
-            "name": "UpdateCameraToClip__7CCamera",
             "evidence": "adjacent-compiler-markers"
           },
           {

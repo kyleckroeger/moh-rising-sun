@@ -1,0 +1,45 @@
+{
+  "id": "camera_update_projection",
+  "source": "src/camera/update_projection.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8012c910",
+      "size": 124
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a76bc",
+      "size": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "UpdateCameraToClip__7CCamera",
+      "address": "0x8012c910",
+      "size": 124,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "Perspective__7CMatrixffff": "0x8007afe0",
+    "Orthographic__7CMatrixffff": "0x8007b0b4"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "camera.cpp"
+}
