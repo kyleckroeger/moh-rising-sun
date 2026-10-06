@@ -63,8 +63,8 @@ binary context. `#pragma interface` avoids emitting a replacement camera table.
 
 Method names, parameter types and constness come from original symbols. FOV
 getters return through the floating-point result register; mutation methods
-retain the existing void interface. Vectors remain opaque references under the
-[matrix header's limits](Matrix.md); no vector construction or size is assumed.
+retain the existing void interface. These wrappers pass vectors only by reference; they
+construct no vectors. The vector type is described in [Matrix.md](Matrix.md#cvector3-layout).
 
 ## Preserved behavior
 
@@ -112,7 +112,8 @@ The complete 2,860,576-byte image retains SHA-1
 local verification; CI validates that snapshot rather than rebuilding the game.
 
 The remaining camera update, vector getters and pitch/roll/yaw routines are
-useful follow-ups. Their local vectors require independent layout and constructor
-evidence before extending the current opaque `CVector3`. Frustum members and
+useful follow-ups. Their local vectors can now use the
+[`CVector3` declaration](Matrix.md#cvector3-layout); each body still needs its own
+comparison. Frustum members and
 `field_160` also need further analysis; the current storage view deliberately
 leaves them unresolved.

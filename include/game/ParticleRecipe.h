@@ -2,6 +2,7 @@
 #define GAME_PARTICLE_RECIPE_H
 #pragma interface
 #include "CMatrix.h"
+#include "CVector3.h"
 #include "SceneNode.h"
 
 // Scoped GameCube storage views established by the recipe getters/setters.
@@ -84,7 +85,10 @@ class CParticleSystem : public IParticleSystem {
   public:
     unsigned char unknown_18[0x90 - 0x18];
     CMatrix localToWorld;
-    unsigned char unknown_d0[0x70];
+    CVector3 initialVelocity;
+    CVector3 acceleration;
+    CVector3 particleAcceleration;
+    unsigned char unknown_100[0x40];
     CProcParticleDef *definition;
     unsigned char unknown_144[12];
     float deactivationTicks;
@@ -133,6 +137,14 @@ class CParticleSystem : public IParticleSystem {
     void GetParticleFade(float &, float &) const;
     void GetParticlePosition(CVector3 &, CVector3 &) const;
     void GetParticleVelocity(CVector3 &, CVector3 &) const;
+    void GetSystemInitialVelocity(CVector3 &) const;
+    void GetSystemAcceleration(CVector3 &) const;
+    void GetParticleAcceleration(CVector3 &) const;
+    void SetSystemInitialVelocity(const CVector3 &);
+    void GetPosition(CVector3 &) const;
+    void GetRightward(CVector3 &) const;
+    void GetForward(CVector3 &) const;
+    void GetUpward(CVector3 &) const;
     void GetParticleSize(CVector3 &, CVector3 &, float &) const;
     int GetFogEnable() const;
     void SetParticleLifetime(float);

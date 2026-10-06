@@ -94,12 +94,15 @@ Most defaults are empty or return a constant: `Constrain` returns 1,
 `CMatrix::GetSlot(0)` on its output. The destructor stores `_vt.10ISceneNode` and
 calls `IObserver`'s destructor; the table stays external original data.
 
+## Vector defaults
+
+With [the `CVector3` declaration](Matrix.md#cvector3-layout), two more fragments
+match: `scene_node_vector_defaults` (`GetWorldLinearVelocity` returns a zero
+vector by value; `GetPosition` zeroes three components) and
+`scene_node_axis_defaults` (`GetRightward`, `GetForward` and `GetUpward` set the
+unit X, Y and Z axes). `GetWorldLinearVelocity` now returns `CVector3`.
+
 ## Next work
 
-`GetPosition`, `GetRightward`, `GetForward`, `GetUpward` and
-`GetWorldLinearVelocity` write constant vectors and wait on `CVector3` evidence.
-`GetWorldLinearVelocity` returns its vector by value and stores four words: three
-copies of one constant at `+0`, `+4` and `+8`, and a second constant at `+12`.
-That suggests a 16-byte vector, but its type and fourth member are unconfirmed.
 The slot map applies to every class derived from `IMovingSceneNode`; each derived
 table should be checked against it rather than assumed.
