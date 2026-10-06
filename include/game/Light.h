@@ -30,7 +30,9 @@ class CLight : public IMovingSceneNode {
   public:
     unsigned char unknown_18[0x40 - 0x18];
     CMatrix localToWorld;
-    unsigned char unknown_80[0xc8 - 0x80];
+    CMatrix attachTransform;  // Multiplied by the parent's world matrix in BeginUpdate.
+    ISceneNode *parent;       // Cleared by Detach.
+    unsigned char unknown_c4[4];
     LightColor color;
     float field_d8;
     float radius;
@@ -38,6 +40,7 @@ class CLight : public IMovingSceneNode {
     CLight();
     virtual ~CLight();
     static BPDLightVolume *GetDefaultLightVolume();
+    void MarkForDestruction(int);
     void Destroy();
     void AttemptUpdate(float);
     void CommitUpdate();
@@ -65,6 +68,8 @@ class CPropertyAnimLight : public CLight {
     MOH_animatedLight_Struct *record;
     short frame;
     unsigned int reverse : 1; // Set while a back-and-forth light runs backward.
+    unsigned char unknown_e8[8];
+    CPropertyAnimLight *next; // Pool list link used by CAnimLightManager::Destroy.
 
     CPropertyAnimLight(MOH_animatedLight_Struct *);
     ~CPropertyAnimLight();
@@ -80,9 +85,23 @@ class CInstancedAnimLight : public CPropertyAnimLight {
     void Destroy();
 };
 
-// Member-only view of the original manager object.
+// A 20-byte free-list pool with the same shape as g_particleSystemList: storage,
+// used head, free head, capacity and count. Names are descriptive.
+struct AnimLightPool {
+    CPropertyAnimLight *storage;
+    CPropertyAnimLight *active;
+    CPropertyAnimLight *free;
+    int capacity;
+    int count;
+};
+
+// Scoped view: the pools at +0x44 (instanced lights) and +0x58 (property lights).
+// Earlier storage and the manager's base classes are not declared.
 class CAnimLightManager {
   public:
+    unsigned char unknown_0[0x44];
+    AnimLightPool instancedLights;
+    AnimLightPool propertyLights;
     void Destroy(CInstancedAnimLight *);
     void Destroy(CPropertyAnimLight *);
 };

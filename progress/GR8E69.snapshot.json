@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 614844,
+    "matching_code_bytes": 615128,
     "total_executable_code_bytes": 2492032,
-    "percent": 24.672395860085263,
+    "percent": 24.683792182443884,
     "categories": {
-      "reconstructed_game": 222628,
+      "reconstructed_game": 222912,
       "restored_library": 392216
     },
-    "matching_functions": 2214
+    "matching_functions": 2217
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -111,6 +111,7 @@
     "config/GR8E69/ai.json": "7b00f17f4fb56ada896ab693b54981297a779945d629d8e0920f1bffedda5893",
     "config/GR8E69/ai_src.json": "136c56ec3f12ec8b879525cc1d5766e8b42c5f266a23e090ce86f5fae181bf66",
     "config/GR8E69/anim_light.json": "9ffbd37f12a017d9299881ad77528bd7b94bc35a5e4970c59fb96ce107610dfb",
+    "config/GR8E69/anim_light_pools.json": "54a79d91ca35237884367a52d2b3a0995cb51ab3ad5909b62585b24c2efe1205",
     "config/GR8E69/ar.json": "d8da1ec6cb2ac6c8f83ac2a4b995898cbb723d38d41c84a1d25a8d7a863b1908",
     "config/GR8E69/arq.json": "b79b6daec16d9806b4df0388a3f927cb06d48ce10fdb9fa35772dcecce291de7",
     "config/GR8E69/base64.json": "e88ebd5740a86b7f43b5b6812b6c4e81114d43dfae07a3e7429abb7c6a1bfec7",
@@ -363,6 +364,7 @@
     "config/GR8E69/light_default_volume.json": "435a9af079ebc1f1714321701d6f8915ce847834744931dbc8f4e57c892ebb96",
     "config/GR8E69/light_destroy.json": "d581d4a9ea6e83abc28e30fd69780b0e874ccaa3965e42f2647f924bbb7ec6cc",
     "config/GR8E69/light_ids.json": "d27f6f7edd683611127ca74f25ca1d7965cc569b4b1c95943621c77e21af33c6",
+    "config/GR8E69/light_mark_destruction.json": "387f60d8922b30526f9ca39ad0ec15b88488343fc2ab7018bc7b309202fd9105",
     "config/GR8E69/light_transforms.json": "e9db73c27ef750a438f21689f8f8534fd71019357ddc96d7e9c4ac2663971b35",
     "config/GR8E69/light_update_stubs.json": "c0e588e06999052658e6790057c0501b9df2df26c65c917998bba987e566cb1d",
     "config/GR8E69/light_volume_manager.json": "a1020b4f836e05cc516687609a15be559ca43ece249e7a1abfa2ed9adb4a1b8b",
@@ -543,7 +545,7 @@
     "config/GR8E69/particle_terminate.json": "a86b85ccc5b1c04cc5f96524f3f4aee0e0605b48bdb06a2997185d7dad795f87",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "7b1a77fda25896cd8be17e0ba5e88fdd370c28f186c15c74aef12aa2520bc54b",
+    "config/GR8E69/project.json": "067ccd96ad2e0af207cef4377ac9e582adaf92102aebb120f4f3bf310d4e5abd",
     "config/GR8E69/scene_node_axis_defaults.json": "092b0d540e402069c588985246b692817db1af99a9d9c2cde0f3b1bfac31d590",
     "config/GR8E69/scene_node_centroid.json": "417789c5857125f62e4595e59f3e52ed74ac434de058b0123549164ceef3cd8b",
     "config/GR8E69/scene_node_destructor.json": "2421437a4581f16904fb69d4f06b23754bc5d337e70bdec86806d8f9f3f370a5",
@@ -1013,12 +1015,12 @@
     "include/game/Endian.h": "6f3a06aca2ed749c09949cedff932c6e9a8db1272b5393bdc9a46185a384387b",
     "include/game/FlexProp.h": "807c25fb67a35d5d67dcc94bfd4d496a9344d2a3b1109f01b875ef869bc69b29",
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
-    "include/game/Light.h": "785abe0ed8fde1908ff1f7d01c37d44e8e1684de123b3d45a0c350cfe0bf7f66",
+    "include/game/Light.h": "5d811fa900f748af87a30567a5ccddd9e9b64ed62bce6da204f497cac9f37cb0",
     "include/game/LightVolumeManager.h": "f86744d00d312738c23085d84d513fbd05c495194b97a10bf4cde2011dbaf958",
     "include/game/ObserverTypes.h": "687dfc07deb4adc23a1d0247270d6ab04c34b758bd88846bf5e4b6ef33e7cc1f",
     "include/game/ParticleClock.h": "28f3badf71350136523be63cd81fe70e6af6977dca794be22c84784ee720cf68",
     "include/game/ParticleRecipe.h": "04bba33839dcdae3132d1316e831585288f74ef842a5b01c6f6d6c37929ee61d",
-    "include/game/SceneNode.h": "a31c87f9aa65fdc4875ace9676c36ddc42525bebd622fa84a92fe3f2cb5a6a37",
+    "include/game/SceneNode.h": "2258fbab79b90af4106ae6f6eb14544cfb87633a3ff17ff4255ab50d6a17e430",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
     "include/game/ScriptRuntime.h": "15aee0559d5ce4ea71a0302a203a8dbdc31b9833ab7196180ae69362ec2c1355",
@@ -1529,11 +1531,13 @@
     "src/libgcc/machmode.h": "23e978f62f9b1376677035581c3a1ae3aea5cdca88aff96934b4aa45a6e2e14b",
     "src/libgcc/tconfig.h": "cb653912c0d78e81398d7ea015acd2622696a9b5022e710bcc0a4142e2088da3",
     "src/lighting/AnimLight.cpp": "8def4baf13e6bce46675282a6c6d99ee4f65fa180f3320cb09dc50e73aa137cf",
+    "src/lighting/AnimLightPools.cpp": "b5913877a604f0043a5f8684267faab30f3a3ebc23f1f12b8a791db31da036b4",
     "src/lighting/InstancedAnimLight.cpp": "b751faa7c2ad99ca2291d3c349951ccfd902461c791f06feaa5a8f55b086e51a",
     "src/lighting/LightAxes.cpp": "307d4b43648d47b7347f6642992208540c85a61b4fa6b76665753204d860e6ff",
     "src/lighting/LightDefaultVolume.cpp": "de67ff35ad9d9c0d26756c3623c65794f46e0d25f63efee11d0549be2e381e88",
     "src/lighting/LightDestroy.cpp": "2bc0cfe25e1fe819f6a38b5d8b6dec09d221c0578221a5f0e1a0dd2f15566317",
     "src/lighting/LightIDs.cpp": "1718a611882b2970bf7f645185304160affb5623dc9e7498efe1cedec2326f5b",
+    "src/lighting/LightMarkForDestruction.cpp": "6d26e22d4787cbfd939d62ed723252db1c30ad7c292d70c792c065d31c327f7d",
     "src/lighting/LightTransforms.cpp": "bb0fd0e56ff8bd4b6aef671267467658ebf027dd3159ba4a5e6f9fa0d1fa0137",
     "src/lighting/LightUpdateStubs.cpp": "35fbc527fc64a61df6ee3eb388eda18827f5067981addd978394247f88555ff2",
     "src/lighting/LightVolumeManager.cpp": "8fa209705371c72103581ac7cefa45bed6f0a8f3d81f270728056d336ddb53a8",
@@ -19517,6 +19521,42 @@
       "discarded_functions": [],
       "object_sha256": "aecc58db0a405eb5cc909b8c1eba258c81d7188f76fe79a5d1e6014e7c17ab22",
       "linked_sha256": "b8e1fc3a226f30c4fb050fefae83608daef2c9a64461c492ec51be11565379be"
+    },
+    {
+      "id": "light_mark_destruction",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 92,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f3f13908a92bfa7d53ca6b48322929d0098d5e97f3e952d345071dc96ecbcc86",
+      "linked_sha256": "932fc111c065fd8bcb564f9ccca7947f1e9272eef5ea81dcf0ec6555ee19249e"
+    },
+    {
+      "id": "anim_light_pools",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 192,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "dbce71cf17e5a370c5e36bae0859a1d0aedba89b7ad1a8d2f775e023a7403f89",
+      "linked_sha256": "871f4d726034c17462276dfe8d1e34cc18667f19d2811b08f90872b3ead8504f"
     }
   ],
   "code_map": {
@@ -49080,13 +49120,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8012fff8",
-            "size": 92,
-            "kind": "function",
-            "name": "MarkForDestruction__6CLighti",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80130054",
             "size": 220,
             "kind": "function",
@@ -49217,20 +49250,6 @@
             "size": 148,
             "kind": "function",
             "name": "Create__17CAnimLightManagerP24MOH_animatedLight_Struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801315b0",
-            "size": 96,
-            "kind": "function",
-            "name": "Destroy__17CAnimLightManagerP19CInstancedAnimLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80131610",
-            "size": 96,
-            "kind": "function",
-            "name": "Destroy__17CAnimLightManagerP18CPropertyAnimLight",
             "evidence": "adjacent-compiler-markers"
           },
           {

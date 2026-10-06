@@ -135,6 +135,7 @@ class IMovingSceneNode : public ISceneNode {
 class CScene {
   public:
     void Remove(ISceneNode &);
+    int IsNodeInScene(const ISceneNode *) const;
 };
 extern CScene g_scene;
 

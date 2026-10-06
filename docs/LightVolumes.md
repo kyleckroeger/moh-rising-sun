@@ -1,8 +1,8 @@
 # Light volumes and scene lights
 
 `src/lighting/` reconstructs seven `CLightVolumeManager` methods (752 executable
-bytes) and 25 `CLight`, `CPropertyAnimLight` and `CInstancedAnimLight` functions
-(1,100 bytes) from the pinned GR8E69 executable. Claude Code assisted the analysis and
+bytes) and 28 `CLight`, `CPropertyAnimLight`, `CInstancedAnimLight` and
+`CAnimLightManager` functions (1,384 bytes) from the pinned GR8E69 executable. Claude Code assisted the analysis and
 verification. The [BPD evidence](BPD.md) supplies the light-volume prefix used here.
 
 ## Accepted fragments
@@ -132,6 +132,8 @@ float at `+0xd8` and the radius at `+0xdc`; storage between is not declared.
 | `anim_light` | `CPropertyAnimLight` destructor, `InitFromProperty`, `Destroy` | 112 | None |
 | `instanced_anim_light` | `CInstancedAnimLight` constructor and `Destroy` | 120 | None |
 | `light_ids` | `GetPropertyID` (both), `AsLight` (both) | 28 | None |
+| `light_mark_destruction` | `CLight::MarkForDestruction` | 92 | None |
+| `anim_light_pools` | `CAnimLightManager::Destroy` (both overloads) | 192 | None |
 
 The transform wrappers apply the matching `CMatrix` method to the matrix at
 `+0x40`, like the camera's, without its validity flags. The axis getters assign
@@ -140,6 +142,20 @@ matrix rows through `CMatrix`'s inline row reads. `CLight::GetPropertyID` return
 overrides call `CLight::Destroy` and then the manager's matching `Destroy` on the
 private `g_AnimLightManager` (`light.cpp`). The color type is a four-float class
 whose assignment copies each float, as `BeginUpdate`'s copy shows.
+
+`CLight::MarkForDestruction` removes the light from `g_scene` when
+`CScene::IsNodeInScene` reports it, then calls `ISubject::MarkForDestruction`.
+`CAnimLightManager` keeps two 20-byte pools at `+0x44` (instanced lights) and
+`+0x58` (property lights) with the same storage, used-head, free-head, capacity and
+count shape as the particle-system pool; each `Destroy` overload unlinks the light
+through the link at `+0xf0` without a membership check and pushes it onto the free
+list. The manager's earlier storage and base classes are not declared.
+
+The unaccepted `CLight::BeginUpdate` and `Detach` establish two more fields:
+`BeginUpdate` asks the object at `+0xc0` for its world matrix (virtual slot 19),
+stores it in the matrix at `+0x40`, and multiplies the matrix at `+0x80` onto it;
+`Detach` unlinks the observer, clears `+0xc0` and the subject pointer, and returns
+1. The header names them `parent` and `attachTransform`.
 
 ## Animated lights (partly reconstructed)
 
@@ -167,7 +183,10 @@ reach only objects and characters, through `SetLightBlock`'s point-light step.
   `CMatrix::s_TempMat`, and restore the position. Their local `CMatrix` needs an
   inline default constructor that only calls `InitClass` when needed. A candidate
   is within about thirteen instructions of register and store scheduling.
-- `GetVolume` (above) and `SetLightBlock` remain.
+- **`CLight::BeginUpdate`** is within about six instructions (the register that
+  holds `this` before the virtual call).
+- `GetVolume` (above), `Detach`, `IsVisible` (a `CVolSphere` temporary) and
+  `SetLightBlock` remain.
 
 ## Verification
 
