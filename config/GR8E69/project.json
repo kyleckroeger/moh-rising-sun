@@ -770,7 +770,6 @@
     "light_volume_transition.json",
     "light_destroy.json",
     "light_default_volume.json",
-    "light_update_stubs.json",
     "light_transforms.json",
     "light_axes.json",
     "anim_light.json",

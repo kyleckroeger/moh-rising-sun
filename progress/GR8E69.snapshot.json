@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 615128,
+    "matching_code_bytes": 615600,
     "total_executable_code_bytes": 2492032,
-    "percent": 24.683792182443884,
+    "percent": 24.702732549180748,
     "categories": {
-      "reconstructed_game": 222912,
+      "reconstructed_game": 223384,
       "restored_library": 392216
     },
-    "matching_functions": 2217
+    "matching_functions": 2220
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -365,8 +365,7 @@
     "config/GR8E69/light_destroy.json": "d581d4a9ea6e83abc28e30fd69780b0e874ccaa3965e42f2647f924bbb7ec6cc",
     "config/GR8E69/light_ids.json": "d27f6f7edd683611127ca74f25ca1d7965cc569b4b1c95943621c77e21af33c6",
     "config/GR8E69/light_mark_destruction.json": "387f60d8922b30526f9ca39ad0ec15b88488343fc2ab7018bc7b309202fd9105",
-    "config/GR8E69/light_transforms.json": "e9db73c27ef750a438f21689f8f8534fd71019357ddc96d7e9c4ac2663971b35",
-    "config/GR8E69/light_update_stubs.json": "c0e588e06999052658e6790057c0501b9df2df26c65c917998bba987e566cb1d",
+    "config/GR8E69/light_transforms.json": "89e40f5f3228cb0dd14ccb3f586ad84e9bdd87a7b23f105a9af98c74c173dd41",
     "config/GR8E69/light_volume_manager.json": "a1020b4f836e05cc516687609a15be559ca43ece249e7a1abfa2ed9adb4a1b8b",
     "config/GR8E69/light_volume_transition.json": "6dd24de125e3978833dba0ac54a2f0af965db4cac5faeaf057d813f5150e5cc3",
     "config/GR8E69/llex.json": "8b9e0adf7b6cee93eaaa63cc0f928163181057456f431d385df183319c4d0ece",
@@ -545,7 +544,7 @@
     "config/GR8E69/particle_terminate.json": "a86b85ccc5b1c04cc5f96524f3f4aee0e0605b48bdb06a2997185d7dad795f87",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "067ccd96ad2e0af207cef4377ac9e582adaf92102aebb120f4f3bf310d4e5abd",
+    "config/GR8E69/project.json": "9253b4ae3e8a12d860180ffca02d5aecc3dadaa0135bd0384d80dce36c1950be",
     "config/GR8E69/scene_node_axis_defaults.json": "092b0d540e402069c588985246b692817db1af99a9d9c2cde0f3b1bfac31d590",
     "config/GR8E69/scene_node_centroid.json": "417789c5857125f62e4595e59f3e52ed74ac434de058b0123549164ceef3cd8b",
     "config/GR8E69/scene_node_destructor.json": "2421437a4581f16904fb69d4f06b23754bc5d337e70bdec86806d8f9f3f370a5",
@@ -1015,12 +1014,12 @@
     "include/game/Endian.h": "6f3a06aca2ed749c09949cedff932c6e9a8db1272b5393bdc9a46185a384387b",
     "include/game/FlexProp.h": "807c25fb67a35d5d67dcc94bfd4d496a9344d2a3b1109f01b875ef869bc69b29",
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
-    "include/game/Light.h": "5d811fa900f748af87a30567a5ccddd9e9b64ed62bce6da204f497cac9f37cb0",
+    "include/game/Light.h": "2ed36fd70b129fe2e1ce7cec7fffb8b7cc61794dfef4987e90ca65ad7df2fe6c",
     "include/game/LightVolumeManager.h": "f86744d00d312738c23085d84d513fbd05c495194b97a10bf4cde2011dbaf958",
     "include/game/ObserverTypes.h": "687dfc07deb4adc23a1d0247270d6ab04c34b758bd88846bf5e4b6ef33e7cc1f",
     "include/game/ParticleClock.h": "28f3badf71350136523be63cd81fe70e6af6977dca794be22c84784ee720cf68",
     "include/game/ParticleRecipe.h": "04bba33839dcdae3132d1316e831585288f74ef842a5b01c6f6d6c37929ee61d",
-    "include/game/SceneNode.h": "2258fbab79b90af4106ae6f6eb14544cfb87633a3ff17ff4255ab50d6a17e430",
+    "include/game/SceneNode.h": "7230717c2c9ba0d0449b4fc6caeb407a932569ae7fabccd2a9b38b571fc22768",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
     "include/game/ScriptRuntime.h": "15aee0559d5ce4ea71a0302a203a8dbdc31b9833ab7196180ae69362ec2c1355",
@@ -1029,6 +1028,7 @@
     "include/game/TARExtension.h": "cf1f48aa0be63a29babdba7f53c58439facb94141d7e04d0d32fcc878bad2cb3",
     "include/game/TevStage.h": "47aaf3de5425dace0c30e2852896a9494f78ab4a4dcaad6be03d4aa4204d7466",
     "include/game/TevStageInlines.h": "03b19716c4d88b4eb2f3c74cdf2040ca0bb6c43e842d1eefc2c8bd148a278645",
+    "include/game/Volume.h": "c81634d5040c155172fe79d9c2c0d4303e184e17736667562e84e4a03ea0c839",
     "include/game-containers/AlgorithmTypes.h": "a4959e24b9ab8edd66054b63ed6d53516aebc500f71f821e27babbf931b8d51a",
     "include/game-containers/ContainerTypes.h": "9a676b3cfa6794b828f4916a9ce252e00ac4913c5379a1c37bd5e5f1db7c2a2b",
     "include/game-containers/ResourceTypes.h": "6f63038334ba47ea545e0994a455fbd01b1fdb6aa3b6bf155de630e9ede05c68",
@@ -1538,8 +1538,7 @@
     "src/lighting/LightDestroy.cpp": "2bc0cfe25e1fe819f6a38b5d8b6dec09d221c0578221a5f0e1a0dd2f15566317",
     "src/lighting/LightIDs.cpp": "1718a611882b2970bf7f645185304160affb5623dc9e7498efe1cedec2326f5b",
     "src/lighting/LightMarkForDestruction.cpp": "6d26e22d4787cbfd939d62ed723252db1c30ad7c292d70c792c065d31c327f7d",
-    "src/lighting/LightTransforms.cpp": "bb0fd0e56ff8bd4b6aef671267467658ebf027dd3159ba4a5e6f9fa0d1fa0137",
-    "src/lighting/LightUpdateStubs.cpp": "35fbc527fc64a61df6ee3eb388eda18827f5067981addd978394247f88555ff2",
+    "src/lighting/LightTransforms.cpp": "ba96d733258bc6075bc3c87ac6e9033d968bd23311ac98d15573432b5df83736",
     "src/lighting/LightVolumeManager.cpp": "8fa209705371c72103581ac7cefa45bed6f0a8f3d81f270728056d336ddb53a8",
     "src/lighting/LightVolumeTransition.cpp": "5dc77fdedce8a31fc78252361b12a0c68bf781418a028cf4d59b7e270d07d6bc",
     "src/lua/COPYRIGHT": "c1cfb9b1dfefcd570ae07258045f0929ea4500bc9c215d69bcfabf9a665564da",
@@ -19415,28 +19414,10 @@
       "linked_sha256": "757e24f1f2c186f8b1c254cb49a8c318eb8f667b715b383ba762e52b8ca555f2"
     },
     {
-      "id": "light_update_stubs",
-      "category": "reconstructed_game",
-      "functions": 2,
-      "code_bytes": 8,
-      "compiler_family": "ProDG",
-      "compiler_version": "3.8.1",
-      "compiler_flags": [
-        "-O2",
-        "-G0",
-        "-fno-exceptions",
-        "-fno-implicit-templates"
-      ],
-      "strip_unused": false,
-      "discarded_functions": [],
-      "object_sha256": "c0809ea45a90d66d9086406904620c625d238c418f84c4eb7276269c2163f0c0",
-      "linked_sha256": "f577edecb6b3bdfd79fc183154b91f774025b6bf1d9c96e22000ebffc0f288a9"
-    },
-    {
       "id": "light_transforms",
       "category": "reconstructed_game",
-      "functions": 8,
-      "code_bytes": 416,
+      "functions": 13,
+      "code_bytes": 896,
       "compiler_family": "ProDG",
       "compiler_version": "3.8.1",
       "compiler_flags": [
@@ -19447,8 +19428,8 @@
       ],
       "strip_unused": false,
       "discarded_functions": [],
-      "object_sha256": "289752fc8f3d4a5574b7b2dc4344be7ee09ae416cac675b2dd027227487ddf79",
-      "linked_sha256": "32e3e696eaa63135473c9e426b7a120ec26f36e37adeaff0f0f41cd3d21e01ea"
+      "object_sha256": "218124b056550d997deabd8da442bf15e44042229bd15c6e56bfe5c7d308a460",
+      "linked_sha256": "782f8e55c0a5823dd12f837cd8e913409583407cf982694a7750cf92336b1500"
     },
     {
       "id": "light_axes",
@@ -49152,27 +49133,6 @@
             "size": 120,
             "kind": "function",
             "name": "BeginUpdate__6CLightf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130458",
-            "size": 228,
-            "kind": "function",
-            "name": "Attach__6CLightR10ISceneNodeP7CMatrixUi",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8013053c",
-            "size": 76,
-            "kind": "function",
-            "name": "Detach__6CLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130588",
-            "size": 168,
-            "kind": "function",
-            "name": "IsVisible__C6CLightR12CDrawContext",
             "evidence": "adjacent-compiler-markers"
           },
           {

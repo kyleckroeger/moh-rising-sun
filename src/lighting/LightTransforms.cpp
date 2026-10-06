@@ -1,4 +1,36 @@
 #include "Light.h"
+#include "Volume.h"
+void CLight::AttemptUpdate(float) {}
+void CLight::CommitUpdate() {}
+// Follow node from now on: keep the given offset, or use an identity offset and
+// take the node's world matrix at once; then observe the node and move under it.
+int CLight::Attach(ISceneNode &node, CMatrix *offset, unsigned int slot) {
+    attachSlot = slot;
+    if (offset) {
+        attachTransform = *offset;
+    } else {
+        attachTransform.GetSlot(0);
+        node.GetTMLocalToWorld(localToWorld);
+    }
+    Assign(&node);
+    parent = &node;
+    g_scene.Remove(*this);
+    g_scene.Add(*this, &node);
+    return 1;
+}
+// Stop observing and following the parent.
+int CLight::Detach() {
+    Assign(0);
+    parent = 0;
+    return 1;
+}
+// Test a sphere of the light's radius around its position.
+int CLight::IsVisible(CDrawContext &context) const {
+    CVector3 position;
+    GetPosition(position);
+    CVolSphere sphere(radius, position);
+    return sphere.TestVisibility(context);
+}
 void CLight::Reset() { localToWorld.GetSlot(0); }
 void CLight::PreTransform(const CMatrix &matrix) {
     CMatrix::s_TempMat = localToWorld;

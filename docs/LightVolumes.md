@@ -1,8 +1,8 @@
 # Light volumes and scene lights
 
 `src/lighting/` reconstructs seven `CLightVolumeManager` methods (752 executable
-bytes) and 28 `CLight`, `CPropertyAnimLight`, `CInstancedAnimLight` and
-`CAnimLightManager` functions (1,384 bytes) from the pinned GR8E69 executable. Claude Code assisted the analysis and
+bytes) and 31 `CLight`, `CPropertyAnimLight`, `CInstancedAnimLight` and
+`CAnimLightManager` functions (1,856 bytes) from the pinned GR8E69 executable. Claude Code assisted the analysis and
 verification. The [BPD evidence](BPD.md) supplies the light-volume prefix used here.
 
 ## Accepted fragments
@@ -126,8 +126,7 @@ float at `+0xd8` and the radius at `+0xdc`; storage between is not declared.
 | --- | --- | ---: | --- |
 | `light_destroy` | `CLight::Destroy` (empty) | 4 | None |
 | `light_default_volume` | `GetDefaultLightVolume` returns the global `g_DefaultLightVolume` | 12 | None |
-| `light_update_stubs` | `AttemptUpdate`, `CommitUpdate` (empty) | 8 | None |
-| `light_transforms` | `Reset`, `PreTransform`, `Transform`, `SetTMLocalToWorld`, `SetPosition`, `SetBasis`, `Move`, `Rotate` | 416 | None |
+| `light_transforms` | `AttemptUpdate`, `CommitUpdate` (empty), `Attach`, `Detach`, `IsVisible`, `Reset`, `PreTransform`, `Transform`, `SetTMLocalToWorld`, `SetPosition`, `SetBasis`, `Move`, `Rotate` | 896 | 4 bytes at `0x802a79c0` |
 | `light_axes` | `Orthonormalize`, `GetTMLocalToWorld`, `GetPosition`, `GetRightward`, `GetForward`, `GetUpward` | 400 | 16 bytes at `0x802a79dc` |
 | `anim_light` | `CPropertyAnimLight` destructor, `InitFromProperty`, `Destroy` | 112 | None |
 | `instanced_anim_light` | `CInstancedAnimLight` constructor and `Destroy` | 120 | None |
@@ -151,11 +150,21 @@ count shape as the particle-system pool; each `Destroy` overload unlinks the lig
 through the link at `+0xf0` without a membership check and pushes it onto the free
 list. The manager's earlier storage and base classes are not declared.
 
-The unaccepted `CLight::BeginUpdate` and `Detach` establish two more fields:
-`BeginUpdate` asks the object at `+0xc0` for its world matrix (virtual slot 19),
-stores it in the matrix at `+0x40`, and multiplies the matrix at `+0x80` onto it;
-`Detach` unlinks the observer, clears `+0xc0` and the subject pointer, and returns
-1. The header names them `parent` and `attachTransform`.
+`Attach(node, offset, slot)` stores the slot at `+0xc4`, copies the offset into
+the matrix at `+0x80` or, without one, sets that matrix to identity and copies the
+node's world matrix (virtual slot 19) into `+0x40`. It then observes the node,
+stores it at `+0xc0`, moves the light under it in `g_scene` (`Remove`, then
+`Add`) and returns 1. `Detach` stops observing, clears `+0xc0` and returns 1. The
+unaccepted `CLight::BeginUpdate` copies the parent's world matrix into `+0x40` and
+multiplies the `+0x80` matrix onto it each update. The header names these fields
+`attachSlot`, `parent` and `attachTransform`.
+
+`IsVisible` builds a `CVolSphere` of the light's radius around its position and
+returns `CVolSphere::TestVisibility`. `include/game/Volume.h` declares only what
+this needs: `IVolume`'s inline destructor (it resets the table pointer, as the
+original `_._7IVolume` does) and `CVolSphere`'s radius at `+12` and center at
+`+16`, established by its `GetRadius`, `SetRadius`, `GetExtents` and 32-byte
+`Create`. Other `IVolume` virtual slots are not declared.
 
 ## Animated lights (partly reconstructed)
 
@@ -185,8 +194,9 @@ reach only objects and characters, through `SetLightBlock`'s point-light step.
   is within about thirteen instructions of register and store scheduling.
 - **`CLight::BeginUpdate`** is within about six instructions (the register that
   holds `this` before the virtual call).
-- `GetVolume` (above), `Detach`, `IsVisible` (a `CVolSphere` temporary) and
-  `SetLightBlock` remain.
+- `GetVolume` (above) and `SetLightBlock` remain. With `IsVisible` accepted, the
+  constructor's constant pool now only waits on `Pitch`, `Roll` and `Yaw` to form a
+  contiguous fragment from `0x80130450` whose `.rodata` starts 8-aligned.
 
 ## Verification
 

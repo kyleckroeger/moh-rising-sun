@@ -32,7 +32,7 @@ class CLight : public IMovingSceneNode {
     CMatrix localToWorld;
     CMatrix attachTransform;  // Multiplied by the parent's world matrix in BeginUpdate.
     ISceneNode *parent;       // Cleared by Detach.
-    unsigned char unknown_c4[4];
+    unsigned int attachSlot;  // Attach's third argument.
     LightColor color;
     float field_d8;
     float radius;
@@ -51,6 +51,8 @@ class CLight : public IMovingSceneNode {
     void SetPosition(const CVector3 &);
     void SetBasis(const CVector3 &, const CVector3 &, const CVector3 &);
     void Move(const CVector3 &);
+    int Attach(ISceneNode &, CMatrix *, unsigned int);
+    int Detach();
     void Rotate(const CVector3 &, float);
     void Orthonormalize();
     void GetTMLocalToWorld(CMatrix &) const;
@@ -58,6 +60,7 @@ class CLight : public IMovingSceneNode {
     void GetRightward(CVector3 &) const;
     void GetForward(CVector3 &) const;
     void GetUpward(CVector3 &) const;
+    int IsVisible(CDrawContext &) const;
     CLight *AsLight();
     const CLight *AsLight() const;
     virtual int GetPropertyID();

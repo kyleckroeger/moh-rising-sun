@@ -18,11 +18,46 @@
   "sections": [
     {
       "name": ".text",
-      "address": "0x80130630",
-      "size": 416
+      "address": "0x80130450",
+      "size": 896
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a79c0",
+      "size": 4
     }
   ],
   "functions": [
+    {
+      "name": "AttemptUpdate__6CLightf",
+      "address": "0x80130450",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "CommitUpdate__6CLight",
+      "address": "0x80130454",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Attach__6CLightR10ISceneNodeP7CMatrixUi",
+      "address": "0x80130458",
+      "size": 228,
+      "binding": 1
+    },
+    {
+      "name": "Detach__6CLight",
+      "address": "0x8013053c",
+      "size": 76,
+      "binding": 1
+    },
+    {
+      "name": "IsVisible__C6CLightR12CDrawContext",
+      "address": "0x80130588",
+      "size": 168,
+      "binding": 1
+    },
     {
       "name": "Reset__6CLight",
       "address": "0x80130630",
@@ -82,7 +117,14 @@
     "SetFront__7CMatrixRC8CVector3": "0x8007ae44",
     "SetUp__7CMatrixRC8CVector3": "0x8007ae60",
     "Translate__7CMatrixRC8CVector3": "0x8007af2c",
-    "Rotate__7CMatrixRC8CVector3f": "0x8007af60"
+    "Rotate__7CMatrixRC8CVector3f": "0x8007af60",
+    "TestVisibility__C10CVolSphereR12CDrawContext": "0x801377f0",
+    "_vt.10CVolSphere": "0x802e9520",
+    "_vt.7IVolume": "0x802e1c38",
+    "g_scene": "0x803e6d90",
+    "Remove__6CSceneR10ISceneNode": "0x80146e9c",
+    "Add__6CSceneR10ISceneNodeP10ISceneNode": "0x80146e08",
+    "AddObserver__8ISubjectP9IObserver": "0x8014ae44"
   },
   "discarded_functions": [],
   "undefined_in_discarded_code": []
