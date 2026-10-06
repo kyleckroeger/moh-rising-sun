@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 613664,
+    "matching_code_bytes": 614212,
     "total_executable_code_bytes": 2492032,
-    "percent": 24.625044943243104,
+    "percent": 24.647035030047768,
     "categories": {
-      "reconstructed_game": 221448,
+      "reconstructed_game": 221996,
       "restored_library": 392216
     },
-    "matching_functions": 2218
+    "matching_functions": 2230
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -535,7 +535,7 @@
     "config/GR8E69/particle_terminate.json": "a86b85ccc5b1c04cc5f96524f3f4aee0e0605b48bdb06a2997185d7dad795f87",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "69b8a3b750a5d0105e4c0cf7ef5def473190e52488cbdabf00dfea0c998af24d",
+    "config/GR8E69/project.json": "1ae6b1207d190840df4d09c3a83a80205e0b567c1436841fa4e9d912ee93940c",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -788,6 +788,13 @@
     "config/GR8E69/thrown_collision_id.json": "04d24660bd9119a8a1e1f3ab63098d321f48395eaf774e07e78d90c255f397ef",
     "config/GR8E69/thrown_collision_light.json": "fdfd6732347b431c2ac9a3fd1a931f21fe5eb21c21321383bbbac597cb6dcd27",
     "config/GR8E69/thrown_setters.json": "02e1ce7099126fe919d35532bd92037630cdd0509363f68024c8d97863480977",
+    "config/GR8E69/trigger_class_queries.json": "04f920434d465df34440d49bc465c126e67d17658789ebd75ad202457be41b17",
+    "config/GR8E69/trigger_crc.json": "57cd002698d440841e4fb02835924dc36c0243c2405dfaf44d33d792c3bb8767",
+    "config/GR8E69/trigger_field_offset.json": "93d865e0819dd4ba96e97db94628e893061def8364a0e0a8b2b822d5ee9e3740",
+    "config/GR8E69/trigger_field_position.json": "c665f68cb33d085bced8a95d9efd2c497942ef0a270cc7501958b1a220a07c8d",
+    "config/GR8E69/trigger_mg_flag.json": "65ef538055b6a3394f4c7e55ab5c6372e7495bf5a0b15232d52959f43d2dc679",
+    "config/GR8E69/trigger_point_test.json": "fbed27bb04bae97da04f0a9f8cf6cf9677e553207b7b28031038f4cef4074ee6",
+    "config/GR8E69/trigger_position_z.json": "eec30ac89d31e13a4242a958f3a1a703efc3cb388c8548071479bc20a93fda89",
     "config/GR8E69/vector_dot.json": "3a018e12136189037665a12a59e33136f545f8777e45cf4813501da197158016",
     "config/GR8E69/vector_methods.json": "912ec9c6f429286eddc371a4eb9c495967c3be2239f5254be03ef35402d749e5",
     "config/GR8E69/vi.json": "dd95046e01890cb33bdb0006c936ff713366f21401f267c9cf268a70ac8b8833",
@@ -1020,12 +1027,13 @@
     "include/game/SceneNode.h": "a31c87f9aa65fdc4875ace9676c36ddc42525bebd622fa84a92fe3f2cb5a6a37",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
-    "include/game/ScriptRuntime.h": "15aee0559d5ce4ea71a0302a203a8dbdc31b9833ab7196180ae69362ec2c1355",
+    "include/game/ScriptRuntime.h": "7077af61586d5579f509596d9dafbda28f58e528362ef04def82703a66ac56e9",
     "include/game/ScriptTimers.h": "58499aef9e474fcee6e5ee4c7fc1bd63a02f8dd17e678e3e936dae2acc2a4c25",
     "include/game/StringCRC.h": "3940d0af2ade9e671b10c5bb1ef12705a7322101b231aae92cfd2aab4a07fa31",
     "include/game/TARExtension.h": "cf1f48aa0be63a29babdba7f53c58439facb94141d7e04d0d32fcc878bad2cb3",
     "include/game/TevStage.h": "47aaf3de5425dace0c30e2852896a9494f78ab4a4dcaad6be03d4aa4204d7466",
     "include/game/TevStageInlines.h": "03b19716c4d88b4eb2f3c74cdf2040ca0bb6c43e842d1eefc2c8bd148a278645",
+    "include/game/TriggerObject.h": "d168f74c7d63598db941d214e88e3ec641b656ab545b21aa49dfaa14790b08f5",
     "include/game-containers/AlgorithmTypes.h": "a4959e24b9ab8edd66054b63ed6d53516aebc500f71f821e27babbf931b8d51a",
     "include/game-containers/ContainerTypes.h": "9a676b3cfa6794b828f4916a9ce252e00ac4913c5379a1c37bd5e5f1db7c2a2b",
     "include/game-containers/ResourceTypes.h": "6f63038334ba47ea545e0994a455fbd01b1fdb6aa3b6bf155de630e9ede05c68",
@@ -2016,6 +2024,13 @@
     "src/stlport/tree_impl.h": "a20d4ffe6b46823cc4dceeba30bdd7aa285453aedd811b72e698ced00a4e502b",
     "src/string_crc.cpp": "fd942a8cef3597b73ede9a98e461447854127fb60411d49b2d5edac94da9e6c0",
     "src/sys_memory.cpp": "410ee07c9718afe0881a5f14e4c15815cd33bb035d05b19ad6cf4135dae323d8",
+    "src/triggers/TriggerCRC.cpp": "63a73103ce5d533542444f8cf0e72cfe2a9465d0dd683453594c1445f3314d88",
+    "src/triggers/TriggerClassQueries.cpp": "a255ba4b654549127c92f4aa12259953c16deaa90ea143ee9095ffa183ca3196",
+    "src/triggers/TriggerFieldOffset.cpp": "975f36f14daba01860762fe00e01f5b8bd3d06be1030aa827d15d7d2ccbc75e3",
+    "src/triggers/TriggerFieldPosition.cpp": "58fdd0a8e43de5b0eb6b91b34535ece24541b1d62636cfa6f7e685123a65ef1c",
+    "src/triggers/TriggerMGFlag.cpp": "123c5d4300b4a5dfce512a895bd83eb718d3098c3a4d33dab915b5236bb2ea9b",
+    "src/triggers/TriggerPointTest.cpp": "6476383c9da337c1c51527cfd0eb81f3dac75ea87ca9d3cf6841676d3405f945",
+    "src/triggers/TriggerPositionZ.cpp": "8133df34772c29939b958d590f5c7d8edc4dee3766866058b6ff3dbe024cefc1",
     "tools/audit.py": "42f9dd301ef76d300f0cad2f791ddbcac862418b6532e252fc38c02d1a222245",
     "tools/baseline.py": "9705053a0b99d969062f336b609a5ea4e0e5bc354d5619ecb9be6698530b314c",
     "tools/code_map.py": "1bb7545aef44792f54bfe21539f3e1ca2a61f14c57b8ddb81c342cf44a525901",
@@ -19516,6 +19531,132 @@
       "discarded_functions": [],
       "object_sha256": "15cb104cf978aecbbb6b8ce69f637f9636a06fad06f23f34fc1018b2c243b0a2",
       "linked_sha256": "889a9401d765d409870885ae14aac69b8937cd05ef5964e160646c1fa7fdcd70"
+    },
+    {
+      "id": "trigger_mg_flag",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 52,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "076ab2256c46fc634919b9b3600fa291012b1eff47e582b0146e12c92fce528e",
+      "linked_sha256": "0bb0e6af23570ed662bc77999597b60ad526e7c551f5e98878ab8806b5f53900"
+    },
+    {
+      "id": "trigger_field_offset",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 96,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "393b83c8a59bc4aeea3e6ef65055fdba69c99c76a37eec6fed078542d88adb56",
+      "linked_sha256": "560d5fd7c23b57ec5ce0ec41a874a5b2392ce05d9b84b2b670b3bb31e176e3b6"
+    },
+    {
+      "id": "trigger_crc",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 32,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "a876961119979ce66b90c163d53a5cbb8e689ee9bfb47515a0d1c01d7c053d0f",
+      "linked_sha256": "dd833134b909f0f7ee8a51b7f7271758dd3a55646a3ec678d7cb25203940683c"
+    },
+    {
+      "id": "trigger_field_position",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 160,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "28a6cb9ef3d96c2ee58ca7262ac043b5a9f4a9ad4dbb55767dbdf45ae59735c2",
+      "linked_sha256": "4cb9e6a6774a68b4247d2a75039e86f08f814eeaef9d9eb3184e3a8bc7e5bcc7"
+    },
+    {
+      "id": "trigger_position_z",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 36,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "d9536de021472402e3b443b85d65fcb4650db1198773f8f5ef362421a8c96ff9",
+      "linked_sha256": "e676f616daec5caa524f384804e93191f1d8c49f0f6015368cbb54309f52bd21"
+    },
+    {
+      "id": "trigger_class_queries",
+      "category": "reconstructed_game",
+      "functions": 3,
+      "code_bytes": 136,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "ae78a6dd4d9a12dd0ca4ed508caed067227f88c53b538da124c19b0b709e50e7",
+      "linked_sha256": "2062d86adff87352949c9436d80a3f9ece3ea735e387f428f2275412037ac81b"
+    },
+    {
+      "id": "trigger_point_test",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 36,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "dc0593c8b379e7723a5fee906ef55e8f89b121638bcf1b833f4059fdfb7ce7a7",
+      "linked_sha256": "7a1b230ff6c9e9a13dc9149a23569563dd7337675cb38fc3f81f8b4c14fe58fc"
     }
   ],
   "code_map": {
@@ -47581,20 +47722,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80122270",
-            "size": 40,
-            "kind": "function",
-            "name": "MarkMGAsUsed__FP13TriggerObjectb",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80122298",
-            "size": 12,
-            "kind": "function",
-            "name": "IsMGUsed__FP13TriggerObject",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x801222a4",
             "size": 284,
             "kind": "function",
@@ -47637,20 +47764,6 @@
             "evidence": "local-file-symbol"
           },
           {
-            "address": "0x801227e4",
-            "size": 60,
-            "kind": "function",
-            "name": "GetFieldOffset__C13TriggerObjectPCc",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80122820",
-            "size": 36,
-            "kind": "function",
-            "name": "GetData__C13TriggerObjecti",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80122844",
             "size": 108,
             "kind": "function",
@@ -47679,13 +47792,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x801229f8",
-            "size": 32,
-            "kind": "function",
-            "name": "GetCRC__C13TriggerObjectPCc",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80122a18",
             "size": 156,
             "kind": "function",
@@ -47707,20 +47813,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80122bfc",
-            "size": 80,
-            "kind": "function",
-            "name": "HasField__C13TriggerObjectPCc",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80122c4c",
-            "size": 80,
-            "kind": "function",
-            "name": "GetPosition__C13TriggerObjectR8CVector3",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80122c9c",
             "size": 148,
             "kind": "function",
@@ -47732,13 +47824,6 @@
             "size": 164,
             "kind": "function",
             "name": "GetMatrix__C13TriggerObjectR7CMatrix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80122dd4",
-            "size": 36,
-            "kind": "function",
-            "name": "SetPositionZ__13TriggerObjectf",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -47781,27 +47866,6 @@
             "size": 104,
             "kind": "function",
             "name": "GetChildScript__C13TriggerObject",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801230f4",
-            "size": 36,
-            "kind": "function",
-            "name": "GetLegacyField__C13TriggerObjecti",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80123118",
-            "size": 56,
-            "kind": "function",
-            "name": "GetClassName__C13TriggerObject",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80123150",
-            "size": 44,
-            "kind": "function",
-            "name": "IsAnimatedLight__C13TriggerObject",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -47897,13 +47961,6 @@
             "size": 212,
             "kind": "function",
             "name": "UniquePropertyEnterHandler__FP13TriggerObjectP10BSGO_Basicb",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80124950",
-            "size": 36,
-            "kind": "function",
-            "name": "IsPointInTrigger__FRC8CVector3R13TriggerObject",
             "evidence": "adjacent-compiler-markers"
           },
           {

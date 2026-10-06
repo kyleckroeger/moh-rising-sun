@@ -775,7 +775,14 @@
     "thrown_collision_id.json",
     "thrown_setters.json",
     "thrown_collision_light.json",
-    "thrown_accessors.json"
+    "thrown_accessors.json",
+    "trigger_mg_flag.json",
+    "trigger_field_offset.json",
+    "trigger_crc.json",
+    "trigger_field_position.json",
+    "trigger_position_z.json",
+    "trigger_class_queries.json",
+    "trigger_point_test.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
