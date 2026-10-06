@@ -83,8 +83,8 @@ block is the private 112-byte `g_MOHLightBlock`.
 
 `SetLightBlock(BPDLightVolume *, CDrawContext *, float)` is static. Its only
 callers are `CAnimObject::DrawMesh`, `CStaticMesh::DrawMesh` and
-`CStaticObject::ExecuteDraw`, so it lights objects and characters, not level
-geometry. It fills a global block at `0x8032d1e0`: three light slots with a
+`CStaticObject::ExecuteDraw`: it is the lighting path for objects and characters.
+Level geometry uses a separate path (see below). It fills a global block at `0x8032d1e0`: three light slots with a
 direction at `slot * 16` and a color at `0x30 + slot * 16`, and an ambient color
 at `0x60`. The fourth component of each color is the clamped float argument.
 Read from the original instructions:
@@ -180,8 +180,21 @@ the radius (`+220`) to the record's signed halfword at `+46` divided by 16.
 integer, using the mode byte at record `+112` and the count at `+114`, then copies
 the four bytes of that frame's word from the color array at `+116` to the floats
 at `+200`-`+212`. `PatchUpAnimLight` converts the per-frame floats at `+120` but
-not the color words, so the bytes are used in file order. Animated lights therefore
-reach only objects and characters, through `SetLightBlock`'s point-light step.
+not the color words, so the bytes are used in file order. Animated lights reach
+objects and characters through `SetLightBlock`'s point-light step, and level
+geometry through the compartment light cache.
+
+## Level geometry (not reconstructed)
+
+`CCompartment::Draw` walks the same scene-light list. For each light it transforms
+the light's position into the compartment's box axes and accumulates the squared
+distance outside the box's half-extents; a light whose radius (`CLight` `+0xdc`)
+reaches the box is recorded in a bit mask and added with
+`CLightCache::CLightBlock::AddLight`. `AddLight` keeps at most sixteen 32-byte
+entries per compartment: the color clamped to 0-255, the radius, the position and
+1.0. The mask is then passed to `CCompartment::CullTreeNodes` for the partition
+tree; `CActiveLightIndices::SetLightIndex` suggests per-group light slots. The
+shading applied to level surfaces was not read.
 
 ## Next work
 
