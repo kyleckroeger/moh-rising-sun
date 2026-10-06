@@ -46,4 +46,62 @@ class CBullet : public IMovingSceneNode {
     virtual void SetExplosionParticleSystem(unsigned long, EXPLOSION_PARTICLE_TYPE);
 };
 
+// Scoped record views: only the fields the accessors read are named.
+struct ProjectileBulletProperties_struct {
+    unsigned char unknown_00[76];
+    float damage;
+};
+struct ThrownBulletProperties_struct {
+    unsigned char unknown_00[92];
+    float damage;
+    float blastRadius;
+};
+
+// Bit 28 (counting from the least significant bit) of the word at +0x10c.
+struct ProjectileBulletFlags {
+    unsigned int unknown_31_29 : 3;
+    unsigned int drawForward : 1;
+    unsigned int unknown_low : 28;
+};
+
+class CProjectileBullet : public CBullet {
+  public:
+    unsigned char unknown_b8[0xc8 - 0xb8];
+    ProjectileBulletProperties_struct *properties; // Stored by Init.
+    unsigned char unknown_cc[0xe0 - 0xcc];
+    ISceneNode *firedBy;                            // Returned by GetFiredBy.
+    unsigned char unknown_e4[0x10c - 0xe4];
+    ProjectileBulletFlags flags;
+
+    EClsnId GetCollisionId() const;
+    float GetDamage() const;
+    ISceneNode *GetFiredBy() const;
+    CProjectileBullet *AsProjectile();
+    void SetExclusionPair(ISceneNode *);
+    void SetDamage(float);
+    virtual void SetDrawForward(bool);
+};
+
+class CThrownBullet : public CBullet {
+  public:
+    unsigned char unknown_b8[0xc8 - 0xb8];
+    ThrownBulletProperties_struct *properties;     // Stored by Init.
+    unsigned char unknown_cc[0xe0 - 0xcc];
+    ISceneNode *firedBy;                            // Returned by GetFiredBy.
+    unsigned char unknown_e4[0x254 - 0xe4];
+    CLight *attachedLight;
+    unsigned char unknown_258[0x264 - 0x258];
+    unsigned long explosionParticleSystems[1];      // Indexed by type; count unknown.
+
+    EClsnId GetCollisionId() const;
+    float GetDamage() const;
+    ISceneNode *GetFiredBy() const;
+    CThrownBullet *AsThrown();
+    void SetDamage(float);
+    void SetBlastRadius(float);
+    void SetExplosionParticleSystem(unsigned long, EXPLOSION_PARTICLE_TYPE);
+    CLight *GetAttachedLight() const;
+    virtual unsigned int IsCollisionEnabled() const;
+};
+
 #endif

@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 613512,
+    "matching_code_bytes": 613664,
     "total_executable_code_bytes": 2492032,
-    "percent": 24.618945503107504,
+    "percent": 24.625044943243104,
     "categories": {
-      "reconstructed_game": 221296,
+      "reconstructed_game": 221448,
       "restored_library": 392216
     },
-    "matching_functions": 2202
+    "matching_functions": 2218
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -535,7 +535,11 @@
     "config/GR8E69/particle_terminate.json": "a86b85ccc5b1c04cc5f96524f3f4aee0e0605b48bdb06a2997185d7dad795f87",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "d648574f3cf785eb6ff7b15acb53a14ca8ac0472cde1747f1e92582e5e01ddd7",
+    "config/GR8E69/project.json": "69b8a3b750a5d0105e4c0cf7ef5def473190e52488cbdabf00dfea0c998af24d",
+    "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
+    "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
+    "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
+    "config/GR8E69/projectile_set_damage.json": "0e47f354edcbd0b55242d939011e514111aa1f9b87d67194f2a9326b50dccd92",
     "config/GR8E69/scene_node_axis_defaults.json": "092b0d540e402069c588985246b692817db1af99a9d9c2cde0f3b1bfac31d590",
     "config/GR8E69/scene_node_centroid.json": "417789c5857125f62e4595e59f3e52ed74ac434de058b0123549164ceef3cd8b",
     "config/GR8E69/scene_node_destructor.json": "2421437a4581f16904fb69d4f06b23754bc5d337e70bdec86806d8f9f3f370a5",
@@ -780,6 +784,10 @@
     "config/GR8E69/string_crc.json": "d56c053467a7985f3635bbf7e9a4ae344af88e23d604153f71d4c6848c7b0d92",
     "config/GR8E69/sys_memory_operators.json": "593181060ad84668f2fdb91654d17a410ae9aaaceec9493f698e682fe683b96b",
     "config/GR8E69/target.json": "48fb9548419f5549d49ebba1794d3193398e58c37c0d15569e6ed1810d8adb8f",
+    "config/GR8E69/thrown_accessors.json": "6b256ab3fbe4b068539a2e125fee54b0d77a57f5580e2c54d92df8ccbddfb6ba",
+    "config/GR8E69/thrown_collision_id.json": "04d24660bd9119a8a1e1f3ab63098d321f48395eaf774e07e78d90c255f397ef",
+    "config/GR8E69/thrown_collision_light.json": "fdfd6732347b431c2ac9a3fd1a931f21fe5eb21c21321383bbbac597cb6dcd27",
+    "config/GR8E69/thrown_setters.json": "02e1ce7099126fe919d35532bd92037630cdd0509363f68024c8d97863480977",
     "config/GR8E69/vector_dot.json": "3a018e12136189037665a12a59e33136f545f8777e45cf4813501da197158016",
     "config/GR8E69/vector_methods.json": "912ec9c6f429286eddc371a4eb9c495967c3be2239f5254be03ef35402d749e5",
     "config/GR8E69/vi.json": "dd95046e01890cb33bdb0006c936ff713366f21401f267c9cf268a70ac8b8833",
@@ -952,7 +960,7 @@
     "include/dolphin-sdk/macros.inc": "4e92f656bb511fbb45d66081291371c47ceba7bce9c55f86871116203cf38a46",
     "include/dolphin-sn/dolphin/types.h": "ca31e0bbb97e93ca4713654367df29578f6392f3acaf40ca68bc1de1c913af93",
     "include/game/BPD.h": "0b35cb4e9be9dbf3be60fb20019f0500b0667671505801d6afd698573bf0f111",
-    "include/game/Bullet.h": "7c768b4bac61a2b1223e777e9c033faa4137a93e088c04319b37f65bc74e6cd5",
+    "include/game/Bullet.h": "1373122fad91fef393ff8991fb11139e807b46dc0ca9bf98b58def2d4f347718",
     "include/game/CMatrix.h": "59b6809fe696700ad004ac77d35676495ff649fb2d9bebfa4f9300ee9197014c",
     "include/game/CVector3.h": "6620724fd56e37259e31d274061127a79d1184446804c122f2d0a0542921cc52",
     "include/game/Camera.h": "226257f70f2360cef00394559a793815cdb4c93e419f6c4a21acfb08ae7379cb",
@@ -1169,6 +1177,14 @@
     "src/bpd/light_volume.cpp": "c22922ba3e285d879080bb5c45ebb5030b1db234219d2f12b920c79b8aaaf1bd",
     "src/bullets/BulletBase.cpp": "de919c365b4a23044f2996c4fa3f3f082f72d669bd28abd699741a58af15b38a",
     "src/bullets/BulletDefaults.cpp": "4a4f7513a432cccdf3ef03fa86ea740e75f99397054dde976b3e6e3050c8a678",
+    "src/bullets/ProjectileAccessors.cpp": "60d0d7620bf7c3723851e848fc6e154349f9edb6ad3aea9938ab416083d9b51a",
+    "src/bullets/ProjectileCollisionId.cpp": "e2099b55d071eaa139984b86c61c2178f76c457820b99e203450a3d7590f5e93",
+    "src/bullets/ProjectileExclusionPair.cpp": "3d23978cd6f335ab1d307a83b977fbed2e333144d506ab9b0a770908d82438aa",
+    "src/bullets/ProjectileSetDamage.cpp": "b5f0ffb726f4b76751273f7129ac8221202e7852782d26ad8bf335c4ea8cbd0a",
+    "src/bullets/ThrownAccessors.cpp": "75f15567da1e4cd07646edd4c9661481a1e24c371089b7de4ee4e29c48f683cf",
+    "src/bullets/ThrownCollisionId.cpp": "c110604bd231f02c32524d8569fa009c16e50951be9c301d6e5a54059414f480",
+    "src/bullets/ThrownCollisionLight.cpp": "773de461b874b6bb1b3a066e0ac5a8124c5df3a0ac5595a58ebb984375882d56",
+    "src/bullets/ThrownSetters.cpp": "53bd8f3d5543f02d514a21a46422d909dc36d86b9f9058bef0b5e99b6b703dd4",
     "src/camera/get_transform.cpp": "e3033e1c97452a331b5d46e6cdca18fba8f60ad43af2220d9cdc7bddbc12d468",
     "src/camera/projection.cpp": "4ed326a09aac21ee19656d0c6538dbe65908d865e795f163ae092f67e9972767",
     "src/camera/transforms.cpp": "4f1d6ff74f4f9d296d64a95495ab90f53f98010031fde9b051b8a5be89c7278a",
@@ -19356,6 +19372,150 @@
       "discarded_functions": [],
       "object_sha256": "595f68f5ffae396bae9cd980601563db50fce9ae51d5e76a629030099a2672d9",
       "linked_sha256": "2fd6eec598ec21f562a9e80e87b117130411fbb4746177c6a9c2f9de27e87a36"
+    },
+    {
+      "id": "projectile_collision_id",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 8,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "74be42c852cf1bc89eb9267f331c4d40e16820a1fd88e32a774ee4ea0bd993cd",
+      "linked_sha256": "bdcb81c8f3792ca534d180bf3e823dc0f4c15fd1bba6d6768e91b115d110d3e7"
+    },
+    {
+      "id": "projectile_exclusion_pair",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 4,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "01d16ded29228d14d1e72c2b9dd976602f99c1636a8be036ef9a211620ac0f0d",
+      "linked_sha256": "125bafbf5cbc03072d48c541c30ef1d45c65fc23f60caa0775673c5266b931f3"
+    },
+    {
+      "id": "projectile_set_damage",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 12,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "5ea45487db806bb1665e5d39dec84b805980990fef0872c15b8b4180c551b184",
+      "linked_sha256": "85b6b7540fddc49f8769d828102c10cdd92988159f6fefd6b956adbed4f3e7e4"
+    },
+    {
+      "id": "projectile_accessors",
+      "category": "reconstructed_game",
+      "functions": 4,
+      "code_bytes": 40,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "d52b0af5c172dac18810b2f1e73b72e05cb6130eb5e841e994b39e990641e707",
+      "linked_sha256": "7ab891bd5c24d07cd5fe60e5a8cd658407de74cec0b7968d48b4fee7b8f47333"
+    },
+    {
+      "id": "thrown_collision_id",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 8,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "e66c324a4e6182d6bf5e9b8321f3cb785ccd353cd2e853879a0270bee4012de2",
+      "linked_sha256": "6c93da2d302de9302b8ed208603a162a3c3ad540dba8587de7c7400180cd8c24"
+    },
+    {
+      "id": "thrown_setters",
+      "category": "reconstructed_game",
+      "functions": 3,
+      "code_bytes": 40,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "cce13ea755afc3359f30dbb121b1b0173a9c5d9e57ac30752588556e2862c9a4",
+      "linked_sha256": "1636e8f06ebdc3159688cde2c5b4b1f2078bf61aad31586e10041ee53e5c42c7"
+    },
+    {
+      "id": "thrown_collision_light",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 16,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "6ba880a75d4c50035eeaa8e860d2b7100136c564ccb8693acc6eca28094feb5c",
+      "linked_sha256": "25b7a88dfd10968d120e4d918def9da454fdc94b2d2216540ffe757ebfe83170"
+    },
+    {
+      "id": "thrown_accessors",
+      "category": "reconstructed_game",
+      "functions": 3,
+      "code_bytes": 24,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "15cb104cf978aecbbb6b8ce69f637f9636a06fad06f23f34fc1018b2c243b0a2",
+      "linked_sha256": "889a9401d765d409870885ae14aac69b8937cd05ef5964e160646c1fa7fdcd70"
     }
   ],
   "code_map": {
@@ -51782,13 +51942,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8014e30c",
-            "size": 8,
-            "kind": "function",
-            "name": "GetCollisionId__C17CProjectileBullet",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8014e314",
             "size": 264,
             "kind": "function",
@@ -51817,24 +51970,10 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8014ecdc",
-            "size": 4,
-            "kind": "function",
-            "name": "SetExclusionPair__17CProjectileBulletP10ISceneNode",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8014ece0",
             "size": 92,
             "kind": "function",
             "name": "GetVelocity__17CProjectileBulletR8CVector3",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8014ed3c",
-            "size": 12,
-            "kind": "function",
-            "name": "SetDamage__17CProjectileBulletf",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -51856,34 +51995,6 @@
             "size": 8,
             "kind": "function",
             "name": "GetWorldBoundingVolume__C17CProjectileBulletQ210ISceneNode11EVolumeType",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8014ed80",
-            "size": 12,
-            "kind": "function",
-            "name": "GetDamage__C17CProjectileBullet",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8014ed8c",
-            "size": 8,
-            "kind": "function",
-            "name": "GetFiredBy__C17CProjectileBullet",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8014ed94",
-            "size": 4,
-            "kind": "function",
-            "name": "AsProjectile__17CProjectileBullet",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8014ed98",
-            "size": 16,
-            "kind": "function",
-            "name": "SetDrawForward__17CProjectileBulletb",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -52200,13 +52311,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x801533b8",
-            "size": 8,
-            "kind": "function",
-            "name": "GetCollisionId__C13CThrownBullet",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x801533c0",
             "size": 1696,
             "kind": "function",
@@ -52291,27 +52395,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80153dd8",
-            "size": 12,
-            "kind": "function",
-            "name": "SetDamage__13CThrownBulletf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80153de4",
-            "size": 12,
-            "kind": "function",
-            "name": "SetBlastRadius__13CThrownBulletf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80153df0",
-            "size": 16,
-            "kind": "function",
-            "name": "SetExplosionParticleSystem__13CThrownBulletUlQ27CBullet23EXPLOSION_PARTICLE_TYPE",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80153e00",
             "size": 8,
             "kind": "function",
@@ -52326,45 +52409,10 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80153e10",
-            "size": 8,
-            "kind": "function",
-            "name": "IsCollisionEnabled__C13CThrownBullet",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80153e18",
-            "size": 8,
-            "kind": "function",
-            "name": "GetAttachedLight__C13CThrownBullet",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80153e20",
             "size": 8,
             "kind": "function",
             "name": "SetLightVolumeTransitionDuration__13CThrownBulletf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80153e28",
-            "size": 12,
-            "kind": "function",
-            "name": "GetDamage__C13CThrownBullet",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80153e34",
-            "size": 8,
-            "kind": "function",
-            "name": "GetFiredBy__C13CThrownBullet",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80153e3c",
-            "size": 4,
-            "kind": "function",
-            "name": "AsThrown__13CThrownBullet",
             "evidence": "adjacent-compiler-markers"
           },
           {

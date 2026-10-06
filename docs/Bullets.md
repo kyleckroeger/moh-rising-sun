@@ -1,6 +1,7 @@
 # Bullets
 
-`src/bullets/` reconstructs 22 `CBullet` functions (520 executable bytes) from the
+`src/bullets/` reconstructs 38 `CBullet`, `CProjectileBullet` and `CThrownBullet`
+functions (672 executable bytes) from the
 pinned GR8E69 executable. Claude Code assisted the analysis and verification.
 
 ## Declarations
@@ -31,12 +32,26 @@ float, in that order. `Draw` calls the empty global `BulletBaseDraw`. The base
 `GetDamage` returns 0, `GetScriptBulletType` -1, and the casts and `GetFiredBy`
 null; the other defaults are empty.
 
-## Damage in the derived classes (not reconstructed)
+## Derived accessors
 
-`CProjectileBullet::GetDamage`/`SetDamage` read and write the float at `+76` of the
-record that the bullet's word at `+0xc8` points to; `CThrownBullet` uses `+92` for
-damage and `+96` for the blast radius. `CThrownBullet::SetExplosionParticleSystem`
-stores the ID in a word array at `+612` indexed by the explosion type.
+`Init` stores its `ProjectileBulletProperties_struct` or `ThrownBulletProperties_struct`
+argument at `+0xc8`; the scoped record views name only the fields read below.
+
+| Manifest | Functions | Code bytes |
+| --- | --- | ---: |
+| `projectile_collision_id`, `thrown_collision_id` | `GetCollisionId` (both) return the collision ID at `+0x40` | 16 |
+| `projectile_exclusion_pair` | `CProjectileBullet::SetExclusionPair` (empty) | 4 |
+| `projectile_set_damage` | `SetDamage` writes record `+76` | 12 |
+| `projectile_accessors` | `GetDamage` (record `+76`), `GetFiredBy` (`+0xe0`), `AsProjectile`, `SetDrawForward` (bit 28 of the word at `+0x10c`) | 40 |
+| `thrown_setters` | `SetDamage` (record `+92`), `SetBlastRadius` (record `+96`), `SetExplosionParticleSystem` (word array at `+0x264` indexed by type) | 40 |
+| `thrown_collision_light` | `IsCollisionEnabled` (returns 1), `GetAttachedLight` (`+0x254`) | 16 |
+| `thrown_accessors` | `GetDamage` (record `+92`), `GetFiredBy` (`+0xe0`), `AsThrown` | 24 |
+
+`+0xe0` is named from `GetFiredBy`; `Init` reads it as a pointer and stores its
+`ISceneNode *` argument through it, so its exact type is not established. The
+bounding-volume getters (embedded 80-byte volumes at `+0x110`/`+0x160` and
+`+0x1a0`/`+0x1f0`) and `CThrownBullet::SetLightVolumeTransitionDuration` are not
+reconstructed.
 
 ## Verification
 

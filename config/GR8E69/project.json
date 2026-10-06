@@ -767,7 +767,15 @@
     "particle_initial_velocity_set.json",
     "particle_axes.json",
     "bullet_base.json",
-    "bullet_defaults.json"
+    "bullet_defaults.json",
+    "projectile_collision_id.json",
+    "projectile_exclusion_pair.json",
+    "projectile_set_damage.json",
+    "projectile_accessors.json",
+    "thrown_collision_id.json",
+    "thrown_setters.json",
+    "thrown_collision_light.json",
+    "thrown_accessors.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
