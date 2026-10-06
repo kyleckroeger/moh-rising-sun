@@ -739,10 +739,14 @@
     "script_timer_cancel.json",
     "particle_increment_seed.json",
     "particle_placement.json",
-    "particle_draw_enabled.json",
-    "particle_reset_halt.json",
     "particle_pool.json",
-    "mesh_particle_placement.json"
+    "mesh_particle_placement.json",
+    "particle_terminate.json",
+    "particle_destruction.json",
+    "particle_set_local_to_world.json",
+    "particle_scene_overrides.json",
+    "particle_stop.json",
+    "particle_procedural_cast.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

@@ -1,6 +1,8 @@
 #ifndef GAME_PARTICLE_RECIPE_H
 #define GAME_PARTICLE_RECIPE_H
+#pragma interface
 #include "CMatrix.h"
+#include "SceneNode.h"
 
 // Scoped GameCube storage views established by the recipe getters/setters.
 // Names of data members and helper types are descriptive. These are prefixes,
@@ -47,10 +49,40 @@ struct ParticleFlags {
 };
 // Only a packed four-byte color prefix is accessed; full CColor remains opaque.
 class CColor;
-// Scoped prefix through the flag word; inherited state and full size stay unknown.
-class CParticleSystem {
+class CParticleDef;
+class CParticleSystem;
+class MeshParticleSystem;
+// Virtual slots 89-107, in the order of the original IParticleSystem table at
+// 0x802e2048. Return types repeat the accepted overrides' scoped choices or are
+// void placeholders; data members are not declared.
+class IParticleSystem : public IMovingSceneNode {
   public:
-    unsigned char unknown_0[0x90];
+    virtual void Init(CParticleDef *);
+    virtual void Reload();
+    virtual void DeActivate();
+    virtual void Terminate();
+    virtual void Stop();
+    virtual void Start();
+    virtual unsigned int IsEternal() const;
+    virtual unsigned int IsActive() const;
+    virtual unsigned int IsDying() const;
+    virtual unsigned int IsMoving() const;
+    virtual unsigned int IsRotating() const;
+    virtual unsigned int IsDestroyable() const;
+    virtual void SetDestroyable(bool);
+    virtual CProcParticleDef *GetDef() const;
+    virtual void Profile(bool);
+    virtual CParticleSystem *AsProceduralParticleSystem();
+    virtual const CParticleSystem *AsProceduralParticleSystem() const;
+    virtual MeshParticleSystem *AsMeshParticleSystem();
+    virtual const MeshParticleSystem *AsMeshParticleSystem() const;
+};
+// Scoped view through the pool link. Storage after the 24-byte IObserver prefix
+// and before 0x90 belongs to unknown members of this class or its bases.
+// UseFade is the only virtual slot (108) this class adds.
+class CParticleSystem : public IParticleSystem {
+  public:
+    unsigned char unknown_18[0x90 - 0x18];
     CMatrix localToWorld;
     unsigned char unknown_d0[0x70];
     CProcParticleDef *definition;
@@ -62,24 +94,31 @@ class CParticleSystem {
     ParticleFlags flags;
     unsigned char unknown_174[12];
     CParticleSystem *next;
+    virtual ~CParticleSystem();
+    virtual void MarkForDestruction(int);
+    virtual void Destroy();
     static CParticleSystem *AllocSystem(int);
     static void ReleaseSystem(CParticleSystem *);
     void *operator new(unsigned int, void *);
     void operator delete(void *);
     void Start();
     void DeActivate();
+    void Terminate();
+    void Stop();
     unsigned int IsEternal() const;
     unsigned int IsActive() const;
     unsigned int IsDying() const;
     unsigned int IsMoving() const;
     unsigned int IsRotating() const;
     unsigned int IsDestroyable() const;
-    unsigned int UseFade() const;
+    virtual unsigned int UseFade() const;
     void SetDestroyable(bool);
     CProcParticleDef *GetDef() const;
     void Profile(bool);
     void GetLocalToWorld(CMatrix &) const;
+    void SetLocalToWorld(const CMatrix &);
     void GetTMLocalToWorld(CMatrix &) const;
+    void SetTMLocalToWorld(const CMatrix &);
     void Orthonormalize();
     void GetParticleAlpha(float &, float &, float &) const;
     void GetParticleColor(CColor &, CColor &, CColor &, CColor &) const;
@@ -98,6 +137,10 @@ class CParticleSystem {
     int GetFogEnable() const;
     void SetParticleLifetime(float);
     unsigned int IsDrawEnabled() const;
+    IMovingSceneNode *AsMovingNode();
+    const IMovingSceneNode *AsMovingNode() const;
+    CParticleSystem *AsProceduralParticleSystem();
+    const CParticleSystem *AsProceduralParticleSystem() const;
     void Reset();
     void Halt();
 };

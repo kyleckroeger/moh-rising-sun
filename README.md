@@ -96,7 +96,7 @@ Run the scripts from any directory; all outputs remain inside this checkout. `ba
 | `src/eagl/` | Reconstructed rendering state and material drawing fragments; [evidence and remaining work](docs/Rendering.md) |
 | `src/eagl_anim/` | Reconstructed animation decoders, channels and support interfaces; [reference and evidence](docs/Animation.md) |
 | `src/eagl_loading/` | Reconstructed EAGL symbol pools and dynamic-loader fragments; [reference and evidence](docs/Loading.md) |
-| `src/particles/`, `src/flexprop/`, `src/string_crc.cpp` | Reconstructed [particle recipes, state, pool and clock helpers](docs/ParticleRecipes.md), [FlexProp lookup and string CRC](docs/FlexProp.md) |
+| `src/particles/`, `src/flexprop/`, `src/string_crc.cpp` | Reconstructed [particle recipes, state, pool and clock helpers](docs/ParticleRecipes.md) on the [recovered scene-node vtables](docs/SceneNode.md), [FlexProp lookup and string CRC](docs/FlexProp.md) |
 | `src/script/` | Reconstructed [all opcode handlers, script timers, message registrations, event lookup and music built-ins](docs/Script.md), guided by contributed PS2 research |
 | `src/bpd/`, `src/endian/` | Reconstructed [BPD/property conversion, scalar wrappers and lighting-volume point test](docs/BPD.md) |
 | `src/observers/` | Reconstructed observers, weak pointers and destruction queue; [evidence](docs/Observers.md) |

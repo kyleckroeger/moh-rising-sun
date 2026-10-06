@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 609088,
+    "matching_code_bytes": 609452,
     "total_executable_code_bytes": 2492032,
-    "percent": 24.441419692845034,
+    "percent": 24.456026246853973,
     "categories": {
-      "reconstructed_game": 216872,
+      "reconstructed_game": 217236,
       "restored_library": 392216
     },
-    "matching_functions": 2054
+    "matching_functions": 2063
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -499,7 +499,7 @@
     "config/GR8E69/particle_def_loc_min.json": "1805aebb9a07a457c373f0941643e068868e64e1e450e91728186656fe5c1d75",
     "config/GR8E69/particle_def_vel_max.json": "bfc878c15bfc98c19663cc30f00a953f8c7bf6bb6e3ae50410d43434d79c4a3e",
     "config/GR8E69/particle_def_vel_min.json": "59c48834cae3759cb5398ce76183c19f035e1cd8534fdca92e62d99766d4bcab",
-    "config/GR8E69/particle_draw_enabled.json": "5cc7035087d353f64b66e1fa73f5baffc9f352bf91e5bd7fe31bdb43af27e99c",
+    "config/GR8E69/particle_destruction.json": "894e4c20a3e2df0eaa9724543e217f287ba5c6b513367053ee7b369f5ee5a0e7",
     "config/GR8E69/particle_emission.json": "95c8bcd2792c8c1e9a4d1b8d7792b3b51b7fd0507b6407dcaae918acf2e6cbe7",
     "config/GR8E69/particle_fade.json": "7465f986eb6ac20ea61cba09d9d7c38ac17b357507fd3f5eb9f76748be3d7994",
     "config/GR8E69/particle_flags.json": "8e5c1196caa809c6cdea9a3e337c6c4fee9f16e8f37a0777fe4d7cbe76478ad1",
@@ -511,14 +511,18 @@
     "config/GR8E69/particle_placement.json": "a5f7aa083fd093a154a466b1884b1c4528883dc52d118da6023e84d1b3e9c30b",
     "config/GR8E69/particle_pool.json": "7d9496174d8c32b2ee04f641d671f9ea3e5149dc84932c063cea14ad49e7cad6",
     "config/GR8E69/particle_position.json": "4c0edd0a1284a442f423277c4432ee2b9d86dc467828c86f32409976a1882712",
-    "config/GR8E69/particle_reset_halt.json": "c52ae69b5b0217fb7888165919fc6aa011ebece5fa1542e2a62df4e53bc60f5b",
+    "config/GR8E69/particle_procedural_cast.json": "4383a6c34a0881cccb5e4cb444642821a7638317ae451817e8c2b92017a92ddb",
     "config/GR8E69/particle_scalars.json": "27946549d2ada759e0b8af82d5da59f7df45f08d80438bd0d69a1c2978da122b",
+    "config/GR8E69/particle_scene_overrides.json": "70fc7c93c64a4fff428cd4c5c6c86649f428132734bd41b5a4d904f5b9a87218",
     "config/GR8E69/particle_seed_get.json": "e7ee4d7c4c186246e6a91b600c0c051c3425336545c1e3c34ab3de8595716b70",
     "config/GR8E69/particle_seed_set.json": "859796f09d5bb423b3dd6f4bb42832310428f6f2cc1849fdf3b5df4a8e5e8110",
+    "config/GR8E69/particle_set_local_to_world.json": "9c5795134d72905ef6b108887eae105e3b13ea9b0b051da872c55676c94808a1",
     "config/GR8E69/particle_size.json": "2f5fccaf2b032dce1d59c0bcca32201ee9b378e62dceee6cbc34eddddf2d9a30",
+    "config/GR8E69/particle_stop.json": "b8def021a02d205adbe2ea9f2cf734b37698cc0ce5870135d65e30eb17e9a940",
+    "config/GR8E69/particle_terminate.json": "a86b85ccc5b1c04cc5f96524f3f4aee0e0605b48bdb06a2997185d7dad795f87",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "7f7459f6a805a49f5e1b5ecef9f0ead74e96ced325ce6a0fa9f4e6b0263e145f",
+    "config/GR8E69/project.json": "bf5e28a03881b786273f86a7b638a6f23d35b68c6593754ee6deb1af410bc2cd",
     "config/GR8E69/script_arithmetic.json": "ec74fa88f8d6807fd445cbf66b4d4a7daaa273a339154b38c9710de23f8fdec0",
     "config/GR8E69/script_branches.json": "e7d49ea1a1b684c7bda78aa8a954777dc51bf3e78b2050dfb9abc2b3e0160e5b",
     "config/GR8E69/script_calls.json": "b25ba9582ac33d62abdb90b39671c9230d1aed2c6d35190b8899108c0e80621b",
@@ -980,7 +984,8 @@
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
     "include/game/ObserverTypes.h": "687dfc07deb4adc23a1d0247270d6ab04c34b758bd88846bf5e4b6ef33e7cc1f",
     "include/game/ParticleClock.h": "28f3badf71350136523be63cd81fe70e6af6977dca794be22c84784ee720cf68",
-    "include/game/ParticleRecipe.h": "4b7db6e8160d02f8296022d6a8e1ff1e339e54988651979fb0dd9155ea71a13a",
+    "include/game/ParticleRecipe.h": "6d232e1e1851cee586297c288a54fafa7360b43804556643f879117e4c016327",
+    "include/game/SceneNode.h": "30e8b910b84ef6b2353057b64909146e8c1bc3672638456ffb9b0bfb879ac244",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
     "include/game/ScriptRuntime.h": "15aee0559d5ce4ea71a0302a203a8dbdc31b9833ab7196180ae69362ec2c1355",
@@ -1687,7 +1692,7 @@
     "src/particles/ParticleDefLocMin.cpp": "adac9ec9d152ba0b7807c1763441177e9c406ba361d39c990680e615007029fd",
     "src/particles/ParticleDefVelMax.cpp": "87ca8e540d377bd9ff9a893aa4f6e7f7aca2f1bee2350a15c21f1ca4e8e6d66d",
     "src/particles/ParticleDefVelMin.cpp": "e068302525d56307f26299869b7fc441fcf751b01dcd0c278b8e5a04df9181ad",
-    "src/particles/ParticleDrawEnabled.cpp": "607619934bf5ad8eb8cb4e0e4260ca6a242f12a8f0fb14f4c46b14efe2320b4c",
+    "src/particles/ParticleDestruction.cpp": "7a3f2c8925a78679ef466be02464d7ca66cc8cdf6ebb176d58f43280c4cfa3aa",
     "src/particles/ParticleEmission.cpp": "2738a0d4a91c6605c9ff9410de7b54313978802bc24ea29e33bf5ec5b25c4dcb",
     "src/particles/ParticleFade.cpp": "99013078201271f416fcdb5db3c01032231257d69eb84ded7e6a8ef8548644f8",
     "src/particles/ParticleFlags.cpp": "5793303ba4848b08601c1fe02248db29adafe12c1919e82137a33cbba508ce55",
@@ -1699,12 +1704,16 @@
     "src/particles/ParticlePlacement.cpp": "2bd47f5775b7e0a66abe7b26eed4c379f085c86067fd9c8238b19ed877d3ad69",
     "src/particles/ParticlePool.cpp": "f599df35273e92cde06329a3784f1f326e3b4f1103486ecaf9c3a7ddae40f0ca",
     "src/particles/ParticlePosition.cpp": "c3091322ee7a2f61f7feab9a5cb5ddae22058410e3c1c88eb3cc329e8e3c9a70",
-    "src/particles/ParticleResetHalt.cpp": "c01379e1009aceb060007d07ea1803c6e4df7be077f7b578a0fd3215ae28e66e",
+    "src/particles/ParticleProceduralCast.cpp": "6a726ad1dba3cc345ae1f772dc6f9eaca836561e4d0ddfb27f257c7f6a2ae9fe",
     "src/particles/ParticleScalars.cpp": "461e42debcff7da724db2a39c255291683f671ff7b16c899afaa0dc9317ea69e",
+    "src/particles/ParticleSceneOverrides.cpp": "55aa5152eb5097522bf2e6265397ea744e6dc8725637db16225e077fc048d0fa",
     "src/particles/ParticleSeedGet.cpp": "f7510a25b91acf81c369e85d434d95f9617bca176e6901008bb6201e088470b4",
     "src/particles/ParticleSeedSet.cpp": "e5b99d58e0f8edd651b7ee9345a25471a0be5404cf286692d8e8e96b7e31721c",
+    "src/particles/ParticleSetLocalToWorld.cpp": "2a12588b49df64e5aad50e626567a9736acbc70f2006f3771ba9e8842159c01c",
     "src/particles/ParticleSize.cpp": "0d59d12e96c80bf3b4289fa22dc0ed9ac35bb4e6435de2209df4a420ec3d5239",
+    "src/particles/ParticleStop.cpp": "72306ec5f6eb831112f924213d857a3b57cf608a1d14ed158b0a3096351d50b0",
     "src/particles/ParticleTMLocalToWorld.cpp": "e5f25d9f281602761bd4d9b439b705a625e0ea2512b9cdbb5259e7a91b98a9f1",
+    "src/particles/ParticleTerminate.cpp": "914c27ab4643765eb14a64408684a0cccd29b62d947e8746829c4f5077447da3",
     "src/particles/ParticleVelocity.cpp": "ea620216e51ba6219de1500b4a0f6db91dee7a87a57af227afba091f8f8b910c",
     "src/pathfinding/PathFindingNetwork.cpp": "babf331f9fbf19dbc75fdda20d7a1011f6cf9f465f02285a89b6b572098e6b95",
     "src/script/arithmetic.cpp": "1349ad72134e4fa92c7d4aaa50b69e95cd4cf0c7b974f2c8eca3a53c358aa480",
@@ -18782,42 +18791,6 @@
       "linked_sha256": "8a0f37f0b091d3c1bd1ba9a21c1ddb15f204785048211a703c0ac00fc090188f"
     },
     {
-      "id": "particle_draw_enabled",
-      "category": "reconstructed_game",
-      "functions": 1,
-      "code_bytes": 8,
-      "compiler_family": "ProDG",
-      "compiler_version": "3.8.1",
-      "compiler_flags": [
-        "-O2",
-        "-G0",
-        "-fno-exceptions",
-        "-fno-implicit-templates"
-      ],
-      "strip_unused": false,
-      "discarded_functions": [],
-      "object_sha256": "a10a47df7b6ad71f1777729a8ee800184f7452f46b99be36222d4e706ccc5942",
-      "linked_sha256": "1dff7beaed65292645f426fd535ea3e4489b002393a2d32390af9d18a076b33b"
-    },
-    {
-      "id": "particle_reset_halt",
-      "category": "reconstructed_game",
-      "functions": 2,
-      "code_bytes": 8,
-      "compiler_family": "ProDG",
-      "compiler_version": "3.8.1",
-      "compiler_flags": [
-        "-O2",
-        "-G0",
-        "-fno-exceptions",
-        "-fno-implicit-templates"
-      ],
-      "strip_unused": false,
-      "discarded_functions": [],
-      "object_sha256": "208cf7077743274a99e9a5cbb2086b8618d91d546ed465f5c97eaaf6a76b85d1",
-      "linked_sha256": "860f48219becd09d2c1f7e17d49e3821b9b2aabc9e3c7cf34f3da88d6ad7b907"
-    },
-    {
       "id": "particle_pool",
       "category": "reconstructed_game",
       "functions": 2,
@@ -18852,6 +18825,114 @@
       "discarded_functions": [],
       "object_sha256": "79c5c3fb3323baba6ae17a669a0971d151ea60c25b621e031cd2829f581d1abe",
       "linked_sha256": "9ad480139fc3a75fd56e48c064862e2f3d98206a73a971bc0fd77a4202377090"
+    },
+    {
+      "id": "particle_terminate",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 80,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "7aa272fc2459a63aba0ffad16fe8d1ca70b8da7c853ad75de41d582168682eec",
+      "linked_sha256": "11bbaa566e9a2bcec1468741eaa690879687637017995976b3958d6ebf9e4a5b"
+    },
+    {
+      "id": "particle_destruction",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 164,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "2b246a6223be31380312433ebbe98ea73c7d14c2880ac9db038d73f15e6bab43",
+      "linked_sha256": "bd1dd75fc6ed44aea0c921fe95591b567b52e5876c0925987a3c47623db0915a"
+    },
+    {
+      "id": "particle_set_local_to_world",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 52,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f34eaaa9156337e622effc4c64fc32c3cc0652e3b4b6a2ec467bb93d7ae92cef",
+      "linked_sha256": "84632db68ba40566802e5fd9e6c041ad3b880deb97bd6b335e5b6f30fd83ba57"
+    },
+    {
+      "id": "particle_scene_overrides",
+      "category": "reconstructed_game",
+      "functions": 5,
+      "code_bytes": 24,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "9da59b2a6807b342ac79a8fd7e6a620de968c31b7ad7e31d6250fc24fbf7be9e",
+      "linked_sha256": "49d6eebd6de556a755033454e3136be3c0cae4ec29111c5692d1ec387087facb"
+    },
+    {
+      "id": "particle_stop",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 52,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "34ef8f6ce7632a4050a13deafbcf1747d2d9344de8342b5e4d640b42b71884c1",
+      "linked_sha256": "0d38735d6a60a3ada2f5644b224b533313c90bf42e60c2ef01909173678f3c7a"
+    },
+    {
+      "id": "particle_procedural_cast",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 8,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f56f437800aabddbd6f86a35bcc344e282c79542663f2772cd377d5a95f722cd",
+      "linked_sha256": "361cfa04239434e86fe6def525e1497c809a028da34962327b1ed9be637aa227"
     }
   ],
   "code_map": {
@@ -22826,13 +22907,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8005ea30",
-            "size": 80,
-            "kind": "function",
-            "name": "Terminate__15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8005ea80",
             "size": 3504,
             "kind": "function",
@@ -22875,13 +22949,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800615d4",
-            "size": 52,
-            "kind": "function",
-            "name": "SetLocalToWorld__15CParticleSystemRC7CMatrix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80061608",
             "size": 208,
             "kind": "function",
@@ -22900,20 +22967,6 @@
             "size": 144,
             "kind": "function",
             "name": "Create__15CParticleSystemP12CParticleDef",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80061888",
-            "size": 72,
-            "kind": "function",
-            "name": "MarkForDestruction__15CParticleSystemi",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800618d0",
-            "size": 92,
-            "kind": "function",
-            "name": "Destroy__15CParticleSystem",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -22984,20 +23037,6 @@
             "size": 848,
             "kind": "function",
             "name": "IsVisible__C15CParticleSystemR12CDrawContext",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80062548",
-            "size": 4,
-            "kind": "function",
-            "name": "AsMovingNode__15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8006254c",
-            "size": 4,
-            "kind": "function",
-            "name": "AsMovingNode__C15CParticleSystem",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -23090,27 +23129,6 @@
             "kind": "function",
             "name": "__static_initialization_and_destruction_0",
             "evidence": "local-file-symbol"
-          },
-          {
-            "address": "0x80064310",
-            "size": 52,
-            "kind": "function",
-            "name": "Stop__15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800643d0",
-            "size": 4,
-            "kind": "function",
-            "name": "AsProceduralParticleSystem__15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800643d4",
-            "size": 4,
-            "kind": "function",
-            "name": "AsProceduralParticleSystem__C15CParticleSystem",
-            "evidence": "adjacent-compiler-markers"
           },
           {
             "address": "0x800643d8",

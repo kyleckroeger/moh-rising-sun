@@ -1,0 +1,36 @@
+{
+  "id": "particle_terminate",
+  "source": "src/particles/ParticleTerminate.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8005ea30",
+      "size": 80
+    }
+  ],
+  "functions": [
+    {
+      "name": "Terminate__15CParticleSystem",
+      "address": "0x8005ea30",
+      "size": 80,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

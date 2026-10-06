@@ -1,6 +1,6 @@
 {
-  "id": "particle_reset_halt",
-  "source": "src/particles/ParticleResetHalt.cpp",
+  "id": "particle_stop",
+  "source": "src/particles/ParticleStop.cpp",
   "category": "reconstructed_game",
   "compiler_version": "3.8.1",
   "compiler_flags": [
@@ -18,21 +18,15 @@
   "sections": [
     {
       "name": ".text",
-      "address": "0x80062550",
-      "size": 8
+      "address": "0x80064310",
+      "size": 52
     }
   ],
   "functions": [
     {
-      "name": "Reset__15CParticleSystem",
-      "address": "0x80062550",
-      "size": 4,
-      "binding": 1
-    },
-    {
-      "name": "Halt__15CParticleSystem",
-      "address": "0x80062554",
-      "size": 4,
+      "name": "Stop__15CParticleSystem",
+      "address": "0x80064310",
+      "size": 52,
       "binding": 1
     }
   ],

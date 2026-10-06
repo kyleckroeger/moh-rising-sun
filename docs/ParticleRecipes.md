@@ -4,7 +4,7 @@ The lead for this work came from [kyleckroeger’s offer of PS2 research in issu
 
 ## Accepted scope
 
-The `src/particles/` fragments reconstruct 51 functions and 2,604 executable bytes: recipe getters, seed and state access, seed advance, the system pool, placement operators, trivial members, transform wrappers, particle-clock access, procedural-definition validity, emission setters, lifetime handling and position/velocity bound setters. Their exact original names and ranges live in `config/GR8E69/particle_*.json` and `mesh_particle_placement.json`. The original misspelling `GetEmmisionRate` / `GetEmmisionDelay` is retained.
+The `src/particles/` fragments reconstruct 60 functions and 2,968 executable bytes: recipe getters, seed and state access, seed advance, the system pool, placement operators, scene-node overrides, destruction and stop paths, transform wrappers, particle-clock access, procedural-definition validity, emission setters, lifetime handling and position/velocity bound setters. Their exact original names and ranges live in `config/GR8E69/particle_*.json` and `mesh_particle_placement.json`. The original misspelling `GetEmmisionRate` / `GetEmmisionDelay` is retained.
 
 `include/game/ParticleRecipe.h` supplies scoped runtime storage views, not a complete particle engine or an on-disc `.lfc` parser. Only these accesses are established:
 
@@ -16,7 +16,7 @@ The `src/particles/` fragments reconstruct 51 functions and 2,604 executable byt
 | `LevelFileContentsStruct_` | Pointer to an entry-pointer array at `0x08`; first two words remain unknown |
 | Recipe entry | Integer or float value at `0x08`; first two words remain unknown |
 
-The recipe-entry union describes the two access types, not a recovered historical union declaration. The system/definition prefixes deliberately omit inheritance, virtual dispatch and remaining fields. Do not allocate objects or infer their full size from these views. Return-type spelling, field/helper names and visibility are reconstruction choices; method names and parameter encodings come from original symbols. CVector3 remains opaque: output helpers write only its already established first three floats.
+The recipe-entry union describes the two access types, not a recovered historical union declaration. `CParticleSystem` now derives from `IParticleSystem` and the scene-node classes recovered from original virtual tables; see [SceneNode.md](SceneNode.md). The definition prefix and all base-class data members are still omitted. Do not allocate objects or infer their full size from these views. Return-type spelling, field/helper names and visibility are reconstruction choices; method names and parameter encodings come from original symbols. CVector3 remains opaque: output helpers write only its already established first three floats.
 
 ## GameCube recipe indices
 
@@ -81,13 +81,27 @@ value, so Render's draw helper is not established by this function.
 
 The class-scoped placement `operator new(unsigned int, void *)` returns its storage
 argument, and `operator delete(void *)` is empty. `IsDrawEnabled` returns one;
-`Reset` and `Halt` are empty. These are probably virtual overrides, but no vtable
-or base class is declared, and the integer return of `IsDrawEnabled` describes the
-emitted ABI rather than a recovered return type.
+`Reset` and `Halt` are empty. All three override scene-node virtual slots (27, 68
+and 69). The integer return of `IsDrawEnabled` describes the emitted ABI rather than
+a recovered return type.
 
-`AsMovingNode` (both overloads) and `AsProceduralParticleSystem` (both overloads)
-also compile from a bare return, but their return types would require interface
-classes that have not been established, so they remain unfinished.
+## Virtual overrides
+
+The original `CParticleSystem` table at `0x802e18c8` places each method below; the
+slot map is in [SceneNode.md](SceneNode.md).
+
+| Function | Body |
+| --- | --- |
+| `Stop` | Virtual `DeActivate()` (slot 91) |
+| `SetLocalToWorld` | Virtual `SetTMLocalToWorld(matrix)` (slot 71); not itself a table entry |
+| `Terminate` | Clears flag bit 31 only when the destroyable bit is clear, then calls virtual `MarkForDestruction(1)` (slot 1) |
+| `MarkForDestruction(int)` | When destroyable, calls `ISubject::MarkForDestruction` directly, then `g_scene.Remove(*this)` |
+| `Destroy` | When destroyable, `ReleaseSystem(this)` followed by `delete this` (virtual deleting destructor, slot 2, flag 3) |
+| `AsMovingNode`, `AsProceduralParticleSystem` | Return `this` (both const overloads) |
+
+Bit 31's meaning is still unknown. The `As*` return types follow the casts' names and the zero-offset base
+layout. They are not recovered declarations. `g_scene` (`0x803e6d90`) and
+`CScene::Remove` remain original context.
 
 ## System pool
 
@@ -118,4 +132,4 @@ Its class view declares only those members.
 
 ProDG 3.8.1 with `-O2 -G0 -fno-exceptions -fno-implicit-templates` matches every allocated byte in each accepted fragment, including the two four-byte zero constants and eight-byte integer-conversion constant. This is a working profile, not proof of the original compiler release. All fragments also pass the complete rebuilt analysis-image comparison and snapshot safeguards; constants and original dependencies earn no code credit. Runtime and emulator behavior remain untested.
 
-Cached vector getters, construction, simulation and rendering remain outside this batch. `Stop`, `SetLocalToWorld`, `Terminate` and `Destroy` call through vtable slots, and `MarkForDestruction` calls `ISubject` and `CScene` members using `this`; they wait for evidence of the base classes and virtual-table order. The contributor’s [PS2 particle recipe notes](research/ps2/particle-recipes.md) are now available to help interpret additional fields and names, but each cross-platform claim still needs a separate GR8E69 check. These matched accessors provide concrete locations for those checks.
+Cached vector getters, construction, simulation and rendering remain outside this batch. The contributor’s [PS2 particle recipe notes](research/ps2/particle-recipes.md) are now available to help interpret additional fields and names, but each cross-platform claim still needs a separate GR8E69 check. These matched accessors provide concrete locations for those checks.

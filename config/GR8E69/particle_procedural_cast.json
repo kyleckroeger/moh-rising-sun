@@ -1,0 +1,42 @@
+{
+  "id": "particle_procedural_cast",
+  "source": "src/particles/ParticleProceduralCast.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x800643d0",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "AsProceduralParticleSystem__15CParticleSystem",
+      "address": "0x800643d0",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "AsProceduralParticleSystem__C15CParticleSystem",
+      "address": "0x800643d4",
+      "size": 4,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}
