@@ -42,11 +42,22 @@ table. The headers were generated from the table entries. Method names, paramete
 types and constness come from the mangled symbols; enum parameter types
 `EClsnId` and `ISceneNode::EVolumeType` have placeholder members only.
 
-Return types are not encoded in these symbols. Each is a `void` placeholder
-unless an accepted override's body establishes an ABI result (`IsDrawEnabled`,
-the `IParticleSystem` flag getters and `GetDef`) or a cast returns `this`
-(`AsMovingNode`, `AsProceduralParticleSystem`, `AsMeshParticleSystem`). Callers
-that use a placeholder result need evidence before its declaration is changed.
+Return types are not encoded in these symbols. They are chosen as follows:
+
+| Return type | Evidence |
+| --- | --- |
+| `As*` casts return the named class (`CStaticObject *`, `CBullet *`, ...) | Each named class has its own override that returns `this` unchanged; `AsAnimatedPlayerObject`'s override belongs to `CAnimatedPlayer` |
+| `GetAIObject` returns `CAIObject *`; `GetAIDoodad` returns `CAIDoodad *` | `CPlayerObject`'s overrides return a pointer field and the address of an embedded member; both classes have original symbols |
+| `GetAttachedLight` returns `CLight *` | `SetAttachedLight` takes `CLight *`; `CStaticObject`'s override returns a pointer field |
+| `GetLightVolume` returns `BPDLightVolume *` | `Enter`/`ExitLightVolume` take that type; `CAnimObject`'s override returns `CLightVolumeManager::GetVolume()` |
+| `GetName` returns `const char *` | `CBotObject`'s override returns the address of a byte buffer at an odd offset; constness is not established |
+| `GetCollisionId` returns `EClsnId` | `SetCollisionId` takes it; the default returns -1 |
+| `IsDrawEnabled` and the `IParticleSystem` flag getters return `unsigned int` | Accepted overrides' normalized ABI results |
+| `int` for `Constrain`, `Attach`, `Detach`, both bounding-volume getters, `IsVisible`, `GetScriptObject`, `GetTeam`, `GetPlayerIndex` | ABI placeholders: the defaults return constants, and the overrides examined so far do not establish a type (`GetTeam` and `GetPlayerIndex` read bytes; `GetScriptObject` reads a pointer) |
+| `void` | Every other slot |
+
+Callers that use a placeholder result need evidence before its declaration is
+changed.
 
 `CScene` is a member-only view declaring `Remove(ISceneNode &)` for the external
 `g_scene` object.
@@ -60,10 +71,33 @@ misplaced declaration before those slots would shift those offsets. All particle
 fragments accepted before the hierarchy was introduced still produce identical
 objects, and the complete rebuilt analysis image is identical.
 
+## Accepted defaults
+
+`src/scene/` reconstructs 81 base-class functions (632 bytes) in seven fragments:
+
+| Manifest | Range | Functions | Bytes |
+| --- | --- | ---: | ---: |
+| `scene_node_destructor` | `0x8027913c` | 1 | 48 |
+| `scene_node_update_defaults` | `0x8027916c`-`0x802791e0` | 15 | 116 |
+| `scene_node_centroid` | `0x80279220` | 1 | 52 |
+| `scene_node_query_defaults` | `0x802792b4`-`0x802793ec` | 42 | 312 |
+| `moving_node_light_defaults` | `0x802797fc`-`0x8027982c` | 8 | 48 |
+| `moving_node_transform_defaults` | `0x80279950`-`0x80279984` | 13 | 52 |
+| `moving_node_reset` | `0x8027ab08` | 1 | 4 |
+
+Most defaults are empty or return a constant: `Constrain` returns 1,
+`GetCollisionId` returns -1, and the casts and other getters return null.
+`IMovingSceneNode::AsMovingNode` returns `this`. `GetCentroid` forwards to virtual
+`GetPosition` (slot 21). `GetTMLocalToWorld` calls the accepted
+`CMatrix::GetSlot(0)` on its output. The destructor stores `_vt.10ISceneNode` and
+calls `IObserver`'s destructor; the table stays external original data.
+
 ## Next work
 
-The default `ISceneNode` and `IMovingSceneNode` bodies near `0x80279130`-`0x80279a00`
-include about 95 four- and eight-byte functions. They need return types where they
-return values. The same slot map applies to every class derived from
-`IMovingSceneNode`; each derived table should be checked against it rather than
-assumed.
+`GetPosition`, `GetRightward`, `GetForward`, `GetUpward` and
+`GetWorldLinearVelocity` write constant vectors and wait on `CVector3` evidence.
+`GetWorldLinearVelocity` returns its vector by value and stores four words: three
+copies of one constant at `+0`, `+4` and `+8`, and a second constant at `+12`.
+That suggests a 16-byte vector, but its type and fourth member are unconfirmed.
+The slot map applies to every class derived from `IMovingSceneNode`; each derived
+table should be checked against it rather than assumed.

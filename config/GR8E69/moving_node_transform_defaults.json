@@ -1,0 +1,108 @@
+{
+  "id": "moving_node_transform_defaults",
+  "source": "src/scene/MovingNodeTransformDefaults.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80279950",
+      "size": 52
+    }
+  ],
+  "functions": [
+    {
+      "name": "Halt__16IMovingSceneNode",
+      "address": "0x80279950",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "PreTransform__16IMovingSceneNodeRC7CMatrix",
+      "address": "0x80279954",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Transform__16IMovingSceneNodeRC7CMatrix",
+      "address": "0x80279958",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Move__16IMovingSceneNodeRC8CVector3",
+      "address": "0x8027995c",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Rotate__16IMovingSceneNodeRC8CVector3f",
+      "address": "0x80279960",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Pitch__16IMovingSceneNodef",
+      "address": "0x80279964",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Roll__16IMovingSceneNodef",
+      "address": "0x80279968",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Yaw__16IMovingSceneNodef",
+      "address": "0x8027996c",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "SetPosition__16IMovingSceneNodeRC8CVector3",
+      "address": "0x80279970",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "SetBasis__16IMovingSceneNodeRC8CVector3N21",
+      "address": "0x80279974",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Orthonormalize__16IMovingSceneNode",
+      "address": "0x80279978",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "AsMovingNode__16IMovingSceneNode",
+      "address": "0x8027997c",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "AsMovingNode__C16IMovingSceneNode",
+      "address": "0x80279980",
+      "size": 4,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

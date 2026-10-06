@@ -1,0 +1,282 @@
+{
+  "id": "scene_node_query_defaults",
+  "source": "src/scene/SceneNodeQueryDefaults.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802792b4",
+      "size": 312
+    }
+  ],
+  "functions": [
+    {
+      "name": "IsVisible__C10ISceneNodeR12CDrawContext",
+      "address": "0x802792b4",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "IsDrawEnabled__C10ISceneNode",
+      "address": "0x802792bc",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "SetDrawEnabled__10ISceneNodeb",
+      "address": "0x802792c4",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "GetCollisionId__C10ISceneNode",
+      "address": "0x802792c8",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "SetCollisionId__10ISceneNode7EClsnId",
+      "address": "0x802792d0",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "GetScriptObject__C10ISceneNode",
+      "address": "0x802792d4",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "TriggerScriptEvent__10ISceneNodeiPvb",
+      "address": "0x802792dc",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "HandleBulletCollision__10ISceneNodeP7CBulletRC10CCollision",
+      "address": "0x802792e0",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "AsMovingNode__10ISceneNode",
+      "address": "0x802792e4",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsMovingNode__C10ISceneNode",
+      "address": "0x802792ec",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsStaticObject__10ISceneNode",
+      "address": "0x802792f4",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsStaticObject__C10ISceneNode",
+      "address": "0x802792fc",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsHierObject__10ISceneNode",
+      "address": "0x80279304",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsHierObject__C10ISceneNode",
+      "address": "0x8027930c",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsWorldObject__10ISceneNode",
+      "address": "0x80279314",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsWorldObject__C10ISceneNode",
+      "address": "0x8027931c",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsAnimObject__10ISceneNode",
+      "address": "0x80279324",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsAnimObject__C10ISceneNode",
+      "address": "0x8027932c",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsSoldierObject__10ISceneNode",
+      "address": "0x80279334",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsSoldierObject__C10ISceneNode",
+      "address": "0x8027933c",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsPlayerObject__10ISceneNode",
+      "address": "0x80279344",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsPlayerObject__C10ISceneNode",
+      "address": "0x8027934c",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsAnimatedPlayerObject__10ISceneNode",
+      "address": "0x80279354",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsAnimatedPlayerObject__C10ISceneNode",
+      "address": "0x8027935c",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsPlayerWeaponObject__10ISceneNode",
+      "address": "0x80279364",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsPlayerWeaponObject__C10ISceneNode",
+      "address": "0x8027936c",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsLight__10ISceneNode",
+      "address": "0x80279374",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsLight__C10ISceneNode",
+      "address": "0x8027937c",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsProjector__10ISceneNode",
+      "address": "0x80279384",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsProjector__C10ISceneNode",
+      "address": "0x8027938c",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsBullet__10ISceneNode",
+      "address": "0x80279394",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsBullet__C10ISceneNode",
+      "address": "0x8027939c",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsCollisionVolume__10ISceneNode",
+      "address": "0x802793a4",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsCollisionVolume__C10ISceneNode",
+      "address": "0x802793ac",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsBotObject__10ISceneNode",
+      "address": "0x802793b4",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "AsBotObject__C10ISceneNode",
+      "address": "0x802793bc",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetAIDoodad__10ISceneNode",
+      "address": "0x802793c4",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetAIDoodad__C10ISceneNode",
+      "address": "0x802793cc",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "GetAIObject__10ISceneNode",
+      "address": "0x802793d4",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "SetAttachedLight__10ISceneNodeP6CLightRC8CVector3",
+      "address": "0x802793dc",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "GetAttachedLight__C10ISceneNode",
+      "address": "0x802793e0",
+      "size": 8,
+      "binding": 1
+    },
+    {
+      "name": "SerializeSaveData__10ISceneNode",
+      "address": "0x802793e8",
+      "size": 4,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

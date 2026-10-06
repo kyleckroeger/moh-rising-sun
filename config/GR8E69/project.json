@@ -746,7 +746,14 @@
     "particle_set_local_to_world.json",
     "particle_scene_overrides.json",
     "particle_stop.json",
-    "particle_procedural_cast.json"
+    "particle_procedural_cast.json",
+    "scene_node_update_defaults.json",
+    "scene_node_centroid.json",
+    "scene_node_query_defaults.json",
+    "moving_node_light_defaults.json",
+    "moving_node_transform_defaults.json",
+    "scene_node_destructor.json",
+    "moving_node_reset.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
