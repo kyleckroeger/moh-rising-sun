@@ -68,6 +68,64 @@ Read from the original instructions only:
 Type values other than 1, the output volume's full layout and the default volume's
 contents are not established here.
 
+## `CLight::SetLightBlock` (not reconstructed)
+
+`SetLightBlock(BPDLightVolume *, CDrawContext *, float)` is static. Its only
+callers are `CAnimObject::DrawMesh`, `CStaticMesh::DrawMesh` and
+`CStaticObject::ExecuteDraw`, so it lights objects and characters, not level
+geometry. It fills a global block at `0x8032d1e0`: three light slots with a
+direction at `slot * 16` and a color at `0x30 + slot * 16`, and an ambient color
+at `0x60`. The fourth component of each color is the clamped float argument.
+Read from the original instructions:
+
+1. **Volume lights.** For each 48-byte light of the volume (`GetVolume`'s result
+   or a caller's choice): type 1 sets the ambient color to
+   `clamp(color * intensity * 0.5)` and remembers `color * intensity * 1.75` as
+   a fill color. For type 2, the weighted sum
+   `0.3 r + 0.59 g + 0.11 b` of `color * intensity` is first compared with the
+   lowest so far, which records the slot index it would take. The light is then
+   skipped if the sum is not positive; otherwise it takes that slot with its
+   direction and `clamp(color * intensity)`. Other types
+   are ignored. The loop does not limit the slot index.
+2. **Fill light.** With at most one directional slot used, a fill light with
+   direction `(0.8, 0.566, 0.2)` and the clamped fill color takes the next slot.
+   Otherwise it replaces the dimmest directional light if its own weighted sum is
+   greater.
+3. **Point lights.** With a draw context, each scene light in the list that context `+240`
+   points to (begin pointer at `+0`, count at `+8`) is compared with the
+   translation of the matrix that context `+192` points to. A light whose squared distance is
+   less than its radius squared (`CLight` `+220`) gets a slot: its direction points
+   from the object to the light, and its color is
+   `clamp(color * (1 - distance^2 / radius^2) / 255)` from `CLight` `+200`-`+208`.
+   Point lights fill unused slots first, then overwrite earlier slots from the
+   last volume-filled slot downward, and stop after slot 0.
+4. **Unused slots** get a zero direction and color `(0, 0, 0, 1)`.
+
+`DistanceSquared`, `GetPosition` and the direction normalization use the
+`CVector3` temporaries described in Next work.
+
+## Animated lights (not reconstructed)
+
+`CPropertyAnimLight` derives from `CLight`. Its constructor keeps the record
+pointer at `+224`, places the light at the record's floats `+16`-`+24`, and sets
+the radius (`+220`) to the record's signed halfword at `+46` divided by 16.
+`BeginUpdate` advances a frame index at `+228` by the update step converted to an
+integer, using the mode byte at record `+112` and the count at `+114`, then copies
+the four bytes of that frame's word from the color array at `+116` to the floats
+at `+200`-`+212`. `PatchUpAnimLight` converts the per-frame floats at `+120` but
+not the color words, so the bytes are used in file order. Animated lights therefore
+reach only objects and characters, through `SetLightBlock`'s point-light step.
+
+## Next work
+
+`GetVolume`, `SetLightBlock` and the animated-light constructor and update all
+build four-float vector temporaries whose last word is 1.0. In scratch
+experiments, a 16-byte `CVector3` whose three-component constructor stores 1.0
+in the fourth word reproduces `ISceneNode::GetWorldLinearVelocity` exactly, and
+an inline component setter reproduces `ISceneNode::GetRightward`; `DistanceSquared`
+differs only in register allocation. Settling that declaration in
+[Matrix.md](Matrix.md) would unlock these bodies.
+
 ## Verification
 
 ProDG 3.8.1 with `-O2 -G0 -fno-exceptions -fno-implicit-templates` reproduces both
