@@ -767,7 +767,15 @@
     "particle_initial_velocity_set.json",
     "particle_axes.json",
     "light_volume_manager.json",
-    "light_volume_transition.json"
+    "light_volume_transition.json",
+    "light_destroy.json",
+    "light_default_volume.json",
+    "light_update_stubs.json",
+    "light_transforms.json",
+    "light_axes.json",
+    "anim_light.json",
+    "instanced_anim_light.json",
+    "light_ids.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

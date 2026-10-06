@@ -1,7 +1,8 @@
-# Light-volume manager
+# Light volumes and scene lights
 
 `src/lighting/` reconstructs seven `CLightVolumeManager` methods (752 executable
-bytes) from the pinned GR8E69 executable. Claude Code assisted the analysis and
+bytes) and 25 `CLight`, `CPropertyAnimLight` and `CInstancedAnimLight` functions
+(1,100 bytes) from the pinned GR8E69 executable. Claude Code assisted the analysis and
 verification. The [BPD evidence](BPD.md) supplies the light-volume prefix used here.
 
 ## Accepted fragments
@@ -62,8 +63,13 @@ Read from the original instructions only:
   an occupied output record are added. For a non-type-1 light in an occupied
   record, the direction moves from the earlier direction toward the new one by the
   current weight and is normalized with `sqrtf`.
-- The direction blend builds a four-float temporary whose last word is 1.0. It
-  waits on the `CVector3` evidence described in [Matrix.md](Matrix.md).
+- The direction blend builds two four-float `CVector3` temporaries.
+
+A candidate using the [`CVector3` declaration](Matrix.md#cvector3-layout) and a
+48-byte light view (the original `g_BlendLights` holds four records in 192 bytes)
+reproduces the body except for about ten instructions in the blend temporaries'
+store order and copy-back. It is not accepted. The output slot needs its own index
+starting at one, rather than `i + 1`, to reproduce the strength-reduced addressing.
 
 Type values other than 1, the output volume's full layout and the default volume's
 contents are not established here.
@@ -104,7 +110,38 @@ Read from the original instructions:
 `DistanceSquared`, `GetPosition` and the direction normalization use the
 `CVector3` temporaries described in Next work.
 
-## Animated lights (not reconstructed)
+## Scene lights
+
+The `CLight` table at `0x802e8f48` follows the [scene-node slot map](SceneNode.md)
+for slots 1-88 and adds `GetPropertyID` at slot 89. `CPropertyAnimLight`
+(`0x802e8c70`) overrides the destructor, `Destroy`, `BeginUpdate` and
+`GetPropertyID`; `CInstancedAnimLight` (`0x802e8998`) overrides the destructor and
+`Destroy` again.
+`include/game/Light.h` declares the hierarchy under `#pragma interface`.
+`CLight`'s constructor writes the `IObserver` prefix, zeroes words up to `+0x3c`,
+initializes the matrix at `+0x40`, and stores the color at `+0xc8`-`+0xd4`, a
+float at `+0xd8` and the radius at `+0xdc`; storage between is not declared.
+
+| Manifest | Functions | Code bytes | Generated data |
+| --- | --- | ---: | --- |
+| `light_destroy` | `CLight::Destroy` (empty) | 4 | None |
+| `light_default_volume` | `GetDefaultLightVolume` returns the global `g_DefaultLightVolume` | 12 | None |
+| `light_update_stubs` | `AttemptUpdate`, `CommitUpdate` (empty) | 8 | None |
+| `light_transforms` | `Reset`, `PreTransform`, `Transform`, `SetTMLocalToWorld`, `SetPosition`, `SetBasis`, `Move`, `Rotate` | 416 | None |
+| `light_axes` | `Orthonormalize`, `GetTMLocalToWorld`, `GetPosition`, `GetRightward`, `GetForward`, `GetUpward` | 400 | 16 bytes at `0x802a79dc` |
+| `anim_light` | `CPropertyAnimLight` destructor, `InitFromProperty`, `Destroy` | 112 | None |
+| `instanced_anim_light` | `CInstancedAnimLight` constructor and `Destroy` | 120 | None |
+| `light_ids` | `GetPropertyID` (both), `AsLight` (both) | 28 | None |
+
+The transform wrappers apply the matching `CMatrix` method to the matrix at
+`+0x40`, like the camera's, without its validity flags. The axis getters assign
+matrix rows through `CMatrix`'s inline row reads. `CLight::GetPropertyID` returns
+0; the animated light returns the record's halfword at `+0x38`. Both `Destroy`
+overrides call `CLight::Destroy` and then the manager's matching `Destroy` on the
+private `g_AnimLightManager` (`light.cpp`). The color type is a four-float class
+whose assignment copies each float, as `BeginUpdate`'s copy shows.
+
+## Animated lights (partly reconstructed)
 
 `CPropertyAnimLight` derives from `CLight`. Its constructor keeps the record
 pointer at `+224`, places the light at the record's floats `+16`-`+24`, and sets
@@ -118,17 +155,24 @@ reach only objects and characters, through `SetLightBlock`'s point-light step.
 
 ## Next work
 
-`GetVolume`, `SetLightBlock` and the animated-light constructor and update all
-build four-float vector temporaries whose last word is 1.0. In scratch
-experiments, a 16-byte `CVector3` whose three-component constructor stores 1.0
-in the fourth word reproduces `ISceneNode::GetWorldLinearVelocity` exactly, and
-an inline component setter reproduces `ISceneNode::GetRightward`; `DistanceSquared`
-differs only in register allocation. Settling that declaration in
-[Matrix.md](Matrix.md) would unlock these bodies.
+- **`CPropertyAnimLight`'s constructor** compiles to the original instructions,
+  but its eight-byte integer-conversion constant is aligned relative to the whole
+  `light.cpp` constant pool. A fragment beginning partway through that pool cannot
+  reproduce the alignment without padding, so it waits for a larger contiguous
+  fragment.
+- **`BeginUpdate`** reproduces all but about six instructions, which concern
+  whether one color component is forwarded from a register during the final copy.
+- **`Pitch`, `Roll` and `Yaw`** save the position, zero it, rotate about the unit
+  X, Y or Z axis by the negated angle with a pre-multiplication through
+  `CMatrix::s_TempMat`, and restore the position. Their local `CMatrix` needs an
+  inline default constructor that only calls `InitClass` when needed. A candidate
+  is within about thirteen instructions of register and store scheduling.
+- `GetVolume` (above) and `SetLightBlock` remain.
 
 ## Verification
 
-ProDG 3.8.1 with `-O2 -G0 -fno-exceptions -fno-implicit-templates` reproduces both
-fragments, including the constants and message. The complete rebuilt analysis
+ProDG 3.8.1 with `-O2 -G0 -fno-exceptions -fno-implicit-templates` reproduces every
+accepted fragment, including the constants and message; the manager fragment also
+uses the project's STLport include profile for `copy_backward`. The complete rebuilt analysis
 image is identical. No instructions are patched, and no generated code or data is
 discarded. Runtime behavior has not been tested.

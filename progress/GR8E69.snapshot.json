@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 612992,
+    "matching_code_bytes": 614844,
     "total_executable_code_bytes": 2492032,
-    "percent": 24.59807899738045,
+    "percent": 24.672395860085263,
     "categories": {
-      "reconstructed_game": 220776,
+      "reconstructed_game": 222628,
       "restored_library": 392216
     },
-    "matching_functions": 2180
+    "matching_functions": 2214
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -110,6 +110,7 @@
     "config/GR8E69/UDPTransport.json": "2c2b2e2ed43cd5a432f9ba61b70b14c627ec3416e9a439b78e980b9aeb584f5c",
     "config/GR8E69/ai.json": "7b00f17f4fb56ada896ab693b54981297a779945d629d8e0920f1bffedda5893",
     "config/GR8E69/ai_src.json": "136c56ec3f12ec8b879525cc1d5766e8b42c5f266a23e090ce86f5fae181bf66",
+    "config/GR8E69/anim_light.json": "9ffbd37f12a017d9299881ad77528bd7b94bc35a5e4970c59fb96ce107610dfb",
     "config/GR8E69/ar.json": "d8da1ec6cb2ac6c8f83ac2a4b995898cbb723d38d41c84a1d25a8d7a863b1908",
     "config/GR8E69/arq.json": "b79b6daec16d9806b4df0388a3f927cb06d48ce10fdb9fa35772dcecce291de7",
     "config/GR8E69/base64.json": "e88ebd5740a86b7f43b5b6812b6c4e81114d43dfae07a3e7429abb7c6a1bfec7",
@@ -341,6 +342,7 @@
     "config/GR8E69/flex_types.json": "84074616b310ca1acac1ccc683a7d9b4b1f61a752b4dda1aaa68203a94bc6b9b",
     "config/GR8E69/flex_valid.json": "f36e2f140a940621dfe8d59efcd46dbc4e928ab73b129c434cb5e9dcc40f5916",
     "config/GR8E69/fstload.json": "d49e84fe0d1e9af1dd569811065db3c015f596b540ac5988c5078fa2f9c5dd5e",
+    "config/GR8E69/instanced_anim_light.json": "73759e82b3bf6870d54d6fbf2ef1b64ec4c688cb847000881824fb8fb3d00093",
     "config/GR8E69/lapi.json": "d4d026e1a8397f43593a65d06dadf3a619f11d021cbfd8a7759fec9804f0da35",
     "config/GR8E69/lauxlib.json": "954c02e3cf91c26a7e1cd13537a99e479d8113b8b3cecb4e214332cc4e315d1b",
     "config/GR8E69/lcode.json": "162f9b95c02e2deadb9bd20fb8f981fadb822e69f034df9ef9e3470a7bd133f8",
@@ -357,6 +359,14 @@
     "config/GR8E69/libgcc_moddi3.json": "e0e10bd4d216bc9e6decc62529f87b2299dd1d5d2d7e38fa85d028c85cd5c0fc",
     "config/GR8E69/libgcc_udivdi3.json": "a67373f61aea37a44fab7a5c6e6e03a41c52c9a1eef5c14ffd64b915dc8c9584",
     "config/GR8E69/libgcc_umoddi3.json": "6018bb0d37e5c727f2054446947890087f6e55543c2f8c9533b2a56635c28264",
+    "config/GR8E69/light_axes.json": "09cb4a96d55f3d67fba9b012bd203e87b5f530b688a423d468c43c38cb1a79cb",
+    "config/GR8E69/light_default_volume.json": "435a9af079ebc1f1714321701d6f8915ce847834744931dbc8f4e57c892ebb96",
+    "config/GR8E69/light_destroy.json": "d581d4a9ea6e83abc28e30fd69780b0e874ccaa3965e42f2647f924bbb7ec6cc",
+    "config/GR8E69/light_ids.json": "d27f6f7edd683611127ca74f25ca1d7965cc569b4b1c95943621c77e21af33c6",
+    "config/GR8E69/light_transforms.json": "e9db73c27ef750a438f21689f8f8534fd71019357ddc96d7e9c4ac2663971b35",
+    "config/GR8E69/light_update_stubs.json": "c0e588e06999052658e6790057c0501b9df2df26c65c917998bba987e566cb1d",
+    "config/GR8E69/light_volume_manager.json": "a1020b4f836e05cc516687609a15be559ca43ece249e7a1abfa2ed9adb4a1b8b",
+    "config/GR8E69/light_volume_transition.json": "6dd24de125e3978833dba0ac54a2f0af965db4cac5faeaf057d813f5150e5cc3",
     "config/GR8E69/llex.json": "8b9e0adf7b6cee93eaaa63cc0f928163181057456f431d385df183319c4d0ece",
     "config/GR8E69/lmathlib.json": "51899835a51deba0c1c67ba0b6990e4c8bb952b15cbd8cdbd18a6c39a41fe246",
     "config/GR8E69/lmem.json": "50eb92b479e35bed12877647ea9ecc4bc675e7d8ee089d21104de03838f5ec3e",
@@ -533,7 +543,7 @@
     "config/GR8E69/particle_terminate.json": "a86b85ccc5b1c04cc5f96524f3f4aee0e0605b48bdb06a2997185d7dad795f87",
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
-    "config/GR8E69/project.json": "50dff40790bef46e1c623eddce16831eac3f649e0d9020e2e817a35f0e254516",
+    "config/GR8E69/project.json": "7b1a77fda25896cd8be17e0ba5e88fdd370c28f186c15c74aef12aa2520bc54b",
     "config/GR8E69/scene_node_axis_defaults.json": "092b0d540e402069c588985246b692817db1af99a9d9c2cde0f3b1bfac31d590",
     "config/GR8E69/scene_node_centroid.json": "417789c5857125f62e4595e59f3e52ed74ac434de058b0123549164ceef3cd8b",
     "config/GR8E69/scene_node_destructor.json": "2421437a4581f16904fb69d4f06b23754bc5d337e70bdec86806d8f9f3f370a5",
@@ -1003,7 +1013,8 @@
     "include/game/Endian.h": "6f3a06aca2ed749c09949cedff932c6e9a8db1272b5393bdc9a46185a384387b",
     "include/game/FlexProp.h": "807c25fb67a35d5d67dcc94bfd4d496a9344d2a3b1109f01b875ef869bc69b29",
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
-    "include/game/Light.h": "1042249ad1456b4d52691776dfa2fe49828d135b61e0882c3ee1b5479e1e9af1",
+    "include/game/Light.h": "785abe0ed8fde1908ff1f7d01c37d44e8e1684de123b3d45a0c350cfe0bf7f66",
+    "include/game/LightVolumeManager.h": "f86744d00d312738c23085d84d513fbd05c495194b97a10bf4cde2011dbaf958",
     "include/game/ObserverTypes.h": "687dfc07deb4adc23a1d0247270d6ab04c34b758bd88846bf5e4b6ef33e7cc1f",
     "include/game/ParticleClock.h": "28f3badf71350136523be63cd81fe70e6af6977dca794be22c84784ee720cf68",
     "include/game/ParticleRecipe.h": "04bba33839dcdae3132d1316e831585288f74ef842a5b01c6f6d6c37929ee61d",
@@ -1517,6 +1528,16 @@
     "src/libgcc/machmode.def": "1cb3699a3e86c80ebd2b8698bbd0d098cb339369bbf3a7026282e71ca3a3009a",
     "src/libgcc/machmode.h": "23e978f62f9b1376677035581c3a1ae3aea5cdca88aff96934b4aa45a6e2e14b",
     "src/libgcc/tconfig.h": "cb653912c0d78e81398d7ea015acd2622696a9b5022e710bcc0a4142e2088da3",
+    "src/lighting/AnimLight.cpp": "8def4baf13e6bce46675282a6c6d99ee4f65fa180f3320cb09dc50e73aa137cf",
+    "src/lighting/InstancedAnimLight.cpp": "b751faa7c2ad99ca2291d3c349951ccfd902461c791f06feaa5a8f55b086e51a",
+    "src/lighting/LightAxes.cpp": "307d4b43648d47b7347f6642992208540c85a61b4fa6b76665753204d860e6ff",
+    "src/lighting/LightDefaultVolume.cpp": "de67ff35ad9d9c0d26756c3623c65794f46e0d25f63efee11d0549be2e381e88",
+    "src/lighting/LightDestroy.cpp": "2bc0cfe25e1fe819f6a38b5d8b6dec09d221c0578221a5f0e1a0dd2f15566317",
+    "src/lighting/LightIDs.cpp": "1718a611882b2970bf7f645185304160affb5623dc9e7498efe1cedec2326f5b",
+    "src/lighting/LightTransforms.cpp": "bb0fd0e56ff8bd4b6aef671267467658ebf027dd3159ba4a5e6f9fa0d1fa0137",
+    "src/lighting/LightUpdateStubs.cpp": "35fbc527fc64a61df6ee3eb388eda18827f5067981addd978394247f88555ff2",
+    "src/lighting/LightVolumeManager.cpp": "8fa209705371c72103581ac7cefa45bed6f0a8f3d81f270728056d336ddb53a8",
+    "src/lighting/LightVolumeTransition.cpp": "5dc77fdedce8a31fc78252361b12a0c68bf781418a028cf4d59b7e270d07d6bc",
     "src/lua/COPYRIGHT": "c1cfb9b1dfefcd570ae07258045f0929ea4500bc9c215d69bcfabf9a665564da",
     "src/lua/lapi.c": "f850cb4d0eea5f41ecca46cf525522d2b3b8eb127d2aad9fdd8aa41110e93f3b",
     "src/lua/lapi.h": "bec7a4282df1dd51c772b6edfbb0e29e5e01632398ae31d0878789143dff28c3",
@@ -19316,6 +19337,186 @@
       "discarded_functions": [],
       "object_sha256": "47344a83b06dd3631141bf8fd752f56c4b0a4f2fc0db9ff2c076fbb5327ba3a8",
       "linked_sha256": "c06d2b34fd01b77f392f396e22e41e023611db63367a625f4a2b894db5e1e581"
+    },
+    {
+      "id": "light_volume_manager",
+      "category": "reconstructed_game",
+      "functions": 6,
+      "code_bytes": 616,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "2e77ba7be3e0b757a97b1f4dd73dd13315cc8c2f672b02bb55426afb0a85ff5b",
+      "linked_sha256": "6402411b196fba24ff48ffdecd8646520fb1fd9e294d190b7eeeffd9bd92ff7b"
+    },
+    {
+      "id": "light_volume_transition",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 136,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "f7e6e2fafd6d0f5343d9eb1bcabc3cf3839f2aa0444cfcf32f08f6b0e82ed394",
+      "linked_sha256": "e95447870a2f5c96ca91cd617fb2b6815c99fcdd28e93a156bd76ec7bc1201d8"
+    },
+    {
+      "id": "light_destroy",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 4,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "8df7035c27bcfa55ca75cb0a56d26fcbc8e4592883e188671a7186b529bac1d1",
+      "linked_sha256": "a6a06e9ade218a04867f83288a1a1867dd48ba6ad8328495d2f3763849bccfcf"
+    },
+    {
+      "id": "light_default_volume",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 12,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "82d3cbed90ca9f197a57f3739fea84ef62586fa77abe0c44402390a86bf18eec",
+      "linked_sha256": "757e24f1f2c186f8b1c254cb49a8c318eb8f667b715b383ba762e52b8ca555f2"
+    },
+    {
+      "id": "light_update_stubs",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 8,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c0809ea45a90d66d9086406904620c625d238c418f84c4eb7276269c2163f0c0",
+      "linked_sha256": "f577edecb6b3bdfd79fc183154b91f774025b6bf1d9c96e22000ebffc0f288a9"
+    },
+    {
+      "id": "light_transforms",
+      "category": "reconstructed_game",
+      "functions": 8,
+      "code_bytes": 416,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "289752fc8f3d4a5574b7b2dc4344be7ee09ae416cac675b2dd027227487ddf79",
+      "linked_sha256": "32e3e696eaa63135473c9e426b7a120ec26f36e37adeaff0f0f41cd3d21e01ea"
+    },
+    {
+      "id": "light_axes",
+      "category": "reconstructed_game",
+      "functions": 6,
+      "code_bytes": 400,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "43ab7ff64c39675e51768c55b6c6edbb8aef5e30964af100720f65bd5c902cef",
+      "linked_sha256": "004e23fd891496ab86bc36ed73b350d60f30a536b186910e5987d3e9ae896dbe"
+    },
+    {
+      "id": "anim_light",
+      "category": "reconstructed_game",
+      "functions": 3,
+      "code_bytes": 112,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "edbb93a8f35491b54a11bd503ef1ff1eeb7be1c0d5df6402568a9c3c628fddef",
+      "linked_sha256": "26fca4e128c527405488a45ea8e0714bfdcb9468fc4b98ae9b7392268708e236"
+    },
+    {
+      "id": "instanced_anim_light",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 120,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "4e043f126bf2b5534eb6e1e72ace0bd95709a5afdfe733db93ca05394850a1ff",
+      "linked_sha256": "aaa4bedd4946af188b5ccaad336ff9949f6fda022f302ba4b4d878c16dcfbe17"
+    },
+    {
+      "id": "light_ids",
+      "category": "reconstructed_game",
+      "functions": 4,
+      "code_bytes": 28,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "aecc58db0a405eb5cc909b8c1eba258c81d7188f76fe79a5d1e6014e7c17ab22",
+      "linked_sha256": "b8e1fc3a226f30c4fb050fefae83608daef2c9a64461c492ec51be11565379be"
     }
   ],
   "code_map": {
@@ -48872,13 +49073,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8012ff80",
-            "size": 4,
-            "kind": "function",
-            "name": "Destroy__6CLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8012ff84",
             "size": 116,
             "kind": "function",
@@ -48897,13 +49091,6 @@
             "size": 220,
             "kind": "function",
             "name": "HandleEvent__6CLightP8ISubject13ESubjectEvent",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130130",
-            "size": 12,
-            "kind": "function",
-            "name": "GetDefaultLightVolume__6CLight",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -48935,20 +49122,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80130450",
-            "size": 4,
-            "kind": "function",
-            "name": "AttemptUpdate__6CLightf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130454",
-            "size": 4,
-            "kind": "function",
-            "name": "CommitUpdate__6CLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80130458",
             "size": 228,
             "kind": "function",
@@ -48967,62 +49140,6 @@
             "size": 168,
             "kind": "function",
             "name": "IsVisible__C6CLightR12CDrawContext",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130630",
-            "size": 40,
-            "kind": "function",
-            "name": "Reset__6CLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130658",
-            "size": 76,
-            "kind": "function",
-            "name": "PreTransform__6CLightRC7CMatrix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801306a4",
-            "size": 76,
-            "kind": "function",
-            "name": "Transform__6CLightRC7CMatrix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801306f0",
-            "size": 36,
-            "kind": "function",
-            "name": "SetTMLocalToWorld__6CLightRC7CMatrix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130714",
-            "size": 36,
-            "kind": "function",
-            "name": "SetPosition__6CLightRC8CVector3",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130738",
-            "size": 80,
-            "kind": "function",
-            "name": "SetBasis__6CLightRC8CVector3N21",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130788",
-            "size": 36,
-            "kind": "function",
-            "name": "Move__6CLightRC8CVector3",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801307ac",
-            "size": 36,
-            "kind": "function",
-            "name": "Rotate__6CLightRC8CVector3f",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -49047,48 +49164,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80130ac4",
-            "size": 36,
-            "kind": "function",
-            "name": "Orthonormalize__6CLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130ae8",
-            "size": 44,
-            "kind": "function",
-            "name": "GetTMLocalToWorld__C6CLightR7CMatrix",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130b14",
-            "size": 80,
-            "kind": "function",
-            "name": "GetPosition__C6CLightR8CVector3",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130b64",
-            "size": 80,
-            "kind": "function",
-            "name": "GetRightward__C6CLightR8CVector3",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130bb4",
-            "size": 80,
-            "kind": "function",
-            "name": "GetForward__C6CLightR8CVector3",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130c04",
-            "size": 80,
-            "kind": "function",
-            "name": "GetUpward__C6CLightR8CVector3",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80130c54",
             "size": 196,
             "kind": "function",
@@ -49096,45 +49171,10 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80130d18",
-            "size": 48,
-            "kind": "function",
-            "name": "_._18CPropertyAnimLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130d48",
-            "size": 4,
-            "kind": "function",
-            "name": "InitFromProperty__18CPropertyAnimLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130d4c",
-            "size": 60,
-            "kind": "function",
-            "name": "Destroy__18CPropertyAnimLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80130d88",
             "size": 572,
             "kind": "function",
             "name": "BeginUpdate__18CPropertyAnimLightf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80130fc4",
-            "size": 60,
-            "kind": "function",
-            "name": "__19CInstancedAnimLightP24MOH_animatedLight_Struct",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80131000",
-            "size": 60,
-            "kind": "function",
-            "name": "Destroy__19CInstancedAnimLight",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -49201,34 +49241,6 @@
             "evidence": "local-file-symbol"
           },
           {
-            "address": "0x80131710",
-            "size": 8,
-            "kind": "function",
-            "name": "GetPropertyID__6CLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80131718",
-            "size": 4,
-            "kind": "function",
-            "name": "AsLight__6CLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8013171c",
-            "size": 4,
-            "kind": "function",
-            "name": "AsLight__C6CLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80131720",
-            "size": 12,
-            "kind": "function",
-            "name": "GetPropertyID__18CPropertyAnimLight",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8013172c",
             "size": 44,
             "kind": "function",
@@ -49247,59 +49259,10 @@
         "file_name": "lightvolman.cpp",
         "ranges": [
           {
-            "address": "0x80131758",
-            "size": 48,
-            "kind": "function",
-            "name": "__19CLightVolumeManager",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80131788",
-            "size": 64,
-            "kind": "function",
-            "name": "_._19CLightVolumeManager",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801317c8",
-            "size": 64,
-            "kind": "function",
-            "name": "Reset__19CLightVolumeManager",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80131808",
-            "size": 52,
-            "kind": "function",
-            "name": "Update__19CLightVolumeManagerf",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8013183c",
-            "size": 204,
-            "kind": "function",
-            "name": "AddVolume__19CLightVolumeManagerP14BPDLightVolume",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80131908",
-            "size": 184,
-            "kind": "function",
-            "name": "RemoveVolume__19CLightVolumeManagerP14BPDLightVolume",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x801319c0",
             "size": 1020,
             "kind": "function",
             "name": "GetVolume__C19CLightVolumeManager",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80131dbc",
-            "size": 136,
-            "kind": "function",
-            "name": "UpdateTransition__19CLightVolumeManagerP14BPDLightVolume",
             "evidence": "adjacent-compiler-markers"
           }
         ],

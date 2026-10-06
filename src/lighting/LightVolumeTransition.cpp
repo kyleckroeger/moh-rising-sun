@@ -1,5 +1,6 @@
 // AI-assisted reconstruction; see docs/LightVolumes.md.
 #include "LightVolumeManager.h"
+#include "Light.h"
 
 void DebugMsg(const char *, ...);
 void CLightVolumeManager::UpdateTransition(BPDLightVolume *outgoing) {
