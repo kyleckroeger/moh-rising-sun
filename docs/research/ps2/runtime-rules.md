@@ -87,9 +87,11 @@ light's `MOH_animatedLight_Struct`:
 - the colour array at **`+0x74`**.
 
 It advances one colour frame per tick (the step converted to whole frames) [notes]. It
-does **not** read the float array at `+0x78`. In 1_1 those floats are the same for every
-frame of a light (0.5, 1.0 or 2.5), so they are probably not frame times; a reach or
-strength is more likely, confidence **low**.
+does **not** read the float array at `+0x78`. In 1_1 [re-check], each of the seven placed
+lights (header table `0x28`) repeats one value in every frame (0.5, 1.0 or 2.5). The seven
+pattern records (table `0x30`) hold varied values, some negative (for example −34.7 and
+−43.8), so they are not frame times in seconds either. A reach or strength is a guess for
+the placed lights, confidence **low**.
 
 > **Correction to the [`.bpd` notes](bpd-format.md):** those described `+0x78` as "frame
 > times" with unclear units, and `include/game/BPD.h` names the field `times` following
