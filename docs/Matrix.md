@@ -146,12 +146,14 @@ constructor sets to 1.0. The evidence is independent of the matrix routines:
   destination and also builds a 16-byte temporary with 1.0 at `+12`.
 
 The declaration reproduces these with: a default constructor that sets only the
-fourth word; a three-component constructor that sets the fourth word first; a
-copy constructor that copies three components and sets the fourth word last; an
-assignment that copies three components and returns a vector **by value**; and a
-one-value constructor used only by `GetWorldLinearVelocity`, which has no symbol of
-its own. Each shape was chosen because others change the emitted order of stores
-or constants; the member names, inline helpers and the fourth member's purpose are
+fourth word; three-component and copy constructors that set the three components
+and then the fourth word; and an assignment that copies three components and
+returns a vector **by value**. The distance methods default-construct their
+temporary and then set its components, which stores the fourth word first; the
+zero vector returned by `GetWorldLinearVelocity` stores it last, which the
+three-component constructor reproduces.
+These shapes were chosen because others change the emitted order of stores or
+constants; the member names, inline helpers and the fourth member's purpose are
 not recovered. The methods with original symbols are:
 
 | Manifest | Functions | Range | Code bytes | Generated data |

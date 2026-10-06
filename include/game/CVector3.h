@@ -6,17 +6,12 @@
 // to 1.0. Member names and the inline helpers are descriptive reconstruction
 // choices; the constructor and assignment shapes are those that reproduce the
 // original temporaries. Assignment copies only x, y and z and returns by value.
+// Default construction sets only the fourth word.
 class CVector3 {
   public:
     float x, y, z, w;
     CVector3() : w(1.0f) {}
-    CVector3(float ax, float ay, float az) : w(1.0f) {
-        x = ax;
-        y = ay;
-        z = az;
-    }
-    // Inferred from ISceneNode::GetWorldLinearVelocity; it has no symbol of its own.
-    CVector3(float s) : x(s), y(s), z(s), w(1.0f) {}
+    CVector3(float ax, float ay, float az) : x(ax), y(ay), z(az), w(1.0f) {}
     CVector3(const CVector3 &o) : x(o.x), y(o.y), z(o.z), w(1.0f) {}
     CVector3 operator=(const CVector3 &o) {
         x = o.x;

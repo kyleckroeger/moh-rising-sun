@@ -38,7 +38,8 @@ void CVector3::RotateAboutZ(float angle) {
 }
 
 float CVector3::Distance(const CVector3 &o) const {
-    CVector3 d(x - o.x, y - o.y, z - o.z);
+    CVector3 d;
+    d.Set(x - o.x, y - o.y, z - o.z);
     return sqrtf(d.LengthSquared());
 }
 
@@ -49,7 +50,8 @@ float CVector3::DistanceXY(const CVector3 &o) const {
 }
 
 float CVector3::DistanceSquared(const CVector3 &o) const {
-    CVector3 d(x - o.x, y - o.y, z - o.z);
+    CVector3 d;
+    d.Set(x - o.x, y - o.y, z - o.z);
     return d.LengthSquared();
 }
 
