@@ -782,7 +782,10 @@
     "trigger_field_position.json",
     "trigger_position_z.json",
     "trigger_class_queries.json",
-    "trigger_point_test.json"
+    "trigger_point_test.json",
+    "sound_getters.json",
+    "ambient_track.json",
+    "ambient_track_location.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
