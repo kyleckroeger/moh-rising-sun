@@ -765,7 +765,9 @@
     "particle_system_vectors.json",
     "particle_acceleration_get.json",
     "particle_initial_velocity_set.json",
-    "particle_axes.json"
+    "particle_axes.json",
+    "light_volume_manager.json",
+    "light_volume_transition.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
