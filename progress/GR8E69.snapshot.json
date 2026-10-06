@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 615312,
+    "matching_code_bytes": 615708,
     "total_executable_code_bytes": 2492032,
-    "percent": 24.691175715239613,
+    "percent": 24.707066361908677,
     "categories": {
-      "reconstructed_game": 223096,
+      "reconstructed_game": 223492,
       "restored_library": 392216
     },
-    "matching_functions": 2247
+    "matching_functions": 2256
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -490,6 +490,9 @@
     "config/GR8E69/newlib_wctomb_r.json": "fc59b588e63f3a1f302300e1257e93abec1acb4041e2ef289f02d12774f5ae70",
     "config/GR8E69/newlib_writer.json": "cf7eab1eebe3bf4b04912e61b9ce9a2c7c4191ebecc610aa267f69bdabe6512f",
     "config/GR8E69/newlib_wsetup.json": "61dd8c7f513073a2f4c355ee89bdcf2d300345cd74c632de1997cba9f3e84020",
+    "config/GR8E69/objectives_init.json": "eca4ead9759ddbaaf645bd69577bf42e99bb26ad920173006f50ff703e18e887",
+    "config/GR8E69/objectives_show.json": "6f555945147172984d179fd626392447493629055be0ce2ec5375fbba8951bf0",
+    "config/GR8E69/objectives_status.json": "9cd3cc5b2129ad22356374933f20ce7999389baeaa04ac450846279e1f73c811",
     "config/GR8E69/observer_8014acd0.json": "e5ca4989003a3994946cd5d06961e1648c8f636b4236c883f083d9296cf067c2",
     "config/GR8E69/observer_8014ad2c.json": "6d8b27f3717f48fea2504d75a05033778e52423fd1dd98f210caa5fae87cf0c9",
     "config/GR8E69/observer_8014ad64.json": "b19efb444e2535ddacbe3bc956c0023472651f33d7ef20d76afa932c959608db",
@@ -540,7 +543,7 @@
     "config/GR8E69/particle_tm_local_to_world.json": "8857f22743da7deaf073d151e725db0f9a853e07de836188155d521797832301",
     "config/GR8E69/particle_velocity.json": "0e01a076771a973ea3070d16303239017aecb9fe38ed3185d094fff6f62a21b9",
     "config/GR8E69/player_camera_shake.json": "e84e47bc3d83583f390ee37b3c7f560dc41557b2caf040164d989361cfe04d2c",
-    "config/GR8E69/project.json": "e09d1e20fbf58dbb7b0bd16cf41f858085e4cbbc747b984bbf8d89f304674df3",
+    "config/GR8E69/project.json": "5c61eb9833368bc847b1e813552da8a2c65128adc4809401a672b711d2e1daf4",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -1028,6 +1031,7 @@
     "include/game/Endian.h": "6f3a06aca2ed749c09949cedff932c6e9a8db1272b5393bdc9a46185a384387b",
     "include/game/FlexProp.h": "807c25fb67a35d5d67dcc94bfd4d496a9344d2a3b1109f01b875ef869bc69b29",
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
+    "include/game/Objectives.h": "02d448413ce41bb563313b153f3203339391dfd24c634615ad2d091d2ae9ced8",
     "include/game/ObserverTypes.h": "687dfc07deb4adc23a1d0247270d6ab04c34b758bd88846bf5e4b6ef33e7cc1f",
     "include/game/ParticleClock.h": "28f3badf71350136523be63cd81fe70e6af6977dca794be22c84784ee720cf68",
     "include/game/ParticleRecipe.h": "04bba33839dcdae3132d1316e831585288f74ef842a5b01c6f6d6c37929ee61d",
@@ -1724,6 +1728,9 @@
     "src/newlib/string/strpbrk.c": "ff1c75e57e95c5cbb7b97b7e6f7a4ab1c9c8259b351fafdf06355a0f2bdf457f",
     "src/newlib/string/strrchr.c": "402a6ca9631680b81811553ad4a60b85271b90f7cce71b898872c845b1931ff9",
     "src/newlib/string/strstr.c": "09437b966be6a045479e511b84d9ef0156823a5c9ccd29dc4c93d0f7c53998e7",
+    "src/objectives/ObjectivesInit.cpp": "d5b86240d3cb28c893c72f3068b076d8d34f5d2bb70191f34ee127d65b52b49f",
+    "src/objectives/ObjectivesShow.cpp": "30187052d1d8575538c3b9713505b78ccbcd0f192c78c04697bbeac35b8c8087",
+    "src/objectives/ObjectivesStatus.cpp": "5b127ad92191139eca6e5be978ac1a7a5a53ad7b3f7db5a0d7b690f5acc9a53e",
     "src/observers/observer_8014acd0.cpp": "d406558cdd0a660375aa2fc657b5691ab50bfc1e4f53e96970165bf7ac3ff1e4",
     "src/observers/observer_8014ad2c.cpp": "6a8946181b69ded5ecc9996e1e825555f79860c3e3869000c66e7855e9df9d57",
     "src/observers/observer_8014ad64.cpp": "7397237c589251c5822f9b14e18293eb90d6878b95ee4551791db4bfc7af1e05",
@@ -19779,6 +19786,60 @@
       "discarded_functions": [],
       "object_sha256": "f90af7a4176a5d1eeed0cfafb93339182d2afabc2a0e0c57dedd6c9ff8227776",
       "linked_sha256": "09faa73fe5bd507e195f6b1def543d563721b8fbaf53b397d001278776ee07d4"
+    },
+    {
+      "id": "objectives_init",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 112,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "15936cac5ab84cdd7f3a81a7fcbc83d92d617712bce6d164c72c0d040702fc2c",
+      "linked_sha256": "d78f3c66f06a5991c2854f39a8f31447612469a70072eba41fa6c8321e5fa920"
+    },
+    {
+      "id": "objectives_show",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 32,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "629ec7b99955f6682e95edc787765ade6a359e699def321e4c75f95631d252bb",
+      "linked_sha256": "f489e91504cd9a76203e726ac9cae7869ed78e1e2eee862ded194e527688a8b2"
+    },
+    {
+      "id": "objectives_status",
+      "category": "reconstructed_game",
+      "functions": 6,
+      "code_bytes": 252,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "bd402256a38349d4c595007a50e26de610492e4eb712294684bc1149b651b00b",
+      "linked_sha256": "c32b8da0aae47c2c00baa7a2e850fa19cb9f136115a73985cc536f61be296499"
     }
   ],
   "code_map": {
@@ -56842,20 +56903,6 @@
         "file_name": "Objectives.cpp",
         "ranges": [
           {
-            "address": "0x8017bf10",
-            "size": 48,
-            "kind": "function",
-            "name": "__17CPlayerObjectives",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8017bf40",
-            "size": 64,
-            "kind": "function",
-            "name": "Reset__17CPlayerObjectives",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8017bf80",
             "size": 180,
             "kind": "function",
@@ -56863,59 +56910,10 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8017c034",
-            "size": 32,
-            "kind": "function",
-            "name": "ShowObjective__17CPlayerObjectivesUi",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8017c054",
             "size": 80,
             "kind": "function",
             "name": "ChangeObjectivePrompt__17CPlayerObjectivesUiUi",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8017c0a4",
-            "size": 28,
-            "kind": "function",
-            "name": "SetObjectiveStatus__17CPlayerObjectivesUib",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8017c0c0",
-            "size": 36,
-            "kind": "function",
-            "name": "GetObjectiveStatus__17CPlayerObjectivesUi",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8017c0e4",
-            "size": 60,
-            "kind": "function",
-            "name": "GetNumCompletedObjectives__17CPlayerObjectives",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8017c120",
-            "size": 60,
-            "kind": "function",
-            "name": "CheckIfAllMainObjectivsAreCompleted__17CPlayerObjectives",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8017c15c",
-            "size": 8,
-            "kind": "function",
-            "name": "GetNumBonusObjectives__17CPlayerObjectives",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8017c164",
-            "size": 60,
-            "kind": "function",
-            "name": "GetNumCompletedBonusObjectives__17CPlayerObjectives",
             "evidence": "adjacent-compiler-markers"
           },
           {
