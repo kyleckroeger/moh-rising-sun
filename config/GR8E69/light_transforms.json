@@ -1,0 +1,131 @@
+{
+  "id": "light_transforms",
+  "source": "src/lighting/LightTransforms.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80130450",
+      "size": 896
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a79c0",
+      "size": 4
+    }
+  ],
+  "functions": [
+    {
+      "name": "AttemptUpdate__6CLightf",
+      "address": "0x80130450",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "CommitUpdate__6CLight",
+      "address": "0x80130454",
+      "size": 4,
+      "binding": 1
+    },
+    {
+      "name": "Attach__6CLightR10ISceneNodeP7CMatrixUi",
+      "address": "0x80130458",
+      "size": 228,
+      "binding": 1
+    },
+    {
+      "name": "Detach__6CLight",
+      "address": "0x8013053c",
+      "size": 76,
+      "binding": 1
+    },
+    {
+      "name": "IsVisible__C6CLightR12CDrawContext",
+      "address": "0x80130588",
+      "size": 168,
+      "binding": 1
+    },
+    {
+      "name": "Reset__6CLight",
+      "address": "0x80130630",
+      "size": 40,
+      "binding": 1
+    },
+    {
+      "name": "PreTransform__6CLightRC7CMatrix",
+      "address": "0x80130658",
+      "size": 76,
+      "binding": 1
+    },
+    {
+      "name": "Transform__6CLightRC7CMatrix",
+      "address": "0x801306a4",
+      "size": 76,
+      "binding": 1
+    },
+    {
+      "name": "SetTMLocalToWorld__6CLightRC7CMatrix",
+      "address": "0x801306f0",
+      "size": 36,
+      "binding": 1
+    },
+    {
+      "name": "SetPosition__6CLightRC8CVector3",
+      "address": "0x80130714",
+      "size": 36,
+      "binding": 1
+    },
+    {
+      "name": "SetBasis__6CLightRC8CVector3N21",
+      "address": "0x80130738",
+      "size": 80,
+      "binding": 1
+    },
+    {
+      "name": "Move__6CLightRC8CVector3",
+      "address": "0x80130788",
+      "size": 36,
+      "binding": 1
+    },
+    {
+      "name": "Rotate__6CLightRC8CVector3f",
+      "address": "0x801307ac",
+      "size": 36,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "GetSlot__7CMatrixUi": "0x802790e0",
+    "_7CMatrix.s_TempMat": "0x802fbf00",
+    "__as__7CMatrixRC7CMatrix": "0x8007aa38",
+    "Multiply__7CMatrixRC7CMatrixT1": "0x802794b8",
+    "SetPos__7CMatrixRC8CVector3": "0x8007ae7c",
+    "SetRight__7CMatrixRC8CVector3": "0x8007ae28",
+    "SetFront__7CMatrixRC8CVector3": "0x8007ae44",
+    "SetUp__7CMatrixRC8CVector3": "0x8007ae60",
+    "Translate__7CMatrixRC8CVector3": "0x8007af2c",
+    "Rotate__7CMatrixRC8CVector3f": "0x8007af60",
+    "TestVisibility__C10CVolSphereR12CDrawContext": "0x801377f0",
+    "_vt.10CVolSphere": "0x802e9520",
+    "_vt.7IVolume": "0x802e1c38",
+    "g_scene": "0x803e6d90",
+    "Remove__6CSceneR10ISceneNode": "0x80146e9c",
+    "Add__6CSceneR10ISceneNodeP10ISceneNode": "0x80146e08",
+    "AddObserver__8ISubjectP9IObserver": "0x8014ae44"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

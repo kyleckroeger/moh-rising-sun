@@ -1,0 +1,38 @@
+{
+  "id": "light_default_volume",
+  "source": "src/lighting/LightDefaultVolume.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80130130",
+      "size": 12
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetDefaultLightVolume__6CLight",
+      "address": "0x80130130",
+      "size": 12,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_DefaultLightVolume": "0x802c4c14"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

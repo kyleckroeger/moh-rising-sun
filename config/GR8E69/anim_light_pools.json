@@ -1,0 +1,42 @@
+{
+  "id": "anim_light_pools",
+  "source": "src/lighting/AnimLightPools.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x801315b0",
+      "size": 192
+    }
+  ],
+  "functions": [
+    {
+      "name": "Destroy__17CAnimLightManagerP19CInstancedAnimLight",
+      "address": "0x801315b0",
+      "size": 96,
+      "binding": 1
+    },
+    {
+      "name": "Destroy__17CAnimLightManagerP18CPropertyAnimLight",
+      "address": "0x80131610",
+      "size": 96,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

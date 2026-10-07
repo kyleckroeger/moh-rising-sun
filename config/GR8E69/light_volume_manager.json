@@ -1,0 +1,78 @@
+{
+  "id": "light_volume_manager",
+  "source": "src/lighting/LightVolumeManager.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/game-containers",
+    "include/stlport-runtime",
+    "include/newlib-compiler",
+    "include/newlib",
+    "include/stlport-containers"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80131758",
+      "size": 616
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a7a64",
+      "size": 12
+    }
+  ],
+  "functions": [
+    {
+      "name": "__19CLightVolumeManager",
+      "address": "0x80131758",
+      "size": 48,
+      "binding": 1
+    },
+    {
+      "name": "_._19CLightVolumeManager",
+      "address": "0x80131788",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "Reset__19CLightVolumeManager",
+      "address": "0x801317c8",
+      "size": 64,
+      "binding": 1
+    },
+    {
+      "name": "Update__19CLightVolumeManagerf",
+      "address": "0x80131808",
+      "size": 52,
+      "binding": 1
+    },
+    {
+      "name": "AddVolume__19CLightVolumeManagerP14BPDLightVolume",
+      "address": "0x8013183c",
+      "size": 204,
+      "binding": 1
+    },
+    {
+      "name": "RemoveVolume__19CLightVolumeManagerP14BPDLightVolume",
+      "address": "0x80131908",
+      "size": 184,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__builtin_delete": "0x801a8990",
+    "memmove": "0x8026668c",
+    "UpdateTransition__19CLightVolumeManagerP14BPDLightVolume": "0x80131dbc"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

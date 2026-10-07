@@ -96,5 +96,7 @@ including its header, allocated ELF bytes, entry point and BSS extent. Follow th
 emulator behavior, GameCube `.bpd` serialization, pointer relocation, and the full
 level loader remain unverified by this batch.
 The shared conversion interfaces and scoped layouts provide starting points for
-that work. Light-volume priority selection, blending, light field layouts and
-animated-light playback still require independent GameCube investigation.
+that work. [LightVolumes.md](LightVolumes.md) covers light-volume priority
+selection and transitions, and records the blending read from `GetVolume`. Light
+field layouts and animated-light playback still require independent GameCube
+investigation.
