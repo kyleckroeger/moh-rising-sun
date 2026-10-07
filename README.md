@@ -102,6 +102,7 @@ Run the scripts from any directory; all outputs remain inside this checkout. `ba
 | `src/scene/`, `include/game/SceneNode.h` | Recovered [scene-node virtual-slot order and base-class defaults](docs/SceneNode.md) |
 | `src/script/` | Reconstructed [all opcode handlers, script timers, message registrations, event lookup and music built-ins](docs/Script.md), guided by contributed PS2 research |
 | `src/bpd/`, `src/endian/` | Reconstructed [BPD/property conversion, scalar wrappers and lighting-volume point test](docs/BPD.md) |
+| `src/lighting/`, `include/game/Light.h` | Reconstructed [light-volume selection and transitions, scene-light transforms and animated-light lifecycle](docs/LightVolumes.md) |
 | `src/observers/` | Reconstructed observers, weak pointers and destruction queue; [evidence](docs/Observers.md) |
 | `src/MathFun.cpp` | Reconstructed functions from the original MathFun unit |
 | `src/lua/` | Restored Lua 4.0.1 source units, headers and copyright notice |

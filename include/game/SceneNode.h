@@ -134,7 +134,9 @@ class IMovingSceneNode : public ISceneNode {
 // Member-only view of the scene container; storage remains unknown.
 class CScene {
   public:
+    void Add(ISceneNode &, ISceneNode *);
     void Remove(ISceneNode &);
+    int IsNodeInScene(const ISceneNode *) const;
 };
 extern CScene g_scene;
 

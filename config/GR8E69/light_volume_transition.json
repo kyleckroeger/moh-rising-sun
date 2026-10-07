@@ -1,0 +1,44 @@
+{
+  "id": "light_volume_transition",
+  "source": "src/lighting/LightVolumeTransition.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80131dbc",
+      "size": 136
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a7a78",
+      "size": 68
+    }
+  ],
+  "functions": [
+    {
+      "name": "UpdateTransition__19CLightVolumeManagerP14BPDLightVolume",
+      "address": "0x80131dbc",
+      "size": 136,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "DebugMsg__FPCce": "0x80279094",
+    "GetDefaultLightVolume__6CLight": "0x80130130"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

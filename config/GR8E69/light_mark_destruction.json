@@ -1,0 +1,41 @@
+{
+  "id": "light_mark_destruction",
+  "source": "src/lighting/LightMarkForDestruction.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8012fff8",
+      "size": 92
+    }
+  ],
+  "functions": [
+    {
+      "name": "MarkForDestruction__6CLighti",
+      "address": "0x8012fff8",
+      "size": 92,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "g_scene": "0x803e6d90",
+    "IsNodeInScene__C6CScenePC10ISceneNode": "0x8014ac34",
+    "Remove__6CSceneR10ISceneNode": "0x80146e9c",
+    "MarkForDestruction__8ISubjecti": "0x8014ad2c"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

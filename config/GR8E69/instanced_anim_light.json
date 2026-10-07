@@ -1,0 +1,53 @@
+{
+  "id": "instanced_anim_light",
+  "source": "src/lighting/InstancedAnimLight.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80130fc4",
+      "size": 120
+    }
+  ],
+  "functions": [
+    {
+      "name": "__19CInstancedAnimLightP24MOH_animatedLight_Struct",
+      "address": "0x80130fc4",
+      "size": 60,
+      "binding": 1
+    },
+    {
+      "name": "Destroy__19CInstancedAnimLight",
+      "address": "0x80131000",
+      "size": 60,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "__18CPropertyAnimLightP24MOH_animatedLight_Struct": "0x80130c54",
+    "Destroy__6CLight": "0x8012ff80",
+    "Destroy__17CAnimLightManagerP19CInstancedAnimLight": "0x801315b0",
+    "g_AnimLightManager": "0x8032d170",
+    "_vt.19CInstancedAnimLight": "0x802e8998"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "light.cpp",
+  "original_file_index": 1286,
+  "local_externals": [
+    "g_AnimLightManager"
+  ]
+}

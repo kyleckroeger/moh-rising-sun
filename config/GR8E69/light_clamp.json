@@ -1,0 +1,43 @@
+{
+  "id": "light_clamp",
+  "source": "src/lighting/LightClamp.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8012f6a8",
+      "size": 52
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a7944",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "Clamp0to1__FRCf",
+      "address": "0x8012f6a8",
+      "size": 52,
+      "binding": 0
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "light.cpp",
+  "original_file_index": 1286
+}
