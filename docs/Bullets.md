@@ -47,11 +47,22 @@ argument at `+0xc8`; the scoped record views name only the fields read below.
 | `thrown_collision_light` | `IsCollisionEnabled` (returns 1), `GetAttachedLight` (`+0x254`) | 16 |
 | `thrown_accessors` | `GetDamage` (record `+92`), `GetFiredBy` (`+0xe0`), `AsThrown` | 24 |
 
-`+0xe0` is named from `GetFiredBy`; `Init` reads it as a pointer and stores its
-`ISceneNode *` argument through it, so its exact type is not established. The
+`+0xe0` is named from `GetFiredBy`. Both original `Init` routines pass its value
+as the `ISceneNode` reference argument to `CScene::IncludeCollision`, supporting
+the declared pointer type. The surrounding observer storage remains unknown. The
 bounding-volume getters (embedded 80-byte volumes at `+0x110`/`+0x160` and
 `+0x1a0`/`+0x1f0`) and `CThrownBullet::SetLightVolumeTransitionDuration` are not
 reconstructed.
+
+Maintainer review independently checked the thrown-bullet initializer at
+`0x80150b24`: its default explosion setup writes CRCs to `+0x264`, `+0x268`,
+`+0x26c` and `+0x270` (stores at `0x801519fc`, `0x80151a0c`, `0x80151a1c`
+and `0x80151a2c`). The header therefore represents four observed particle-ID
+slots, replacing the earlier one-element placeholder. This avoids indexing
+beyond the declared array for those slots without claiming a complete object
+size or recovering the enum member names. The setter retains the original
+unchecked indexing; no new range check is introduced. This correction and its
+independent GR8E69 verification used Codex.
 
 ## Verification
 

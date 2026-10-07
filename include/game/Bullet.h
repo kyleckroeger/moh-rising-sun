@@ -91,7 +91,9 @@ class CThrownBullet : public CBullet {
     unsigned char unknown_e4[0x254 - 0xe4];
     CLight *attachedLight;
     unsigned char unknown_258[0x264 - 0x258];
-    unsigned long explosionParticleSystems[1];      // Indexed by type; count unknown.
+    // Four observed slots at +0x264..+0x270, initialized by CThrownBullet::Init.
+    // This remains a scoped view, not a complete object allocation.
+    unsigned long explosionParticleSystems[4];
 
     EClsnId GetCollisionId() const;
     float GetDamage() const;
