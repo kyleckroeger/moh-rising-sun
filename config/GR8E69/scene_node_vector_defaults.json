@@ -1,0 +1,47 @@
+{
+  "id": "scene_node_vector_defaults",
+  "source": "src/scene/SceneNodeVectorDefaults.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x802791e0",
+      "size": 64
+    },
+    {
+      "name": ".rodata",
+      "address": "0x8029975c",
+      "size": 12
+    }
+  ],
+  "functions": [
+    {
+      "name": "GetWorldLinearVelocity__C10ISceneNode",
+      "address": "0x802791e0",
+      "size": 40,
+      "binding": 1
+    },
+    {
+      "name": "GetPosition__C10ISceneNodeR8CVector3",
+      "address": "0x80279208",
+      "size": 24,
+      "binding": 1
+    }
+  ],
+  "externals": {},
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

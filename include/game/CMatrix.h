@@ -1,9 +1,7 @@
 #ifndef GAME_CMATRIX_H
 #define GAME_CMATRIX_H
 
-// Only the first three float components are established for CVector3.
-// Its complete layout and size remain unknown; see docs/Matrix.md.
-class CVector3;
+#include "CVector3.h"
 
 // Descriptive storage names, not recovered historical member/type names.
 struct CMatrixRow {
@@ -37,13 +35,18 @@ public:
     void SetFront(const CVector3& front);
     void SetUp(const CVector3& up);
     void SetPos(const CVector3& position);
+    // Inline row reads; names mirror the original setters and are not recovered.
+    CVector3 GetRight() const { return *reinterpret_cast<const CVector3*>(&row[0]); }
+    CVector3 GetFront() const { return *reinterpret_cast<const CVector3*>(&row[1]); }
+    CVector3 GetUp() const { return *reinterpret_cast<const CVector3*>(&row[2]); }
+    CVector3 GetPos() const { return *reinterpret_cast<const CVector3*>(&row[3]); }
     void PreTranslate(const CVector3& offset);
     void Translate(const CVector3& offset);
 };
 
 typedef char CMatrixStorageSizeCheck[sizeof(CMatrix) == 64 ? 1 : -1];
 
-// A view of the observed float prefix, without defining the rest of CVector3.
+// A float view of a vector, kept for the accepted fragments that predate CVector3.h.
 inline const float* Vector3Components(const CVector3& vector) {
     return reinterpret_cast<const float*>(&vector);
 }

@@ -33,12 +33,11 @@ represented as an `int`; its original declared signedness is not established. Co
 unmatched methods are not supplied by this header; default construction must not
 be assumed to reproduce the game's constructor behavior.
 
-`CVector3` remains **opaque**. Its first three floats, at offsets 0, 4 and 8,
-are supported by these setters, the original dot product and a location getter
-that forwards those offsets to three float-output arguments. That does not prove
-its complete size or remaining fields. `Vector3Components` exposes only this
-observed prefix; the accepted functions pass vectors by reference and never
-construct, copy or take the size of a complete vector object.
+`CVector3` is now declared in [its own header](../include/game/CVector3.h); see
+[CVector3 layout](#cvector3-layout). The earlier fragments still read vectors
+through `Vector3Components`, which remains for them. The matrix also gains inline
+row reads (`GetRight`, `GetFront`, `GetUp`, `GetPos`) that return a row as a
+`CVector3` copy; their names mirror the original setters and are not recovered.
 
 ## Accepted fragments
 
@@ -131,6 +130,49 @@ lie within the original `matrix.cpp` marker interval, but their separate source
 files are project build fragments. They reuse the existing matrix storage and
 opaque-vector prefix view; no additional complete game type was invented.
 
+## CVector3 layout
+
+The vector is **16 bytes**: three float components and a fourth word that every
+constructor sets to 1.0. The evidence is independent of the matrix routines:
+
+- `ISceneNode::GetWorldLinearVelocity` returns a vector by value and writes all
+  four words: zero at `+0`, `+4`, `+8` and 1.0 at `+12`.
+- Local vector temporaries in `Distance`, `DistanceXY`, `DistanceSquared`,
+  `DistanceSquaredXY` and `Constrain` are 16 bytes with 1.0 stored at `+12`.
+- `CParticleSystem`'s constructor stores only 1.0 into the fourth word of each
+  vector member, at a 16-byte stride; the particle getters read members at
+  `+0xd0`, `+0xe0` and `+0xf0`.
+- Assignment from another vector writes only `+0`, `+4` and `+8` of the
+  destination and also builds a 16-byte temporary with 1.0 at `+12`.
+
+The declaration reproduces these with: a default constructor that sets only the
+fourth word; three-component and copy constructors that set the three components
+and then the fourth word; and an assignment that copies three components and
+returns a vector **by value**. The distance methods default-construct their
+temporary and then set its components, which stores the fourth word first; the
+zero vector returned by `GetWorldLinearVelocity` stores it last, which the
+three-component constructor reproduces.
+These shapes were chosen because others change the emitted order of stores or
+constants; the member names, inline helpers and the fourth member's purpose are
+not recovered. The methods with original symbols are:
+
+| Manifest | Functions | Range | Code bytes | Generated data |
+| --- | --- | --- | ---: | --- |
+| `vector_methods` | `Constrain`, `RotateAboutX`, `RotateAboutZ`, `Distance`, `DistanceXY`, `DistanceSquared`, `DistanceSquaredXY` | `0x8007ba98`-`0x8007be5c` | 964 | 32 bytes at `0x8029b050` |
+| `vector_dot` | `Dot` | `0x80279490` | 40 | None |
+
+`Constrain(target, cosLimit)` copies the target when the two vectors are nearly
+opposite (`dot + 1 < 0.0001`). Otherwise, when their dot product is below
+`cosLimit`, it rotates toward the target by spherical interpolation so the angle
+reaches `acos(cosLimit)`, scaling the target in place. Both tests are written with
+negated `>=` comparisons, as the original branches require. The XY distances
+build their temporary with z = 0 and sum only x and y.
+
+Using the declaration, these further functions match: the `ISceneNode`
+vector defaults and the `CParticleSystem` vector getters, setter and axes (see
+[SceneNode.md](SceneNode.md) and [ParticleRecipes.md](ParticleRecipes.md)). All
+accepted matrix fragments produce unchanged objects with the complete type.
+
 ## Verification and next work
 
 All generated allocated sections, function boundaries, external dependencies and
@@ -155,11 +197,10 @@ The [camera fragments](Camera.md) reuse the same representation and declare the
 original shared `CMatrix::s_TempMat` (64 bytes at `0x802fbf00`) for pre- and
 post-transform operations. The header also exposes `Rotate(const CVector3 &,
 float)` as an external original method. Neither that method nor the temporary's
-storage earns new matrix-source credit. The camera wrappers keep vectors opaque.
+storage earns new matrix-source credit. The camera wrappers pass vectors only by reference.
 
-Useful next work is to recover enough `CVector3` layout/constructor evidence to
-support value parameters and local vectors, then extend `Rotate`, `FastInverse`, `Orthonormalize` and the remaining matrix
-functions. A research `TibToMOHFL`
+With `CVector3` declared, useful next work is to extend `Rotate`, `FastInverse`,
+`Orthonormalize` and the remaining matrix functions that take or build vectors. A research `TibToMOHFL`
 implementation has the expected 88-byte size but still differs in instruction
-scheduling/register allocation; it earns no credit. Do not extend the opaque
-vector declaration simply to make an isolated candidate compile.
+scheduling/register allocation; it earns no credit. Extend the vector
+declaration only where emitted code requires it, and record the evidence.

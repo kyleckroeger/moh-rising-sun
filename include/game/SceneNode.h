@@ -52,7 +52,7 @@ class ISceneNode : public IObserver {
     virtual int GetLocalBoundingVolume(ISceneNode::EVolumeType) const;
     virtual int GetWorldBoundingVolume(ISceneNode::EVolumeType) const;
     virtual void GetTMLocalToWorld(CMatrix &) const;
-    virtual void GetWorldLinearVelocity() const;
+    virtual CVector3 GetWorldLinearVelocity() const;
     virtual void GetPosition(CVector3 &) const;
     virtual void GetCentroid(CVector3 &) const;
     virtual void GetRightward(CVector3 &) const;

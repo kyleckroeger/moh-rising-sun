@@ -757,7 +757,15 @@
     "camera_get_transform.json",
     "camera_transforms.json",
     "camera_projection.json",
-    "camera_update_projection.json"
+    "camera_update_projection.json",
+    "vector_methods.json",
+    "vector_dot.json",
+    "scene_node_vector_defaults.json",
+    "scene_node_axis_defaults.json",
+    "particle_system_vectors.json",
+    "particle_acceleration_get.json",
+    "particle_initial_velocity_set.json",
+    "particle_axes.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

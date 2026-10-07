@@ -91,7 +91,7 @@ Run the scripts from any directory; all outputs remain inside this checkout. `ba
 | `build/baseline/report.json` | Verified baseline result, with zero source credit |
 | `build/baseline/relinked.dol` | Rebuilt analysis image |
 | `build/audit/dependencies.json` | Local direct-branch dependency graph and research ranking (`python3 tools/dependencies.py`) |
-| `src/matrix/`, `include/game/CMatrix.h` | Reconstructed matrix functions and a shared layout with explicit vector-type limits |
+| `src/matrix/`, `include/game/CMatrix.h`, `include/game/CVector3.h` | Reconstructed matrix and [vector](docs/Matrix.md#cvector3-layout) functions and their shared layouts |
 | `src/camera/`, `include/game/Camera.h` | Reconstructed [camera projection and transform functions](docs/Camera.md), guided by contributed runtime research |
 | `src/sys_memory.cpp` | Four game allocation operators; original heap routines remain external |
 | `src/stlport/` | Tree, container, sorting and heap functions using an attributed STLport 4.5.3 subset |

@@ -1,0 +1,43 @@
+{
+  "id": "particle_initial_velocity_set",
+  "source": "src/particles/ParticleInitialVelocitySet.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x80061608",
+      "size": 208
+    },
+    {
+      "name": ".rodata",
+      "address": "0x80299cd8",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "SetSystemInitialVelocity__15CParticleSystemRC8CVector3",
+      "address": "0x80061608",
+      "size": 208,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "Dot__C8CVector3RC8CVector3": "0x80279490"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

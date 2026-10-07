@@ -1,0 +1,82 @@
+{
+  "id": "vector_methods",
+  "source": "src/matrix/vector.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8007ba98",
+      "size": 964
+    },
+    {
+      "name": ".rodata",
+      "address": "0x8029b050",
+      "size": 32
+    }
+  ],
+  "functions": [
+    {
+      "name": "Constrain__8CVector3R8CVector3f",
+      "address": "0x8007ba98",
+      "size": 356,
+      "binding": 1
+    },
+    {
+      "name": "RotateAboutX__8CVector3f",
+      "address": "0x8007bbfc",
+      "size": 108,
+      "binding": 1
+    },
+    {
+      "name": "RotateAboutZ__8CVector3f",
+      "address": "0x8007bc68",
+      "size": 108,
+      "binding": 1
+    },
+    {
+      "name": "Distance__C8CVector3RC8CVector3",
+      "address": "0x8007bcd4",
+      "size": 112,
+      "binding": 1
+    },
+    {
+      "name": "DistanceXY__C8CVector3RC8CVector3",
+      "address": "0x8007bd44",
+      "size": 104,
+      "binding": 1
+    },
+    {
+      "name": "DistanceSquared__C8CVector3RC8CVector3",
+      "address": "0x8007bdac",
+      "size": 92,
+      "binding": 1
+    },
+    {
+      "name": "DistanceSquaredXY__C8CVector3RC8CVector3",
+      "address": "0x8007be08",
+      "size": 84,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "acosf": "0x8026f5e4",
+    "sinf": "0x80270a08",
+    "cosf": "0x80270840",
+    "sqrtf": "0x80270538"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": []
+}

@@ -4,7 +4,7 @@ The lead for this work came from [kyleckroeger’s offer of PS2 research in issu
 
 ## Accepted scope
 
-The `src/particles/` fragments reconstruct 60 functions and 2,968 executable bytes: recipe getters, seed and state access, seed advance, the system pool, placement operators, scene-node overrides, destruction and stop paths, transform wrappers, particle-clock access, procedural-definition validity, emission setters, lifetime handling and position/velocity bound setters. Their exact original names and ranges live in `config/GR8E69/particle_*.json` and `mesh_particle_placement.json`. The original misspelling `GetEmmisionRate` / `GetEmmisionDelay` is retained.
+The `src/particles/` fragments reconstruct 68 functions and 3,688 executable bytes: recipe getters, seed and state access, seed advance, the system pool, placement operators, scene-node overrides, destruction and stop paths, transform wrappers, particle-clock access, procedural-definition validity, emission setters, lifetime handling, position/velocity bound setters, and cached vector/axis access. Their exact original names and ranges live in `config/GR8E69/particle_*.json` and `mesh_particle_placement.json`. The original misspelling `GetEmmisionRate` / `GetEmmisionDelay` is retained.
 
 `include/game/ParticleRecipe.h` supplies scoped runtime storage views, not a complete particle engine or an on-disc `.lfc` parser. Only these accesses are established:
 
@@ -16,7 +16,7 @@ The `src/particles/` fragments reconstruct 60 functions and 2,968 executable byt
 | `LevelFileContentsStruct_` | Pointer to an entry-pointer array at `0x08`; first two words remain unknown |
 | Recipe entry | Integer or float value at `0x08`; first two words remain unknown |
 
-The recipe-entry union describes the two access types, not a recovered historical union declaration. `CParticleSystem` now derives from `IParticleSystem` and the scene-node classes recovered from original virtual tables; see [SceneNode.md](SceneNode.md). The definition prefix and all base-class data members are still omitted. Do not allocate objects or infer their full size from these views. Return-type spelling, field/helper names and visibility are reconstruction choices; method names and parameter encodings come from original symbols. CVector3 remains opaque: output helpers write only its already established first three floats.
+The recipe-entry union describes the two access types, not a recovered historical union declaration. `CParticleSystem` now derives from `IParticleSystem` and the scene-node classes recovered from original virtual tables; see [SceneNode.md](SceneNode.md). The definition prefix and all base-class data members are still omitted. Do not allocate objects or infer their full size from these views. Return-type spelling, field/helper names and visibility are reconstruction choices; method names and parameter encodings come from original symbols. The earlier output helpers write only the first three floats of `CVector3`; the type itself is now declared (see [Matrix.md](Matrix.md#cvector3-layout)).
 
 ## GameCube recipe indices
 
@@ -132,4 +132,14 @@ Its class view declares only those members.
 
 ProDG 3.8.1 with `-O2 -G0 -fno-exceptions -fno-implicit-templates` matches every allocated byte in each accepted fragment, including the two four-byte zero constants and eight-byte integer-conversion constant. This is a working profile, not proof of the original compiler release. All fragments also pass the complete rebuilt analysis-image comparison and snapshot safeguards; constants and original dependencies earn no code credit. Runtime and emulator behavior remain untested.
 
-Cached vector getters, construction, simulation and rendering remain outside this batch. The contributor’s [PS2 particle recipe notes](research/ps2/particle-recipes.md) are now available to help interpret additional fields and names, but each cross-platform claim still needs a separate GR8E69 check. These matched accessors provide concrete locations for those checks.
+The vector members at `+0xd0`, `+0xe0` and `+0xf0` are the system's initial
+velocity, acceleration and particle acceleration, named after their getters.
+`GetSystemInitialVelocity`, `GetSystemAcceleration` and `GetParticleAcceleration`
+assign them to the output. `SetSystemInitialVelocity` assigns the initial
+velocity, clears flag bit 29, and sets the moving bit (28) when the initial
+velocity's or the acceleration's squared length is at least `1e-6`; the two
+comparisons are spelled as the original branch forms require. `GetPosition`,
+`GetRightward`, `GetForward` and `GetUpward` assign the local-to-world matrix's
+fourth, first, second and third rows through `CMatrix`'s inline row reads.
+
+Construction, simulation and rendering remain outside this batch. The contributor’s [PS2 particle recipe notes](research/ps2/particle-recipes.md) are now available to help interpret additional fields and names, but each cross-platform claim still needs a separate GR8E69 check. These matched accessors provide concrete locations for those checks.
