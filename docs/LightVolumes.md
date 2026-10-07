@@ -21,7 +21,8 @@ descriptively: four volume pointers, the outgoing volume, the remaining transiti
 time and the transition duration. The manager is embedded in objects (`CAnimObject`
 at `+676`, `CStaticObject` at `+704`); `CStaticObject::SetLightVolumeTransitionDuration`
 stores at `+728`, which is the duration word. The complete size is not established.
-`CLight` is declared only for its static `GetDefaultLightVolume`.
+The manager's default-volume lookup uses `CLight::GetDefaultLightVolume`;
+the broader scoped light declaration is described under Scene lights below.
 
 ## Behavior
 
