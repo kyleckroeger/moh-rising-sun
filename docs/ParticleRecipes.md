@@ -4,7 +4,7 @@ The lead for this work came from [kyleckroeger’s offer of PS2 research in issu
 
 ## Accepted scope
 
-The `src/particles/` fragments reconstruct 60 functions and 2,968 executable bytes: recipe getters, seed and state access, seed advance, the system pool, placement operators, scene-node overrides, destruction and stop paths, transform wrappers, particle-clock access, procedural-definition validity, emission setters, lifetime handling and position/velocity bound setters. Their exact original names and ranges live in `config/GR8E69/particle_*.json` and `mesh_particle_placement.json`. The original misspelling `GetEmmisionRate` / `GetEmmisionDelay` is retained.
+The `src/particles/` fragments reconstruct 68 functions and 3,688 executable bytes: recipe getters, seed and state access, seed advance, the system pool, placement operators, scene-node overrides, destruction and stop paths, transform wrappers, particle-clock access, procedural-definition validity, emission setters, lifetime handling, position/velocity bound setters, and cached vector/axis access. Their exact original names and ranges live in `config/GR8E69/particle_*.json` and `mesh_particle_placement.json`. The original misspelling `GetEmmisionRate` / `GetEmmisionDelay` is retained.
 
 `include/game/ParticleRecipe.h` supplies scoped runtime storage views, not a complete particle engine or an on-disc `.lfc` parser. Only these accesses are established:
 
