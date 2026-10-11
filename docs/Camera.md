@@ -1,7 +1,9 @@
 # Camera projection and transforms
 
-Twenty `CCamera` functions compile to **1,768 matching executable bytes** in
-six fragments, with twenty-four generated read-only bytes. They use ProDG 3.8.1
+Twenty-one `CCamera` functions compile to **2,684 matching executable bytes** in
+seven fragments, with twenty-four generated read-only bytes. The supporting
+`CFrustum::Transform` fragment adds **180 code bytes** and eight read-only bytes.
+They use ProDG 3.8.1
 with `-O2 -G0 -fno-exceptions -fno-implicit-templates`; this working profile
 does not identify the original compiler release.
 
@@ -20,16 +22,20 @@ GameCube verification used Codex. No source was imported from the PS2 remake.
 | `camera_projection` | `0x8012c4a0`–`0x8012c5b0` | 5 | 272 |
 | `camera_world_to_camera` | `0x8012c768`–`0x8012c910` | 1 | 424 |
 | `camera_update_projection` | `0x8012c910`–`0x8012c98c` | 1 | 124 |
+| `camera_world_to_clip` | `0x8012c98c`–`0x8012cd20` | 1 | 916 |
+| `frustum_transform` | `0x8012d100`–`0x8012d1b4` | 1 | 180 |
 
 The functions are `GetTMLocalToWorld`, `PreTransform`, `Reset`, `Transform`,
 `SetTMLocalToWorld`, `SetPosition`, `SetBasis`, `Move`, `Rotate`,
 `Orthonormalize`, `SetPerspective`, `SetOrthographic`, `GetHFOV`, `GetVFOV`
-and `UpdateCameraToClip`, `UpdateWorldToCamera`, plus the four vector getters `GetPosition`,
+and `UpdateCameraToClip`, `UpdateWorldToCamera`, `UpdateWorldToClip`, plus the four vector getters `GetPosition`,
 `GetRightward`, `GetForward` and `GetUpward`. Each manifest records individual original symbol
 names, addresses and sizes. The adjacent `camera.cpp` and `draw_context.cpp`
 compiler markers bound these global functions at `0x8012ba60`–`0x8012d26c`,
 supporting the code map's inferred file ownership. These are reconstruction
 fragments, not recovered historical source-file divisions.
+The frustum transform also lies in that camera-file interval and retains its
+original `CFrustum` method symbol; it is not counted as a camera method.
 
 ## Storage and interface evidence
 
@@ -55,10 +61,12 @@ agrees with the existing 24-byte prefix.
 | `0x150` | `perspective` | Set to 1/0 by perspective/orthographic setup and tested by projection update |
 | `0x154`, `0x158`, `0x15c` | `worldToCameraValid`, `cameraToClipValid`, `worldToClipValid` | `AttemptUpdate` tests each before calling its corresponding update routine; those routines set their own flag |
 | `0x160` | `field_160` | Both projection setters write 1; broader meaning remains unproven |
+| `0x164`–`0x16f` | Unknown bytes | No additional field or ownership claim |
+| `0x170`–`0x2af` | `frustum` prefix | World-to-clip update passes `this + 0x170` to `CFrustum::Transform`; the camera constructor initializes ten 32-byte plane records here. |
 
 Field names, access control and the integer spelling of flags are reconstruction
 choices, not recovered declarations. The flags occupy four bytes; these routines
-do not establish their original signedness. The header ends at `0x164` and must
+do not establish their original signedness. The header ends at `0x2b0` and must
 not be used to infer allocation size or construct camera objects. The original
 constructor accesses later storage, including `0x2b0`, which remains outside
 this view. Original tables, constructors and unrelated virtual overrides remain
@@ -117,12 +125,12 @@ The complete 2,860,576-byte image retains SHA-1
 `6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d`. The public snapshot was refreshed after
 local verification; CI validates that snapshot rather than rebuilding the game.
 
-`UpdateWorldToClip`, update dispatch and the remaining pitch/roll/yaw routines are
+Update dispatch and the remaining pitch/roll/yaw routines are
 useful follow-ups. Their local vectors can now use the
 [`CVector3` declaration](Matrix.md#cvector3-layout); each body still needs its own
-comparison. Frustum members and
-`field_160` also need further analysis; the current storage view deliberately
-leaves them unresolved.
+comparison. Frustum setup, the plane transform body and `field_160` also need
+further analysis; the scoped plane/frustum declarations below retain the remaining
+unknown storage.
 
 ## World-to-camera update
 
@@ -144,4 +152,62 @@ credit. This fragment was independently reconstructed with Codex assistance.
 
 The same batch adds the script far-clip setter described in [Script.md](Script.md).
 That wrapper reuses the existing camera prefix and invalidation flags; neither
-the external global camera storage nor the remaining update routines earn credit.
+the external global camera storage nor the remaining update dispatch earns credit.
+
+## World-to-clip and frustum transforms
+
+Two further fragments add **1,096 matching code bytes**, independently reconstructed
+with Codex assistance. `UpdateWorldToClip` first rebuilds camera-to-clip only when
+its validity flag is zero. It multiplies world-to-camera by camera-to-clip, writing
+all sixteen world-to-clip components in row order, then transforms the frustum
+using local-to-world and sets `worldToClipValid` to one. It does **not** update an
+invalid world-to-camera matrix itself, test world-to-clip validity on entry, or
+reinitialize the frustum. Those responsibilities must not be added implicitly.
+
+The descriptive inline `Multiply` helper reuses the already reconstructed matrix
+arithmetic, including its grouping, operand order and direct stores. The original
+camera body contains that arithmetic inline; the helper introduces no new
+out-of-line symbol or separate matrix credit. The full 916-byte function matches
+without generated data, stripping or instruction patches.
+
+`Frustum.h` records the following independently checked runtime storage:
+
+| View | Observed storage | Evidence |
+| --- | --- | --- |
+| `CPlane` | Normal vector at zero; distance float at `+0x10`; unknown twelve bytes at `+0x14` | Original `CPlane::Transform` reads the normal and distance, transforms their representative point and writes the new distance and normal. `CFrustum::Set` stores near/far plane distances at the same offset. |
+| Plane stride | `0x20` bytes | Frustum transform advances by 32 bytes; the camera constructor and frustum setup use the same spacing. |
+| `CFrustum` prefix | Ten plane records, `0x140` bytes | Transform iterates through the record at `+0x120`, inclusively. Camera construction uses an explicit count of ten; frustum setup initializes records through `+0x120`, with distance at `+0x130`. |
+
+The original camera constructor at `0x8012ba60` writes `1.0f` to each plane's
+fourth normal word at a 32-byte stride starting from camera `+0x170`. This agrees
+with the existing `CVector3` construction evidence. The original frustum setup
+at `0x8012cd20` independently writes the normals and distances. The original plane
+transform at `0x8007be5c` corroborates the distance interpretation through
+`normal * distance` and the transformed point/normal dot product. These original
+supporting bodies earn no new source credit.
+
+The types, method names and parameters come from symbols; storage/member names
+and public access are reconstruction choices. The views do not establish complete
+class allocations, inheritance or historical constructor declarations. In
+particular, camera construction also accesses `+0x2b0`, immediately outside the
+new prefix. The original `g_camera` symbol remains 704 bytes of external context.
+Target-compiler size checks enforce the observed plane stride, frustum prefix and
+camera prefix. Do not allocate or construct original objects from these views.
+
+`CFrustum::Transform` calls the original `CPlane::Transform` for each of the ten
+records, then normalizes only that record's three normal components. It skips
+division if the computed normal length equals zero. It preserves the fourth
+normal word and does not rescale the distance after normalization, add a fallback
+normal, or clamp nonfinite values. The source's indexed ten-iteration loop lowers
+to the original pointer induction and signed comparison. `Normalize` is a
+descriptive inline helper, not a recovered original name.
+
+The zero and one constants at `0x802a76d8` occupy eight fully verified bytes and
+earn no executable credit. The direct dependency map identifies two callers of
+the world-to-clip update and four of the frustum transform; these counts are
+static references, not runtime-frequency or additional-progress claims.
+
+The batch preserves all 906 previously accepted unit records and the complete
+rebuilt analysis-image identity. Runtime and emulator behavior remain untested.
+Pitch/roll/yaw and the matrix/plane transform experiments still have compiler
+output differences and remain ignored research without source credit.

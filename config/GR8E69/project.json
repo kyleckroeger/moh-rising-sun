@@ -906,7 +906,9 @@
     "script_fog_blue.json",
     "script_far_clip.json",
     "script_particle_sorting.json",
-    "camera_world_to_camera.json"
+    "camera_world_to_camera.json",
+    "camera_world_to_clip.json",
+    "frustum_transform.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

@@ -2,9 +2,10 @@
 #define GAME_CAMERA_H
 #pragma interface
 // AI-assisted scoped reconstruction from GR8E69; see docs/Camera.md.
-// Field names are descriptive. This view ends at +0x164, not the full allocation.
+// Field names are descriptive. This view ends at +0x2b0, not the full allocation.
 // Unknown storage may belong to this class or its bases; never instantiate it.
 #include "CMatrix.h"
+#include "Frustum.h"
 #include "SceneNode.h"
 class CCamera : public IMovingSceneNode {
 public:
@@ -22,6 +23,8 @@ public:
     int cameraToClipValid;
     int worldToClipValid;
     int field_160; // Both projection setters write 1; broader meaning unproven.
+    unsigned char unknown164[12];
+    CFrustum frustum;
     void GetTMLocalToWorld(CMatrix &) const;
     void GetPosition(CVector3 &) const;
     void GetRightward(CVector3 &) const;
@@ -42,5 +45,7 @@ public:
     float GetVFOV() const;
     void UpdateCameraToClip();
     void UpdateWorldToCamera();
+    void UpdateWorldToClip();
 };
+typedef char CCameraPrefixSizeCheck[sizeof(CCamera) == 0x2b0 ? 1 : -1];
 #endif

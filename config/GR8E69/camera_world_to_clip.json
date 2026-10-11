@@ -1,0 +1,40 @@
+{
+  "id": "camera_world_to_clip",
+  "source": "src/camera/world_to_clip.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8012c98c",
+      "size": 916
+    }
+  ],
+  "functions": [
+    {
+      "name": "UpdateWorldToClip__7CCamera",
+      "address": "0x8012c98c",
+      "size": 916,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "UpdateCameraToClip__7CCamera": "0x8012c910",
+    "Transform__8CFrustumRC7CMatrix": "0x8012d100"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "camera.cpp"
+}
