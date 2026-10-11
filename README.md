@@ -93,7 +93,7 @@ Run the scripts from any directory; all outputs remain inside this checkout. `ba
 | `build/audit/dependencies.json` | Local direct-branch dependency graph and research ranking (`python3 tools/dependencies.py`) |
 | `src/matrix/`, `include/game/CMatrix.h`, `include/game/CVector3.h` | Reconstructed matrix and [vector](docs/Matrix.md#cvector3-layout) functions and their shared layouts |
 | `src/quaternion/`, `src/geometry/` | Reconstructed [quaternion conversions, line geometry and integer-angle helpers](docs/Geometry.md), with scoped storage evidence |
-| `src/camera/`, `include/game/Camera.h` | Reconstructed [camera projection and transform functions](docs/Camera.md), guided by contributed runtime research |
+| `src/camera/`, `include/game/Camera.h`, `include/game/Frustum.h` | Reconstructed [camera projection, view/clip updates and frustum transforms](docs/Camera.md), guided by contributed runtime research |
 | `src/sys_memory.cpp` | Four game allocation operators; original heap routines remain external |
 | `src/stlport/` | Tree, container, sorting and heap functions using an attributed STLport 4.5.3 subset |
 | `src/eagl/` | Reconstructed rendering state and material drawing fragments; [evidence and remaining work](docs/Rendering.md) |

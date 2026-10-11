@@ -1,0 +1,45 @@
+{
+  "id": "frustum_transform",
+  "source": "src/camera/frustum_transform.cpp",
+  "category": "reconstructed_game",
+  "compiler_version": "3.8.1",
+  "compiler_flags": [
+    "-O2",
+    "-G0",
+    "-fno-exceptions",
+    "-fno-implicit-templates"
+  ],
+  "include_dirs": [
+    "include/game",
+    "include/newlib-compiler",
+    "include/newlib"
+  ],
+  "strip_unused": false,
+  "sections": [
+    {
+      "name": ".text",
+      "address": "0x8012d100",
+      "size": 180
+    },
+    {
+      "name": ".rodata",
+      "address": "0x802a76d8",
+      "size": 8
+    }
+  ],
+  "functions": [
+    {
+      "name": "Transform__8CFrustumRC7CMatrix",
+      "address": "0x8012d100",
+      "size": 180,
+      "binding": 1
+    }
+  ],
+  "externals": {
+    "Transform__6CPlaneRC7CMatrix": "0x8007be5c",
+    "sqrtf": "0x80270538"
+  },
+  "discarded_functions": [],
+  "undefined_in_discarded_code": [],
+  "original_file": "camera.cpp"
+}

@@ -1,0 +1,24 @@
+#ifndef GAME_FRUSTUM_H
+#define GAME_FRUSTUM_H
+
+// AI-assisted scoped runtime views from GR8E69; see docs/Camera.md.
+// Field names are descriptive. These views establish the observed plane stride
+// and frustum prefix, not complete historical classes or allocation contracts.
+#include "CMatrix.h"
+
+struct CPlane {
+    CVector3 normal;
+    float distance;
+    unsigned char unknown14[12];
+    void Transform(const CMatrix &); // Original external body.
+};
+
+struct CFrustum {
+    CPlane planes[10];
+    void Transform(const CMatrix &);
+};
+
+typedef char CPlaneStrideCheck[sizeof(CPlane) == 0x20 ? 1 : -1];
+typedef char CFrustumPrefixSizeCheck[sizeof(CFrustum) == 0x140 ? 1 : -1];
+
+#endif

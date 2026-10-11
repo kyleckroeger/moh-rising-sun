@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 642560,
+    "matching_code_bytes": 643656,
     "total_executable_code_bytes": 2492032,
-    "percent": 25.7845806153372,
+    "percent": 25.82856078894653,
     "categories": {
-      "reconstructed_game": 250344,
+      "reconstructed_game": 251440,
       "restored_library": 392216
     },
-    "matching_functions": 2470
+    "matching_functions": 2472
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -181,6 +181,7 @@
     "config/GR8E69/camera_transforms.json": "565ea07c7752be54366701e13af7ee6bb4cd78c6cf7d4bd3c68f01b89bdbfe5d",
     "config/GR8E69/camera_update_projection.json": "775218cca1643d4a69f0fcc2512751434137da87c4c4079cf4bb361706150171",
     "config/GR8E69/camera_world_to_camera.json": "a2246695aa13fbc6477e44ba6b186f6965a3c681cabbd8fbc55637e137d48ec2",
+    "config/GR8E69/camera_world_to_clip.json": "60e48c4021e36b4f0df545e479eca5e415739dbe6783b49af29233f8a67edc79",
     "config/GR8E69/dolphin-network-source.json": "6b039c8ef3fc502a7441ab8f55160567fd2facec6c12d818739c3bc7fd741b82",
     "config/GR8E69/dolphin-source.json": "00e4890e3bb570018abbacc62a7beee8052c2ef4f115363b1716785b62884cf1",
     "config/GR8E69/dsp.json": "bcc4a05a8ec25869e7675234c297eb8243e9a2e03983f64bf5e7040c7a897cd7",
@@ -409,6 +410,7 @@
     "config/GR8E69/flex_unload_classes.json": "5b6124bc25e808df1509b87ba93787468e30515bfd2b9128ce50bbf22adcb4a0",
     "config/GR8E69/flex_unload_properties.json": "6cd81f0594f54bf896f8a1a3faa50aefe6b88ce648559da7b2191558e27feb86",
     "config/GR8E69/flex_valid.json": "f36e2f140a940621dfe8d59efcd46dbc4e928ab73b129c434cb5e9dcc40f5916",
+    "config/GR8E69/frustum_transform.json": "35766529dbd85ffd05cf8d34adb7010b3b10b02c04d1d097811dde2dfc2ef057",
     "config/GR8E69/fstload.json": "d49e84fe0d1e9af1dd569811065db3c015f596b540ac5988c5078fa2f9c5dd5e",
     "config/GR8E69/instanced_anim_light.json": "73759e82b3bf6870d54d6fbf2ef1b64ec4c688cb847000881824fb8fb3d00093",
     "config/GR8E69/lapi.json": "d4d026e1a8397f43593a65d06dadf3a619f11d021cbfd8a7759fec9804f0da35",
@@ -637,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "c9216aa466b527bd345675763f9d4b2c8fd41fff013e49576e56f1ba37906832",
+    "config/GR8E69/project.json": "767326ea1b7f9758ef0a205025b434d3bac6c652a2bb0f1722abe6fd90b54c83",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -1102,7 +1104,7 @@
     "include/game/CMatrix.h": "0a1cd7c02e0d72a241d00c861f92cf720b93960f3e96da8dea1f370ee8be27f9",
     "include/game/CQuaternion.h": "ac6e158f9aec2448a2f5bbbc84f1e7f4337ff3fc49491b37d809374c550d8457",
     "include/game/CVector3.h": "6620724fd56e37259e31d274061127a79d1184446804c122f2d0a0542921cc52",
-    "include/game/Camera.h": "7eac5a32df153664b116b4fa53acf8a7f568bfd1b41e875790fdc2418220852f",
+    "include/game/Camera.h": "78aa817d3709003f9b096264c4f3a9dbe7a562769aecc73ec0349ab5129cb9de",
     "include/game/CameraShake.h": "6bdfdde1f6d27eb2d2e281719cea120b8736df42b548ccced13f83af9117dfa1",
     "include/game/DestructorQueue.h": "434ec17ba96007c8368db0dc62c9454d1650bc2c4d5615a13aad40969412bda8",
     "include/game/EAGLAnim/AnimAllocation.h": "8e2480f7003eca4c8a99d7bc1189b4f00ee9e31bacd9192d6b1bb0bfbc2b38f8",
@@ -1156,6 +1158,7 @@
     "include/game/FlexProp.h": "d7acf26c7290756b6d01a2e59ff49c8928d58d954f45f4ab7f87f44b65fa7ed7",
     "include/game/FlexPropDatabase.h": "e3bb33faf5cff3877d051efc3335ff33c373c9d228a7afcb8b2c16f4ee97c767",
     "include/game/Fog.h": "30a37f01f3f665d1f9b3b0a5ef81ea098194595159c5ff794797541c6bf325c0",
+    "include/game/Frustum.h": "517f595d8940b305a44b055a26e31588a43151816c24e27381a86ae90cfc6062",
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
     "include/game/Light.h": "9c9d98c0d8cae651e2ea1dad3b8b3801f6af9b042a9b00b0a2eb6df4bb453d23",
     "include/game/LightVolumeManager.h": "f86744d00d312738c23085d84d513fbd05c495194b97a10bf4cde2011dbaf958",
@@ -1390,11 +1393,13 @@
     "src/bullets/ThrownCollisionLight.cpp": "773de461b874b6bb1b3a066e0ac5a8124c5df3a0ac5595a58ebb984375882d56",
     "src/bullets/ThrownSetters.cpp": "53bd8f3d5543f02d514a21a46422d909dc36d86b9f9058bef0b5e99b6b703dd4",
     "src/camera/axes.cpp": "5f01c8b680d40e8507f99181b64e824f3fd5f74911193154807716a91603286a",
+    "src/camera/frustum_transform.cpp": "4bbe254e923e4c48c9b4468450fa8c93986141f00f98758a32be9071c57a9d7f",
     "src/camera/get_transform.cpp": "e3033e1c97452a331b5d46e6cdca18fba8f60ad43af2220d9cdc7bddbc12d468",
     "src/camera/projection.cpp": "4ed326a09aac21ee19656d0c6538dbe65908d865e795f163ae092f67e9972767",
     "src/camera/transforms.cpp": "4f1d6ff74f4f9d296d64a95495ab90f53f98010031fde9b051b8a5be89c7278a",
     "src/camera/update_projection.cpp": "fd6857c4d808bd67914b5c1041d239ff9219b03f7d8a7bbe579e7d846583f4f7",
     "src/camera/world_to_camera.cpp": "9c8631b1a6b92af8fece7a1b109bb61c516f6bc69bd7eccee0c678bbf1b8c1c3",
+    "src/camera/world_to_clip.cpp": "291ee3d9b216585f1d3a9a710fa8a283765d8f07a257d59bc0317e4ba92137e3",
     "src/dolphin/LICENSE.PrimeDecomp": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
     "src/dolphin/LICENSE.bfbb": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
     "src/dolphin/NETWORK_NOTICE": "bb4c39371835c344ec608a98b06c3c44d39b0df7060c37ae1c200a4d48471b16",
@@ -22163,6 +22168,42 @@
       "discarded_functions": [],
       "object_sha256": "f14eea48ff1788c85eb211a19fa4611af7f31b9bedf53e2d75283643f7d98a2e",
       "linked_sha256": "586cc6bb738f912ac86b4abeaa31b9c793f520ed128d7a0b3f7e082fdf04bcff"
+    },
+    {
+      "id": "camera_world_to_clip",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 916,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "27a5d8f95c4fd8c076a219a1c7c4e8b678534d57d2615a61a3d0d7a5608bd124",
+      "linked_sha256": "3b449b0c177e51fba844af71466f1cd821e5f925ff2056d3589d113f61521b42"
+    },
+    {
+      "id": "frustum_transform",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 180,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "3f13f36441e8c5701dacb7d2b073ef84cfb3ab1021c8dc27c4b80932f2f811ea",
+      "linked_sha256": "8d4d772d53d81174579b10f27c6fdaab94fe87cf42e6134d7d9998a1104e7e1a"
     }
   ],
   "code_map": {
@@ -50236,24 +50277,10 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8012c98c",
-            "size": 916,
-            "kind": "function",
-            "name": "UpdateWorldToClip__7CCamera",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8012cd20",
             "size": 992,
             "kind": "function",
             "name": "Set__8CFrustumRC7CCameraR7CScreenR9CViewport",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8012d100",
-            "size": 180,
-            "kind": "function",
-            "name": "Transform__8CFrustumRC7CMatrix",
             "evidence": "adjacent-compiler-markers"
           },
           {
