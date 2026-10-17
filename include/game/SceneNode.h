@@ -131,9 +131,11 @@ class IMovingSceneNode : public ISceneNode {
     virtual int GetPlayerIndex();
 };
 
-// Member-only view of the scene container; storage remains unknown.
+// Member-only view of the scene container; only the world pointer at +0x18 is named.
 class CScene {
   public:
+    unsigned char unknown00[0x18];
+    CWorldObject *world; // +0x18
     void Add(ISceneNode &, ISceneNode *);
     void Remove(ISceneNode &);
     int IsNodeInScene(const ISceneNode *) const;

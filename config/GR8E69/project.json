@@ -1095,7 +1095,8 @@
     "script_destroy_object.json",
     "script_get_current_npc_weapon_class.json",
     "script_set_motion_blur_duration.json",
-    "script_start_slow_moh.json"
+    "script_start_slow_moh.json",
+    "script_load_compartment.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
