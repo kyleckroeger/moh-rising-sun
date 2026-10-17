@@ -36,6 +36,7 @@ class TriggerObject {
     void SetPositionZ(float);
     int GetLegacyField(int) const;
     const char *GetClassName() const;
+    int GetID() const;
     int IsAnimatedLight() const;
     FlexPropList *GetList(const char *) const;
 };

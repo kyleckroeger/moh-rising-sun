@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-202 fragments in `src/script/` reconstruct **379 functions and 49,240
+205 fragments in `src/script/` reconstruct **382 functions and 49,828
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 286 further built-in wrappers
-and stubs (35,564 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 289 further built-in wrappers
+and stubs (36,152 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-145 fragments add **286 functions and 35,564 executable bytes** from the
+148 fragments add **289 functions and 36,152 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -703,6 +703,7 @@ schedulers through `local_externals`.
 | `script_ai_start_astar_path_walk_to_move_point` | `AIStartAStarPathWalkToMovePoint`, `AIStopAStarPathWalk`, `AIStartCoverPointWalk`, `AIStopCoverPointWalk` | `0x800fb5d8` | 520 |
 | `script_ai_invalidate_cover_point_by_id` | `AIInvalidateCoverPointByID` | `0x800fb7e0` | 132 |
 | `script_ai_invalidate_cover_point` | `AIInvalidateCoverPoint` | `0x800fb864` | 136 |
+| `script_ai_match_object_id` | `AIMatchObjectID` | `0x800fb8ec` | 204 |
 | `script_arrived_at_coverpoint` | `ArrivedAtCoverpoint`, `EndCoverpoint` | `0x800fbad8` | 368 |
 | `script_register_nav_point` | `RegisterNavPoint` | `0x800fbd7c` | 132 |
 | `script_get_nav_point` | `GetNavPoint` | `0x800fbe00` | 128 |
@@ -758,6 +759,7 @@ schedulers through `local_externals`.
 | `script_stop_check_objects_inside_range_secondary` | `StopCheckObjectsInsideRange_Secondary`, `StopCheckObjectsOutsideRange_Secondary` | `0x80102014` | 344 |
 | `script_change_letterbox_width` | `ChangeLetterboxWidth` | `0x801022b8` | 124 |
 | `script_register_corpse_search` | `RegisterCorpseSearch` | `0x8010245c` | 220 |
+| `script_register_position_check` | `RegisterPositionCheck` | `0x80102824` | 192 |
 | `script_register_for_property_message` | `RegisterForPropertyMessage`, `StopPropertyMessage` | `0x801028e4` | 280 |
 | `script_stop_target_search` | `StopTargetSearch`, `StopTargetCheck`, `StopDistanceToTarget` | `0x801029fc` | 588 |
 | `script_stop_check_objects_inside_range` | `StopCheckObjectsInsideRange`, `StopCheckObjectsOutsideRange`, `StopCheckObjectsInsideAngularRange` and 2 more | `0x80102c48` | 860 |
@@ -778,6 +780,7 @@ schedulers through `local_externals`.
 | `script_set_max_light_priority` | `SetMaxLightPriority` | `0x80109c90` | 156 |
 | `script_deactivate_animated_light_by_id` | `DeactivateAnimatedLightByID` | `0x80109e08` | 124 |
 | `script_event_memory_block` | `GetEventSystemMemBlock` | `0x80109e84` | 96 |
+| `script_resume_motion_playback` | `ResumeMotionPlayback` | `0x8010a48c` | 192 |
 | `script_player_super_aim_mode` | `PlayerSuperAimMode` | `0x8010c200` | 148 |
 | `script_is_player_invincible` | `IsPlayerInvincible` | `0x8010c294` | 108 |
 | `script_disable_player_shoot` | `DisablePlayerShoot` | `0x8010c418` | 156 |

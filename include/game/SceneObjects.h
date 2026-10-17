@@ -24,6 +24,7 @@ class CJawController {
 
 class CStaticObject {
   public:
+    void ResumeMotionPlayback();
     struct Flags {
         unsigned int unknown_31_25 : 7;
         unsigned int allowCollisionDamage : 1; // Bit 24.
@@ -39,6 +40,7 @@ class CAnimObject {
     unsigned char unknown_0[0x294];
     int gravity;    // +0x294
     int groundCheck; // +0x298
+    void SetAttached(bool);
 };
 
 class CSoldierObject {
@@ -93,6 +95,20 @@ class AnimShape {
 class CDecalManager {
   public:
     static void ClearDecals();
+};
+
+// Four-byte colour passed by value; channel names are descriptive.
+class CColor {
+  public:
+    unsigned char r, g, b, a;
+};
+
+// Static screen-fade entry points.
+class CFader {
+  public:
+    static void Flash(CColor, float, float);
+    static void FadeIn(CColor, float);
+    static void FadeOut(CColor, float);
 };
 
 #endif

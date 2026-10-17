@@ -1053,7 +1053,10 @@
     "script_soldier_disable_skeletal_partition.json",
     "script_destroy_sub_hier_object.json",
     "script_attach.json",
-    "script_set_prop_draw.json"
+    "script_set_prop_draw.json",
+    "script_ai_match_object_id.json",
+    "script_register_position_check.json",
+    "script_resume_motion_playback.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
