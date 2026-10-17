@@ -26,6 +26,8 @@ class CJawController {
 class CStaticObject {
   public:
     void ResumeMotionPlayback();
+    void FadeIn(float);
+    void FadeOut(float);
     struct Flags {
         unsigned int unknown_31_25 : 7;
         unsigned int allowCollisionDamage : 1; // Bit 24.
@@ -116,6 +118,43 @@ class CFader {
     static void Flash(CColor, float, float);
     static void FadeIn(CColor, float);
     static void FadeOut(CColor, float);
+};
+
+// Virtual-interface view of the animated-object tables (slots 89-113 after the
+// IMovingSceneNode slots), in the order of the original CSoldierObject table.
+// Names come from the symbols in each slot; return and parameter types beyond
+// the symbols are placeholders. It declares no storage: callers convert the
+// scene-node pointers they already hold, which point at the same object.
+namespace EALA { class Task; }
+namespace EAGL { class Transform; }
+enum EAnimCallback { AnimCallbackUnknown = 0 };
+class CAnimObjectInterface : public IMovingSceneNode {
+  public:
+    virtual void Init();
+    virtual void Shutdown();
+    virtual void CleanUp();
+    virtual int SetAnimationState(const char *, int);
+    virtual int SetAnimationState(const char *, EALA::Task *);
+    virtual void UpdateAnimation(float);
+    virtual void SetMoveTarget(const CVector3 &);
+    virtual void SetScript(BSObject *);
+    virtual void UpdateLocalBoundingVolume(ISceneNode::EVolumeType, const CVector3 &, const CVector3 &);
+    virtual int LineAlmostCollided(CBullet *) const;
+    virtual void GetTMLocalToWorld(EAGL::Transform &) const;
+    virtual int AttachObject(CStaticObject *, char *, int);
+    virtual int DetachObject(char *);
+    virtual int GetAttachPointMatrix(char *, CMatrix *);
+    virtual void OnSwordDraw();
+    virtual void OnSwordSheath();
+    virtual void AttachFloatingBone();
+    virtual void DetachFloatingBone();
+    virtual void SetAnimCallback(EAnimCallback);
+    virtual float FadeValue() const;
+    virtual void FadeOut(float);
+    virtual void FadeIn(float);
+    virtual int AttachObject(int, char *, int);
+    virtual void GetAimTarget(CVector3 &) const;
+    virtual void EnableAimModifier(bool);
 };
 
 #endif

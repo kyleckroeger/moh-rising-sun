@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-229 fragments in `src/script/` reconstruct **410 functions and 55,384
+238 fragments in `src/script/` reconstruct **421 functions and 57,356
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 317 further built-in wrappers
-and stubs (41,708 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 328 further built-in wrappers
+and stubs (43,680 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-172 fragments add **317 functions and 41,708 executable bytes** from the
+181 fragments add **328 functions and 43,680 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -688,7 +688,12 @@ schedulers through `local_externals`.
 | Manifest | Built-ins | Address | Code bytes |
 | --- | --- | --- | ---: |
 | `script_asset_crc` | `AssetCRC` | `0x800f8d80` | 44 |
+| `script_mp_set_aiming` | `MPSetAiming` | `0x800f9788` | 180 |
+| `script_set_animation_state_on_other` | `SetAnimationStateOnOther` | `0x800f99fc` | 160 |
+| `script_set_animation_state` | `SetAnimationState` | `0x800f9b88` | 184 |
+| `script_set_anim_callback` | `SetAnimCallback`, `SetAnimCallbackOnOther` | `0x800fa018` | 328 |
 | `script_set_japanese` | `SetJapanese` | `0x800fa3d4` | 72 |
+| `script_do_something_interesting` | `DoSomethingInteresting` | `0x800fa41c` | 148 |
 | `script_choose_target_by_id` | `ChooseTargetByID` | `0x800fa61c` | 296 |
 | `script_ai_choose_target_by_id` | `AIChooseTargetByID`, `Soldier_AIChooseTargetByID` | `0x800fa744` | 348 |
 | `script_register_location_target` | `RegisterLocationTarget`, `DeRegisterLocationTarget` | `0x800fa8a0` | 288 |
@@ -823,12 +828,15 @@ schedulers through `local_externals`.
 | `script_player_force_to_weapon` | `PlayerForceToWeapon` | `0x801138c4` | 156 |
 | `script_register_save_point` | `RegisterSavePoint`, `PerformSavePointResponse` | `0x80113e8c` | 280 |
 | `script_serializing_in` | `SerializingIn`, `SerializingOut` | `0x80114040` | 208 |
+| `script_fade_out` | `FadeOut`, `FadeIn` | `0x80114a88` | 384 |
 | `script_set_detonation_time` | `SetDetonationTime` | `0x80114f3c` | 144 |
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |
 | `script_stop_corpse_search` | `StopCorpseSearch` | `0x80115884` | 196 |
 | `script_ai_find_tank` | `AIFindTank` | `0x80115e48` | 108 |
 | `script_bullet_type_class` | `GetClassFromBulletType` | `0x80116168` | 240 |
+| `script_activate_aiming` | `ActivateAiming` | `0x80116370` | 172 |
 | `script_suspend_aiming` | `SuspendAiming`, `ResumeAiming` | `0x8011641c` | 228 |
+| `script_soldier_activate_aiming` | `Soldier_ActivateAiming` | `0x80116500` | 208 |
 | `script_soldier_suspend_aiming` | `Soldier_SuspendAiming`, `Soldier_ResumeAiming`, `ActivatePropAiming` and 5 more | `0x801165d0` | 1280 |
 | `script_set_head_track_player` | `SetHeadTrackPlayer` | `0x80116ad0` | 152 |
 | `script_ai_set_high_level_state` | `AISetHighLevelState`, `SoldierSetScriptHighLevelState`, `AIChooseBehavior` and 9 more | `0x80117020` | 1756 |
@@ -845,6 +853,7 @@ schedulers through `local_externals`.
 | `script_soldier_get_weapon_type` | `Soldier_GetWeaponType` | `0x80118ed4` | 216 |
 | `script_soldier_get_locomotion_info` | `Soldier_GetLocomotionInfo`, `Soldier_EnableSkeletalPartition` | `0x80118fac` | 360 |
 | `script_soldier_disable_skeletal_partition` | `Soldier_DisableSkeletalPartition` | `0x80119114` | 180 |
+| `script_anim_object_set_anim_callback` | `AnimObject_SetAnimCallback` | `0x801195dc` | 208 |
 | `script_signal_buddy_lead_checkpoint_reached` | `SignalBuddyLeadCheckpointReached` | `0x801196ac` | 260 |
 | `script_signal_buddy_lead_checkpoint_reached_by_player` | `SignalBuddyLeadCheckpointReachedByPlayer` | `0x801197b0` | 124 |
 | `script_stop_slow_moh` | `StopSlowMOH` | `0x80119bd0` | 88 |
