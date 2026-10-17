@@ -7,10 +7,24 @@ class CWeapon;
 
 // Scoped member view of CPlayerObject for shake and path controls. This does not
 // establish the complete allocation, base classes or virtual interface.
+// Observed fields of the player's embedded clip-plane settings at +0x1150.
+struct ClipSettings {
+    unsigned char unknown_0[0x38];
+    float farClip;      // +0x38
+    unsigned char unknown_3c[0x158 - 0x3c];
+    int field_158;      // Cleared with field_15c by BIFunc_ChangeClipPlane.
+    int field_15c;
+    int changed;        // +0x160; set to 1 by BIFunc_ChangeClipPlane.
+};
+
+// Original enum tag; its members are unknown.
+enum _LetterboxTransitionStyle { LetterboxTransitionStyleUnknown = 0 };
+
 // Method-only view of the player's embedded heads-up display.
 class CHeadsUpDisplay {
   public:
     void AddHitDirection(unsigned int);
+    void LetterboxTransition(float, _LetterboxTransitionStyle);
 };
 
 class CPlayerObject {
@@ -65,11 +79,17 @@ class CPlayerObject {
     unsigned char unknown_dac[0xe00 - 0xdac];
     CAISplinePath *movePath, *lookPath; // +0xe00, +0xe04
     float pathParameter, pathRate; // +0xe08, +0xe0c
-    unsigned char unknown_e10[0x10bc - 0xe10];
+    unsigned char unknown_e10[0xe30 - 0xe10];
+    float fov;               // +0xe30; set by BIFunc_SetGameFOV.
+    unsigned char unknown_e34[0xe40 - 0xe34];
+    int fovMode;             // +0xe40
+    unsigned char unknown_e44[0x10bc - 0xe44];
     int cameraPitchUnhinged; // +0x10bc
     unsigned char unknown_10c0[0x1144 - 0x10c0];
     int body;                // +0x1144; returned by BIFunc_MPGetPlayerBody.
-    unsigned char unknown_1148[0x1410 - 0x1148];
+    unsigned char unknown_1148[0x1150 - 0x1148];
+    ClipSettings clip;       // +0x1150
+    unsigned char unknown_12b4[0x1410 - 0x1150 - sizeof(ClipSettings)];
     CHeadsUpDisplay hud;     // +0x1410
     unsigned char unknown_1411[0x1c28 - 0x1411];
     int letterbox;           // +0x1c28; set by BIFunc_DisplayLetterbox.

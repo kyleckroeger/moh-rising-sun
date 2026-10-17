@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-252 fragments in `src/script/` reconstruct **436 functions and 60,768
+254 fragments in `src/script/` reconstruct **438 functions and 61,080
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 343 further built-in wrappers
-and stubs (47,092 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 345 further built-in wrappers
+and stubs (47,404 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-195 fragments add **343 functions and 47,092 executable bytes** from the
+197 fragments add **345 functions and 47,404 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -779,6 +779,7 @@ schedulers through `local_externals`.
 | `script_can_i_create_child` | `CanICreateChild` | `0x8010171c` | 108 |
 | `script_attach` | `Attach`, `AttachChild`, `AttachParent` | `0x80101788` | 572 |
 | `script_stop_check_objects_inside_range_secondary` | `StopCheckObjectsInsideRange_Secondary`, `StopCheckObjectsOutsideRange_Secondary` | `0x80102014` | 344 |
+| `script_set_game_fov` | `SetGameFOV` | `0x8010216c` | 160 |
 | `script_change_letterbox_width` | `ChangeLetterboxWidth` | `0x801022b8` | 124 |
 | `script_register_corpse_search` | `RegisterCorpseSearch` | `0x8010245c` | 220 |
 | `script_register_position_check` | `RegisterPositionCheck` | `0x80102824` | 192 |
@@ -791,6 +792,7 @@ schedulers through `local_externals`.
 | `script_register_coverpoint` | `RegisterCoverpoint` | `0x80105c6c` | 100 |
 | `script_ai_force_to_closest_cover_point` | `AIForceToClosestCoverPoint`, `AIForceToClosestMMG`, `AIForceToMMGFeeder` | `0x80105cd0` | 696 |
 | `script_display_letterbox` | `DisplayLetterbox` | `0x80105f88` | 140 |
+| `script_letterbox_transition` | `LetterboxTransition` | `0x80106014` | 152 |
 | `script_set_sound_zone` | `SetSoundZone` | `0x80106158` | 84 |
 | `script_debug_init_from_trigger` | `DebugInitFromTrigger` | `0x801061ac` | 48 |
 | `script_tutorial_text` | `DisplayBIGPromptText`, `DisplayTutorialText`, `KillTutorialText` and 2 more | `0x80106fa0` | 240 |
