@@ -49,7 +49,7 @@ class CAnimObject {
 class CSoldierObject {
   public:
     // Original nested enum tag; members are descriptive.
-    enum Partition { PartitionNone = 0, Partition2 = 2, Partition3 = 3 };
+    enum Partition { PartitionNone = 0, Partition1 = 1, Partition2 = 2, Partition3 = 3 };
     unsigned char unknown_0[0x120];
     BSObject *scriptObject; // +0x120
     unsigned char unknown_124[0x220 - 0x124];
@@ -81,6 +81,7 @@ class CSoldierObject {
     void SetHeadTrackPlayer(bool);
     void EnableSkeletalPartition(Partition);
     void DisableSkeletalPartition(Partition);
+    int SetAnimationState(const char *, int, Partition);
     ISceneNode *GetAttachedObjectAt(char *);
     void ResumeAimModifier();
     void ResumePropAimModifier();
