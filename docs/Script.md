@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-242 fragments in `src/script/` reconstruct **425 functions and 58,392
+244 fragments in `src/script/` reconstruct **427 functions and 58,892
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 332 further built-in wrappers
-and stubs (44,716 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 334 further built-in wrappers
+and stubs (45,216 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-185 fragments add **332 functions and 44,716 executable bytes** from the
+187 fragments add **334 functions and 45,216 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -835,6 +835,7 @@ schedulers through `local_externals`.
 | `script_fade_out` | `FadeOut`, `FadeIn` | `0x80114a88` | 384 |
 | `script_set_detonation_time` | `SetDetonationTime` | `0x80114f3c` | 144 |
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |
+| `script_set_motion_blur_duration` | `SetMotionBlurDuration` | `0x80115568` | 252 |
 | `script_stop_corpse_search` | `StopCorpseSearch` | `0x80115884` | 196 |
 | `script_ai_find_tank` | `AIFindTank` | `0x80115e48` | 108 |
 | `script_bullet_type_class` | `GetClassFromBulletType` | `0x80116168` | 240 |
@@ -860,6 +861,7 @@ schedulers through `local_externals`.
 | `script_anim_object_set_anim_callback` | `AnimObject_SetAnimCallback` | `0x801195dc` | 208 |
 | `script_signal_buddy_lead_checkpoint_reached` | `SignalBuddyLeadCheckpointReached` | `0x801196ac` | 260 |
 | `script_signal_buddy_lead_checkpoint_reached_by_player` | `SignalBuddyLeadCheckpointReachedByPlayer` | `0x801197b0` | 124 |
+| `script_start_slow_moh` | `StartSlowMOH` | `0x80119ad8` | 248 |
 | `script_stop_slow_moh` | `StopSlowMOH` | `0x80119bd0` | 88 |
 | `script_set_animated_texture_frame` | `SetAnimatedTextureFrame`, `SetAnimatedTextureFrameRate` | `0x80119f84` | 280 |
 | `script_reset_animated_texture` | `ResetAnimatedTexture`, `AdvanceAnimatedTexture` | `0x8011a09c` | 264 |

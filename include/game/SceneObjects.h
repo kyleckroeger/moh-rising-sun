@@ -120,6 +120,12 @@ class CFader {
     static void FadeOut(CColor, float);
 };
 
+// Static motion-blur control.
+class MotionBlur {
+  public:
+    static void SetFrameBlur(float, float, float, float);
+};
+
 // Virtual-interface view of the animated-object tables (slots 89-113 after the
 // IMovingSceneNode slots), in the order of the original CSoldierObject table.
 // Names come from the symbols in each slot; return and parameter types beyond
