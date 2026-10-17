@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 683244,
+    "matching_code_bytes": 683648,
     "total_executable_code_bytes": 2492032,
-    "percent": 27.417143921105346,
+    "percent": 27.433355590939442,
     "categories": {
-      "reconstructed_game": 291028,
+      "reconstructed_game": 291432,
       "restored_library": 392216
     },
-    "matching_functions": 2780
+    "matching_functions": 2782
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "5e5984292e36062b9e4bfbf36882e13920142f0dd376481e48d554bc17a133fc",
+    "config/GR8E69/project.json": "f36b066d7b3a47f3b68a893e92005230e39b8ad1c87ff09ae6d437a2e1777c4d",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -672,6 +672,7 @@
     "config/GR8E69/script_ai_match_object_id.json": "7ea87c5161aedc74cd3f4db68bf0f8bedce44503e60a71dd48b3e47ca6682ced",
     "config/GR8E69/script_ai_set_hearing_radius.json": "ec4fd8c205ae1ce2ec7d8081418151edc0d095e0028f236748973d02582f6f72",
     "config/GR8E69/script_ai_set_high_level_state.json": "157d1e4cb9b35025d3873fd8221c233d04f2dcda66625e3478448b8e00147ba0",
+    "config/GR8E69/script_ai_set_move_point_on_other.json": "36a63eae3c71411fd210d186585543621ad46ab593f27e895fbaf8fa4634db26",
     "config/GR8E69/script_ai_set_run_away_movepoint.json": "0b8feedeefa218bdfa2b6b3f043617ebad1b110e649cabae6a73118bd94f5567",
     "config/GR8E69/script_ai_set_team.json": "1c170526935461b601a20965f395849175ec2cae2938fbcd3756afbf90ce3415",
     "config/GR8E69/script_ai_start_astar_path_walk.json": "aba74f92f54bf4e87080fe5f0f2f0b504b290a24485a317b3d48be71e3f23593",
@@ -1261,7 +1262,7 @@
     "include/dolphin-sn/dolphin/types.h": "ca31e0bbb97e93ca4713654367df29578f6392f3acaf40ca68bc1de1c913af93",
     "include/game/AIBehavior.h": "c36c08ecdb4c14a2940491d3420c88e69fa34b691fcf13e8bf804ae0520a56cf",
     "include/game/AIFilterGlobal.h": "26368f15313dbd6390bee4c45582bcdfc36d8d433aaec5b0241541e52b9d677a",
-    "include/game/AIMovement.h": "c85c378f69240e66629af4d39eef7ac24a85e4dea914c74570074bc6820375c7",
+    "include/game/AIMovement.h": "b9d723fd2bfeb66871a55f57dad2d3bfad33a56530d2826600e86d36598d6342",
     "include/game/AISplinePath.h": "6ad5303e70d16255cfde1e7ac355668f4264a347e7a1224915c50c4e8775bc7c",
     "include/game/AITargeting.h": "27ff0be14ca7731710535133a72c869f47edbe5894bab1ab77173a3afdec5b5b",
     "include/game/BPD.h": "ec4a3aceb83f181db2c6adf8ac87137ede2cd6a0e643548159c73a827aadd19e",
@@ -2233,6 +2234,7 @@
     "src/script/ai_match_object_id.cpp": "2722dba605f54bedca02a39b56229235be7b984e0314de7c1a67adce1bc9287a",
     "src/script/ai_set_hearing_radius.cpp": "5ba6d9769ebda14d7df24f1a73e3b9516df09b9d9affd48e8c29be7b4a70f720",
     "src/script/ai_set_high_level_state.cpp": "a77d629b768907985060348dc32460908ebfdabd713d3402d536e5c3b2685c07",
+    "src/script/ai_set_move_point_on_other.cpp": "de8d82308f59e9393e224014ec749f7dd477e109695800fcd0abbe60958c5957",
     "src/script/ai_set_run_away_movepoint.cpp": "38fc4aa8a291a0d7cb48127c858cc67f37d33745da4de6bb52f7ce9adc45a89d",
     "src/script/ai_set_team.cpp": "56b78f7d7f894811dfe2c1c54ac433755500aa00e81bdfe63aecc18f5e7aff6b",
     "src/script/ai_start_astar_path_walk.cpp": "6d097ec353ab1b619814364162ce3423560ccf6c5022aafafd01278151e36dbc",
@@ -2392,7 +2394,7 @@
     "src/script/set_location_target.cpp": "19d5e155395f510f1ef3d6744d18e927c1e0803b420e7e3c23b6a5ffc4256b38",
     "src/script/set_max_light_priority.cpp": "ace6521b8b11ce24c256ea07b5c06f999a7c72d86370a9b9dbc744951dd1328a",
     "src/script/set_mg_waypoint_flag.cpp": "164f655cd199e0ee8bde254ab0975d6ae107abe4db0006ff3dcd3fd5845b5081",
-    "src/script/set_move_point.cpp": "83688ac0ccb784869b33e4ba87522ef80887c9a2ac6544f611532a6833339d69",
+    "src/script/set_move_point.cpp": "960658995e15dada10e0296ea8d25178651ca37ce770516c74acbff6fbb08405",
     "src/script/set_muzzle_fire_for_player.cpp": "73112982bde5c0c439a8055a309198d372750b404e88cd197be108ff436a279d",
     "src/script/set_prop_draw.cpp": "95def279ffcb421a5f0273713f07294aa1275f631d88545d6f58bfbba88be0f7",
     "src/script/set_sound_zone.cpp": "69b2c2941a38fe2d8ad77b9a04dd5487e60709ad7dc67e74c7ad5c9b1e27f9f4",
@@ -25550,6 +25552,24 @@
       "discarded_functions": [],
       "object_sha256": "b1b1f7726552272fd96c3a8706671e439f708618201f6c98f6c6e6849d2bd6e0",
       "linked_sha256": "5d15e5e357236520d913656f5c5f3fc82f3bb8fdd3d66875c4a7ee4cad574523"
+    },
+    {
+      "id": "script_ai_set_move_point_on_other",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 404,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "2a584f540e6d45ba0ee113f6cce018de45d4e5fe48baa64d6324053bbb2bf1bc",
+      "linked_sha256": "8aa637d50b82f847638d2cc0ae536c66ae5cb5025f7a77000e5517dd3ed9ecb9"
     }
   ],
   "code_map": {
@@ -48202,20 +48222,6 @@
             "size": 1148,
             "kind": "function",
             "name": "BIFunc_Soldier_AISetMovePoint__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800fcc64",
-            "size": 180,
-            "kind": "function",
-            "name": "BIFunc_AISetMovePointOnOther__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800fcd18",
-            "size": 224,
-            "kind": "function",
-            "name": "BIFunc_AIStartMovePointWalk__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

@@ -25,6 +25,11 @@ class CAITargeting;
 class BSObject;
 // Script-side vector record; three floats, as copied by SetMovePoint.
 struct BS_STRUCT_Vector_struct { float x, y, z; };
+// Scoped view of an AI object's script instance data: the move point is at +0xa4.
+struct AIScriptDataView {
+    unsigned char unknown00[0xa4];
+    BS_STRUCT_Vector_struct movePoint;
+};
 // Original enum tags; enumerator names describe observed numeric selectors.
 enum EMovePointType { MovePointType3 = 3, MovePointType4 = 4 };
 enum AIOBJECT_PATH_WALK_TYPE {
