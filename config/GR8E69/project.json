@@ -1056,7 +1056,11 @@
     "script_set_prop_draw.json",
     "script_ai_match_object_id.json",
     "script_register_position_check.json",
-    "script_resume_motion_playback.json"
+    "script_resume_motion_playback.json",
+    "script_get_soldier_weapon_in_slot.json",
+    "script_set_muzzle_fire_for_player.json",
+    "script_change_players_team.json",
+    "script_soldier_set_current_weapon.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

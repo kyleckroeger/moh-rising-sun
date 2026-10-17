@@ -3,6 +3,7 @@
 #define GAME_SCENE_OBJECTS_H
 #include "SceneNode.h"
 struct BSObject;
+class CWeapon;
 
 // Original enum tag; its members are unknown.
 enum EPlayerCollisionType { PlayerCollisionTypeUnknown = 0 };
@@ -57,7 +58,11 @@ class CSoldierObject {
     int locomotionInfo;     // +0x2ec; returned by address.
     unsigned char unknown_2f0[0xb14 - 0x2f0];
     int canBePushed;        // +0xb14
-    unsigned char unknown_b18[0x1050 - 0xb18];
+    unsigned char unknown_b18[0xb84 - 0xb18];
+    CWeapon *weapons[1];    // +0xb84; slot table, indexed by slot number (extent unknown).
+    unsigned char unknown_b88[0xf20 - 0xb88];
+    int currentWeaponSlot;  // +0xf20
+    unsigned char unknown_f24[0x1050 - 0xf24];
     int voiceHandle;        // +0x1050; -12 when no voice is playing.
     unsigned char unknown_1054[0x10a8 - 0x1054];
     CJawController jaw;     // +0x10a8

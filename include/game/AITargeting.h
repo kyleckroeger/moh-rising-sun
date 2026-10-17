@@ -92,6 +92,14 @@ enum EAIHighLevelState { AIHighLevelStateUnknown = 0 };
 enum ECapability { CapabilityUnknown = 0 };
 enum ECollisionTestDirection { CollisionTestDirectionUnknown = 0 };
 class CAIBehavior;
+// Original enum tag; selector names are descriptive.
+enum aistatus_var { aistatus_var_team = 4 };
+// Method-only view of the embedded AI status block.
+class CAIStatus {
+public:
+    int GetVarValue(aistatus_var) const;
+    void SetVarValue(aistatus_var, int);
+};
 // Observed script-object, position and forward-vector prefix and the embedded
 // AI modules through the spline-path module at +0x2f0. Module offsets come from
 // the built-ins that pass their addresses; the gaps between them stay opaque.
@@ -117,7 +125,9 @@ public:
     unsigned char unknown378[0x594 - 0x378];
     int cookie;          // +0x594; script-owned value (BIFunc_GetCookie/SetCookie).
     unsigned char team;  // +0x598; set by BIFunc_AISetTeam.
-    unsigned char unknown599[0x638 - 0x599];
+    unsigned char unknown599[0x5ec - 0x599];
+    CAIStatus status;    // +0x5ec
+    unsigned char unknown5ed[0x638 - 0x5ed];
     float hearingRadius; // +0x638; set by BIFunc_AISetHearingRadius.
     unsigned char unknown63c[0x6e4 - 0x63c];
     int inShadow;        // +0x6e4
