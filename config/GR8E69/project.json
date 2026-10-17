@@ -1105,7 +1105,9 @@
     "script_add_objective.json",
     "script_set_objective.json",
     "script_set_game_fov.json",
-    "script_letterbox_transition.json"
+    "script_letterbox_transition.json",
+    "script_add_film_canister.json",
+    "script_has_film_canister.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

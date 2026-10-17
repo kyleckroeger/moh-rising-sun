@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-254 fragments in `src/script/` reconstruct **438 functions and 61,080
+256 fragments in `src/script/` reconstruct **440 functions and 61,524
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 345 further built-in wrappers
-and stubs (47,404 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 347 further built-in wrappers
+and stubs (47,848 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-197 fragments add **345 functions and 47,404 executable bytes** from the
+199 fragments add **347 functions and 47,848 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -874,6 +874,8 @@ schedulers through `local_externals`.
 | `script_stop_slow_moh` | `StopSlowMOH` | `0x80119bd0` | 88 |
 | `script_set_animated_texture_frame` | `SetAnimatedTextureFrame`, `SetAnimatedTextureFrameRate` | `0x80119f84` | 280 |
 | `script_reset_animated_texture` | `ResetAnimatedTexture`, `AdvanceAnimatedTexture` | `0x8011a09c` | 264 |
+| `script_add_film_canister` | `AddFilmCanister` | `0x8011a338` | 232 |
+| `script_has_film_canister` | `HasFilmCanister` | `0x8011a4c4` | 212 |
 | `script_give_cheat_number` | `GiveCheatNumber` | `0x8011a598` | 132 |
 | `script_grenade_response_finished` | `GrenadeResponseFinished` | `0x8011a61c` | 196 |
 | `script_sword_drawn` | `SwordDrawn` | `0x8011a76c` | 188 |

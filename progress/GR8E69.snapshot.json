@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 691060,
+    "matching_code_bytes": 691504,
     "total_executable_code_bytes": 2492032,
-    "percent": 27.730783553341208,
+    "percent": 27.74860033900046,
     "categories": {
-      "reconstructed_game": 298844,
+      "reconstructed_game": 299288,
       "restored_library": 392216
     },
-    "matching_functions": 2817
+    "matching_functions": 2819
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "d450ce026481ab810a5842d85bb3397cc7a26b7c66c4f2598a0508c698662573",
+    "config/GR8E69/project.json": "0f7f5e768abcf6759c84236d33b20e2b8f1640eeaedca5acba2b2b9b55c41019",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -656,6 +656,7 @@
     "config/GR8E69/scene_node_vector_defaults.json": "a63f78ad807c0da81f8582ebc3ef10a5d0e7cf9f0b292fbaf119f45308e762cc",
     "config/GR8E69/script_activate_aiming.json": "7e5eb601ff61b67e2a95361873fc74fe3a9550e2679e4cf1f752df8547b616c1",
     "config/GR8E69/script_activate_sound_buss.json": "4ae795eb07c5fbf4e4d126c4a8c2fe8ccafa422fb270c4e7e10eb3b7a34117c9",
+    "config/GR8E69/script_add_film_canister.json": "79df12749b901e7dfd4f19dc40f8aee1668a6fce27691419c5170676eae1f093",
     "config/GR8E69/script_add_hint.json": "4c133d31414af804b11fa316b12e8ea2fdfa36d621fc2c425be5d96a15681bf5",
     "config/GR8E69/script_add_objective.json": "c1a9831314c5b126f5a25337ca7d89d5e099828cfc5574f223b7922dab79b87f",
     "config/GR8E69/script_adjust_aim.json": "ea14e98375d6a4ec1e46fa38357f6abc9fa431307868781319f1366d84e9d304",
@@ -758,6 +759,7 @@
     "config/GR8E69/script_glare_destroy.json": "7d402ee0f90ed1319f6dff3a84bd32a4b4798272f7e2f04b021ae49121861ceb",
     "config/GR8E69/script_grenade_response_finished.json": "8c1b4667e689a9575dd14f20057aa759203667fbfa5a89a2a292eb4efd31dcb8",
     "config/GR8E69/script_grenade_timer_get.json": "7c30b463213d3e438a969916e8193ac7fc9373d4b304523332cf6955eedee9f3",
+    "config/GR8E69/script_has_film_canister.json": "dba96ada09043da60649a9682d9d62d6808911d5616ec53690b592e42cc790b1",
     "config/GR8E69/script_is_draw_enabled.json": "767f93f405be27ad145606a49ad4e955a813048382c3dfef2bb7ab639ae2c671",
     "config/GR8E69/script_is_nearby_position_on_astar_mesh.json": "46a38413d5cb94173df43ac3558eaf054be83329e2fcf80162a319b07ee379ff",
     "config/GR8E69/script_is_player_aiming.json": "20034e5299f599d873d2bd724027a31bfcd2757364e1af9e2ca481bed05e0841",
@@ -1357,7 +1359,7 @@
     "include/game/FlexPropDatabase.h": "e3bb33faf5cff3877d051efc3335ff33c373c9d228a7afcb8b2c16f4ee97c767",
     "include/game/Fog.h": "30a37f01f3f665d1f9b3b0a5ef81ea098194595159c5ff794797541c6bf325c0",
     "include/game/Frustum.h": "517f595d8940b305a44b055a26e31588a43151816c24e27381a86ae90cfc6062",
-    "include/game/GameSettings.h": "45107685ac0c958c310beeb975773cd7f77bcec3cbe04b9939e4a476d47a26db",
+    "include/game/GameSettings.h": "25f79f040cb3c1ed3654448fe0c75bb1636c5883cc4aeb28c533e9a681126d4a",
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
     "include/game/Light.h": "08e09016eb48510435acaf5fbd7648f725db2baa3526ffbceb9ddd096d8ccab5",
     "include/game/LightVolumeManager.h": "f86744d00d312738c23085d84d513fbd05c495194b97a10bf4cde2011dbaf958",
@@ -2248,6 +2250,7 @@
     "src/scene/SceneNodeVectorDefaults.cpp": "00c35ece5cdc03ab1058d2e860f2872c6a2e02be28683c8922a55c89ecc0e28b",
     "src/script/activate_aiming.cpp": "9c303dafaa80279d2f04fa9ee1a17a4b43905a8e80ba5b4e959f7b3fd68972c2",
     "src/script/activate_sound_buss.cpp": "03fa796475fdb5477f6b7692781af99e59f72c69e61011a6babf1970ccaf671e",
+    "src/script/add_film_canister.cpp": "006e15d373da72d87b1b4884385fe76d0cff30e6debd5d6689ed0388f0d6b47e",
     "src/script/add_hint.cpp": "a741a62cab528cbeda7f79dedfc73a5af2b5892cc3a57dac34c247141510697f",
     "src/script/add_objective.cpp": "562a9bee00ed6eeb01512ca0b909c89941af59cfd05b3bbf315968e882cff314",
     "src/script/adjust_aim.cpp": "cfa68f809c4aac4e441c0f343f7dc9e59b3cc1340e78b420f02e71f82b137e66",
@@ -2352,6 +2355,7 @@
     "src/script/glare_destroy.cpp": "9af8820719b3e3c1c5a6f1f2b38795c83c08207fa7da7c14f5580ac634de27a2",
     "src/script/grenade_response_finished.cpp": "0e6c68a908e9d1de8ca11e5ce7573f39ed22151bfb4e87186d9fe2e2736afae5",
     "src/script/grenade_timer_get.cpp": "07314f404ff3339037064ad840142e959f30a296d38449c626c8af6a3db5c7ef",
+    "src/script/has_film_canister.cpp": "154bc0d9a8bf84a9cef31c6db403ea31d1aa48ddb566e1e3a4e0f5765a41d021",
     "src/script/is_draw_enabled.cpp": "78c5ddb64f644270435f2f679bfd269e4e9ac94ee6704ea2e5c2057299258661",
     "src/script/is_nearby_position_on_astar_mesh.cpp": "af06aa1020efcbd663ffb5f636ef1432e93dc2c0a1fc9bccb58411ddf82c98d4",
     "src/script/is_player_aiming.cpp": "d1c4c5b513f23e22823cd1d3814dd811d6caccee7c3ffaabfc095944025fe29c",
@@ -26151,6 +26155,42 @@
       "discarded_functions": [],
       "object_sha256": "965c0ee1d29c995ac5a5e0de976ee1e72c14a72697e7fc290a9a3623872f96dd",
       "linked_sha256": "bafa2ce4f8dca50d1f8da047000ac668b31a78b40dbb9c2d0dd8e9a44261fd10"
+    },
+    {
+      "id": "script_add_film_canister",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 232,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "dd8016a9e7a05352d67bd8536562ce106210f677247ace80a24a3e2d3b046dcf",
+      "linked_sha256": "1b0801c8920186a5f153ffe3ce5b3df6ad41443c79f1e19ece6902a5f47fc8b5"
+    },
+    {
+      "id": "script_has_film_canister",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 212,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "88174cf6dacdfc8cdcf801cbec29e19a3074f4d05c910d36b340a801de017c38",
+      "linked_sha256": "8f03dbf9c604261de96d0f11f9139e9bdedf8c17f02faf0ee546d38ab95bc4a8"
     }
   ],
   "code_map": {
@@ -50171,24 +50211,10 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8011a338",
-            "size": 232,
-            "kind": "function",
-            "name": "BIFunc_AddFilmCanister__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8011a420",
             "size": 164,
             "kind": "function",
             "name": "BIFunc_HasAnyFilmCanister__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8011a4c4",
-            "size": 212,
-            "kind": "function",
-            "name": "BIFunc_HasFilmCanister__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {
