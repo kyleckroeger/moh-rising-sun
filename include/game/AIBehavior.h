@@ -30,6 +30,13 @@ class CBuddyFollowBehavior { // Type 2.
 
 class CMountedMachineGunBehavior { // Type 3.
   public:
+    // The table pointer follows twelve bytes of base data; slots 1-4 in the
+    // order of the original behavior tables (e.g. 0x802e8180).
+    unsigned char unknown00[12];
+    virtual ~CMountedMachineGunBehavior();
+    virtual float GetCurrentHeuristicScore();
+    virtual float GetHeuristicUpdateFrequency();
+    virtual void UpdateHeuristicScore();
     void Arrived();
     void CantReachMMG();
     void HitFromBehind();
@@ -44,6 +51,13 @@ class CMountedMachineGunBehavior { // Type 3.
 
 class CCoverpointBehavior { // Type 4.
   public:
+    // The table pointer follows twelve bytes of base data; slots 1-4 in the
+    // order of the original behavior tables (e.g. 0x802e8180).
+    unsigned char unknown00[12];
+    virtual ~CCoverpointBehavior();
+    virtual float GetCurrentHeuristicScore();
+    virtual float GetHeuristicUpdateFrequency();
+    virtual void UpdateHeuristicScore();
     int StartCoverPointWalk();
     void StopCoverPointWalk();
     void Arrived();

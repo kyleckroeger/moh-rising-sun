@@ -1077,7 +1077,10 @@
     "script_ai_find_tactical_position.json",
     "script_ai_set_run_away_movepoint.json",
     "script_ai_set_move_point_on_other.json",
-    "script_ai_start_astar_path_walk_to_last_position_on_network.json"
+    "script_ai_start_astar_path_walk_to_last_position_on_network.json",
+    "script_soldier_ai_start_spline_path_walk.json",
+    "script_ai_fire_at_current_target.json",
+    "script_ai_force_to_closest_cover_point.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
