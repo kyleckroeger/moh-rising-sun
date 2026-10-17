@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-130 fragments in `src/script/` reconstruct **291 functions and 36,300
+142 fragments in `src/script/` reconstruct **304 functions and 37,576
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 198 further built-in wrappers
-and stubs (22,624 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 211 further built-in wrappers
+and stubs (23,900 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-73 fragments add **198 functions and 22,624 executable bytes** from the
+85 fragments add **211 functions and 23,900 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -687,6 +687,7 @@ schedulers through `local_externals`.
 
 | Manifest | Built-ins | Address | Code bytes |
 | --- | --- | --- | ---: |
+| `script_set_japanese` | `SetJapanese` | `0x800fa3d4` | 72 |
 | `script_register_location_target` | `RegisterLocationTarget`, `DeRegisterLocationTarget` | `0x800fa8a0` | 288 |
 | `script_ai_set_hearing_radius` | `AISetHearingRadius`, `AIGetSoldierMatchListStruct` | `0x800faa88` | 248 |
 | `script_is_nearby_position_on_astar_mesh` | `IsNearbyPositionOnAStarMesh` | `0x800fad0c` | 212 |
@@ -709,6 +710,7 @@ schedulers through `local_externals`.
 | `script_path_mech_allow_collision_damage` | `PathMechAllowCollisionDamage`, `SetHeadAsRoot`, `SetPlayerCollision` | `0x800fe188` | 472 |
 | `script_send_event_self` | `SendEventSelf` | `0x800fe360` | 116 |
 | `script_send_event_parent` | `SendEventParent` | `0x800fe614` | 120 |
+| `script_send_event_parent_immediate` | `SendEventParentImmediate` | `0x800fe68c` | 120 |
 | `script_send_event` | `SendEvent`, `SendEventImmediate`, `SendEventDelayed`, `SendMessage` | `0x800fe704` | 660 |
 | `script_player_is_my_weapon_a_projectile` | `PlayerIsMyWeaponAProjectile`, `SetPlayerWielding`, `PlayerFireMyWeapon` | `0x800fed3c` | 352 |
 | `script_player_reload` | `PlayerStartReloading`, `PlayerReloadSingle`, `PlayerClearReloading`, `PlayerFinishedReloading` | `0x800fee9c` | 472 |
@@ -725,27 +727,36 @@ schedulers through `local_externals`.
 | `script_register_timer_event` | `RegisterTimerEvent` | `0x801006a4` | 152 |
 | `script_player_has_melee_weapon` | `PlayerHasMeleeWeapon`, `PlayerCanSwitchWeapon` | `0x80100914` | 260 |
 | `script_player_switch_weapons` | `PlayerSwitchWeapons` | `0x80100a18` | 160 |
+| `script_player_has_grenade` | `PlayerHasGrenade` | `0x80100ab8` | 112 |
 | `script_get_random_integer` | `GetRandomInteger` | `0x80100c28` | 176 |
 | `script_get_my_instance_data` | `GetMyInstanceData` | `0x80100d78` | 128 |
+| `script_destroy_script` | `DestroyScript` | `0x80101640` | 96 |
 | `script_can_i_create_child` | `CanICreateChild` | `0x8010171c` | 108 |
 | `script_stop_check_objects_inside_range_secondary` | `StopCheckObjectsInsideRange_Secondary`, `StopCheckObjectsOutsideRange_Secondary` | `0x80102014` | 344 |
 | `script_stop_target_search` | `StopTargetSearch`, `StopTargetCheck`, `StopDistanceToTarget` | `0x801029fc` | 588 |
 | `script_stop_check_objects_inside_range` | `StopCheckObjectsInsideRange`, `StopCheckObjectsOutsideRange`, `StopCheckObjectsInsideAngularRange` and 2 more | `0x80102c48` | 860 |
 | `script_debug_print` | `DebugTTYPrint`, `AILog`, `ScriptError` | `0x801030b0` | 144 |
+| `script_register_coverpoint` | `RegisterCoverpoint` | `0x80105c6c` | 100 |
+| `script_set_sound_zone` | `SetSoundZone` | `0x80106158` | 84 |
 | `script_debug_init_from_trigger` | `DebugInitFromTrigger` | `0x801061ac` | 48 |
 | `script_tutorial_text` | `DisplayBIGPromptText`, `DisplayTutorialText`, `KillTutorialText` and 2 more | `0x80106fa0` | 240 |
+| `script_activate_sound_buss` | `ActivateSoundBuss` | `0x80107c48` | 92 |
 | `script_generic_sound_memory` | `GetGenericSoundStructureMemory` | `0x801086b4` | 60 |
+| `script_clear_decals` | `ClearDecals` | `0x80108fa0` | 88 |
 | `script_projector_destroy` | `ProjectorDestroy` | `0x8010947c` | 48 |
 | `script_glare_destroy` | `GlareDestroy` | `0x80109978` | 48 |
 | `script_event_memory_block` | `GetEventSystemMemBlock` | `0x80109e84` | 96 |
 | `script_is_player_invincible` | `IsPlayerInvincible` | `0x8010c294` | 108 |
+| `script_player_stop_look_at` | `PlayerStopLookAt` | `0x8010cb9c` | 108 |
 | `script_toggle_player_vs_trigger_checks` | `TogglePlayerVsTriggerChecks` | `0x801128d4` | 96 |
 | `script_add_hint` | `AddHint` | `0x80112934` | 48 |
 | `script_attach_triggering_player_mmg` | `AttachTriggeringPlayerToMMG` | `0x80112dc0` | 48 |
 | `script_arrived_at_mmg` | `ArrivedAtMMG`, `CantReachMMG`, `HitFromBehindMMG` | `0x80112fac` | 552 |
 | `script_buddy_cant_reach_target` | `BuddyCantReachTarget`, `BuddyFinishedMovingAway`, `SetDistances` | `0x80113374` | 632 |
+| `script_serializing_in` | `SerializingIn`, `SerializingOut` | `0x80114040` | 208 |
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |
 | `script_stop_corpse_search` | `StopCorpseSearch` | `0x80115884` | 196 |
+| `script_ai_find_tank` | `AIFindTank` | `0x80115e48` | 108 |
 | `script_suspend_aiming` | `SuspendAiming`, `ResumeAiming` | `0x8011641c` | 228 |
 | `script_soldier_suspend_aiming` | `Soldier_SuspendAiming`, `Soldier_ResumeAiming`, `ActivatePropAiming` and 5 more | `0x801165d0` | 1280 |
 | `script_ai_set_high_level_state` | `AISetHighLevelState`, `SoldierSetScriptHighLevelState`, `AIChooseBehavior` and 9 more | `0x80117020` | 1756 |
@@ -755,6 +766,7 @@ schedulers through `local_externals`.
 | `script_ai_get_previous_behavior_type` | `AIGetPreviousBehaviorType` | `0x80118854` | 192 |
 | `script_ai_get_next_behavior_type` | `AIGetNextBehaviorType`, `AIGetNextBehaviorScript` | `0x80118a94` | 384 |
 | `script_signal_buddy_lead_checkpoint_reached` | `SignalBuddyLeadCheckpointReached` | `0x801196ac` | 260 |
+| `script_stop_slow_moh` | `StopSlowMOH` | `0x80119bd0` | 88 |
 | `script_grenade_response_finished` | `GrenadeResponseFinished` | `0x8011a61c` | 196 |
 | `script_sword_drawn` | `SwordDrawn` | `0x8011a76c` | 188 |
 | `script_coop_attach` | `AttachPlayerToPropCoop2`, `AttachPlayerToPropCoop`, `AttachPlayerIDToPropCoop` and 5 more | `0x8011c678` | 408 |

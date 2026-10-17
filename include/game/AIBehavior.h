@@ -3,6 +3,7 @@
 #define GAME_AI_BEHAVIOR_H
 #include "AITargeting.h"
 class CThrownBullet;
+class TriggerObject;
 
 // Method-only views of the behaviors that script built-ins reach through
 // CAIObject::FindMatchingBehavior. Each class's GetType returns the selector
@@ -41,6 +42,7 @@ class CCoverpointBehavior { // Type 4.
     void EndCoverpoint();
     void ForceToCoverPoint();
     static void InvalidateCoverPointByID(int);
+    static void RegisterCoverpoint(TriggerObject *);
 };
 
 class CScriptedBehavior { // Type 5.
@@ -59,6 +61,14 @@ class CSwordBehavior { // Type 8.
 class CGrenadeResponseBehavior { // Type 10.
   public:
     void FinishedResponse(CThrownBullet *);
+};
+
+// Static lookup used by BIFunc_AIFindTank; script object at +0x0c as in CAIObject.
+class CAITankObject {
+  public:
+    unsigned char unknown00[0x0c];
+    BSObject *scriptObject;
+    static CAITankObject *FindTank();
 };
 
 #endif

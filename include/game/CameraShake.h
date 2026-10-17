@@ -9,6 +9,11 @@ class CWeapon;
 // establish the complete allocation, base classes or virtual interface.
 class CPlayerObject {
   public:
+    // Member-only view of the embedded look-at controller at +0x1cf0.
+    class LookAtTarget {
+      public:
+        void Disable();
+    };
     // 36 bytes: eight floats, then the table pointer at +32 (the class declares its
     // data before its virtual destructor). Field names are descriptive.
     class CCameraShake {
@@ -51,6 +56,8 @@ class CPlayerObject {
     unsigned char unknown_dac[0xe00 - 0xdac];
     CAISplinePath *movePath, *lookPath; // +0xe00, +0xe04
     float pathParameter, pathRate; // +0xe08, +0xe0c
+    unsigned char unknown_e10[0x1cf0 - 0xe10];
+    LookAtTarget lookAt; // +0x1cf0
     void MoveOnPath(CAISplinePath *, CAISplinePath *, float);
     void StopPath();
 
@@ -71,6 +78,7 @@ class CPlayerObject {
     void StartDeathSequence();
     void DropMPDumpObject();
     int CycleWeapon(int, int);
+    int GetNumGrenades() const;
 };
 
 #endif

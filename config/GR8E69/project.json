@@ -981,7 +981,19 @@
     "script_stop_check_objects_inside_range_secondary.json",
     "script_stop_check_objects_inside_range.json",
     "script_suspend_aiming.json",
-    "script_soldier_suspend_aiming.json"
+    "script_soldier_suspend_aiming.json",
+    "script_set_japanese.json",
+    "script_send_event_parent_immediate.json",
+    "script_player_has_grenade.json",
+    "script_destroy_script.json",
+    "script_register_coverpoint.json",
+    "script_set_sound_zone.json",
+    "script_activate_sound_buss.json",
+    "script_clear_decals.json",
+    "script_player_stop_look_at.json",
+    "script_serializing_in.json",
+    "script_ai_find_tank.json",
+    "script_stop_slow_moh.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

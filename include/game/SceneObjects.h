@@ -47,6 +47,8 @@ class CSoldierObject {
     int aimSuspended;       // +0x1148; set by BIFunc_SuspendAiming.
     unsigned char unknown_114c[0x12b4 - 0x114c];
     int propAimSuspended;   // +0x12b4; set by BIFunc_SuspendPropAiming.
+    unsigned char unknown_12b8[0x15e8 - 0x12b8];
+    int japanese;           // +0x15e8; set by BIFunc_SetJapanese.
     void SetHeadTrans(bool);
     void ResumeAimModifier();
     void ResumePropAimModifier();
@@ -55,6 +57,12 @@ class CSoldierObject {
     void SpecifyTurnAngle(float);
     void SetCurrentWeapon(int, int, bool);
     void FireCurrentWeapon(float, EFireMethod);
+};
+
+// Static decal operations used by the script built-ins.
+class CDecalManager {
+  public:
+    static void ClearDecals();
 };
 
 #endif
