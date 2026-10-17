@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-150 fragments in `src/script/` reconstruct **312 functions and 38,512
+153 fragments in `src/script/` reconstruct **316 functions and 39,048
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 219 further built-in wrappers
-and stubs (24,836 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 223 further built-in wrappers
+and stubs (25,372 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-93 fragments add **219 functions and 24,836 executable bytes** from the
+96 fragments add **223 functions and 25,372 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -731,9 +731,11 @@ schedulers through `local_externals`.
 | `script_player_switch_weapons` | `PlayerSwitchWeapons` | `0x80100a18` | 160 |
 | `script_player_has_grenade` | `PlayerHasGrenade` | `0x80100ab8` | 112 |
 | `script_player_throw_grenade` | `PlayerThrowGrenade` | `0x80100b28` | 128 |
+| `script_player_reset_grenade_count` | `PlayerResetGrenadeCount` | `0x80100ba8` | 128 |
 | `script_get_random_integer` | `GetRandomInteger` | `0x80100c28` | 176 |
 | `script_get_my_instance_data` | `GetMyInstanceData` | `0x80100d78` | 128 |
 | `script_destroy_script` | `DestroyScript` | `0x80101640` | 96 |
+| `script_destroy_dump_object` | `DestroyDumpObject` | `0x801016a0` | 124 |
 | `script_can_i_create_child` | `CanICreateChild` | `0x8010171c` | 108 |
 | `script_stop_check_objects_inside_range_secondary` | `StopCheckObjectsInsideRange_Secondary`, `StopCheckObjectsOutsideRange_Secondary` | `0x80102014` | 344 |
 | `script_change_letterbox_width` | `ChangeLetterboxWidth` | `0x801022b8` | 124 |
@@ -759,6 +761,7 @@ schedulers through `local_externals`.
 | `script_attach_triggering_player_mmg` | `AttachTriggeringPlayerToMMG` | `0x80112dc0` | 48 |
 | `script_deregister_mounted_machine_gun` | `DeregisterMountedMachineGun` | `0x80112e8c` | 124 |
 | `script_arrived_at_mmg` | `ArrivedAtMMG`, `CantReachMMG`, `HitFromBehindMMG` | `0x80112fac` | 552 |
+| `script_get_mmg_feeder_by_link_code` | `GetMMGFeederByLinkCode`, `RegisterBuddyFollowObject` | `0x80113258` | 284 |
 | `script_buddy_cant_reach_target` | `BuddyCantReachTarget`, `BuddyFinishedMovingAway`, `SetDistances` | `0x80113374` | 632 |
 | `script_serializing_in` | `SerializingIn`, `SerializingOut` | `0x80114040` | 208 |
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |

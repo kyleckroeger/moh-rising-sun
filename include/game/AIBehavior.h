@@ -24,6 +24,7 @@ class CBuddyFollowBehavior { // Type 2.
     void ExitBuddyTeleportArea(int);
     int IsBuddyInArea(int);
     void UpdateDistanceToPlayer();
+    static void RegisterBuddyFollowObject(BSObject *, float, float, float, float);
 };
 
 class CMountedMachineGunBehavior { // Type 3.
@@ -34,6 +35,7 @@ class CMountedMachineGunBehavior { // Type 3.
     void ForceToMMG();
     void ForceToMMGFeeder();
     static void DeregisterGun(int);
+    static int GetFeederByLinkCode(int);
 };
 
 class CCoverpointBehavior { // Type 4.

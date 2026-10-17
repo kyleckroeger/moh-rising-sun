@@ -80,6 +80,7 @@ class CPlayerObject {
     int CycleWeapon(int, int);
     int GetNumGrenades() const;
     void ThrowGrenade(float);
+    void ResetGrenadeCount(int);
 };
 
 #endif

@@ -1001,7 +1001,10 @@
     "script_deactivate_animated_light_by_id.json",
     "script_is_draw_enabled.json",
     "script_deregister_mounted_machine_gun.json",
-    "script_signal_buddy_lead_checkpoint_reached_by_player.json"
+    "script_signal_buddy_lead_checkpoint_reached_by_player.json",
+    "script_player_reset_grenade_count.json",
+    "script_destroy_dump_object.json",
+    "script_get_mmg_feeder_by_link_code.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
