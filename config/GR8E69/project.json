@@ -1100,7 +1100,10 @@
     "script_enable_partition.json",
     "script_set_animation_state_on_partition.json",
     "script_player_add_hit_direction.json",
-    "script_remove_triggered_hint.json"
+    "script_remove_triggered_hint.json",
+    "script_display_letterbox.json",
+    "script_add_objective.json",
+    "script_set_objective.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

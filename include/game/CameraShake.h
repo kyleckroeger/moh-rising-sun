@@ -71,7 +71,9 @@ class CPlayerObject {
     int body;                // +0x1144; returned by BIFunc_MPGetPlayerBody.
     unsigned char unknown_1148[0x1410 - 0x1148];
     CHeadsUpDisplay hud;     // +0x1410
-    unsigned char unknown_1411[0x1cf0 - 0x1411];
+    unsigned char unknown_1411[0x1c28 - 0x1411];
+    int letterbox;           // +0x1c28; set by BIFunc_DisplayLetterbox.
+    unsigned char unknown_1c2c[0x1cf0 - 0x1c2c];
     LookAtTarget lookAt; // +0x1cf0
     void MoveOnPath(CAISplinePath *, CAISplinePath *, float);
     void StopPath();

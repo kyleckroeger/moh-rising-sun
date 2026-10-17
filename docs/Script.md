@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-249 fragments in `src/script/` reconstruct **432 functions and 60,132
+252 fragments in `src/script/` reconstruct **436 functions and 60,768
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 339 further built-in wrappers
-and stubs (46,456 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 343 further built-in wrappers
+and stubs (47,092 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-192 fragments add **339 functions and 46,456 executable bytes** from the
+195 fragments add **343 functions and 47,092 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -790,6 +790,7 @@ schedulers through `local_externals`.
 | `script_get_target_for` | `GetTargetFor` | `0x80103140` | 184 |
 | `script_register_coverpoint` | `RegisterCoverpoint` | `0x80105c6c` | 100 |
 | `script_ai_force_to_closest_cover_point` | `AIForceToClosestCoverPoint`, `AIForceToClosestMMG`, `AIForceToMMGFeeder` | `0x80105cd0` | 696 |
+| `script_display_letterbox` | `DisplayLetterbox` | `0x80105f88` | 140 |
 | `script_set_sound_zone` | `SetSoundZone` | `0x80106158` | 84 |
 | `script_debug_init_from_trigger` | `DebugInitFromTrigger` | `0x801061ac` | 48 |
 | `script_tutorial_text` | `DisplayBIGPromptText`, `DisplayTutorialText`, `KillTutorialText` and 2 more | `0x80106fa0` | 240 |
@@ -803,7 +804,9 @@ schedulers through `local_externals`.
 | `script_set_max_light_priority` | `SetMaxLightPriority` | `0x80109c90` | 156 |
 | `script_deactivate_animated_light_by_id` | `DeactivateAnimatedLightByID` | `0x80109e08` | 124 |
 | `script_event_memory_block` | `GetEventSystemMemBlock` | `0x80109e84` | 96 |
+| `script_add_objective` | `AddObjective`, `ChangeObjectivePrompt` | `0x80109ee4` | 340 |
 | `script_resume_motion_playback` | `ResumeMotionPlayback` | `0x8010a48c` | 192 |
+| `script_set_objective` | `SetObjective` | `0x8010ab40` | 156 |
 | `script_get_soldier_weapon_in_slot` | `GetSoldierWeaponInSlot` | `0x8010b908` | 112 |
 | `script_get_current_weapon_class` | `GetCurrentWeaponClass` | `0x8010b978` | 148 |
 | `script_get_current_npc_weapon_class` | `GetCurrentNPCWeaponClass` | `0x8010ba0c` | 300 |
