@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-238 fragments in `src/script/` reconstruct **421 functions and 57,356
+239 fragments in `src/script/` reconstruct **422 functions and 57,588
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 328 further built-in wrappers
-and stubs (43,680 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 329 further built-in wrappers
+and stubs (43,912 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-181 fragments add **328 functions and 43,680 executable bytes** from the
+182 fragments add **329 functions and 43,912 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -768,6 +768,7 @@ schedulers through `local_externals`.
 | `script_bs_object_as_scene_node` | `BSObject_AsSceneNode` | `0x80100e80` | 180 |
 | `script_swap_hier_object` | `SwapHierObject` | `0x801011b0` | 164 |
 | `script_destroy_sub_hier_object` | `DestroySubHierObject` | `0x80101254` | 188 |
+| `script_destroy_child` | `DestroyChild` | `0x8010144c` | 232 |
 | `script_destroy_script` | `DestroyScript` | `0x80101640` | 96 |
 | `script_destroy_dump_object` | `DestroyDumpObject` | `0x801016a0` | 124 |
 | `script_can_i_create_child` | `CanICreateChild` | `0x8010171c` | 108 |

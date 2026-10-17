@@ -1089,7 +1089,8 @@
     "script_fade_out.json",
     "script_activate_aiming.json",
     "script_soldier_activate_aiming.json",
-    "script_anim_object_set_anim_callback.json"
+    "script_anim_object_set_anim_callback.json",
+    "script_destroy_child.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
