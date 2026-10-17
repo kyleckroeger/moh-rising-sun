@@ -1050,7 +1050,10 @@
     "script_set_location_target.json",
     "script_get_scripted_behavior_type.json",
     "script_ai_get_previous_behavior_script.json",
-    "script_soldier_disable_skeletal_partition.json"
+    "script_soldier_disable_skeletal_partition.json",
+    "script_destroy_sub_hier_object.json",
+    "script_attach.json",
+    "script_set_prop_draw.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

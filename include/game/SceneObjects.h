@@ -70,6 +70,7 @@ class CSoldierObject {
     void SetHeadTrackPlayer(bool);
     void EnableSkeletalPartition(Partition);
     void DisableSkeletalPartition(Partition);
+    ISceneNode *GetAttachedObjectAt(char *);
     void ResumeAimModifier();
     void ResumePropAimModifier();
     void EnablePropAimModifier(bool);
