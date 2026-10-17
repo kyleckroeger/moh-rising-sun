@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-215 fragments in `src/script/` reconstruct **392 functions and 51,556
+218 fragments in `src/script/` reconstruct **395 functions and 51,752
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 299 further built-in wrappers
-and stubs (37,880 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 302 further built-in wrappers
+and stubs (38,076 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-158 fragments add **299 functions and 37,880 executable bytes** from the
+161 fragments add **302 functions and 38,076 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -687,6 +687,7 @@ schedulers through `local_externals`.
 
 | Manifest | Built-ins | Address | Code bytes |
 | --- | --- | --- | ---: |
+| `script_asset_crc` | `AssetCRC` | `0x800f8d80` | 44 |
 | `script_set_japanese` | `SetJapanese` | `0x800fa3d4` | 72 |
 | `script_ai_choose_target_by_id` | `AIChooseTargetByID`, `Soldier_AIChooseTargetByID` | `0x800fa744` | 348 |
 | `script_register_location_target` | `RegisterLocationTarget`, `DeRegisterLocationTarget` | `0x800fa8a0` | 288 |
@@ -731,6 +732,7 @@ schedulers through `local_externals`.
 | `script_player_stop_path` | `PlayerStopPath` | `0x800ffdc8` | 104 |
 | `script_player_death` | `PlayerDeath` | `0x800ffe30` | 164 |
 | `script_player_get_weapon_refire_rate` | `PlayerGetWeaponRefireRate` | `0x800ffed4` | 136 |
+| `script_is_player_holding_weapon` | `IsPlayerHoldingWeapon` | `0x80100050` | 92 |
 | `script_is_player_aiming` | `IsPlayerAiming` | `0x801000ac` | 120 |
 | `script_is_player_crouching` | `IsPlayerCrouching`, `SetPlayerFallingDamage` | `0x801001e8` | 332 |
 | `script_make_player_invincible` | `MakePlayerInvincible` | `0x80100334` | 148 |
@@ -841,6 +843,7 @@ schedulers through `local_externals`.
 | `script_grenade_response_finished` | `GrenadeResponseFinished` | `0x8011a61c` | 196 |
 | `script_sword_drawn` | `SwordDrawn` | `0x8011a76c` | 188 |
 | `script_get_weapon_info_helper` | `GetWeaponInfoHelper` | `0x8011b95c` | 48 |
+| `script_player_collision_id` | `GetCollisionIDFromScriptCollisionType` | `0x8011bbf8` | 60 |
 | `script_coop_attach` | `AttachPlayerToPropCoop2`, `AttachPlayerToPropCoop`, `AttachPlayerIDToPropCoop` and 5 more | `0x8011c678` | 408 |
 | `script_coop_players` | `SetParanoiaParameters`, `MPAddBotHealth`, `ForcePlayersApart` and 11 more | `0x8011c85c` | 712 |
 | `script_coop_triggers` | `SetSplitScreen`, `AssignCptDistances`, `ForcePlayerWarp` and 31 more | `0x8011cb70` | 1856 |
