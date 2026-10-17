@@ -7,6 +7,8 @@ struct BSObject;
 // Original enum tag; its members are unknown.
 enum EPlayerCollisionType { PlayerCollisionTypeUnknown = 0 };
 EClsnId GetCollisionIDFromScriptCollisionType(EPlayerCollisionType);
+// Original enum tag; its members are unknown.
+enum EFireMethod { FireMethodUnknown = 0 };
 
 // Member-only views of scene-object classes reached through the ISceneNode
 // casts. Each view starts at the ISceneNode subobject (the casts return it
@@ -41,7 +43,18 @@ class CSoldierObject {
     int groundCheckState;   // +0x228; cleared before the ground-check event.
     unsigned char unknown_22c[0xb14 - 0x22c];
     int canBePushed;        // +0xb14
+    unsigned char unknown_b18[0x1148 - 0xb18];
+    int aimSuspended;       // +0x1148; set by BIFunc_SuspendAiming.
+    unsigned char unknown_114c[0x12b4 - 0x114c];
+    int propAimSuspended;   // +0x12b4; set by BIFunc_SuspendPropAiming.
     void SetHeadTrans(bool);
+    void ResumeAimModifier();
+    void ResumePropAimModifier();
+    void EnablePropAimModifier(bool);
+    void SaveGagState();
+    void SpecifyTurnAngle(float);
+    void SetCurrentWeapon(int, int, bool);
+    void FireCurrentWeapon(float, EFireMethod);
 };
 
 #endif

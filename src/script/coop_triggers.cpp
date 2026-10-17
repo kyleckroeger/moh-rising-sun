@@ -158,3 +158,8 @@ void BIFunc_GetMMGPlayerID(int **stack, void *) {
     *stack -= g_pBuiltInFunctions[g_iCurrentBIFIndex].stackAdjustment;
     **stack = -1;
 }
+
+void BIFunc_IsPlayerUsingMMG(int **stack, void *) {
+    *stack -= g_pBuiltInFunctions[g_iCurrentBIFIndex].stackAdjustment;
+    **stack = 0;
+}

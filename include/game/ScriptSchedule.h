@@ -16,5 +16,12 @@ extern BSSchedule g_TargetSearchSchedule;
 extern BSSchedule g_TargetCheckSchedule;
 extern BSSchedule g_DistanceToTargetSchedule;
 extern BSSchedule g_CorpseSearchSchedule;
+extern BSSchedule g_CheckObjectsInsideRangeSchedule;
+extern BSSchedule g_CheckObjectsOutsideRangeSchedule;
+extern BSSchedule g_CheckObjectsInsideAngularRangeSchedule;
+extern BSSchedule g_CheckObjectsOutsideAngularRangeSchedule;
+extern BSSchedule g_CheckObjectsInsideRangeSchedule_Secondary;
+extern BSSchedule g_CheckObjectsOutsideRangeSchedule_Secondary;
+extern BSSchedule g_PositionSchedule;
 
 #endif

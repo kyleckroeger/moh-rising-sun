@@ -19,7 +19,7 @@
     {
       "name": ".text",
       "address": "0x8011cb70",
-      "size": 1800
+      "size": 1856
     }
   ],
   "functions": [
@@ -218,6 +218,12 @@
     {
       "name": "BIFunc_GetMMGPlayerID__FPPiPv",
       "address": "0x8011d240",
+      "size": 56,
+      "binding": 1
+    },
+    {
+      "name": "BIFunc_IsPlayerUsingMMG__FPPiPv",
+      "address": "0x8011d278",
       "size": 56,
       "binding": 1
     }

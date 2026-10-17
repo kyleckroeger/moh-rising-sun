@@ -972,7 +972,16 @@
     "script_disable_collision.json",
     "script_path_mech_allow_collision_damage.json",
     "script_player_motion_shake.json",
-    "script_player_switch_weapons.json"
+    "script_player_switch_weapons.json",
+    "script_register_location_target.json",
+    "script_soldier_ai_stop_spline_path_walk.json",
+    "script_soldier_ai_continue_spline_path_walk.json",
+    "script_soldier_ai_fire_at_current_target.json",
+    "script_register_astar_link_point.json",
+    "script_stop_check_objects_inside_range_secondary.json",
+    "script_stop_check_objects_inside_range.json",
+    "script_suspend_aiming.json",
+    "script_soldier_suspend_aiming.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

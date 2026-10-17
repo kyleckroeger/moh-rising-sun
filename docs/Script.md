@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-121 fragments in `src/script/` reconstruct **266 functions and 32,484
+130 fragments in `src/script/` reconstruct **291 functions and 36,300
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 173 further built-in wrappers
-and stubs (18,808 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 198 further built-in wrappers
+and stubs (22,624 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-64 fragments add **173 functions and 18,808 executable bytes** from the
+73 fragments add **198 functions and 22,624 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -687,19 +687,24 @@ schedulers through `local_externals`.
 
 | Manifest | Built-ins | Address | Code bytes |
 | --- | --- | --- | ---: |
+| `script_register_location_target` | `RegisterLocationTarget`, `DeRegisterLocationTarget` | `0x800fa8a0` | 288 |
 | `script_ai_set_hearing_radius` | `AISetHearingRadius`, `AIGetSoldierMatchListStruct` | `0x800faa88` | 248 |
 | `script_is_nearby_position_on_astar_mesh` | `IsNearbyPositionOnAStarMesh` | `0x800fad0c` | 212 |
 | `script_ai_stop_spline_path_walk` | `AIStopSplinePathWalk` | `0x800faec4` | 116 |
+| `script_soldier_ai_stop_spline_path_walk` | `Soldier_AIStopSplinePathWalk` | `0x800faf38` | 180 |
 | `script_ai_continue_spline_path_walk` | `AIContinueSplinePathWalk` | `0x800fafec` | 116 |
+| `script_soldier_ai_continue_spline_path_walk` | `Soldier_AIContinueSplinePathWalk` | `0x800fb060` | 180 |
 | `script_ai_loop_spline_path_walk` | `AILoopSplinePathWalk` | `0x800fb114` | 116 |
 | `script_ai_start_astar_path_walk` | `AIStartAStarPathWalk` | `0x800fb2c0` | 172 |
 | `script_ai_start_astar_path_walk_to_move_point` | `AIStartAStarPathWalkToMovePoint`, `AIStopAStarPathWalk`, `AIStartCoverPointWalk`, `AIStopCoverPointWalk` | `0x800fb5d8` | 520 |
 | `script_ai_invalidate_cover_point_by_id` | `AIInvalidateCoverPointByID` | `0x800fb7e0` | 132 |
 | `script_arrived_at_coverpoint` | `ArrivedAtCoverpoint`, `EndCoverpoint` | `0x800fbad8` | 368 |
+| `script_soldier_ai_fire_at_current_target` | `Soldier_AIFireAtCurrentTarget` | `0x800fbf2c` | 208 |
 | `script_ai_stop_move_point_walk` | `AIStopMovePointWalk`, `AIContinueMovePointWalk` | `0x800fcdf8` | 232 |
 | `script_set_gravity` | `SetGravity`, `SetGroundCheck`, `InduceGroundCheck` | `0x800fd7b4` | 452 |
 | `script_set_can_be_pushed` | `SetCanBePushed` | `0x800fdb78` | 200 |
 | `script_enter_astar_volume` | `EnterAStarVolume`, `ExitAStarVolume` | `0x800fdd20` | 320 |
+| `script_register_astar_link_point` | `RegisterAStarLinkPoint`, `RegisterAStarVolume` | `0x800fde60` | 192 |
 | `script_disable_collision` | `DisableCollision` | `0x800fdf20` | 136 |
 | `script_path_mech_allow_collision_damage` | `PathMechAllowCollisionDamage`, `SetHeadAsRoot`, `SetPlayerCollision` | `0x800fe188` | 472 |
 | `script_send_event_self` | `SendEventSelf` | `0x800fe360` | 116 |
@@ -723,7 +728,9 @@ schedulers through `local_externals`.
 | `script_get_random_integer` | `GetRandomInteger` | `0x80100c28` | 176 |
 | `script_get_my_instance_data` | `GetMyInstanceData` | `0x80100d78` | 128 |
 | `script_can_i_create_child` | `CanICreateChild` | `0x8010171c` | 108 |
+| `script_stop_check_objects_inside_range_secondary` | `StopCheckObjectsInsideRange_Secondary`, `StopCheckObjectsOutsideRange_Secondary` | `0x80102014` | 344 |
 | `script_stop_target_search` | `StopTargetSearch`, `StopTargetCheck`, `StopDistanceToTarget` | `0x801029fc` | 588 |
+| `script_stop_check_objects_inside_range` | `StopCheckObjectsInsideRange`, `StopCheckObjectsOutsideRange`, `StopCheckObjectsInsideAngularRange` and 2 more | `0x80102c48` | 860 |
 | `script_debug_print` | `DebugTTYPrint`, `AILog`, `ScriptError` | `0x801030b0` | 144 |
 | `script_debug_init_from_trigger` | `DebugInitFromTrigger` | `0x801061ac` | 48 |
 | `script_tutorial_text` | `DisplayBIGPromptText`, `DisplayTutorialText`, `KillTutorialText` and 2 more | `0x80106fa0` | 240 |
@@ -739,6 +746,8 @@ schedulers through `local_externals`.
 | `script_buddy_cant_reach_target` | `BuddyCantReachTarget`, `BuddyFinishedMovingAway`, `SetDistances` | `0x80113374` | 632 |
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |
 | `script_stop_corpse_search` | `StopCorpseSearch` | `0x80115884` | 196 |
+| `script_suspend_aiming` | `SuspendAiming`, `ResumeAiming` | `0x8011641c` | 228 |
+| `script_soldier_suspend_aiming` | `Soldier_SuspendAiming`, `Soldier_ResumeAiming`, `ActivatePropAiming` and 5 more | `0x801165d0` | 1280 |
 | `script_ai_set_high_level_state` | `AISetHighLevelState`, `SoldierSetScriptHighLevelState`, `AIChooseBehavior` and 9 more | `0x80117020` | 1756 |
 | `script_ai_finished_behavior` | `AIFinishedBehavior` | `0x801176fc` | 48 |
 | `script_ai_is_behavior_enabled` | `AIIsBehaviorEnabled` | `0x8011772c` | 156 |
@@ -750,7 +759,7 @@ schedulers through `local_externals`.
 | `script_sword_drawn` | `SwordDrawn` | `0x8011a76c` | 188 |
 | `script_coop_attach` | `AttachPlayerToPropCoop2`, `AttachPlayerToPropCoop`, `AttachPlayerIDToPropCoop` and 5 more | `0x8011c678` | 408 |
 | `script_coop_players` | `SetParanoiaParameters`, `MPAddBotHealth`, `ForcePlayersApart` and 11 more | `0x8011c85c` | 712 |
-| `script_coop_triggers` | `SetSplitScreen`, `AssignCptDistances`, `ForcePlayerWarp` and 30 more | `0x8011cb70` | 1800 |
+| `script_coop_triggers` | `SetSplitScreen`, `AssignCptDistances`, `ForcePlayerWarp` and 31 more | `0x8011cb70` | 1856 |
 
 Open problems: built-ins that return a float from a call (`AIGetDistanceToTargetXYZ`,
 `AIGetDistanceToMovePoint`) or a constant float (`GetDistanceBetweenPlayers`,

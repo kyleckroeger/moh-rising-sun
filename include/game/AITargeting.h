@@ -9,6 +9,8 @@ enum AIFILTER_WEAPON_AIM_MODE {
     WeaponAimMode6 = 6, WeaponAimMode8 = 8
 };
 class CAIObjectParameters;
+// Original enum tag; its members are unknown.
+enum ETeam { TeamUnknown = 0 };
 class ISceneNode;
 class CAIObject;
 // Twelve-byte value copied by the original targeting callers. Field names and
@@ -70,6 +72,8 @@ public:
     void GetAdjustedAimTargetPosition(CVector3 &);
     bool DoBlindFire();
     float GetDistanceToTargetSquaredXYZReal();
+    static void RegisterLocationTarget(int, bool, ETeam, BSObject *);
+    static void DeRegisterLocationTarget(int);
     BSObject *GetTargetScript() const;
     bool IsNonAITarget() const;
     bool HasValidTarget() const;
