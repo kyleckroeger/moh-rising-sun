@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-162 fragments in `src/script/` reconstruct **326 functions and 40,380
+167 fragments in `src/script/` reconstruct **336 functions and 41,784
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 233 further built-in wrappers
-and stubs (26,704 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 243 further built-in wrappers
+and stubs (28,108 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-105 fragments add **233 functions and 26,704 executable bytes** from the
+110 fragments add **243 functions and 28,108 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -728,6 +728,7 @@ schedulers through `local_externals`.
 | `script_is_player_aiming` | `IsPlayerAiming` | `0x801000ac` | 120 |
 | `script_is_player_crouching` | `IsPlayerCrouching`, `SetPlayerFallingDamage` | `0x801001e8` | 332 |
 | `script_player_respawn` | `PlayerRespawn` | `0x801003c8` | 112 |
+| `script_player_get_weapon_class` | `PlayerGetWeaponClass` | `0x80100438` | 144 |
 | `script_player_action_stubs` | `PlayerGeneratedTrigger`, `SetFullscreenMode`, `PlayerToggleDuckForShoulderClimb` and 4 more | `0x801004c8` | 344 |
 | `script_play_facial_animation` | `PlayFacialAnimation` | `0x80100620` | 132 |
 | `script_register_timer_event` | `RegisterTimerEvent` | `0x801006a4` | 152 |
@@ -745,6 +746,7 @@ schedulers through `local_externals`.
 | `script_can_i_create_child` | `CanICreateChild` | `0x8010171c` | 108 |
 | `script_stop_check_objects_inside_range_secondary` | `StopCheckObjectsInsideRange_Secondary`, `StopCheckObjectsOutsideRange_Secondary` | `0x80102014` | 344 |
 | `script_change_letterbox_width` | `ChangeLetterboxWidth` | `0x801022b8` | 124 |
+| `script_register_for_property_message` | `RegisterForPropertyMessage`, `StopPropertyMessage` | `0x801028e4` | 280 |
 | `script_stop_target_search` | `StopTargetSearch`, `StopTargetCheck`, `StopDistanceToTarget` | `0x801029fc` | 588 |
 | `script_stop_check_objects_inside_range` | `StopCheckObjectsInsideRange`, `StopCheckObjectsOutsideRange`, `StopCheckObjectsInsideAngularRange` and 2 more | `0x80102c48` | 860 |
 | `script_debug_print` | `DebugTTYPrint`, `AILog`, `ScriptError` | `0x801030b0` | 144 |
@@ -770,6 +772,8 @@ schedulers through `local_externals`.
 | `script_register_mmg_feeder` | `RegisterMMGFeeder` | `0x801131d4` | 132 |
 | `script_get_mmg_feeder_by_link_code` | `GetMMGFeederByLinkCode`, `RegisterBuddyFollowObject` | `0x80113258` | 284 |
 | `script_buddy_cant_reach_target` | `BuddyCantReachTarget`, `BuddyFinishedMovingAway`, `SetDistances` | `0x80113374` | 632 |
+| `script_register_gag_action` | `RegisterGagAction`, `StartGag`, `StartGagCRC` | `0x801135ec` | 420 |
+| `script_register_save_point` | `RegisterSavePoint`, `PerformSavePointResponse` | `0x80113e8c` | 280 |
 | `script_serializing_in` | `SerializingIn`, `SerializingOut` | `0x80114040` | 208 |
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |
 | `script_stop_corpse_search` | `StopCorpseSearch` | `0x80115884` | 196 |
@@ -785,6 +789,7 @@ schedulers through `local_externals`.
 | `script_signal_buddy_lead_checkpoint_reached` | `SignalBuddyLeadCheckpointReached` | `0x801196ac` | 260 |
 | `script_signal_buddy_lead_checkpoint_reached_by_player` | `SignalBuddyLeadCheckpointReachedByPlayer` | `0x801197b0` | 124 |
 | `script_stop_slow_moh` | `StopSlowMOH` | `0x80119bd0` | 88 |
+| `script_set_animated_texture_frame` | `SetAnimatedTextureFrame`, `SetAnimatedTextureFrameRate` | `0x80119f84` | 280 |
 | `script_reset_animated_texture` | `ResetAnimatedTexture`, `AdvanceAnimatedTexture` | `0x8011a09c` | 264 |
 | `script_give_cheat_number` | `GiveCheatNumber` | `0x8011a598` | 132 |
 | `script_grenade_response_finished` | `GrenadeResponseFinished` | `0x8011a61c` | 196 |

@@ -65,6 +65,8 @@ class AnimShape {
   public:
     static void ResetByCRC(int);
     static void AdvanceByCRC(int);
+    static void SetFrameByCRC(int, float);
+    static void SetFrameRateByCRC(int, float);
 };
 
 // Static decal operations used by the script built-ins.

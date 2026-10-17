@@ -68,6 +68,14 @@ class CGrenadeResponseBehavior { // Type 10.
     void FinishedResponse(CThrownBullet *);
 };
 
+// Static scripted-gag entry points.
+class CScriptedGag {
+  public:
+    static void RegisterGagAction(BSObject *, const char *, int);
+    static void StartGag(BSObject *, const char *, int);
+    static void StartGag(BSObject *, unsigned int, int);
+};
+
 // Method-only view of a cover point; the script object's native trigger is one.
 class CCoverPoint {
   public:

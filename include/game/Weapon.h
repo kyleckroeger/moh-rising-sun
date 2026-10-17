@@ -16,7 +16,9 @@ class CWeapon {
   public:
     unsigned char unknown_0[0x300];
     WeaponProperties *properties; // +0x300
-    unsigned char unknown_304[0x350 - 0x304];
+    unsigned char unknown_304[0x320 - 0x304];
+    int weaponClass; // +0x320; returned by BIFunc_PlayerGetWeaponClass.
+    unsigned char unknown_324[0x350 - 0x324];
     unsigned int reloading : 1; // +0x350, bit 31: cleared by BIFunc_PlayerClearReloading.
     unsigned int unknown_350 : 31;
     void StartReloading();

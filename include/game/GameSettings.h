@@ -8,6 +8,8 @@ class CGameSettings {
     int SerializingIn() const;
     int SerializingOut() const;
     void AddCheat(int);
+    void RegisterSavePoint(int, bool);
+    void TriggerSavePointResponse(int, bool);
 };
 extern CGameSettings g_GameSettings;
 

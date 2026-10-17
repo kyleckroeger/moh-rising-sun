@@ -1013,7 +1013,12 @@
     "script_get_instance_data_for.json",
     "script_register_mmg_feeder.json",
     "script_reset_animated_texture.json",
-    "script_give_cheat_number.json"
+    "script_give_cheat_number.json",
+    "script_player_get_weapon_class.json",
+    "script_register_for_property_message.json",
+    "script_register_gag_action.json",
+    "script_register_save_point.json",
+    "script_set_animated_texture_frame.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
