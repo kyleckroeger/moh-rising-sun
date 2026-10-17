@@ -31,12 +31,16 @@ class CPlayerObject {
 
     // Member-only view; unknown bytes retain their original ownership.
     struct Flags {
-        unsigned int unknown_31_26 : 6;
+        unsigned int unknown_31_27 : 5;
+        unsigned int canCrouch : 1;     // Bit 26: BIFunc_PlayerCanCrouch.
         unsigned int motionShake : 1;   // Bit 25: set by DoMotionShake for a positive amount.
-        unsigned int unknown_low : 25;
+        unsigned int unknown_24 : 1;
+        unsigned int wielding : 1;      // Bit 23: BIFunc_SetPlayerWielding.
+        unsigned int triggerChecks : 1; // Bit 22: BIFunc_TogglePlayerVsTriggerChecks.
+        unsigned int unknown_low : 22;
     };
     unsigned char unknown_0[0xd44];
-    unsigned int pathFlags; // +0xd44; bit 19 enables path movement.
+    unsigned int pathFlags; // +0xd44; bit 19 enables path movement, bit 27 is set while aiming.
     unsigned char unknown_d48[4];
     Flags flags;
     unsigned char unknown_d50[0xd58 - 0xd50];
@@ -58,6 +62,14 @@ class CPlayerObject {
     void DoMotionShake(float, float);
 
     CWeapon *GetCurrentWeapon() const;
+    void FireMyWeapon(float);
+    void SetFallingDamageState(bool);
+    void Respawn();
+    int CanPlayerSwitchWeapon();
+    int IsPlayerCrouching() const;
+    int IsInvincible() const;
+    void StartDeathSequence();
+    void DropMPDumpObject();
 };
 
 #endif

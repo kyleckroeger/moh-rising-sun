@@ -8,15 +8,16 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-Fifty-seven fragments in `src/script/` reconstruct **93 functions and 13,676 executable
-bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
+One hundred thirteen fragments in `src/script/` reconstruct **253 functions and 30,504
+executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
 timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes).
+far-clip and particle-sorting controls (656 bytes), and 160 further built-in wrappers
+and stubs (16,828 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -631,6 +632,123 @@ Each colour query emits its own complete eight-byte unsigned-integer conversion
 constant, at `0x802a5ed8`, `0x802a5ee0` and `0x802a5ee8`. All 24 bytes are verified
 separately and excluded from code credit. No functions, sections or padding are
 discarded, and no instructions are patched.
+
+## Built-in wrappers, stubs and AI behavior controls
+
+Fifty-six fragments add **160 functions and 16,828 executable bytes** from the
+`bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
+built-ins and are independent fragments, not recovered file boundaries.
+
+The work was guided by kyleckroeger's CC0
+[Frontline GameCube reconstruction](https://github.com/kyleckroeger/moh-frontline-decomp)
+(GMFE69, CodeWarrior). Frontline's source names the built-ins' globals, members and
+callees, but its bytes cannot match ProDG output; every body here was checked
+against the GR8E69 instructions, and many differ from Frontline (see below).
+
+**Stubs.** Seventy-seven built-ins only pop their arguments, return zero, return -1,
+or return `g_bCoopMultiplayer`; most are co-op, split-screen, tutorial and debug
+entries that this single-player build leaves empty. `RegisterMovie` and `BotDeath`
+in the same block forward to `ShellManager::SetMovieName` and `BotDead`.
+`EnterAStarVolume`, `ExitAStarVolume` and `SoldierSetScriptHighLevelState` never
+pop their arguments; the reconstructions keep that.
+
+**Argument access.** Two spellings reproduce the observed loads. Single-argument
+built-ins read `args = *stack - argumentCount` and index it. Built-ins with two or
+more arguments read each slot as `*(*stack - (count - n))` from a saved
+`argumentCount`; this produces the duplicated base register (`mr r11,r9`) the
+original keeps, which the `args[n]` form does not. Booleans that the callee receives
+unconverted are read through a `bool *` view of the slot (GCC 2.x `bool` is four
+bytes on this target).
+
+**AI object modules.** The AI built-ins reach `CAIObject` through
+`ISceneNode::GetAIObject` and pass the addresses of embedded modules: targeting at
+`+0xa0`, locomotion at `+0x1b0`, A* area path finding at `+0x230` and the spline-path
+module at `+0x2f0`. The scoped view in `AITargeting.h` now embeds the existing module
+prefixes at those offsets with opaque gaps between them. It still does not establish
+the complete allocation. Frontline's equivalents manipulate walk-state fields on
+the AI object directly, so Rising Sun's module calls are a real design difference,
+not a naming one.
+
+**Behaviors.** `CAIObject::FindMatchingBehavior` takes the selectors 1 (buddy lead),
+2 (buddy follow), 3 (mounted machine gun), 4 (cover point), 5 (scripted), 8 (sword)
+and 10 (grenade response). Each value is the return of that class's `GetType`.
+`AIBehavior.h` declares method-only views; the built-ins convert the returned
+pointer without adjustment. Null checks, the weak game-object test, and whether a
+built-in pops its arguments differ between otherwise similar wrappers, and each is
+kept as observed.
+
+**Player and weapon.** Player flags at `+0xd4c` gain `canCrouch` (bit 26),
+`wielding` (bit 23) and `triggerChecks` (bit 22) beside the existing motion-shake
+bit. Bit 27 of the word at `+0xd44` is read as "aiming". The weapon view adds the
+property record pointer at `+0x300` (refire rate `+6`, projectile flag `+0xe`) before
+the reload bit at `+0x350`. `TriggerObject` `+4` is its script object, used by
+`SendEventParent`. The four schedule-stop built-ins name their file-local
+schedulers through `local_externals`.
+
+| Manifest | Built-ins | Address | Code bytes |
+| --- | --- | --- | ---: |
+| `script_is_nearby_position_on_astar_mesh` | `IsNearbyPositionOnAStarMesh` | `0x800fad0c` | 212 |
+| `script_ai_stop_spline_path_walk` | `AIStopSplinePathWalk` | `0x800faec4` | 116 |
+| `script_ai_continue_spline_path_walk` | `AIContinueSplinePathWalk` | `0x800fafec` | 116 |
+| `script_ai_loop_spline_path_walk` | `AILoopSplinePathWalk` | `0x800fb114` | 116 |
+| `script_ai_start_astar_path_walk` | `AIStartAStarPathWalk` | `0x800fb2c0` | 172 |
+| `script_ai_start_astar_path_walk_to_move_point` | `AIStartAStarPathWalkToMovePoint`, `AIStopAStarPathWalk`, `AIStartCoverPointWalk`, `AIStopCoverPointWalk` | `0x800fb5d8` | 520 |
+| `script_arrived_at_coverpoint` | `ArrivedAtCoverpoint`, `EndCoverpoint` | `0x800fbad8` | 368 |
+| `script_ai_stop_move_point_walk` | `AIStopMovePointWalk`, `AIContinueMovePointWalk` | `0x800fcdf8` | 232 |
+| `script_enter_astar_volume` | `EnterAStarVolume`, `ExitAStarVolume` | `0x800fdd20` | 320 |
+| `script_send_event_self` | `SendEventSelf` | `0x800fe360` | 116 |
+| `script_send_event_parent` | `SendEventParent` | `0x800fe614` | 120 |
+| `script_send_event` | `SendEvent`, `SendEventImmediate`, `SendEventDelayed`, `SendMessage` | `0x800fe704` | 660 |
+| `script_player_is_my_weapon_a_projectile` | `PlayerIsMyWeaponAProjectile`, `SetPlayerWielding`, `PlayerFireMyWeapon` | `0x800fed3c` | 352 |
+| `script_player_reload` | `PlayerStartReloading`, `PlayerReloadSingle`, `PlayerClearReloading`, `PlayerFinishedReloading` | `0x800fee9c` | 472 |
+| `script_player_can_crouch` | `PlayerCanCrouch` | `0x800ff880` | 156 |
+| `script_texture_fade` | `PlayerTextureFadeIn`, `PlayerTextureFadeOut` | `0x800ffbec` | 96 |
+| `script_player_stop_path` | `PlayerStopPath` | `0x800ffdc8` | 104 |
+| `script_player_death` | `PlayerDeath` | `0x800ffe30` | 164 |
+| `script_player_get_weapon_refire_rate` | `PlayerGetWeaponRefireRate` | `0x800ffed4` | 136 |
+| `script_is_player_aiming` | `IsPlayerAiming` | `0x801000ac` | 120 |
+| `script_is_player_crouching` | `IsPlayerCrouching`, `SetPlayerFallingDamage` | `0x801001e8` | 332 |
+| `script_player_respawn` | `PlayerRespawn` | `0x801003c8` | 112 |
+| `script_player_action_stubs` | `PlayerGeneratedTrigger`, `SetFullscreenMode`, `PlayerToggleDuckForShoulderClimb` and 4 more | `0x801004c8` | 344 |
+| `script_register_timer_event` | `RegisterTimerEvent` | `0x801006a4` | 152 |
+| `script_player_has_melee_weapon` | `PlayerHasMeleeWeapon`, `PlayerCanSwitchWeapon` | `0x80100914` | 260 |
+| `script_get_random_integer` | `GetRandomInteger` | `0x80100c28` | 176 |
+| `script_get_my_instance_data` | `GetMyInstanceData` | `0x80100d78` | 128 |
+| `script_can_i_create_child` | `CanICreateChild` | `0x8010171c` | 108 |
+| `script_stop_target_search` | `StopTargetSearch`, `StopTargetCheck`, `StopDistanceToTarget` | `0x801029fc` | 588 |
+| `script_debug_print` | `DebugTTYPrint`, `AILog`, `ScriptError` | `0x801030b0` | 144 |
+| `script_debug_init_from_trigger` | `DebugInitFromTrigger` | `0x801061ac` | 48 |
+| `script_tutorial_text` | `DisplayBIGPromptText`, `DisplayTutorialText`, `KillTutorialText` and 2 more | `0x80106fa0` | 240 |
+| `script_generic_sound_memory` | `GetGenericSoundStructureMemory` | `0x801086b4` | 60 |
+| `script_projector_destroy` | `ProjectorDestroy` | `0x8010947c` | 48 |
+| `script_glare_destroy` | `GlareDestroy` | `0x80109978` | 48 |
+| `script_event_memory_block` | `GetEventSystemMemBlock` | `0x80109e84` | 96 |
+| `script_is_player_invincible` | `IsPlayerInvincible` | `0x8010c294` | 108 |
+| `script_toggle_player_vs_trigger_checks` | `TogglePlayerVsTriggerChecks` | `0x801128d4` | 96 |
+| `script_add_hint` | `AddHint` | `0x80112934` | 48 |
+| `script_attach_triggering_player_mmg` | `AttachTriggeringPlayerToMMG` | `0x80112dc0` | 48 |
+| `script_arrived_at_mmg` | `ArrivedAtMMG`, `CantReachMMG`, `HitFromBehindMMG` | `0x80112fac` | 552 |
+| `script_buddy_cant_reach_target` | `BuddyCantReachTarget`, `BuddyFinishedMovingAway`, `SetDistances` | `0x80113374` | 632 |
+| `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |
+| `script_stop_corpse_search` | `StopCorpseSearch` | `0x80115884` | 196 |
+| `script_ai_set_high_level_state` | `AISetHighLevelState`, `SoldierSetScriptHighLevelState`, `AIChooseBehavior` and 9 more | `0x80117020` | 1756 |
+| `script_ai_finished_behavior` | `AIFinishedBehavior` | `0x801176fc` | 48 |
+| `script_ai_is_behavior_enabled` | `AIIsBehaviorEnabled` | `0x8011772c` | 156 |
+| `script_enter_buddy_teleport_area` | `EnterBuddyTeleportArea`, `ExitBuddyTeleportArea`, `IsBuddyInArea` and 3 more | `0x80117ca0` | 1448 |
+| `script_ai_get_previous_behavior_type` | `AIGetPreviousBehaviorType` | `0x80118854` | 192 |
+| `script_ai_get_next_behavior_type` | `AIGetNextBehaviorType`, `AIGetNextBehaviorScript` | `0x80118a94` | 384 |
+| `script_signal_buddy_lead_checkpoint_reached` | `SignalBuddyLeadCheckpointReached` | `0x801196ac` | 260 |
+| `script_grenade_response_finished` | `GrenadeResponseFinished` | `0x8011a61c` | 196 |
+| `script_sword_drawn` | `SwordDrawn` | `0x8011a76c` | 188 |
+| `script_coop_attach` | `AttachPlayerToPropCoop2`, `AttachPlayerToPropCoop`, `AttachPlayerIDToPropCoop` and 5 more | `0x8011c678` | 408 |
+| `script_coop_players` | `SetParanoiaParameters`, `MPAddBotHealth`, `ForcePlayersApart` and 11 more | `0x8011c85c` | 712 |
+| `script_coop_triggers` | `SetSplitScreen`, `AssignCptDistances`, `ForcePlayerWarp` and 30 more | `0x8011cb70` | 1800 |
+
+Open problems: built-ins that return a float from a call (`AIGetDistanceToTargetXYZ`,
+`AIGetDistanceToMovePoint`) or a constant float (`GetDistanceBetweenPlayers`,
+`UpdateFirePosition`) store `f1` to the frame and reload it as an integer after the
+stack pointer is loaded. No tested union, pointer-cast or inline-helper spelling
+reproduces that scheduling yet, so those four bodies remain original context.
 
 ## Verification and next work
 

@@ -6,6 +6,7 @@
 #include "BPD.h"
 
 struct FlexPropList;
+struct BSObject;
 
 // Bit positions count from the least significant bit; names are descriptive.
 struct TriggerObjectFlags {
@@ -15,11 +16,11 @@ struct TriggerObjectFlags {
     unsigned int mgUsed : 1;       // Bit 0: MarkMGAsUsed / IsMGUsed.
 };
 
-// Scoped view: the flags word and the properties at +8. Other storage is unknown.
+// Scoped view: the flags word, script object at +4 and the properties at +8. Other storage is unknown.
 class TriggerObject {
   public:
     TriggerObjectFlags flags;
-    unsigned int unknown_4;
+    BSObject *scriptObject; // +4: the trigger's script object (BIFunc_SendEventParent).
     union {
         FlexProp flex;                // When flags.flexFormat is set.
         xyzProperty_Struct *legacy;   // Otherwise.

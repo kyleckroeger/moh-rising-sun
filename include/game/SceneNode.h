@@ -137,6 +137,7 @@ class CScene {
     void Add(ISceneNode &, ISceneNode *);
     void Remove(ISceneNode &);
     int IsNodeInScene(const ISceneNode *) const;
+    CPlayerObject *GetPlayer(int) const;
 };
 extern CScene g_scene;
 
