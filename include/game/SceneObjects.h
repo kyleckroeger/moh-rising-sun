@@ -69,6 +69,7 @@ class CSoldierObject {
     void SetFaceAnimationState(unsigned short, int);
     void SetHeadTrackPlayer(bool);
     void EnableSkeletalPartition(Partition);
+    void DisableSkeletalPartition(Partition);
     void ResumeAimModifier();
     void ResumePropAimModifier();
     void EnablePropAimModifier(bool);

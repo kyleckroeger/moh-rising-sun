@@ -1045,7 +1045,12 @@
     "script_get_target_for.json",
     "script_soldier_detach_from_soldier.json",
     "script_ai_set_team.json",
-    "script_soldier_get_locomotion_info.json"
+    "script_soldier_get_locomotion_info.json",
+    "script_ai_choose_target_by_id.json",
+    "script_set_location_target.json",
+    "script_get_scripted_behavior_type.json",
+    "script_ai_get_previous_behavior_script.json",
+    "script_soldier_disable_skeletal_partition.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

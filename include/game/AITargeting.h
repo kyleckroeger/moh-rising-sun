@@ -75,6 +75,7 @@ public:
     BSObject *GetTargetScript() const;
     static void RegisterLocationTarget(int, bool, ETeam, BSObject *);
     static void DeRegisterLocationTarget(int);
+    static CAITarget GetLocationTarget(int);
     bool IsNonAITarget() const;
     bool HasValidTarget() const;
     bool GetTargetGuessPosition(CVector3 &);
@@ -111,7 +112,9 @@ public:
     CAIAreaPathFinding areaPathFinding; // +0x230
     unsigned char unknown254[0x2f0 - 0x230 - sizeof(CAIAreaPathFinding)];
     CAISplinePathModule splinePath; // +0x2f0
-    unsigned char unknown310[0x594 - 0x2f0 - sizeof(CAISplinePathModule)];
+    unsigned char unknown310[0x374 - 0x2f0 - sizeof(CAISplinePathModule)];
+    BSObject *previousBehaviorScript; // +0x374
+    unsigned char unknown378[0x594 - 0x378];
     int cookie;          // +0x594; script-owned value (BIFunc_GetCookie/SetCookie).
     unsigned char team;  // +0x598; set by BIFunc_AISetTeam.
     unsigned char unknown599[0x638 - 0x599];

@@ -55,6 +55,8 @@ class CCoverpointBehavior { // Type 4.
 
 class CScriptedBehavior { // Type 5.
   public:
+    unsigned char unknown00[0x4c];
+    int scriptedType; // +0x4c; read and written by the scripted-behavior type built-ins.
     void SetAllowedHighLevelState(EAIHighLevelState);
     void SetCapability(ECapability, bool);
     void StartScript(BSObject *);

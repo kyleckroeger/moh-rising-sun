@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-194 fragments in `src/script/` reconstruct **365 functions and 46,576
+199 fragments in `src/script/` reconstruct **373 functions and 48,088
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 272 further built-in wrappers
-and stubs (32,900 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 280 further built-in wrappers
+and stubs (34,412 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-137 fragments add **272 functions and 32,900 executable bytes** from the
+142 fragments add **280 functions and 34,412 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -688,7 +688,9 @@ schedulers through `local_externals`.
 | Manifest | Built-ins | Address | Code bytes |
 | --- | --- | --- | ---: |
 | `script_set_japanese` | `SetJapanese` | `0x800fa3d4` | 72 |
+| `script_ai_choose_target_by_id` | `AIChooseTargetByID`, `Soldier_AIChooseTargetByID` | `0x800fa744` | 348 |
 | `script_register_location_target` | `RegisterLocationTarget`, `DeRegisterLocationTarget` | `0x800fa8a0` | 288 |
+| `script_set_location_target` | `SetLocationTarget` | `0x800fa9c0` | 200 |
 | `script_ai_set_hearing_radius` | `AISetHearingRadius`, `AIGetSoldierMatchListStruct` | `0x800faa88` | 248 |
 | `script_ai_start_spline_path_walk` | `AIStartSplinePathWalk` | `0x800fab80` | 192 |
 | `script_is_nearby_position_on_astar_mesh` | `IsNearbyPositionOnAStarMesh` | `0x800fad0c` | 212 |
@@ -809,10 +811,13 @@ schedulers through `local_externals`.
 | `script_ai_finished_behavior` | `AIFinishedBehavior` | `0x801176fc` | 48 |
 | `script_ai_is_behavior_enabled` | `AIIsBehaviorEnabled` | `0x8011772c` | 156 |
 | `script_enter_buddy_teleport_area` | `EnterBuddyTeleportArea`, `ExitBuddyTeleportArea`, `IsBuddyInArea` and 3 more | `0x80117ca0` | 1448 |
+| `script_get_scripted_behavior_type` | `GetScriptedBehaviorType`, `SetScriptedBehaviorType` | `0x80118248` | 400 |
 | `script_mp_get_player_body` | `MPGetPlayerBody` | `0x80118618` | 152 |
 | `script_ai_get_previous_behavior_type` | `AIGetPreviousBehaviorType` | `0x80118854` | 192 |
+| `script_ai_get_previous_behavior_script` | `AIGetPreviousBehaviorScript`, `AISetPreviousBehaviorScript` | `0x80118914` | 384 |
 | `script_ai_get_next_behavior_type` | `AIGetNextBehaviorType`, `AIGetNextBehaviorScript` | `0x80118a94` | 384 |
 | `script_soldier_get_locomotion_info` | `Soldier_GetLocomotionInfo`, `Soldier_EnableSkeletalPartition` | `0x80118fac` | 360 |
+| `script_soldier_disable_skeletal_partition` | `Soldier_DisableSkeletalPartition` | `0x80119114` | 180 |
 | `script_signal_buddy_lead_checkpoint_reached` | `SignalBuddyLeadCheckpointReached` | `0x801196ac` | 260 |
 | `script_signal_buddy_lead_checkpoint_reached_by_player` | `SignalBuddyLeadCheckpointReachedByPlayer` | `0x801197b0` | 124 |
 | `script_stop_slow_moh` | `StopSlowMOH` | `0x80119bd0` | 88 |
