@@ -1018,7 +1018,13 @@
     "script_register_for_property_message.json",
     "script_register_gag_action.json",
     "script_register_save_point.json",
-    "script_set_animated_texture_frame.json"
+    "script_set_animated_texture_frame.json",
+    "script_send_message_via_proxy.json",
+    "script_make_player_invincible.json",
+    "script_register_multiple_timer_event.json",
+    "script_player_super_aim_mode.json",
+    "script_set_mg_waypoint_flag.json",
+    "script_set_detonation_time.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

@@ -42,7 +42,10 @@ class CPlayerObject {
         unsigned int unknown_24 : 1;
         unsigned int wielding : 1;      // Bit 23: BIFunc_SetPlayerWielding.
         unsigned int triggerChecks : 1; // Bit 22: BIFunc_TogglePlayerVsTriggerChecks.
-        unsigned int unknown_low : 22;
+        unsigned int superAimMode : 1;  // Bit 21: BIFunc_PlayerSuperAimMode.
+        unsigned int unknown_20_12 : 9;
+        unsigned int invincible : 1;    // Bit 11: BIFunc_MakePlayerInvincible.
+        unsigned int unknown_low : 11;
     };
     unsigned char unknown_0[0xd44];
     unsigned int pathFlags; // +0xd44; bit 19 enables path movement, bit 27 is set while aiming.

@@ -103,6 +103,7 @@ class CThrownBullet : public CBullet {
     void SetBlastRadius(float);
     void SetExplosionParticleSystem(unsigned long, EXPLOSION_PARTICLE_TYPE);
     CLight *GetAttachedLight() const;
+    void SetDetonationTime(float);
     virtual unsigned int IsCollisionEnabled() const;
 };
 
