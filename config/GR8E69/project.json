@@ -1034,7 +1034,9 @@
     "script_player_force_to_weapon.json",
     "script_set_head_track_player.json",
     "script_mp_get_player_body.json",
-    "script_set_max_light_priority.json"
+    "script_set_max_light_priority.json",
+    "script_ai_start_spline_path_walk.json",
+    "script_register_corpse_search.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

@@ -9,6 +9,7 @@ class BSSchedule {
   public:
     void Unregister(BSScheduleRegistrationRecord_struct *);
     void Unregister(BSObject *);
+    BSScheduleRegistrationRecord_struct *Register(BSObject *, unsigned short, bool, int, int, int, int, int);
 };
 
 // Original schedulers; these declarations do not allocate them.

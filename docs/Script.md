@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-183 fragments in `src/script/` reconstruct **352 functions and 44,216
+185 fragments in `src/script/` reconstruct **354 functions and 44,628
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 259 further built-in wrappers
-and stubs (30,540 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 261 further built-in wrappers
+and stubs (30,952 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-126 fragments add **259 functions and 30,540 executable bytes** from the
+128 fragments add **261 functions and 30,952 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -690,6 +690,7 @@ schedulers through `local_externals`.
 | `script_set_japanese` | `SetJapanese` | `0x800fa3d4` | 72 |
 | `script_register_location_target` | `RegisterLocationTarget`, `DeRegisterLocationTarget` | `0x800fa8a0` | 288 |
 | `script_ai_set_hearing_radius` | `AISetHearingRadius`, `AIGetSoldierMatchListStruct` | `0x800faa88` | 248 |
+| `script_ai_start_spline_path_walk` | `AIStartSplinePathWalk` | `0x800fab80` | 192 |
 | `script_is_nearby_position_on_astar_mesh` | `IsNearbyPositionOnAStarMesh` | `0x800fad0c` | 212 |
 | `script_ai_stop_spline_path_walk` | `AIStopSplinePathWalk` | `0x800faec4` | 116 |
 | `script_soldier_ai_stop_spline_path_walk` | `Soldier_AIStopSplinePathWalk` | `0x800faf38` | 180 |
@@ -749,6 +750,7 @@ schedulers through `local_externals`.
 | `script_can_i_create_child` | `CanICreateChild` | `0x8010171c` | 108 |
 | `script_stop_check_objects_inside_range_secondary` | `StopCheckObjectsInsideRange_Secondary`, `StopCheckObjectsOutsideRange_Secondary` | `0x80102014` | 344 |
 | `script_change_letterbox_width` | `ChangeLetterboxWidth` | `0x801022b8` | 124 |
+| `script_register_corpse_search` | `RegisterCorpseSearch` | `0x8010245c` | 220 |
 | `script_register_for_property_message` | `RegisterForPropertyMessage`, `StopPropertyMessage` | `0x801028e4` | 280 |
 | `script_stop_target_search` | `StopTargetSearch`, `StopTargetCheck`, `StopDistanceToTarget` | `0x801029fc` | 588 |
 | `script_stop_check_objects_inside_range` | `StopCheckObjectsInsideRange`, `StopCheckObjectsOutsideRange`, `StopCheckObjectsInsideAngularRange` and 2 more | `0x80102c48` | 860 |

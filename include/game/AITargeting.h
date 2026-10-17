@@ -132,5 +132,17 @@ public:
     int GetNextBehaviorScript();
     void SetHighLevelState(EAIHighLevelState);
     int IsNearbyPositionOnAStarMesh(ECollisionTestDirection, float);
+    void SetupFieldOfViewCorpse(float, float);
+};
+// Doodad and filter prefixes reached by the script built-ins: the doodad's first
+// word is its filter, and the filter's second word is the AI object.
+class CAIFilterObject {
+public:
+    unsigned char unknown00[4];
+    CAIObject *object;
+};
+class CAIDoodad {
+public:
+    CAIFilterObject *filter;
 };
 #endif
