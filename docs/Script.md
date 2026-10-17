@@ -682,8 +682,44 @@ kept as observed.
 bit. Bit 27 of the word at `+0xd44` is read as "aiming". The weapon view adds the
 property record pointer at `+0x300` (refire rate `+6`, projectile flag `+0xe`) before
 the reload bit at `+0x350`. `TriggerObject` `+4` is its script object, used by
-`SendEventParent`. The four schedule-stop built-ins name their file-local
+`SendEventParent`. The schedule-stop built-ins name their file-local
 schedulers through `local_externals`.
+
+**Scene objects and virtual slots.** `SceneObjects.h` declares member-only views of
+`CStaticObject`, `CAnimObject` and `CSoldierObject`; each starts at the
+`ISceneNode` subobject the casts return. `CAnimObjectInterface` names slots 89-113
+from the original `CSoldierObject` table (0x802e5498): animation state, animation
+callbacks, fades and the aim modifier, among others. Behavior views place their
+table pointer at `+0xc` after twelve bytes of base data; slot 4 is
+`UpdateHeuristicScore`, which the force-to-cover and force-to-MMG built-ins call.
+The player view adds the clip settings at `+0x1150`, the heads-up display at
+`+0x1410` and the look-at controller at `+0x1cf0`; the soldier view adds the weapon
+slot table at `+0xb84` and the current slot at `+0xf20`.
+
+**Observed rules.** A grenade's detonation time is the script value multiplied by
+60. Tactical-position and run-away move points use move type 3 with an arrival
+distance of 1.2. The A* last-position walk starts only when the closest network
+point is more than 1 unit from the AI (squared distance 1.0), and
+`AtClosestPointToPlayerOffNetwork` tests a squared distance of 4.0.
+`GetClassFromBulletType` maps script bullet types to weapon classes (0, 14, 15, 19
+and 20 to 3; 1, 4 and 6-9 to 2; 2 to 6; 3 and 21-24 to 7; 5, 13 and 16 to 5; 11, 17,
+18 and 25 to 1; 12 to 4; anything else to 0), and weapon class 20 counts as not
+holding a weapon. Hit directions map 0, 1, 2, 3 to HUD indicators 1, 3, 4, 2.
+Triggered hints occupy a 20-entry table; removal shifts later entries down. Film
+canister type 0 uses the first mask and any type other than 0 or 1 uses the second;
+type 1 is ignored, as compiled. Awards apply only to levels 0-10.
+`SetMotionBlurDuration` clamps the blur amount to [0, 1] and its times to zero or
+more. Several built-ins (`EnterAStarVolume`, `ExitAStarVolume`,
+`SoldierSetScriptHighLevelState`, `ActivateSoundBuss`, `RegisterAStarVolume`,
+`RegisterAStarLinkPoint`, `Soldier_EnableSkeletalPartition` and
+`LetterboxTransition`) never pop their arguments; the reconstructions keep that.
+
+**Code-generation notes.** Literal values are checked by the full build, not by the
+instruction comparison, so constants were confirmed against the original bytes.
+`ActivateSoundBuss` keeps the unfolded `g_SoundMan` address only when it is taken
+through a pointer. `LoadCompartment`'s `memset` call sets CR1 as for a variadic
+callee, so its declaration is variadic. Switches whose return blocks appear in
+result order are written with their case groups in that order.
 
 | Manifest | Built-ins | Address | Code bytes |
 | --- | --- | --- | ---: |
@@ -889,10 +925,16 @@ schedulers through `local_externals`.
 | `script_bot_done_reloading` | `BotDoneReloading` | `0x8011d2b0` | 144 |
 
 Open problems: built-ins that return a float from a call (`AIGetDistanceToTargetXYZ`,
-`AIGetDistanceToMovePoint`) or a constant float (`GetDistanceBetweenPlayers`,
-`UpdateFirePosition`) store `f1` to the frame and reload it as an integer after the
-stack pointer is loaded. No tested union, pointer-cast or inline-helper spelling
-reproduces that scheduling yet, so those four bodies remain original context.
+`AIGetDistanceToMovePoint`, `AICollisionTest` and others) or a constant float
+(`GetDistanceBetweenPlayers`, `UpdateFirePosition`) store `f1` to the frame and
+reload it as an integer after the stack pointer is loaded. No tested union,
+pointer-cast or inline-helper spelling, under either the 3.8.1 or 3.9.3 profile,
+reproduces that scheduling yet. A few others (`DetachFromWaypoint`,
+`SetLightVolumeTransitionDuration`, `ChangeClipPlane`, `HasReplayItem`,
+`HasAnyFilmCanister`) differ only in register allocation or scheduling, and
+built-ins that use two separate string literals (`AttachToSoldier`,
+`DetachMMGProp`) need more than one read-only range. These remain original
+context.
 
 ## Verification and next work
 
