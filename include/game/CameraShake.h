@@ -7,6 +7,12 @@ class CWeapon;
 
 // Scoped member view of CPlayerObject for shake and path controls. This does not
 // establish the complete allocation, base classes or virtual interface.
+// Method-only view of the player's embedded heads-up display.
+class CHeadsUpDisplay {
+  public:
+    void AddHitDirection(unsigned int);
+};
+
 class CPlayerObject {
   public:
     // Member-only view of the embedded look-at controller at +0x1cf0.
@@ -63,7 +69,9 @@ class CPlayerObject {
     int cameraPitchUnhinged; // +0x10bc
     unsigned char unknown_10c0[0x1144 - 0x10c0];
     int body;                // +0x1144; returned by BIFunc_MPGetPlayerBody.
-    unsigned char unknown_1148[0x1cf0 - 0x1148];
+    unsigned char unknown_1148[0x1410 - 0x1148];
+    CHeadsUpDisplay hud;     // +0x1410
+    unsigned char unknown_1411[0x1cf0 - 0x1411];
     LookAtTarget lookAt; // +0x1cf0
     void MoveOnPath(CAISplinePath *, CAISplinePath *, float);
     void StopPath();

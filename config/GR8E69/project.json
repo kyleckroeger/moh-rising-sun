@@ -1098,7 +1098,9 @@
     "script_start_slow_moh.json",
     "script_load_compartment.json",
     "script_enable_partition.json",
-    "script_set_animation_state_on_partition.json"
+    "script_set_animation_state_on_partition.json",
+    "script_player_add_hit_direction.json",
+    "script_remove_triggered_hint.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
