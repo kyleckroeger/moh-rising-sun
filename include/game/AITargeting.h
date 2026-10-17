@@ -66,6 +66,7 @@ public:
     void UpdateTargetPosition();
     void UpdateNonAITargetPosition();
     void SetNonAITarget(BSObject *);
+    void SetTarget(CAIObject *);
     void AdjustAimPosition(CVector3 *, int, AIFILTER_WEAPON_AIM_MODE *);
     void ChooseSniperAimMode(AIFILTER_WEAPON_AIM_MODE *);
     void ChooseBazookaAimMode(AIFILTER_WEAPON_AIM_MODE *);

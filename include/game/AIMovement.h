@@ -23,7 +23,8 @@ public:
 };
 class CAITargeting;
 class BSObject;
-struct BS_STRUCT_Vector_struct;
+// Script-side vector record; three floats, as copied by SetMovePoint.
+struct BS_STRUCT_Vector_struct { float x, y, z; };
 // Original enum tags; enumerator names describe observed numeric selectors.
 enum EMovePointType { MovePointType3 = 3, MovePointType4 = 4 };
 enum AIOBJECT_PATH_WALK_TYPE {

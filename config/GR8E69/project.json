@@ -1070,7 +1070,10 @@
     "script_asset_crc.json",
     "script_player_collision_id.json",
     "script_is_player_holding_weapon.json",
-    "script_bullet_type_class.json"
+    "script_bullet_type_class.json",
+    "script_set_move_point.json",
+    "script_choose_target_by_id.json",
+    "script_is_player_disguised.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
