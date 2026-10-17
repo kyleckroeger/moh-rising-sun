@@ -69,6 +69,7 @@ public:
     int StartAStarPathWalk(BSObject *, EAStarDestinationInfo);
     int StartAStarPathWalk(EAStarDestinationInfo);
     void EnterAStarVolume(int);
+    void GetClosestPositionOnAStar(CVector3 *) const;
     static void RegisterAStarVolume(TriggerObject *, int);
     static void RegisterAStarLinkPoint(TriggerObject *, int, int, int);
     void ExitAStarVolume(int);

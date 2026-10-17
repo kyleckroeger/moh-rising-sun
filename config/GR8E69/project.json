@@ -1076,7 +1076,8 @@
     "script_is_player_disguised.json",
     "script_ai_find_tactical_position.json",
     "script_ai_set_run_away_movepoint.json",
-    "script_ai_set_move_point_on_other.json"
+    "script_ai_set_move_point_on_other.json",
+    "script_ai_start_astar_path_walk_to_last_position_on_network.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
