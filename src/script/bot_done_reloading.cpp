@@ -2,6 +2,7 @@
 #include "ScriptBuiltins.h"
 #include "SceneNode.h"
 #include "SceneObjects.h"
+#include "Weapon.h"
 
 void BIFunc_BotDoneReloading(int **stack, void *object) {
     CSoldierObject *bot = (CSoldierObject *)((ISceneNode *)object)->AsBotObject();

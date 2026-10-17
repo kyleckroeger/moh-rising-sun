@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 681164,
+    "matching_code_bytes": 681536,
     "total_executable_code_bytes": 2492032,
-    "percent": 27.333677898197134,
+    "percent": 27.3486054753711,
     "categories": {
-      "reconstructed_game": 288948,
+      "reconstructed_game": 289320,
       "restored_library": 392216
     },
-    "matching_functions": 2769
+    "matching_functions": 2771
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "70144a4361a15042c03881836a0a2a455c3575f01be895c74e40515cd2483df8",
+    "config/GR8E69/project.json": "65c1092b4e8c3742c8e27528f47ee0fb3c4dd1238963929a5e668d1de5e4a44d",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -684,6 +684,7 @@
     "config/GR8E69/script_arrived_at_mmg.json": "9098aad69d0b4ac5b89d1e39398850065f05da7d9b51d1ffb3ce7680ccc48b5c",
     "config/GR8E69/script_attach.json": "f3b7bf923015cf66052c45678e7b7c81458dd3ee8dc7777e6d21a3e0612b4191",
     "config/GR8E69/script_attach_triggering_player_mmg.json": "f32f308f9bb4bcd0318665f3ac39598baa86065f92c99c6cb8278270677eaaf4",
+    "config/GR8E69/script_bot_done_reloading.json": "019d061a2a7a95a143a0124f1d2ee3b7a3078a832fd96a30896d31a4959d5249",
     "config/GR8E69/script_branches.json": "e7d49ea1a1b684c7bda78aa8a954777dc51bf3e78b2050dfb9abc2b3e0160e5b",
     "config/GR8E69/script_bs_object_as_scene_node.json": "b64bd033c5d1d552fb864f7424b2c9ae2d307fa60a43467483739bacd18321e9",
     "config/GR8E69/script_buddy_cant_reach_target.json": "95fb87a60d1a449cdb4bab06c2e189b18bfdac21df7bba0c3463d28c33d4de25",
@@ -732,6 +733,7 @@
     "config/GR8E69/script_get_scripted_behavior_type.json": "e7f336f6dd0b506bb090efc3928a13d8064b73b5fcbdaba4c2d9f260a4ec7216",
     "config/GR8E69/script_get_soldier_weapon_in_slot.json": "78cd7b56f2de364676662712e1f6ccb0847413aaee204423b110657bc5dadae4",
     "config/GR8E69/script_get_target_for.json": "a5f1538aa4402b653588b215d415fe9492c2fe5795785872ce1bad9576153a28",
+    "config/GR8E69/script_get_weapon_info.json": "3fbd4d64b25413b866b6264f0cbcd27b9ff5b1264aa43ee6ff3f9a05f5ff98fd",
     "config/GR8E69/script_get_weapon_info_helper.json": "ffedc6e426a9f0c684d976cfa718bc9488f5779fbfee913c468f280212dbb620",
     "config/GR8E69/script_give_cheat_number.json": "7426a4b6bcd5f94dcdcab359a2964f83ff62cc43e4e61aa83be81be50a66628e",
     "config/GR8E69/script_glare_destroy.json": "7d402ee0f90ed1319f6dff3a84bd32a4b4798272f7e2f04b021ae49121861ceb",
@@ -2234,7 +2236,7 @@
     "src/script/arrived_at_mmg.cpp": "121f4404c3416a62881ea30dcec71c08f45a4bd2da4bb53a6667cc7ef0ba3064",
     "src/script/attach.cpp": "0854b2ae5a68407da2c807615ece3799a0d4ac49a06e8b3fbb75a0d362b10e1a",
     "src/script/attach_triggering_player_mmg.cpp": "5c29154ee239328db5be89bed4d1b43ba0667dee714f8ae1ee168decdd04382c",
-    "src/script/bot_done_reloading.cpp": "3d2ff2bfe635f834ae64923a43cc76dca6432b1852eef466fbc49b149bae59d1",
+    "src/script/bot_done_reloading.cpp": "128a8a1ce858756ab5edbcfdcf5384566ecd5bb0be9db2d621addb8f307fe00f",
     "src/script/branches.cpp": "2823173b8e93bc80ac850752dad341621bbe5cb271c32dc243b0163512164347",
     "src/script/bs_object_as_scene_node.cpp": "aad3c6b337900d5f6bd0b72b1948cdd1b6cc6307ab6bbceebcb84a5510b2dca4",
     "src/script/buddy_cant_reach_target.cpp": "77c43d47b7cf898ee82645b370781a6b937db712a38aef73d08b9cbb3b87f8b4",
@@ -2285,7 +2287,7 @@
     "src/script/get_scripted_behavior_type.cpp": "6a02756e452bb854b3fcd03b47124f35da72638e1ab098a1bb6128166ae3d4c3",
     "src/script/get_soldier_weapon_in_slot.cpp": "92665fc6c0fc585fbe86ebd47edddf6756edec6a9310e4ad1cbfc4bb90199d54",
     "src/script/get_target_for.cpp": "de77912b7486af0160ea90ae9964ef5015d519ff556b0bd18644d5a3fcc0fa1a",
-    "src/script/get_weapon_info.cpp": "58dd31c0a74e478466d32e3f0f4bfe0fb7ec07935fef8dbc26b708ab050b76da",
+    "src/script/get_weapon_info.cpp": "0c65244b40592181c9e2cef7d6c7c0e5766ac273ad1f63414e56a16512686e73",
     "src/script/get_weapon_info_helper.cpp": "c629d092fbc6d3eb6ebc6a97463df0238791bbc9c6a2134a29cd75c744994dc9",
     "src/script/give_cheat_number.cpp": "e07d7d30f8619b4daa7bc5bb101f791e41300ce0ddd9a37ba52a61b34d8ee0eb",
     "src/script/glare_destroy.cpp": "9af8820719b3e3c1c5a6f1f2b38795c83c08207fa7da7c14f5580ac634de27a2",
@@ -25332,6 +25334,42 @@
       "discarded_functions": [],
       "object_sha256": "12f154a4dfcdd396c8c3d21bc3e8ed0596ade61f7cc321a1b01405dc110ee704",
       "linked_sha256": "5978a81a601ce521471569fbede8f391351b5dbddbfcd26f5abb33644f15beb8"
+    },
+    {
+      "id": "script_get_weapon_info",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 228,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "03f9d19579aa38743bac22af80d2a1bec993dc07bd31c0da554acee4c063bd97",
+      "linked_sha256": "5f98e5930d887b2c4b4133c8a85ceefbbe13be49c283d3f0909f11655531bf6c"
+    },
+    {
+      "id": "script_bot_done_reloading",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 144,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "857fa7f983eb46bdec732d0b522a3369849da7e674d9c1ae17c1960d056d6acf",
+      "linked_sha256": "bd8f1adbb82ce96941f826b9ac66baa77d2f75b6eca1c094b013c421202dad72"
     }
   ],
   "code_map": {
@@ -48904,13 +48942,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8010bb38",
-            "size": 228,
-            "kind": "function",
-            "name": "BIFunc_GetWeaponInfo__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8010bc1c",
             "size": 200,
             "kind": "function",
@@ -49839,13 +49870,6 @@
             "size": 76,
             "kind": "function",
             "name": "BIFunc_UpdateFirePosition__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8011d2b0",
-            "size": 144,
-            "kind": "function",
-            "name": "BIFunc_BotDoneReloading__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

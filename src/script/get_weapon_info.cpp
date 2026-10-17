@@ -3,6 +3,7 @@
 #include "ScriptRuntime.h"
 #include "SceneNode.h"
 #include "SceneObjects.h"
+#include "Weapon.h"
 
 void BIFunc_GetWeaponInfo(int **stack, void *) {
     int count = g_pBuiltInFunctions[g_iCurrentBIFIndex].argumentCount;

@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-213 fragments in `src/script/` reconstruct **390 functions and 51,184
+215 fragments in `src/script/` reconstruct **392 functions and 51,556
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 297 further built-in wrappers
-and stubs (37,508 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 299 further built-in wrappers
+and stubs (37,880 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-156 fragments add **297 functions and 37,508 executable bytes** from the
+158 fragments add **299 functions and 37,880 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -783,6 +783,7 @@ schedulers through `local_externals`.
 | `script_resume_motion_playback` | `ResumeMotionPlayback` | `0x8010a48c` | 192 |
 | `script_get_soldier_weapon_in_slot` | `GetSoldierWeaponInSlot` | `0x8010b908` | 112 |
 | `script_get_current_weapon_class` | `GetCurrentWeaponClass` | `0x8010b978` | 148 |
+| `script_get_weapon_info` | `GetWeaponInfo` | `0x8010bb38` | 228 |
 | `script_player_super_aim_mode` | `PlayerSuperAimMode` | `0x8010c200` | 148 |
 | `script_is_player_invincible` | `IsPlayerInvincible` | `0x8010c294` | 108 |
 | `script_disable_player_shoot` | `DisablePlayerShoot` | `0x8010c418` | 156 |
@@ -843,6 +844,7 @@ schedulers through `local_externals`.
 | `script_coop_attach` | `AttachPlayerToPropCoop2`, `AttachPlayerToPropCoop`, `AttachPlayerIDToPropCoop` and 5 more | `0x8011c678` | 408 |
 | `script_coop_players` | `SetParanoiaParameters`, `MPAddBotHealth`, `ForcePlayersApart` and 11 more | `0x8011c85c` | 712 |
 | `script_coop_triggers` | `SetSplitScreen`, `AssignCptDistances`, `ForcePlayerWarp` and 31 more | `0x8011cb70` | 1856 |
+| `script_bot_done_reloading` | `BotDoneReloading` | `0x8011d2b0` | 144 |
 
 Open problems: built-ins that return a float from a call (`AIGetDistanceToTargetXYZ`,
 `AIGetDistanceToMovePoint`) or a constant float (`GetDistanceBetweenPlayers`,

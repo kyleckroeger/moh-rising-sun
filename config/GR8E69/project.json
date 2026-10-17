@@ -1064,7 +1064,9 @@
     "script_get_weapon_info_helper.json",
     "script_get_current_weapon_class.json",
     "script_soldier_get_current_weapon.json",
-    "script_soldier_get_weapon_type.json"
+    "script_soldier_get_weapon_type.json",
+    "script_get_weapon_info.json",
+    "script_bot_done_reloading.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
