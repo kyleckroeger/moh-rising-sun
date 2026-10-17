@@ -1073,7 +1073,9 @@
     "script_bullet_type_class.json",
     "script_set_move_point.json",
     "script_choose_target_by_id.json",
-    "script_is_player_disguised.json"
+    "script_is_player_disguised.json",
+    "script_ai_find_tactical_position.json",
+    "script_ai_set_run_away_movepoint.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

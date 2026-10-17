@@ -93,6 +93,11 @@ enum EAIHighLevelState { AIHighLevelStateUnknown = 0 };
 enum ECapability { CapabilityUnknown = 0 };
 enum ECollisionTestDirection { CollisionTestDirectionUnknown = 0 };
 class CAIBehavior;
+// Method-only view of the embedded tactics module.
+class CAITactics {
+public:
+    int FindTacticalPoint(CVector3 *, float);
+};
 // Original enum tag; selector names are descriptive.
 enum aistatus_var { aistatus_var_team = 4 };
 // Method-only view of the embedded AI status block.
@@ -134,6 +139,8 @@ public:
     int inShadow;        // +0x6e4
     float shadowAmount;  // +0x6e8
     int matchList;       // +0x6ec; first word of the soldier match list returned by address.
+    unsigned char unknown6f0[0x7a0 - 0x6f0];
+    CAITactics tactics;  // +0x7a0
     CAIBehavior *FindMatchingBehavior(EBehaviorType);
     void EnableBehavior(EBehaviorType);
     void DisableBehavior(EBehaviorType);
@@ -150,6 +157,7 @@ public:
     void SetHighLevelState(EAIHighLevelState);
     int IsNearbyPositionOnAStarMesh(ECollisionTestDirection, float);
     void SetupFieldOfViewCorpse(float, float);
+    int FindRunAwayPoint(const ISceneNode *, float, CVector3 *, bool);
 };
 // Doodad and filter prefixes reached by the script built-ins: the doodad's first
 // word is its filter, and the filter's second word is the AI object.

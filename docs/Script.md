@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-222 fragments in `src/script/` reconstruct **399 functions and 52,668
+224 fragments in `src/script/` reconstruct **401 functions and 53,264
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 306 further built-in wrappers
-and stubs (38,992 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 308 further built-in wrappers
+and stubs (39,588 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-165 fragments add **306 functions and 38,992 executable bytes** from the
+167 fragments add **308 functions and 39,588 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -706,7 +706,9 @@ schedulers through `local_externals`.
 | `script_ai_invalidate_cover_point_by_id` | `AIInvalidateCoverPointByID` | `0x800fb7e0` | 132 |
 | `script_ai_invalidate_cover_point` | `AIInvalidateCoverPoint` | `0x800fb864` | 136 |
 | `script_ai_match_object_id` | `AIMatchObjectID` | `0x800fb8ec` | 204 |
+| `script_ai_find_tactical_position` | `AIFindTacticalPosition` | `0x800fb9b8` | 288 |
 | `script_arrived_at_coverpoint` | `ArrivedAtCoverpoint`, `EndCoverpoint` | `0x800fbad8` | 368 |
+| `script_ai_set_run_away_movepoint` | `AISetRunAwayMovepoint` | `0x800fbc48` | 308 |
 | `script_register_nav_point` | `RegisterNavPoint` | `0x800fbd7c` | 132 |
 | `script_get_nav_point` | `GetNavPoint` | `0x800fbe00` | 128 |
 | `script_soldier_ai_fire_at_current_target` | `Soldier_AIFireAtCurrentTarget` | `0x800fbf2c` | 208 |
