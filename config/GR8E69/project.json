@@ -993,7 +993,15 @@
     "script_player_stop_look_at.json",
     "script_serializing_in.json",
     "script_ai_find_tank.json",
-    "script_stop_slow_moh.json"
+    "script_stop_slow_moh.json",
+    "script_get_nav_point.json",
+    "script_get_current_frame_number.json",
+    "script_player_throw_grenade.json",
+    "script_change_letterbox_width.json",
+    "script_deactivate_animated_light_by_id.json",
+    "script_is_draw_enabled.json",
+    "script_deregister_mounted_machine_gun.json",
+    "script_signal_buddy_lead_checkpoint_reached_by_player.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

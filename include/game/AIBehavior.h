@@ -12,6 +12,7 @@ class TriggerObject;
 class CBuddyLeadBehavior { // Type 1.
   public:
     void HandleCheckpointReachedByBuddy(int);
+    static void HandleCheckpointReachedByPlayer(int);
 };
 
 class CBuddyFollowBehavior { // Type 2.
@@ -32,6 +33,7 @@ class CMountedMachineGunBehavior { // Type 3.
     void HitFromBehind();
     void ForceToMMG();
     void ForceToMMGFeeder();
+    static void DeregisterGun(int);
 };
 
 class CCoverpointBehavior { // Type 4.

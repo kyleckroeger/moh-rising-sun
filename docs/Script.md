@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-142 fragments in `src/script/` reconstruct **304 functions and 37,576
+150 fragments in `src/script/` reconstruct **312 functions and 38,512
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 211 further built-in wrappers
-and stubs (23,900 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 219 further built-in wrappers
+and stubs (24,836 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-85 fragments add **211 functions and 23,900 executable bytes** from the
+93 fragments add **219 functions and 24,836 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -700,6 +700,7 @@ schedulers through `local_externals`.
 | `script_ai_start_astar_path_walk_to_move_point` | `AIStartAStarPathWalkToMovePoint`, `AIStopAStarPathWalk`, `AIStartCoverPointWalk`, `AIStopCoverPointWalk` | `0x800fb5d8` | 520 |
 | `script_ai_invalidate_cover_point_by_id` | `AIInvalidateCoverPointByID` | `0x800fb7e0` | 132 |
 | `script_arrived_at_coverpoint` | `ArrivedAtCoverpoint`, `EndCoverpoint` | `0x800fbad8` | 368 |
+| `script_get_nav_point` | `GetNavPoint` | `0x800fbe00` | 128 |
 | `script_soldier_ai_fire_at_current_target` | `Soldier_AIFireAtCurrentTarget` | `0x800fbf2c` | 208 |
 | `script_ai_stop_move_point_walk` | `AIStopMovePointWalk`, `AIContinueMovePointWalk` | `0x800fcdf8` | 232 |
 | `script_set_gravity` | `SetGravity`, `SetGroundCheck`, `InduceGroundCheck` | `0x800fd7b4` | 452 |
@@ -712,6 +713,7 @@ schedulers through `local_externals`.
 | `script_send_event_parent` | `SendEventParent` | `0x800fe614` | 120 |
 | `script_send_event_parent_immediate` | `SendEventParentImmediate` | `0x800fe68c` | 120 |
 | `script_send_event` | `SendEvent`, `SendEventImmediate`, `SendEventDelayed`, `SendMessage` | `0x800fe704` | 660 |
+| `script_get_current_frame_number` | `GetCurrentFrameNumber` | `0x800fed00` | 60 |
 | `script_player_is_my_weapon_a_projectile` | `PlayerIsMyWeaponAProjectile`, `SetPlayerWielding`, `PlayerFireMyWeapon` | `0x800fed3c` | 352 |
 | `script_player_reload` | `PlayerStartReloading`, `PlayerReloadSingle`, `PlayerClearReloading`, `PlayerFinishedReloading` | `0x800fee9c` | 472 |
 | `script_player_can_crouch` | `PlayerCanCrouch` | `0x800ff880` | 156 |
@@ -728,11 +730,13 @@ schedulers through `local_externals`.
 | `script_player_has_melee_weapon` | `PlayerHasMeleeWeapon`, `PlayerCanSwitchWeapon` | `0x80100914` | 260 |
 | `script_player_switch_weapons` | `PlayerSwitchWeapons` | `0x80100a18` | 160 |
 | `script_player_has_grenade` | `PlayerHasGrenade` | `0x80100ab8` | 112 |
+| `script_player_throw_grenade` | `PlayerThrowGrenade` | `0x80100b28` | 128 |
 | `script_get_random_integer` | `GetRandomInteger` | `0x80100c28` | 176 |
 | `script_get_my_instance_data` | `GetMyInstanceData` | `0x80100d78` | 128 |
 | `script_destroy_script` | `DestroyScript` | `0x80101640` | 96 |
 | `script_can_i_create_child` | `CanICreateChild` | `0x8010171c` | 108 |
 | `script_stop_check_objects_inside_range_secondary` | `StopCheckObjectsInsideRange_Secondary`, `StopCheckObjectsOutsideRange_Secondary` | `0x80102014` | 344 |
+| `script_change_letterbox_width` | `ChangeLetterboxWidth` | `0x801022b8` | 124 |
 | `script_stop_target_search` | `StopTargetSearch`, `StopTargetCheck`, `StopDistanceToTarget` | `0x801029fc` | 588 |
 | `script_stop_check_objects_inside_range` | `StopCheckObjectsInsideRange`, `StopCheckObjectsOutsideRange`, `StopCheckObjectsInsideAngularRange` and 2 more | `0x80102c48` | 860 |
 | `script_debug_print` | `DebugTTYPrint`, `AILog`, `ScriptError` | `0x801030b0` | 144 |
@@ -745,12 +749,15 @@ schedulers through `local_externals`.
 | `script_clear_decals` | `ClearDecals` | `0x80108fa0` | 88 |
 | `script_projector_destroy` | `ProjectorDestroy` | `0x8010947c` | 48 |
 | `script_glare_destroy` | `GlareDestroy` | `0x80109978` | 48 |
+| `script_deactivate_animated_light_by_id` | `DeactivateAnimatedLightByID` | `0x80109e08` | 124 |
 | `script_event_memory_block` | `GetEventSystemMemBlock` | `0x80109e84` | 96 |
 | `script_is_player_invincible` | `IsPlayerInvincible` | `0x8010c294` | 108 |
+| `script_is_draw_enabled` | `IsDrawEnabled` | `0x8010c868` | 124 |
 | `script_player_stop_look_at` | `PlayerStopLookAt` | `0x8010cb9c` | 108 |
 | `script_toggle_player_vs_trigger_checks` | `TogglePlayerVsTriggerChecks` | `0x801128d4` | 96 |
 | `script_add_hint` | `AddHint` | `0x80112934` | 48 |
 | `script_attach_triggering_player_mmg` | `AttachTriggeringPlayerToMMG` | `0x80112dc0` | 48 |
+| `script_deregister_mounted_machine_gun` | `DeregisterMountedMachineGun` | `0x80112e8c` | 124 |
 | `script_arrived_at_mmg` | `ArrivedAtMMG`, `CantReachMMG`, `HitFromBehindMMG` | `0x80112fac` | 552 |
 | `script_buddy_cant_reach_target` | `BuddyCantReachTarget`, `BuddyFinishedMovingAway`, `SetDistances` | `0x80113374` | 632 |
 | `script_serializing_in` | `SerializingIn`, `SerializingOut` | `0x80114040` | 208 |
@@ -766,6 +773,7 @@ schedulers through `local_externals`.
 | `script_ai_get_previous_behavior_type` | `AIGetPreviousBehaviorType` | `0x80118854` | 192 |
 | `script_ai_get_next_behavior_type` | `AIGetNextBehaviorType`, `AIGetNextBehaviorScript` | `0x80118a94` | 384 |
 | `script_signal_buddy_lead_checkpoint_reached` | `SignalBuddyLeadCheckpointReached` | `0x801196ac` | 260 |
+| `script_signal_buddy_lead_checkpoint_reached_by_player` | `SignalBuddyLeadCheckpointReachedByPlayer` | `0x801197b0` | 124 |
 | `script_stop_slow_moh` | `StopSlowMOH` | `0x80119bd0` | 88 |
 | `script_grenade_response_finished` | `GrenadeResponseFinished` | `0x8011a61c` | 196 |
 | `script_sword_drawn` | `SwordDrawn` | `0x8011a76c` | 188 |

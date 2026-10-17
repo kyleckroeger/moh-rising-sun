@@ -79,6 +79,7 @@ class CPlayerObject {
     void DropMPDumpObject();
     int CycleWeapon(int, int);
     int GetNumGrenades() const;
+    void ThrowGrenade(float);
 };
 
 #endif
