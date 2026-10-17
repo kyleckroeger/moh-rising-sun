@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-218 fragments in `src/script/` reconstruct **395 functions and 51,752
+219 fragments in `src/script/` reconstruct **396 functions and 51,992
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 302 further built-in wrappers
-and stubs (38,076 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 303 further built-in wrappers
+and stubs (38,316 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-161 fragments add **302 functions and 38,076 executable bytes** from the
+162 fragments add **303 functions and 38,316 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -817,6 +817,7 @@ schedulers through `local_externals`.
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |
 | `script_stop_corpse_search` | `StopCorpseSearch` | `0x80115884` | 196 |
 | `script_ai_find_tank` | `AIFindTank` | `0x80115e48` | 108 |
+| `script_bullet_type_class` | `GetClassFromBulletType` | `0x80116168` | 240 |
 | `script_suspend_aiming` | `SuspendAiming`, `ResumeAiming` | `0x8011641c` | 228 |
 | `script_soldier_suspend_aiming` | `Soldier_SuspendAiming`, `Soldier_ResumeAiming`, `ActivatePropAiming` and 5 more | `0x801165d0` | 1280 |
 | `script_set_head_track_player` | `SetHeadTrackPlayer` | `0x80116ad0` | 152 |

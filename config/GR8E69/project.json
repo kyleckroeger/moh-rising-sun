@@ -1069,7 +1069,8 @@
     "script_bot_done_reloading.json",
     "script_asset_crc.json",
     "script_player_collision_id.json",
-    "script_is_player_holding_weapon.json"
+    "script_is_player_holding_weapon.json",
+    "script_bullet_type_class.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

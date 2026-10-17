@@ -9,6 +9,10 @@ class CCollision;
 class CProjectileBullet;
 class CThrownBullet;
 
+// Original enum tag; script bullet-type numbers are used directly.
+enum EScriptBulletType { ScriptBulletTypeUnknown = 0 };
+int GetClassFromBulletType(EScriptBulletType);
+
 // CBullet's table (0x802e9eb0) follows the IMovingSceneNode slot map and adds slots
 // 89-102 in this order. Field names are descriptive; unlisted storage is unknown.
 class CBullet : public IMovingSceneNode {

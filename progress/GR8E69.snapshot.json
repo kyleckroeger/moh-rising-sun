@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 681732,
+    "matching_code_bytes": 681972,
     "total_executable_code_bytes": 2492032,
-    "percent": 27.356470542914376,
+    "percent": 27.366101237865326,
     "categories": {
-      "reconstructed_game": 289516,
+      "reconstructed_game": 289756,
       "restored_library": 392216
     },
-    "matching_functions": 2774
+    "matching_functions": 2775
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "7a89db6a6464ac19b588bbf5477c27e3487f7b003e6f04f65af583bfdc13cc23",
+    "config/GR8E69/project.json": "257bdcfe4960d4963e332ddd2227b15537ad15a20a2735c2ab2fd2a3ed3731a7",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -689,6 +689,7 @@
     "config/GR8E69/script_branches.json": "e7d49ea1a1b684c7bda78aa8a954777dc51bf3e78b2050dfb9abc2b3e0160e5b",
     "config/GR8E69/script_bs_object_as_scene_node.json": "b64bd033c5d1d552fb864f7424b2c9ae2d307fa60a43467483739bacd18321e9",
     "config/GR8E69/script_buddy_cant_reach_target.json": "95fb87a60d1a449cdb4bab06c2e189b18bfdac21df7bba0c3463d28c33d4de25",
+    "config/GR8E69/script_bullet_type_class.json": "688de987cf068a7f46dc5fee960b6d04c9348fb4e1151004e85554d41449e548",
     "config/GR8E69/script_calls.json": "b25ba9582ac33d62abdb90b39671c9230d1aed2c6d35190b8899108c0e80621b",
     "config/GR8E69/script_can_i_create_child.json": "8005a04441f25beeee9e6a20acf5fe6f69691ae5a1205b51bc84da84891e3e8b",
     "config/GR8E69/script_cancel_timer_event.json": "f1858093055cd3a1772ebb89a54bc35e2cf84404c4fa8a1b75183c2777339bc9",
@@ -1260,7 +1261,7 @@
     "include/game/AITargeting.h": "3d3d8aad28a5926af2b090503c75e0ad184299e085d843d2cedcf13e8cba8b6d",
     "include/game/BPD.h": "ec4a3aceb83f181db2c6adf8ac87137ede2cd6a0e643548159c73a827aadd19e",
     "include/game/BSGameObject.h": "0251918a776754b0d6b3d30b69e61b0d0c8f919721dbd147dbecf710b180a45a",
-    "include/game/Bullet.h": "164eb6981378071ec795004745c8ff1c5a0443ce5575d1bd2397e197256e4027",
+    "include/game/Bullet.h": "e98a40c42ad18bfbf57414dd0501a21cfbdeb57d1e85e9590ac9d341196141fd",
     "include/game/CLine2.h": "e92fdbfd47ed264651ab9bbb90557a0461c3f6469267837079a5d514eb583f2c",
     "include/game/CLine3.h": "671ce5d07b583fd857df0b2ce304517d72a20d34e27967fa945b8a42de815760",
     "include/game/CMatrix.h": "0a1cd7c02e0d72a241d00c861f92cf720b93960f3e96da8dea1f370ee8be27f9",
@@ -2244,6 +2245,7 @@
     "src/script/branches.cpp": "2823173b8e93bc80ac850752dad341621bbe5cb271c32dc243b0163512164347",
     "src/script/bs_object_as_scene_node.cpp": "aad3c6b337900d5f6bd0b72b1948cdd1b6cc6307ab6bbceebcb84a5510b2dca4",
     "src/script/buddy_cant_reach_target.cpp": "77c43d47b7cf898ee82645b370781a6b937db712a38aef73d08b9cbb3b87f8b4",
+    "src/script/bullet_type_class.cpp": "17f57d504079571fbe4d0d0d54279a757f6f216df5905cc0b1f537d7216bcbf1",
     "src/script/calls.cpp": "65f5b68d6ed9083b98d13095286dafe776b321d6da2b7e8b8524770f7c48e303",
     "src/script/can_i_create_child.cpp": "f8fee61fe1063b19f00f56f67f1d861f85289adab15c4199395cba2e2d414f67",
     "src/script/cancel_timer_event.cpp": "922585697a8f2f3f4286a67adcb3706709d258b6e838582af10c9a04ac14bee1",
@@ -25430,6 +25432,24 @@
       "discarded_functions": [],
       "object_sha256": "37df19ca8bfd0f24fa3bd0d1a15fd1e41d6187ad74687feb3280360108fb6911",
       "linked_sha256": "cacfc0ce084afa063570e76a474afef356bca4a480f7dbe682daf97926284ae9"
+    },
+    {
+      "id": "script_bullet_type_class",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 240,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "4a75772e90056ac64d4846b62b9db668e94e3a043ba0d06ca8b0f7f50f7e9e0b",
+      "linked_sha256": "559572f866cb5cc50ae791ca6c31b7c15e54bdfdb26b50ace8d575c2a936df13"
     }
   ],
   "code_map": {
@@ -49538,13 +49558,6 @@
             "size": 176,
             "kind": "function",
             "name": "BIFunc_GetConstrainedRotateAngle__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80116168",
-            "size": 240,
-            "kind": "function",
-            "name": "GetClassFromBulletType__F17EScriptBulletType",
             "evidence": "adjacent-compiler-markers"
           },
           {
