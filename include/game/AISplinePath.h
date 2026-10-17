@@ -6,6 +6,8 @@
 class CAISplinePathManager;
 class CAISplinePathModule;
 struct BSObject;
+// Original enum tag; its members are unknown.
+enum EAStarDestinationInfo { AStarDestinationUnknown = 0 };
 // Eighty-byte array stride, independently observed in generation/destruction.
 // Coefficient names and parameterStep describe their observed use.
 class CAISplinePathSegment {
@@ -63,6 +65,10 @@ public:
     unsigned char unknown00[0x20];
     CAILocomotion *locomotion;
     void StopAStarPathWalk();
+    int StartAStarPathWalk(BSObject *, EAStarDestinationInfo);
+    int StartAStarPathWalk(EAStarDestinationInfo);
+    void EnterAStarVolume(int);
+    void ExitAStarVolume(int);
     void UpdateAStarPathWalk();
     bool SetupAStarPathWalkForPatrol(const CVector3 &);
 };

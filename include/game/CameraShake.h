@@ -3,6 +3,7 @@
 #define GAME_CAMERA_SHAKE_H
 #pragma interface
 class CAISplinePath;
+class CWeapon;
 
 // Scoped member view of CPlayerObject for shake and path controls. This does not
 // establish the complete allocation, base classes or virtual interface.
@@ -55,6 +56,8 @@ class CPlayerObject {
     void StartBackgroundCameraShake(float, float);
     void StopBackgroundCameraShake(float);
     void DoMotionShake(float, float);
+
+    CWeapon *GetCurrentWeapon() const;
 };
 
 #endif

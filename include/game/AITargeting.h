@@ -2,6 +2,7 @@
 #ifndef GAME_AI_TARGETING_H
 #define GAME_AI_TARGETING_H
 #include "AIMovement.h"
+#include "AISplinePath.h"
 // Original enum tag; numeric members are descriptive, not recovered names.
 enum AIFILTER_WEAPON_AIM_MODE {
     WeaponAimModeUnset = 0, WeaponAimMode1 = 1, WeaponAimMode2 = 2,
@@ -9,17 +10,7 @@ enum AIFILTER_WEAPON_AIM_MODE {
 };
 class CAIObjectParameters;
 class ISceneNode;
-// Observed script-object, position and forward-vector prefix, not a complete allocation,
-// inheritance model or virtual interface. Unknown bytes retain their ownership.
-class CAIObject {
-public:
-    unsigned char unknown00[0x0c];
-    BSObject *scriptObject;
-    unsigned char unknown10[0x20];
-    CVector3 position;
-    unsigned char unknown40[0x20];
-    CVector3 forward;
-};
+class CAIObject;
 // Twelve-byte value copied by the original targeting callers. Field names and
 // inline helper names are descriptive; method symbols retain original names.
 class CAITarget {
@@ -85,4 +76,51 @@ public:
     bool GetTargetGuessPosition(CVector3 &);
 };
 typedef char AITargetingPrefixCheck[sizeof(CAITargeting) == 0x108 ? 1 : -1];
+// Original enum tags. Behavior selectors match each behavior class's GetType
+// return; all member names are descriptive.
+enum EBehaviorType {
+    BehaviorTypeBuddyLead = 1, BehaviorTypeBuddyFollow = 2, BehaviorTypeMountedMachineGun = 3,
+    BehaviorTypeCoverpoint = 4, BehaviorTypeScripted = 5, BehaviorTypeSword = 8,
+    BehaviorTypeGrenadeResponse = 10
+};
+enum EAIHighLevelState { AIHighLevelStateUnknown = 0 };
+enum ECapability { CapabilityUnknown = 0 };
+enum ECollisionTestDirection { CollisionTestDirectionUnknown = 0 };
+class CAIBehavior;
+// Observed script-object, position and forward-vector prefix and the embedded
+// AI modules through the spline-path module at +0x2f0. Module offsets come from
+// the built-ins that pass their addresses; the gaps between them stay opaque.
+// This is not a complete allocation, inheritance model or virtual interface.
+class CAIObject {
+public:
+    unsigned char unknown00[0x0c];
+    BSObject *scriptObject;
+    unsigned char unknown10[0x20];
+    CVector3 position;
+    unsigned char unknown40[0x20];
+    CVector3 forward;
+    unsigned char unknown70[0x30];
+    CAITargeting targeting; // +0xa0
+    unsigned char unknown1a8[0x1b0 - 0xa0 - sizeof(CAITargeting)];
+    CAILocomotion locomotion; // +0x1b0
+    unsigned char unknown224[0x230 - 0x1b0 - sizeof(CAILocomotion)];
+    CAIAreaPathFinding areaPathFinding; // +0x230
+    unsigned char unknown254[0x2f0 - 0x230 - sizeof(CAIAreaPathFinding)];
+    CAISplinePathModule splinePath; // +0x2f0
+    CAIBehavior *FindMatchingBehavior(EBehaviorType);
+    void EnableBehavior(EBehaviorType);
+    void DisableBehavior(EBehaviorType);
+    int IsBehaviorEnabled(EBehaviorType);
+    int ChooseBehavior();
+    int ChooseNewBehavior();
+    int StartBehavior();
+    void StopBehavior(bool);
+    void ClearBehavior();
+    int GetBehaviorCapability(ECapability);
+    int GetPreviousBehaviorType();
+    int GetNextBehaviorType();
+    int GetNextBehaviorScript();
+    void SetHighLevelState(EAIHighLevelState);
+    int IsNearbyPositionOnAStarMesh(ECollisionTestDirection, float);
+};
 #endif
