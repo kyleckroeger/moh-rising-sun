@@ -29,6 +29,7 @@ class CGameSettings {
     void AddCheat(int);
     void RegisterSavePoint(int, bool);
     void TriggerSavePointResponse(int, bool);
+    int HasMedal(int) const;
 };
 extern CGameSettings g_GameSettings;
 
