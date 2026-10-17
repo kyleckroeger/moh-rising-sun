@@ -37,6 +37,7 @@ class CMountedMachineGunBehavior { // Type 3.
     void ForceToMMGFeeder();
     static void DeregisterGun(int);
     static int GetFeederByLinkCode(int);
+    static CStaticObject *GetGunByLinkCode(int);
     static void RegisterFeeder(int, BSObject *);
     static void RegisterGun(int, CStaticObject *);
 };

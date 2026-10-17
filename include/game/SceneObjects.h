@@ -51,7 +51,9 @@ class CSoldierObject {
     int groundCheckState;   // +0x228; cleared before the ground-check event.
     unsigned char unknown_22c[0xb14 - 0x22c];
     int canBePushed;        // +0xb14
-    unsigned char unknown_b18[0x10a8 - 0xb18];
+    unsigned char unknown_b18[0x1050 - 0xb18];
+    int voiceHandle;        // +0x1050; -12 when no voice is playing.
+    unsigned char unknown_1054[0x10a8 - 0x1054];
     CJawController jaw;     // +0x10a8
     unsigned char unknown_10a9[0x1148 - 0x10a9];
     int aimSuspended;       // +0x1148; set by BIFunc_SuspendAiming.

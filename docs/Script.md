@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-185 fragments in `src/script/` reconstruct **354 functions and 44,628
+189 fragments in `src/script/` reconstruct **358 functions and 45,304
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 261 further built-in wrappers
-and stubs (30,952 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 265 further built-in wrappers
+and stubs (31,628 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-128 fragments add **261 functions and 30,952 executable bytes** from the
+132 fragments add **265 functions and 31,628 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -745,6 +745,8 @@ schedulers through `local_externals`.
 | `script_get_random_integer` | `GetRandomInteger` | `0x80100c28` | 176 |
 | `script_get_my_instance_data` | `GetMyInstanceData` | `0x80100d78` | 128 |
 | `script_get_instance_data_for` | `GetInstanceDataFor` | `0x80100df8` | 136 |
+| `script_bs_object_as_scene_node` | `BSObject_AsSceneNode` | `0x80100e80` | 180 |
+| `script_swap_hier_object` | `SwapHierObject` | `0x801011b0` | 164 |
 | `script_destroy_script` | `DestroyScript` | `0x80101640` | 96 |
 | `script_destroy_dump_object` | `DestroyDumpObject` | `0x801016a0` | 124 |
 | `script_can_i_create_child` | `CanICreateChild` | `0x8010171c` | 108 |
@@ -754,6 +756,7 @@ schedulers through `local_externals`.
 | `script_register_for_property_message` | `RegisterForPropertyMessage`, `StopPropertyMessage` | `0x801028e4` | 280 |
 | `script_stop_target_search` | `StopTargetSearch`, `StopTargetCheck`, `StopDistanceToTarget` | `0x801029fc` | 588 |
 | `script_stop_check_objects_inside_range` | `StopCheckObjectsInsideRange`, `StopCheckObjectsOutsideRange`, `StopCheckObjectsInsideAngularRange` and 2 more | `0x80102c48` | 860 |
+| `script_set_weapon_enable` | `SetWeaponEnable` | `0x80102fa4` | 168 |
 | `script_debug_print` | `DebugTTYPrint`, `AILog`, `ScriptError` | `0x801030b0` | 144 |
 | `script_register_coverpoint` | `RegisterCoverpoint` | `0x80105c6c` | 100 |
 | `script_set_sound_zone` | `SetSoundZone` | `0x80106158` | 84 |
@@ -781,6 +784,7 @@ schedulers through `local_externals`.
 | `script_attach_triggering_player_mmg` | `AttachTriggeringPlayerToMMG` | `0x80112dc0` | 48 |
 | `script_register_mounted_machine_gun` | `RegisterMountedMachineGun` | `0x80112df0` | 156 |
 | `script_deregister_mounted_machine_gun` | `DeregisterMountedMachineGun` | `0x80112e8c` | 124 |
+| `script_get_mounted_machine_gun_by_link_code` | `GetMountedMachineGunByLinkCode` | `0x80112f08` | 164 |
 | `script_arrived_at_mmg` | `ArrivedAtMMG`, `CantReachMMG`, `HitFromBehindMMG` | `0x80112fac` | 552 |
 | `script_register_mmg_feeder` | `RegisterMMGFeeder` | `0x801131d4` | 132 |
 | `script_get_mmg_feeder_by_link_code` | `GetMMGFeederByLinkCode`, `RegisterBuddyFollowObject` | `0x80113258` | 284 |

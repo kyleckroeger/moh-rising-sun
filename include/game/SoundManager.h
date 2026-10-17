@@ -6,6 +6,7 @@
 class SoundSchedule {
   public:
     void ActivateBuss(unsigned int);
+    void RemoveSound(unsigned int);
 };
 
 // Scoped view of the 0x8700-byte g_SoundMan object; its class name is not

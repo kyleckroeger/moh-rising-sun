@@ -1036,7 +1036,11 @@
     "script_mp_get_player_body.json",
     "script_set_max_light_priority.json",
     "script_ai_start_spline_path_walk.json",
-    "script_register_corpse_search.json"
+    "script_register_corpse_search.json",
+    "script_bs_object_as_scene_node.json",
+    "script_swap_hier_object.json",
+    "script_set_weapon_enable.json",
+    "script_get_mounted_machine_gun_by_link_code.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
