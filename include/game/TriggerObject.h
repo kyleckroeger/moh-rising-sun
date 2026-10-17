@@ -37,6 +37,7 @@ class TriggerObject {
     int GetLegacyField(int) const;
     const char *GetClassName() const;
     int GetID() const;
+    int GetNativeBindingType() const;
     int IsAnimatedLight() const;
     FlexPropList *GetList(const char *) const;
 };

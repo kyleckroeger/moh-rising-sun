@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 687568,
+    "matching_code_bytes": 688072,
     "total_executable_code_bytes": 2492032,
-    "percent": 27.59065694180492,
+    "percent": 27.61088140120191,
     "categories": {
-      "reconstructed_game": 295352,
+      "reconstructed_game": 295856,
       "restored_library": 392216
     },
-    "matching_functions": 2801
+    "matching_functions": 2803
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "1de806a05e51f1375c6f8a7e2137398fa4b03d30784eceb822020e75c1637ab1",
+    "config/GR8E69/project.json": "b7dc1047a4b308c7dff2b71c1fd24c62803b018805f98888c8fd818b699d3e19",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -717,6 +717,7 @@
     "config/GR8E69/script_destroy_child.json": "14933a96917d268b35e9faef5ba6f09a30220d1c3e64af25eb12a5a1ade75334",
     "config/GR8E69/script_destroy_dump_object.json": "d97ce5cb89323bec9ed42615d7c1d0d627de13567064e17e61fcbeb6bbb9f776",
     "config/GR8E69/script_destroy_light.json": "46483bc20ffcb85d0ddc1bec5e20b51c04c10bc784ec7fbb9506d9d3c408576d",
+    "config/GR8E69/script_destroy_object.json": "3d546ab54a052f3507b0625485a431a8b8f4b33f8cebfb08a0e2d7189039542f",
     "config/GR8E69/script_destroy_particle_system.json": "d0a10fbea6ea996753a51749c1aa4ab892b3a0901d750898515e081ffffccab1",
     "config/GR8E69/script_destroy_script.json": "cd04ddbcc4d9d056c6c6aaba98c13d1ec16a288f421c93cd280cff3f5c839d98",
     "config/GR8E69/script_destroy_sub_hier_object.json": "f412b995ea697e63ecbae2ff63f56b54f40d080caa022bd37f3b87ebc0c646f8",
@@ -787,6 +788,7 @@
     "config/GR8E69/script_particle_sorting.json": "02f24d626ebb612f611e6eec7b1ecedf44ecc4df601ca620c5c2ee707a2b08cb",
     "config/GR8E69/script_path_mech_allow_collision_damage.json": "0e69e45cdd6dd614c737993a5363b9e0aeedca2618be223c914e8b8979d126be",
     "config/GR8E69/script_play_facial_animation.json": "6bbb648ee8d7a08e9d946161fc5986780aa8bcf9ce8a0d305dbee848930f84ca",
+    "config/GR8E69/script_play_turn_animation.json": "00c8a940f5e5f306cd8baaf04b7590682c787f6cfbca7e75ecab37ba24f46208",
     "config/GR8E69/script_player_action_stubs.json": "510d9f2dbbc0b223876433b831dc55d96980552dc108db7b6e1fbdc4ca62a064",
     "config/GR8E69/script_player_can_crouch.json": "3331ee333e8b14291e412ac8ba4d557381ae50a857b6c6ef525a295b25b54e2b",
     "config/GR8E69/script_player_collision_id.json": "e28df7fb86e8e4acb1bb65af3d699783dda099cc171c07267de734aae332b447",
@@ -1367,7 +1369,7 @@
     "include/game/TARExtension.h": "cf1f48aa0be63a29babdba7f53c58439facb94141d7e04d0d32fcc878bad2cb3",
     "include/game/TevStage.h": "47aaf3de5425dace0c30e2852896a9494f78ab4a4dcaad6be03d4aa4204d7466",
     "include/game/TevStageInlines.h": "03b19716c4d88b4eb2f3c74cdf2040ca0bb6c43e842d1eefc2c8bd148a278645",
-    "include/game/TriggerObject.h": "2fd1b18ed67d25b29fb319880dee6a13877f74ccf1ce658f3d860388ab7ed0c0",
+    "include/game/TriggerObject.h": "868efaed3829ae5b4316df9aed049dedcedf365e7adec34adb8134c554de7e84",
     "include/game/Volume.h": "c81634d5040c155172fe79d9c2c0d4303e184e17736667562e84e4a03ea0c839",
     "include/game/Weapon.h": "074ba642eae19c0c162eff1639e056c8e51f0e3c7de151316dd0a8936f4b25f0",
     "include/game-containers/AlgorithmTypes.h": "a4959e24b9ab8edd66054b63ed6d53516aebc500f71f821e27babbf931b8d51a",
@@ -2293,6 +2295,7 @@
     "src/script/destroy_child.cpp": "7bd9570c967f1b90f65735041858567692727e33dbef0f0f257cd315ec9b6288",
     "src/script/destroy_dump_object.cpp": "12da9c1ade21a5a9b1712ed0c053230d6641ff2c7abcf85eb2860776fd485a08",
     "src/script/destroy_light.cpp": "d9bb85a691313f56c3579c7b6ee170b183a75684c55032923f9d4daabaa12bc9",
+    "src/script/destroy_object.cpp": "a4a39c7d82fa56b8ff8a50bebba05459213f4c4289b5487475eec5c6c6150183",
     "src/script/destroy_particle_system.cpp": "c9c9fb59a6508d89a236b21595af96505166016effbfe328d58dcee0a3638308",
     "src/script/destroy_script.cpp": "9138dc6270c7534b7aac973b7b94032efbc968ae6111a525a97aada19f06a749",
     "src/script/destroy_sub_hier_object.cpp": "079a623cf88861f184e0fc42bf45a1176c68607e7e1551f4ac33adf24f5ab62e",
@@ -2365,6 +2368,7 @@
     "src/script/particle_sorting.cpp": "1bb9b7a50f39eee37282ea83c3f8b3f7cfe066834c25fc5bd0dee40149896997",
     "src/script/path_mech_allow_collision_damage.cpp": "155aaab8c40c38038f287b4c47b9a79fe448943300b5150e2b9aa7b72f1ede98",
     "src/script/play_facial_animation.cpp": "8f7a01392b52e5cac243ca312efdf46f89eb627089654a98ee5a1be662f28b94",
+    "src/script/play_turn_animation.cpp": "ee0245babc490e6999d97214bdab4e29f826e7901f26a115228a22fbcdc81d58",
     "src/script/player_action_stubs.cpp": "345f3ab36615cebe9563d377d4049590c1f2f9b777739b104a21153c9dde6a3f",
     "src/script/player_can_crouch.cpp": "cd2bba2964d26d0d98ca2781297d91b5a5d47fbdf1f74e7febfe5a286512e1b8",
     "src/script/player_collision_id.cpp": "aaaff5efdbf2cf2b2a484192c953c29eb1f54aa396f85e54f870519751e99a57",
@@ -25850,6 +25854,42 @@
       "discarded_functions": [],
       "object_sha256": "908080bd7598185ad6d6e56c5a585cbc9bc5c1a9579641be1e8fbe20889096da",
       "linked_sha256": "435ce6933d06684174c6402797bae48cf0372adfa986df23a59fc3bc64265cf4"
+    },
+    {
+      "id": "script_play_turn_animation",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 236,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "99fe34a130d433d6dc408b7a1fb7de4da63c8b00ffff982193b6c3337a504f98",
+      "linked_sha256": "ba90a99e10b9712e07622107b3d6ffd69e24689c95ab6e066b2555f6c3da183f"
+    },
+    {
+      "id": "script_destroy_object",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 268,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "4a8c5c859f75d0cc11a05dd687afb7d2cd8c37496e6a632ca4d5c23e08a2fcaf",
+      "linked_sha256": "5d189b06af11d1e660105d4ada9073a21d7aa80558ba1ce977998bffbfd928a0"
     }
   ],
   "code_map": {
@@ -48344,13 +48384,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800f9f2c",
-            "size": 236,
-            "kind": "function",
-            "name": "BIFunc_PlayTurnAnimation__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800fa160",
             "size": 288,
             "kind": "function",
@@ -48649,13 +48682,6 @@
             "size": 316,
             "kind": "function",
             "name": "BIFunc_CreateChild__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80101534",
-            "size": 268,
-            "kind": "function",
-            "name": "BIFunc_DestroyObject__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {
