@@ -7,6 +7,7 @@ class CGameSettings {
   public:
     int SerializingIn() const;
     int SerializingOut() const;
+    void AddCheat(int);
 };
 extern CGameSettings g_GameSettings;
 

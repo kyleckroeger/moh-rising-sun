@@ -36,6 +36,7 @@ class CMountedMachineGunBehavior { // Type 3.
     void ForceToMMGFeeder();
     static void DeregisterGun(int);
     static int GetFeederByLinkCode(int);
+    static void RegisterFeeder(int, BSObject *);
 };
 
 class CCoverpointBehavior { // Type 4.
@@ -65,6 +66,12 @@ class CSwordBehavior { // Type 8.
 class CGrenadeResponseBehavior { // Type 10.
   public:
     void FinishedResponse(CThrownBullet *);
+};
+
+// Method-only view of a cover point; the script object's native trigger is one.
+class CCoverPoint {
+  public:
+    void Invalidate();
 };
 
 // Static lookup used by BIFunc_AIFindTank; script object at +0x0c as in CAIObject.

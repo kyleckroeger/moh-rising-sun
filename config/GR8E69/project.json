@@ -1004,7 +1004,16 @@
     "script_signal_buddy_lead_checkpoint_reached_by_player.json",
     "script_player_reset_grenade_count.json",
     "script_destroy_dump_object.json",
-    "script_get_mmg_feeder_by_link_code.json"
+    "script_get_mmg_feeder_by_link_code.json",
+    "script_ai_invalidate_cover_point.json",
+    "script_register_nav_point.json",
+    "script_match_group.json",
+    "script_play_facial_animation.json",
+    "script_cancel_timer_event.json",
+    "script_get_instance_data_for.json",
+    "script_register_mmg_feeder.json",
+    "script_reset_animated_texture.json",
+    "script_give_cheat_number.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

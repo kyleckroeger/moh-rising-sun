@@ -50,6 +50,7 @@ class CSoldierObject {
     unsigned char unknown_12b8[0x15e8 - 0x12b8];
     int japanese;           // +0x15e8; set by BIFunc_SetJapanese.
     void SetHeadTrans(bool);
+    void SetFaceAnimationState(unsigned short, int);
     void ResumeAimModifier();
     void ResumePropAimModifier();
     void EnablePropAimModifier(bool);
@@ -57,6 +58,13 @@ class CSoldierObject {
     void SpecifyTurnAngle(float);
     void SetCurrentWeapon(int, int, bool);
     void FireCurrentWeapon(float, EFireMethod);
+};
+
+// Static animated-texture operations keyed by texture CRC.
+class AnimShape {
+  public:
+    static void ResetByCRC(int);
+    static void AdvanceByCRC(int);
 };
 
 // Static decal operations used by the script built-ins.
