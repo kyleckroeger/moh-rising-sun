@@ -1040,7 +1040,12 @@
     "script_bs_object_as_scene_node.json",
     "script_swap_hier_object.json",
     "script_set_weapon_enable.json",
-    "script_get_mounted_machine_gun_by_link_code.json"
+    "script_get_mounted_machine_gun_by_link_code.json",
+    "script_get_cookie.json",
+    "script_get_target_for.json",
+    "script_soldier_detach_from_soldier.json",
+    "script_ai_set_team.json",
+    "script_soldier_get_locomotion_info.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

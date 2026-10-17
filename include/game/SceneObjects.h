@@ -43,13 +43,17 @@ class CAnimObject {
 
 class CSoldierObject {
   public:
+    // Original nested enum tag; members are descriptive.
+    enum Partition { PartitionNone = 0, Partition2 = 2, Partition3 = 3 };
     unsigned char unknown_0[0x120];
     BSObject *scriptObject; // +0x120
     unsigned char unknown_124[0x220 - 0x124];
     int groundCheckPending; // +0x220
     unsigned char unknown_224[4];
     int groundCheckState;   // +0x228; cleared before the ground-check event.
-    unsigned char unknown_22c[0xb14 - 0x22c];
+    unsigned char unknown_22c[0x2ec - 0x22c];
+    int locomotionInfo;     // +0x2ec; returned by address.
+    unsigned char unknown_2f0[0xb14 - 0x2f0];
     int canBePushed;        // +0xb14
     unsigned char unknown_b18[0x1050 - 0xb18];
     int voiceHandle;        // +0x1050; -12 when no voice is playing.
@@ -64,6 +68,7 @@ class CSoldierObject {
     void SetHeadTrans(bool);
     void SetFaceAnimationState(unsigned short, int);
     void SetHeadTrackPlayer(bool);
+    void EnableSkeletalPartition(Partition);
     void ResumeAimModifier();
     void ResumePropAimModifier();
     void EnablePropAimModifier(bool);

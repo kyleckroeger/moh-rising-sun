@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 675284,
+    "matching_code_bytes": 676556,
     "total_executable_code_bytes": 2492032,
-    "percent": 27.097725871898916,
+    "percent": 27.14876855513894,
     "categories": {
-      "reconstructed_game": 283068,
+      "reconstructed_game": 284340,
       "restored_library": 392216
     },
-    "matching_functions": 2737
+    "matching_functions": 2744
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "22bf40cb7f030f2149986bf0f1379db2c179bb03db8970101a2dfa1dfb64ff3e",
+    "config/GR8E69/project.json": "2efe4296eff941be7fe192070a2c0c37cb9a67c9ec73f731b1a0d3773184f06f",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -668,6 +668,7 @@
     "config/GR8E69/script_ai_loop_spline_path_walk.json": "c9ba5b9e35a637c6bb6adeffecea30a16b416a37507f1551756424a09cd78264",
     "config/GR8E69/script_ai_set_hearing_radius.json": "ec4fd8c205ae1ce2ec7d8081418151edc0d095e0028f236748973d02582f6f72",
     "config/GR8E69/script_ai_set_high_level_state.json": "157d1e4cb9b35025d3873fd8221c233d04f2dcda66625e3478448b8e00147ba0",
+    "config/GR8E69/script_ai_set_team.json": "1c170526935461b601a20965f395849175ec2cae2938fbcd3756afbf90ce3415",
     "config/GR8E69/script_ai_start_astar_path_walk.json": "aba74f92f54bf4e87080fe5f0f2f0b504b290a24485a317b3d48be71e3f23593",
     "config/GR8E69/script_ai_start_astar_path_walk_to_move_point.json": "ada6f3792fbed21436a108827429eef3b28be64afd1737584cf0b254a0a4af51",
     "config/GR8E69/script_ai_start_spline_path_walk.json": "fc27b648073c6e0087775e8a44ac43521295efbb9715ad4a625ca659fd2e4258",
@@ -713,6 +714,7 @@
     "config/GR8E69/script_fog_green.json": "e47b331850ece36c331de47302063771583c5c9ab94fbc7d2042d2ce9b6276e6",
     "config/GR8E69/script_fog_red.json": "0de4d1284098aed2168667399d286afbfc3aad87857bcc13d8d14213eeee2cbf",
     "config/GR8E69/script_generic_sound_memory.json": "e1178ef559f3a49be279c2165984dd010592464f41b771d154b31630919ce893",
+    "config/GR8E69/script_get_cookie.json": "964f05a44430b6c842567d746a2d25ec99a45c8cc092e37fb59e098d86fedae7",
     "config/GR8E69/script_get_current_frame_number.json": "c393de1b6ab2c638c59078d48a7233f3ea444bdd149ea6322ba37caf4233e0e3",
     "config/GR8E69/script_get_instance_data_for.json": "b2671f9e6ecba63a0d89567e8546dbbfa5a320299377d8c2074cf893e60579fd",
     "config/GR8E69/script_get_mmg_feeder_by_link_code.json": "126e87352abf24ce6300a783bfde6126f57e4ea6cd5d1131a04975fadccdef91",
@@ -720,6 +722,7 @@
     "config/GR8E69/script_get_my_instance_data.json": "a5d4213e60fa14227d9b8ca1ad1a25905a57ae750f15234324ad5925dcb76737",
     "config/GR8E69/script_get_nav_point.json": "fa6edd7123e804776195545d24acf4f96bc1bfa636c660f7eae0843956eabf56",
     "config/GR8E69/script_get_random_integer.json": "89f9b0ccd8da686a1af7a9a187397e6970ac68fe71ae48030d4e75e9897df8aa",
+    "config/GR8E69/script_get_target_for.json": "a5f1538aa4402b653588b215d415fe9492c2fe5795785872ce1bad9576153a28",
     "config/GR8E69/script_give_cheat_number.json": "7426a4b6bcd5f94dcdcab359a2964f83ff62cc43e4e61aa83be81be50a66628e",
     "config/GR8E69/script_glare_destroy.json": "7d402ee0f90ed1319f6dff3a84bd32a4b4798272f7e2f04b021ae49121861ceb",
     "config/GR8E69/script_grenade_response_finished.json": "8c1b4667e689a9575dd14f20057aa759203667fbfa5a89a2a292eb4efd31dcb8",
@@ -811,6 +814,8 @@
     "config/GR8E69/script_soldier_ai_continue_spline_path_walk.json": "70014bd2aa70a2ad88e3cf322bf397c75cd244a03b74a2cfcc7a45d883163dc8",
     "config/GR8E69/script_soldier_ai_fire_at_current_target.json": "7d3ec577c6e2092ab3f8b84a702ca839895fb227f9bf7910c8b0d569ae8d1791",
     "config/GR8E69/script_soldier_ai_stop_spline_path_walk.json": "987c266200eed540d83a84e47c04ebecfb94c9ea38d58ec4ef9e1d03bb92aa4d",
+    "config/GR8E69/script_soldier_detach_from_soldier.json": "8674874d93f3e39092123c90723baec2f44e3143a8f0604dc6025900e347e28d",
+    "config/GR8E69/script_soldier_get_locomotion_info.json": "03737fb68c06bd7a15df4b3f26d287588f48e28bbc08593471b660fb66e5f996",
     "config/GR8E69/script_soldier_suspend_aiming.json": "0c32f14fda9130f97ae315183c33bfce1ceaefe01e9125f4428750d04eaa0ea4",
     "config/GR8E69/script_stack.json": "51d1c716e65edd95a6791e3b11f40a0e01a53b10fa4dc25075e48e1e6769e373",
     "config/GR8E69/script_stop_check_objects_inside_range.json": "5ca54db745dc1bfa1ab8baf48e5716818d4b9c39fce319dbfe3c2b230216e464",
@@ -1228,7 +1233,7 @@
     "include/game/AIFilterGlobal.h": "26368f15313dbd6390bee4c45582bcdfc36d8d433aaec5b0241541e52b9d677a",
     "include/game/AIMovement.h": "2cff8f67263207fdabdc5c51aae82d2f20aba46126c7534ab4ce594ffa666632",
     "include/game/AISplinePath.h": "18fef04e8f8bf990a34694b2fe394087459f7e1162f934eda618f582756924e6",
-    "include/game/AITargeting.h": "cddeba87f8782c5e119d161d7476ea4aafd5f44e12a2e1f45509c9922d538ab1",
+    "include/game/AITargeting.h": "2b2f71adba77c3870def99668b8718f9630fc4492d009d130946c96df17acb2e",
     "include/game/BPD.h": "ec4a3aceb83f181db2c6adf8ac87137ede2cd6a0e643548159c73a827aadd19e",
     "include/game/BSGameObject.h": "0251918a776754b0d6b3d30b69e61b0d0c8f919721dbd147dbecf710b180a45a",
     "include/game/Bullet.h": "164eb6981378071ec795004745c8ff1c5a0443ce5575d1bd2397e197256e4027",
@@ -1304,7 +1309,7 @@
     "include/game/ParticleRecipe.h": "04bba33839dcdae3132d1316e831585288f74ef842a5b01c6f6d6c37929ee61d",
     "include/game/PropertyData.h": "952ae5ac78dc17e43053a7b905a8e58499a1faa3c7d0721269329f639095b22a",
     "include/game/SceneNode.h": "4094105f963939f75f15a726e53cea3b2aa7d2bb9368af098f8c74d67d1e45ca",
-    "include/game/SceneObjects.h": "051321f71132ca17ceff923b60b6baa74b39183ea665d4b3541df3bb94601e96",
+    "include/game/SceneObjects.h": "f6b18488ae299108d4a774db19dda5db06d558fd57d15517c2e2be83e2bca6f0",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
     "include/game/ScriptRuntime.h": "e6c5e20e70b740f8fae024d5b0711e408ad2db30aeaba9ceb7f72cbcc442ad8d",
@@ -2194,6 +2199,7 @@
     "src/script/ai_loop_spline_path_walk.cpp": "fb9ab2c5ec242a29ee90bbdc791af90033ef2f7b917723567c133f13f47442eb",
     "src/script/ai_set_hearing_radius.cpp": "5ba6d9769ebda14d7df24f1a73e3b9516df09b9d9affd48e8c29be7b4a70f720",
     "src/script/ai_set_high_level_state.cpp": "a77d629b768907985060348dc32460908ebfdabd713d3402d536e5c3b2685c07",
+    "src/script/ai_set_team.cpp": "56b78f7d7f894811dfe2c1c54ac433755500aa00e81bdfe63aecc18f5e7aff6b",
     "src/script/ai_start_astar_path_walk.cpp": "6d097ec353ab1b619814364162ce3423560ccf6c5022aafafd01278151e36dbc",
     "src/script/ai_start_astar_path_walk_to_move_point.cpp": "bd247d68326c40e8905cc25845dedf451b1eef05be5406439816ef3f8b54fcae",
     "src/script/ai_start_spline_path_walk.cpp": "7830f930ba6f975615ae37efc031c3bddd4f00fc1e0fc0983e7a87d3f3d0dfe6",
@@ -2241,6 +2247,7 @@
     "src/script/game_object_defaults.cpp": "c3bb5fdca33a78a86096706f3766c883108276ade69e030f64187620dfbbd453",
     "src/script/game_object_list.cpp": "1c0df5a03d841932b0b296ebf549e7bfa7b3eec987442865b379df7c2f77fbe6",
     "src/script/generic_sound_memory.cpp": "98f141a6ab9ee46937aa71cd830fd558f3a856699388c8cabdad5e8749498a83",
+    "src/script/get_cookie.cpp": "c44c744094298307959153ea12bd6c2e98228017e28034081ad371ceaf22c18f",
     "src/script/get_current_frame_number.cpp": "14d183d862a6b2ffd3d29f45baaf296804eb3fcb2490f8c559232d9acc7379dd",
     "src/script/get_instance_data_for.cpp": "a4db55d7690ddc4fe44710c2ee5ebb5fdfafb312b10641c500be8e4592895d6a",
     "src/script/get_mmg_feeder_by_link_code.cpp": "8c81f34b402193aa2848b81b2259f33fccc4f08d178d5289fdbe7a874bd3622c",
@@ -2248,6 +2255,7 @@
     "src/script/get_my_instance_data.cpp": "9b7ac33c26194efb098b529f4ccdefd5098bae54203d51f705a93233e1f9d686",
     "src/script/get_nav_point.cpp": "5408b334205a034f0bb598e2af5b0997b13d5ff0250f303bd87206f7d3823e1d",
     "src/script/get_random_integer.cpp": "9a34f0a81d08572d1466b6bdc7c6dfce8ac6248311ab31e71b88ff26433961d2",
+    "src/script/get_target_for.cpp": "de77912b7486af0160ea90ae9964ef5015d519ff556b0bd18644d5a3fcc0fa1a",
     "src/script/give_cheat_number.cpp": "e07d7d30f8619b4daa7bc5bb101f791e41300ce0ddd9a37ba52a61b34d8ee0eb",
     "src/script/glare_destroy.cpp": "9af8820719b3e3c1c5a6f1f2b38795c83c08207fa7da7c14f5580ac634de27a2",
     "src/script/grenade_response_finished.cpp": "0e6c68a908e9d1de8ca11e5ce7573f39ed22151bfb4e87186d9fe2e2736afae5",
@@ -2339,6 +2347,8 @@
     "src/script/soldier_ai_continue_spline_path_walk.cpp": "299ce9dc76fcba503475b555836952c1c8a24ed12c12d494267f843dda9a4659",
     "src/script/soldier_ai_fire_at_current_target.cpp": "02a9414bc0425c5014bace579d1ef89741e219e756a179ac7ccaf316b860572f",
     "src/script/soldier_ai_stop_spline_path_walk.cpp": "301982faac6b6d66bc02f69b060341f8ae7e5c6d080ac2d87d609a850bb2de22",
+    "src/script/soldier_detach_from_soldier.cpp": "da5d7cb68a1a6df96f0ad1b7f50d1fdca51d385aae6774dedc45f488be3b4902",
+    "src/script/soldier_get_locomotion_info.cpp": "ba195c3c7f5a641d0d43a0239575d335958540a7fd137df20cb2c861fb730fe1",
     "src/script/soldier_suspend_aiming.cpp": "774f3d830ce341209c47d872b2f6d7c6ea2a89e69c14711441564074dc2d2bb1",
     "src/script/stack.cpp": "b98bb8bfcda3985b4e4e1a757b27db6342f5142af06c629e63e219ce8f324a29",
     "src/script/stop_check_objects_inside_range.cpp": "8ddac4343bf4d66fd902a9a8c49d75536d7b1e2c4a722e6abcccb3a2df7ed82b",
@@ -24850,6 +24860,96 @@
       "discarded_functions": [],
       "object_sha256": "e3cf057a9f5fd685f50a1f43c60aeee25a8fdbec7f24730e37ec711e7d1b822d",
       "linked_sha256": "c8d145156b506d2671ccf1b32b9d8692fbb1ea5f432ef0d373ba51ece152f8d3"
+    },
+    {
+      "id": "script_get_cookie",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 364,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "01e27849d8c3eca8e1162589ef59c4ad40054a0e6f471f306134d88b12fa4b24",
+      "linked_sha256": "52be0ea7c33197aace60cd25c561324cafd0c09bae31b8e0085b3269eca821af"
+    },
+    {
+      "id": "script_get_target_for",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 184,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "30ec15bddc37cbf81ffc6d9141dde7f26ed1e9333351acc701ff6c77ebeae0db",
+      "linked_sha256": "188b095a2114817cfd594135f241a4d69fa85552375cfb88d13a3cb0da6fb7d1"
+    },
+    {
+      "id": "script_soldier_detach_from_soldier",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 180,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "4cc029f2c603ed414357a80fc23ac3d8a0645c38e22339e34593fbe9ff3d28d7",
+      "linked_sha256": "6320bc10151a86ad65c612c5c698331ced433f7312cfb81651e75c5aedc852e5"
+    },
+    {
+      "id": "script_ai_set_team",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 184,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "12ac57abc1b759265f52924da4fb3b8742b30ddd417d2515a58e0c52dcde4d03",
+      "linked_sha256": "d61422edf43011673d6754ef8cf2a7f15b73b65cdeb8ffa71f8124dddf3ea43e"
+    },
+    {
+      "id": "script_soldier_get_locomotion_info",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 360,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b3e2a335d6f3447ee4ce9d174b28bd1d6dd6507342ae9fa4261c8c9fe8c5360d",
+      "linked_sha256": "cbbbbb5a75ead65cd1b8ed13d5d1f327fd03c95fd7fcf9e5e8fbe4fefa8660d9"
     }
   ],
   "code_map": {
@@ -47687,20 +47787,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800feb94",
-            "size": 180,
-            "kind": "function",
-            "name": "BIFunc_GetCookie__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800fec48",
-            "size": 184,
-            "kind": "function",
-            "name": "BIFunc_SetCookie__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800ff074",
             "size": 460,
             "kind": "function",
@@ -47957,13 +48043,6 @@
             "size": 100,
             "kind": "function",
             "name": "BIFunc_BreakPoint__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80103140",
-            "size": 184,
-            "kind": "function",
-            "name": "BIFunc_GetTargetFor__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -48744,13 +48823,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80110064",
-            "size": 180,
-            "kind": "function",
-            "name": "BIFunc_Soldier_DetachFromSoldier__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80110118",
             "size": 236,
             "kind": "function",
@@ -48881,13 +48953,6 @@
             "size": 236,
             "kind": "function",
             "name": "BIFunc_ChangeNPCTeam__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80112780",
-            "size": 184,
-            "kind": "function",
-            "name": "BIFunc_AISetTeam__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -49294,20 +49359,6 @@
             "size": 216,
             "kind": "function",
             "name": "BIFunc_Soldier_GetWeaponType__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80118fac",
-            "size": 180,
-            "kind": "function",
-            "name": "BIFunc_Soldier_GetLocomotionInfo__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80119060",
-            "size": 180,
-            "kind": "function",
-            "name": "BIFunc_Soldier_EnableSkeletalPartition__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

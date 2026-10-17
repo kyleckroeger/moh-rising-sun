@@ -72,9 +72,9 @@ public:
     void GetAdjustedAimTargetPosition(CVector3 &);
     bool DoBlindFire();
     float GetDistanceToTargetSquaredXYZReal();
+    BSObject *GetTargetScript() const;
     static void RegisterLocationTarget(int, bool, ETeam, BSObject *);
     static void DeRegisterLocationTarget(int);
-    BSObject *GetTargetScript() const;
     bool IsNonAITarget() const;
     bool HasValidTarget() const;
     bool GetTargetGuessPosition(CVector3 &);
@@ -111,7 +111,10 @@ public:
     CAIAreaPathFinding areaPathFinding; // +0x230
     unsigned char unknown254[0x2f0 - 0x230 - sizeof(CAIAreaPathFinding)];
     CAISplinePathModule splinePath; // +0x2f0
-    unsigned char unknown310[0x638 - 0x2f0 - sizeof(CAISplinePathModule)];
+    unsigned char unknown310[0x594 - 0x2f0 - sizeof(CAISplinePathModule)];
+    int cookie;          // +0x594; script-owned value (BIFunc_GetCookie/SetCookie).
+    unsigned char team;  // +0x598; set by BIFunc_AISetTeam.
+    unsigned char unknown599[0x638 - 0x599];
     float hearingRadius; // +0x638; set by BIFunc_AISetHearingRadius.
     unsigned char unknown63c[0x6e4 - 0x63c];
     int inShadow;        // +0x6e4
