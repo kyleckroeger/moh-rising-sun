@@ -1092,7 +1092,8 @@
     "script_anim_object_set_anim_callback.json",
     "script_destroy_child.json",
     "script_play_turn_animation.json",
-    "script_destroy_object.json"
+    "script_destroy_object.json",
+    "script_get_current_npc_weapon_class.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

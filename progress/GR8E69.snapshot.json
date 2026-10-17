@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 688072,
+    "matching_code_bytes": 688372,
     "total_executable_code_bytes": 2492032,
-    "percent": 27.61088140120191,
+    "percent": 27.622919769890597,
     "categories": {
-      "reconstructed_game": 295856,
+      "reconstructed_game": 296156,
       "restored_library": 392216
     },
-    "matching_functions": 2803
+    "matching_functions": 2804
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "b7dc1047a4b308c7dff2b71c1fd24c62803b018805f98888c8fd818b699d3e19",
+    "config/GR8E69/project.json": "7018229298b38b58bc3e40fa06cdc8017b7ae9b6ef715ba3a4845b2afe659920",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -738,6 +738,7 @@
     "config/GR8E69/script_generic_sound_memory.json": "e1178ef559f3a49be279c2165984dd010592464f41b771d154b31630919ce893",
     "config/GR8E69/script_get_cookie.json": "964f05a44430b6c842567d746a2d25ec99a45c8cc092e37fb59e098d86fedae7",
     "config/GR8E69/script_get_current_frame_number.json": "c393de1b6ab2c638c59078d48a7233f3ea444bdd149ea6322ba37caf4233e0e3",
+    "config/GR8E69/script_get_current_npc_weapon_class.json": "5f7719389856f96617f796ad151ff74a5977fa905ce0dab5e1c8ecd474176510",
     "config/GR8E69/script_get_current_weapon_class.json": "463761cd954b8fed0bc3dfcfa0b6217302017ded7d5267efbec7b093ccdbd508",
     "config/GR8E69/script_get_instance_data_for.json": "b2671f9e6ecba63a0d89567e8546dbbfa5a320299377d8c2074cf893e60579fd",
     "config/GR8E69/script_get_mmg_feeder_by_link_code.json": "126e87352abf24ce6300a783bfde6126f57e4ea6cd5d1131a04975fadccdef91",
@@ -2318,6 +2319,7 @@
     "src/script/generic_sound_memory.cpp": "98f141a6ab9ee46937aa71cd830fd558f3a856699388c8cabdad5e8749498a83",
     "src/script/get_cookie.cpp": "c44c744094298307959153ea12bd6c2e98228017e28034081ad371ceaf22c18f",
     "src/script/get_current_frame_number.cpp": "14d183d862a6b2ffd3d29f45baaf296804eb3fcb2490f8c559232d9acc7379dd",
+    "src/script/get_current_npc_weapon_class.cpp": "fe1a97a57534dab93311d7bb7f3a8490b6df9243bba5e8595d864ff0fb404b83",
     "src/script/get_current_weapon_class.cpp": "25417d18eac0de5a8301242fde1afeeb62ceda8298f719cdfceeba264d4c1e1c",
     "src/script/get_instance_data_for.cpp": "a4db55d7690ddc4fe44710c2ee5ebb5fdfafb312b10641c500be8e4592895d6a",
     "src/script/get_mmg_feeder_by_link_code.cpp": "8c81f34b402193aa2848b81b2259f33fccc4f08d178d5289fdbe7a874bd3622c",
@@ -25890,6 +25892,24 @@
       "discarded_functions": [],
       "object_sha256": "4a8c5c859f75d0cc11a05dd687afb7d2cd8c37496e6a632ca4d5c23e08a2fcaf",
       "linked_sha256": "5d189b06af11d1e660105d4ada9073a21d7aa80558ba1ce977998bffbfd928a0"
+    },
+    {
+      "id": "script_get_current_npc_weapon_class",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 300,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "42810576e14ff1b46a022d39177066024bd87486199d1a420fd42a9fe3438c11",
+      "linked_sha256": "7e82310cfc77529818c456191129e83ede1536e05da731f0d6cda4ddc42a52bc"
     }
   ],
   "code_map": {
@@ -49277,13 +49297,6 @@
             "size": 972,
             "kind": "function",
             "name": "BIFunc_GetSoundInfo__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8010ba0c",
-            "size": 300,
-            "kind": "function",
-            "name": "BIFunc_GetCurrentNPCWeaponClass__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {
