@@ -107,6 +107,12 @@ public:
     CAIAreaPathFinding areaPathFinding; // +0x230
     unsigned char unknown254[0x2f0 - 0x230 - sizeof(CAIAreaPathFinding)];
     CAISplinePathModule splinePath; // +0x2f0
+    unsigned char unknown310[0x638 - 0x2f0 - sizeof(CAISplinePathModule)];
+    float hearingRadius; // +0x638; set by BIFunc_AISetHearingRadius.
+    unsigned char unknown63c[0x6e4 - 0x63c];
+    int inShadow;        // +0x6e4
+    float shadowAmount;  // +0x6e8
+    int matchList;       // +0x6ec; first word of the soldier match list returned by address.
     CAIBehavior *FindMatchingBehavior(EBehaviorType);
     void EnableBehavior(EBehaviorType);
     void DisableBehavior(EBehaviorType);

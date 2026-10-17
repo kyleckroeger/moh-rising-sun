@@ -40,6 +40,7 @@ class CCoverpointBehavior { // Type 4.
     void Arrived();
     void EndCoverpoint();
     void ForceToCoverPoint();
+    static void InvalidateCoverPointByID(int);
 };
 
 class CScriptedBehavior { // Type 5.

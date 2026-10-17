@@ -964,7 +964,15 @@
     "script_can_i_create_child.json",
     "script_stop_target_search.json",
     "script_is_player_invincible.json",
-    "script_stop_corpse_search.json"
+    "script_stop_corpse_search.json",
+    "script_ai_set_hearing_radius.json",
+    "script_ai_invalidate_cover_point_by_id.json",
+    "script_set_gravity.json",
+    "script_set_can_be_pushed.json",
+    "script_disable_collision.json",
+    "script_path_mech_allow_collision_damage.json",
+    "script_player_motion_shake.json",
+    "script_player_switch_weapons.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

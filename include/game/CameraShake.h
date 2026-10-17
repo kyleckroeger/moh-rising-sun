@@ -70,6 +70,7 @@ class CPlayerObject {
     int IsInvincible() const;
     void StartDeathSequence();
     void DropMPDumpObject();
+    int CycleWeapon(int, int);
 };
 
 #endif
