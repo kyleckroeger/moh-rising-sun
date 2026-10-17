@@ -72,6 +72,8 @@ class CSoldierObject {
     int propAimSuspended;   // +0x12b4; set by BIFunc_SuspendPropAiming.
     unsigned char unknown_12b8[0x15e8 - 0x12b8];
     int japanese;           // +0x15e8; set by BIFunc_SetJapanese.
+    unsigned char unknown_15ec[0x1c54 - 0x15ec];
+    float reloadTimer;      // +0x1c54; reset to -1 by BIFunc_BotDoneReloading.
     void SetHeadTrans(bool);
     void SetFaceAnimationState(unsigned short, int);
     void SetHeadTrackPlayer(bool);

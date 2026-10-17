@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 680524,
+    "matching_code_bytes": 681164,
     "total_executable_code_bytes": 2492032,
-    "percent": 27.307996044994606,
+    "percent": 27.333677898197134,
     "categories": {
-      "reconstructed_game": 288308,
+      "reconstructed_game": 288948,
       "restored_library": 392216
     },
-    "matching_functions": 2765
+    "matching_functions": 2769
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "3ed2fc59bdc0aaca54d1b10e81b4255086eae6ac187115372083d9228dfffd2f",
+    "config/GR8E69/project.json": "70144a4361a15042c03881836a0a2a455c3575f01be895c74e40515cd2483df8",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -722,6 +722,7 @@
     "config/GR8E69/script_generic_sound_memory.json": "e1178ef559f3a49be279c2165984dd010592464f41b771d154b31630919ce893",
     "config/GR8E69/script_get_cookie.json": "964f05a44430b6c842567d746a2d25ec99a45c8cc092e37fb59e098d86fedae7",
     "config/GR8E69/script_get_current_frame_number.json": "c393de1b6ab2c638c59078d48a7233f3ea444bdd149ea6322ba37caf4233e0e3",
+    "config/GR8E69/script_get_current_weapon_class.json": "463761cd954b8fed0bc3dfcfa0b6217302017ded7d5267efbec7b093ccdbd508",
     "config/GR8E69/script_get_instance_data_for.json": "b2671f9e6ecba63a0d89567e8546dbbfa5a320299377d8c2074cf893e60579fd",
     "config/GR8E69/script_get_mmg_feeder_by_link_code.json": "126e87352abf24ce6300a783bfde6126f57e4ea6cd5d1131a04975fadccdef91",
     "config/GR8E69/script_get_mounted_machine_gun_by_link_code.json": "9a1663a0083fe4f07b2cecab927bd7a305c6e69f94aa953c0bbfd946c1d1baa7",
@@ -731,6 +732,7 @@
     "config/GR8E69/script_get_scripted_behavior_type.json": "e7f336f6dd0b506bb090efc3928a13d8064b73b5fcbdaba4c2d9f260a4ec7216",
     "config/GR8E69/script_get_soldier_weapon_in_slot.json": "78cd7b56f2de364676662712e1f6ccb0847413aaee204423b110657bc5dadae4",
     "config/GR8E69/script_get_target_for.json": "a5f1538aa4402b653588b215d415fe9492c2fe5795785872ce1bad9576153a28",
+    "config/GR8E69/script_get_weapon_info_helper.json": "ffedc6e426a9f0c684d976cfa718bc9488f5779fbfee913c468f280212dbb620",
     "config/GR8E69/script_give_cheat_number.json": "7426a4b6bcd5f94dcdcab359a2964f83ff62cc43e4e61aa83be81be50a66628e",
     "config/GR8E69/script_glare_destroy.json": "7d402ee0f90ed1319f6dff3a84bd32a4b4798272f7e2f04b021ae49121861ceb",
     "config/GR8E69/script_grenade_response_finished.json": "8c1b4667e689a9575dd14f20057aa759203667fbfa5a89a2a292eb4efd31dcb8",
@@ -829,7 +831,9 @@
     "config/GR8E69/script_soldier_ai_stop_spline_path_walk.json": "987c266200eed540d83a84e47c04ebecfb94c9ea38d58ec4ef9e1d03bb92aa4d",
     "config/GR8E69/script_soldier_detach_from_soldier.json": "8674874d93f3e39092123c90723baec2f44e3143a8f0604dc6025900e347e28d",
     "config/GR8E69/script_soldier_disable_skeletal_partition.json": "950473e077852ffedb8dc42d58eaf4599daa889e0ee58ea926c643bcd202fe10",
+    "config/GR8E69/script_soldier_get_current_weapon.json": "134e4c430062726f56169ba97f50058918195b2a274b3ac9cedecf72f5a72ace",
     "config/GR8E69/script_soldier_get_locomotion_info.json": "03737fb68c06bd7a15df4b3f26d287588f48e28bbc08593471b660fb66e5f996",
+    "config/GR8E69/script_soldier_get_weapon_type.json": "007fd640050bbb65df1b4a06a1fee69c02a7b5a7029d252fa3afb408bf0366b3",
     "config/GR8E69/script_soldier_set_current_weapon.json": "4534ae4caa1c97b418c8a8dbc76a4d1a7ec0f8636616154098a0d8ab3369b150",
     "config/GR8E69/script_soldier_suspend_aiming.json": "0c32f14fda9130f97ae315183c33bfce1ceaefe01e9125f4428750d04eaa0ea4",
     "config/GR8E69/script_stack.json": "51d1c716e65edd95a6791e3b11f40a0e01a53b10fa4dc25075e48e1e6769e373",
@@ -1324,7 +1328,7 @@
     "include/game/ParticleRecipe.h": "04bba33839dcdae3132d1316e831585288f74ef842a5b01c6f6d6c37929ee61d",
     "include/game/PropertyData.h": "952ae5ac78dc17e43053a7b905a8e58499a1faa3c7d0721269329f639095b22a",
     "include/game/SceneNode.h": "4094105f963939f75f15a726e53cea3b2aa7d2bb9368af098f8c74d67d1e45ca",
-    "include/game/SceneObjects.h": "3404406d85cbc146b5817d474055181f204a833241284962468da65ce522ac38",
+    "include/game/SceneObjects.h": "3c65b58cc6604e25a885361ccafa797b940446b00685d6929c81dbbd87ce50cf",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
     "include/game/ScriptRuntime.h": "e6c5e20e70b740f8fae024d5b0711e408ad2db30aeaba9ceb7f72cbcc442ad8d",
@@ -1339,7 +1343,7 @@
     "include/game/TevStageInlines.h": "03b19716c4d88b4eb2f3c74cdf2040ca0bb6c43e842d1eefc2c8bd148a278645",
     "include/game/TriggerObject.h": "2fd1b18ed67d25b29fb319880dee6a13877f74ccf1ce658f3d860388ab7ed0c0",
     "include/game/Volume.h": "c81634d5040c155172fe79d9c2c0d4303e184e17736667562e84e4a03ea0c839",
-    "include/game/Weapon.h": "8bd3e1b4e66d9cfce93989606d2b4f6494df01fd08c9d546ace959beadd13472",
+    "include/game/Weapon.h": "074ba642eae19c0c162eff1639e056c8e51f0e3c7de151316dd0a8936f4b25f0",
     "include/game-containers/AlgorithmTypes.h": "a4959e24b9ab8edd66054b63ed6d53516aebc500f71f821e27babbf931b8d51a",
     "include/game-containers/ContainerTypes.h": "9a676b3cfa6794b828f4916a9ce252e00ac4913c5379a1c37bd5e5f1db7c2a2b",
     "include/game-containers/ResourceTypes.h": "6f63038334ba47ea545e0994a455fbd01b1fdb6aa3b6bf155de630e9ede05c68",
@@ -2230,6 +2234,7 @@
     "src/script/arrived_at_mmg.cpp": "121f4404c3416a62881ea30dcec71c08f45a4bd2da4bb53a6667cc7ef0ba3064",
     "src/script/attach.cpp": "0854b2ae5a68407da2c807615ece3799a0d4ac49a06e8b3fbb75a0d362b10e1a",
     "src/script/attach_triggering_player_mmg.cpp": "5c29154ee239328db5be89bed4d1b43ba0667dee714f8ae1ee168decdd04382c",
+    "src/script/bot_done_reloading.cpp": "3d2ff2bfe635f834ae64923a43cc76dca6432b1852eef466fbc49b149bae59d1",
     "src/script/branches.cpp": "2823173b8e93bc80ac850752dad341621bbe5cb271c32dc243b0163512164347",
     "src/script/bs_object_as_scene_node.cpp": "aad3c6b337900d5f6bd0b72b1948cdd1b6cc6307ab6bbceebcb84a5510b2dca4",
     "src/script/buddy_cant_reach_target.cpp": "77c43d47b7cf898ee82645b370781a6b937db712a38aef73d08b9cbb3b87f8b4",
@@ -2270,6 +2275,7 @@
     "src/script/generic_sound_memory.cpp": "98f141a6ab9ee46937aa71cd830fd558f3a856699388c8cabdad5e8749498a83",
     "src/script/get_cookie.cpp": "c44c744094298307959153ea12bd6c2e98228017e28034081ad371ceaf22c18f",
     "src/script/get_current_frame_number.cpp": "14d183d862a6b2ffd3d29f45baaf296804eb3fcb2490f8c559232d9acc7379dd",
+    "src/script/get_current_weapon_class.cpp": "25417d18eac0de5a8301242fde1afeeb62ceda8298f719cdfceeba264d4c1e1c",
     "src/script/get_instance_data_for.cpp": "a4db55d7690ddc4fe44710c2ee5ebb5fdfafb312b10641c500be8e4592895d6a",
     "src/script/get_mmg_feeder_by_link_code.cpp": "8c81f34b402193aa2848b81b2259f33fccc4f08d178d5289fdbe7a874bd3622c",
     "src/script/get_mounted_machine_gun_by_link_code.cpp": "049593f33245a1b939fe821df83dbac9e48ef799cce3bcd13a013df9f329513d",
@@ -2279,6 +2285,8 @@
     "src/script/get_scripted_behavior_type.cpp": "6a02756e452bb854b3fcd03b47124f35da72638e1ab098a1bb6128166ae3d4c3",
     "src/script/get_soldier_weapon_in_slot.cpp": "92665fc6c0fc585fbe86ebd47edddf6756edec6a9310e4ad1cbfc4bb90199d54",
     "src/script/get_target_for.cpp": "de77912b7486af0160ea90ae9964ef5015d519ff556b0bd18644d5a3fcc0fa1a",
+    "src/script/get_weapon_info.cpp": "58dd31c0a74e478466d32e3f0f4bfe0fb7ec07935fef8dbc26b708ab050b76da",
+    "src/script/get_weapon_info_helper.cpp": "c629d092fbc6d3eb6ebc6a97463df0238791bbc9c6a2134a29cd75c744994dc9",
     "src/script/give_cheat_number.cpp": "e07d7d30f8619b4daa7bc5bb101f791e41300ce0ddd9a37ba52a61b34d8ee0eb",
     "src/script/glare_destroy.cpp": "9af8820719b3e3c1c5a6f1f2b38795c83c08207fa7da7c14f5580ac634de27a2",
     "src/script/grenade_response_finished.cpp": "0e6c68a908e9d1de8ca11e5ce7573f39ed22151bfb4e87186d9fe2e2736afae5",
@@ -2377,7 +2385,9 @@
     "src/script/soldier_ai_stop_spline_path_walk.cpp": "301982faac6b6d66bc02f69b060341f8ae7e5c6d080ac2d87d609a850bb2de22",
     "src/script/soldier_detach_from_soldier.cpp": "da5d7cb68a1a6df96f0ad1b7f50d1fdca51d385aae6774dedc45f488be3b4902",
     "src/script/soldier_disable_skeletal_partition.cpp": "c8bbdbee468a465d358dc5c149b07ce70672a1fe9a2088fbc4c86ab3169715da",
+    "src/script/soldier_get_current_weapon.cpp": "f90808c4a494e9549cdb77d7c9e9349e922bcee547e4fb399194c87ab06ccf01",
     "src/script/soldier_get_locomotion_info.cpp": "ba195c3c7f5a641d0d43a0239575d335958540a7fd137df20cb2c861fb730fe1",
+    "src/script/soldier_get_weapon_type.cpp": "883c09a11ad64d524ba6623d980cafc7a362b99e7278464bfef20b7be74a3c16",
     "src/script/soldier_set_current_weapon.cpp": "489c5c81a3647a0d1139da3496858e16a273e032bcfc5c2bffc66aefb75faa74",
     "src/script/soldier_suspend_aiming.cpp": "774f3d830ce341209c47d872b2f6d7c6ea2a89e69c14711441564074dc2d2bb1",
     "src/script/stack.cpp": "b98bb8bfcda3985b4e4e1a757b27db6342f5142af06c629e63e219ce8f324a29",
@@ -25250,6 +25260,78 @@
       "discarded_functions": [],
       "object_sha256": "b56396a8b73ebfd3b3d7981ff5880aec3942d684d90e1628829e1bbc5f360280",
       "linked_sha256": "325db10d265c99b867a2c2b9ac24d7b48d7efe457a982913874bfce5ff6f2d89"
+    },
+    {
+      "id": "script_get_weapon_info_helper",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 48,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "44cce37677a0c3e5c6dab65bc78fe2c32bf9f06f89fb59de7060392d1eb12543",
+      "linked_sha256": "c13ef58fa00b19cc5e191269eca27a83fcb2e3c8c9cc1c8a74a180c47de52355"
+    },
+    {
+      "id": "script_get_current_weapon_class",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 148,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "fddd8b15b303f612e2b9ed0c613562975016e9f789eb7b0d256fd5f3698733a5",
+      "linked_sha256": "a60ac0fded9c16cb88fbf101f5b6582b5b6cb05f468c4bc42ec387e906ba3f2d"
+    },
+    {
+      "id": "script_soldier_get_current_weapon",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 228,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "669c42b8fc644bce9a24417f16bc02ce6e7cb943de7ef71380ccce33d07fb3c5",
+      "linked_sha256": "1a0aae986dea43214da19649600b21811b40725c931e27062c8e9cb630bb79bd"
+    },
+    {
+      "id": "script_soldier_get_weapon_type",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 216,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "12f154a4dfcdd396c8c3d21bc3e8ed0596ade61f7cc321a1b01405dc110ee704",
+      "linked_sha256": "5978a81a601ce521471569fbede8f391351b5dbddbfcd26f5abb33644f15beb8"
     }
   ],
   "code_map": {
@@ -48815,13 +48897,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x8010b978",
-            "size": 148,
-            "kind": "function",
-            "name": "BIFunc_GetCurrentWeaponClass__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x8010ba0c",
             "size": 300,
             "kind": "function",
@@ -49501,24 +49576,10 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80118ce0",
-            "size": 228,
-            "kind": "function",
-            "name": "BIFunc_Soldier_GetCurrentWeapon__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80118dc4",
             "size": 272,
             "kind": "function",
             "name": "BIFunc_SetAccuracy__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80118ed4",
-            "size": 216,
-            "kind": "function",
-            "name": "BIFunc_Soldier_GetWeaponType__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {
@@ -49708,13 +49769,6 @@
             "size": 312,
             "kind": "function",
             "name": "DoPositionCheck__FP8BSObjectiiiiiPiT6",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8011b95c",
-            "size": 48,
-            "kind": "function",
-            "name": "GetWeaponInfoHelper__FP7CWeapon11EWeaponInfo",
             "evidence": "adjacent-compiler-markers"
           },
           {

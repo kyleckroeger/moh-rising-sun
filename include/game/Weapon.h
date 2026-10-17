@@ -10,16 +10,25 @@ struct WeaponProperties {
     short refireRate; // +0x06
     unsigned char unknown_8[6];
     short projectile; // +0x0e; nonzero for projectile weapons.
+    unsigned char unknown_10[2];
+    short infoValue1; // +0x12; returned for EWeaponInfo 1.
+    unsigned char unknown_14[0x68 - 0x14];
+    short weaponType; // +0x68; returned by the weapon-type built-ins.
 };
 
 // Original enum tag; its members are unknown.
 enum EWeaponShootType { WeaponShootTypeUnknown = 0 };
 
+// Original enum tag; selector names are descriptive.
+enum EWeaponInfo { WeaponInfo0 = 0, WeaponInfo1 = 1, WeaponInfo2 = 2 };
+
 class CWeapon {
   public:
     unsigned char unknown_0[0x300];
     WeaponProperties *properties; // +0x300
-    unsigned char unknown_304[0x320 - 0x304];
+    unsigned char unknown_304[0x30e - 0x304];
+    short infoValue0; // +0x30e; returned for EWeaponInfo 0.
+    unsigned char unknown_310[0x320 - 0x310];
     int weaponClass; // +0x320; returned by BIFunc_PlayerGetWeaponClass.
     unsigned char unknown_324[0x350 - 0x324];
     unsigned int reloading : 1; // +0x350, bit 31: cleared by BIFunc_PlayerClearReloading.
@@ -29,5 +38,7 @@ class CWeapon {
     void DoneReloading();
     void Shoot(EWeaponShootType, float, float);
 };
+
+int GetWeaponInfoHelper(CWeapon *, EWeaponInfo);
 
 #endif

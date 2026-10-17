@@ -1060,7 +1060,11 @@
     "script_get_soldier_weapon_in_slot.json",
     "script_set_muzzle_fire_for_player.json",
     "script_change_players_team.json",
-    "script_soldier_set_current_weapon.json"
+    "script_soldier_set_current_weapon.json",
+    "script_get_weapon_info_helper.json",
+    "script_get_current_weapon_class.json",
+    "script_soldier_get_current_weapon.json",
+    "script_soldier_get_weapon_type.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
