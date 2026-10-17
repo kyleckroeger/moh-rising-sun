@@ -1024,7 +1024,17 @@
     "script_register_multiple_timer_event.json",
     "script_player_super_aim_mode.json",
     "script_set_mg_waypoint_flag.json",
-    "script_set_detonation_time.json"
+    "script_set_detonation_time.json",
+    "script_destroy_particle_system.json",
+    "script_destroy_light.json",
+    "script_disable_player_shoot.json",
+    "script_set_jaw_motion.json",
+    "script_unhinge_camera_pitch.json",
+    "script_register_mounted_machine_gun.json",
+    "script_player_force_to_weapon.json",
+    "script_set_head_track_player.json",
+    "script_mp_get_player_body.json",
+    "script_set_max_light_priority.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

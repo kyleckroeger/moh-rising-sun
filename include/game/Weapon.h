@@ -12,6 +12,9 @@ struct WeaponProperties {
     short projectile; // +0x0e; nonzero for projectile weapons.
 };
 
+// Original enum tag; its members are unknown.
+enum EWeaponShootType { WeaponShootTypeUnknown = 0 };
+
 class CWeapon {
   public:
     unsigned char unknown_0[0x300];
@@ -24,6 +27,7 @@ class CWeapon {
     void StartReloading();
     void ReloadSingle();
     void DoneReloading();
+    void Shoot(EWeaponShootType, float, float);
 };
 
 #endif

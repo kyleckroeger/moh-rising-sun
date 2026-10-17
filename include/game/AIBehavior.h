@@ -4,6 +4,7 @@
 #include "AITargeting.h"
 class CThrownBullet;
 class TriggerObject;
+class CStaticObject;
 
 // Method-only views of the behaviors that script built-ins reach through
 // CAIObject::FindMatchingBehavior. Each class's GetType returns the selector
@@ -37,6 +38,7 @@ class CMountedMachineGunBehavior { // Type 3.
     static void DeregisterGun(int);
     static int GetFeederByLinkCode(int);
     static void RegisterFeeder(int, BSObject *);
+    static void RegisterGun(int, CStaticObject *);
 };
 
 class CCoverpointBehavior { // Type 4.

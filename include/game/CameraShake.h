@@ -59,7 +59,11 @@ class CPlayerObject {
     unsigned char unknown_dac[0xe00 - 0xdac];
     CAISplinePath *movePath, *lookPath; // +0xe00, +0xe04
     float pathParameter, pathRate; // +0xe08, +0xe0c
-    unsigned char unknown_e10[0x1cf0 - 0xe10];
+    unsigned char unknown_e10[0x10bc - 0xe10];
+    int cameraPitchUnhinged; // +0x10bc
+    unsigned char unknown_10c0[0x1144 - 0x10c0];
+    int body;                // +0x1144; returned by BIFunc_MPGetPlayerBody.
+    unsigned char unknown_1148[0x1cf0 - 0x1148];
     LookAtTarget lookAt; // +0x1cf0
     void MoveOnPath(CAISplinePath *, CAISplinePath *, float);
     void StopPath();

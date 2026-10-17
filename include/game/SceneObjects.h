@@ -15,6 +15,13 @@ enum EFireMethod { FireMethodUnknown = 0 };
 // unadjusted) and names only the observed members; bases, virtual interfaces
 // and complete sizes are not declared. Built-ins that need an inherited virtual
 // convert the view back to ISceneNode without adjustment.
+// Method-only view of the soldier's embedded jaw controller.
+enum EJawType { JawTypeUnknown = 0 };
+class CJawController {
+  public:
+    void SetMotionType(EJawType);
+};
+
 class CStaticObject {
   public:
     struct Flags {
@@ -22,8 +29,9 @@ class CStaticObject {
         unsigned int allowCollisionDamage : 1; // Bit 24.
         unsigned int unknown_low : 24;
     };
-    unsigned char unknown_0[0x218];
-    Flags flags; // +0x218
+    unsigned char unknown_0[0x214];
+    int maxLightPriority; // +0x214
+    Flags flags;          // +0x218
 };
 
 class CAnimObject {
@@ -43,7 +51,9 @@ class CSoldierObject {
     int groundCheckState;   // +0x228; cleared before the ground-check event.
     unsigned char unknown_22c[0xb14 - 0x22c];
     int canBePushed;        // +0xb14
-    unsigned char unknown_b18[0x1148 - 0xb18];
+    unsigned char unknown_b18[0x10a8 - 0xb18];
+    CJawController jaw;     // +0x10a8
+    unsigned char unknown_10a9[0x1148 - 0x10a9];
     int aimSuspended;       // +0x1148; set by BIFunc_SuspendAiming.
     unsigned char unknown_114c[0x12b4 - 0x114c];
     int propAimSuspended;   // +0x12b4; set by BIFunc_SuspendPropAiming.
@@ -51,6 +61,7 @@ class CSoldierObject {
     int japanese;           // +0x15e8; set by BIFunc_SetJapanese.
     void SetHeadTrans(bool);
     void SetFaceAnimationState(unsigned short, int);
+    void SetHeadTrackPlayer(bool);
     void ResumeAimModifier();
     void ResumePropAimModifier();
     void EnablePropAimModifier(bool);
