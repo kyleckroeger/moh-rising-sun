@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-362 fragments in `src/script/` reconstruct **589 functions and 98,336
+363 fragments in `src/script/` reconstruct **590 functions and 98,732
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 496 further built-in wrappers
-and stubs (84,660 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 497 further built-in wrappers
+and stubs (85,056 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-305 fragments add **496 functions and 84,660 executable bytes** from the
+306 fragments add **497 functions and 85,056 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -777,6 +777,7 @@ result order are written with their case groups in that order.
 | `script_ai_get_pan_angle_to_move_point` | `AIGetPanAngleToMovePoint` | `0x800fd114` | 288 |
 | `script_soldier_ai_get_distance_to_move_point` | `Soldier_AIGetDistanceToMovePoint` | `0x800fd234` | 200 |
 | `script_ai_send_flag` | `AISendFlag` | `0x800fd2fc` | 320 |
+| `script_ai_set_status_var` | `AISetStatusVar` | `0x800fd43c` | 396 |
 | `script_soldier_setup_grenade_shot` | `Soldier_SetupGrenadeShot` | `0x800fd708` | 172 |
 | `script_set_gravity` | `SetGravity`, `SetGroundCheck`, `InduceGroundCheck` | `0x800fd7b4` | 452 |
 | `script_set_hd_collision` | `SetHDCollision` | `0x800fd978` | 288 |

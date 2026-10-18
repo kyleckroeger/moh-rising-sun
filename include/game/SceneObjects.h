@@ -31,6 +31,7 @@ class CJawController {
 class CStaticObject {
   public:
     void StopMotionPlayback();
+    void SetMovementPath(int, bool, bool, float, float, float, float, BSObject *, float, bool);
     void ResumeMotionPlayback();
     void PlayAnimation(int, int, int, EBSEventEnum);
     void FadeIn(float);

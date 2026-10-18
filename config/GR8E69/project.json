@@ -1213,7 +1213,8 @@
     "script_set_anim_adjust.json",
     "script_reset_particle_system_rotation.json",
     "script_ai_get_pan_angle_to_move_point.json",
-    "script_display_prompt_text.json"
+    "script_display_prompt_text.json",
+    "script_ai_set_status_var.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
