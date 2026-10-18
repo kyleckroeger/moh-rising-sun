@@ -1165,7 +1165,9 @@
     "script_play_sound_from_input_trigger2.json",
     "script_set_motion_blur.json",
     "script_send_messages.json",
-    "script_hier_object_register_bullet_damage.json"
+    "script_hier_object_register_bullet_damage.json",
+    "script_create_child_root_hier_object.json",
+    "script_create_child.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

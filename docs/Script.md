@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-314 fragments in `src/script/` reconstruct **516 functions and 76,740
+316 fragments in `src/script/` reconstruct **520 functions and 77,692
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 423 further built-in wrappers
-and stubs (63,064 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 427 further built-in wrappers
+and stubs (64,016 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-257 fragments add **423 functions and 63,064 executable bytes** from the
+259 fragments add **427 functions and 64,016 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -822,8 +822,10 @@ result order are written with their case groups in that order.
 | `script_get_my_instance_data` | `GetMyInstanceData` | `0x80100d78` | 128 |
 | `script_get_instance_data_for` | `GetInstanceDataFor` | `0x80100df8` | 136 |
 | `script_bs_object_as_scene_node` | `BSObject_AsSceneNode` | `0x80100e80` | 180 |
+| `script_create_child_root_hier_object` | `CreateChildRootHierObject`, `CreateChildSubHierObject`, `CreateChildSubHierAnimObject` | `0x80100f34` | 636 |
 | `script_swap_hier_object` | `SwapHierObject` | `0x801011b0` | 164 |
 | `script_destroy_sub_hier_object` | `DestroySubHierObject` | `0x80101254` | 188 |
+| `script_create_child` | `CreateChild` | `0x80101310` | 316 |
 | `script_destroy_child` | `DestroyChild` | `0x8010144c` | 232 |
 | `script_destroy_object` | `DestroyObject` | `0x80101534` | 268 |
 | `script_destroy_script` | `DestroyScript` | `0x80101640` | 96 |

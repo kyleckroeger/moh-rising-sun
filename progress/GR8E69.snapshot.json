@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 706720,
+    "matching_code_bytes": 707672,
     "total_executable_code_bytes": 2492032,
-    "percent": 28.359186398890543,
+    "percent": 28.397388155529303,
     "categories": {
-      "reconstructed_game": 314504,
+      "reconstructed_game": 315456,
       "restored_library": 392216
     },
-    "matching_functions": 2895
+    "matching_functions": 2899
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "09eece485a6b02c1942b32154486c437353759ec4ab54bcaba382170d88034f9",
+    "config/GR8E69/project.json": "e4c000d7fd6e06cca3bccc2917f25579ea7b1d88ca647b2252cc4270529ca081",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -723,6 +723,8 @@
     "config/GR8E69/script_coop_attach.json": "1812178b93e22c133944587cb407f562068f4e5e41aebff334ea41613bd9bef6",
     "config/GR8E69/script_coop_players.json": "daace388778b24623a537a2976bb1ca685a8c29ec66d849cb9239be40b503e94",
     "config/GR8E69/script_coop_triggers.json": "7b70c1a4be6a02cb93ec12f370d05e32910e221490067ab228ccacbaea176cd3",
+    "config/GR8E69/script_create_child.json": "f7b42689b92b2d65bccf060ecf348f867f9a688b795c772709b58ae3123b6b98",
+    "config/GR8E69/script_create_child_root_hier_object.json": "5118b3a214900b43d0df9dcbeb83c9a856c41e43fbaf6c9f479ab20feebc68b4",
     "config/GR8E69/script_deactivate_animated_light_by_id.json": "ed018598daf4db80a02f38545b91d1193124a0abd581507c39c87931cfa950d6",
     "config/GR8E69/script_debug_init_from_trigger.json": "692b04611702b5f9fef282240e8ea7e0f39c02228ae1949ea9c346d03fde7971",
     "config/GR8E69/script_debug_print.json": "08dc34b0c9886c611c2d289073bdde1efcdd20b765a7b5bca1748ed33f9be49d",
@@ -1429,7 +1431,7 @@
     "include/game/ParticleRecipe.h": "04bba33839dcdae3132d1316e831585288f74ef842a5b01c6f6d6c37929ee61d",
     "include/game/PropertyData.h": "952ae5ac78dc17e43053a7b905a8e58499a1faa3c7d0721269329f639095b22a",
     "include/game/SceneNode.h": "ebe954892cfb8bae90b89eda1676a2be7f45f14471648c9bf11146e1a051a0f1",
-    "include/game/SceneObjects.h": "4ae0cc4772a011892495133df3c45015b3e22e82e3f5e4ea34ab70d639ff8a01",
+    "include/game/SceneObjects.h": "8df52a2a80ebd79da5a7e5bc6be13bf58a4d5ce81341bbbeb049195c35cb5704",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
     "include/game/ScriptRuntime.h": "e6c5e20e70b740f8fae024d5b0711e408ad2db30aeaba9ceb7f72cbcc442ad8d",
@@ -2376,6 +2378,8 @@
     "src/script/coop_attach.cpp": "08ce81ac95b4653bf128403f9d0d2069b1ff96227be5f378b5775ffff5d8b5d0",
     "src/script/coop_players.cpp": "a61377ed28d5923385b5b08c1d49d83125024929e98387563e2ba6a3de744720",
     "src/script/coop_triggers.cpp": "475beae83afe46fdaf30e14312294d25f7e22f2d94e3e57e93db125217f83a61",
+    "src/script/create_child.cpp": "1d24a42183b7545476d4ecac2440fd66f6bc6e2a50a3b56a95943a2c2c152829",
+    "src/script/create_child_root_hier_object.cpp": "bcfc4bca6f560052e1c94b36589e29b86cd0309f4f3bcb13bda17d567e41e926",
     "src/script/deactivate_animated_light_by_id.cpp": "fc0c4d1d5c26867a2325bade4ac8582ce5d092efc1a6b95a6e41e0de8240eaa7",
     "src/script/debug_init_from_trigger.cpp": "ede26363a441ef5bc2388467bf0f6b9a6fbe4a276ee21d33dd28c1131b09eef1",
     "src/script/debug_print.cpp": "fb5ae1dc9c52680f6e0447ad1f27258d4ab1d2659a9877fe6fdb8ef467722f09",
@@ -27352,6 +27356,42 @@
       "discarded_functions": [],
       "object_sha256": "8e907d4d9edceb385a234717423da4675c52f8f964b1ea9de346623e978f161f",
       "linked_sha256": "913418a0d8326a38765036189ba69e4214a2f0c4b0bda37ef0cebdbfbee68441"
+    },
+    {
+      "id": "script_create_child_root_hier_object",
+      "category": "reconstructed_game",
+      "functions": 3,
+      "code_bytes": 636,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c913780ecbc2b7f8031409309393488c44924c1359cf0b86f48e5f7a665a5856",
+      "linked_sha256": "444433013413e146bfbbf721a6d77d0b88dfecb686ae8c00f7269dc9d4dab40f"
+    },
+    {
+      "id": "script_create_child",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 316,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "cd8cc6504b2a46ea76ed09515d04dc89df470e7107f8f888fda5e2d603fa5b0a",
+      "linked_sha256": "dee78bc49e20b75332259eff0a0841bd6e3cd7fc0b555476205ad202d80008b6"
     }
   ],
   "code_map": {
@@ -49955,34 +49995,6 @@
             "size": 380,
             "kind": "function",
             "name": "BIFunc_PlayerStartPath__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80100f34",
-            "size": 180,
-            "kind": "function",
-            "name": "BIFunc_CreateChildRootHierObject__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80100fe8",
-            "size": 216,
-            "kind": "function",
-            "name": "BIFunc_CreateChildSubHierObject__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801010c0",
-            "size": 240,
-            "kind": "function",
-            "name": "BIFunc_CreateChildSubHierAnimObject__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80101310",
-            "size": 316,
-            "kind": "function",
-            "name": "BIFunc_CreateChild__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

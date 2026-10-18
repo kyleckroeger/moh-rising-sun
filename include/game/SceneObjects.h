@@ -111,6 +111,13 @@ class CHierObject {
     CStaticObject *GetSubObject(int);
 };
 
+class TriggerObject;
+int AssetCRC(char *);
+int *CreateRootHierObject(TriggerObject *, int, int, int);
+void CreateSubHierObject(CHierObject *, int, int, unsigned int, int, int);
+void CreateSubHierAnimObject(CHierObject *, int, int, unsigned int, int, int, int);
+int *CreateObject(TriggerObject *, int, int, int, void *);
+
 // Static animated-texture operations keyed by texture CRC.
 class AnimShape {
   public:
