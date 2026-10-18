@@ -17,6 +17,7 @@ struct TriggerObjectFlags {
 };
 
 // Scoped view: the flags word, script object at +4 and the properties at +8. Other storage is unknown.
+class CMatrix;
 class TriggerObject {
   public:
     TriggerObjectFlags flags;
@@ -32,6 +33,7 @@ class TriggerObject {
     int GetCRC(const char *) const;
     bool HasField(const char *) const;
     void GetPosition(CVector3 &) const;
+    void GetMatrix(CMatrix &) const;
     void GetForward(CVector3 &) const;
     void SetPositionZ(float);
     int GetLegacyField(int) const;

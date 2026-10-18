@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 712248,
+    "matching_code_bytes": 712492,
     "total_executable_code_bytes": 2492032,
-    "percent": 28.581013405927372,
+    "percent": 28.590804612460836,
     "categories": {
-      "reconstructed_game": 320032,
+      "reconstructed_game": 320276,
       "restored_library": 392216
     },
-    "matching_functions": 2913
+    "matching_functions": 2914
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "4a6c04aab2388a11e574a1aeff69846d30dcfc308cae226480e831f5dcbd6f5c",
+    "config/GR8E69/project.json": "bd9697eabf68c6374d5f3354b13425b5cff02ea556aae163e2cc71a8307c625a",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -914,6 +914,7 @@
     "config/GR8E69/script_set_location_target.json": "0d0165ad737573103d79992112628f55b57197dc9ebb60fa28e3c30b0f07b06d",
     "config/GR8E69/script_set_max_light_priority.json": "c7a3d7d858792e3c343f784747b63d57b39928b37a4cc8914023a9b4bc4eb48d",
     "config/GR8E69/script_set_mg_waypoint_flag.json": "3fa7fb7a9c7bb067a4d9d55807aa2c3be26062c1ad217b7f58f0faaf82ae55c3",
+    "config/GR8E69/script_set_mmg_location.json": "bbb686e78723c310bdf46fc34bc5b0a9df45207bcd87f467fb9942f3a1e5c94d",
     "config/GR8E69/script_set_motion_blur.json": "a08d301532c0d4b3323bdd445925805783b66208356a46fbcbfdfa7f44bcd43f",
     "config/GR8E69/script_set_motion_blur_duration.json": "ad549f9525e0f23751671abb52b8c1a46b5c0666d3687da3630117fcca0eaef3",
     "config/GR8E69/script_set_move_point.json": "759b6e993c6cbcc549b43797c9442ec90700ecf189ecf6811b74fb10651af57f",
@@ -1454,7 +1455,7 @@
     "include/game/TARExtension.h": "cf1f48aa0be63a29babdba7f53c58439facb94141d7e04d0d32fcc878bad2cb3",
     "include/game/TevStage.h": "47aaf3de5425dace0c30e2852896a9494f78ab4a4dcaad6be03d4aa4204d7466",
     "include/game/TevStageInlines.h": "03b19716c4d88b4eb2f3c74cdf2040ca0bb6c43e842d1eefc2c8bd148a278645",
-    "include/game/TriggerObject.h": "868efaed3829ae5b4316df9aed049dedcedf365e7adec34adb8134c554de7e84",
+    "include/game/TriggerObject.h": "9cbf04cf1fda8d10ca606d6bc0a60a2db5e44918cf9151fe803f6af1035ac0a7",
     "include/game/Volume.h": "c81634d5040c155172fe79d9c2c0d4303e184e17736667562e84e4a03ea0c839",
     "include/game/Weapon.h": "d8d9930cfad9bab9e7430ac7dd79ddfd55c7507ee0af7c7203e5d348a1b72c42",
     "include/game/WorldObject.h": "42b3aea62c8f901dc28efdec6da40b0c2a9ff8a32e667ddb2d8d53cbefa87c16",
@@ -2580,6 +2581,7 @@
     "src/script/set_location_target.cpp": "19d5e155395f510f1ef3d6744d18e927c1e0803b420e7e3c23b6a5ffc4256b38",
     "src/script/set_max_light_priority.cpp": "ace6521b8b11ce24c256ea07b5c06f999a7c72d86370a9b9dbc744951dd1328a",
     "src/script/set_mg_waypoint_flag.cpp": "164f655cd199e0ee8bde254ab0975d6ae107abe4db0006ff3dcd3fd5845b5081",
+    "src/script/set_mmg_location.cpp": "0ca5d2e48867c1b737c6428c094cf30ca0f1f21f5dbcf060ff6591689a4bfee7",
     "src/script/set_motion_blur.cpp": "2324b3789a42b738365816839c6708d2e093a470f0978660e51841f056b1b6e4",
     "src/script/set_motion_blur_duration.cpp": "651cdd136b9ea15b02d262052f37eb25f90a65ebe7639e0cf4e6ff8e48ec3312",
     "src/script/set_move_point.cpp": "960658995e15dada10e0296ea8d25178651ca37ce770516c74acbff6fbb08405",
@@ -27572,6 +27574,24 @@
       "discarded_functions": [],
       "object_sha256": "daf7fe9eaea4c21681ead2c1f3ecdb8876e017ca02d07b69afa80aa8f9328710",
       "linked_sha256": "41961a691acf5539057b0927124d3a0f37b88128575f5dfb339b6b980ab6285e"
+    },
+    {
+      "id": "script_set_mmg_location",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 244,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "1e287990289e8a4ea6e98814f7543a746697b9208e6837c635bf80a661cf7d87",
+      "linked_sha256": "8dae0c0c616a26c1fd1032fe913467c95a9a9790b49b9dac9db4158dda0ee9f7"
     }
   ],
   "code_map": {
@@ -50924,13 +50944,6 @@
             "size": 176,
             "kind": "function",
             "name": "BIFunc_MPGetPlayerVelocity__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80118760",
-            "size": 244,
-            "kind": "function",
-            "name": "BIFunc_SetMMGLocation__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

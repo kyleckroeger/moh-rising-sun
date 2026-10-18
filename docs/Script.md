@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-325 fragments in `src/script/` reconstruct **534 functions and 82,268
+326 fragments in `src/script/` reconstruct **535 functions and 82,512
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 441 further built-in wrappers
-and stubs (68,592 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 442 further built-in wrappers
+and stubs (68,836 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-268 fragments add **441 functions and 68,592 executable bytes** from the
+269 fragments add **442 functions and 68,836 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -954,6 +954,7 @@ result order are written with their case groups in that order.
 | `script_enter_buddy_teleport_area` | `EnterBuddyTeleportArea`, `ExitBuddyTeleportArea`, `IsBuddyInArea` and 3 more | `0x80117ca0` | 1448 |
 | `script_get_scripted_behavior_type` | `GetScriptedBehaviorType`, `SetScriptedBehaviorType` | `0x80118248` | 400 |
 | `script_mp_get_player_body` | `MPGetPlayerBody` | `0x80118618` | 152 |
+| `script_set_mmg_location` | `SetMMGLocation` | `0x80118760` | 244 |
 | `script_ai_get_previous_behavior_type` | `AIGetPreviousBehaviorType` | `0x80118854` | 192 |
 | `script_ai_get_previous_behavior_script` | `AIGetPreviousBehaviorScript`, `AISetPreviousBehaviorScript` | `0x80118914` | 384 |
 | `script_ai_get_next_behavior_type` | `AIGetNextBehaviorType`, `AIGetNextBehaviorScript` | `0x80118a94` | 384 |
