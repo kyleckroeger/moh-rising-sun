@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-357 fragments in `src/script/` reconstruct **583 functions and 96,600
+358 fragments in `src/script/` reconstruct **584 functions and 96,804
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 490 further built-in wrappers
-and stubs (82,924 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 491 further built-in wrappers
+and stubs (83,128 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-300 fragments add **490 functions and 82,924 executable bytes** from the
+301 fragments add **491 functions and 83,128 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -732,6 +732,7 @@ result order are written with their case groups in that order.
 | `script_set_animation_on_hier_object` | `SetAnimationOnHierObject` | `0x800f9a9c` | 236 |
 | `script_set_animation_state` | `SetAnimationState` | `0x800f9b88` | 184 |
 | `script_set_animation_state_on_partition` | `SetAnimationStateOnPartition` | `0x800f9c40` | 244 |
+| `script_play_weapon_animation` | `PlayWeaponAnimation` | `0x800f9d34` | 204 |
 | `script_play_turn_animation` | `PlayTurnAnimation` | `0x800f9f2c` | 236 |
 | `script_set_anim_callback` | `SetAnimCallback`, `SetAnimCallbackOnOther` | `0x800fa018` | 328 |
 | `script_set_japanese` | `SetJapanese` | `0x800fa3d4` | 72 |

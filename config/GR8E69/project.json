@@ -1208,7 +1208,8 @@
     "script_load_one_shot_sound_bank.json",
     "script_activate_animated_light_by_id.json",
     "script_detach_all_from_prop.json",
-    "script_catch_grenade.json"
+    "script_catch_grenade.json",
+    "script_play_weapon_animation.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
