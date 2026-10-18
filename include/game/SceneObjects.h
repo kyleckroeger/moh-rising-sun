@@ -190,6 +190,12 @@ class CAnimObjectInterface : public IMovingSceneNode {
 // after the IMovingSceneNode slots), in the order of the original CHierObject
 // table. Names come from the symbols in each slot; types beyond the symbols are
 // placeholders. Callers convert the scene-node pointers they already hold.
+class CAttachableObject {
+  public:
+    int GetFirstChildHandle();
+    int GetNextChildHandle(int);
+    ISceneNode *GetChild(int);
+};
 class CTankObject {
   public:
     void FireSubObject(int);

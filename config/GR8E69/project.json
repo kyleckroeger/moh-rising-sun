@@ -1134,7 +1134,9 @@
     "script_hier_object_map_weapon.json",
     "script_hier_object_fire.json",
     "script_set_animation_on_hier_object.json",
-    "script_hier_object_play_animation.json"
+    "script_hier_object_play_animation.json",
+    "script_translate_rel.json",
+    "script_send_event_to_all_attached.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
