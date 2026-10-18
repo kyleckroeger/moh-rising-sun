@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-273 fragments in `src/script/` reconstruct **460 functions and 65,644
+275 fragments in `src/script/` reconstruct **463 functions and 66,240
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 367 further built-in wrappers
-and stubs (51,968 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 370 further built-in wrappers
+and stubs (52,564 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-216 fragments add **367 functions and 51,968 executable bytes** from the
+218 fragments add **370 functions and 52,564 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -726,6 +726,7 @@ result order are written with their case groups in that order.
 | `script_asset_crc` | `AssetCRC` | `0x800f8d80` | 44 |
 | `script_enable_partition` | `EnablePartition` | `0x800f968c` | 252 |
 | `script_mp_set_aiming` | `MPSetAiming` | `0x800f9788` | 180 |
+| `script_enable_partition_on_other` | `EnablePartitionOnOther`, `SetAnimationStatePartitionOnOther` | `0x800f983c` | 448 |
 | `script_set_animation_state_on_other` | `SetAnimationStateOnOther` | `0x800f99fc` | 160 |
 | `script_set_animation_state` | `SetAnimationState` | `0x800f9b88` | 184 |
 | `script_set_animation_state_on_partition` | `SetAnimationStateOnPartition` | `0x800f9c40` | 244 |
@@ -839,6 +840,7 @@ result order are written with their case groups in that order.
 | `script_tutorial_text` | `DisplayBIGPromptText`, `DisplayTutorialText`, `KillTutorialText` and 2 more | `0x80106fa0` | 240 |
 | `script_remove_vocal` | `RemoveVocal`, `Soldier_RemoveVocal` | `0x80107aa8` | 416 |
 | `script_activate_sound_buss` | `ActivateSoundBuss` | `0x80107c48` | 92 |
+| `script_end_sound` | `EndSound` | `0x80107ca4` | 148 |
 | `script_generic_sound_memory` | `GetGenericSoundStructureMemory` | `0x801086b4` | 60 |
 | `script_destroy_particle_system` | `DestroyParticleSystem` | `0x80108f08` | 152 |
 | `script_clear_decals` | `ClearDecals` | `0x80108fa0` | 88 |

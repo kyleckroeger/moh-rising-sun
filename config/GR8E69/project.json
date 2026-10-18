@@ -1124,7 +1124,9 @@
     "script_get_voice_handle.json",
     "script_set_detonation_time_for_player_turret.json",
     "script_is_in_any_other_compartment.json",
-    "script_add_triggered_hint.json"
+    "script_add_triggered_hint.json",
+    "script_enable_partition_on_other.json",
+    "script_end_sound.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
