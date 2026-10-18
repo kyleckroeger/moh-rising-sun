@@ -1144,7 +1144,10 @@
     "script_get_distance_to_player.json",
     "script_get_distance_between_players.json",
     "script_update_fire_position.json",
-    "script_get_random_float.json"
+    "script_get_random_float.json",
+    "script_is_alarm_activated.json",
+    "script_end_level.json",
+    "script_break_point.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

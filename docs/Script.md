@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-293 fragments in `src/script/` reconstruct **484 functions and 70,604
+296 fragments in `src/script/` reconstruct **488 functions and 70,944
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 391 further built-in wrappers
-and stubs (56,928 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 395 further built-in wrappers
+and stubs (57,268 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-236 fragments add **391 functions and 56,928 executable bytes** from the
+239 fragments add **395 functions and 57,268 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -723,6 +723,7 @@ result order are written with their case groups in that order.
 
 | Manifest | Built-ins | Address | Code bytes |
 | --- | --- | --- | ---: |
+| `script_is_alarm_activated` | `IsAlarmActivated`, `SetAlarmActivated` | `0x800d83ac` | 136 |
 | `script_asset_crc` | `AssetCRC` | `0x800f8d80` | 44 |
 | `script_enable_partition` | `EnablePartition` | `0x800f968c` | 252 |
 | `script_mp_set_aiming` | `MPSetAiming` | `0x800f9788` | 180 |
@@ -834,6 +835,7 @@ result order are written with their case groups in that order.
 | `script_stop_target_search` | `StopTargetSearch`, `StopTargetCheck`, `StopDistanceToTarget` | `0x801029fc` | 588 |
 | `script_stop_check_objects_inside_range` | `StopCheckObjectsInsideRange`, `StopCheckObjectsOutsideRange`, `StopCheckObjectsInsideAngularRange` and 2 more | `0x80102c48` | 860 |
 | `script_set_weapon_enable` | `SetWeaponEnable` | `0x80102fa4` | 168 |
+| `script_break_point` | `BreakPoint` | `0x8010304c` | 100 |
 | `script_debug_print` | `DebugTTYPrint`, `AILog`, `ScriptError` | `0x801030b0` | 144 |
 | `script_get_target_for` | `GetTargetFor` | `0x80103140` | 184 |
 | `script_get_voice_handle` | `GetVoiceHandle` | `0x80105b48` | 128 |
@@ -887,6 +889,7 @@ result order are written with their case groups in that order.
 | `script_unhinge_camera_pitch` | `UnhingeCameraPitch` | `0x80112838` | 156 |
 | `script_toggle_player_vs_trigger_checks` | `TogglePlayerVsTriggerChecks` | `0x801128d4` | 96 |
 | `script_add_hint` | `AddHint` | `0x80112934` | 48 |
+| `script_end_level` | `EndLevel` | `0x80112964` | 104 |
 | `script_scale_rel` | `ScaleRel` | `0x801129cc` | 212 |
 | `script_attach_triggering_player_mmg` | `AttachTriggeringPlayerToMMG` | `0x80112dc0` | 48 |
 | `script_register_mounted_machine_gun` | `RegisterMountedMachineGun` | `0x80112df0` | 156 |

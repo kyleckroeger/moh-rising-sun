@@ -34,4 +34,21 @@ class CGameSettings {
 };
 extern CGameSettings g_GameSettings;
 
+// Word-wide view of the profile bytes from +0x31664 (mission, level); the
+// original stores the level-won bit with a full-word read-modify-write.
+struct GameProfileLevelFlags {
+    unsigned int mission : 8;
+    unsigned int level : 8;
+    unsigned int unknown : 6;
+    unsigned int levelWon : 1;
+};
+
+// Observed field of the 0x14-byte game-flow global.
+struct GameFlowView {
+    unsigned char unknown_0[8];
+    int levelEnding; // +0x8; set by BIFunc_EndLevel and CPauseMenu::RestartLevel.
+    unsigned char unknown_c[0x14 - 0xc];
+};
+extern GameFlowView g_GameFlow;
+
 #endif
