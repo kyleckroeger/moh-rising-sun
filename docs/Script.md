@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-260 fragments in `src/script/` reconstruct **445 functions and 62,340
+262 fragments in `src/script/` reconstruct **448 functions and 63,148
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 352 further built-in wrappers
-and stubs (48,664 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 355 further built-in wrappers
+and stubs (49,472 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-203 fragments add **352 functions and 48,664 executable bytes** from the
+205 fragments add **355 functions and 49,472 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -879,6 +879,7 @@ result order are written with their case groups in that order.
 | `script_register_save_point` | `RegisterSavePoint`, `PerformSavePointResponse` | `0x80113e8c` | 280 |
 | `script_serializing_in` | `SerializingIn`, `SerializingOut` | `0x80114040` | 208 |
 | `script_moving_mech_force_update_trigger` | `MovingMechForceUpdateTrigger`, `MechSetFlag` | `0x8011461c` | 328 |
+| `script_block_new_vibrations` | `BlockNewVibrations` | `0x80114978` | 272 |
 | `script_fade_out` | `FadeOut`, `FadeIn` | `0x80114a88` | 384 |
 | `script_set_detonation_time` | `SetDetonationTime` | `0x80114f3c` | 144 |
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |
@@ -911,6 +912,7 @@ result order are written with their case groups in that order.
 | `script_signal_buddy_lead_checkpoint_reached_by_player` | `SignalBuddyLeadCheckpointReachedByPlayer` | `0x801197b0` | 124 |
 | `script_start_slow_moh` | `StartSlowMOH` | `0x80119ad8` | 248 |
 | `script_stop_slow_moh` | `StopSlowMOH` | `0x80119bd0` | 88 |
+| `script_initialize_animated_texture` | `InitializeAnimatedTexture`, `SetAnimatedTextureState` | `0x80119d6c` | 536 |
 | `script_set_animated_texture_frame` | `SetAnimatedTextureFrame`, `SetAnimatedTextureFrameRate` | `0x80119f84` | 280 |
 | `script_reset_animated_texture` | `ResetAnimatedTexture`, `AdvanceAnimatedTexture` | `0x8011a09c` | 264 |
 | `script_add_replay_item` | `AddReplayItem` | `0x8011a1a4` | 128 |
