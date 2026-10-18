@@ -5,6 +5,8 @@
 #include "AITargeting.h"
 struct BSObject;
 class CWeapon;
+// Original enum tag; its members are unknown.
+enum EBSEventEnum { BSEventUnknown = 0 };
 
 // Original enum tag; its members are unknown.
 enum EPlayerCollisionType { PlayerCollisionTypeUnknown = 0 };
@@ -30,6 +32,7 @@ class CStaticObject {
   public:
     void StopMotionPlayback();
     void ResumeMotionPlayback();
+    void PlayAnimation(int, int, int, EBSEventEnum);
     void FadeIn(float);
     void FadeOut(float);
     struct Flags {
@@ -181,6 +184,40 @@ class CAnimObjectInterface : public IMovingSceneNode {
     virtual int AttachObject(int, char *, int);
     virtual void GetAimTarget(CVector3 &) const;
     virtual void EnableAimModifier(bool);
+};
+
+// Virtual-interface view of the static/hierarchy-object tables (slots 89-109
+// after the IMovingSceneNode slots), in the order of the original CHierObject
+// table. Names come from the symbols in each slot; types beyond the symbols are
+// placeholders. Callers convert the scene-node pointers they already hold.
+class CTankObject {
+  public:
+    void FireSubObject(int);
+    void MapWeaponSlot(int, int);
+};
+class CStaticObjectInterface : public IMovingSceneNode {
+  public:
+    virtual void Init();
+    virtual void SetScript(BSObject *);
+    virtual int GetObjectType() const;
+    virtual void TranslateFromScript(const CVector3 &, const CVector3 &, EBSEventEnum);
+    virtual void RotateFromScript(const CVector3 &, const CVector3 &, EBSEventEnum);
+    virtual void ScaleFromScript(float, float, EBSEventEnum);
+    virtual void StartMotionPlayback(int, int, EBSEventEnum);
+    virtual void *AsThrownObject();
+    virtual void *AsWeaponObject();
+    virtual CTankObject *AsHierTankObject();
+    virtual void AttemptScriptMotionUpdate(float);
+    virtual void AttemptAnimMotionUpdate(float);
+    virtual void AttemptPathMotionUpdate(float);
+    virtual void CommitScriptMotionUpdate();
+    virtual void CommitAnimMotionUpdate();
+    virtual void CommitPathMotionUpdate();
+    virtual int FindAttachNode(int, CMatrix *);
+    virtual void CleanUp();
+    virtual int SetAnimationState(const char *, int);
+    virtual void BeginScriptMotionUpdate(float);
+    virtual void BeginAnimMotionUpdate(float);
 };
 
 #endif

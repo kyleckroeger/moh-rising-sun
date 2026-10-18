@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-277 fragments in `src/script/` reconstruct **465 functions and 66,624
+281 fragments in `src/script/` reconstruct **469 functions and 67,432
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 372 further built-in wrappers
-and stubs (52,948 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 376 further built-in wrappers
+and stubs (53,756 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-220 fragments add **372 functions and 52,948 executable bytes** from the
+224 fragments add **376 functions and 53,756 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -852,6 +852,7 @@ result order are written with their case groups in that order.
 | `script_deactivate_animated_light_by_id` | `DeactivateAnimatedLightByID` | `0x80109e08` | 124 |
 | `script_event_memory_block` | `GetEventSystemMemBlock` | `0x80109e84` | 96 |
 | `script_add_objective` | `AddObjective`, `ChangeObjectivePrompt` | `0x80109ee4` | 340 |
+| `script_static_object_play_animation` | `StaticObjectPlayAnimation` | `0x8010a038` | 224 |
 | `script_stop_motion_playback` | `StopMotionPlayback` | `0x8010a378` | 276 |
 | `script_resume_motion_playback` | `ResumeMotionPlayback` | `0x8010a48c` | 192 |
 | `script_set_objective` | `SetObjective` | `0x8010ab40` | 156 |
@@ -877,6 +878,7 @@ result order are written with their case groups in that order.
 | `script_unhinge_camera_pitch` | `UnhingeCameraPitch` | `0x80112838` | 156 |
 | `script_toggle_player_vs_trigger_checks` | `TogglePlayerVsTriggerChecks` | `0x801128d4` | 96 |
 | `script_add_hint` | `AddHint` | `0x80112934` | 48 |
+| `script_scale_rel` | `ScaleRel` | `0x801129cc` | 212 |
 | `script_attach_triggering_player_mmg` | `AttachTriggeringPlayerToMMG` | `0x80112dc0` | 48 |
 | `script_register_mounted_machine_gun` | `RegisterMountedMachineGun` | `0x80112df0` | 156 |
 | `script_deregister_mounted_machine_gun` | `DeregisterMountedMachineGun` | `0x80112e8c` | 124 |
@@ -898,6 +900,8 @@ result order are written with their case groups in that order.
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |
 | `script_set_motion_blur_duration` | `SetMotionBlurDuration` | `0x80115568` | 252 |
 | `script_stop_corpse_search` | `StopCorpseSearch` | `0x80115884` | 196 |
+| `script_hier_object_map_weapon` | `HierObjectMapWeapon` | `0x801159f4` | 188 |
+| `script_hier_object_fire` | `HierObjectFire` | `0x80115ca8` | 184 |
 | `script_ai_find_tank` | `AIFindTank` | `0x80115e48` | 108 |
 | `script_bullet_type_class` | `GetClassFromBulletType` | `0x80116168` | 240 |
 | `script_activate_aiming` | `ActivateAiming` | `0x80116370` | 172 |

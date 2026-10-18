@@ -1128,7 +1128,11 @@
     "script_enable_partition_on_other.json",
     "script_end_sound.json",
     "script_enable_non_vis_destruct.json",
-    "script_set_weapon_draw.json"
+    "script_set_weapon_draw.json",
+    "script_static_object_play_animation.json",
+    "script_scale_rel.json",
+    "script_hier_object_map_weapon.json",
+    "script_hier_object_fire.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
