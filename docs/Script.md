@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-296 fragments in `src/script/` reconstruct **488 functions and 70,944
+299 fragments in `src/script/` reconstruct **493 functions and 72,280
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 395 further built-in wrappers
-and stubs (57,268 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 400 further built-in wrappers
+and stubs (58,604 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-239 fragments add **395 functions and 57,268 executable bytes** from the
+242 fragments add **400 functions and 58,604 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -873,10 +873,13 @@ result order are written with their case groups in that order.
 | `script_set_grenade_timer` | `SetGrenadeTimer` | `0x8010be28` | 124 |
 | `script_player_super_aim_mode` | `PlayerSuperAimMode` | `0x8010c200` | 148 |
 | `script_is_player_invincible` | `IsPlayerInvincible` | `0x8010c294` | 108 |
+| `script_player_eject_shell` | `PlayerEjectShell` | `0x8010c300` | 280 |
 | `script_disable_player_shoot` | `DisablePlayerShoot` | `0x8010c418` | 156 |
+| `script_use_binoculars` | `UseBinoculars` | `0x8010c4b4` | 360 |
 | `script_set_weapon_draw` | `SetWeaponDraw` | `0x8010c61c` | 196 |
 | `script_set_prop_draw` | `SetPropDraw`, `SetDrawEnabled` | `0x8010c6e0` | 392 |
 | `script_is_draw_enabled` | `IsDrawEnabled` | `0x8010c868` | 124 |
+| `script_player_activate_lookat_trigger` | `PlayerActivateLookatTrigger`, `PlayerDeactivateLookatTrigger`, `PlayerStartLookAt` | `0x8010c8e4` | 696 |
 | `script_player_stop_look_at` | `PlayerStopLookAt` | `0x8010cb9c` | 108 |
 | `script_detach_from_soldier` | `DetachFromSoldier` | `0x8010ffdc` | 136 |
 | `script_soldier_detach_from_soldier` | `Soldier_DetachFromSoldier` | `0x80110064` | 180 |

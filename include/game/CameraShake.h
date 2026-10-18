@@ -4,6 +4,9 @@
 #pragma interface
 class CAISplinePath;
 class CWeapon;
+class CVector3;
+class ISceneNode;
+struct BSObject;
 
 // Scoped member view of CPlayerObject for shake and path controls. This does not
 // establish the complete allocation, base classes or virtual interface.
@@ -27,11 +30,30 @@ class CHeadsUpDisplay {
     void LetterboxTransition(float, _LetterboxTransitionStyle);
 };
 
+extern "C" void *DWI_alloc(const char *, int, int);
+// Member view of the 36-byte sprite the binocular overlay allocates.
+class CSprite {
+  public:
+    enum ESpriteLoadType { SpriteLoadUnknown0 = 0, SpriteLoadUnknown1 = 1 };
+    static void *operator new(unsigned int size, const char *label) {
+        return DWI_alloc(label, size, 1024);
+    }
+    CSprite(const char *, ESpriteLoadType);
+    unsigned char unknown_0[0x1c];
+    int field_1c; // Cleared by BIFunc_UseBinoculars.
+    int field_20; // Cleared by BIFunc_UseBinoculars.
+};
+class CPlayerWeaponObject {
+  public:
+    void CreateEjectedShell(int);
+};
 class CPlayerObject {
   public:
     // Member-only view of the embedded look-at controller at +0x1cf0.
     class LookAtTarget {
       public:
+        void Enable(ISceneNode *, float);
+        void Enable(const CVector3 &, float);
         void Disable();
     };
     // 36 bytes: eight floats, then the table pointer at +32 (the class declares its
@@ -67,8 +89,18 @@ class CPlayerObject {
         unsigned int invincible : 1;    // Bit 11: BIFunc_MakePlayerInvincible.
         unsigned int unknown_low : 11;
     };
+    struct PathFlagBits {
+        unsigned int unknown_31_25 : 7;
+        unsigned int binoculars : 1;    // Bit 24: BIFunc_UseBinoculars.
+        unsigned int unknown_23_15 : 9;
+        unsigned int noShells : 1;      // Bit 14: suppresses BIFunc_PlayerEjectShell.
+        unsigned int unknown_13_0 : 14;
+    };
     unsigned char unknown_0[0xd44];
-    unsigned int pathFlags; // +0xd44; bit 19 enables path movement, bit 27 is set while aiming.
+    union {
+        unsigned int pathFlags; // +0xd44; bit 19 enables path movement, bit 27 is set while aiming.
+        PathFlagBits pathBits;
+    };
     unsigned char unknown_d48[4];
     Flags flags;
     unsigned char unknown_d50[0xd58 - 0xd50];
@@ -83,7 +115,9 @@ class CPlayerObject {
     float fov;               // +0xe30; set by BIFunc_SetGameFOV.
     unsigned char unknown_e34[0xe40 - 0xe34];
     int fovMode;             // +0xe40
-    unsigned char unknown_e44[0x10bc - 0xe44];
+    unsigned char unknown_e44[0xe48 - 0xe44];
+    CSprite *binocularOverlay; // +0xe48; set by BIFunc_UseBinoculars.
+    unsigned char unknown_e4c[0x10bc - 0xe4c];
     int cameraPitchUnhinged; // +0x10bc
     unsigned char unknown_10c0[0x1144 - 0x10c0];
     int body;                // +0x1144; returned by BIFunc_MPGetPlayerBody.
@@ -108,6 +142,11 @@ class CPlayerObject {
     CWeapon *GetCurrentWeapon() const;
     void FireMyWeapon(float);
     void SetFallingDamageState(bool);
+    void HandleLookatTrigger(BSObject *, float, float);
+    CPlayerWeaponObject *GetCurrentPlayerWeapon() const;
+    void SetHideWeapon(bool);
+    void FreeBinocularOverlay();
+    void SetZoom(float);
     void Respawn();
     int CanPlayerSwitchWeapon();
     int IsPlayerCrouching() const;

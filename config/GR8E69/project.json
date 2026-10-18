@@ -1147,7 +1147,10 @@
     "script_get_random_float.json",
     "script_is_alarm_activated.json",
     "script_end_level.json",
-    "script_break_point.json"
+    "script_break_point.json",
+    "script_player_eject_shell.json",
+    "script_use_binoculars.json",
+    "script_player_activate_lookat_trigger.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
