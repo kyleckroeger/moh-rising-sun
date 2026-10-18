@@ -1199,7 +1199,9 @@
     "script_create_particle_system_by_type.json",
     "script_create_light_by_type.json",
     "script_projector_create_by_type.json",
-    "script_glare_create_by_type.json"
+    "script_glare_create_by_type.json",
+    "script_create_explosion.json",
+    "script_soldier_create_explosion.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

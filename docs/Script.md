@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-348 fragments in `src/script/` reconstruct **573 functions and 94,204
+350 fragments in `src/script/` reconstruct **575 functions and 95,044
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 480 further built-in wrappers
-and stubs (80,528 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 482 further built-in wrappers
+and stubs (81,368 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-291 fragments add **480 functions and 80,528 executable bytes** from the
+293 fragments add **482 functions and 81,368 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -918,6 +918,7 @@ result order are written with their case groups in that order.
 | `script_send_event_to_all_attached` | `SendEventToAllAttached` | `0x80110480` | 324 |
 | `script_set_jaw_motion` | `SetJawMotion` | `0x801111d4` | 156 |
 | `script_set_muzzle_fire_for_player` | `SetMuzzleFireForPlayer` | `0x801113c8` | 200 |
+| `script_create_explosion` | `CreateExplosion` | `0x80111550` | 400 |
 | `script_change_players_team` | `ChangePlayersTeam` | `0x801125cc` | 200 |
 | `script_change_npc_team` | `ChangeNPCTeam` | `0x80112694` | 236 |
 | `script_ai_set_team` | `AISetTeam` | `0x80112780` | 184 |
@@ -983,6 +984,7 @@ result order are written with their case groups in that order.
 | `script_soldier_get_weapon_type` | `Soldier_GetWeaponType` | `0x80118ed4` | 216 |
 | `script_soldier_get_locomotion_info` | `Soldier_GetLocomotionInfo`, `Soldier_EnableSkeletalPartition` | `0x80118fac` | 360 |
 | `script_soldier_disable_skeletal_partition` | `Soldier_DisableSkeletalPartition` | `0x80119114` | 180 |
+| `script_soldier_create_explosion` | `Soldier_CreateExplosion` | `0x80119424` | 440 |
 | `script_anim_object_set_anim_callback` | `AnimObject_SetAnimCallback` | `0x801195dc` | 208 |
 | `script_signal_buddy_lead_checkpoint_reached` | `SignalBuddyLeadCheckpointReached` | `0x801196ac` | 260 |
 | `script_signal_buddy_lead_checkpoint_reached_by_player` | `SignalBuddyLeadCheckpointReachedByPlayer` | `0x801197b0` | 124 |

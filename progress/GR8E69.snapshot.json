@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 724184,
+    "matching_code_bytes": 725024,
     "total_executable_code_bytes": 2492032,
-    "percent": 29.0599799681545,
+    "percent": 29.093687400482818,
     "categories": {
-      "reconstructed_game": 331968,
+      "reconstructed_game": 332808,
       "restored_library": 392216
     },
-    "matching_functions": 2952
+    "matching_functions": 2954
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "02a4779f49c3e3331a8a7ae36b5e953cf45c5a82c522a247354ec94ce571582b",
+    "config/GR8E69/project.json": "a543daeafdabe2b85f16907cf6540f85992a4a8ea421e44ec7f2e604b0d09aca",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -733,6 +733,7 @@
     "config/GR8E69/script_coop_triggers.json": "7b70c1a4be6a02cb93ec12f370d05e32910e221490067ab228ccacbaea176cd3",
     "config/GR8E69/script_create_child.json": "f7b42689b92b2d65bccf060ecf348f867f9a688b795c772709b58ae3123b6b98",
     "config/GR8E69/script_create_child_root_hier_object.json": "5118b3a214900b43d0df9dcbeb83c9a856c41e43fbaf6c9f479ab20feebc68b4",
+    "config/GR8E69/script_create_explosion.json": "e61958c2bc0746f630bb45262b2b84018604e1f13275b8aae0197832f8fb2baa",
     "config/GR8E69/script_create_light_by_type.json": "1fca32508ca9f5d04d8b4540b87156e24a27d0d6325e7918768df12d81e095a9",
     "config/GR8E69/script_create_mp_dump_object.json": "acfa3ed0c82e0bea27adc0813c56e26b335657a79d2da29f0ee6c30268f1901e",
     "config/GR8E69/script_create_mp_health.json": "e5cf0108c8e7c6054a3d2e94e2e6e1f067d353422276d5942d2f105ab1587010",
@@ -956,6 +957,7 @@
     "config/GR8E69/script_soldier_ai_get_distance_to_move_point.json": "ace3ceabe1418b1922d4b1969c03dde663d45953d77e22f0497030f9959d6266",
     "config/GR8E69/script_soldier_ai_start_spline_path_walk.json": "a08a1a188755031af272908da519c479097aaa47b6b06e82dcc604f5c907fd9c",
     "config/GR8E69/script_soldier_ai_stop_spline_path_walk.json": "987c266200eed540d83a84e47c04ebecfb94c9ea38d58ec4ef9e1d03bb92aa4d",
+    "config/GR8E69/script_soldier_create_explosion.json": "5b4f28681089fb2601586dbff38a217396f879d754b51f93b3537aed6acebeb8",
     "config/GR8E69/script_soldier_detach_from_soldier.json": "8674874d93f3e39092123c90723baec2f44e3143a8f0604dc6025900e347e28d",
     "config/GR8E69/script_soldier_disable_skeletal_partition.json": "950473e077852ffedb8dc42d58eaf4599daa889e0ee58ea926c643bcd202fe10",
     "config/GR8E69/script_soldier_get_current_weapon.json": "134e4c430062726f56169ba97f50058918195b2a274b3ac9cedecf72f5a72ace",
@@ -1390,7 +1392,7 @@
     "include/game/AITargeting.h": "2b9a7decc0bc31b5656b3b0f17f1089677223a26bd066561af0647350357a742",
     "include/game/BPD.h": "ec4a3aceb83f181db2c6adf8ac87137ede2cd6a0e643548159c73a827aadd19e",
     "include/game/BSGameObject.h": "0251918a776754b0d6b3d30b69e61b0d0c8f919721dbd147dbecf710b180a45a",
-    "include/game/Bullet.h": "e98a40c42ad18bfbf57414dd0501a21cfbdeb57d1e85e9590ac9d341196141fd",
+    "include/game/Bullet.h": "29fb57bae1a4d7474f7d781abb5e22546a49b35b06cc87906885f45b1678e629",
     "include/game/CLine2.h": "e92fdbfd47ed264651ab9bbb90557a0461c3f6469267837079a5d514eb583f2c",
     "include/game/CLine3.h": "671ce5d07b583fd857df0b2ce304517d72a20d34e27967fa945b8a42de815760",
     "include/game/CMatrix.h": "0a1cd7c02e0d72a241d00c861f92cf720b93960f3e96da8dea1f370ee8be27f9",
@@ -2421,6 +2423,7 @@
     "src/script/coop_triggers.cpp": "475beae83afe46fdaf30e14312294d25f7e22f2d94e3e57e93db125217f83a61",
     "src/script/create_child.cpp": "1d24a42183b7545476d4ecac2440fd66f6bc6e2a50a3b56a95943a2c2c152829",
     "src/script/create_child_root_hier_object.cpp": "bcfc4bca6f560052e1c94b36589e29b86cd0309f4f3bcb13bda17d567e41e926",
+    "src/script/create_explosion.cpp": "598b54b7c325888579a21324fd6b4bebd405f96a28e97c3dbfc13dfa5670e99f",
     "src/script/create_light_by_type.cpp": "e71705130b0dcee2b8e34c81f571af37ff321ce1f6a6cb7a7cc838d87fc40c0c",
     "src/script/create_mp_dump_object.cpp": "400da5efcf58176dc6b01e9e3b2ee1f2fa63b76aae0af61e53996f043be63919",
     "src/script/create_mp_health.cpp": "0558fdabe8e1a225ce678b7ba2ac2f930f062d536d0d842c8244bc838b69edd4",
@@ -2646,6 +2649,7 @@
     "src/script/soldier_ai_get_distance_to_move_point.cpp": "9770dee9220072895cb145533cd7d7d84c8bf5ce450bb2dfbbe13a3580415f7f",
     "src/script/soldier_ai_start_spline_path_walk.cpp": "f2faca5fe3714e78cff7d6e7de3fee6806f9b1c247eb86d845a7d7e3e39e6c56",
     "src/script/soldier_ai_stop_spline_path_walk.cpp": "301982faac6b6d66bc02f69b060341f8ae7e5c6d080ac2d87d609a850bb2de22",
+    "src/script/soldier_create_explosion.cpp": "16b99d69243c18f06bf5352c85108ea6c099e9a540f1c3952e23a3bb114a5218",
     "src/script/soldier_detach_from_soldier.cpp": "da5d7cb68a1a6df96f0ad1b7f50d1fdca51d385aae6774dedc45f488be3b4902",
     "src/script/soldier_disable_skeletal_partition.cpp": "c8bbdbee468a465d358dc5c149b07ce70672a1fe9a2088fbc4c86ab3169715da",
     "src/script/soldier_get_current_weapon.cpp": "f90808c4a494e9549cdb77d7c9e9349e922bcee547e4fb399194c87ab06ccf01",
@@ -28033,6 +28037,42 @@
       "discarded_functions": [],
       "object_sha256": "4faab26df75b70dafa081abb64d7aa7b433661cb5e99bfa596723aa431704c13",
       "linked_sha256": "2585502533b702e949d4d07f0225ffaed4177df03745f84caaf3e469a3645a38"
+    },
+    {
+      "id": "script_create_explosion",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 400,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "7897fe287913823564ff11c8582153081cfce90324574ab27bce00aed53917b3",
+      "linked_sha256": "8c5a6758f518e76400b5d10b3d0648bef5173dc5a830b17f2600eba5ae84b253"
+    },
+    {
+      "id": "script_soldier_create_explosion",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 440,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "0e808951c260c426896e9a59b5f5e92b6fa995b68970ba24a7ea12bdf5e99f70",
+      "linked_sha256": "2ce46829feee8bc567d87fe90b87645bc89a4646d5fbbda939b2412a3b3e06b3"
     }
   ],
   "code_map": {
@@ -50933,13 +50973,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80111550",
-            "size": 400,
-            "kind": "function",
-            "name": "BIFunc_CreateExplosion__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x801116e0",
             "size": 656,
             "kind": "function",
@@ -51147,13 +51180,6 @@
             "size": 604,
             "kind": "function",
             "name": "BIFunc_Soldier_CreateImpact__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80119424",
-            "size": 440,
-            "kind": "function",
-            "name": "BIFunc_Soldier_CreateExplosion__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

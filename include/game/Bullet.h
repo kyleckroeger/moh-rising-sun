@@ -111,4 +111,15 @@ class CThrownBullet : public CBullet {
     virtual unsigned int IsCollisionEnabled() const;
 };
 
+class CScene;
+class ISceneNode;
+class CVector3;
+// Stack-constructed blast; its constructor writes through +0x44. The script
+// built-ins fix its frame at 0x4c or 0x50 bytes; 0x4c is used here.
+class CExplosion {
+  public:
+    unsigned char unknown_0[0x4c];
+    CExplosion(CScene &, const CVector3 &, float, float, float, EScriptBulletType, ISceneNode *, bool, bool);
+    ~CExplosion();
+};
 #endif
