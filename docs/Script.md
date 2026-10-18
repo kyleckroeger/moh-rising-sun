@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-309 fragments in `src/script/` reconstruct **508 functions and 75,060
+311 fragments in `src/script/` reconstruct **513 functions and 76,076
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 415 further built-in wrappers
-and stubs (61,384 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 420 further built-in wrappers
+and stubs (62,400 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-252 fragments add **415 functions and 61,384 executable bytes** from the
+254 fragments add **420 functions and 62,400 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -850,6 +850,8 @@ result order are written with their case groups in that order.
 | `script_set_sound_zone` | `SetSoundZone` | `0x80106158` | 84 |
 | `script_debug_init_from_trigger` | `DebugInitFromTrigger` | `0x801061ac` | 48 |
 | `script_tutorial_text` | `DisplayBIGPromptText`, `DisplayTutorialText`, `KillTutorialText` and 2 more | `0x80106fa0` | 240 |
+| `script_play_sound_from_input_trigger` | `PlaySoundFromInputTrigger`, `PlaySoundAtOffset`, `PlaySound` | `0x80107098` | 604 |
+| `script_play_sound_from_input_trigger2` | `PlaySoundFromInputTrigger2`, `PlaySoundAtOffset2` | `0x80107500` | 412 |
 | `script_remove_vocal` | `RemoveVocal`, `Soldier_RemoveVocal` | `0x80107aa8` | 416 |
 | `script_activate_sound_buss` | `ActivateSoundBuss` | `0x80107c48` | 92 |
 | `script_end_sound` | `EndSound` | `0x80107ca4` | 148 |

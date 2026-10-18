@@ -1160,7 +1160,9 @@
     "script_soldier_setup_grenade_shot.json",
     "script_hier_object_set_look_object.json",
     "script_get_buddy_lead_checkpoint_from_id.json",
-    "script_ai_add_corpse_threat.json"
+    "script_ai_add_corpse_threat.json",
+    "script_play_sound_from_input_trigger.json",
+    "script_play_sound_from_input_trigger2.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
