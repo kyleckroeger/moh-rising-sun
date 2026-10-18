@@ -1153,7 +1153,8 @@
     "script_player_activate_lookat_trigger.json",
     "script_serialize_value.json",
     "script_serializable.json",
-    "script_finished_investigation.json"
+    "script_finished_investigation.json",
+    "script_set_obj_info.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
