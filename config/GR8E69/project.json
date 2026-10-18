@@ -1220,7 +1220,9 @@
     "script_get_flex_property.json",
     "script_set_collision.json",
     "script_make_noise.json",
-    "script_send_event_weapon_immediate.json"
+    "script_send_event_weapon_immediate.json",
+    "script_update_player_stats.json",
+    "script_validation_build.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

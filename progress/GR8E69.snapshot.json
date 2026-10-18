@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 731256,
+    "matching_code_bytes": 732176,
     "total_executable_code_bytes": 2492032,
-    "percent": 29.343764446042428,
+    "percent": 29.38068211002106,
     "categories": {
-      "reconstructed_game": 339040,
+      "reconstructed_game": 339960,
       "restored_library": 392216
     },
-    "matching_functions": 2975
+    "matching_functions": 2977
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "1e32651b613d77746aa3c10751117503fe08b0d919239dfc9ca1998dc19a66c7",
+    "config/GR8E69/project.json": "028c73b00794ac36d6a2a20a1fe5182963397638ad9d0a18d245372959ee606a",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -1019,7 +1019,9 @@
     "config/GR8E69/script_tutorial_text.json": "c2f3eda28ecb029ef82ab56004d7ab147b75a30d8237345a917857c2da049f2a",
     "config/GR8E69/script_unhinge_camera_pitch.json": "f1cd54613edacde6ef73e9ed6ed7ba197962983bf2ba35b3f0b6432d0e91658e",
     "config/GR8E69/script_update_fire_position.json": "35f9ec8415a69d6c59ad1d7d76ac035f776354da166b452477a3a1acb2c04a8a",
+    "config/GR8E69/script_update_player_stats.json": "77cd5bba8d6cb6d25c5dbba6d8d024268f7c3ea39d21909cac18f6aad8fd2c32",
     "config/GR8E69/script_use_binoculars.json": "d8c4e5835a40d963064960f7dcc80dc81004fec7cb851f7d642598fdddeec972",
+    "config/GR8E69/script_validation_build.json": "f86d06f3557678d265e7072de1bb03bae84b12db5bf72c6e1f40f8af9e8f0c25",
     "config/GR8E69/script_values.json": "b63207c826f50f0e25e42d5008b75c832d3fe0f23dda4bc4e5baeb032799a206",
     "config/GR8E69/sn-library-source.json": "606ef80cd17599d3b7c2833a01c483622529485e2455c15ac76c975ba20507dc",
     "config/GR8E69/sound_getters.json": "8383c1475babb703fa21c8d7d0af5c5f4d30a34856a855c40c8d91557df51c51",
@@ -1472,7 +1474,7 @@
     "include/game/FlexPropDatabase.h": "e3bb33faf5cff3877d051efc3335ff33c373c9d228a7afcb8b2c16f4ee97c767",
     "include/game/Fog.h": "30a37f01f3f665d1f9b3b0a5ef81ea098194595159c5ff794797541c6bf325c0",
     "include/game/Frustum.h": "517f595d8940b305a44b055a26e31588a43151816c24e27381a86ae90cfc6062",
-    "include/game/GameSettings.h": "febe3ddbd3e51fa1a3c50a1bb8d1688cf6c10a43ddf8b6263c8c9963459d0b47",
+    "include/game/GameSettings.h": "c7165131b00f5b517b2950f9154e869382c8f8b27c05ea0c4e3febb6d7fb26eb",
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
     "include/game/Light.h": "3e6d3b90e5f95e09203a7333f15d856e04c645967b5e2bbfe50361742a406ee7",
     "include/game/LightVolumeManager.h": "f86744d00d312738c23085d84d513fbd05c495194b97a10bf4cde2011dbaf958",
@@ -2730,7 +2732,9 @@
     "src/script/tutorial_text.cpp": "657f963e73c35cbcbbc0ca7b1101e824c446548c180bc94d626c6444bffebf39",
     "src/script/unhinge_camera_pitch.cpp": "0e7ebe3df5f0e31beb1db6dcc9baca2cb170f243d797ef40321e1e27a75df6d1",
     "src/script/update_fire_position.cpp": "208d5677c9f8df579dfeb00a22473f955c9b6c6977991464d803d24b93dd7730",
+    "src/script/update_player_stats.cpp": "d9d8f84d4feeb1cc8644074b322bd259f7a65199312f765410b2297db00424b7",
     "src/script/use_binoculars.cpp": "3ab897eb9f47912d8c49df7f82f4b7a2d91baa056756f1b876b6755de43fbca5",
+    "src/script/validation_build.cpp": "89251f21f21080d27633ad20ea624b1a8702565a91ab36e5f809b6e5e0ae4255",
     "src/script/values.cpp": "4a7e2e3e8266e6230528ac5145260bf66dfa056bbc77089596470df29ac94b24",
     "src/sound/AmbientTrack.cpp": "806bc651699acac158151883251a45c29078a06e4fd195081a3d1d7443a56e52",
     "src/sound/AmbientTrackLocation.cpp": "933b8b3e8cf005a72f8374effa77b8128854c80a1ad55a34b724e440a079ee4e",
@@ -28453,6 +28457,42 @@
       "discarded_functions": [],
       "object_sha256": "7caa93796042235afcf05b3389f9a5e5cc073a60ee9eb49356c4ac925f62e769",
       "linked_sha256": "701bbd358af07f94c6e2d548a220f14daa97e16f13969cb0dbd9310563047a2d"
+    },
+    {
+      "id": "script_update_player_stats",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 616,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "5f7b975548bf58e13eea066d0c83805ec1024ecde783c15b3922eb50aebb1a1a",
+      "linked_sha256": "28985e0fe50b8781ab660bc32069f02945dfbe184b54a9aa5a75b19b239eac6b"
+    },
+    {
+      "id": "script_validation_build",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 304,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b0caf01024fc29071f0ac41ade58896ca1aecece37389b70f8e1ad0b52dcce97",
+      "linked_sha256": "1b58d3734b1f7c98bb8243cac65d00f0a8cda55a56618321426b263bb98dbf02"
     }
   ],
   "code_map": {
@@ -51269,13 +51309,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80112290",
-            "size": 616,
-            "kind": "function",
-            "name": "BIFunc_UpdatePlayerStats__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x801124f8",
             "size": 212,
             "kind": "function",
@@ -51413,13 +51446,6 @@
             "size": 604,
             "kind": "function",
             "name": "BIFunc_Soldier_CreateImpact__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801199a8",
-            "size": 304,
-            "kind": "function",
-            "name": "BIFunc_ValidationBuild__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

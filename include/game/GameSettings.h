@@ -21,6 +21,9 @@ struct GameProfile {
     signed char currentRecord;          // +0x321e0
 };
 
+// Original enum tag; members are descriptive.
+enum EShotLocations { ShotLocation0 = 0 };
+
 // Member view of the game-settings singleton; only the profile pointer is named.
 class CGameSettings {
   public:
@@ -32,6 +35,11 @@ class CGameSettings {
     void RegisterSavePoint(int, bool);
     void TriggerSavePointResponse(int, bool);
     int HasMedal(int) const;
+    void Set_shotsFired(unsigned int, bool);
+    void Set_hits(unsigned int, bool);
+    void Set_hitsTaken(unsigned int, bool);
+    void Set_enemiesKilled(unsigned int, bool);
+    void Set_shotLocation(unsigned int, EShotLocations, bool);
 };
 extern CGameSettings g_GameSettings;
 

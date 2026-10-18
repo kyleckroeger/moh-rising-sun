@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-369 fragments in `src/script/` reconstruct **596 functions and 101,276
+371 fragments in `src/script/` reconstruct **598 functions and 102,196
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 503 further built-in wrappers
-and stubs (87,600 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 505 further built-in wrappers
+and stubs (88,520 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-312 fragments add **503 functions and 87,600 executable bytes** from the
+314 fragments add **505 functions and 88,520 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -935,6 +935,7 @@ result order are written with their case groups in that order.
 | `script_set_jaw_motion` | `SetJawMotion` | `0x801111d4` | 156 |
 | `script_set_muzzle_fire_for_player` | `SetMuzzleFireForPlayer` | `0x801113c8` | 200 |
 | `script_create_explosion` | `CreateExplosion` | `0x80111550` | 400 |
+| `script_update_player_stats` | `UpdatePlayerStats` | `0x80112290` | 616 |
 | `script_change_players_team` | `ChangePlayersTeam` | `0x801125cc` | 200 |
 | `script_change_npc_team` | `ChangeNPCTeam` | `0x80112694` | 236 |
 | `script_ai_set_team` | `AISetTeam` | `0x80112780` | 184 |
@@ -1009,6 +1010,7 @@ result order are written with their case groups in that order.
 | `script_signal_buddy_lead_checkpoint_reached_by_player` | `SignalBuddyLeadCheckpointReachedByPlayer` | `0x801197b0` | 124 |
 | `script_get_buddy_lead_checkpoint_from_id` | `GetBuddyLeadCheckpointFromID` | `0x8011982c` | 184 |
 | `script_get_distance_to_player` | `GetDistanceToPlayer` | `0x801198e4` | 196 |
+| `script_validation_build` | `ValidationBuild` | `0x801199a8` | 304 |
 | `script_start_slow_moh` | `StartSlowMOH` | `0x80119ad8` | 248 |
 | `script_stop_slow_moh` | `StopSlowMOH` | `0x80119bd0` | 88 |
 | `script_initialize_animated_texture` | `InitializeAnimatedTexture`, `SetAnimatedTextureState` | `0x80119d6c` | 536 |
