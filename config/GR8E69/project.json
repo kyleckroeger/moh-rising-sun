@@ -1186,7 +1186,8 @@
     "script_register_target_search.json",
     "script_attach_player_to_mounted_machine_gun.json",
     "script_is_on_astar_mesh.json",
-    "script_detach_from_waypoint.json"
+    "script_detach_from_waypoint.json",
+    "script_player_screen_flash.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
