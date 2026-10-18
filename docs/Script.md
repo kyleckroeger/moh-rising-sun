@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-372 fragments in `src/script/` reconstruct **599 functions and 102,944
+373 fragments in `src/script/` reconstruct **600 functions and 103,516
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 506 further built-in wrappers
-and stubs (89,268 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 507 further built-in wrappers
+and stubs (89,840 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-315 fragments add **506 functions and 89,268 executable bytes** from the
+316 fragments add **507 functions and 89,840 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -861,6 +861,7 @@ result order are written with their case groups in that order.
 | `script_break_point` | `BreakPoint` | `0x8010304c` | 100 |
 | `script_debug_print` | `DebugTTYPrint`, `AILog`, `ScriptError` | `0x801030b0` | 144 |
 | `script_get_target_for` | `GetTargetFor` | `0x80103140` | 184 |
+| `script_get_target_range_for` | `GetTargetRangeFor` | `0x801031f8` | 572 |
 | `script_set_obj_info` | `SetObjInfo`, `Soldier_SetObjInfo` | `0x8010567c` | 344 |
 | `script_get_distance_to_object_from_trigger` | `GetDistanceToObjectFromTrigger` | `0x801057d4` | 252 |
 | `script_make_noise` | `MakeNoise` | `0x801059b0` | 408 |

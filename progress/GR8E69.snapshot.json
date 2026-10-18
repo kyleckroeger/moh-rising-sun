@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 732924,
+    "matching_code_bytes": 733496,
     "total_executable_code_bytes": 2492032,
-    "percent": 29.410697775951512,
+    "percent": 29.433650932251272,
     "categories": {
-      "reconstructed_game": 340708,
+      "reconstructed_game": 341280,
       "restored_library": 392216
     },
-    "matching_functions": 2978
+    "matching_functions": 2979
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "9f85ce710c7c6743f4f9b0580e020a60faba16591797ea6ccb3138859afa31cb",
+    "config/GR8E69/project.json": "580d8cead0db3ce0c81ee551d738a6451ccaf5aa60cc436b20f7525280d3c331",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -803,6 +803,7 @@
     "config/GR8E69/script_get_scripted_behavior_type.json": "e7f336f6dd0b506bb090efc3928a13d8064b73b5fcbdaba4c2d9f260a4ec7216",
     "config/GR8E69/script_get_soldier_weapon_in_slot.json": "78cd7b56f2de364676662712e1f6ccb0847413aaee204423b110657bc5dadae4",
     "config/GR8E69/script_get_target_for.json": "a5f1538aa4402b653588b215d415fe9492c2fe5795785872ce1bad9576153a28",
+    "config/GR8E69/script_get_target_range_for.json": "7f636bc8d80c7239ddeb61dd91dd4aab631ecd2beb27a87b574a67b1aaa290a7",
     "config/GR8E69/script_get_voice_handle.json": "ce0a5d057e4e237b6515f956b77455afbf2696ebbfff81a4c5fc6b2b575c2f50",
     "config/GR8E69/script_get_weapon_info.json": "3fbd4d64b25413b866b6264f0cbcd27b9ff5b1264aa43ee6ff3f9a05f5ff98fd",
     "config/GR8E69/script_get_weapon_info_helper.json": "ffedc6e426a9f0c684d976cfa718bc9488f5779fbfee913c468f280212dbb620",
@@ -1419,7 +1420,7 @@
     "include/game/CLine3.h": "671ce5d07b583fd857df0b2ce304517d72a20d34e27967fa945b8a42de815760",
     "include/game/CMatrix.h": "0a1cd7c02e0d72a241d00c861f92cf720b93960f3e96da8dea1f370ee8be27f9",
     "include/game/CQuaternion.h": "ac6e158f9aec2448a2f5bbbc84f1e7f4337ff3fc49491b37d809374c550d8457",
-    "include/game/CVector3.h": "6620724fd56e37259e31d274061127a79d1184446804c122f2d0a0542921cc52",
+    "include/game/CVector3.h": "3ccdc2cecbae1dbd45758a8709336f7fc728a43f35dd60f664f329075db5af09",
     "include/game/Camera.h": "c044f907aca20f15af89cc5ba3657b51664d7f19a9b75c1d9b0fd185b7ee0900",
     "include/game/CameraShake.h": "02e614df140f650699fa467addceb6db92e065ba6fbedfeb65fdab5023470ffb",
     "include/game/DestructorQueue.h": "434ec17ba96007c8368db0dc62c9454d1650bc2c4d5615a13aad40969412bda8",
@@ -2517,6 +2518,7 @@
     "src/script/get_scripted_behavior_type.cpp": "6a02756e452bb854b3fcd03b47124f35da72638e1ab098a1bb6128166ae3d4c3",
     "src/script/get_soldier_weapon_in_slot.cpp": "92665fc6c0fc585fbe86ebd47edddf6756edec6a9310e4ad1cbfc4bb90199d54",
     "src/script/get_target_for.cpp": "de77912b7486af0160ea90ae9964ef5015d519ff556b0bd18644d5a3fcc0fa1a",
+    "src/script/get_target_range_for.cpp": "584ba547b01c1e5d02f65fab0d84bfa27bd9722fcda87bce93ff2dba406a854f",
     "src/script/get_voice_handle.cpp": "af011a4128fd1e5118583292a25f38f12a800976eac412ec0f6edaffe81d8945",
     "src/script/get_weapon_info.cpp": "0c65244b40592181c9e2cef7d6c7c0e5766ac273ad1f63414e56a16512686e73",
     "src/script/get_weapon_info_helper.cpp": "c629d092fbc6d3eb6ebc6a97463df0238791bbc9c6a2134a29cd75c744994dc9",
@@ -28513,6 +28515,24 @@
       "discarded_functions": [],
       "object_sha256": "e593d8a1b79bc3a85ec63b886a4e7166a7a6043d313bea1466151cc76e5b29b4",
       "linked_sha256": "966d17e9083f9eb8cd5b2b05b94155c36d9a7bd5f6b660febc0c434ccf786a49"
+    },
+    {
+      "id": "script_get_target_range_for",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 572,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "a07f021f0fe9b105bb6a8271d57c2ee03ad9bf38cae873fad0806e3f281236fb",
+      "linked_sha256": "a1ae0d31f26604b1aae469f32ac93ec30804c7c8020cdfc98afc76b68aed0f4e"
     }
   ],
   "code_map": {
@@ -50976,13 +50996,6 @@
             "size": 320,
             "kind": "function",
             "name": "SetUpGrenadeShot__F13EGrenadeThrowP10ISceneNode",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801031f8",
-            "size": 572,
-            "kind": "function",
-            "name": "BIFunc_GetTargetRangeFor__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

@@ -1223,7 +1223,8 @@
     "script_send_event_weapon_immediate.json",
     "script_update_player_stats.json",
     "script_validation_build.json",
-    "script_register_target_check.json"
+    "script_register_target_check.json",
+    "script_get_target_range_for.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
