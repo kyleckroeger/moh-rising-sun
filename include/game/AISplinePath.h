@@ -1,5 +1,6 @@
 #ifndef GAME_AI_SPLINE_PATH_H
 #define GAME_AI_SPLINE_PATH_H
+#include "AIFilterGlobal.h"
 #include "BPD.h"
 #include "AIMovement.h"
 // AI-assisted reconstruction from GR8E69; see docs/Paths.md.
@@ -124,4 +125,14 @@ public:
     int GetWalkType();
     void StopWalk();
 };
+// Inline id lookup used by BIFunc_PlayerStartPath. A missing id yields the
+// slot one past the last path, as in the original.
+inline CAISplinePath *FindSplinePath(unsigned int id) {
+    CAISplinePathManager *manager = g_aigAIFilterGlobalObject.splineManager;
+    unsigned int i;
+    for (i = 0; i < manager->pathCount; i++)
+        if (manager->paths[i].id == id)
+            break;
+    return &manager->paths[i];
+}
 #endif

@@ -6,7 +6,8 @@
 // the complete allocation, base classes or virtual interface.
 // Observed fields of the weapon's property record; not a complete layout.
 struct WeaponProperties {
-    unsigned char unknown_0[6];
+    unsigned char unknown_0[4];
+    short clipSize;   // +0x04; compared by BIFunc_PlayerWeaponInfo selector 4.
     short refireRate; // +0x06
     unsigned char unknown_8[6];
     short projectile; // +0x0e; nonzero for projectile weapons.
@@ -26,7 +27,9 @@ class CWeapon {
   public:
     unsigned char unknown_0[0x300];
     WeaponProperties *properties; // +0x300
-    unsigned char unknown_304[0x30e - 0x304];
+    unsigned char unknown_304[0x308 - 0x304];
+    int crc;          // +0x308; weapon name CRC.
+    short reserveAmmo; // +0x30c
     short infoValue0; // +0x30e; returned for EWeaponInfo 0.
     unsigned char unknown_310[0x320 - 0x310];
     int weaponClass; // +0x320; returned by BIFunc_PlayerGetWeaponClass.

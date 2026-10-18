@@ -45,7 +45,10 @@ class CSprite {
 };
 class CPlayerWeaponObject {
   public:
+    unsigned char unknown_0[0x2ec];
+    CWeapon *weapon; // +0x2ec
     void CreateEjectedShell(int);
+    int IsSelectable() const;
 };
 class CPlayerObject {
   public:
@@ -117,7 +120,9 @@ class CPlayerObject {
     int fovMode;             // +0xe40
     unsigned char unknown_e44[0xe48 - 0xe44];
     CSprite *binocularOverlay; // +0xe48; set by BIFunc_UseBinoculars.
-    unsigned char unknown_e4c[0x10bc - 0xe4c];
+    unsigned char unknown_e4c[0xe78 - 0xe4c];
+    CWeapon *thrownWeapon; // +0xe78; checked by BIFunc_PlayerWeaponInfo when no weapon object matches.
+    unsigned char unknown_e7c[0x10bc - 0xe7c];
     int cameraPitchUnhinged; // +0x10bc
     unsigned char unknown_10c0[0x1144 - 0x10c0];
     int body;                // +0x1144; returned by BIFunc_MPGetPlayerBody.
@@ -144,6 +149,7 @@ class CPlayerObject {
     void SetFallingDamageState(bool);
     void HandleLookatTrigger(BSObject *, float, float);
     CPlayerWeaponObject *GetCurrentPlayerWeapon() const;
+    CPlayerWeaponObject *GetWeaponByCRC(int) const;
     void SetHideWeapon(bool);
     void FreeBinocularOverlay();
     void SetZoom(float);

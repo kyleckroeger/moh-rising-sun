@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-317 fragments in `src/script/` reconstruct **525 functions and 79,752
+319 fragments in `src/script/` reconstruct **527 functions and 80,576
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 432 further built-in wrappers
-and stubs (66,076 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 434 further built-in wrappers
+and stubs (66,900 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-260 fragments add **432 functions and 66,076 executable bytes** from the
+262 fragments add **434 functions and 66,900 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -796,6 +796,7 @@ result order are written with their case groups in that order.
 | `script_player_can_crouch` | `PlayerCanCrouch` | `0x800ff880` | 156 |
 | `script_player_motion_shake` | `PlayerMotionShake` | `0x800ff91c` | 180 |
 | `script_texture_fade` | `PlayerTextureFadeIn`, `PlayerTextureFadeOut` | `0x800ffbec` | 96 |
+| `script_player_start_path` | `PlayerStartPath` | `0x800ffc4c` | 380 |
 | `script_player_stop_path` | `PlayerStopPath` | `0x800ffdc8` | 104 |
 | `script_player_death` | `PlayerDeath` | `0x800ffe30` | 164 |
 | `script_player_get_weapon_refire_rate` | `PlayerGetWeaponRefireRate` | `0x800ffed4` | 136 |
@@ -881,6 +882,7 @@ result order are written with their case groups in that order.
 | `script_get_current_npc_weapon_class` | `GetCurrentNPCWeaponClass` | `0x8010ba0c` | 300 |
 | `script_get_weapon_info` | `GetWeaponInfo` | `0x8010bb38` | 228 |
 | `script_set_grenade_timer` | `SetGrenadeTimer` | `0x8010be28` | 124 |
+| `script_player_weapon_info` | `PlayerWeaponInfo` | `0x8010bea4` | 444 |
 | `script_player_super_aim_mode` | `PlayerSuperAimMode` | `0x8010c200` | 148 |
 | `script_is_player_invincible` | `IsPlayerInvincible` | `0x8010c294` | 108 |
 | `script_player_eject_shell` | `PlayerEjectShell` | `0x8010c300` | 280 |
