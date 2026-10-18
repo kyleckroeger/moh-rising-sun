@@ -145,6 +145,8 @@ class CDecalManager {
 class CColor {
   public:
     unsigned char r, g, b, a;
+    CColor() {}
+    CColor(unsigned char ar, unsigned char ag, unsigned char ab, unsigned char aa) : r(ar), g(ag), b(ab), a(aa) {}
 };
 
 // Static screen-fade entry points.

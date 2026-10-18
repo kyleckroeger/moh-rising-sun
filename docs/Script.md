@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-333 fragments in `src/script/` reconstruct **549 functions and 86,588
+335 fragments in `src/script/` reconstruct **551 functions and 86,996
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 456 further built-in wrappers
-and stubs (72,912 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 458 further built-in wrappers
+and stubs (73,320 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-276 fragments add **456 functions and 72,912 executable bytes** from the
+278 fragments add **458 functions and 73,320 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -743,6 +743,7 @@ result order are written with their case groups in that order.
 | `script_set_location_target` | `SetLocationTarget` | `0x800fa9c0` | 200 |
 | `script_ai_set_hearing_radius` | `AISetHearingRadius`, `AIGetSoldierMatchListStruct` | `0x800faa88` | 248 |
 | `script_ai_start_spline_path_walk` | `AIStartSplinePathWalk` | `0x800fab80` | 192 |
+| `script_is_on_astar_mesh` | `IsOnAStarMesh` | `0x800fac40` | 204 |
 | `script_is_nearby_position_on_astar_mesh` | `IsNearbyPositionOnAStarMesh` | `0x800fad0c` | 212 |
 | `script_soldier_ai_start_spline_path_walk` | `Soldier_AIStartSplinePathWalk` | `0x800fade0` | 228 |
 | `script_ai_stop_spline_path_walk` | `AIStopSplinePathWalk` | `0x800faec4` | 116 |
@@ -899,6 +900,7 @@ result order are written with their case groups in that order.
 | `script_player_activate_lookat_trigger` | `PlayerActivateLookatTrigger`, `PlayerDeactivateLookatTrigger`, `PlayerStartLookAt` | `0x8010c8e4` | 696 |
 | `script_player_stop_look_at` | `PlayerStopLookAt` | `0x8010cb9c` | 108 |
 | `script_attach_to_prop` | `AttachToProp`, `AttachAndAlignToProp` | `0x8010f188` | 764 |
+| `script_detach_from_waypoint` | `DetachFromWaypoint` | `0x8010f768` | 204 |
 | `script_attach_player_to_prop` | `AttachPlayerToProp`, `DetachFromProp` | `0x8010f834` | 448 |
 | `script_detach_player_from_prop` | `DetachPlayerFromProp` | `0x8010fa9c` | 244 |
 | `script_detach_from_soldier` | `DetachFromSoldier` | `0x8010ffdc` | 136 |
