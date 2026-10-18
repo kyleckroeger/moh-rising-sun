@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-364 fragments in `src/script/` reconstruct **591 functions and 99,072
+365 fragments in `src/script/` reconstruct **592 functions and 99,424
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 498 further built-in wrappers
-and stubs (85,396 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 499 further built-in wrappers
+and stubs (85,748 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-307 fragments add **498 functions and 85,396 executable bytes** from the
+308 fragments add **499 functions and 85,748 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -897,6 +897,7 @@ result order are written with their case groups in that order.
 | `script_hier_object_play_animation` | `HierObjectPlayAnimation`, `StartMotionPlayback` | `0x8010a118` | 608 |
 | `script_stop_motion_playback` | `StopMotionPlayback` | `0x8010a378` | 276 |
 | `script_resume_motion_playback` | `ResumeMotionPlayback` | `0x8010a48c` | 192 |
+| `script_modify_motion_data` | `ModifyMotionData` | `0x8010a54c` | 352 |
 | `script_translate_rel` | `TranslateRel`, `RotateRel` | `0x8010a6ac` | 888 |
 | `script_get_rotate_rel` | `GetRotateRel`, `GetTranslateRel` | `0x8010aa24` | 152 |
 | `script_set_objective` | `SetObjective` | `0x8010ab40` | 156 |

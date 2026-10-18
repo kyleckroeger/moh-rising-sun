@@ -28,9 +28,12 @@ class CJawController {
     void SetMotionType(EJawType);
 };
 
+struct MotionData;
+MotionData *InitMotionData(const char *);
 class CStaticObject {
   public:
     void StopMotionPlayback();
+    void ModifyMotionData(MotionData *);
     void SetMovementPath(int, bool, bool, float, float, float, float, BSObject *, float, bool);
     void ResumeMotionPlayback();
     void PlayAnimation(int, int, int, EBSEventEnum);
@@ -130,6 +133,7 @@ class CHierObject {
     void RegisterBulletDamage(int, int, int, float);
     float GetBulletDamageMultiplierByClass(int, int);
     CStaticObject *GetSubObject(int);
+    void ModifyMotionData(MotionData *);
 };
 
 class TriggerObject;

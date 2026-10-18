@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 729052,
+    "matching_code_bytes": 729404,
     "total_executable_code_bytes": 2492032,
-    "percent": 29.255322564076224,
+    "percent": 29.269447583337612,
     "categories": {
-      "reconstructed_game": 336836,
+      "reconstructed_game": 337188,
       "restored_library": 392216
     },
-    "matching_functions": 2970
+    "matching_functions": 2971
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "9df8fb762f46efff953149c0d74968e811ed5c5459c3fbb71cba3e1113ac7b55",
+    "config/GR8E69/project.json": "0dc651c25ea65c413e3bfcd0cede56ae7de8cf9c707f401dd27ee9a558733042",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -847,6 +847,7 @@
     "config/GR8E69/script_message_queue.json": "dee98c7f1aeeac561e79d375115b13275691842d8c1b1c90058095c8b3ee024d",
     "config/GR8E69/script_message_register.json": "759343678fafffb9b04c179de9c5247b3e89b278d1de3e5699d59ea3a6c18da7",
     "config/GR8E69/script_message_remove.json": "5bfe377a63951d0864552b2eb7e65ad705c68c2c5116e8e88ecc44fd7f80c290",
+    "config/GR8E69/script_modify_motion_data.json": "6bbe0ac4b9dcbe437de0f13d73054fb5d688a8b7e03b3a07aeab1a6335085d6e",
     "config/GR8E69/script_moving_mech_force_update_trigger.json": "d35f02965111567bdf371ef905277b9f34a59d06a03f37c9630155745267c04e",
     "config/GR8E69/script_mp_get_player_body.json": "ba961fa3d3f442db5937a09801746709614d2e3fa88459277625103d585e9c71",
     "config/GR8E69/script_mp_get_player_velocity.json": "c42b2dc47721e3da1f4c10c66cdd73469da7e1d8d569b702b8ded477efd150e5",
@@ -1480,7 +1481,7 @@
     "include/game/ParticleRecipe.h": "04bba33839dcdae3132d1316e831585288f74ef842a5b01c6f6d6c37929ee61d",
     "include/game/PropertyData.h": "952ae5ac78dc17e43053a7b905a8e58499a1faa3c7d0721269329f639095b22a",
     "include/game/SceneNode.h": "1a6f0b01e88bda21ecb5b0ae8f4f3ad50df6422427adb3f5f52ea1c648a50fe4",
-    "include/game/SceneObjects.h": "ab7f9c344e404319394dc6cb7c95b30c922914b40c090058802f944980141726",
+    "include/game/SceneObjects.h": "4fc57d318a4f0382307f9c34268ab0be577d98816f3f7d52021cd48f8ef0993d",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
     "include/game/ScriptRuntime.h": "e6c5e20e70b740f8fae024d5b0711e408ad2db30aeaba9ceb7f72cbcc442ad8d",
@@ -2553,6 +2554,7 @@
     "src/script/message_queue.cpp": "2e6255c3aea4364bd2fdf75e50852da964a6f389cc6be86d96c0354db0e93420",
     "src/script/message_register.cpp": "fcaab46386450b3b19d0a216222a0cd7a4ae8ed1136e59958fea071722c0f55c",
     "src/script/message_remove.cpp": "c8fa9b7631942071ad6d83b9cac603c34ec0e56571e3f8f788b802c6d9d05df3",
+    "src/script/modify_motion_data.cpp": "923d6e26a2bcd52a7a9c1e64832bfa137f13590383763c82f6fc50d19cec7aad",
     "src/script/moving_mech_force_update_trigger.cpp": "5c183644b217c9548ee716dcef942076a4c6dfb6eb8a9eb8391d5cb3b8dc6e20",
     "src/script/mp_get_player_body.cpp": "c30ac8d670e8f312a153a30231620147808b943e730ded2b897981465d35bc5c",
     "src/script/mp_get_player_velocity.cpp": "201649634a03eab71661f00b624dad44bb7961a1d8625290a2b8b9506f74d070",
@@ -28353,6 +28355,24 @@
       "discarded_functions": [],
       "object_sha256": "d081a4d511806086fe4137640c69effef06beea758553bb1821b9edb76f481b6",
       "linked_sha256": "3dc03d9c4eabf9afb05dcf15dbda2a18fa8fb70039e48f70803f339c2f4daaec"
+    },
+    {
+      "id": "script_modify_motion_data",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 352,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "0d73053f74725891f381fb23911f31b6b6d962899266b0ad3d5b28a605a8720f",
+      "linked_sha256": "80718d067c6df303ed3d02546dfa80e9f32529e17d032d0a93217f20e3bc2fd6"
     }
   ],
   "code_map": {
@@ -51033,13 +51053,6 @@
             "size": 248,
             "kind": "function",
             "name": "BIFunc_SetLightVolumeTransitionDuration__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8010a54c",
-            "size": 352,
-            "kind": "function",
-            "name": "BIFunc_ModifyMotionData__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {
