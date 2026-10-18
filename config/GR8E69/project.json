@@ -1201,7 +1201,10 @@
     "script_projector_create_by_type.json",
     "script_glare_create_by_type.json",
     "script_create_explosion.json",
-    "script_soldier_create_explosion.json"
+    "script_soldier_create_explosion.json",
+    "script_ai_collision_test.json",
+    "script_get_constrained_rotate_angle.json",
+    "script_mp_get_player_velocity.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

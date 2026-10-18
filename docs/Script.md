@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-350 fragments in `src/script/` reconstruct **575 functions and 95,044
+353 fragments in `src/script/` reconstruct **579 functions and 95,808
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 482 further built-in wrappers
-and stubs (81,368 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 486 further built-in wrappers
+and stubs (82,132 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-293 fragments add **482 functions and 81,368 executable bytes** from the
+296 fragments add **486 functions and 82,132 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -766,6 +766,7 @@ result order are written with their case groups in that order.
 | `script_ai_fire_at_current_target` | `AIFireAtCurrentTarget` | `0x800fbe80` | 172 |
 | `script_soldier_ai_fire_at_current_target` | `Soldier_AIFireAtCurrentTarget` | `0x800fbf2c` | 208 |
 | `script_ai_fire_mmg_at_current_target` | `AIFireMMGAtCurrentTarget` | `0x800fbffc` | 248 |
+| `script_ai_collision_test` | `AICollisionTest`, `Soldier_AICollisionTest` | `0x800fc0f4` | 412 |
 | `script_set_move_point` | `SetMovePoint` | `0x800fc290` | 184 |
 | `script_ai_set_move_point_on_other` | `AISetMovePointOnOther`, `AIStartMovePointWalk` | `0x800fcc64` | 404 |
 | `script_ai_stop_move_point_walk` | `AIStopMovePointWalk`, `AIContinueMovePointWalk` | `0x800fcdf8` | 232 |
@@ -959,6 +960,7 @@ result order are written with their case groups in that order.
 | `script_hier_object_fire` | `HierObjectFire` | `0x80115ca8` | 184 |
 | `script_hier_object_register_bullet_damage` | `HierObjectRegisterBulletDamage` | `0x80115d60` | 232 |
 | `script_ai_find_tank` | `AIFindTank` | `0x80115e48` | 108 |
+| `script_get_constrained_rotate_angle` | `GetConstrainedRotateAngle` | `0x801160b8` | 176 |
 | `script_bullet_type_class` | `GetClassFromBulletType` | `0x80116168` | 240 |
 | `script_activate_aiming` | `ActivateAiming` | `0x80116370` | 172 |
 | `script_suspend_aiming` | `SuspendAiming`, `ResumeAiming` | `0x8011641c` | 228 |
@@ -975,6 +977,7 @@ result order are written with their case groups in that order.
 | `script_get_scripted_behavior_type` | `GetScriptedBehaviorType`, `SetScriptedBehaviorType` | `0x80118248` | 400 |
 | `script_create_mp_health` | `CreateMPHealth`, `CreateMPRankedAmmoWeapon` | `0x801183d8` | 576 |
 | `script_mp_get_player_body` | `MPGetPlayerBody` | `0x80118618` | 152 |
+| `script_mp_get_player_velocity` | `MPGetPlayerVelocity` | `0x801186b0` | 176 |
 | `script_set_mmg_location` | `SetMMGLocation` | `0x80118760` | 244 |
 | `script_ai_get_previous_behavior_type` | `AIGetPreviousBehaviorType` | `0x80118854` | 192 |
 | `script_ai_get_previous_behavior_script` | `AIGetPreviousBehaviorScript`, `AISetPreviousBehaviorScript` | `0x80118914` | 384 |

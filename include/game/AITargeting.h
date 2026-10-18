@@ -160,6 +160,9 @@ public:
     CAITactics tactics;  // +0x7a0
     CAIBehavior *FindMatchingBehavior(EBehaviorType);
     float GetDistanceSquaredXYReal(CAITarget);
+    // Original nested enum tag; its members are unknown.
+    enum ECollisionTestStyle { CollisionTestStyleDefault = 0 };
+    float PerformCollisionTest(ECollisionTestDirection, float, ECollisionTestStyle);
     void SetupFieldOfViewModeList(aistatus_match *, int, float, float);
     void SetupLineOfSightModeList(aistatus_match *, int, float);
     void EnableBehavior(EBehaviorType);

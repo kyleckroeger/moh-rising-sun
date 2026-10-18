@@ -46,6 +46,11 @@ class CSprite {
     int field_1c; // Cleared by BIFunc_UseBinoculars.
     int field_20; // Cleared by BIFunc_UseBinoculars.
 };
+// Method-only view of the multiplayer player body (CPlayerObject +0x1144).
+class CAnimatedPlayer {
+  public:
+    void GetFlocoParams(float &, int &);
+};
 class CPlayerWeaponObject {
   public:
     unsigned char unknown_0[0x2ec];
