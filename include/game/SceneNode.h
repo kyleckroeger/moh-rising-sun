@@ -140,6 +140,7 @@ class CScene {
     void Remove(ISceneNode &);
     int IsNodeInScene(const ISceneNode *) const;
     CPlayerObject *GetPlayer(int) const;
+    CPlayerObject *FindClosestPlayer(const CVector3 &);
 };
 extern CScene g_scene;
 

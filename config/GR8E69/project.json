@@ -1174,7 +1174,9 @@
     "script_ai_fire_mmg_at_current_target.json",
     "script_get_distance_to_object_from_trigger.json",
     "script_set_particle_system_velocity.json",
-    "script_has_pistol.json"
+    "script_has_pistol.json",
+    "script_attach_player_to_prop.json",
+    "script_detach_player_from_prop.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

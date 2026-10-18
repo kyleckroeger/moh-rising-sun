@@ -26,6 +26,8 @@ enum _LetterboxTransitionStyle { LetterboxTransitionStyleUnknown = 0 };
 // Method-only view of the player's embedded heads-up display.
 class CHeadsUpDisplay {
   public:
+    unsigned char unknown_0[0x7cc];
+    float field_7cc; // Reset from 0 to 1 by BIFunc_DetachPlayerFromProp.
     void AddHitDirection(unsigned int);
     void LetterboxTransition(float, _LetterboxTransitionStyle);
 };
@@ -137,7 +139,7 @@ class CPlayerObject {
     ClipSettings clip;       // +0x1150
     unsigned char unknown_12b4[0x1410 - 0x1150 - sizeof(ClipSettings)];
     CHeadsUpDisplay hud;     // +0x1410
-    unsigned char unknown_1411[0x1c28 - 0x1411];
+    unsigned char unknown_1be0[0x1c28 - 0x1410 - sizeof(CHeadsUpDisplay)];
     int letterbox;           // +0x1c28; set by BIFunc_DisplayLetterbox.
     unsigned char unknown_1c2c[0x1cf0 - 0x1c2c];
     LookAtTarget lookAt; // +0x1cf0

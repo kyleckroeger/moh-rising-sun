@@ -38,9 +38,12 @@ class CStaticObject {
     struct Flags {
         unsigned int unknown_31_25 : 7;
         unsigned int allowCollisionDamage : 1; // Bit 24.
-        unsigned int unknown_low : 24;
+        unsigned int pathFlag1 : 1;            // Bit 23: BIFunc_MechSetPathFlag selector 1.
+        unsigned int unknown_low : 23;
     };
-    unsigned char unknown_0[0x214];
+    unsigned char unknown_0[0x110];
+    float pathScale;      // +0x110; BIFunc_MechSetPathFlag stores value / 100.
+    unsigned char unknown_114[0x214 - 0x114];
     int maxLightPriority; // +0x214
     Flags flags;          // +0x218
     unsigned int mechFlags; // +0x21c; bits set and cleared by BIFunc_MechSetFlag.
@@ -199,8 +202,11 @@ class CAnimObjectInterface : public IMovingSceneNode {
 // after the IMovingSceneNode slots), in the order of the original CHierObject
 // table. Names come from the symbols in each slot; types beyond the symbols are
 // placeholders. Callers convert the scene-node pointers they already hold.
+class CPlayerObject;
 class CAttachableObject {
   public:
+    int AttachObject(CPlayerObject *, int, bool);
+    int DetachObject(ISceneNode *);
     int GetFirstChildHandle();
     int GetNextChildHandle(int);
     ISceneNode *GetChild(int);
