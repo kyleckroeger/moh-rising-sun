@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-371 fragments in `src/script/` reconstruct **598 functions and 102,196
+372 fragments in `src/script/` reconstruct **599 functions and 102,944
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 505 further built-in wrappers
-and stubs (88,520 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 506 further built-in wrappers
+and stubs (89,268 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-314 fragments add **505 functions and 88,520 executable bytes** from the
+315 fragments add **506 functions and 89,268 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -852,6 +852,7 @@ result order are written with their case groups in that order.
 | `script_change_letterbox_width` | `ChangeLetterboxWidth` | `0x801022b8` | 124 |
 | `script_register_target_search` | `RegisterTargetSearch` | `0x80102334` | 296 |
 | `script_register_corpse_search` | `RegisterCorpseSearch` | `0x8010245c` | 220 |
+| `script_register_target_check` | `RegisterTargetCheck` | `0x80102538` | 748 |
 | `script_register_position_check` | `RegisterPositionCheck` | `0x80102824` | 192 |
 | `script_register_for_property_message` | `RegisterForPropertyMessage`, `StopPropertyMessage` | `0x801028e4` | 280 |
 | `script_stop_target_search` | `StopTargetSearch`, `StopTargetCheck`, `StopDistanceToTarget` | `0x801029fc` | 588 |

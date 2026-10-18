@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 732176,
+    "matching_code_bytes": 732924,
     "total_executable_code_bytes": 2492032,
-    "percent": 29.38068211002106,
+    "percent": 29.410697775951512,
     "categories": {
-      "reconstructed_game": 339960,
+      "reconstructed_game": 340708,
       "restored_library": 392216
     },
-    "matching_functions": 2977
+    "matching_functions": 2978
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "028c73b00794ac36d6a2a20a1fe5182963397638ad9d0a18d245372959ee606a",
+    "config/GR8E69/project.json": "9f85ce710c7c6743f4f9b0580e020a60faba16591797ea6ccb3138859afa31cb",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -911,6 +911,7 @@
     "config/GR8E69/script_register_nav_point.json": "dadd12f039fc6c9aeaa14607f8e9cb30a41dbbb418a8a94ea92b340c6b0ec321",
     "config/GR8E69/script_register_position_check.json": "a1fe7d3c8e487e75cdbb7e24d71d71989b6efe03b261731fd695986e47b8a4ba",
     "config/GR8E69/script_register_save_point.json": "a6d2242e83607ca67142ddc37b228d62d387fc1a515975deecd636010188e409",
+    "config/GR8E69/script_register_target_check.json": "0bb3e31ce9e2daa78d90a45c29a3edd69837f2b10a954948cfb06a5cfbec78a5",
     "config/GR8E69/script_register_target_search.json": "bbd5179fb1f9c013ce323201a98ba92be922c86545ea02d13ad2912d15c83986",
     "config/GR8E69/script_register_timer_event.json": "88d0c2b37dd832853d0814e657c6f80a2d7f75db364cae0bac06803ecf8b5d75",
     "config/GR8E69/script_remove_triggered_hint.json": "44f0c65b3d12fb360c3ff1653185d888d64d02dbb0522dbfeefe102df1b8bd8a",
@@ -1410,7 +1411,7 @@
     "include/game/AIFilterGlobal.h": "26368f15313dbd6390bee4c45582bcdfc36d8d433aaec5b0241541e52b9d677a",
     "include/game/AIMovement.h": "b9d723fd2bfeb66871a55f57dad2d3bfad33a56530d2826600e86d36598d6342",
     "include/game/AISplinePath.h": "a44a68ad726dfcaa439461afba93bb1c66f6425b174c21eca29c478d28820187",
-    "include/game/AITargeting.h": "638b7a60b0f87d66820ec8e780f78cb10d5201524e1efa66056a95b87258dd49",
+    "include/game/AITargeting.h": "0bed64c3008b82bce4ebbd3d6d07f5a0aeb243b82867e318acb1a24c43f6052c",
     "include/game/BPD.h": "ec4a3aceb83f181db2c6adf8ac87137ede2cd6a0e643548159c73a827aadd19e",
     "include/game/BSGameObject.h": "0251918a776754b0d6b3d30b69e61b0d0c8f919721dbd147dbecf710b180a45a",
     "include/game/Bullet.h": "3303eada13421d59aaea6a4187fc16731e94960198642c22366d9fca1eb9cb01",
@@ -2624,6 +2625,7 @@
     "src/script/register_nav_point.cpp": "327978140312d78bf4bd432be2316393e6228311ebc7052ac012f2cb25381232",
     "src/script/register_position_check.cpp": "c4cf1ebe89d5473ec6e344b21acbee79c2c664f6473973ed11d04725e05b29a2",
     "src/script/register_save_point.cpp": "04cccacd10883e553a4b2804f93f25b9db4b5cb435b8dfae33f7dc6c76237782",
+    "src/script/register_target_check.cpp": "ad4643a50bf2a17ae5f9e856ca62fbe25103b4ed1b06d0d08517c89d9336e605",
     "src/script/register_target_search.cpp": "e83239ff00553b3ba88f7e5479d2ad65445762aa84c9c572b611210d30158882",
     "src/script/register_timer_event.cpp": "7bf5a00bf1632bb4dc0badd4570c18a309fe069eb2d710c98c958e7c5e28b06c",
     "src/script/remove_triggered_hint.cpp": "dc4e5a686e71a6cd5b78daf6db2f46eb8fcb2b41b24fc92f3f7d4b986d8cd8ef",
@@ -28493,6 +28495,24 @@
       "discarded_functions": [],
       "object_sha256": "b0caf01024fc29071f0ac41ade58896ca1aecece37389b70f8e1ad0b52dcce97",
       "linked_sha256": "1b58d3734b1f7c98bb8243cac65d00f0a8cda55a56618321426b263bb98dbf02"
+    },
+    {
+      "id": "script_register_target_check",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 748,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "e593d8a1b79bc3a85ec63b886a4e7166a7a6043d313bea1466151cc76e5b29b4",
+      "linked_sha256": "966d17e9083f9eb8cd5b2b05b94155c36d9a7bd5f6b660febc0c434ccf786a49"
     }
   ],
   "code_map": {
@@ -50956,13 +50976,6 @@
             "size": 320,
             "kind": "function",
             "name": "SetUpGrenadeShot__F13EGrenadeThrowP10ISceneNode",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80102538",
-            "size": 748,
-            "kind": "function",
-            "name": "BIFunc_RegisterTargetCheck__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

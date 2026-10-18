@@ -165,6 +165,8 @@ public:
     float PerformCollisionTest(ECollisionTestDirection, float, ECollisionTestStyle);
     void SetupFieldOfViewModeList(aistatus_match *, int, float, float);
     void SetupLineOfSightModeList(aistatus_match *, int, float);
+    void SetupFieldOfViewModeObject(const CAITarget &, float, float);
+    void SetupLineOfSightModeObject(const CAITarget &, float);
     void EnableBehavior(EBehaviorType);
     void DisableBehavior(EBehaviorType);
     int IsBehaviorEnabled(EBehaviorType);

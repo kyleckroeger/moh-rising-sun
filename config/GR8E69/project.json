@@ -1222,7 +1222,8 @@
     "script_make_noise.json",
     "script_send_event_weapon_immediate.json",
     "script_update_player_stats.json",
-    "script_validation_build.json"
+    "script_validation_build.json",
+    "script_register_target_check.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
