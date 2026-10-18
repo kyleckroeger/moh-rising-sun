@@ -87,7 +87,7 @@ typedef char AITargetingPrefixCheck[sizeof(CAITargeting) == 0x108 ? 1 : -1];
 // return; all member names are descriptive.
 enum EBehaviorType {
     BehaviorTypeBuddyLead = 1, BehaviorTypeBuddyFollow = 2, BehaviorTypeMountedMachineGun = 3,
-    BehaviorTypeCoverpoint = 4, BehaviorTypeScripted = 5, BehaviorTypeSword = 8,
+    BehaviorTypeCoverpoint = 4, BehaviorTypeScripted = 5, BehaviorTypePistol = 6, BehaviorTypeSword = 8,
     BehaviorTypeGrenadeResponse = 10
 };
 enum EAIHighLevelState { AIHighLevelStateUnknown = 0 };

@@ -47,7 +47,12 @@ class CPlayerWeaponObject {
   public:
     unsigned char unknown_0[0x2ec];
     CWeapon *weapon; // +0x2ec
+    unsigned char unknown_2f0[0x3b0 - 0x2f0];
+    int state;       // +0x3b0; set to 3 by BIFunc_AddPlayerAmmo.
+    unsigned char unknown_3b4[0x3f0 - 0x3b4];
+    unsigned int flags; // +0x3f0; bit 29 set by BIFunc_AddPlayerAmmo before DoneReloading.
     void CreateEjectedShell(int);
+    void DoneReloading();
     int IsSelectable() const;
 };
 class CPlayerObject {
@@ -124,7 +129,9 @@ class CPlayerObject {
     CWeapon *thrownWeapon; // +0xe78; checked by BIFunc_PlayerWeaponInfo when no weapon object matches.
     unsigned char unknown_e7c[0x10bc - 0xe7c];
     int cameraPitchUnhinged; // +0x10bc
-    unsigned char unknown_10c0[0x1144 - 0x10c0];
+    unsigned char unknown_10c0[0x10da - 0x10c0];
+    short promptSlot;        // +0x10da; prompt buffer used by BIFunc_AddPlayerAmmo.
+    unsigned char unknown_10dc[0x1144 - 0x10dc];
     int body;                // +0x1144; returned by BIFunc_MPGetPlayerBody.
     unsigned char unknown_1148[0x1150 - 0x1148];
     ClipSettings clip;       // +0x1150

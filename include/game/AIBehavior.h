@@ -34,6 +34,27 @@ class CBuddyFollowBehavior { // Type 2.
     static void RegisterBuddyFollowObject(BSObject *, float, float, float, float);
 };
 
+class CPistolBehavior { // Type 6.
+  public:
+    // The table pointer follows twelve bytes of base data; slots 1-13 in the
+    // order of the original table at 0x802e7e20.
+    unsigned char unknown00[8];
+    int field_08; // Checked with GetScriptObject by BIFunc_HasPistol.
+    virtual ~CPistolBehavior();
+    virtual float GetCurrentHeuristicScore();
+    virtual float GetHeuristicUpdateFrequency();
+    virtual void UpdateHeuristicScore();
+    virtual void StartBehavior();
+    virtual void StopBehavior(bool);
+    virtual void ReleaseResources();
+    virtual int GetCapabilities(ECapability);
+    virtual int GetType();
+    virtual unsigned int GetCRC();
+    virtual void Enable();
+    virtual void Disable();
+    virtual BSObject *GetScriptObject();
+};
+
 class CMountedMachineGunBehavior { // Type 3.
   public:
     // The table pointer follows twelve bytes of base data; slots 1-4 in the

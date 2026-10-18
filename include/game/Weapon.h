@@ -36,6 +36,7 @@ class CWeapon {
     unsigned char unknown_324[0x350 - 0x324];
     unsigned int reloading : 1; // +0x350, bit 31: cleared by BIFunc_PlayerClearReloading.
     unsigned int unknown_350 : 31;
+    void AddAmo(short);
     void StartReloading();
     void ReloadSingle();
     void DoneReloading();

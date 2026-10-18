@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-319 fragments in `src/script/` reconstruct **527 functions and 80,576
+323 fragments in `src/script/` reconstruct **531 functions and 81,576
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 434 further built-in wrappers
-and stubs (66,900 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 438 further built-in wrappers
+and stubs (67,900 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-262 fragments add **434 functions and 66,900 executable bytes** from the
+266 fragments add **438 functions and 67,900 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -764,6 +764,7 @@ result order are written with their case groups in that order.
 | `script_get_nav_point` | `GetNavPoint` | `0x800fbe00` | 128 |
 | `script_ai_fire_at_current_target` | `AIFireAtCurrentTarget` | `0x800fbe80` | 172 |
 | `script_soldier_ai_fire_at_current_target` | `Soldier_AIFireAtCurrentTarget` | `0x800fbf2c` | 208 |
+| `script_ai_fire_mmg_at_current_target` | `AIFireMMGAtCurrentTarget` | `0x800fbffc` | 248 |
 | `script_set_move_point` | `SetMovePoint` | `0x800fc290` | 184 |
 | `script_ai_set_move_point_on_other` | `AISetMovePointOnOther`, `AIStartMovePointWalk` | `0x800fcc64` | 404 |
 | `script_ai_stop_move_point_walk` | `AIStopMovePointWalk`, `AIContinueMovePointWalk` | `0x800fcdf8` | 232 |
@@ -847,6 +848,7 @@ result order are written with their case groups in that order.
 | `script_debug_print` | `DebugTTYPrint`, `AILog`, `ScriptError` | `0x801030b0` | 144 |
 | `script_get_target_for` | `GetTargetFor` | `0x80103140` | 184 |
 | `script_set_obj_info` | `SetObjInfo`, `Soldier_SetObjInfo` | `0x8010567c` | 344 |
+| `script_get_distance_to_object_from_trigger` | `GetDistanceToObjectFromTrigger` | `0x801057d4` | 252 |
 | `script_get_voice_handle` | `GetVoiceHandle` | `0x80105b48` | 128 |
 | `script_register_coverpoint` | `RegisterCoverpoint` | `0x80105c6c` | 100 |
 | `script_ai_force_to_closest_cover_point` | `AIForceToClosestCoverPoint`, `AIForceToClosestMMG`, `AIForceToMMGFeeder` | `0x80105cd0` | 696 |
@@ -861,6 +863,7 @@ result order are written with their case groups in that order.
 | `script_activate_sound_buss` | `ActivateSoundBuss` | `0x80107c48` | 92 |
 | `script_end_sound` | `EndSound` | `0x80107ca4` | 148 |
 | `script_generic_sound_memory` | `GetGenericSoundStructureMemory` | `0x801086b4` | 60 |
+| `script_set_particle_system_velocity` | `SetParticleSystemVelocity` | `0x80108e0c` | 252 |
 | `script_destroy_particle_system` | `DestroyParticleSystem` | `0x80108f08` | 152 |
 | `script_clear_decals` | `ClearDecals` | `0x80108fa0` | 88 |
 | `script_projector_destroy` | `ProjectorDestroy` | `0x8010947c` | 48 |
@@ -974,6 +977,7 @@ result order are written with their case groups in that order.
 | `script_grenade_response_finished` | `GrenadeResponseFinished` | `0x8011a61c` | 196 |
 | `script_finished_investigation` | `FinishedInvestigation` | `0x8011a6e0` | 140 |
 | `script_sword_drawn` | `SwordDrawn` | `0x8011a76c` | 188 |
+| `script_has_pistol` | `HasPistol` | `0x8011a828` | 248 |
 | `script_ai_add_corpse_threat` | `AIAddCorpseThreat` | `0x8011a920` | 180 |
 | `script_get_weapon_info_helper` | `GetWeaponInfoHelper` | `0x8011b95c` | 48 |
 | `script_player_collision_id` | `GetCollisionIDFromScriptCollisionType` | `0x8011bbf8` | 60 |

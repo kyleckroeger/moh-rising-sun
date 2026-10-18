@@ -1170,7 +1170,11 @@
     "script_create_child.json",
     "script_player_set_camera_shake.json",
     "script_player_start_path.json",
-    "script_player_weapon_info.json"
+    "script_player_weapon_info.json",
+    "script_ai_fire_mmg_at_current_target.json",
+    "script_get_distance_to_object_from_trigger.json",
+    "script_set_particle_system_velocity.json",
+    "script_has_pistol.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

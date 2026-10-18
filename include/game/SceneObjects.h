@@ -97,6 +97,7 @@ class CSoldierObject {
     void ResumePropAimModifier();
     void EnablePropAimModifier(bool);
     void SaveGagState();
+    void FireMMG(CStaticObject *);
     void SpecifyTurnAngle(float);
     void SetCurrentWeapon(int, int, bool);
     void EjectHelmet(CVector3 &);
