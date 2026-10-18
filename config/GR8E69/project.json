@@ -1204,7 +1204,10 @@
     "script_soldier_create_explosion.json",
     "script_ai_collision_test.json",
     "script_get_constrained_rotate_angle.json",
-    "script_mp_get_player_velocity.json"
+    "script_mp_get_player_velocity.json",
+    "script_load_one_shot_sound_bank.json",
+    "script_activate_animated_light_by_id.json",
+    "script_detach_all_from_prop.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

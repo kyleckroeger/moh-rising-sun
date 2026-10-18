@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-353 fragments in `src/script/` reconstruct **579 functions and 95,808
+356 fragments in `src/script/` reconstruct **582 functions and 96,368
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 486 further built-in wrappers
-and stubs (82,132 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 489 further built-in wrappers
+and stubs (82,692 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-296 fragments add **486 functions and 82,132 executable bytes** from the
+299 fragments add **489 functions and 82,692 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -861,6 +861,7 @@ result order are written with their case groups in that order.
 | `script_ai_force_to_closest_cover_point` | `AIForceToClosestCoverPoint`, `AIForceToClosestMMG`, `AIForceToMMGFeeder` | `0x80105cd0` | 696 |
 | `script_display_letterbox` | `DisplayLetterbox` | `0x80105f88` | 140 |
 | `script_letterbox_transition` | `LetterboxTransition` | `0x80106014` | 152 |
+| `script_load_one_shot_sound_bank` | `LoadOneShotSoundBank` | `0x801060ac` | 172 |
 | `script_set_sound_zone` | `SetSoundZone` | `0x80106158` | 84 |
 | `script_debug_init_from_trigger` | `DebugInitFromTrigger` | `0x801061ac` | 48 |
 | `script_tutorial_text` | `DisplayBIGPromptText`, `DisplayTutorialText`, `KillTutorialText` and 2 more | `0x80106fa0` | 240 |
@@ -881,6 +882,7 @@ result order are written with their case groups in that order.
 | `script_create_light_by_type` | `CreateLightByType` | `0x801099a8` | 340 |
 | `script_destroy_light` | `DestroyLight` | `0x80109afc` | 156 |
 | `script_set_max_light_priority` | `SetMaxLightPriority` | `0x80109c90` | 156 |
+| `script_activate_animated_light_by_id` | `ActivateAnimatedLightByID` | `0x80109d2c` | 220 |
 | `script_deactivate_animated_light_by_id` | `DeactivateAnimatedLightByID` | `0x80109e08` | 124 |
 | `script_event_memory_block` | `GetEventSystemMemBlock` | `0x80109e84` | 96 |
 | `script_add_objective` | `AddObjective`, `ChangeObjectivePrompt` | `0x80109ee4` | 340 |
@@ -911,6 +913,7 @@ result order are written with their case groups in that order.
 | `script_attach_to_prop` | `AttachToProp`, `AttachAndAlignToProp` | `0x8010f188` | 764 |
 | `script_detach_from_waypoint` | `DetachFromWaypoint` | `0x8010f768` | 204 |
 | `script_attach_player_to_prop` | `AttachPlayerToProp`, `DetachFromProp` | `0x8010f834` | 448 |
+| `script_detach_all_from_prop` | `DetachAllFromProp` | `0x8010f9f4` | 168 |
 | `script_detach_player_from_prop` | `DetachPlayerFromProp` | `0x8010fa9c` | 244 |
 | `script_detach_from_soldier` | `DetachFromSoldier` | `0x8010ffdc` | 136 |
 | `script_soldier_detach_from_soldier` | `Soldier_DetachFromSoldier` | `0x80110064` | 180 |

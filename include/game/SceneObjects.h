@@ -227,6 +227,7 @@ class CAttachableObject {
     int AttachObject(CAnimObject *, int);
     int AttachObject(CStaticObject *, int);
     int DetachObject(ISceneNode *);
+    void DetachAllObjects();
     int AttachAndAlignObject(CAnimObject *, int);
     int GetFirstChildHandle();
     int GetNextChildHandle(int);
