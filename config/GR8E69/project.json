@@ -1167,7 +1167,8 @@
     "script_send_messages.json",
     "script_hier_object_register_bullet_damage.json",
     "script_create_child_root_hier_object.json",
-    "script_create_child.json"
+    "script_create_child.json",
+    "script_player_set_camera_shake.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
