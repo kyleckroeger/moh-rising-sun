@@ -1214,7 +1214,8 @@
     "script_reset_particle_system_rotation.json",
     "script_ai_get_pan_angle_to_move_point.json",
     "script_display_prompt_text.json",
-    "script_ai_set_status_var.json"
+    "script_ai_set_status_var.json",
+    "script_set_allow_animation_translation.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

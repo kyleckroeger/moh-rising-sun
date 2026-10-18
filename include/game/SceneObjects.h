@@ -52,7 +52,9 @@ class CStaticObject {
 
 class CAnimObject {
   public:
-    unsigned char unknown_0[0x294];
+    unsigned char unknown_0[0x234];
+    int allowAnimationTranslation; // +0x234; set by BIFunc_SetAllowAnimationTranslation.
+    unsigned char unknown_238[0x294 - 0x238];
     int gravity;    // +0x294
     int groundCheck; // +0x298
     void SetAttached(bool);
@@ -79,7 +81,19 @@ class CSoldierObject {
     CWeapon *weapons[1];    // +0xb84; slot table, indexed by slot number (extent unknown).
     unsigned char unknown_b88[0xf20 - 0xb88];
     int currentWeaponSlot;  // +0xf20
-    unsigned char unknown_f24[0x1050 - 0xf24];
+    unsigned char unknown_f24[0xf7c - 0xf24];
+    // Facial-expression blend state written by BIFunc_SetExpression; names are descriptive.
+    struct ExpressionState {
+        int current;        // +0xf7c
+        int pending;        // +0xf80
+        float currentBlend; // +0xf84
+        float pendingBlend; // +0xf88
+        float currentTime;  // +0xf8c
+        float pendingTime;  // +0xf90
+        float currentRate;  // +0xf94
+        float pendingRate;  // +0xf98
+    } expression;
+    unsigned char unknown_f9c[0x1050 - 0xf9c];
     int voiceHandle;        // +0x1050; -12 when no voice is playing.
     unsigned char unknown_1054[0x10a8 - 0x1054];
     CJawController jaw;     // +0x10a8

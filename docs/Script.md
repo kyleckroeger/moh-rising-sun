@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-363 fragments in `src/script/` reconstruct **590 functions and 98,732
+364 fragments in `src/script/` reconstruct **591 functions and 99,072
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 497 further built-in wrappers
-and stubs (85,056 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 498 further built-in wrappers
+and stubs (85,396 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-306 fragments add **497 functions and 85,056 executable bytes** from the
+307 fragments add **498 functions and 85,396 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -736,6 +736,7 @@ result order are written with their case groups in that order.
 | `script_play_turn_animation` | `PlayTurnAnimation` | `0x800f9f2c` | 236 |
 | `script_set_anim_callback` | `SetAnimCallback`, `SetAnimCallbackOnOther` | `0x800fa018` | 328 |
 | `script_set_anim_adjust` | `SetAnimAdjust` | `0x800fa160` | 288 |
+| `script_set_allow_animation_translation` | `SetAllowAnimationTranslation` | `0x800fa280` | 340 |
 | `script_set_japanese` | `SetJapanese` | `0x800fa3d4` | 72 |
 | `script_do_something_interesting` | `DoSomethingInteresting` | `0x800fa41c` | 148 |
 | `script_ai_setup_target_match_list` | `AISetupTargetMatchList`, `AIChooseTarget` | `0x800fa4b0` | 364 |
