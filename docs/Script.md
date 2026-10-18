@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-281 fragments in `src/script/` reconstruct **469 functions and 67,432
+283 fragments in `src/script/` reconstruct **472 functions and 68,276
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 376 further built-in wrappers
-and stubs (53,756 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 379 further built-in wrappers
+and stubs (54,600 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-224 fragments add **376 functions and 53,756 executable bytes** from the
+226 fragments add **379 functions and 54,600 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -728,6 +728,7 @@ result order are written with their case groups in that order.
 | `script_mp_set_aiming` | `MPSetAiming` | `0x800f9788` | 180 |
 | `script_enable_partition_on_other` | `EnablePartitionOnOther`, `SetAnimationStatePartitionOnOther` | `0x800f983c` | 448 |
 | `script_set_animation_state_on_other` | `SetAnimationStateOnOther` | `0x800f99fc` | 160 |
+| `script_set_animation_on_hier_object` | `SetAnimationOnHierObject` | `0x800f9a9c` | 236 |
 | `script_set_animation_state` | `SetAnimationState` | `0x800f9b88` | 184 |
 | `script_set_animation_state_on_partition` | `SetAnimationStateOnPartition` | `0x800f9c40` | 244 |
 | `script_play_turn_animation` | `PlayTurnAnimation` | `0x800f9f2c` | 236 |
@@ -853,6 +854,7 @@ result order are written with their case groups in that order.
 | `script_event_memory_block` | `GetEventSystemMemBlock` | `0x80109e84` | 96 |
 | `script_add_objective` | `AddObjective`, `ChangeObjectivePrompt` | `0x80109ee4` | 340 |
 | `script_static_object_play_animation` | `StaticObjectPlayAnimation` | `0x8010a038` | 224 |
+| `script_hier_object_play_animation` | `HierObjectPlayAnimation`, `StartMotionPlayback` | `0x8010a118` | 608 |
 | `script_stop_motion_playback` | `StopMotionPlayback` | `0x8010a378` | 276 |
 | `script_resume_motion_playback` | `ResumeMotionPlayback` | `0x8010a48c` | 192 |
 | `script_set_objective` | `SetObjective` | `0x8010ab40` | 156 |

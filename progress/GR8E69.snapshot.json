@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 697412,
+    "matching_code_bytes": 698256,
     "total_executable_code_bytes": 2492032,
-    "percent": 27.98567594637629,
+    "percent": 28.019543890287125,
     "categories": {
-      "reconstructed_game": 305196,
+      "reconstructed_game": 306040,
       "restored_library": 392216
     },
-    "matching_functions": 2848
+    "matching_functions": 2851
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "05c48bf4a9a9c98b4ac653b31d31f55068d762721e8f439427ea7ee6953598b8",
+    "config/GR8E69/project.json": "5ba90574cc276f6bf8659c6c4cbb44e857a947542bafda990a5c9f50edee1ef7",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -772,6 +772,7 @@
     "config/GR8E69/script_has_film_canister.json": "dba96ada09043da60649a9682d9d62d6808911d5616ec53690b592e42cc790b1",
     "config/GR8E69/script_hier_object_fire.json": "3fa21358c61c60718a441417156556979a4efdbf74e42c55e56467301b91b24f",
     "config/GR8E69/script_hier_object_map_weapon.json": "cbd92f1e292353b024331c843c8bd4ac0ecbacabbe1c3209f6c09f28bf35ab6a",
+    "config/GR8E69/script_hier_object_play_animation.json": "947b9e30f18c8368c1c16a5b0fdd9a17c95ee476118711f6f8f9c2c64d3130ea",
     "config/GR8E69/script_initialize_animated_texture.json": "03995072e6a9b3aa7c8295734b98b6d061f6f050d2d259d712f788279c4f921e",
     "config/GR8E69/script_is_draw_enabled.json": "767f93f405be27ad145606a49ad4e955a813048382c3dfef2bb7ab639ae2c671",
     "config/GR8E69/script_is_in_any_other_compartment.json": "c7aec9bf4ed49ccc85760fcdca5a1efb07c2671ff22ed5851467f0d7a2405196",
@@ -860,6 +861,7 @@
     "config/GR8E69/script_serializing_in.json": "e2e777db9a7578783750a3328dfb9ac51011c12ee67897cab0593e87d351733a",
     "config/GR8E69/script_set_anim_callback.json": "907ee5f08f97f79d1eef186a7443cf50a490ef795503c66dad26f854a23aa254",
     "config/GR8E69/script_set_animated_texture_frame.json": "ac8510d12f203caafa51e8485db997b24411f8285f557952b2401b8f5b02f06a",
+    "config/GR8E69/script_set_animation_on_hier_object.json": "2f379261404eb19bbe21a4ba320d5d09bdac304be55c6d9da2e12f0dfce98006",
     "config/GR8E69/script_set_animation_state.json": "3e03edfa5398a79ac2303f91265f4e47e2a4c172de0a8c1ae2d722b654d367a2",
     "config/GR8E69/script_set_animation_state_on_other.json": "bcad6f128b914e483d5995a65b30b25196cd0c94672b286d63f647c4f045e492",
     "config/GR8E69/script_set_animation_state_on_partition.json": "746b0917a11d981819a28b357236713c99500b2fe11373bbf8682e7517d4b5e5",
@@ -2394,6 +2396,7 @@
     "src/script/has_film_canister.cpp": "154bc0d9a8bf84a9cef31c6db403ea31d1aa48ddb566e1e3a4e0f5765a41d021",
     "src/script/hier_object_fire.cpp": "aa30fe3d7483c75667f5e3ce6481e1f65ed0a17fcefedc923506efb5160770c3",
     "src/script/hier_object_map_weapon.cpp": "7d7638a98df8d016eeb11133388a2923bd94f8a4b157ce1aa1c2725bcd1aa1f7",
+    "src/script/hier_object_play_animation.cpp": "c8112617b61a2406691221e32450d307256af4a4625d35078c5565ae89e9dd4b",
     "src/script/initialize_animated_texture.cpp": "78054039cd6a317bd722f912361b1369c42dfc35f3e0642383612d190d91d89c",
     "src/script/is_draw_enabled.cpp": "78c5ddb64f644270435f2f679bfd269e4e9ac94ee6704ea2e5c2057299258661",
     "src/script/is_in_any_other_compartment.cpp": "df51c0d2bb2b6e7252572a4aaf73dee28c3ea4eedb19a476490a024ad1c7dbaa",
@@ -2482,6 +2485,7 @@
     "src/script/serializing_in.cpp": "d21c625b83e1d3e5dcb3ad23afd2d38d5da9135fb2460818293a902758958fbe",
     "src/script/set_anim_callback.cpp": "0df6de65935a6ba5b62a088b41371c3373f862a6f8dc521a7736597ef7ef840f",
     "src/script/set_animated_texture_frame.cpp": "166afb200caffabf5b03d04fc6536b276627a43ffebccde02511c0646d14a7d9",
+    "src/script/set_animation_on_hier_object.cpp": "e71c398e8db0f72a83d02e13797ff6778c1ffb06eb0e4ba03d5b1206512a0595",
     "src/script/set_animation_state.cpp": "79f73da149d33ecf6015f57e2614bc5179ed9723280c7e622767947736fa389b",
     "src/script/set_animation_state_on_other.cpp": "fe3aa54f303632d83f35f3b427aed0941ec0359f7fbc5847db1163a701291124",
     "src/script/set_animation_state_on_partition.cpp": "55a0b1880d6241cd6b3ddc33c935b0d1af1dccfa6ba12442a47a9ef6d2824300",
@@ -26692,6 +26696,42 @@
       "discarded_functions": [],
       "object_sha256": "bc359a096af109443d5838efe4b873f2f60c52e4a8118755137b098f90f15298",
       "linked_sha256": "64805b2d4f0773e56d1a2c5aaf31c15ca9decffe3193d7a13b441ea873d0b606"
+    },
+    {
+      "id": "script_set_animation_on_hier_object",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 236,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "5d8f58f86ba4e539c50a439b8659987776a1f91b303cee18e2dcc4f5c2f5dc9a",
+      "linked_sha256": "932ca1592777ca8230e7690c6c923e8ea825aa2cfaa199aff42b762e0b7413f2"
+    },
+    {
+      "id": "script_hier_object_play_animation",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 608,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "5c5e774a92117899a4fea1d64ef2629df3137e4208f360e08382f2f05611643b",
+      "linked_sha256": "70db6df7ff8da06df01349005a795ea3a223fcbaffb1b861ba5fe58da1a60eec"
     }
   ],
   "code_map": {
@@ -49137,13 +49177,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x800f9a9c",
-            "size": 236,
-            "kind": "function",
-            "name": "BIFunc_SetAnimationOnHierObject__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x800f9d34",
             "size": 204,
             "kind": "function",
@@ -49855,20 +49888,6 @@
             "size": 220,
             "kind": "function",
             "name": "BIFunc_ActivateAnimatedLightByID__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8010a118",
-            "size": 240,
-            "kind": "function",
-            "name": "BIFunc_HierObjectPlayAnimation__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8010a208",
-            "size": 368,
-            "kind": "function",
-            "name": "BIFunc_StartMotionPlayback__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {
