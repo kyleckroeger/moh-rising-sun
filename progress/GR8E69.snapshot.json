@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 691632,
+    "matching_code_bytes": 691756,
     "total_executable_code_bytes": 2492032,
-    "percent": 27.753736709640968,
+    "percent": 27.758712568698957,
     "categories": {
-      "reconstructed_game": 299416,
+      "reconstructed_game": 299540,
       "restored_library": 392216
     },
-    "matching_functions": 2820
+    "matching_functions": 2821
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "9c2608b2af1ae8732b88c46faff258a9a451640854a90a85d7f0975ab96a7ff1",
+    "config/GR8E69/project.json": "499cde2e097fc0ef0fff5a5cab0527b59ee704cb59528fe8d8fd83825eac3ede",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -851,6 +851,7 @@
     "config/GR8E69/script_set_detonation_time.json": "571a85a27cc1c5c14444a224cf188b6072f3b424d5479503580e2e02f2106e04",
     "config/GR8E69/script_set_game_fov.json": "9935fedbc5c060cffe635ec5f058919e6dbad2935803412081eb2bdd01c31da6",
     "config/GR8E69/script_set_gravity.json": "814c6f02322b93d9a8a3b2ca0bd1bda089456cefffc14c43d603fa127d176780",
+    "config/GR8E69/script_set_grenade_timer.json": "84fd18bcebd8c11c6007d729ac8dc29257a103928e4e1642f2ac3b108454764e",
     "config/GR8E69/script_set_head_track_player.json": "d3026464253217cabdf5ed711bea1e17d0d9c2c2f95f8bf916781e565cdfeb28",
     "config/GR8E69/script_set_japanese.json": "7b7b8519132831faf612596dadfd461f8376e6707eaf3ee329ef97e98d3ba42a",
     "config/GR8E69/script_set_jaw_motion.json": "d7daf0bc6088a430d340293f18d1610f537c5242b88cd137c157443327bf53c9",
@@ -1372,7 +1373,7 @@
     "include/game/ParticleRecipe.h": "04bba33839dcdae3132d1316e831585288f74ef842a5b01c6f6d6c37929ee61d",
     "include/game/PropertyData.h": "952ae5ac78dc17e43053a7b905a8e58499a1faa3c7d0721269329f639095b22a",
     "include/game/SceneNode.h": "ebe954892cfb8bae90b89eda1676a2be7f45f14471648c9bf11146e1a051a0f1",
-    "include/game/SceneObjects.h": "ba600dd7935f3345f658c1ddc3a5ff4c578fdf9ce8e46c080709a9603944a9c8",
+    "include/game/SceneObjects.h": "7bc198880f7e9c572db743dfecdaf9535b73a0673657553c75746bed43cf354b",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
     "include/game/ScriptRuntime.h": "e6c5e20e70b740f8fae024d5b0711e408ad2db30aeaba9ceb7f72cbcc442ad8d",
@@ -2448,6 +2449,7 @@
     "src/script/set_detonation_time.cpp": "3c86cec608274fca256e4c83aa509050281928afd8046c715db681d8e4fe2d88",
     "src/script/set_game_fov.cpp": "d793975395c68e53e00bed2ef418b9504cc6ff7a84df4066f18777f380d7e8b7",
     "src/script/set_gravity.cpp": "58b307108c0bda6a635a39c70c4c82faa2f3bfbaaf20df54c80b031a78903ea8",
+    "src/script/set_grenade_timer.cpp": "6d3731148a23fd2ac56a89ea094044674c335189962e2c537b225943976341e1",
     "src/script/set_head_track_player.cpp": "7adbb70e4a6a564575dbd7e32d6fff095d27801e4a3daedce5ff90bbb25b7ce8",
     "src/script/set_japanese.cpp": "ad2b61cced1587ee3e6bfe04c07b2f9049cadb42b6af2e41e5f17d7e0a00e064",
     "src/script/set_jaw_motion.cpp": "2ffc60759945428d6236f3cc20f6ff52fac15ca8d98a5ea87ae91b30821e4039",
@@ -26211,6 +26213,24 @@
       "discarded_functions": [],
       "object_sha256": "55b534a964bfbc65dcc91db9a71b3c78994d3a900583bd8ee4309541c3f07203",
       "linked_sha256": "4aec8e7e3790f915c5e97ed9a22b1e5adc67be9d99201f6e8a0e72f2ebc717be"
+    },
+    {
+      "id": "script_set_grenade_timer",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 124,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "3b4396c6c73e33cae1713586b61e05f0ea8aa3f7021b5afa6353e5a4f50d151e",
+      "linked_sha256": "0b7839cbab1a1ae33d12ad9f5c55a9c533eaa2b77d2870309a54a349f6b40d13"
     }
   ],
   "code_map": {
@@ -49549,13 +49569,6 @@
             "size": 232,
             "kind": "function",
             "name": "BIFunc_CatchGrenade__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8010be28",
-            "size": 124,
-            "kind": "function",
-            "name": "BIFunc_SetGrenadeTimer__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

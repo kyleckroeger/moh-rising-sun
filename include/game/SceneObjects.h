@@ -89,6 +89,7 @@ class CSoldierObject {
     void SaveGagState();
     void SpecifyTurnAngle(float);
     void SetCurrentWeapon(int, int, bool);
+    void EjectHelmet(CVector3 &);
     void FireCurrentWeapon(float, EFireMethod);
 };
 
