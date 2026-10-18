@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-342 fragments in `src/script/` reconstruct **560 functions and 88,712
+344 fragments in `src/script/` reconstruct **564 functions and 90,084
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 467 further built-in wrappers
-and stubs (75,036 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 471 further built-in wrappers
+and stubs (76,408 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-285 fragments add **467 functions and 75,036 executable bytes** from the
+287 fragments add **471 functions and 76,408 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -902,6 +902,7 @@ result order are written with their case groups in that order.
 | `script_is_draw_enabled` | `IsDrawEnabled` | `0x8010c868` | 124 |
 | `script_player_activate_lookat_trigger` | `PlayerActivateLookatTrigger`, `PlayerDeactivateLookatTrigger`, `PlayerStartLookAt` | `0x8010c8e4` | 696 |
 | `script_player_stop_look_at` | `PlayerStopLookAt` | `0x8010cb9c` | 108 |
+| `script_create_mp_dump_object` | `CreateMPDumpObject`, `CreateDumpObject` | `0x8010cc08` | 796 |
 | `script_attach_to_prop` | `AttachToProp`, `AttachAndAlignToProp` | `0x8010f188` | 764 |
 | `script_detach_from_waypoint` | `DetachFromWaypoint` | `0x8010f768` | 204 |
 | `script_attach_player_to_prop` | `AttachPlayerToProp`, `DetachFromProp` | `0x8010f834` | 448 |
@@ -967,6 +968,7 @@ result order are written with their case groups in that order.
 | `script_ai_is_behavior_enabled` | `AIIsBehaviorEnabled` | `0x8011772c` | 156 |
 | `script_enter_buddy_teleport_area` | `EnterBuddyTeleportArea`, `ExitBuddyTeleportArea`, `IsBuddyInArea` and 3 more | `0x80117ca0` | 1448 |
 | `script_get_scripted_behavior_type` | `GetScriptedBehaviorType`, `SetScriptedBehaviorType` | `0x80118248` | 400 |
+| `script_create_mp_health` | `CreateMPHealth`, `CreateMPRankedAmmoWeapon` | `0x801183d8` | 576 |
 | `script_mp_get_player_body` | `MPGetPlayerBody` | `0x80118618` | 152 |
 | `script_set_mmg_location` | `SetMMGLocation` | `0x80118760` | 244 |
 | `script_ai_get_previous_behavior_type` | `AIGetPreviousBehaviorType` | `0x80118854` | 192 |

@@ -1193,7 +1193,9 @@
     "script_get_bs_object.json",
     "script_has_replay_item.json",
     "script_has_any_film_canister.json",
-    "script_attach_to_anim_object.json"
+    "script_attach_to_anim_object.json",
+    "script_create_mp_dump_object.json",
+    "script_create_mp_health.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

@@ -34,6 +34,7 @@ class TriggerObject {
     bool HasField(const char *) const;
     void GetPosition(CVector3 &) const;
     void GetMatrix(CMatrix &) const;
+    void GetRotationMatrix(CMatrix &) const;
     void GetForward(CVector3 &) const;
     void SetPositionZ(float);
     int GetLegacyField(int) const;
