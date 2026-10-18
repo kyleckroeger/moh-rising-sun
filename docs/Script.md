@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-341 fragments in `src/script/` reconstruct **559 functions and 88,476
+342 fragments in `src/script/` reconstruct **560 functions and 88,712
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 466 further built-in wrappers
-and stubs (74,800 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 467 further built-in wrappers
+and stubs (75,036 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-284 fragments add **466 functions and 74,800 executable bytes** from the
+285 fragments add **467 functions and 75,036 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -908,6 +908,7 @@ result order are written with their case groups in that order.
 | `script_detach_player_from_prop` | `DetachPlayerFromProp` | `0x8010fa9c` | 244 |
 | `script_detach_from_soldier` | `DetachFromSoldier` | `0x8010ffdc` | 136 |
 | `script_soldier_detach_from_soldier` | `Soldier_DetachFromSoldier` | `0x80110064` | 180 |
+| `script_attach_to_anim_object` | `AttachToAnimObject` | `0x80110118` | 236 |
 | `script_attach_to_hier_object` | `AttachToHierObject` | `0x80110204` | 636 |
 | `script_send_event_to_all_attached` | `SendEventToAllAttached` | `0x80110480` | 324 |
 | `script_set_jaw_motion` | `SetJawMotion` | `0x801111d4` | 156 |

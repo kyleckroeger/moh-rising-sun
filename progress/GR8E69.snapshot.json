@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 718456,
+    "matching_code_bytes": 718692,
     "total_executable_code_bytes": 2492032,
-    "percent": 28.830127381991886,
+    "percent": 28.839597565360318,
     "categories": {
-      "reconstructed_game": 326240,
+      "reconstructed_game": 326476,
       "restored_library": 392216
     },
-    "matching_functions": 2938
+    "matching_functions": 2939
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "673f8c22ef8bd112baef151689da77db5748dbda3a52e4015842d025613003aa",
+    "config/GR8E69/project.json": "8483ae5e0159919e0733ae9d9e164d2b615987153a695f2f0afc79cc4045b14a",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -706,6 +706,7 @@
     "config/GR8E69/script_attach_hier_base_to_mmg.json": "ae1cba99cb0a7a9b1c8ce2ce132bfcec09a27c3fe81b7eefb1c01ea18e671be4",
     "config/GR8E69/script_attach_player_to_mounted_machine_gun.json": "a3e65e4154a524d199462b5c9b2fa1a4dbaf29b5f2748a77c8e45c44c632d7a4",
     "config/GR8E69/script_attach_player_to_prop.json": "a8cc9f7bd9c9683ccbe292d9e39d3a187f48c0a2184b6749ad66d85d14cdab41",
+    "config/GR8E69/script_attach_to_anim_object.json": "27fa7b14bb258f3c51240446dffc193853f39afcd07f9a29c6f0a2223ed39019",
     "config/GR8E69/script_attach_to_hier_object.json": "3d2911901921e75052d87cd7bd49c8e22b45f4635439dca0cea133b78b636819",
     "config/GR8E69/script_attach_to_prop.json": "0c8fc575b9fb51598a939edbd8f9aa7f83432a44e0f82c9fb672de2fc0aa96e6",
     "config/GR8E69/script_attach_triggering_player_mmg.json": "f32f308f9bb4bcd0318665f3ac39598baa86065f92c99c6cb8278270677eaaf4",
@@ -2386,6 +2387,7 @@
     "src/script/attach_hier_base_to_mmg.cpp": "f652b25f613edd3c6900ee3372a522139c43b2b62863879f1c25121d8427eaf5",
     "src/script/attach_player_to_mounted_machine_gun.cpp": "97de6050e23a9df22f5d80ab20e0dc0d8e733721e784fb5e138a110f677876ba",
     "src/script/attach_player_to_prop.cpp": "93be014cd608069e5751e910684f05d4baab9c6b76434df03191a0a31c0e3210",
+    "src/script/attach_to_anim_object.cpp": "9dc541e892ad5130e9ecef3b2fa539e8716a58219905d7c1a1f349bdb1c5f9a4",
     "src/script/attach_to_hier_object.cpp": "0a62cab8aaa2638894319e095d1d95b0b76efe7e36202fce8e21c52185ddb1c8",
     "src/script/attach_to_prop.cpp": "146351dc9ef55ef08e4666bceac1ec40f6ed0611b9da6fd246528230e3a22efe",
     "src/script/attach_triggering_player_mmg.cpp": "5c29154ee239328db5be89bed4d1b43ba0667dee714f8ae1ee168decdd04382c",
@@ -27892,6 +27894,24 @@
       "discarded_functions": [],
       "object_sha256": "700aea86abc7b59339d68aef5728ee35ed5724f12328166a2fa28507375f1cae",
       "linked_sha256": "02a963321034a764ad2fa8ee32babf729c6eb7e27207c6283f6712fa8ec11e62"
+    },
+    {
+      "id": "script_attach_to_anim_object",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 236,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "c0d2b791c3b4967886df12ca877a048e59f368f8ee6e7599189717a066752f59",
+      "linked_sha256": "006eec9f4be5b2ccf7483c1641c7c1451fed042b4de1bd54c127aa7735e6b8a2"
     }
   ],
   "code_map": {
@@ -50838,13 +50858,6 @@
             "size": 424,
             "kind": "function",
             "name": "DetachFromSoldier__FibP10ISceneNode",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80110118",
-            "size": 236,
-            "kind": "function",
-            "name": "BIFunc_AttachToAnimObject__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {
