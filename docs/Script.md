@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-326 fragments in `src/script/` reconstruct **535 functions and 82,512
+327 fragments in `src/script/` reconstruct **536 functions and 82,728
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 442 further built-in wrappers
-and stubs (68,836 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 443 further built-in wrappers
+and stubs (69,052 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-269 fragments add **442 functions and 68,836 executable bytes** from the
+270 fragments add **443 functions and 69,052 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -946,6 +946,7 @@ result order are written with their case groups in that order.
 | `script_soldier_activate_aiming` | `Soldier_ActivateAiming` | `0x80116500` | 208 |
 | `script_soldier_suspend_aiming` | `Soldier_SuspendAiming`, `Soldier_ResumeAiming`, `ActivatePropAiming` and 5 more | `0x801165d0` | 1280 |
 | `script_set_head_track_player` | `SetHeadTrackPlayer` | `0x80116ad0` | 152 |
+| `script_reset_mmg` | `ResetMMG` | `0x80116c28` | 216 |
 | `script_load_compartment` | `LoadCompartment` | `0x80116e84` | 256 |
 | `script_is_in_any_other_compartment` | `IsInAnyOtherCompartment` | `0x80116f84` | 156 |
 | `script_ai_set_high_level_state` | `AISetHighLevelState`, `SoldierSetScriptHighLevelState`, `AIChooseBehavior` and 9 more | `0x80117020` | 1756 |

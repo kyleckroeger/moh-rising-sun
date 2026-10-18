@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 712492,
+    "matching_code_bytes": 712708,
     "total_executable_code_bytes": 2492032,
-    "percent": 28.590804612460836,
+    "percent": 28.59947223791669,
     "categories": {
-      "reconstructed_game": 320276,
+      "reconstructed_game": 320492,
       "restored_library": 392216
     },
-    "matching_functions": 2914
+    "matching_functions": 2915
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "bd9697eabf68c6374d5f3354b13425b5cff02ea556aae163e2cc71a8307c625a",
+    "config/GR8E69/project.json": "960ca11289062ee26587499f8d954eb7ff67c8e7ef82a0cdd6bf55d111708c6e",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -881,6 +881,7 @@
     "config/GR8E69/script_remove_triggered_hint.json": "44f0c65b3d12fb360c3ff1653185d888d64d02dbb0522dbfeefe102df1b8bd8a",
     "config/GR8E69/script_remove_vocal.json": "05da47848bb895fe8379ab269ed786014cf7fe9f6d57f88999be74016e4c42f4",
     "config/GR8E69/script_reset_animated_texture.json": "a18bf1dfb65b0cc609d3a0786b4d01759341bf9443fe3f75968da531484538f4",
+    "config/GR8E69/script_reset_mmg.json": "1bb3ea97eee4b3acbe87286b8c0252aed2ea4908584866be2f5835a217e4b279",
     "config/GR8E69/script_resume_motion_playback.json": "0abd4c3fa107eb35bf9cdf7d069bbbe95be225d01d2b19b0436bf6b3f6d128df",
     "config/GR8E69/script_scale_rel.json": "7286f80997e3c107155435bf9906d1a71692dda896c4e58ba90e716d655e6b19",
     "config/GR8E69/script_send_event.json": "e2de045f56736a17bcfe52f32c548ccf8f7722b35f10ba3ceee1e68b72c58183",
@@ -2548,6 +2549,7 @@
     "src/script/remove_triggered_hint.cpp": "dc4e5a686e71a6cd5b78daf6db2f46eb8fcb2b41b24fc92f3f7d4b986d8cd8ef",
     "src/script/remove_vocal.cpp": "9fb02b261a5426d863ecc63cc4c9b504dbd43723bd2935c4dd40603688831e18",
     "src/script/reset_animated_texture.cpp": "83053943052379bbc662125699e36a499b9c4912c41c548bd8507a83703f770f",
+    "src/script/reset_mmg.cpp": "8645de0ad6202024400717e15ade3042fb297a6c02c2654ddf49ab38723d7247",
     "src/script/resume_motion_playback.cpp": "70e626c796baf444df650d6de5621166d49f16e0e7d644dc74a421f797650575",
     "src/script/scale_rel.cpp": "bfd8541d11815c7f04cebcc04b290eaab021eb82ea69611d578001d1e04a341c",
     "src/script/send_event.cpp": "aeb25ced293e65de2134b1de5a13c6bf4fe08485ea0ab7d08b881636908fe844",
@@ -27592,6 +27594,24 @@
       "discarded_functions": [],
       "object_sha256": "1e287990289e8a4ea6e98814f7543a746697b9208e6837c635bf80a661cf7d87",
       "linked_sha256": "8dae0c0c616a26c1fd1032fe913467c95a9a9790b49b9dac9db4158dda0ee9f7"
+    },
+    {
+      "id": "script_reset_mmg",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 216,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "82f545dab14ee644b0795924670487727a5d9e0817d7f865f4ec57a69bf177a0",
+      "linked_sha256": "14a655e2fb9270a0a3079d94897727783c54433d8cf2ab5f1c0bb151ab166595"
     }
   ],
   "code_map": {
@@ -50888,13 +50908,6 @@
             "size": 192,
             "kind": "function",
             "name": "BIFunc_EjectHelmet__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80116c28",
-            "size": 216,
-            "kind": "function",
-            "name": "BIFunc_ResetMMG__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {
