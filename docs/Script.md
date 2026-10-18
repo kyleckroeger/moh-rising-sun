@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-311 fragments in `src/script/` reconstruct **513 functions and 76,076
+312 fragments in `src/script/` reconstruct **514 functions and 76,284
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 420 further built-in wrappers
-and stubs (62,400 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 421 further built-in wrappers
+and stubs (62,608 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-254 fragments add **420 functions and 62,400 executable bytes** from the
+255 fragments add **421 functions and 62,608 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -921,6 +921,7 @@ result order are written with their case groups in that order.
 | `script_set_detonation_time` | `SetDetonationTime` | `0x80114f3c` | 144 |
 | `script_set_detonation_time_for_player_turret` | `SetDetonationTimeForPlayerTurret` | `0x80114fcc` | 160 |
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |
+| `script_set_motion_blur` | `SetMotionBlur` | `0x80115498` | 208 |
 | `script_set_motion_blur_duration` | `SetMotionBlurDuration` | `0x80115568` | 252 |
 | `script_stop_corpse_search` | `StopCorpseSearch` | `0x80115884` | 196 |
 | `script_hier_object_set_look_object` | `HierObjectSetLookObject` | `0x80115948` | 172 |

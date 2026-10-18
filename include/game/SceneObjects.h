@@ -107,6 +107,7 @@ class CSoldierObject {
 // Method-only view of a hierarchy object.
 class CHierObject {
   public:
+    void RegisterBulletDamage(int, int, int, float);
     CStaticObject *GetSubObject(int);
 };
 
