@@ -1113,7 +1113,9 @@
     "script_change_npc_team.json",
     "script_moving_mech_force_update_trigger.json",
     "script_block_new_vibrations.json",
-    "script_initialize_animated_texture.json"
+    "script_initialize_animated_texture.json",
+    "script_set_collision_to_player.json",
+    "script_set_in_shadow.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

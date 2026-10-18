@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-262 fragments in `src/script/` reconstruct **448 functions and 63,148
+264 fragments in `src/script/` reconstruct **450 functions and 63,596
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 355 further built-in wrappers
-and stubs (49,472 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 357 further built-in wrappers
+and stubs (49,920 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-205 fragments add **355 functions and 49,472 executable bytes** from the
+207 fragments add **357 functions and 49,920 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -763,7 +763,9 @@ result order are written with their case groups in that order.
 | `script_ai_set_move_point_on_other` | `AISetMovePointOnOther`, `AIStartMovePointWalk` | `0x800fcc64` | 404 |
 | `script_ai_stop_move_point_walk` | `AIStopMovePointWalk`, `AIContinueMovePointWalk` | `0x800fcdf8` | 232 |
 | `script_set_gravity` | `SetGravity`, `SetGroundCheck`, `InduceGroundCheck` | `0x800fd7b4` | 452 |
+| `script_set_collision_to_player` | `SetCollisionToPlayer` | `0x800fda98` | 224 |
 | `script_set_can_be_pushed` | `SetCanBePushed` | `0x800fdb78` | 200 |
+| `script_set_in_shadow` | `SetInShadow` | `0x800fdc40` | 224 |
 | `script_enter_astar_volume` | `EnterAStarVolume`, `ExitAStarVolume` | `0x800fdd20` | 320 |
 | `script_register_astar_link_point` | `RegisterAStarLinkPoint`, `RegisterAStarVolume` | `0x800fde60` | 192 |
 | `script_disable_collision` | `DisableCollision` | `0x800fdf20` | 136 |
