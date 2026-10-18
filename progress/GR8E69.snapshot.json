@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 727640,
+    "matching_code_bytes": 728316,
     "total_executable_code_bytes": 2492032,
-    "percent": 29.198661975448147,
+    "percent": 29.225788432893317,
     "categories": {
-      "reconstructed_game": 335424,
+      "reconstructed_game": 336100,
       "restored_library": 392216
     },
-    "matching_functions": 2966
+    "matching_functions": 2968
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "3009706674c9536eda2f690ef3734ae1713223a063593a4ed27ebbf02299e115",
+    "config/GR8E69/project.json": "0bced614c04a3aca8b7366060a3513bcd8546eda76446e13558a7e232ca78600",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -760,6 +760,7 @@
     "config/GR8E69/script_disable_collision.json": "39bb5937c74c9d2fa88982f7a04ae5f7699f2ecc4cba5b659580e4378b0cd285",
     "config/GR8E69/script_disable_player_shoot.json": "d9b2720f28b70bf12ed3b71f907451bb5ef282914c340e1d549794ab9f8ca6a1",
     "config/GR8E69/script_display_letterbox.json": "61b3a26fc1cec091b73017c88832c988af0af72217c47ab13f6d62773faed3d2",
+    "config/GR8E69/script_display_prompt_text.json": "f51715506a784615a90149c2bcc2adcec2ccde0445005c5c07b4620a78c5f781",
     "config/GR8E69/script_do_something_interesting.json": "feebeac93013a665eff2ea9f7302c794cb4cbb1713ed7ba18cb015e31a8b38ca",
     "config/GR8E69/script_enable_non_vis_destruct.json": "6e386d458d7201c38af09959f64fcec0f92daabf1eabb91ed677b5544e8b648f",
     "config/GR8E69/script_enable_partition.json": "8edc44486f9163c3262adbb434c84cad84d45dc6890dfdcae2857e01179708e4",
@@ -2461,6 +2462,7 @@
     "src/script/disable_collision.cpp": "b57d187d80bc5c3f1bcf41541bd17e0cda792b26a7fcbb408b4d3d790f6e712a",
     "src/script/disable_player_shoot.cpp": "0d01e264198b025c1f52182c4da53a654e761bbf15ac9a6ffd2c802550f3656e",
     "src/script/display_letterbox.cpp": "f0aac1f4177f18b74d581891d7353714728d1ea1d912a45e3dca650544a10e47",
+    "src/script/display_prompt_text.cpp": "ff01bdf2576835ead0e707dfbf2603cd902e83ff290fa7b1fe769922b81c117b",
     "src/script/do_something_interesting.cpp": "e7edc54e335bbe5e76f0c3aa58beba7736a6aa02c8b695e2b98b39abc99e7644",
     "src/script/enable_non_vis_destruct.cpp": "f3720b0ecdc21153c05c7b0147a2bf65e34545eb820c5fe5e1bc974ab7aac1ed",
     "src/script/enable_partition.cpp": "464702c72b5f82f1cb7556cdc87ea82ef52b12069f41702791c106c2dca546a6",
@@ -28293,6 +28295,24 @@
       "discarded_functions": [],
       "object_sha256": "dba2ed29afe021748584b44fa0449c2f234c89605d55874a8b11f431a4128a1c",
       "linked_sha256": "0d324947435f92b0b3a095d0bb13db0e02d692bf9b86c5049e767d55484ad1be"
+    },
+    {
+      "id": "script_display_prompt_text",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 676,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "0bbcccdc5e95509ab4d7c1846f9cd8908c4efbb5c8be83c7bdf421c7e2a9d45e",
+      "linked_sha256": "7a5fe1fc9edd6fc4023fde72f34aba1cad4fbadddb9a8c15b9e424aa7a844c5f"
     }
   ],
   "code_map": {
@@ -50903,20 +50923,6 @@
             "size": 924,
             "kind": "function",
             "name": "BIFunc_DisplayPrompt__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80106cfc",
-            "size": 340,
-            "kind": "function",
-            "name": "BIFunc_DisplayPromptText__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80106e50",
-            "size": 336,
-            "kind": "function",
-            "name": "BIFunc_DisplayPromptInteger__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

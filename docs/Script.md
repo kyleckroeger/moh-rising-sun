@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-361 fragments in `src/script/` reconstruct **587 functions and 97,660
+362 fragments in `src/script/` reconstruct **589 functions and 98,336
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 494 further built-in wrappers
-and stubs (83,984 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 496 further built-in wrappers
+and stubs (84,660 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-304 fragments add **494 functions and 83,984 executable bytes** from the
+305 fragments add **496 functions and 84,660 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -867,6 +867,7 @@ result order are written with their case groups in that order.
 | `script_load_one_shot_sound_bank` | `LoadOneShotSoundBank` | `0x801060ac` | 172 |
 | `script_set_sound_zone` | `SetSoundZone` | `0x80106158` | 84 |
 | `script_debug_init_from_trigger` | `DebugInitFromTrigger` | `0x801061ac` | 48 |
+| `script_display_prompt_text` | `DisplayPromptText`, `DisplayPromptInteger` | `0x80106cfc` | 676 |
 | `script_tutorial_text` | `DisplayBIGPromptText`, `DisplayTutorialText`, `KillTutorialText` and 2 more | `0x80106fa0` | 240 |
 | `script_play_sound_from_input_trigger` | `PlaySoundFromInputTrigger`, `PlaySoundAtOffset`, `PlaySound` | `0x80107098` | 604 |
 | `script_play_sound_from_input_trigger2` | `PlaySoundFromInputTrigger2`, `PlaySoundAtOffset2` | `0x80107500` | 412 |
