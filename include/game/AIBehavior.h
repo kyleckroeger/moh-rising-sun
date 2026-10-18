@@ -10,8 +10,14 @@ class CStaticObject;
 // CAIObject::FindMatchingBehavior. Each class's GetType returns the selector
 // noted beside it. Storage, bases and virtual interfaces are not declared; the
 // built-ins convert the returned behavior pointer without adjustment.
+// Observed prefix of a buddy-lead checkpoint record.
+struct BuddyLeadCheckpoint {
+    int unknown_0;
+    int value; // +0x4; returned by BIFunc_GetBuddyLeadCheckpointFromID.
+};
 class CBuddyLeadBehavior { // Type 1.
   public:
+    static BuddyLeadCheckpoint *GetBuddyLeadCheckpointFromID(int);
     void HandleCheckpointReachedByBuddy(int);
     static void HandleCheckpointReachedByPlayer(int);
 };

@@ -198,6 +198,8 @@ class CAttachableObject {
 };
 class CTankObject {
   public:
+    unsigned char unknown_0[0xb50];
+    int lookObject; // +0xb50; set by BIFunc_HierObjectSetLookObject.
     void FireSubObject(int);
     void MapWeaponSlot(int, int);
 };

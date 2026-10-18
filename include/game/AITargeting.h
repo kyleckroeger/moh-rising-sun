@@ -147,7 +147,15 @@ public:
     int inShadow;        // +0x6e4
     float shadowAmount;  // +0x6e8
     int matchList;       // +0x6ec; first word of the soldier match list returned by address.
-    unsigned char unknown6f0[0x7a0 - 0x6f0];
+    unsigned char unknown6f0[0x770 - 0x6f0];
+    struct SnapState {
+        unsigned char unknown00[0x10];
+        CVector3 position; // +0x10
+        float angle;       // +0x20
+        int useAngle;      // +0x24
+        int active;        // +0x28
+    } snap;              // +0x770; set by BIFunc_AISnapToMovePoint*.
+    unsigned char unknown79c[0x7a0 - 0x79c];
     CAITactics tactics;  // +0x7a0
     CAIBehavior *FindMatchingBehavior(EBehaviorType);
     float GetDistanceSquaredXYReal(CAITarget);
@@ -183,12 +191,15 @@ public:
 class CAIThreatEvaluation {
 public:
     void FinishedInvestigation();
+    void AddCorpseThreat(BSObject *);
 };
 class CAISoldierObject {
 public:
     unsigned char unknown_0[0x7b0];
     CAIThreatEvaluation threatEvaluation; // +0x7b0
 };
+struct aistatus_match;
+class IMovingSceneNode;
 // Virtual-interface view of CAIObject: its table pointer follows the data at
 // +0x72c. Callers convert the CAIObject pointer they already hold.
 class CAIObjectInterface {
@@ -196,5 +207,16 @@ public:
     unsigned char unknown_0[0x72c];
     virtual ~CAIObjectInterface();
     virtual CAISoldierObject *AsAISoldierObject();
+    virtual void *AsAIPlayerObject();
+    virtual void *AsAITankObject();
+    virtual void PreUpdate();
+    virtual void Update(float);
+    virtual void UpdateFromGameObject(IMovingSceneNode *);
+    virtual void OnStateChange(EAIHighLevelState, EAIHighLevelState);
+    virtual void OnDeath();
+    virtual void SetupTargetMatchList(aistatus_match *, int);
+    virtual int ChooseTarget(float);
 };
+enum EGrenadeThrow { GrenadeThrowUnknown = 0 };
+int SetUpGrenadeShot(EGrenadeThrow, ISceneNode *);
 #endif

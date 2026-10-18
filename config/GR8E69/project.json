@@ -1154,7 +1154,13 @@
     "script_serialize_value.json",
     "script_serializable.json",
     "script_finished_investigation.json",
-    "script_set_obj_info.json"
+    "script_set_obj_info.json",
+    "script_ai_setup_target_match_list.json",
+    "script_ai_snap_to_move_point.json",
+    "script_soldier_setup_grenade_shot.json",
+    "script_hier_object_set_look_object.json",
+    "script_get_buddy_lead_checkpoint_from_id.json",
+    "script_ai_add_corpse_threat.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

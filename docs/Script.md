@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-303 fragments in `src/script/` reconstruct **500 functions and 73,552
+309 fragments in `src/script/` reconstruct **508 functions and 75,060
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 407 further built-in wrappers
-and stubs (59,876 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 415 further built-in wrappers
+and stubs (61,384 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-246 fragments add **407 functions and 59,876 executable bytes** from the
+252 fragments add **415 functions and 61,384 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -736,6 +736,7 @@ result order are written with their case groups in that order.
 | `script_set_anim_callback` | `SetAnimCallback`, `SetAnimCallbackOnOther` | `0x800fa018` | 328 |
 | `script_set_japanese` | `SetJapanese` | `0x800fa3d4` | 72 |
 | `script_do_something_interesting` | `DoSomethingInteresting` | `0x800fa41c` | 148 |
+| `script_ai_setup_target_match_list` | `AISetupTargetMatchList`, `AIChooseTarget` | `0x800fa4b0` | 364 |
 | `script_choose_target_by_id` | `ChooseTargetByID` | `0x800fa61c` | 296 |
 | `script_ai_choose_target_by_id` | `AIChooseTargetByID`, `Soldier_AIChooseTargetByID` | `0x800fa744` | 348 |
 | `script_register_location_target` | `RegisterLocationTarget`, `DeRegisterLocationTarget` | `0x800fa8a0` | 288 |
@@ -766,9 +767,11 @@ result order are written with their case groups in that order.
 | `script_set_move_point` | `SetMovePoint` | `0x800fc290` | 184 |
 | `script_ai_set_move_point_on_other` | `AISetMovePointOnOther`, `AIStartMovePointWalk` | `0x800fcc64` | 404 |
 | `script_ai_stop_move_point_walk` | `AIStopMovePointWalk`, `AIContinueMovePointWalk` | `0x800fcdf8` | 232 |
+| `script_ai_snap_to_move_point` | `AISnapToMovePoint`, `AISnapToMovePointAndAngle` | `0x800fcee0` | 436 |
 | `script_ai_get_distance_to_move_point` | `AIGetDistanceToMovePoint` | `0x800fd094` | 128 |
 | `script_soldier_ai_get_distance_to_move_point` | `Soldier_AIGetDistanceToMovePoint` | `0x800fd234` | 200 |
 | `script_ai_send_flag` | `AISendFlag` | `0x800fd2fc` | 320 |
+| `script_soldier_setup_grenade_shot` | `Soldier_SetupGrenadeShot` | `0x800fd708` | 172 |
 | `script_set_gravity` | `SetGravity`, `SetGroundCheck`, `InduceGroundCheck` | `0x800fd7b4` | 452 |
 | `script_set_hd_collision` | `SetHDCollision` | `0x800fd978` | 288 |
 | `script_set_collision_to_player` | `SetCollisionToPlayer` | `0x800fda98` | 224 |
@@ -918,6 +921,7 @@ result order are written with their case groups in that order.
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |
 | `script_set_motion_blur_duration` | `SetMotionBlurDuration` | `0x80115568` | 252 |
 | `script_stop_corpse_search` | `StopCorpseSearch` | `0x80115884` | 196 |
+| `script_hier_object_set_look_object` | `HierObjectSetLookObject` | `0x80115948` | 172 |
 | `script_hier_object_map_weapon` | `HierObjectMapWeapon` | `0x801159f4` | 188 |
 | `script_hier_object_fire` | `HierObjectFire` | `0x80115ca8` | 184 |
 | `script_ai_find_tank` | `AIFindTank` | `0x80115e48` | 108 |
@@ -946,6 +950,7 @@ result order are written with their case groups in that order.
 | `script_anim_object_set_anim_callback` | `AnimObject_SetAnimCallback` | `0x801195dc` | 208 |
 | `script_signal_buddy_lead_checkpoint_reached` | `SignalBuddyLeadCheckpointReached` | `0x801196ac` | 260 |
 | `script_signal_buddy_lead_checkpoint_reached_by_player` | `SignalBuddyLeadCheckpointReachedByPlayer` | `0x801197b0` | 124 |
+| `script_get_buddy_lead_checkpoint_from_id` | `GetBuddyLeadCheckpointFromID` | `0x8011982c` | 184 |
 | `script_get_distance_to_player` | `GetDistanceToPlayer` | `0x801198e4` | 196 |
 | `script_start_slow_moh` | `StartSlowMOH` | `0x80119ad8` | 248 |
 | `script_stop_slow_moh` | `StopSlowMOH` | `0x80119bd0` | 88 |
@@ -959,6 +964,7 @@ result order are written with their case groups in that order.
 | `script_grenade_response_finished` | `GrenadeResponseFinished` | `0x8011a61c` | 196 |
 | `script_finished_investigation` | `FinishedInvestigation` | `0x8011a6e0` | 140 |
 | `script_sword_drawn` | `SwordDrawn` | `0x8011a76c` | 188 |
+| `script_ai_add_corpse_threat` | `AIAddCorpseThreat` | `0x8011a920` | 180 |
 | `script_get_weapon_info_helper` | `GetWeaponInfoHelper` | `0x8011b95c` | 48 |
 | `script_player_collision_id` | `GetCollisionIDFromScriptCollisionType` | `0x8011bbf8` | 60 |
 | `script_add_triggered_hint` | `AddTriggeredHint` | `0x8011bc34` | 168 |
