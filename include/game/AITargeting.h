@@ -150,6 +150,7 @@ public:
     unsigned char unknown6f0[0x7a0 - 0x6f0];
     CAITactics tactics;  // +0x7a0
     CAIBehavior *FindMatchingBehavior(EBehaviorType);
+    float GetDistanceSquaredXYReal(CAITarget);
     void EnableBehavior(EBehaviorType);
     void DisableBehavior(EBehaviorType);
     int IsBehaviorEnabled(EBehaviorType);

@@ -14,4 +14,5 @@ template <class T> T MathFunClamp(T value, T min, T max) {
         return result;
     }
 }
+float MathFunRandomReal(float, float);
 #endif

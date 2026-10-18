@@ -24,7 +24,7 @@ class CBuddyFollowBehavior { // Type 2.
     void EnterBuddyTeleportArea(int);
     void ExitBuddyTeleportArea(int);
     int IsBuddyInArea(int);
-    void UpdateDistanceToPlayer();
+    float UpdateDistanceToPlayer();
     static void RegisterBuddyFollowObject(BSObject *, float, float, float, float);
 };
 

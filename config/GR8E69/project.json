@@ -1136,7 +1136,15 @@
     "script_set_animation_on_hier_object.json",
     "script_hier_object_play_animation.json",
     "script_translate_rel.json",
-    "script_send_event_to_all_attached.json"
+    "script_send_event_to_all_attached.json",
+    "script_ai_get_distance_to_target_xyz.json",
+    "script_ai_get_distance_to_move_point.json",
+    "script_soldier_ai_get_distance_to_move_point.json",
+    "script_get_rotate_rel.json",
+    "script_get_distance_to_player.json",
+    "script_get_distance_between_players.json",
+    "script_update_fire_position.json",
+    "script_get_random_float.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

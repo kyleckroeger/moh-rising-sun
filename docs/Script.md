@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-285 fragments in `src/script/` reconstruct **475 functions and 69,488
+293 fragments in `src/script/` reconstruct **484 functions and 70,604
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 382 further built-in wrappers
-and stubs (55,812 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 391 further built-in wrappers
+and stubs (56,928 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-228 fragments add **382 functions and 55,812 executable bytes** from the
+236 fragments add **391 functions and 56,928 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -748,6 +748,7 @@ result order are written with their case groups in that order.
 | `script_ai_continue_spline_path_walk` | `AIContinueSplinePathWalk` | `0x800fafec` | 116 |
 | `script_soldier_ai_continue_spline_path_walk` | `Soldier_AIContinueSplinePathWalk` | `0x800fb060` | 180 |
 | `script_ai_loop_spline_path_walk` | `AILoopSplinePathWalk` | `0x800fb114` | 116 |
+| `script_ai_get_distance_to_target_xyz` | `AIGetDistanceToTargetXYZ` | `0x800fb240` | 128 |
 | `script_ai_start_astar_path_walk` | `AIStartAStarPathWalk` | `0x800fb2c0` | 172 |
 | `script_ai_start_astar_path_walk_to_last_position_on_network` | `AIStartAStarPathWalkToLastPositionOnNetwork`, `AtClosestPointToPlayerOffNetwork` | `0x800fb36c` | 620 |
 | `script_ai_start_astar_path_walk_to_move_point` | `AIStartAStarPathWalkToMovePoint`, `AIStopAStarPathWalk`, `AIStartCoverPointWalk`, `AIStopCoverPointWalk` | `0x800fb5d8` | 520 |
@@ -764,6 +765,8 @@ result order are written with their case groups in that order.
 | `script_set_move_point` | `SetMovePoint` | `0x800fc290` | 184 |
 | `script_ai_set_move_point_on_other` | `AISetMovePointOnOther`, `AIStartMovePointWalk` | `0x800fcc64` | 404 |
 | `script_ai_stop_move_point_walk` | `AIStopMovePointWalk`, `AIContinueMovePointWalk` | `0x800fcdf8` | 232 |
+| `script_ai_get_distance_to_move_point` | `AIGetDistanceToMovePoint` | `0x800fd094` | 128 |
+| `script_soldier_ai_get_distance_to_move_point` | `Soldier_AIGetDistanceToMovePoint` | `0x800fd234` | 200 |
 | `script_ai_send_flag` | `AISendFlag` | `0x800fd2fc` | 320 |
 | `script_set_gravity` | `SetGravity`, `SetGroundCheck`, `InduceGroundCheck` | `0x800fd7b4` | 452 |
 | `script_set_hd_collision` | `SetHDCollision` | `0x800fd978` | 288 |
@@ -810,6 +813,7 @@ result order are written with their case groups in that order.
 | `script_player_throw_grenade` | `PlayerThrowGrenade` | `0x80100b28` | 128 |
 | `script_player_reset_grenade_count` | `PlayerResetGrenadeCount` | `0x80100ba8` | 128 |
 | `script_get_random_integer` | `GetRandomInteger` | `0x80100c28` | 176 |
+| `script_get_random_float` | `GetRandomFloat` | `0x80100cd8` | 160 |
 | `script_get_my_instance_data` | `GetMyInstanceData` | `0x80100d78` | 128 |
 | `script_get_instance_data_for` | `GetInstanceDataFor` | `0x80100df8` | 136 |
 | `script_bs_object_as_scene_node` | `BSObject_AsSceneNode` | `0x80100e80` | 180 |
@@ -858,6 +862,7 @@ result order are written with their case groups in that order.
 | `script_stop_motion_playback` | `StopMotionPlayback` | `0x8010a378` | 276 |
 | `script_resume_motion_playback` | `ResumeMotionPlayback` | `0x8010a48c` | 192 |
 | `script_translate_rel` | `TranslateRel`, `RotateRel` | `0x8010a6ac` | 888 |
+| `script_get_rotate_rel` | `GetRotateRel`, `GetTranslateRel` | `0x8010aa24` | 152 |
 | `script_set_objective` | `SetObjective` | `0x8010ab40` | 156 |
 | `script_get_soldier_weapon_in_slot` | `GetSoldierWeaponInSlot` | `0x8010b908` | 112 |
 | `script_get_current_weapon_class` | `GetCurrentWeaponClass` | `0x8010b978` | 148 |
@@ -932,6 +937,7 @@ result order are written with their case groups in that order.
 | `script_anim_object_set_anim_callback` | `AnimObject_SetAnimCallback` | `0x801195dc` | 208 |
 | `script_signal_buddy_lead_checkpoint_reached` | `SignalBuddyLeadCheckpointReached` | `0x801196ac` | 260 |
 | `script_signal_buddy_lead_checkpoint_reached_by_player` | `SignalBuddyLeadCheckpointReachedByPlayer` | `0x801197b0` | 124 |
+| `script_get_distance_to_player` | `GetDistanceToPlayer` | `0x801198e4` | 196 |
 | `script_start_slow_moh` | `StartSlowMOH` | `0x80119ad8` | 248 |
 | `script_stop_slow_moh` | `StopSlowMOH` | `0x80119bd0` | 88 |
 | `script_initialize_animated_texture` | `InitializeAnimatedTexture`, `SetAnimatedTextureState` | `0x80119d6c` | 536 |
@@ -948,7 +954,9 @@ result order are written with their case groups in that order.
 | `script_add_triggered_hint` | `AddTriggeredHint` | `0x8011bc34` | 168 |
 | `script_remove_triggered_hint` | `RemoveTriggeredHint` | `0x8011bcdc` | 244 |
 | `script_coop_attach` | `AttachPlayerToPropCoop2`, `AttachPlayerToPropCoop`, `AttachPlayerIDToPropCoop` and 5 more | `0x8011c678` | 408 |
+| `script_get_distance_between_players` | `GetDistanceBetweenPlayers` | `0x8011c810` | 76 |
 | `script_coop_players` | `SetParanoiaParameters`, `MPAddBotHealth`, `ForcePlayersApart` and 11 more | `0x8011c85c` | 712 |
+| `script_update_fire_position` | `UpdateFirePosition` | `0x8011cb24` | 76 |
 | `script_coop_triggers` | `SetSplitScreen`, `AssignCptDistances`, `ForcePlayerWarp` and 31 more | `0x8011cb70` | 1856 |
 | `script_bot_done_reloading` | `BotDoneReloading` | `0x8011d2b0` | 144 |
 
