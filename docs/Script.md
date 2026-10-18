@@ -1040,17 +1040,50 @@ result order are written with their case groups in that order.
 | `script_coop_triggers` | `SetSplitScreen`, `AssignCptDistances`, `ForcePlayerWarp` and 31 more | `0x8011cb70` | 1856 |
 | `script_bot_done_reloading` | `BotDoneReloading` | `0x8011d2b0` | 144 |
 
-Open problems: built-ins that return a float from a call (`AIGetDistanceToTargetXYZ`,
-`AIGetDistanceToMovePoint`, `AICollisionTest` and others) or a constant float
-(`GetDistanceBetweenPlayers`, `UpdateFirePosition`) store `f1` to the frame and
-reload it as an integer after the stack pointer is loaded. No tested union,
-pointer-cast or inline-helper spelling, under either the 3.8.1 or 3.9.3 profile,
-reproduces that scheduling yet. A few others (`DetachFromWaypoint`,
-`SetLightVolumeTransitionDuration`, `ChangeClipPlane`, `HasReplayItem`,
-`HasAnyFilmCanister`) differ only in register allocation or scheduling, and
-built-ins that use two separate string literals (`AttachToSoldier`,
-`DetachMMGProp`) need more than one read-only range. These remain original
-context.
+**Further code-generation idioms.** A float result is computed into a plain
+local, the stack is popped, and the value is then copied through
+`volatile float result = x; **stack = *(int *)&result;`, which reproduces the
+`stfs`/`lwz` pair after the pop; a constant float result declares the volatile
+before the pop, and a result that follows by-reference outputs reads it back with
+`*(volatile int *)&result`. Schedule registrations read every argument into a
+local in argument order before the call, square distances in place and type the
+event as `unsigned short`. Floating tests compiled as `cror so,eq,gt` come from
+`!(x >= c)`. A `CMatrix` local repeats the original inline class-initialization
+check (`if (!CMatrix::s_ClassInit) CMatrix::InitClass();`); a `CMatrix *` local
+keeps the matrix address in a saved register where the original does. Switch
+decision trees depend on the case set: separate case bodies with the same value
+give separate equality tests, and an explicit empty case below the smallest real
+case makes GCC test that case first. The degree-to-radian scale in `RotateRel` is
+`3.141593f / 180.0f`, one unit in the last place above pi/180. `CAIObject`'s table
+pointer is at `+0x72c` (`CAIObjectInterface`): slot 2 is `AsAISoldierObject`,
+slot 9 `OnDeath`, slot 10 `SetupTargetMatchList` and slot 11 `ChooseTarget`.
+
+**Observed rules (continued).** Player turret detonation time is the script value
+times 30. `EndLevel` sets the level-won bit (mask `0x200`) in the profile word at
+`+0x31664` and sets `g_GameFlow+8`, which `CPauseMenu::RestartLevel` also sets.
+`BreakPoint` prints `"break point!\n"`. The alarm built-ins belong to `alarm.cpp`,
+not `bsbifunc.cpp`. `AISetStatusVar` treats status variable 11 reaching 15 as a
+death (Frontline uses 13). `MechFollowPath` scales its speed by 1/59.94 and its
+angles by degrees-per-frame in radians.
+
+**Remaining blockers.** Some built-ins cannot be separated into their own units
+under the current manifest rules:
+- `ModifyTotalKillableEnemyCount` reads a string merged with an earlier
+  function's literal.
+- `AttachToSoldier`, `AttachToSoldierEmptyHand`, `AttachMMGProp` and
+  `DetachMMGProp` read `"rt_hand"`, which the linker shares with another file.
+- `GiveEnemyGrenadeWeapon`, its `Soldier_` variant and the bearing built-ins use
+  function-local statics with dynamic initialization in `.bss`.
+- `MechSetPathFlag` and `DoDamageIfLocationMatches` match as code, but their
+  double-plus-float read-only data pads to 16 bytes while the next word belongs to
+  a still-unmatched function.
+
+Others are close but not yet exact: `IsAliasSoundLooping` (which also holds the
+`"none"` string that `PlayAliasSound` and `PlayVocal` need), both `GetObjInfo`
+variants, `AddPlayerAmmo`, `SetExpression`, `TeleportToPlayerByNavPoint`,
+`CanMeleeTarget`, `SetBlinkState`, `SetDefaultFogParams`,
+`GetSpeedRelativeToPlayer`, `MoveFromObjToObj`, `MechFollowPath` and
+`PlayVibrationEvent`. These remain original context.
 
 ## Verification and next work
 
