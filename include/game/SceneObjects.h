@@ -203,10 +203,14 @@ class CAnimObjectInterface : public IMovingSceneNode {
 // table. Names come from the symbols in each slot; types beyond the symbols are
 // placeholders. Callers convert the scene-node pointers they already hold.
 class CPlayerObject;
+class CAnimObject;
 class CAttachableObject {
   public:
     int AttachObject(CPlayerObject *, int, bool);
+    int AttachObject(CAnimObject *, int);
+    int AttachObject(CStaticObject *, int);
     int DetachObject(ISceneNode *);
+    int AttachAndAlignObject(CAnimObject *, int);
     int GetFirstChildHandle();
     int GetNextChildHandle(int);
     ISceneNode *GetChild(int);

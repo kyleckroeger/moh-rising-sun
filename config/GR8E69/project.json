@@ -1178,7 +1178,10 @@
     "script_attach_player_to_prop.json",
     "script_detach_player_from_prop.json",
     "script_set_mmg_location.json",
-    "script_reset_mmg.json"
+    "script_reset_mmg.json",
+    "script_attach_to_prop.json",
+    "script_attach_to_hier_object.json",
+    "script_attach_hier_base_to_mmg.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

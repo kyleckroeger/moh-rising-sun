@@ -5,6 +5,7 @@
 class CAISplinePath;
 class CWeapon;
 class CVector3;
+class CStaticObject;
 class ISceneNode;
 struct BSObject;
 
@@ -129,7 +130,9 @@ class CPlayerObject {
     CSprite *binocularOverlay; // +0xe48; set by BIFunc_UseBinoculars.
     unsigned char unknown_e4c[0xe78 - 0xe4c];
     CWeapon *thrownWeapon; // +0xe78; checked by BIFunc_PlayerWeaponInfo when no weapon object matches.
-    unsigned char unknown_e7c[0x10bc - 0xe7c];
+    unsigned char unknown_e7c[0xe80 - 0xe7c];
+    CStaticObject *mmgBase; // +0xe80; set by BIFunc_AttachHierBaseToMMG.
+    unsigned char unknown_e84[0x10bc - 0xe84];
     int cameraPitchUnhinged; // +0x10bc
     unsigned char unknown_10c0[0x10da - 0x10c0];
     short promptSlot;        // +0x10da; prompt buffer used by BIFunc_AddPlayerAmmo.
