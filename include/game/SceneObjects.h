@@ -2,12 +2,15 @@
 #ifndef GAME_SCENE_OBJECTS_H
 #define GAME_SCENE_OBJECTS_H
 #include "SceneNode.h"
+#include "AITargeting.h"
 struct BSObject;
 class CWeapon;
 
 // Original enum tag; its members are unknown.
 enum EPlayerCollisionType { PlayerCollisionTypeUnknown = 0 };
 EClsnId GetCollisionIDFromScriptCollisionType(EPlayerCollisionType);
+enum EScriptCollisionType { ScriptCollisionTypeUnknown = 0 };
+EClsnId GetCollisionIDFromScriptCollisionType(EScriptCollisionType, ETeam);
 // Original enum tag; its members are unknown.
 enum EFireMethod { FireMethodUnknown = 0 };
 
@@ -36,6 +39,7 @@ class CStaticObject {
     unsigned char unknown_0[0x214];
     int maxLightPriority; // +0x214
     Flags flags;          // +0x218
+    unsigned int mechFlags; // +0x21c; bits set and cleared by BIFunc_MechSetFlag.
 };
 
 class CAnimObject {

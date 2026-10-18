@@ -133,7 +133,11 @@ public:
     unsigned char team;  // +0x598; set by BIFunc_AISetTeam.
     unsigned char unknown599[0x5ec - 0x599];
     CAIStatus status;    // +0x5ec
-    unsigned char unknown5ed[0x638 - 0x5ed];
+    unsigned char unknown5ed[0x624 - 0x5ed];
+    float accuracyNear;  // +0x624; set per accuracy level by BIFunc_SetAccuracy.
+    unsigned char unknown628[4];
+    float accuracyFar;   // +0x62c
+    unsigned char unknown630[0x638 - 0x630];
     float hearingRadius; // +0x638; set by BIFunc_AISetHearingRadius.
     unsigned char unknown63c[0x6e4 - 0x63c];
     int inShadow;        // +0x6e4

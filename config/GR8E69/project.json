@@ -1109,7 +1109,9 @@
     "script_add_film_canister.json",
     "script_has_film_canister.json",
     "script_add_replay_item.json",
-    "script_set_grenade_timer.json"
+    "script_set_grenade_timer.json",
+    "script_change_npc_team.json",
+    "script_moving_mech_force_update_trigger.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

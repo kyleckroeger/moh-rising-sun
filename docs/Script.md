@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-258 fragments in `src/script/` reconstruct **442 functions and 61,776
+260 fragments in `src/script/` reconstruct **445 functions and 62,340
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 349 further built-in wrappers
-and stubs (48,100 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 352 further built-in wrappers
+and stubs (48,664 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-201 fragments add **349 functions and 48,100 executable bytes** from the
+203 fragments add **352 functions and 48,664 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -860,6 +860,7 @@ result order are written with their case groups in that order.
 | `script_set_jaw_motion` | `SetJawMotion` | `0x801111d4` | 156 |
 | `script_set_muzzle_fire_for_player` | `SetMuzzleFireForPlayer` | `0x801113c8` | 200 |
 | `script_change_players_team` | `ChangePlayersTeam` | `0x801125cc` | 200 |
+| `script_change_npc_team` | `ChangeNPCTeam` | `0x80112694` | 236 |
 | `script_ai_set_team` | `AISetTeam` | `0x80112780` | 184 |
 | `script_unhinge_camera_pitch` | `UnhingeCameraPitch` | `0x80112838` | 156 |
 | `script_toggle_player_vs_trigger_checks` | `TogglePlayerVsTriggerChecks` | `0x801128d4` | 96 |
@@ -877,6 +878,7 @@ result order are written with their case groups in that order.
 | `script_player_force_to_weapon` | `PlayerForceToWeapon` | `0x801138c4` | 156 |
 | `script_register_save_point` | `RegisterSavePoint`, `PerformSavePointResponse` | `0x80113e8c` | 280 |
 | `script_serializing_in` | `SerializingIn`, `SerializingOut` | `0x80114040` | 208 |
+| `script_moving_mech_force_update_trigger` | `MovingMechForceUpdateTrigger`, `MechSetFlag` | `0x8011461c` | 328 |
 | `script_fade_out` | `FadeOut`, `FadeIn` | `0x80114a88` | 384 |
 | `script_set_detonation_time` | `SetDetonationTime` | `0x80114f3c` | 144 |
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |

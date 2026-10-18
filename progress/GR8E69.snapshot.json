@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 691756,
+    "matching_code_bytes": 692320,
     "total_executable_code_bytes": 2492032,
-    "percent": 27.758712568698957,
+    "percent": 27.781344701833685,
     "categories": {
-      "reconstructed_game": 299540,
+      "reconstructed_game": 300104,
       "restored_library": 392216
     },
-    "matching_functions": 2821
+    "matching_functions": 2824
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "499cde2e097fc0ef0fff5a5cab0527b59ee704cb59528fe8d8fd83825eac3ede",
+    "config/GR8E69/project.json": "bc1ecf610b0fd4eaa4fe747e6b92aa4de0dfa075f8b75eb050c83a9a764e831f",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -706,6 +706,7 @@
     "config/GR8E69/script_cancel_timer_event.json": "f1858093055cd3a1772ebb89a54bc35e2cf84404c4fa8a1b75183c2777339bc9",
     "config/GR8E69/script_cast.json": "7c615bfe0ee451f5a1c5c24d177e70f1240a882f1a4e786cc687fd359c560af8",
     "config/GR8E69/script_change_letterbox_width.json": "83ee56c61c16ba6a68c3fb946d6f47f1c73f9dd2d7f4f316a9d9a3877acebfaf",
+    "config/GR8E69/script_change_npc_team.json": "fae12e30156cfadbbc9adb8ed186f2e7a24951ffe5b36c5c41d4b797e77a5e74",
     "config/GR8E69/script_change_players_team.json": "5ccd6fb027c045c6e17ccd74f2205010bee15099c3db15f94316bb6576fd9e19",
     "config/GR8E69/script_choose_target_by_id.json": "8b06ca24c42c1cfce268827f447949c6af635887e790d6ebff0ec3777fb1f892",
     "config/GR8E69/script_clear_decals.json": "6abb07b7d236a98fb5e8bc5d3fd8d8b7e47b418be4ee26207582730fff7b5770",
@@ -784,6 +785,7 @@
     "config/GR8E69/script_message_queue.json": "dee98c7f1aeeac561e79d375115b13275691842d8c1b1c90058095c8b3ee024d",
     "config/GR8E69/script_message_register.json": "759343678fafffb9b04c179de9c5247b3e89b278d1de3e5699d59ea3a6c18da7",
     "config/GR8E69/script_message_remove.json": "5bfe377a63951d0864552b2eb7e65ad705c68c2c5116e8e88ecc44fd7f80c290",
+    "config/GR8E69/script_moving_mech_force_update_trigger.json": "d35f02965111567bdf371ef905277b9f34a59d06a03f37c9630155745267c04e",
     "config/GR8E69/script_mp_get_player_body.json": "ba961fa3d3f442db5937a09801746709614d2e3fa88459277625103d585e9c71",
     "config/GR8E69/script_mp_set_aiming.json": "ed411ceb9ccebbd59206a2e6ae24c4e1db7030816b0e603dbb3c6344b2258387",
     "config/GR8E69/script_music_events.json": "032e4da800a8301374dba45800c9d07d35796bef894a4737e895d33d2ccc5ce0",
@@ -1297,7 +1299,7 @@
     "include/game/AIFilterGlobal.h": "26368f15313dbd6390bee4c45582bcdfc36d8d433aaec5b0241541e52b9d677a",
     "include/game/AIMovement.h": "b9d723fd2bfeb66871a55f57dad2d3bfad33a56530d2826600e86d36598d6342",
     "include/game/AISplinePath.h": "52c68fd14346e661e8bbcdd39e6718059e4fc07e63cdf718e502d581189850df",
-    "include/game/AITargeting.h": "27ff0be14ca7731710535133a72c869f47edbe5894bab1ab77173a3afdec5b5b",
+    "include/game/AITargeting.h": "8dd9f5a31f7f775195ce5de2d8fe862676be36cd8d4aea630d41714601e1de33",
     "include/game/BPD.h": "ec4a3aceb83f181db2c6adf8ac87137ede2cd6a0e643548159c73a827aadd19e",
     "include/game/BSGameObject.h": "0251918a776754b0d6b3d30b69e61b0d0c8f919721dbd147dbecf710b180a45a",
     "include/game/Bullet.h": "e98a40c42ad18bfbf57414dd0501a21cfbdeb57d1e85e9590ac9d341196141fd",
@@ -1373,7 +1375,7 @@
     "include/game/ParticleRecipe.h": "04bba33839dcdae3132d1316e831585288f74ef842a5b01c6f6d6c37929ee61d",
     "include/game/PropertyData.h": "952ae5ac78dc17e43053a7b905a8e58499a1faa3c7d0721269329f639095b22a",
     "include/game/SceneNode.h": "ebe954892cfb8bae90b89eda1676a2be7f45f14471648c9bf11146e1a051a0f1",
-    "include/game/SceneObjects.h": "7bc198880f7e9c572db743dfecdaf9535b73a0673657553c75746bed43cf354b",
+    "include/game/SceneObjects.h": "080ad8491bfada721f6ab44550c36f9e69e9309aec54b680680b5507f3683582",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
     "include/game/ScriptRuntime.h": "e6c5e20e70b740f8fae024d5b0711e408ad2db30aeaba9ceb7f72cbcc442ad8d",
@@ -2302,6 +2304,7 @@
     "src/script/cancel_timer_event.cpp": "922585697a8f2f3f4286a67adcb3706709d258b6e838582af10c9a04ac14bee1",
     "src/script/cast.cpp": "827312cf42f3834dc3358de5a74cbb80e0353428ae59af99cde862358b005f31",
     "src/script/change_letterbox_width.cpp": "c227ca8d805f742f6f4dafc102e22bc462514b5470e90352fabf51a4ad3f64db",
+    "src/script/change_npc_team.cpp": "6e10e73bc42658725cb36a70d41804e500712c36f2e385627b426aa212a9bd1b",
     "src/script/change_players_team.cpp": "d16a01407c64ede34713909de86e7fb5241a04073bc27f30de5ae50207222574",
     "src/script/choose_target_by_id.cpp": "c2896f81b5724aeb501144dd83605f8088b139b51bf483f389b85cea137a2723",
     "src/script/clear_decals.cpp": "37d03c842d0a3e11e1e64925fc0b74b91bd4972e6525ee097a194464c02c43d1",
@@ -2382,6 +2385,7 @@
     "src/script/message_queue.cpp": "2e6255c3aea4364bd2fdf75e50852da964a6f389cc6be86d96c0354db0e93420",
     "src/script/message_register.cpp": "fcaab46386450b3b19d0a216222a0cd7a4ae8ed1136e59958fea071722c0f55c",
     "src/script/message_remove.cpp": "c8fa9b7631942071ad6d83b9cac603c34ec0e56571e3f8f788b802c6d9d05df3",
+    "src/script/moving_mech_force_update_trigger.cpp": "5c183644b217c9548ee716dcef942076a4c6dfb6eb8a9eb8391d5cb3b8dc6e20",
     "src/script/mp_get_player_body.cpp": "c30ac8d670e8f312a153a30231620147808b943e730ded2b897981465d35bc5c",
     "src/script/mp_set_aiming.cpp": "8efb74b191289b6c8c947711c642058a8a12072fc5299f4224eb37d9d9d730cd",
     "src/script/music_events.cpp": "998748dd2ede9e53d607e41683fdaf5c081b2be02f990ae035135ff4d41b009d",
@@ -26231,6 +26235,42 @@
       "discarded_functions": [],
       "object_sha256": "3b4396c6c73e33cae1713586b61e05f0ea8aa3f7021b5afa6353e5a4f50d151e",
       "linked_sha256": "0b7839cbab1a1ae33d12ad9f5c55a9c533eaa2b77d2870309a54a349f6b40d13"
+    },
+    {
+      "id": "script_change_npc_team",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 236,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "220f25024fe1698d0da8c1e468c5fea5f56a0c7e7af8e491d8fd12312655ec4a",
+      "linked_sha256": "cc2077495bec9c18c49376c13ca2bdebb601319cfb6350c56fd84599fdf474f3"
+    },
+    {
+      "id": "script_moving_mech_force_update_trigger",
+      "category": "reconstructed_game",
+      "functions": 2,
+      "code_bytes": 328,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "1142dca3e3dd08632346ed568cc6fda17de451dadbf42390816caf92dbcc59aa",
+      "linked_sha256": "033079f0f3a6023442fbb2ef51d40bd472afd444a6bca1161c67015e3b152004"
     }
   ],
   "code_map": {
@@ -49859,13 +49899,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80112694",
-            "size": 236,
-            "kind": "function",
-            "name": "BIFunc_ChangeNPCTeam__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80112964",
             "size": 104,
             "kind": "function",
@@ -49954,20 +49987,6 @@
             "size": 260,
             "kind": "function",
             "name": "BIFunc_MechSetPathFlag__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8011461c",
-            "size": 104,
-            "kind": "function",
-            "name": "BIFunc_MovingMechForceUpdateTrigger__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80114684",
-            "size": 224,
-            "kind": "function",
-            "name": "BIFunc_MechSetFlag__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {
