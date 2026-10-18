@@ -105,7 +105,9 @@ class CPlayerObject {
         unsigned int binoculars : 1;    // Bit 24: BIFunc_UseBinoculars.
         unsigned int unknown_23_15 : 9;
         unsigned int noShells : 1;      // Bit 14: suppresses BIFunc_PlayerEjectShell.
-        unsigned int unknown_13_0 : 14;
+        unsigned int unknown_13_10 : 4;
+        unsigned int mmgBlocked : 1;    // Bit 9: skips BIFunc_AttachPlayerToMountedMachineGun in multiplayer.
+        unsigned int unknown_8_0 : 9;
     };
     unsigned char unknown_0[0xd44];
     union {
@@ -162,6 +164,7 @@ class CPlayerObject {
     void HandleLookatTrigger(BSObject *, float, float);
     CPlayerWeaponObject *GetCurrentPlayerWeapon() const;
     CPlayerWeaponObject *GetWeaponByCRC(int) const;
+    void SetUsingMountedMachineGun(bool, CStaticObject *);
     void SetHideWeapon(bool);
     void FreeBinocularOverlay();
     void SetZoom(float);

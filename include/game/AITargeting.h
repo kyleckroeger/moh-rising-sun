@@ -13,6 +13,7 @@ class CAIObjectParameters;
 enum ETeam { TeamUnknown = 0 };
 class ISceneNode;
 class CAIObject;
+struct aistatus_match;
 // Twelve-byte value copied by the original targeting callers. Field names and
 // inline helper names are descriptive; method symbols retain original names.
 class CAITarget {
@@ -159,6 +160,8 @@ public:
     CAITactics tactics;  // +0x7a0
     CAIBehavior *FindMatchingBehavior(EBehaviorType);
     float GetDistanceSquaredXYReal(CAITarget);
+    void SetupFieldOfViewModeList(aistatus_match *, int, float, float);
+    void SetupLineOfSightModeList(aistatus_match *, int, float);
     void EnableBehavior(EBehaviorType);
     void DisableBehavior(EBehaviorType);
     int IsBehaviorEnabled(EBehaviorType);
@@ -198,7 +201,6 @@ public:
     unsigned char unknown_0[0x7b0];
     CAIThreatEvaluation threatEvaluation; // +0x7b0
 };
-struct aistatus_match;
 class IMovingSceneNode;
 // Virtual-interface view of CAIObject: its table pointer follows the data at
 // +0x72c. Callers convert the CAIObject pointer they already hold.
