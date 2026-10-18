@@ -55,6 +55,7 @@ class CAnimObject {
     int gravity;    // +0x294
     int groundCheck; // +0x298
     void SetAttached(bool);
+    void StartAnimAdjust(const CVector3 &, float, bool);
 };
 
 class CSoldierObject {
@@ -112,6 +113,7 @@ class CSoldierObject {
 class CHierObject {
   public:
     void RegisterBulletDamage(int, int, int, float);
+    float GetBulletDamageMultiplierByClass(int, int);
     CStaticObject *GetSubObject(int);
 };
 

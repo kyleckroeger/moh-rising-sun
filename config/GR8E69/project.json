@@ -1209,7 +1209,9 @@
     "script_activate_animated_light_by_id.json",
     "script_detach_all_from_prop.json",
     "script_catch_grenade.json",
-    "script_play_weapon_animation.json"
+    "script_play_weapon_animation.json",
+    "script_set_anim_adjust.json",
+    "script_reset_particle_system_rotation.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
