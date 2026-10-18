@@ -1120,7 +1120,11 @@
     "script_set_hd_collision.json",
     "script_stop_motion_playback.json",
     "script_detach_from_soldier.json",
-    "script_remove_vocal.json"
+    "script_remove_vocal.json",
+    "script_get_voice_handle.json",
+    "script_set_detonation_time_for_player_turret.json",
+    "script_is_in_any_other_compartment.json",
+    "script_add_triggered_hint.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

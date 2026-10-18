@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-269 fragments in `src/script/` reconstruct **456 functions and 65,032
+273 fragments in `src/script/` reconstruct **460 functions and 65,644
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 363 further built-in wrappers
-and stubs (51,356 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 367 further built-in wrappers
+and stubs (51,968 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-212 fragments add **363 functions and 51,356 executable bytes** from the
+216 fragments add **367 functions and 51,968 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -829,6 +829,7 @@ result order are written with their case groups in that order.
 | `script_set_weapon_enable` | `SetWeaponEnable` | `0x80102fa4` | 168 |
 | `script_debug_print` | `DebugTTYPrint`, `AILog`, `ScriptError` | `0x801030b0` | 144 |
 | `script_get_target_for` | `GetTargetFor` | `0x80103140` | 184 |
+| `script_get_voice_handle` | `GetVoiceHandle` | `0x80105b48` | 128 |
 | `script_register_coverpoint` | `RegisterCoverpoint` | `0x80105c6c` | 100 |
 | `script_ai_force_to_closest_cover_point` | `AIForceToClosestCoverPoint`, `AIForceToClosestMMG`, `AIForceToMMGFeeder` | `0x80105cd0` | 696 |
 | `script_display_letterbox` | `DisplayLetterbox` | `0x80105f88` | 140 |
@@ -889,6 +890,7 @@ result order are written with their case groups in that order.
 | `script_block_new_vibrations` | `BlockNewVibrations` | `0x80114978` | 272 |
 | `script_fade_out` | `FadeOut`, `FadeIn` | `0x80114a88` | 384 |
 | `script_set_detonation_time` | `SetDetonationTime` | `0x80114f3c` | 144 |
+| `script_set_detonation_time_for_player_turret` | `SetDetonationTimeForPlayerTurret` | `0x80114fcc` | 160 |
 | `script_single_anim_ends_event` | `SetSingleAnimEndsEventDelivery` | `0x8011506c` | 48 |
 | `script_set_motion_blur_duration` | `SetMotionBlurDuration` | `0x80115568` | 252 |
 | `script_stop_corpse_search` | `StopCorpseSearch` | `0x80115884` | 196 |
@@ -900,6 +902,7 @@ result order are written with their case groups in that order.
 | `script_soldier_suspend_aiming` | `Soldier_SuspendAiming`, `Soldier_ResumeAiming`, `ActivatePropAiming` and 5 more | `0x801165d0` | 1280 |
 | `script_set_head_track_player` | `SetHeadTrackPlayer` | `0x80116ad0` | 152 |
 | `script_load_compartment` | `LoadCompartment` | `0x80116e84` | 256 |
+| `script_is_in_any_other_compartment` | `IsInAnyOtherCompartment` | `0x80116f84` | 156 |
 | `script_ai_set_high_level_state` | `AISetHighLevelState`, `SoldierSetScriptHighLevelState`, `AIChooseBehavior` and 9 more | `0x80117020` | 1756 |
 | `script_ai_finished_behavior` | `AIFinishedBehavior` | `0x801176fc` | 48 |
 | `script_ai_is_behavior_enabled` | `AIIsBehaviorEnabled` | `0x8011772c` | 156 |
@@ -930,6 +933,7 @@ result order are written with their case groups in that order.
 | `script_sword_drawn` | `SwordDrawn` | `0x8011a76c` | 188 |
 | `script_get_weapon_info_helper` | `GetWeaponInfoHelper` | `0x8011b95c` | 48 |
 | `script_player_collision_id` | `GetCollisionIDFromScriptCollisionType` | `0x8011bbf8` | 60 |
+| `script_add_triggered_hint` | `AddTriggeredHint` | `0x8011bc34` | 168 |
 | `script_remove_triggered_hint` | `RemoveTriggeredHint` | `0x8011bcdc` | 244 |
 | `script_coop_attach` | `AttachPlayerToPropCoop2`, `AttachPlayerToPropCoop`, `AttachPlayerIDToPropCoop` and 5 more | `0x8011c678` | 408 |
 | `script_coop_players` | `SetParanoiaParameters`, `MPAddBotHealth`, `ForcePlayersApart` and 11 more | `0x8011c85c` | 712 |

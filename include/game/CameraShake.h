@@ -118,6 +118,7 @@ class CPlayerObject {
     int GetNumGrenades() const;
     void ThrowGrenade(float);
     void ResetGrenadeCount(int);
+    void SetDetonationTimeForPlayerTurret(float);
     int SetWeaponEnable(int, bool);
 };
 

@@ -95,6 +95,7 @@ class CSoldierObject {
     void SpecifyTurnAngle(float);
     void SetCurrentWeapon(int, int, bool);
     void EjectHelmet(CVector3 &);
+    int IsInAnyOtherCompartment(int);
     void FireCurrentWeapon(float, EFireMethod);
 };
 
