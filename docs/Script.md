@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-360 fragments in `src/script/` reconstruct **586 functions and 97,372
+361 fragments in `src/script/` reconstruct **587 functions and 97,660
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 493 further built-in wrappers
-and stubs (83,696 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 494 further built-in wrappers
+and stubs (83,984 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-303 fragments add **493 functions and 83,696 executable bytes** from the
+304 fragments add **494 functions and 83,984 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -774,6 +774,7 @@ result order are written with their case groups in that order.
 | `script_ai_stop_move_point_walk` | `AIStopMovePointWalk`, `AIContinueMovePointWalk` | `0x800fcdf8` | 232 |
 | `script_ai_snap_to_move_point` | `AISnapToMovePoint`, `AISnapToMovePointAndAngle` | `0x800fcee0` | 436 |
 | `script_ai_get_distance_to_move_point` | `AIGetDistanceToMovePoint` | `0x800fd094` | 128 |
+| `script_ai_get_pan_angle_to_move_point` | `AIGetPanAngleToMovePoint` | `0x800fd114` | 288 |
 | `script_soldier_ai_get_distance_to_move_point` | `Soldier_AIGetDistanceToMovePoint` | `0x800fd234` | 200 |
 | `script_ai_send_flag` | `AISendFlag` | `0x800fd2fc` | 320 |
 | `script_soldier_setup_grenade_shot` | `Soldier_SetupGrenadeShot` | `0x800fd708` | 172 |

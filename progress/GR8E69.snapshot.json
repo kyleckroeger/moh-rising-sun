@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 727352,
+    "matching_code_bytes": 727640,
     "total_executable_code_bytes": 2492032,
-    "percent": 29.18710514150701,
+    "percent": 29.198661975448147,
     "categories": {
-      "reconstructed_game": 335136,
+      "reconstructed_game": 335424,
       "restored_library": 392216
     },
-    "matching_functions": 2965
+    "matching_functions": 2966
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "8bcde823b2429c856e13c77d066a23a278eaf8a949cfe1dccee60536350af2d2",
+    "config/GR8E69/project.json": "3009706674c9536eda2f690ef3734ae1713223a063593a4ed27ebbf02299e115",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -676,6 +676,7 @@
     "config/GR8E69/script_ai_get_distance_to_move_point.json": "f171703b39315ddd69e980a0cf3e020e4826de5cf44be0055ee6492212ead280",
     "config/GR8E69/script_ai_get_distance_to_target_xyz.json": "3814ecdc929f7e4e4d544f76b9fc002a92c5cf7f1552da964686350d88815dbb",
     "config/GR8E69/script_ai_get_next_behavior_type.json": "61eb5fb144e6a4812be1ef2a9c26c2faa99011b0e394907dbf3429a8454d3cf0",
+    "config/GR8E69/script_ai_get_pan_angle_to_move_point.json": "6c88547645c7bc91a08e55c18331b091b12ac651a22ed05928e4b9fb0560cd8e",
     "config/GR8E69/script_ai_get_previous_behavior_script.json": "ea4f6df0e4686ccf74830599b98062ca1cc60245a8acad5742bbe36f5998c4aa",
     "config/GR8E69/script_ai_get_previous_behavior_type.json": "546a0dc642d561eca35f1b5b043d9e58dea64fb9c822f0be9fcd25ed35376ec3",
     "config/GR8E69/script_ai_invalidate_cover_point.json": "459577b5685de9be1297262be506d8536a9dbd762781fcc41609798b95474903",
@@ -1402,7 +1403,7 @@
     "include/game/AITargeting.h": "638b7a60b0f87d66820ec8e780f78cb10d5201524e1efa66056a95b87258dd49",
     "include/game/BPD.h": "ec4a3aceb83f181db2c6adf8ac87137ede2cd6a0e643548159c73a827aadd19e",
     "include/game/BSGameObject.h": "0251918a776754b0d6b3d30b69e61b0d0c8f919721dbd147dbecf710b180a45a",
-    "include/game/Bullet.h": "ca4b0ccc30f4680e10ea5dd41982ec0dc167786152cebe14239186c7521d86a6",
+    "include/game/Bullet.h": "3303eada13421d59aaea6a4187fc16731e94960198642c22366d9fca1eb9cb01",
     "include/game/CLine2.h": "e92fdbfd47ed264651ab9bbb90557a0461c3f6469267837079a5d514eb583f2c",
     "include/game/CLine3.h": "671ce5d07b583fd857df0b2ce304517d72a20d34e27967fa945b8a42de815760",
     "include/game/CMatrix.h": "0a1cd7c02e0d72a241d00c861f92cf720b93960f3e96da8dea1f370ee8be27f9",
@@ -2376,6 +2377,7 @@
     "src/script/ai_get_distance_to_move_point.cpp": "c3fa27b2b91abd35108e8bdc2b92a55674375bbf138936e6aac956f201b9fbd7",
     "src/script/ai_get_distance_to_target_xyz.cpp": "92ccca639c1bdd699cd060335f0c1478d4332dc04152eba2c4734e588b840647",
     "src/script/ai_get_next_behavior_type.cpp": "5cc8bcae4c62d7020af5556f27c610e614cb1bf89bc493857af8c6cfc1f6bcfe",
+    "src/script/ai_get_pan_angle_to_move_point.cpp": "5446880c67bbd97a4a616b373e44272c0d1c10f9b9f8f2354fdf22729a9eda60",
     "src/script/ai_get_previous_behavior_script.cpp": "d30715b0818fec12b764043e84c7922848c6bbc6898e7d119ba23a467f544246",
     "src/script/ai_get_previous_behavior_type.cpp": "02b4bce41e8430f970109d3b4bb7eaea3f28702a972075f21614d0a5257e9491",
     "src/script/ai_invalidate_cover_point.cpp": "112a751d0354f6c732d971d9f5828f5779924d34c3f6e38e7e69eec8c6c733ad",
@@ -28273,6 +28275,24 @@
       "discarded_functions": [],
       "object_sha256": "b04d141cfae4eda82c2e122f25d215abe2994c2a73db52c5296ac6ec522b61bb",
       "linked_sha256": "1f8daf5c3fb31d99cd234da55e638c3c5cb54205b042c7846cd693ce00165b3d"
+    },
+    {
+      "id": "script_ai_get_pan_angle_to_move_point",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 288,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "dba2ed29afe021748584b44fa0449c2f234c89605d55874a8b11f431a4128a1c",
+      "linked_sha256": "0d324947435f92b0b3a095d0bb13db0e02d692bf9b86c5049e767d55484ad1be"
     }
   ],
   "code_map": {
@@ -50736,13 +50756,6 @@
             "size": 1148,
             "kind": "function",
             "name": "BIFunc_Soldier_AISetMovePoint__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x800fd114",
-            "size": 288,
-            "kind": "function",
-            "name": "BIFunc_AIGetPanAngleToMovePoint__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

@@ -112,6 +112,14 @@ class CThrownBullet : public CBullet {
     virtual unsigned int IsCollisionEnabled() const;
 };
 
+// Scoped view of the hit record passed to the damage built-in.
+struct ScriptHitInfo {
+    int unknown_0;
+    float damage;                  // +0x4
+    int unknown_8;
+    EScriptBulletType bulletType;  // +0xc
+    int location;                  // +0x10
+};
 class CScene;
 class ISceneNode;
 class CVector3;
