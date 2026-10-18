@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-264 fragments in `src/script/` reconstruct **450 functions and 63,596
+269 fragments in `src/script/` reconstruct **456 functions and 65,032
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 357 further built-in wrappers
-and stubs (49,920 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 363 further built-in wrappers
+and stubs (51,356 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-207 fragments add **357 functions and 49,920 executable bytes** from the
+212 fragments add **363 functions and 51,356 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -762,7 +762,9 @@ result order are written with their case groups in that order.
 | `script_set_move_point` | `SetMovePoint` | `0x800fc290` | 184 |
 | `script_ai_set_move_point_on_other` | `AISetMovePointOnOther`, `AIStartMovePointWalk` | `0x800fcc64` | 404 |
 | `script_ai_stop_move_point_walk` | `AIStopMovePointWalk`, `AIContinueMovePointWalk` | `0x800fcdf8` | 232 |
+| `script_ai_send_flag` | `AISendFlag` | `0x800fd2fc` | 320 |
 | `script_set_gravity` | `SetGravity`, `SetGroundCheck`, `InduceGroundCheck` | `0x800fd7b4` | 452 |
+| `script_set_hd_collision` | `SetHDCollision` | `0x800fd978` | 288 |
 | `script_set_collision_to_player` | `SetCollisionToPlayer` | `0x800fda98` | 224 |
 | `script_set_can_be_pushed` | `SetCanBePushed` | `0x800fdb78` | 200 |
 | `script_set_in_shadow` | `SetInShadow` | `0x800fdc40` | 224 |
@@ -834,6 +836,7 @@ result order are written with their case groups in that order.
 | `script_set_sound_zone` | `SetSoundZone` | `0x80106158` | 84 |
 | `script_debug_init_from_trigger` | `DebugInitFromTrigger` | `0x801061ac` | 48 |
 | `script_tutorial_text` | `DisplayBIGPromptText`, `DisplayTutorialText`, `KillTutorialText` and 2 more | `0x80106fa0` | 240 |
+| `script_remove_vocal` | `RemoveVocal`, `Soldier_RemoveVocal` | `0x80107aa8` | 416 |
 | `script_activate_sound_buss` | `ActivateSoundBuss` | `0x80107c48` | 92 |
 | `script_generic_sound_memory` | `GetGenericSoundStructureMemory` | `0x801086b4` | 60 |
 | `script_destroy_particle_system` | `DestroyParticleSystem` | `0x80108f08` | 152 |
@@ -845,6 +848,7 @@ result order are written with their case groups in that order.
 | `script_deactivate_animated_light_by_id` | `DeactivateAnimatedLightByID` | `0x80109e08` | 124 |
 | `script_event_memory_block` | `GetEventSystemMemBlock` | `0x80109e84` | 96 |
 | `script_add_objective` | `AddObjective`, `ChangeObjectivePrompt` | `0x80109ee4` | 340 |
+| `script_stop_motion_playback` | `StopMotionPlayback` | `0x8010a378` | 276 |
 | `script_resume_motion_playback` | `ResumeMotionPlayback` | `0x8010a48c` | 192 |
 | `script_set_objective` | `SetObjective` | `0x8010ab40` | 156 |
 | `script_get_soldier_weapon_in_slot` | `GetSoldierWeaponInSlot` | `0x8010b908` | 112 |
@@ -858,6 +862,7 @@ result order are written with their case groups in that order.
 | `script_set_prop_draw` | `SetPropDraw`, `SetDrawEnabled` | `0x8010c6e0` | 392 |
 | `script_is_draw_enabled` | `IsDrawEnabled` | `0x8010c868` | 124 |
 | `script_player_stop_look_at` | `PlayerStopLookAt` | `0x8010cb9c` | 108 |
+| `script_detach_from_soldier` | `DetachFromSoldier` | `0x8010ffdc` | 136 |
 | `script_soldier_detach_from_soldier` | `Soldier_DetachFromSoldier` | `0x80110064` | 180 |
 | `script_set_jaw_motion` | `SetJawMotion` | `0x801111d4` | 156 |
 | `script_set_muzzle_fire_for_player` | `SetMuzzleFireForPlayer` | `0x801113c8` | 200 |

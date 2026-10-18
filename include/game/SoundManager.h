@@ -19,4 +19,11 @@ struct SoundManagerView {
 };
 extern SoundManagerView g_SoundMan;
 
+// Method-only view of the NPC vocal manager singleton.
+class NPCVocalMan {
+  public:
+    void RemoveVocal(void *, int);
+};
+extern NPCVocalMan g_npcVocalMan;
+
 #endif

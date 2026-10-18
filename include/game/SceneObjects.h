@@ -28,6 +28,7 @@ class CJawController {
 
 class CStaticObject {
   public:
+    void StopMotionPlayback();
     void ResumeMotionPlayback();
     void FadeIn(float);
     void FadeOut(float);
@@ -95,6 +96,12 @@ class CSoldierObject {
     void SetCurrentWeapon(int, int, bool);
     void EjectHelmet(CVector3 &);
     void FireCurrentWeapon(float, EFireMethod);
+};
+
+// Method-only view of a hierarchy object.
+class CHierObject {
+  public:
+    CStaticObject *GetSubObject(int);
 };
 
 // Static animated-texture operations keyed by texture CRC.

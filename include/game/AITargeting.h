@@ -50,7 +50,8 @@ public:
     CVector3 targetPosition; // +0x40; scene query output.
     unsigned char unknown50[0x20];
     CVector3 modifiedPosition;
-    unsigned char unknown80[0x78];
+    unsigned char unknown80[0x74];
+    int alerted; // +0xf4; set to 1 by BIFunc_AISendFlag flag 1.
     float targetUpdateTime; // +0xf8; written after the script-target update.
     int blindFireMode; // +0xfc; observed selectors 0, 1 and 2.
     int weapon; // +0x100; passed to AdjustAimPosition.
@@ -131,7 +132,10 @@ public:
     unsigned char unknown378[0x594 - 0x378];
     int cookie;          // +0x594; script-owned value (BIFunc_GetCookie/SetCookie).
     unsigned char team;  // +0x598; set by BIFunc_AISetTeam.
-    unsigned char unknown599[0x5ec - 0x599];
+    unsigned char unknown599[0x5e0 - 0x599];
+    unsigned int statusFlags2; // +0x5e0; bit 0 cleared with flag 2.
+    unsigned char unknown5e4[4];
+    unsigned int statusFlags;  // +0x5e8; set and cleared by BIFunc_AISendFlag.
     CAIStatus status;    // +0x5ec
     unsigned char unknown5ed[0x624 - 0x5ed];
     float accuracyNear;  // +0x624; set per accuracy level by BIFunc_SetAccuracy.

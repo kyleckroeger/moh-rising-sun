@@ -1115,7 +1115,12 @@
     "script_block_new_vibrations.json",
     "script_initialize_animated_texture.json",
     "script_set_collision_to_player.json",
-    "script_set_in_shadow.json"
+    "script_set_in_shadow.json",
+    "script_ai_send_flag.json",
+    "script_set_hd_collision.json",
+    "script_stop_motion_playback.json",
+    "script_detach_from_soldier.json",
+    "script_remove_vocal.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
