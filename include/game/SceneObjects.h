@@ -122,6 +122,21 @@ void CreateSubHierObject(CHierObject *, int, int, unsigned int, int, int);
 void CreateSubHierAnimObject(CHierObject *, int, int, unsigned int, int, int, int);
 int *CreateObject(TriggerObject *, int, int, int, void *);
 
+// Scoped view of a bounding volume; only the centre at +0x40 is read.
+struct BoundingVolumeView {
+    unsigned char unknown_0[0x40];
+    CVector3 center;
+};
+// Static creators; the returned nodes are used through the scene-node tables.
+class CProjector {
+  public:
+    static IMovingSceneNode *Create(unsigned int, bool);
+};
+class CGlare {
+  public:
+    static IMovingSceneNode *Create(int, bool);
+};
+
 // Static animated-texture operations keyed by texture CRC.
 class AnimShape {
   public:

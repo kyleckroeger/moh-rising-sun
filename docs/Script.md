@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-346 fragments in `src/script/` reconstruct **569 functions and 91,820
+348 fragments in `src/script/` reconstruct **573 functions and 94,204
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 476 further built-in wrappers
-and stubs (78,144 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 480 further built-in wrappers
+and stubs (80,528 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-289 fragments add **476 functions and 78,144 executable bytes** from the
+291 fragments add **480 functions and 80,528 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -873,7 +873,9 @@ result order are written with their case groups in that order.
 | `script_set_particle_system_velocity` | `SetParticleSystemVelocity` | `0x80108e0c` | 252 |
 | `script_destroy_particle_system` | `DestroyParticleSystem` | `0x80108f08` | 152 |
 | `script_clear_decals` | `ClearDecals` | `0x80108fa0` | 88 |
+| `script_projector_create_by_type` | `ProjectorCreateByType`, `ProjectorCreateByName` | `0x80108ff8` | 1156 |
 | `script_projector_destroy` | `ProjectorDestroy` | `0x8010947c` | 48 |
+| `script_glare_create_by_type` | `GlareCreateByType`, `GlareCreateByName` | `0x801094ac` | 1228 |
 | `script_glare_destroy` | `GlareDestroy` | `0x80109978` | 48 |
 | `script_create_light_by_type` | `CreateLightByType` | `0x801099a8` | 340 |
 | `script_destroy_light` | `DestroyLight` | `0x80109afc` | 156 |
