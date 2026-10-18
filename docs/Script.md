@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-336 fragments in `src/script/` reconstruct **554 functions and 87,536
+341 fragments in `src/script/` reconstruct **559 functions and 88,476
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 461 further built-in wrappers
-and stubs (73,860 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 466 further built-in wrappers
+and stubs (74,800 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-279 fragments add **461 functions and 73,860 executable bytes** from the
+284 fragments add **466 functions and 74,800 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -840,6 +840,7 @@ result order are written with their case groups in that order.
 | `script_register_distance_to_target` | `RegisterDistanceToTarget`, `RegisterCheckObjectsInsideAngularRange`, `RegisterCheckObjectsOutsideAngularRange` and 4 more | `0x801019c4` | 1616 |
 | `script_stop_check_objects_inside_range_secondary` | `StopCheckObjectsInsideRange_Secondary`, `StopCheckObjectsOutsideRange_Secondary` | `0x80102014` | 344 |
 | `script_set_game_fov` | `SetGameFOV` | `0x8010216c` | 160 |
+| `script_change_clip_plane` | `ChangeClipPlane` | `0x8010220c` | 172 |
 | `script_change_letterbox_width` | `ChangeLetterboxWidth` | `0x801022b8` | 124 |
 | `script_register_target_search` | `RegisterTargetSearch` | `0x80102334` | 296 |
 | `script_register_corpse_search` | `RegisterCorpseSearch` | `0x8010245c` | 220 |
@@ -854,6 +855,7 @@ result order are written with their case groups in that order.
 | `script_set_obj_info` | `SetObjInfo`, `Soldier_SetObjInfo` | `0x8010567c` | 344 |
 | `script_get_distance_to_object_from_trigger` | `GetDistanceToObjectFromTrigger` | `0x801057d4` | 252 |
 | `script_get_voice_handle` | `GetVoiceHandle` | `0x80105b48` | 128 |
+| `script_stop_current_voice` | `StopCurrentVoice` | `0x80105bc8` | 164 |
 | `script_register_coverpoint` | `RegisterCoverpoint` | `0x80105c6c` | 100 |
 | `script_ai_force_to_closest_cover_point` | `AIForceToClosestCoverPoint`, `AIForceToClosestMMG`, `AIForceToMMGFeeder` | `0x80105cd0` | 696 |
 | `script_display_letterbox` | `DisplayLetterbox` | `0x80105f88` | 140 |
@@ -928,6 +930,7 @@ result order are written with their case groups in that order.
 | `script_get_mmg_feeder_by_link_code` | `GetMMGFeederByLinkCode`, `RegisterBuddyFollowObject` | `0x80113258` | 284 |
 | `script_buddy_cant_reach_target` | `BuddyCantReachTarget`, `BuddyFinishedMovingAway`, `SetDistances` | `0x80113374` | 632 |
 | `script_register_gag_action` | `RegisterGagAction`, `StartGag`, `StartGagCRC` | `0x801135ec` | 420 |
+| `script_get_bs_object` | `GetBSObject` | `0x80113790` | 164 |
 | `script_set_mg_waypoint_flag` | `SetMGWaypointFlag` | `0x80113834` | 144 |
 | `script_player_force_to_weapon` | `PlayerForceToWeapon` | `0x801138c4` | 156 |
 | `script_register_save_point` | `RegisterSavePoint`, `PerformSavePointResponse` | `0x80113e8c` | 280 |
@@ -984,7 +987,9 @@ result order are written with their case groups in that order.
 | `script_set_animated_texture_frame` | `SetAnimatedTextureFrame`, `SetAnimatedTextureFrameRate` | `0x80119f84` | 280 |
 | `script_reset_animated_texture` | `ResetAnimatedTexture`, `AdvanceAnimatedTexture` | `0x8011a09c` | 264 |
 | `script_add_replay_item` | `AddReplayItem` | `0x8011a1a4` | 128 |
+| `script_has_replay_item` | `HasReplayItem` | `0x8011a224` | 276 |
 | `script_add_film_canister` | `AddFilmCanister` | `0x8011a338` | 232 |
+| `script_has_any_film_canister` | `HasAnyFilmCanister` | `0x8011a420` | 164 |
 | `script_has_film_canister` | `HasFilmCanister` | `0x8011a4c4` | 212 |
 | `script_give_cheat_number` | `GiveCheatNumber` | `0x8011a598` | 132 |
 | `script_grenade_response_finished` | `GrenadeResponseFinished` | `0x8011a61c` | 196 |

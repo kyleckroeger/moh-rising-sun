@@ -35,6 +35,18 @@ class CGameSettings {
 };
 extern CGameSettings g_GameSettings;
 
+// Scoped view of the cheat state; only the replay-item unlock at +0x34 is named.
+struct CheatsView {
+    unsigned char unknown_0[0x34];
+    int allReplayItems;
+};
+extern CheatsView g_cheats;
+
+// Inline in the original: replay item 0 is always included in the mask.
+inline bool CurrentRecordHasReplayItem(int item) {
+    return (g_GameSettings.profile->records[g_GameSettings.profile->currentRecord].replayItems & ((1 << item) | 1)) != 0;
+}
+
 // Word-wide view of the profile bytes from +0x31664 (mission, level); the
 // original stores the level-won bit with a full-word read-modify-write.
 struct GameProfileLevelFlags {

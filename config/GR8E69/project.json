@@ -1187,7 +1187,12 @@
     "script_attach_player_to_mounted_machine_gun.json",
     "script_is_on_astar_mesh.json",
     "script_detach_from_waypoint.json",
-    "script_player_screen_flash.json"
+    "script_player_screen_flash.json",
+    "script_change_clip_plane.json",
+    "script_stop_current_voice.json",
+    "script_get_bs_object.json",
+    "script_has_replay_item.json",
+    "script_has_any_film_canister.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
