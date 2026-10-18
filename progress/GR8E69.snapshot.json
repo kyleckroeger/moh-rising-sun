@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 720064,
+    "matching_code_bytes": 721800,
     "total_executable_code_bytes": 2492032,
-    "percent": 28.894653038163234,
+    "percent": 28.96431506497509,
     "categories": {
-      "reconstructed_game": 327848,
+      "reconstructed_game": 329584,
       "restored_library": 392216
     },
-    "matching_functions": 2943
+    "matching_functions": 2948
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "d2ed90df9c3c7d59b5eb23fcd1298fcbb6ae548e12bf41a9db248a72dc557876",
+    "config/GR8E69/project.json": "b501035d1b22d334f8f6d794f858259f24106c312a11815b7e168a4af59bc125",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -733,8 +733,10 @@
     "config/GR8E69/script_coop_triggers.json": "7b70c1a4be6a02cb93ec12f370d05e32910e221490067ab228ccacbaea176cd3",
     "config/GR8E69/script_create_child.json": "f7b42689b92b2d65bccf060ecf348f867f9a688b795c772709b58ae3123b6b98",
     "config/GR8E69/script_create_child_root_hier_object.json": "5118b3a214900b43d0df9dcbeb83c9a856c41e43fbaf6c9f479ab20feebc68b4",
+    "config/GR8E69/script_create_light_by_type.json": "1fca32508ca9f5d04d8b4540b87156e24a27d0d6325e7918768df12d81e095a9",
     "config/GR8E69/script_create_mp_dump_object.json": "acfa3ed0c82e0bea27adc0813c56e26b335657a79d2da29f0ee6c30268f1901e",
     "config/GR8E69/script_create_mp_health.json": "e5cf0108c8e7c6054a3d2e94e2e6e1f067d353422276d5942d2f105ab1587010",
+    "config/GR8E69/script_create_particle_system_by_type.json": "22f2dbda6fb67d850a3da2f95626fa5cc9198382806746bae2dd7aee4191950c",
     "config/GR8E69/script_deactivate_animated_light_by_id.json": "ed018598daf4db80a02f38545b91d1193124a0abd581507c39c87931cfa950d6",
     "config/GR8E69/script_debug_init_from_trigger.json": "692b04611702b5f9fef282240e8ea7e0f39c02228ae1949ea9c346d03fde7971",
     "config/GR8E69/script_debug_print.json": "08dc34b0c9886c611c2d289073bdde1efcdd20b765a7b5bca1748ed33f9be49d",
@@ -1449,14 +1451,14 @@
     "include/game/Frustum.h": "517f595d8940b305a44b055a26e31588a43151816c24e27381a86ae90cfc6062",
     "include/game/GameSettings.h": "febe3ddbd3e51fa1a3c50a1bb8d1688cf6c10a43ddf8b6263c8c9963459d0b47",
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
-    "include/game/Light.h": "08e09016eb48510435acaf5fbd7648f725db2baa3526ffbceb9ddd096d8ccab5",
+    "include/game/Light.h": "3e6d3b90e5f95e09203a7333f15d856e04c645967b5e2bbfe50361742a406ee7",
     "include/game/LightVolumeManager.h": "f86744d00d312738c23085d84d513fbd05c495194b97a10bf4cde2011dbaf958",
     "include/game/MPWeaponSet.h": "86bcb747bbed525dbf73844a22a156b74e8da90bd482fb541bc707e66cddae2c",
     "include/game/MathFun.h": "a17cd61af10a72e67e886068e39f8ec5ae4ca9bf89ba2753e32362d5762455f8",
     "include/game/Objectives.h": "84c28a5f1230c930944b85a552be7c88ecfd86dd60de6de078f3d00312c0ca9f",
     "include/game/ObserverTypes.h": "687dfc07deb4adc23a1d0247270d6ab04c34b758bd88846bf5e4b6ef33e7cc1f",
     "include/game/OffsetPtr.h": "06d2e4c320890063bd6b210c1ddda4b7cefc28e7aa9a4f276e76c128c0a68499",
-    "include/game/ParticleClock.h": "28f3badf71350136523be63cd81fe70e6af6977dca794be22c84784ee720cf68",
+    "include/game/ParticleClock.h": "3a8ff4d629de0f34fc3a89e00121d9f079a0b0b4e469829d769856ecbb303198",
     "include/game/ParticleRecipe.h": "04bba33839dcdae3132d1316e831585288f74ef842a5b01c6f6d6c37929ee61d",
     "include/game/PropertyData.h": "952ae5ac78dc17e43053a7b905a8e58499a1faa3c7d0721269329f639095b22a",
     "include/game/SceneNode.h": "1a6f0b01e88bda21ecb5b0ae8f4f3ad50df6422427adb3f5f52ea1c648a50fe4",
@@ -2417,8 +2419,10 @@
     "src/script/coop_triggers.cpp": "475beae83afe46fdaf30e14312294d25f7e22f2d94e3e57e93db125217f83a61",
     "src/script/create_child.cpp": "1d24a42183b7545476d4ecac2440fd66f6bc6e2a50a3b56a95943a2c2c152829",
     "src/script/create_child_root_hier_object.cpp": "bcfc4bca6f560052e1c94b36589e29b86cd0309f4f3bcb13bda17d567e41e926",
+    "src/script/create_light_by_type.cpp": "e71705130b0dcee2b8e34c81f571af37ff321ce1f6a6cb7a7cc838d87fc40c0c",
     "src/script/create_mp_dump_object.cpp": "400da5efcf58176dc6b01e9e3b2ee1f2fa63b76aae0af61e53996f043be63919",
     "src/script/create_mp_health.cpp": "0558fdabe8e1a225ce678b7ba2ac2f930f062d536d0d842c8244bc838b69edd4",
+    "src/script/create_particle_system_by_type.cpp": "145d716eea06b2579062cff9de5c02840a56466f67073029d3805a540115ba7b",
     "src/script/deactivate_animated_light_by_id.cpp": "fc0c4d1d5c26867a2325bade4ac8582ce5d092efc1a6b95a6e41e0de8240eaa7",
     "src/script/debug_init_from_trigger.cpp": "ede26363a441ef5bc2388467bf0f6b9a6fbe4a276ee21d33dd28c1131b09eef1",
     "src/script/debug_print.cpp": "fb5ae1dc9c52680f6e0447ad1f27258d4ab1d2659a9877fe6fdb8ef467722f09",
@@ -27953,6 +27957,42 @@
       "discarded_functions": [],
       "object_sha256": "02d3b95755d46f40917653b6b6a273e49bb4a705f6b6a2ed8d26327cc28dd049",
       "linked_sha256": "d3a899a65d5b509a9e8ce71c1c29c3271a339f61d19c67dcc6a31a0e8bee9861"
+    },
+    {
+      "id": "script_create_particle_system_by_type",
+      "category": "reconstructed_game",
+      "functions": 4,
+      "code_bytes": 1396,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "ef53de3ae7e66de10013095145994f8dce30a8f7546ce095e6541e343838b26a",
+      "linked_sha256": "1d1c30dc560abc2843f95a7f4f1cf6ab375978fac3fbcaa79b9d57b9956b26a2"
+    },
+    {
+      "id": "script_create_light_by_type",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 340,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "ec6fcec38f313ce22071bcd6ad17681110b576b3db4b44cd5f5ba968d40fcb2f",
+      "linked_sha256": "1774ace8abff81fbd9a0d249a042f958b7587b8530df363d2bad484afbfa0d38"
     }
   ],
   "code_map": {
@@ -50706,34 +50746,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80108898",
-            "size": 384,
-            "kind": "function",
-            "name": "BIFunc_CreateParticleSystemByType__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80108a18",
-            "size": 388,
-            "kind": "function",
-            "name": "BIFunc_CreateParticleSystemByName__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80108b9c",
-            "size": 292,
-            "kind": "function",
-            "name": "BIFunc_CreateParticleSystemByNameAtAttachPoint__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80108cc0",
-            "size": 332,
-            "kind": "function",
-            "name": "BIFunc_CreateParticleSystemByNameAtWeaponsAttachPoint__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80108ff8",
             "size": 576,
             "kind": "function",
@@ -50759,13 +50771,6 @@
             "size": 616,
             "kind": "function",
             "name": "BIFunc_GlareCreateByName__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801099a8",
-            "size": 340,
-            "kind": "function",
-            "name": "BIFunc_CreateLightByType__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

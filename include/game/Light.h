@@ -42,6 +42,8 @@ class CLight : public IMovingSceneNode {
     static BPDLightVolume *GetDefaultLightVolume();
     static void Register(void *, int);
     static void DestroyByPropertyID(unsigned int);
+    static CLight *Create(unsigned int);
+    static CLight *Create(void *);
     void MarkForDestruction(int);
     void Destroy();
     void AttemptUpdate(float);
