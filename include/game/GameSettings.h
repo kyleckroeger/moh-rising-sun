@@ -14,7 +14,8 @@ struct ProgressRecord {
 struct GameProfile {
     unsigned char unknown_0[0xbf54];
     ProgressRecord records[3];          // +0xbf54
-    unsigned char unknown_3101c[0x31665 - 0x3101c];
+    unsigned char unknown_3101c[0x31664 - 0x3101c];
+    unsigned char mission;              // +0x31664
     unsigned char level;                // +0x31665
     unsigned char unknown_31666[0x321e0 - 0x31666];
     signed char currentRecord;          // +0x321e0

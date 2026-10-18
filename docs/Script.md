@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-275 fragments in `src/script/` reconstruct **463 functions and 66,240
+277 fragments in `src/script/` reconstruct **465 functions and 66,624
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 370 further built-in wrappers
-and stubs (52,564 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 372 further built-in wrappers
+and stubs (52,948 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-218 fragments add **370 functions and 52,564 executable bytes** from the
+220 fragments add **372 functions and 52,948 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -802,6 +802,7 @@ result order are written with their case groups in that order.
 | `script_register_timer_event` | `RegisterTimerEvent` | `0x801006a4` | 152 |
 | `script_register_multiple_timer_event` | `RegisterMultipleTimerEvent` | `0x8010073c` | 152 |
 | `script_cancel_timer_event` | `CancelTimerEvent` | `0x801007d4` | 132 |
+| `script_enable_non_vis_destruct` | `EnableNonVisDestruct` | `0x80100858` | 188 |
 | `script_player_has_melee_weapon` | `PlayerHasMeleeWeapon`, `PlayerCanSwitchWeapon` | `0x80100914` | 260 |
 | `script_player_switch_weapons` | `PlayerSwitchWeapons` | `0x80100a18` | 160 |
 | `script_player_has_grenade` | `PlayerHasGrenade` | `0x80100ab8` | 112 |
@@ -862,6 +863,7 @@ result order are written with their case groups in that order.
 | `script_player_super_aim_mode` | `PlayerSuperAimMode` | `0x8010c200` | 148 |
 | `script_is_player_invincible` | `IsPlayerInvincible` | `0x8010c294` | 108 |
 | `script_disable_player_shoot` | `DisablePlayerShoot` | `0x8010c418` | 156 |
+| `script_set_weapon_draw` | `SetWeaponDraw` | `0x8010c61c` | 196 |
 | `script_set_prop_draw` | `SetPropDraw`, `SetDrawEnabled` | `0x8010c6e0` | 392 |
 | `script_is_draw_enabled` | `IsDrawEnabled` | `0x8010c868` | 124 |
 | `script_player_stop_look_at` | `PlayerStopLookAt` | `0x8010cb9c` | 108 |

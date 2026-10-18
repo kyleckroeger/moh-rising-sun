@@ -63,7 +63,9 @@ class CSoldierObject {
     int groundCheckState;   // +0x228; cleared before the ground-check event.
     unsigned char unknown_22c[0x2ec - 0x22c];
     int locomotionInfo;     // +0x2ec; returned by address.
-    unsigned char unknown_2f0[0xb14 - 0x2f0];
+    unsigned char unknown_2f0[0x334 - 0x2f0];
+    int nonVisDestructDisabled; // +0x334; the inverse of BIFunc_EnableNonVisDestruct's flag.
+    unsigned char unknown_338[0xb14 - 0x338];
     int canBePushed;        // +0xb14
     unsigned char unknown_b18[0xb84 - 0xb18];
     CWeapon *weapons[1];    // +0xb84; slot table, indexed by slot number (extent unknown).
