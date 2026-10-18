@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-299 fragments in `src/script/` reconstruct **493 functions and 72,280
+302 fragments in `src/script/` reconstruct **498 functions and 73,208
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 400 further built-in wrappers
-and stubs (58,604 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 405 further built-in wrappers
+and stubs (59,532 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-242 fragments add **400 functions and 58,604 executable bytes** from the
+245 fragments add **405 functions and 59,532 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -906,7 +906,9 @@ result order are written with their case groups in that order.
 | `script_set_mg_waypoint_flag` | `SetMGWaypointFlag` | `0x80113834` | 144 |
 | `script_player_force_to_weapon` | `PlayerForceToWeapon` | `0x801138c4` | 156 |
 | `script_register_save_point` | `RegisterSavePoint`, `PerformSavePointResponse` | `0x80113e8c` | 280 |
+| `script_serialize_value` | `SerializeValue` | `0x80113fa4` | 156 |
 | `script_serializing_in` | `SerializingIn`, `SerializingOut` | `0x80114040` | 208 |
+| `script_serializable` | `Serializable`, `SerializeData`, `SaveGagState` | `0x80114110` | 632 |
 | `script_moving_mech_force_update_trigger` | `MovingMechForceUpdateTrigger`, `MechSetFlag` | `0x8011461c` | 328 |
 | `script_block_new_vibrations` | `BlockNewVibrations` | `0x80114978` | 272 |
 | `script_fade_out` | `FadeOut`, `FadeIn` | `0x80114a88` | 384 |
@@ -954,6 +956,7 @@ result order are written with their case groups in that order.
 | `script_has_film_canister` | `HasFilmCanister` | `0x8011a4c4` | 212 |
 | `script_give_cheat_number` | `GiveCheatNumber` | `0x8011a598` | 132 |
 | `script_grenade_response_finished` | `GrenadeResponseFinished` | `0x8011a61c` | 196 |
+| `script_finished_investigation` | `FinishedInvestigation` | `0x8011a6e0` | 140 |
 | `script_sword_drawn` | `SwordDrawn` | `0x8011a76c` | 188 |
 | `script_get_weapon_info_helper` | `GetWeaponInfoHelper` | `0x8011b95c` | 48 |
 | `script_player_collision_id` | `GetCollisionIDFromScriptCollisionType` | `0x8011bbf8` | 60 |

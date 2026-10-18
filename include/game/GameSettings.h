@@ -27,6 +27,7 @@ class CGameSettings {
     GameProfile *profile;
     int SerializingIn() const;
     int SerializingOut() const;
+    void SerializeValue(unsigned int &, unsigned int);
     void AddCheat(int);
     void RegisterSavePoint(int, bool);
     void TriggerSavePointResponse(int, bool);

@@ -179,4 +179,22 @@ class CAIDoodad {
 public:
     CAIFilterObject *filter;
 };
+// Member view of the soldier AI object returned by CAIObject slot 2.
+class CAIThreatEvaluation {
+public:
+    void FinishedInvestigation();
+};
+class CAISoldierObject {
+public:
+    unsigned char unknown_0[0x7b0];
+    CAIThreatEvaluation threatEvaluation; // +0x7b0
+};
+// Virtual-interface view of CAIObject: its table pointer follows the data at
+// +0x72c. Callers convert the CAIObject pointer they already hold.
+class CAIObjectInterface {
+public:
+    unsigned char unknown_0[0x72c];
+    virtual ~CAIObjectInterface();
+    virtual CAISoldierObject *AsAISoldierObject();
+};
 #endif

@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 702260,
+    "matching_code_bytes": 703188,
     "total_executable_code_bytes": 2492032,
-    "percent": 28.180215984385434,
+    "percent": 28.217454671529097,
     "categories": {
-      "reconstructed_game": 310044,
+      "reconstructed_game": 310972,
       "restored_library": 392216
     },
-    "matching_functions": 2872
+    "matching_functions": 2877
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "dff267bc2747d11152fb829e34a91b932bed9379427fd1c5e06a138f2b16f62c",
+    "config/GR8E69/project.json": "fd0e909281cc0b332da1dfcf38321b4b26d2914f56e65fd196caecb1aafc689c",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -748,6 +748,7 @@
     "config/GR8E69/script_fade_out.json": "d72f7d9646b25d1125bb82059059947db5558015ecd2cc8dffd2ed3a4e1f0c89",
     "config/GR8E69/script_fake_bullets.json": "11ec69518614bcddd4988e3e9419e27c85795283b7aec90f6521e3d1f5f5d0ef",
     "config/GR8E69/script_far_clip.json": "276ea61082adb7a7550c08084ebdac68459c9e7e35b83d2f41a3d62dde6f75fe",
+    "config/GR8E69/script_finished_investigation.json": "9f89e52865363294460a7720a1e137149d444e03c48a8bee98b4f298f54545e0",
     "config/GR8E69/script_fog_blue.json": "b33ade2e715062afd31f481497ca5a58ccb3582e462170a0ca95ec5c0f10c151",
     "config/GR8E69/script_fog_distances.json": "88b33301c7a7d0680b9969e202f7d4fbd570e6233d5c8d4bd4e9ae0453bfc4e7",
     "config/GR8E69/script_fog_green.json": "e47b331850ece36c331de47302063771583c5c9ab94fbc7d2042d2ce9b6276e6",
@@ -870,6 +871,8 @@
     "config/GR8E69/script_send_event_self.json": "275c70e0ed2dbece61aa4a1ed867973e91aa6a9e174a727e960659c1eadf7759",
     "config/GR8E69/script_send_event_to_all_attached.json": "26d295519841d8a7ef2dd187b5393ad6d77bb4cb39f4bf35d6a26bcfb0bf4faa",
     "config/GR8E69/script_send_message_via_proxy.json": "07028427885e24ad1b0b643cd5e5d1ce76dc087ddecfeb2be19862da0cec9f5b",
+    "config/GR8E69/script_serializable.json": "65e9a5faeb19cc7f58aaaa35c966b5e0c08b3aca9b7579382331323d7955486c",
+    "config/GR8E69/script_serialize_value.json": "8c5d9c5cc8518f618db40ae76b636a6fb0ad73de57e10db54f7b9123fa75853a",
     "config/GR8E69/script_serializing_in.json": "e2e777db9a7578783750a3328dfb9ac51011c12ee67897cab0593e87d351733a",
     "config/GR8E69/script_set_anim_callback.json": "907ee5f08f97f79d1eef186a7443cf50a490ef795503c66dad26f854a23aa254",
     "config/GR8E69/script_set_animated_texture_frame.json": "ac8510d12f203caafa51e8485db997b24411f8285f557952b2401b8f5b02f06a",
@@ -1338,7 +1341,7 @@
     "include/game/AIFilterGlobal.h": "26368f15313dbd6390bee4c45582bcdfc36d8d433aaec5b0241541e52b9d677a",
     "include/game/AIMovement.h": "b9d723fd2bfeb66871a55f57dad2d3bfad33a56530d2826600e86d36598d6342",
     "include/game/AISplinePath.h": "52c68fd14346e661e8bbcdd39e6718059e4fc07e63cdf718e502d581189850df",
-    "include/game/AITargeting.h": "96fa5cd9739373024953862602ebd4c778cd709ce64a0aba9e40be6a7dd5cace",
+    "include/game/AITargeting.h": "60845b1c1bd09c569fa4bf6e4611782eef34bf67694e8d7c652f89ca957e7c83",
     "include/game/BPD.h": "ec4a3aceb83f181db2c6adf8ac87137ede2cd6a0e643548159c73a827aadd19e",
     "include/game/BSGameObject.h": "0251918a776754b0d6b3d30b69e61b0d0c8f919721dbd147dbecf710b180a45a",
     "include/game/Bullet.h": "e98a40c42ad18bfbf57414dd0501a21cfbdeb57d1e85e9590ac9d341196141fd",
@@ -1402,7 +1405,7 @@
     "include/game/FlexPropDatabase.h": "e3bb33faf5cff3877d051efc3335ff33c373c9d228a7afcb8b2c16f4ee97c767",
     "include/game/Fog.h": "30a37f01f3f665d1f9b3b0a5ef81ea098194595159c5ff794797541c6bf325c0",
     "include/game/Frustum.h": "517f595d8940b305a44b055a26e31588a43151816c24e27381a86ae90cfc6062",
-    "include/game/GameSettings.h": "1c7eadabebf7f25b914c5441a00e60ab39ceda04eca48b5f0d262c61cbf0ea25",
+    "include/game/GameSettings.h": "40f0f2f3cf6e07af353fc7dda78bec744443001f0f4d6301c832bcc93ea8a7c1",
     "include/game/IDestructible.h": "1427a08ba92fefc7fdc63c4ba8fc7aab3ec64bc8d2d1cfb7fe035346b685379f",
     "include/game/Light.h": "08e09016eb48510435acaf5fbd7648f725db2baa3526ffbceb9ddd096d8ccab5",
     "include/game/LightVolumeManager.h": "f86744d00d312738c23085d84d513fbd05c495194b97a10bf4cde2011dbaf958",
@@ -2386,6 +2389,7 @@
     "src/script/fade_out.cpp": "4a3656ec5ddf44c52bba596f53aae4ae0f46262243fb0fd7449eee9a8dc3bcdb",
     "src/script/fake_bullets.cpp": "df8525348def448a4efd5179aac49d07c41b1ded5178222599878e2c223f332f",
     "src/script/far_clip.cpp": "66636afdd38934a81515d9cb09b3d7fc009a8ad7d8a7be921c9675693f61235a",
+    "src/script/finished_investigation.cpp": "b280da65cae3dbb33d9f910410102d8f091a6f858c267afe5c8379ed39f77eb5",
     "src/script/fog_blue.cpp": "54c43572f7624878f3e6c8c2e978c7d33bce92e5070547d8ffcdd5fcca1cb585",
     "src/script/fog_distances.cpp": "646a39da8b99a6b38d85371bd428ee9c03bc3ba1ca7a12586aef0af7f4ec0e2b",
     "src/script/fog_green.cpp": "558017a920fd104c1e4041495f1842c056e4133e67d3c0abe652416db7dec748",
@@ -2510,6 +2514,8 @@
     "src/script/send_event_self.cpp": "6fabce81540e35632e782c871497596f74554fdb3528ceefc93a9a2d470adf6f",
     "src/script/send_event_to_all_attached.cpp": "d5a04d72b6aab5b6518d13ac718a4c367c847cd175f27708d0287bf491258791",
     "src/script/send_message_via_proxy.cpp": "e0c47f96fb46fa817ddfac74732141cab4ba7f7ad9a0beeaf0683544fd2a5ec8",
+    "src/script/serializable.cpp": "93416879eb146d6a8d775d64120e1ee1823ff7b12b359ded856395f7f60404b3",
+    "src/script/serialize_value.cpp": "7826d52d35d503203d3e65808f9ed8c8e2c72136bdeb5dbcbab824e1010ec494",
     "src/script/serializing_in.cpp": "d21c625b83e1d3e5dcb3ad23afd2d38d5da9135fb2460818293a902758958fbe",
     "src/script/set_anim_callback.cpp": "0df6de65935a6ba5b62a088b41371c3373f862a6f8dc521a7736597ef7ef840f",
     "src/script/set_animated_texture_frame.cpp": "166afb200caffabf5b03d04fc6536b276627a43ffebccde02511c0646d14a7d9",
@@ -27052,6 +27058,60 @@
       "discarded_functions": [],
       "object_sha256": "03da59b9a1df99ceefa31baea8dd31e18aed5803abf3ac8fd9b9723ca823bbd0",
       "linked_sha256": "0dbceabdd95875418e52ac721534085606cd8dc96516007bd9495a4f6d0e8ba8"
+    },
+    {
+      "id": "script_serialize_value",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 156,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "b1cedce4ab7cd2a4406fc154b94b193579379c17c0b35c4e767fbaa7eb096d48",
+      "linked_sha256": "ff088d2eb8a17db0f04ec4531256987aaa0396ad073647098721cf3efb5d8bc5"
+    },
+    {
+      "id": "script_serializable",
+      "category": "reconstructed_game",
+      "functions": 3,
+      "code_bytes": 632,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "d4aa918a750a3f2a2d6bd4754dbc800013eae8374fccb98260915aed9b7cb5db",
+      "linked_sha256": "e5338c0eb4bec682b4a9b270ce301b7ea3e9379d1fb9ee9b40c0d44d327a0e94"
+    },
+    {
+      "id": "script_finished_investigation",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 140,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "12cd511222630f26bb3c6f7ce3e7798e7d195a6fc9289888d22a26747eec5d81",
+      "linked_sha256": "cb90e844c7a25ea93f25ba83e8b1f4619d4cdd3b5bce189e6cd116f4885935df"
     }
   ],
   "code_map": {
@@ -50470,34 +50530,6 @@
             "evidence": "adjacent-compiler-markers"
           },
           {
-            "address": "0x80113fa4",
-            "size": 156,
-            "kind": "function",
-            "name": "BIFunc_SerializeValue__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80114110",
-            "size": 208,
-            "kind": "function",
-            "name": "BIFunc_Serializable__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801141e0",
-            "size": 212,
-            "kind": "function",
-            "name": "BIFunc_SerializeData__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x801142b4",
-            "size": 212,
-            "kind": "function",
-            "name": "BIFunc_SaveGagState__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
             "address": "0x80114388",
             "size": 400,
             "kind": "function",
@@ -50726,13 +50758,6 @@
             "size": 164,
             "kind": "function",
             "name": "BIFunc_HasAnyFilmCanister__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x8011a6e0",
-            "size": 140,
-            "kind": "function",
-            "name": "BIFunc_FinishedInvestigation__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

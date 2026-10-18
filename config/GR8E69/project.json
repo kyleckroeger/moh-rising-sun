@@ -1150,7 +1150,10 @@
     "script_break_point.json",
     "script_player_eject_shell.json",
     "script_use_binoculars.json",
-    "script_player_activate_lookat_trigger.json"
+    "script_player_activate_lookat_trigger.json",
+    "script_serialize_value.json",
+    "script_serializable.json",
+    "script_finished_investigation.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",
