@@ -1163,7 +1163,9 @@
     "script_ai_add_corpse_threat.json",
     "script_play_sound_from_input_trigger.json",
     "script_play_sound_from_input_trigger2.json",
-    "script_set_motion_blur.json"
+    "script_set_motion_blur.json",
+    "script_send_messages.json",
+    "script_hier_object_register_bullet_damage.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

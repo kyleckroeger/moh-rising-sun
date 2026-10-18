@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-312 fragments in `src/script/` reconstruct **514 functions and 76,284
+314 fragments in `src/script/` reconstruct **516 functions and 76,740
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 421 further built-in wrappers
-and stubs (62,608 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 423 further built-in wrappers
+and stubs (63,064 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-255 fragments add **421 functions and 62,608 executable bytes** from the
+257 fragments add **423 functions and 63,064 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -786,6 +786,7 @@ result order are written with their case groups in that order.
 | `script_send_event_parent_immediate` | `SendEventParentImmediate` | `0x800fe68c` | 120 |
 | `script_send_event` | `SendEvent`, `SendEventImmediate`, `SendEventDelayed`, `SendMessage` | `0x800fe704` | 660 |
 | `script_send_message_via_proxy` | `SendMessageViaProxy` | `0x800fe998` | 148 |
+| `script_send_messages` | `SendMessages` | `0x800fea2c` | 224 |
 | `script_match_group` | `MatchGroup` | `0x800feb0c` | 136 |
 | `script_get_cookie` | `GetCookie`, `SetCookie` | `0x800feb94` | 364 |
 | `script_get_current_frame_number` | `GetCurrentFrameNumber` | `0x800fed00` | 60 |
@@ -927,6 +928,7 @@ result order are written with their case groups in that order.
 | `script_hier_object_set_look_object` | `HierObjectSetLookObject` | `0x80115948` | 172 |
 | `script_hier_object_map_weapon` | `HierObjectMapWeapon` | `0x801159f4` | 188 |
 | `script_hier_object_fire` | `HierObjectFire` | `0x80115ca8` | 184 |
+| `script_hier_object_register_bullet_damage` | `HierObjectRegisterBulletDamage` | `0x80115d60` | 232 |
 | `script_ai_find_tank` | `AIFindTank` | `0x80115e48` | 108 |
 | `script_bullet_type_class` | `GetClassFromBulletType` | `0x80116168` | 240 |
 | `script_activate_aiming` | `ActivateAiming` | `0x80116370` | 172 |
