@@ -6,14 +6,14 @@
   "dol_sha1": "6abed07aefb9be8cb2cd3c4e0fa53a1fde8db04d",
   "runtime_tested": false,
   "progress": {
-    "matching_code_bytes": 729404,
+    "matching_code_bytes": 729792,
     "total_executable_code_bytes": 2492032,
-    "percent": 29.269447583337612,
+    "percent": 29.285017206841644,
     "categories": {
-      "reconstructed_game": 337188,
+      "reconstructed_game": 337576,
       "restored_library": 392216
     },
-    "matching_functions": 2971
+    "matching_functions": 2972
   },
   "input_sha256": {
     "config/GR8E69/AX.json": "24ff5b9f21cad950ae286f1789b084b0c66a95faa490b40bcf692a96c0f4328b",
@@ -639,7 +639,7 @@
     "config/GR8E69/player_path_controls.json": "a5a585ed38c40cd299ab995320748f8e6777003f8cc885f5376c7e440dc2b3b7",
     "config/GR8E69/player_spline_position.json": "5b4aa80de0af602d8d0cde27f43b24848fd3a5ad92b1972f1900f8f256617888",
     "config/GR8E69/player_spline_tangent.json": "36eccc91b26a0f0558ee6f02c6e52398927527bf754f986e8d6db6404022d9b8",
-    "config/GR8E69/project.json": "0dc651c25ea65c413e3bfcd0cede56ae7de8cf9c707f401dd27ee9a558733042",
+    "config/GR8E69/project.json": "62e05f6cf689c9d103ddb71ece5b4b3256418814bf0ae908fb5ddc45597c3d01",
     "config/GR8E69/projectile_accessors.json": "5851f821233d730dc3d1a13808fd77e106f14662c4097d457de5c19c5d860a6e",
     "config/GR8E69/projectile_collision_id.json": "f5218fa896d09cc78c143f20c86bf74f21af1c0b47093737d74acd284b8c5bf5",
     "config/GR8E69/projectile_exclusion_pair.json": "99afd0db09aa6eccc73fda17bb9ac1d24a6fe107780f8cf54fb758360cd20ef0",
@@ -791,6 +791,7 @@
     "config/GR8E69/script_get_distance_between_players.json": "e6b0c4ff56b9873e00c23dffef65e867091b27d0b0f0f82e5b6e67ed8950af83",
     "config/GR8E69/script_get_distance_to_object_from_trigger.json": "ea997a4ac455ae14e0043f49d2a5a967bda29b823b62a1a79375a534b9f9e700",
     "config/GR8E69/script_get_distance_to_player.json": "039371798ab073dd99103a5d3d095777fab82a3ddba259421afbec1593ebe735",
+    "config/GR8E69/script_get_flex_property.json": "910395ac82911b517359ec83a9d513968505d1c60b31d5360850ec72737ab4e9",
     "config/GR8E69/script_get_instance_data_for.json": "b2671f9e6ecba63a0d89567e8546dbbfa5a320299377d8c2074cf893e60579fd",
     "config/GR8E69/script_get_mmg_feeder_by_link_code.json": "126e87352abf24ce6300a783bfde6126f57e4ea6cd5d1131a04975fadccdef91",
     "config/GR8E69/script_get_mounted_machine_gun_by_link_code.json": "9a1663a0083fe4f07b2cecab927bd7a305c6e69f94aa953c0bbfd946c1d1baa7",
@@ -1481,7 +1482,7 @@
     "include/game/ParticleRecipe.h": "04bba33839dcdae3132d1316e831585288f74ef842a5b01c6f6d6c37929ee61d",
     "include/game/PropertyData.h": "952ae5ac78dc17e43053a7b905a8e58499a1faa3c7d0721269329f639095b22a",
     "include/game/SceneNode.h": "1a6f0b01e88bda21ecb5b0ae8f4f3ad50df6422427adb3f5f52ea1c648a50fe4",
-    "include/game/SceneObjects.h": "4fc57d318a4f0382307f9c34268ab0be577d98816f3f7d52021cd48f8ef0993d",
+    "include/game/SceneObjects.h": "f2ef35bae3c643adf190b5ecf83e9c504aef5fd0f737c62d29848c7db4b45e82",
     "include/game/ScriptBuiltins.h": "7bf62823ffe81928c077dca0a79052458d5e88693a1f6f0bd3ee3e2116ecac50",
     "include/game/ScriptMachine.h": "b10adc3b1ca9b75d7da68e1aae2e3655c558a18feb2afe4a0e80c000d5575579",
     "include/game/ScriptRuntime.h": "e6c5e20e70b740f8fae024d5b0711e408ad2db30aeaba9ceb7f72cbcc442ad8d",
@@ -2498,6 +2499,7 @@
     "src/script/get_distance_between_players.cpp": "142927f1d505ff16e190d69d638fabdddec03fb417b27a0ff5b9073192bb6ab8",
     "src/script/get_distance_to_object_from_trigger.cpp": "ee8130a9f51d9e3fdb2f60a62efee3a5036023bea8b42439fbd80d20372b9cb7",
     "src/script/get_distance_to_player.cpp": "0df4655694bec64c0cc18eb894f5d01512b8a57ee2e6b13da5cf6c510d9319b6",
+    "src/script/get_flex_property.cpp": "6558eab6725bd5dadfd1d53160f0e1d6e138daa479f0161e7399bfd83b8ebf66",
     "src/script/get_instance_data_for.cpp": "a4db55d7690ddc4fe44710c2ee5ebb5fdfafb312b10641c500be8e4592895d6a",
     "src/script/get_mmg_feeder_by_link_code.cpp": "8c81f34b402193aa2848b81b2259f33fccc4f08d178d5289fdbe7a874bd3622c",
     "src/script/get_mounted_machine_gun_by_link_code.cpp": "049593f33245a1b939fe821df83dbac9e48ef799cce3bcd13a013df9f329513d",
@@ -28373,6 +28375,24 @@
       "discarded_functions": [],
       "object_sha256": "0d73053f74725891f381fb23911f31b6b6d962899266b0ad3d5b28a605a8720f",
       "linked_sha256": "80718d067c6df303ed3d02546dfa80e9f32529e17d032d0a93217f20e3bc2fd6"
+    },
+    {
+      "id": "script_get_flex_property",
+      "category": "reconstructed_game",
+      "functions": 1,
+      "code_bytes": 388,
+      "compiler_family": "ProDG",
+      "compiler_version": "3.8.1",
+      "compiler_flags": [
+        "-O2",
+        "-G0",
+        "-fno-exceptions",
+        "-fno-implicit-templates"
+      ],
+      "strip_unused": false,
+      "discarded_functions": [],
+      "object_sha256": "3a18966d09accfc7fd335b84de4dc4ac3cdae0165a837e546dbd1dc1a6dae230",
+      "linked_sha256": "5079cfc7fa9a222e6ffbde780e63691ca5e8fb9476519bf8a4e097ea7b1ddea0"
     }
   ],
   "code_map": {
@@ -51319,13 +51339,6 @@
             "size": 192,
             "kind": "function",
             "name": "BIFunc_EjectHelmet__FPPiPv",
-            "evidence": "adjacent-compiler-markers"
-          },
-          {
-            "address": "0x80116d00",
-            "size": 388,
-            "kind": "function",
-            "name": "BIFunc_GetFlexProperty__FPPiPv",
             "evidence": "adjacent-compiler-markers"
           },
           {

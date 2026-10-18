@@ -1216,7 +1216,8 @@
     "script_display_prompt_text.json",
     "script_ai_set_status_var.json",
     "script_set_allow_animation_translation.json",
-    "script_modify_motion_data.json"
+    "script_modify_motion_data.json",
+    "script_get_flex_property.json"
   ],
   "progress": {
     "metric": "matching reconstructed or restored code bytes / all allocated executable section bytes",

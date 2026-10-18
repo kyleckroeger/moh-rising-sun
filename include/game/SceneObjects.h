@@ -96,7 +96,14 @@ class CSoldierObject {
         float currentRate;  // +0xf94
         float pendingRate;  // +0xf98
     } expression;
-    unsigned char unknown_f9c[0x1050 - 0xf9c];
+    // Blink timing written by BIFunc_SetBlinkState; names are descriptive.
+    float blinkTimer;       // +0xf9c
+    float blinkMinInterval; // +0xfa0
+    float blinkMaxInterval; // +0xfa4
+    float blinkCloseTime;   // +0xfa8
+    float blinkHoldTime;    // +0xfac
+    float blinkOpenTime;    // +0xfb0
+    unsigned char unknown_fb4[0x1050 - 0xfb4];
     int voiceHandle;        // +0x1050; -12 when no voice is playing.
     unsigned char unknown_1054[0x10a8 - 0x1054];
     CJawController jaw;     // +0x10a8
