@@ -57,10 +57,14 @@ class CPlayerWeaponObject {
     CWeapon *weapon; // +0x2ec
     unsigned char unknown_2f0[0x3b0 - 0x2f0];
     int state;       // +0x3b0; set to 3 by BIFunc_AddPlayerAmmo.
-    unsigned char unknown_3b4[0x3f0 - 0x3b4];
+    unsigned char unknown_3b4[0x3d2 - 0x3b4];
+    char name[0x3f0 - 0x3d2]; // +0x3d2; animation folder name (extent unknown).
     unsigned int flags; // +0x3f0; bit 29 set by BIFunc_AddPlayerAmmo before DoneReloading.
+    // Original nested enum tag; member names are descriptive.
+    enum Partition { PartitionDefault = 0, PartitionAlternate = 1 };
     void CreateEjectedShell(int);
     void DoneReloading();
+    void SetAnimationState(const char *, int, Partition);
     int IsSelectable() const;
 };
 class CPlayerObject {

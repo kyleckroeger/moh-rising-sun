@@ -88,6 +88,7 @@ class CProjectileBullet : public CBullet {
 
 class CThrownBullet : public CBullet {
   public:
+    void SomebodyCaughtYou();
     unsigned char unknown_b8[0xc8 - 0xb8];
     ThrownBulletProperties_struct *properties;     // Stored by Init.
     unsigned char unknown_cc[0xe0 - 0xcc];

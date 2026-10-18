@@ -111,6 +111,8 @@ class CSwordBehavior { // Type 8.
 
 class CGrenadeResponseBehavior { // Type 10.
   public:
+    unsigned char unknown_0[0x24];
+    int caught; // +0x24; set by BIFunc_CatchGrenade.
     void FinishedResponse(CThrownBullet *);
 };
 
