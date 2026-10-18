@@ -112,7 +112,8 @@ class CPlayerObject {
     struct PathFlagBits {
         unsigned int unknown_31_25 : 7;
         unsigned int binoculars : 1;    // Bit 24: BIFunc_UseBinoculars.
-        unsigned int unknown_23_15 : 9;
+        unsigned int unknown_23_16 : 8;
+        unsigned int meleeImmune : 1;   // Bit 15: BIFunc_CanMeleeTarget returns 0.
         unsigned int noShells : 1;      // Bit 14: suppresses BIFunc_PlayerEjectShell.
         unsigned int unknown_13_10 : 4;
         unsigned int mmgBlocked : 1;    // Bit 9: skips BIFunc_AttachPlayerToMountedMachineGun in multiplayer.

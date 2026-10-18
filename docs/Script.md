@@ -8,7 +8,7 @@ without checking the GameCube instructions and symbols.
 
 ## Accepted scope
 
-368 fragments in `src/script/` reconstruct **595 functions and 100,700
+369 fragments in `src/script/` reconstruct **596 functions and 101,276
 executable bytes**: all **33 opcode handlers** (5,596 bytes), ten message-registration and index
 helpers (964 bytes), nine thread/message-delivery and group-filter routines (1,700
 bytes), event lookup (220 bytes), three music built-ins (372 bytes), all twelve named
@@ -16,8 +16,8 @@ timer routines (1,960 bytes), a spatial query (196 bytes), six game-object
 default/list routines (132 bytes), three objective built-ins (368 bytes), three
 ambient-sound built-ins (536 bytes), two value built-ins (144 bytes), and a
 projectile aim helper with two projectile controls (832 bytes), and seven fog,
-far-clip and particle-sorting controls (656 bytes), and 502 further built-in wrappers
-and stubs (87,024 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
+far-clip and particle-sorting controls (656 bytes), and 503 further built-in wrappers
+and stubs (87,600 bytes; [see below](#built-in-wrappers-stubs-and-ai-behavior-controls)).
 Their exact symbols, ranges and dependencies are in
 `config/GR8E69/script_*.json` and `config/GR8E69/bsgo_*.json`. Original file markers
 support the `bsmachin.cpp`,
@@ -635,7 +635,7 @@ discarded, and no instructions are patched.
 
 ## Built-in wrappers, stubs and AI behavior controls
 
-311 fragments add **502 functions and 87,024 executable bytes** from the
+312 fragments add **503 functions and 87,600 executable bytes** from the
 `bsbifunc.cpp` marker interval. All use the ProDG 3.8.1 profile of the earlier
 built-ins and are independent fragments, not recovered file boundaries.
 
@@ -791,6 +791,7 @@ result order are written with their case groups in that order.
 | `script_set_collision` | `SetCollision` | `0x800fdfa8` | 480 |
 | `script_path_mech_allow_collision_damage` | `PathMechAllowCollisionDamage`, `SetHeadAsRoot`, `SetPlayerCollision` | `0x800fe188` | 472 |
 | `script_send_event_self` | `SendEventSelf` | `0x800fe360` | 116 |
+| `script_send_event_weapon_immediate` | `SendEventWeaponImmediate` | `0x800fe3d4` | 576 |
 | `script_send_event_parent` | `SendEventParent` | `0x800fe614` | 120 |
 | `script_send_event_parent_immediate` | `SendEventParentImmediate` | `0x800fe68c` | 120 |
 | `script_send_event` | `SendEvent`, `SendEventImmediate`, `SendEventDelayed`, `SendMessage` | `0x800fe704` | 660 |
